@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wp7 on David Amador</title>
+    <link>https://www.david-amador.com/tags/wp7/</link>
+    <description>Recent content in wp7 on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 07 May 2010 20:41:09 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/wp7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vizati on Windows Phone 7</title>
+      <link>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
+      <pubDate>Fri, 07 May 2010 20:41:09 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
+      <description>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.
+This week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.
+I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.</description>
+    </item>
+  </channel>
+</rss>

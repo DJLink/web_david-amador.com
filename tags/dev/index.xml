@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dev on David Amador</title>
+    <link>https://www.david-amador.com/tags/dev/</link>
+    <description>Recent content in dev on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 24 Feb 2015 18:47:08 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QoD XO devlog 3</title>
+      <link>https://www.david-amador.com/2015/02/qod-xo-devlog-3/</link>
+      <pubDate>Tue, 24 Feb 2015 18:47:08 +0000</pubDate>
+      <guid>https://www.david-amador.com/2015/02/qod-xo-devlog-3/</guid>
+      <description>Last time we talked I was porting the engine to run on the actual Xbox One hardware, since them I managed to port the whole engine, it’s now running (not 100% stable), sound, rending, and input, all working. Since that part is a bit better now I decided to focus some time on new content, such as localization, the new dungeons and stuff that still doesn’t properly work with a controller.</description>
+    </item>
+    <item>
+      <title>QoD XO devlog 1</title>
+      <link>https://www.david-amador.com/2014/11/qod-xo-devlog-1/</link>
+      <pubDate>Sun, 16 Nov 2014 18:05:33 +0000</pubDate>
+      <guid>https://www.david-amador.com/2014/11/qod-xo-devlog-1/</guid>
+      <description>I’ve been doing a lot of menus and gamepad specifics related work lately.
+My first step has been to make sure all menus are easy to use with a Xbox One controller, and while most of the menus in the main screen are usable, inside the game they are not.
+Everything was made with mouse in mind at first so I decided to remake all of them again in a different way.</description>
+    </item>
+  </channel>
+</rss>

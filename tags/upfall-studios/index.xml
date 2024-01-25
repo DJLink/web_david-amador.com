@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>upfall studios on David Amador</title>
+    <link>https://www.david-amador.com/tags/upfall-studios/</link>
+    <description>Recent content in upfall studios on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Dec 2014 12:19:07 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/upfall-studios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I&#39;m a Xbox One developer now, QoD getting a port</title>
+      <link>https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</link>
+      <pubDate>Sun, 14 Dec 2014 12:19:07 +0000</pubDate>
+      <guid>https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</guid>
+      <description>So a lot has happened since my last post. Even before EGX I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.
+I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you.</description>
+    </item>
+  </channel>
+</rss>

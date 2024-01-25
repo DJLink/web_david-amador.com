@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>memory leaks on David Amador</title>
+    <link>https://www.david-amador.com/tags/memory-leaks/</link>
+    <description>Recent content in memory leaks on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 03 Jun 2012 20:00:01 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/memory-leaks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Detecting C&#43;&#43; memory leaks in Visual Studio &amp;#8211; again</title>
+      <link>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</link>
+      <pubDate>Sun, 03 Jun 2012 20:00:01 +0000</pubDate>
+      <guid>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</guid>
+      <description>I made a small post about detecting C++ memory leaks in Visual Studio in 2010. At the time that seemed to suffice, but some months ago someone told me about Visual Leak Detector and boy does it work.
+According to the website itself
+Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
+It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</description>
+    </item>
+    <item>
+      <title>Tracking memory leaks in Visual Studio</title>
+      <link>https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</link>
+      <pubDate>Tue, 19 Oct 2010 14:09:01 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</guid>
+      <description>I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.
+I know there are other and better solution but this can be handy for quick findings without much hassle.
+First place this code in your entry point file, generally main.cpp inside your main() function
+&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt; #ifdef _DEBUG int flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG); flag |= _CRTDBG_LEAK_CHECK_DF; // Turn on leak-checking bit _CrtSetDbgFlag(flag); #endif Now just run you game/program as you would normally, in debug mode of course.</description>
+    </item>
+  </channel>
+</rss>

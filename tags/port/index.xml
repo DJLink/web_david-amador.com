@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>port on David Amador</title>
+    <link>https://www.david-amador.com/tags/port/</link>
+    <description>Recent content in port on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 Aug 2014 13:42:52 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/port/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Native game on Android &amp;#8211; Porting Quest of Dungeons</title>
+      <link>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</link>
+      <pubDate>Sat, 30 Aug 2014 13:42:52 +0000</pubDate>
+      <guid>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</guid>
+      <description>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.
+I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.</description>
+    </item>
+    <item>
+      <title>Developing on Mac and Basalt running on the iPhone</title>
+      <link>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
+      <pubDate>Fri, 09 Jul 2010 09:59:01 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
+      <description>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.
+If you follow me on twitter you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.
+So it all started with my wish to port Vizati to the iPhone, since the game is already running on PC, Xbox360 and Windows Phone 7 one can only wish for an easy and quick port since pretty much all base code is done.</description>
+    </item>
+  </channel>
+</rss>

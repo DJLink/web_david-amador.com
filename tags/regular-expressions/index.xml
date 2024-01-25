@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>regular expressions on David Amador</title>
+    <link>https://www.david-amador.com/tags/regular-expressions/</link>
+    <description>Recent content in regular expressions on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Jan 2012 21:27:55 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/regular-expressions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find/Replace in Visual Studio using regular expressions</title>
+      <link>https://www.david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</link>
+      <pubDate>Sat, 14 Jan 2012 21:27:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</guid>
+      <description>Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.
+But today I had this function I wanted to get rid of and simple change it with a public variable.
+So I had something like this.
+&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;object-&amp;gt;setLayer(/*BLABAL BLA CODE, */); I want to replace it with something more simple
+&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;object-&amp;gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in regular expressions mode I used this as a search string</description>
+    </item>
+  </channel>
+</rss>

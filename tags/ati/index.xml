@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ati on David Amador</title>
+    <link>https://www.david-amador.com/tags/ati/</link>
+    <description>Recent content in Ati on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Nov 2009 15:16:54 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/ati/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using PerfHUD with XNA</title>
+      <link>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</link>
+      <pubDate>Wed, 18 Nov 2009 15:16:54 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</guid>
+      <description>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.</description>
+    </item>
+    <item>
+      <title>Accelero twin turbo</title>
+      <link>https://www.david-amador.com/2009/10/accelero-twin-turbo/</link>
+      <pubDate>Sat, 24 Oct 2009 21:47:35 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/10/accelero-twin-turbo/</guid>
+      <description>Because my Ati Radeon 4890 fan fried I had to buy another cooler. After a little research I discovered Artic Accelero Twin Turbo. Today I decided to finally try it. The assembly is rather easy, the package comes with several heatsinks for memories, and of course the fans themselves. There are three ways to connect the fans, either directly to the VGA card itself, directly to the PSU with 7V or 12V.</description>
+    </item>
+  </channel>
+</rss>

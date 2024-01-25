@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crysis on David Amador</title>
+    <link>https://www.david-amador.com/tags/crysis/</link>
+    <description>Recent content in Crysis on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 08 Jun 2009 11:15:46 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/crysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Graphic Card and psu</title>
+      <link>https://www.david-amador.com/2009/06/new-graphic-card-and-psu/</link>
+      <pubDate>Mon, 08 Jun 2009 11:15:46 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/06/new-graphic-card-and-psu/</guid>
+      <description>I decided to buy another a new graphic card. I got tired of my old Geforce 8500 GT sloweness. It was slow on 3dsmax, it was slow on recent games and most of all I have this thing for Ati so this was never my favorite.
+After some research I decided to get a XFX Ati Radeon 4890, most of the reviews were positive and its placed in a mid-range pricing.</description>
+    </item>
+  </channel>
+</rss>

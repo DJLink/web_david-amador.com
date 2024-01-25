@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>div on David Amador</title>
+    <link>https://www.david-amador.com/tags/div/</link>
+    <description>Recent content in div on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Oct 2009 19:16:12 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/div/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to make a clickable div</title>
+      <link>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</link>
+      <pubDate>Sun, 25 Oct 2009 19:16:12 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</guid>
+      <description>Making a clickable text or image is easy, just add the &amp;lt;a&amp;gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.
+The following code is for JQuery but switching it to your favorite JS framework should be very easy.
+First start by adding this to your div
+&amp;lt;pre lang=&amp;#34;html4strict&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;clickable&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; Now a little css to simulate the pointer on that div</description>
+    </item>
+  </channel>
+</rss>

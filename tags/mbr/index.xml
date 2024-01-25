@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mbr on David Amador</title>
+    <link>https://www.david-amador.com/tags/mbr/</link>
+    <description>Recent content in mbr on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 21 Jan 2012 10:43:50 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/mbr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Restore the Windows 7 MBR (Master Boot Record)</title>
+      <link>https://www.david-amador.com/2012/01/how-to-restore-the-windows-7-mbr-master-boot-record/</link>
+      <pubDate>Sat, 21 Jan 2012 10:43:50 +0000</pubDate>
+      <guid>https://www.david-amador.com/2012/01/how-to-restore-the-windows-7-mbr-master-boot-record/</guid>
+      <description>So I had this crisis where the MBR got broken and Windows would not boot. This can happens for many reasons, maybe you tried to dual boot your PC and something went wrong.
+Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of course)!
+1 – Boot your computer to the Windows 7 DVD
+2 – Select your language and click next.
+3 – Click the button for “Use recovery tools”.</description>
+    </item>
+  </channel>
+</rss>

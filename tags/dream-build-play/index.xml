@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dream Build Play on David Amador</title>
+    <link>https://www.david-amador.com/tags/dream-build-play/</link>
+    <description>Recent content in Dream Build Play on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 08 Mar 2010 10:14:08 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/dream-build-play/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vizati wins XNA Pizza Night 2010</title>
+      <link>https://www.david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</link>
+      <pubDate>Mon, 08 Mar 2010 10:14:08 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</guid>
+      <description>Damn you should see my face when they told me we won the competition XNA Pizza Night 2010 at Microsoft.
+Originally we developed Vizati to enter Dream Build Play 2010. We started developing the game on the beginning of February and during that month we discovered another competition would be held near Dream Build Play deadline.
+We went there with the same demo we sent to DBP. The audience really liked the game and we got very positive feedback.</description>
+    </item>
+    <item>
+      <title>Vizati Teaser</title>
+      <link>https://www.david-amador.com/2010/02/vizati-teaser/</link>
+      <pubDate>Sun, 28 Feb 2010 23:50:15 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/02/vizati-teaser/</guid>
+      <description>Rita and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.
+Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color.</description>
+    </item>
+    <item>
+      <title>XNA Particle System 2D</title>
+      <link>https://www.david-amador.com/2010/02/xna-particle-system-2d/</link>
+      <pubDate>Fri, 19 Feb 2010 11:46:26 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/02/xna-particle-system-2d/</guid>
+      <description>It’s been a long week.
+Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.</description>
+    </item>
+    <item>
+      <title>I maed a Custom Script Language for my Xna Engine</title>
+      <link>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</link>
+      <pubDate>Mon, 15 Feb 2010 00:29:42 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</guid>
+      <description>Well the title is an Homage to James Silva‘s I MAED A GAM3 W1TH Z0MB1ES!!!1
+I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.</description>
+    </item>
+    <item>
+      <title>DBP deadline is over, maybe next year.</title>
+      <link>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
+      <pubDate>Thu, 06 Aug 2009 15:29:10 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
+      <description>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.
+Meanwhile I’ve been busy making the arrangements for The Indie Bay 48 hour game development competition.
+The idea is for every entrant to make a game in 48 hours using a given theme or topic.</description>
+    </item>
+    <item>
+      <title>Pugna prototype</title>
+      <link>https://www.david-amador.com/2009/08/pugna-prototype/</link>
+      <pubDate>Sat, 01 Aug 2009 22:03:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/08/pugna-prototype/</guid>
+      <description>Hello there.
+Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.
+My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that Rita and I have for the game we should have submitted.</description>
+    </item>
+  </channel>
+</rss>

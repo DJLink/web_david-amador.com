@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>video on David Amador</title>
+    <link>https://www.david-amador.com/tags/video/</link>
+    <description>Recent content in video on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 30 Dec 2009 22:59:00 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Updates about Different Pixel and Sapphire</title>
+      <link>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
+      <pubDate>Wed, 30 Dec 2009 22:59:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
+      <description>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.
+I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry.</description>
+    </item>
+    <item>
+      <title>Basalt and Sapphire Updates</title>
+      <link>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
+      <pubDate>Wed, 02 Dec 2009 21:38:11 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
+      <description>Lately all my free time has been spent adding new features to Basalt and developing Sapphire.
+Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.
+Here’s a screenshot of the previous alpha version:</description>
+    </item>
+    <item>
+      <title>Building an 2D Game Engine in XNA &amp;#8211; Part 1</title>
+      <link>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</link>
+      <pubDate>Fri, 16 Oct 2009 18:10:09 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</guid>
+      <description>I decided to starting writing a series of tutorials for building an 2d XNA game engine.
+Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.
+It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
+Requirements:
+You must have some Object Oriented Programming background to full understand what we will do here.</description>
+    </item>
+    <item>
+      <title>XNA Camera 2d with zoom and rotation</title>
+      <link>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</link>
+      <pubDate>Mon, 12 Oct 2009 20:51:21 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</guid>
+      <description>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too
+One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
+Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself.</description>
+    </item>
+    <item>
+      <title>Basalt gains a media player</title>
+      <link>https://www.david-amador.com/2009/10/basalt-gains-a-media-player/</link>
+      <pubDate>Sun, 04 Oct 2009 18:22:30 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/10/basalt-gains-a-media-player/</guid>
+      <description>So I’ve been working on a sort of media player in order to play movies on my 2d engine Basalt made on top of XNA.
+By extending my class Object2d I manage to get this pretty cool result. You can even apply shaders to it. Since I extended the class from Object2d I can rotate, scale and set a position to the video besides regular options like play/pause, fullscreen etc. For those who don’t know the video playing is a chunk of the series Naruto Shippuuden</description>
+    </item>
+    <item>
+      <title>XNA Sprite Sheet</title>
+      <link>https://www.david-amador.com/2009/08/xna-sprite-sheet/</link>
+      <pubDate>Sun, 23 Aug 2009 10:30:57 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/08/xna-sprite-sheet/</guid>
+      <description>I decided to take the morning to make a small sprite sheet editor for our Xna engine. This way the artist can easily define the sprite areas and their origin saving in a file that can later on be loaded on the engine.
+Not very fancy yet but it gets the job done.
+Next step will be making an animator editor.</description>
+    </item>
+    <item>
+      <title>Pugna prototype</title>
+      <link>https://www.david-amador.com/2009/08/pugna-prototype/</link>
+      <pubDate>Sat, 01 Aug 2009 22:03:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/08/pugna-prototype/</guid>
+      <description>Hello there.
+Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.
+My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that Rita and I have for the game we should have submitted.</description>
+    </item>
+    <item>
+      <title>Tech Talk: Linus Torvalds On Git</title>
+      <link>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</link>
+      <pubDate>Tue, 03 Feb 2009 16:07:51 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</guid>
+      <description>I recently found that there is a subversion alternative surfacing that is in many ways much better that subversion, it name is Git and it’s a creation of Linus Torvalds.
+Here’s a video of him talking about it
+https://www.youtube.com/v/4XpnKHJAok8</description>
+    </item>
+  </channel>
+</rss>

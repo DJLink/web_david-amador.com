@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on David Amador</title>
+    <link>https://www.david-amador.com/tags/ai/</link>
+    <description>Recent content in AI on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 Oct 2010 10:48:46 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A* Pathfinding</title>
+      <link>https://www.david-amador.com/2010/10/a-pathfinding/</link>
+      <pubDate>Wed, 27 Oct 2010 10:48:46 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/10/a-pathfinding/</guid>
+      <description>For my current project I’ve been working with A* as a path-finding solution.
+Basically it’s a way to get from point A to point B.
+This is used for AI in games mostly on tiled based games, It’s very simple to understand and implement.
+As A* traverses the graph, it follows a path of the lowest known cost, keeping a sorted priority queue of alternate path segments along the way. If, at any point, a segment of the path being traversed has a higher cost than another encountered path segment, it abandons the higher-cost path segment and traverses the lower-cost path segment instead.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>indie on David Amador</title>
+    <link>https://www.david-amador.com/tags/indie/</link>
+    <description>Recent content in indie on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 23 Feb 2012 23:10:19 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/indie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some thoughts about indie dev</title>
+      <link>https://www.david-amador.com/2012/02/some-thoughts-about-indie-dev/</link>
+      <pubDate>Thu, 23 Feb 2012 23:10:19 +0000</pubDate>
+      <guid>https://www.david-amador.com/2012/02/some-thoughts-about-indie-dev/</guid>
+      <description>1 – You either are, or you aren’t.
+People can go and , “I’m an aspiring indie game developer”. You are either doing games or not, period. If you are starting in development with your own money then you are one. People tend to think they are indie developers when money starts rolling in, well think again, cause money may never come.
+2 – It’s a jungle out there</description>
+    </item>
+    <item>
+      <title>Indie Summer Six Pack</title>
+      <link>https://www.david-amador.com/2011/06/indie-summer-six-pack/</link>
+      <pubDate>Fri, 03 Jun 2011 17:54:35 +0000</pubDate>
+      <guid>https://www.david-amador.com/2011/06/indie-summer-six-pack/</guid>
+      <description>So this is what we at Different Pixel, together with 5 other developers have been working on, the “Indie Summer Six Pack”
+Six indie titles for just $10 – or a stonking $5, if you first share the offer via Facebook.
+How can you say no to that?
+The games included are Aztaka, City Rain, Puzzlegeddon, Bob Came In Pieces, Vizati and Lylian.</description>
+    </item>
+    <item>
+      <title>Wrapping up year 2010</title>
+      <link>https://www.david-amador.com/2010/12/wrapping-up-year-2010/</link>
+      <pubDate>Fri, 31 Dec 2010 15:06:46 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/12/wrapping-up-year-2010/</guid>
+      <description>So another year has come to an end, time to make plans for a new one and look back on what has been done.
+This was one crazy year, where I embraced indie development as my free time “hobby”.
+This picture illustrates my year very well, dark link is a bonus since my twitter handle is DJ_Link
+I’m tired, but happy and hoping that these were the first steps on something greater and bigger.</description>
+    </item>
+    <item>
+      <title>Game Competition</title>
+      <link>https://www.david-amador.com/2009/09/game-competition/</link>
+      <pubDate>Thu, 17 Sep 2009 11:24:14 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/09/game-competition/</guid>
+      <description>Some time ago I decided to launch a new website with a 48h Game Competition.
+We are now 2 days away from the Compo#1. This is for every indie game developer wannabe =)
+[Edit]
+The first competition is now over. Check the results here
+One of the games made in the competition</description>
+    </item>
+    <item>
+      <title>Make a Game Week</title>
+      <link>https://www.david-amador.com/2009/03/make-a-game-week/</link>
+      <pubDate>Fri, 13 Mar 2009 17:33:12 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/03/make-a-game-week/</guid>
+      <description>I work on a game creation company and this week the administration decided to give us a challenge, to make a game. Using whatever tools we want to whatever platform we like.
+After we got divided between 4 teams the challenge was to make every minute count. My team got composed by me (programmer), a designer and a person from man resources. Of course I was going to handle every bit of code, the designer the art and the third person the level design and documentation.</description>
+    </item>
+  </channel>
+</rss>

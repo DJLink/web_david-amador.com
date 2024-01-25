@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on David Amador</title>
+    <link>https://www.david-amador.com/tags/android/</link>
+    <description>Recent content in android on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 Aug 2014 13:42:52 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Native game on Android &amp;#8211; Porting Quest of Dungeons</title>
+      <link>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</link>
+      <pubDate>Sat, 30 Aug 2014 13:42:52 +0000</pubDate>
+      <guid>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</guid>
+      <description>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.
+I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.</description>
+    </item>
+  </channel>
+</rss>

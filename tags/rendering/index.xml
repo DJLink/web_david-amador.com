@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rendering on David Amador</title>
+    <link>https://www.david-amador.com/tags/rendering/</link>
+    <description>Recent content in Rendering on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 22 Apr 2013 11:22:22 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/rendering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenGL 2D Independent Resolution Rendering</title>
+      <link>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</link>
+      <pubDate>Mon, 22 Apr 2013 11:22:22 +0000</pubDate>
+      <guid>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
+      <description>Around two years ago I made a tutorial for XNA in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.
+As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</description>
+    </item>
+    <item>
+      <title>XNA 2D Independent Resolution Rendering</title>
+      <link>https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</link>
+      <pubDate>Fri, 26 Mar 2010 22:03:31 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</guid>
+      <description>Note: 22/04/2013 – Due to popular request I made an article about achieving this effect in OpenGL
+Independent Resolution Rendering?? What’s this all about?
+Basically a way of not caring what you resolution is. Ever had Gui elements misplaced because you changed the resolution? Or getting out of the screen?
+If you are doing a game on Xna just for Xbox360 you can basically use a 1280×720 base resolution and the Xbox will scale the game for you making the proper Letterbox.</description>
+    </item>
+  </channel>
+</rss>

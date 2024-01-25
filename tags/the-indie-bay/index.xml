@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Indie Bay on David Amador</title>
+    <link>https://www.david-amador.com/tags/the-indie-bay/</link>
+    <description>Recent content in The Indie Bay on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Aug 2009 15:29:10 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/the-indie-bay/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DBP deadline is over, maybe next year.</title>
+      <link>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
+      <pubDate>Thu, 06 Aug 2009 15:29:10 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
+      <description>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.
+Meanwhile I’ve been busy making the arrangements for The Indie Bay 48 hour game development competition.
+The idea is for every entrant to make a game in 48 hours using a given theme or topic.</description>
+    </item>
+  </channel>
+</rss>

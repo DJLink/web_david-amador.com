@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Studio 2010 on David Amador</title>
+    <link>https://www.david-amador.com/tags/visual-studio-2010/</link>
+    <description>Recent content in Visual Studio 2010 on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Apr 2010 16:30:15 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/visual-studio-2010/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing the new Visual Studio 2010 features</title>
+      <link>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</link>
+      <pubDate>Tue, 13 Apr 2010 16:30:15 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</guid>
+      <description>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.
+First time I installed VS2010 was in the RC form mainly because of WP7 Developer’s Tools and XNA4.0 but haven’t made many investment in searching for new features.
+But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.</description>
+    </item>
+    <item>
+      <title>XNA 4.0 CTP and Windows Phone Developer Tools CTP now available for download</title>
+      <link>https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</link>
+      <pubDate>Mon, 15 Mar 2010 23:42:34 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</guid>
+      <description>So I was watching Microsoft Mix10 and while talking about the new Windows Phone 7 Series, Scott Guthrie announced the availability of the Windows Phone Developer Tools CTP. What? But like now now?
+I went to http://developer.windowsphone.com/ and XNA Creator’s Club and there it was. The packages contains:
+A CTP of the new Visual Studio 2010 Express for Windows Phone Tools and framework to develop Windows Phone applications and games with Silverlight A CTP of XNA Game Studio 4.</description>
+    </item>
+  </channel>
+</rss>

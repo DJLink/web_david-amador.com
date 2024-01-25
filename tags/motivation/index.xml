@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>motivation on David Amador</title>
+    <link>https://www.david-amador.com/tags/motivation/</link>
+    <description>Recent content in motivation on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 09 Mar 2011 22:27:26 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/motivation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So where is that motivation?</title>
+      <link>https://www.david-amador.com/2011/03/so-where-is-that-motivation/</link>
+      <pubDate>Wed, 09 Mar 2011 22:27:26 +0000</pubDate>
+      <guid>https://www.david-amador.com/2011/03/so-where-is-that-motivation/</guid>
+      <description>I follow a couple of dev blogs, some are game developers, others make websites or software.
+In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.
+Happens to me too, heck it happens to everyone once in a while…
+It’s something that happens usually half way though or after you get the initial prototype running.</description>
+    </item>
+  </channel>
+</rss>

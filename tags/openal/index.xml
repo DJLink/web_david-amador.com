@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>openal on David Amador</title>
+    <link>https://www.david-amador.com/tags/openal/</link>
+    <description>Recent content in openal on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 29 Jan 2012 19:56:20 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/openal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Engine, video player and tools, tools tools!</title>
+      <link>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</link>
+      <pubDate>Sun, 29 Jan 2012 19:56:20 +0000</pubDate>
+      <guid>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</guid>
+      <description>So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.
+Taking a rest between some more complex game mechanisms I decided to start doing a video player.
+After a bit research I decided to choose theora, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&amp;gt;RGB(A) conversion and because of video/audio sync.</description>
+    </item>
+    <item>
+      <title>Playing sound using OpenAL</title>
+      <link>https://www.david-amador.com/2011/06/playing-sound-using-openal/</link>
+      <pubDate>Fri, 10 Jun 2011 09:22:26 +0000</pubDate>
+      <guid>https://www.david-amador.com/2011/06/playing-sound-using-openal/</guid>
+      <description>For sound I use OpenAL, it’s free, cross-platform, I’ve managed to get it working on iPhone, Windows and Mac.
+Setting up OpenAL to play a sound is pretty straight forward, a bit like OpenGL.
+First you need to create a context.
+&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;ALCcontext *context; ALCdevice *device; device = alcOpenDevice(NULL, ALC_DEFAULT_DEVICE_SPECIFIER); if (device == NULL) { // Handle Exception } //Create a context context=alcCreateContext(device,NULL); //Set active context alcMakeContextCurrent(context); // Clear Error Code alGetError(); Now for the second part, loading a wav file.</description>
+    </item>
+  </channel>
+</rss>

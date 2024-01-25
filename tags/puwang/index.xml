@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>puwang on David Amador</title>
+    <link>https://www.david-amador.com/tags/puwang/</link>
+    <description>Recent content in puwang on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Apr 2013 23:35:33 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/puwang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Puwang is running on PC, releasing it for free</title>
+      <link>https://www.david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</link>
+      <pubDate>Wed, 24 Apr 2013 23:35:33 +0000</pubDate>
+      <guid>https://www.david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</guid>
+      <description>Hey guys,
+Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it. Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.
+I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</description>
+    </item>
+    <item>
+      <title>Updates, development and new feed url</title>
+      <link>https://www.david-amador.com/2013/04/updates-development-and-new-feed-url/</link>
+      <pubDate>Sat, 20 Apr 2013 12:01:44 +0000</pubDate>
+      <guid>https://www.david-amador.com/2013/04/updates-development-and-new-feed-url/</guid>
+      <description>Almost 4 months without a post, this is the first time it happened.
+It was nothing in particular that held me back, I just kept postponing and, to be honest, I only write posts when I have something I really want to write about.
+Before going into the rest of the post, I would like to ask people to update my feed url on your RSS readers. I always used Feedburner to redirect feeds, and with Google Reader going down I decided to start switching, so in your new FeedsReader use this address: (&amp;lt;/feed/&amp;gt;).</description>
+    </item>
+    <item>
+      <title>Puwang is out on the App Store</title>
+      <link>https://www.david-amador.com/2012/10/puwang-is-out-on-the-app-store/</link>
+      <pubDate>Wed, 10 Oct 2012 13:05:23 +0000</pubDate>
+      <guid>https://www.david-amador.com/2012/10/puwang-is-out-on-the-app-store/</guid>
+      <description>So tonight, while I was sleeping, Puwang was approved and released on the App Store.
+I made a small gameplay video where, directly from the screen.
+and there’s another one, offscreen, on a real iDevice here
+Spread the word, buy it if you like =)
+App Store Link: http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;amp;mt=8</description>
+    </item>
+    <item>
+      <title>Puwang &amp;#8211; a 5 day work</title>
+      <link>https://www.david-amador.com/2012/09/puwang-a-5-day-work/</link>
+      <pubDate>Fri, 28 Sep 2012 20:03:40 +0000</pubDate>
+      <guid>https://www.david-amador.com/2012/09/puwang-a-5-day-work/</guid>
+      <description>Hi, how’s everyone doing?
+So this was a different week for me. It’s been a long time that I had the chance to work on a small prototype or a 48H competition because of my work on Dary’s Legend so I decided to stop for a couple of days and do something else.
+Also my cat’s been quite sick, and between the Vet and taking care of him, working on a fun project gave me more time do everything.</description>
+    </item>
+  </channel>
+</rss>

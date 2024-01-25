@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>idevblogaday on David Amador</title>
+    <link>https://www.david-amador.com/tags/idevblogaday/</link>
+    <description>Recent content in idevblogaday on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 24 Jun 2011 21:14:07 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/idevblogaday/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So what have I learned after eight months on the App Store</title>
+      <link>https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</link>
+      <pubDate>Fri, 24 Jun 2011 21:14:07 +0000</pubDate>
+      <guid>https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</guid>
+      <description>First of all I think this is my last idevblogaday post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn. Actually it’s just the 9th.
+I hope my words have somehow enriched your knowledge, in case you want to stick around just bookmark my feeds. I keep this fairly updated. Also since I’ve been working on a new game</description>
+    </item>
+    <item>
+      <title>Bringing a game from PC to iOS</title>
+      <link>https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</link>
+      <pubDate>Fri, 04 Mar 2011 11:05:11 +0000</pubDate>
+      <guid>https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</guid>
+      <description>This is my first post to http://idevblogaday.com/, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.
+I’ll start by talking a bit about how we made our PC game Vizati to iPhone. When we started, this represented our chance of making games and putting ourselves into test.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plataform on David Amador</title>
+    <link>https://www.david-amador.com/tags/plataform/</link>
+    <description>Recent content in plataform on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 13 Mar 2009 17:33:12 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/plataform/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make a Game Week</title>
+      <link>https://www.david-amador.com/2009/03/make-a-game-week/</link>
+      <pubDate>Fri, 13 Mar 2009 17:33:12 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/03/make-a-game-week/</guid>
+      <description>I work on a game creation company and this week the administration decided to give us a challenge, to make a game. Using whatever tools we want to whatever platform we like.
+After we got divided between 4 teams the challenge was to make every minute count. My team got composed by me (programmer), a designer and a person from man resources. Of course I was going to handle every bit of code, the designer the art and the third person the level design and documentation.</description>
+    </item>
+  </channel>
+</rss>

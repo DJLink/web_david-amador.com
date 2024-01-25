@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tiling on David Amador</title>
+    <link>https://www.david-amador.com/tags/tiling/</link>
+    <description>Recent content in tiling on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 19 Apr 2010 21:57:12 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/tiling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Big Grass Tiled Backgrounds in XNA</title>
+      <link>https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/</link>
+      <pubDate>Mon, 19 Apr 2010 21:57:12 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/</guid>
+      <description>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:
+I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?
+My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.</description>
+    </item>
+  </channel>
+</rss>

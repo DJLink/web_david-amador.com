@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sapphire on David Amador</title>
+    <link>https://www.david-amador.com/tags/sapphire/</link>
+    <description>Recent content in Sapphire on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 May 2011 12:40:29 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/sapphire/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Time for some new tools and editor</title>
+      <link>https://www.david-amador.com/2011/05/time-for-some-new-tools-and-editor/</link>
+      <pubDate>Fri, 27 May 2011 12:40:29 +0000</pubDate>
+      <guid>https://www.david-amador.com/2011/05/time-for-some-new-tools-and-editor/</guid>
+      <description>Holy cow, this is my 100th post. “Insert epic sentence”
+Depending on how much time you follow my blog or Different Pixel activity you may know that we have an internal Editor called Sapphire
+Past
+It was developed over a year ago with the intent of being a “All in one” 2D game editor for our games, built on XNA. It started out pretty well and I’m very happy with the outcome.</description>
+    </item>
+    <item>
+      <title>Updates about Different Pixel and Sapphire</title>
+      <link>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
+      <pubDate>Wed, 30 Dec 2009 22:59:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
+      <description>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.
+I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry.</description>
+    </item>
+    <item>
+      <title>Basalt and Sapphire Updates</title>
+      <link>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
+      <pubDate>Wed, 02 Dec 2009 21:38:11 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
+      <description>Lately all my free time has been spent adding new features to Basalt and developing Sapphire.
+Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.
+Here’s a screenshot of the previous alpha version:</description>
+    </item>
+    <item>
+      <title>Xna 2d Engine</title>
+      <link>https://www.david-amador.com/2009/08/xna-2d-engine/</link>
+      <pubDate>Fri, 14 Aug 2009 13:39:14 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/08/xna-2d-engine/</guid>
+      <description>Lately whenever I’m off work and I have the time I’ve been working on a 2d Engine in XNA. We named it Basalt.
+Cool hum? lol
+I have almost everything done, since sprites, to sprite animations, scenes, layers, resolution independent engine, game state and a lot of other cool things.
+On a recent post I’ve showed a 4 split screen prototype, that was made in Basalt.
+Also I’ve been working, even though on a slower pace on Shappire, the editor and a sprite sheet editor, for the animations etc.</description>
+    </item>
+  </channel>
+</rss>

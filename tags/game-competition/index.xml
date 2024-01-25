@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game Competition on David Amador</title>
+    <link>https://www.david-amador.com/tags/game-competition/</link>
+    <description>Recent content in Game Competition on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Aug 2018 15:02:38 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/game-competition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Made a small game for Ludum Dare 42</title>
+      <link>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</link>
+      <pubDate>Tue, 14 Aug 2018 15:02:38 +0000</pubDate>
+      <guid>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</guid>
+      <description>Hey,
+It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.
+But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.</description>
+    </item>
+    <item>
+      <title>Game Competition</title>
+      <link>https://www.david-amador.com/2009/09/game-competition/</link>
+      <pubDate>Thu, 17 Sep 2009 11:24:14 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/09/game-competition/</guid>
+      <description>Some time ago I decided to launch a new website with a 48h Game Competition.
+We are now 2 days away from the Compo#1. This is for every indie game developer wannabe =)
+[Edit]
+The first competition is now over. Check the results here
+One of the games made in the competition</description>
+    </item>
+    <item>
+      <title>DBP deadline is over, maybe next year.</title>
+      <link>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
+      <pubDate>Thu, 06 Aug 2009 15:29:10 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
+      <description>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.
+Meanwhile I’ve been busy making the arrangements for The Indie Bay 48 hour game development competition.
+The idea is for every entrant to make a game in 48 hours using a given theme or topic.</description>
+    </item>
+  </channel>
+</rss>

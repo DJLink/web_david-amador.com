@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c&#43;&#43; on David Amador</title>
+    <link>https://www.david-amador.com/tags/c&#43;&#43;/</link>
+    <description>Recent content in c&#43;&#43; on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 22 Apr 2013 11:22:22 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenGL 2D Independent Resolution Rendering</title>
+      <link>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</link>
+      <pubDate>Mon, 22 Apr 2013 11:22:22 +0000</pubDate>
+      <guid>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
+      <description>Around two years ago I made a tutorial for XNA in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.
+As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</description>
+    </item>
+    <item>
+      <title>Detecting C&#43;&#43; memory leaks in Visual Studio &amp;#8211; again</title>
+      <link>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</link>
+      <pubDate>Sun, 03 Jun 2012 20:00:01 +0000</pubDate>
+      <guid>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</guid>
+      <description>I made a small post about detecting C++ memory leaks in Visual Studio in 2010. At the time that seemed to suffice, but some months ago someone told me about Visual Leak Detector and boy does it work.
+According to the website itself
+Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
+It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</description>
+    </item>
+    <item>
+      <title>Xbox 360 Controller Input in C&#43;&#43; via XInput</title>
+      <link>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</link>
+      <pubDate>Sun, 15 Apr 2012 11:41:27 +0000</pubDate>
+      <guid>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</guid>
+      <description>So you have that Xbox360 controller laying around and want to connect it to your game?
+On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.
+First of all, you will need the DirecX 9.0+ sdk.
+The includes.
+&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt; #define WIN32_LEAN_AND_MEAN // We don&amp;#39;t want the extra stuff like MFC and such #include &amp;lt;windows&amp;gt; #include &amp;lt;xinput.</description>
+    </item>
+    <item>
+      <title>Cross-Platform engine progress</title>
+      <link>https://www.david-amador.com/2010/10/cross-platform-engine-progress/</link>
+      <pubDate>Mon, 11 Oct 2010 14:20:02 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/10/cross-platform-engine-progress/</guid>
+      <description>If you read my recent posts you know I’ve been bringing Basalt to C++.
+The plan is to support both DirectX and OpenGL render API’s and OpenGLES for iOS devices. I’m tired of porting stuff so I want to make a better framework for future projects and I’ll leave the XNA branch for Xbox360 and Windows Phone 7. I really wished I had this before.
+Since the iPhone branch is stable I move on to making it compatible with Win32 and MacOSX.</description>
+    </item>
+    <item>
+      <title>Developers log stardate 26082010</title>
+      <link>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</link>
+      <pubDate>Thu, 26 Aug 2010 19:05:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</guid>
+      <description>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.
+Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.
+Here’s a picture she took after a few adjustments.</description>
+    </item>
+    <item>
+      <title>Instance based Callbacks in C&#43;&#43;</title>
+      <link>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</link>
+      <pubDate>Wed, 14 Jul 2010 15:18:21 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</guid>
+      <description>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.
+When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.
+On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button.</description>
+    </item>
+    <item>
+      <title>How to do a Xna Log file</title>
+      <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</link>
+      <pubDate>Fri, 20 Nov 2009 10:53:13 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
+      <description>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.
+Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</description>
+    </item>
+    <item>
+      <title>Building an 2D Game Engine in XNA &amp;#8211; Part 1</title>
+      <link>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</link>
+      <pubDate>Fri, 16 Oct 2009 18:10:09 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</guid>
+      <description>I decided to starting writing a series of tutorials for building an 2d XNA game engine.
+Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.
+It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
+Requirements:
+You must have some Object Oriented Programming background to full understand what we will do here.</description>
+    </item>
+    <item>
+      <title>Cloning Objects in C#</title>
+      <link>https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/</link>
+      <pubDate>Mon, 12 Oct 2009 20:21:49 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/</guid>
+      <description>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:
+&amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt; using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).</description>
+    </item>
+    <item>
+      <title>The amazing lands of C&#43;&#43;</title>
+      <link>https://www.david-amador.com/2009/10/the-amazing-lands-of-cpp/</link>
+      <pubDate>Mon, 05 Oct 2009 16:16:56 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/10/the-amazing-lands-of-cpp/</guid>
+      <description>I’m sure every programmer will like this</description>
+    </item>
+  </channel>
+</rss>

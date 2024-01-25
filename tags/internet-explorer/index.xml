@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internet Explorer on David Amador</title>
+    <link>https://www.david-amador.com/tags/internet-explorer/</link>
+    <description>Recent content in Internet Explorer on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 21 Oct 2009 22:06:57 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/internet-explorer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test your website on multiple browsers</title>
+      <link>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</link>
+      <pubDate>Wed, 21 Oct 2009 22:06:57 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
+      <description>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</description>
+    </item>
+  </channel>
+</rss>
