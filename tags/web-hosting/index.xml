@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web Hosting on David Amador</title>
-    <link>https://www.david-amador.com/tags/web-hosting/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/web-hosting/</link>
     <description>Recent content in Web Hosting on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 29 May 2009 13:59:35 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/web-hosting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/web-hosting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Server move</title>
-      <link>https://www.david-amador.com/2009/05/server-move/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/05/server-move/</link>
       <pubDate>Fri, 29 May 2009 13:59:35 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/05/server-move/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/05/server-move/</guid>
       <description>It’s been awhile since I last posted something here. Mostly because since my laptop fried I’ve been on a slower pace. I still couldn’t find any compatible hdd with my acer 2001 and Acer Portugal wasn’t been very helpfull.
 So last week I began migrating our server to another host provider, I got tired of down times and processes eating up all cpu, and finally about two months ago the server crashed and all information got lost.</description>
     </item>

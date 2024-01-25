@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>iphonedev on David Amador</title>
-    <link>https://www.david-amador.com/tags/iphonedev/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/iphonedev/</link>
     <description>Recent content in iphonedev on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 18 Mar 2011 10:06:24 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/iphonedev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/iphonedev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Loading images into OpenGL in iPhone</title>
-      <link>https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</link>
       <pubDate>Fri, 18 Mar 2011 10:06:24 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</guid>
       <description>So you can’t make a game without images, right? Well, actually you can but that’s another story.
 But how can you load a jpg or a png and use then on OpenGLES?
 First let’s make a simple class Texture2D
@@ -25,9 +25,9 @@ First let’s make a simple class Texture2D
     </item>
     <item>
       <title>Vizati for iPhone is now available at App Store</title>
-      <link>https://www.david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/</link>
       <pubDate>Wed, 06 Oct 2010 17:33:43 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/</guid>
       <description>People who follow me on twitter are probably aware, or maybe not:
 After 3 months tacking an iPhone port it was finally approved by Apple to the App store and it’s on sale today!!!
 Hypnotizing start…
@@ -41,9 +41,9 @@ I’ve searched some forums and found some talking about it and that they liked,
     </item>
     <item>
       <title>Setting OpenGL view for iPhone 4 retina hi resolution</title>
-      <link>https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</link>
       <pubDate>Fri, 10 Sep 2010 09:24:23 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</guid>
       <description>This had me scratching my head for awhile.
 At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.
 A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.
@@ -51,9 +51,9 @@ To properly simulate older games resolutions iOS will replace each of your 320×
     </item>
     <item>
       <title>Targetting iOS devices hardware</title>
-      <link>https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/09/targetting-ios-devices-hardware/</link>
       <pubDate>Wed, 08 Sep 2010 12:01:37 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/09/targetting-ios-devices-hardware/</guid>
       <description>I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.
 This covers iPhones, iPod Touches and iPad.
 iPhone/iPhone 3G – 412 MHz / 128MB / 320×480
@@ -64,18 +64,18 @@ iPod Touch 2G – 532 MHz / 128MB / 320×480</description>
     </item>
     <item>
       <title>iPhone OpenGL screen orientation using the accelerometer</title>
-      <link>https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</link>
       <pubDate>Fri, 27 Aug 2010 14:49:39 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</guid>
       <description>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.
 Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.
 I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.</description>
     </item>
     <item>
       <title>Developers log stardate 26082010</title>
-      <link>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/08/developers-log-stardate-26082010/</link>
       <pubDate>Thu, 26 Aug 2010 19:05:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/08/developers-log-stardate-26082010/</guid>
       <description>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.
 Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.
 Here’s a picture she took after a few adjustments.</description>

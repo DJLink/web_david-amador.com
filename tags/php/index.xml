@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PHP on David Amador</title>
-    <link>https://www.david-amador.com/tags/php/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/php/</link>
     <description>Recent content in PHP on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 22 Oct 2009 16:38:09 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PHP Optimization Tips</title>
-      <link>https://www.david-amador.com/2009/10/php-optimization-tips/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/php-optimization-tips/</link>
       <pubDate>Thu, 22 Oct 2009 16:38:09 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/php-optimization-tips/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/php-optimization-tips/</guid>
       <description>As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.
 Loop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times.</description>
     </item>

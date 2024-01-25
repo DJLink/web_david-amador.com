@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>csharp on David Amador</title>
-    <link>https://www.david-amador.com/tags/csharp/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/csharp/</link>
     <description>Recent content in csharp on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 10 Oct 2010 23:37:04 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Isolated Storage to save/load files on Windows Phone 7</title>
-      <link>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</link>
       <pubDate>Sun, 10 Oct 2010 23:37:04 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</guid>
       <description>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.
 You can use IsolatedStorage for that
 &amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt; using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
@@ -25,26 +25,26 @@ You can use IsolatedStorage for that
     </item>
     <item>
       <title>A good Reference system can help your game</title>
-      <link>https://www.david-amador.com/2010/06/a-good-reference-system-can-help-your-game/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/06/a-good-reference-system-can-help-your-game/</link>
       <pubDate>Sun, 06 Jun 2010 09:49:36 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/06/a-good-reference-system-can-help-your-game/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/06/a-good-reference-system-can-help-your-game/</guid>
       <description>How many times has it happened where you have this one class, let’s say it’s a spaceship that was destroyed.
 Now you have tell all other dependent objects that she died, any independent sprite animation class, AI, etc etc because they were relying on her. Another thing is, in my case, having a scene that contains all the objects and by deleting the ship It won’t get removed from the scene, keeping the reference alive and so Garbage collector won’t kick in.</description>
     </item>
     <item>
       <title>Write better code using FxCop</title>
-      <link>https://www.david-amador.com/2010/03/write-better-code-using-fxcop/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/03/write-better-code-using-fxcop/</link>
       <pubDate>Thu, 18 Mar 2010 10:32:52 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/03/write-better-code-using-fxcop/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/03/write-better-code-using-fxcop/</guid>
       <description>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.
 For those who don’t know you can download it here and read the MSDN documentation here.
 FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</description>
     </item>
     <item>
       <title>C# foreach VS for loop</title>
-      <link>https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/12/csharp-foreach-vs-for-loop/</link>
       <pubDate>Sat, 12 Dec 2009 18:38:33 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/12/csharp-foreach-vs-for-loop/</guid>
       <description>When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.
 Today I decided to see the differences between them:
 FOR
@@ -52,9 +52,9 @@ FOR
     </item>
     <item>
       <title>XNA Camera 2d with zoom and rotation</title>
-      <link>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</link>
       <pubDate>Mon, 12 Oct 2009 20:51:21 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</guid>
       <description>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too
 One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
 Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself.</description>

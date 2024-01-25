@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://www.david-amador.com/sitemap.xml
+Sitemap: https://djlink.github.io/web_david-amador.com/sitemap.xml

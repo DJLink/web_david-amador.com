@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>patch on David Amador</title>
-    <link>https://www.david-amador.com/tags/patch/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/patch/</link>
     <description>Recent content in patch on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 08 Dec 2014 11:40:29 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/patch/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/patch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>QoD iOS and Android update 1.1.1 released</title>
-      <link>https://www.david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</link>
       <pubDate>Mon, 08 Dec 2014 11:40:29 +0000</pubDate>
-      <guid>https://www.david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</guid>
       <description>A new patch for iOS and Android went live, v1.1.1
 There are some differences in what’s new for each one of the platforms, the biggest change being support for iPhone 6 and 6 Plus on iOS and x86 architecture support on Android.
 The reason why there are more tweaks on the iOS is because the Android version was updated more recently. After this update they are on par on features and fixes.</description>

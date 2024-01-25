@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>General Programming on David Amador</title>
-    <link>https://www.david-amador.com/categories/general-programming/</link>
+    <link>https://djlink.github.io/web_david-amador.com/categories/general-programming/</link>
     <description>Recent content in General Programming on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 03 Jun 2012 20:00:01 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/categories/general-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/categories/general-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Detecting C&#43;&#43; memory leaks in Visual Studio &amp;#8211; again</title>
-      <link>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</link>
       <pubDate>Sun, 03 Jun 2012 20:00:01 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</guid>
       <description>I made a small post about detecting C++ memory leaks in Visual Studio in 2010. At the time that seemed to suffice, but some months ago someone told me about Visual Leak Detector and boy does it work.
 According to the website itself
 Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
@@ -25,9 +25,9 @@ It’s pretty easy to use. After installing it, you just need to tell Visual C++
     </item>
     <item>
       <title>Find/Replace in Visual Studio using regular expressions</title>
-      <link>https://www.david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</link>
       <pubDate>Sat, 14 Jan 2012 21:27:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</guid>
       <description>Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.
 But today I had this function I wanted to get rid of and simple change it with a public variable.
 So I had something like this.
@@ -36,27 +36,27 @@ So I had something like this.
     </item>
     <item>
       <title>Basalt code swarm</title>
-      <link>https://www.david-amador.com/2011/12/basalt-code-swarm/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/12/basalt-code-swarm/</link>
       <pubDate>Fri, 23 Dec 2011 16:48:01 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/12/basalt-code-swarm/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/12/basalt-code-swarm/</guid>
       <description>I discovered code swarm a while ago and decided to test on my own repositories.
 This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.
 This is the result.</description>
     </item>
     <item>
       <title>Blog new look</title>
-      <link>https://www.david-amador.com/2011/03/blog-new-look/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/03/blog-new-look/</link>
       <pubDate>Tue, 22 Mar 2011 10:56:50 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/03/blog-new-look/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/03/blog-new-look/</guid>
       <description>Spent a little time giving my blog a new look. It’s not that I didn’t like the old one but sometimes it was a bit of a mess, I’ve been getting many new readers so it was time for a cleaner look.
 My main concern was getting all code posts to be readable but I think they are
 &amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P</description>
     </item>
     <item>
       <title>So where is that motivation?</title>
-      <link>https://www.david-amador.com/2011/03/so-where-is-that-motivation/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/03/so-where-is-that-motivation/</link>
       <pubDate>Wed, 09 Mar 2011 22:27:26 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/03/so-where-is-that-motivation/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/03/so-where-is-that-motivation/</guid>
       <description>I follow a couple of dev blogs, some are game developers, others make websites or software.
 In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.
 Happens to me too, heck it happens to everyone once in a while…
@@ -64,9 +64,9 @@ It’s something that happens usually half way though or after you get the initi
     </item>
     <item>
       <title>Viewing Windows Phone 7 Marketplace on the simulator</title>
-      <link>https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</link>
       <pubDate>Wed, 17 Nov 2010 23:27:04 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</guid>
       <description>Since I’m out of the countries where WP7 Marketplace is available it’s been a real pain to check out new games and most of all if Vizati was already available.
 Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂
 So searching some forums I found a neat code to check this on the simulator.
@@ -74,9 +74,9 @@ Basically create a new WP7 Silverlight App and write this main page code</descri
     </item>
     <item>
       <title>Tracking memory leaks in Visual Studio</title>
-      <link>https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</link>
       <pubDate>Tue, 19 Oct 2010 14:09:01 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</guid>
       <description>I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.
 I know there are other and better solution but this can be handy for quick findings without much hassle.
 First place this code in your entry point file, generally main.cpp inside your main() function
@@ -84,9 +84,9 @@ First place this code in your entry point file, generally main.cpp inside your m
     </item>
     <item>
       <title>Using Isolated Storage to save/load files on Windows Phone 7</title>
-      <link>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</link>
       <pubDate>Sun, 10 Oct 2010 23:37:04 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</guid>
       <description>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.
 You can use IsolatedStorage for that
 &amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt; using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
@@ -94,36 +94,36 @@ You can use IsolatedStorage for that
     </item>
     <item>
       <title>Instance based Callbacks in C&#43;&#43;</title>
-      <link>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/07/instance-based-callbacks-in-cpp/</link>
       <pubDate>Wed, 14 Jul 2010 15:18:21 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/07/instance-based-callbacks-in-cpp/</guid>
       <description>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.
 When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.
 On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button.</description>
     </item>
     <item>
       <title>Testing the new Visual Studio 2010 features</title>
-      <link>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</link>
       <pubDate>Tue, 13 Apr 2010 16:30:15 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</guid>
       <description>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.
 First time I installed VS2010 was in the RC form mainly because of WP7 Developer’s Tools and XNA4.0 but haven’t made many investment in searching for new features.
 But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.</description>
     </item>
     <item>
       <title>Write better code using FxCop</title>
-      <link>https://www.david-amador.com/2010/03/write-better-code-using-fxcop/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/03/write-better-code-using-fxcop/</link>
       <pubDate>Thu, 18 Mar 2010 10:32:52 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/03/write-better-code-using-fxcop/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/03/write-better-code-using-fxcop/</guid>
       <description>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.
 For those who don’t know you can download it here and read the MSDN documentation here.
 FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</description>
     </item>
     <item>
       <title>C# foreach VS for loop</title>
-      <link>https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/12/csharp-foreach-vs-for-loop/</link>
       <pubDate>Sat, 12 Dec 2009 18:38:33 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/12/csharp-foreach-vs-for-loop/</guid>
       <description>When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.
 Today I decided to see the differences between them:
 FOR
@@ -131,17 +131,17 @@ FOR
     </item>
     <item>
       <title>Force a wmv to download instead of opening in browser</title>
-      <link>https://www.david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</link>
       <pubDate>Fri, 30 Oct 2009 11:09:38 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</guid>
       <description>I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.
 So just place this on your .htaccess on the root of your website.</description>
     </item>
     <item>
       <title>How to make a clickable div</title>
-      <link>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/how-to-make-a-clickable-div/</link>
       <pubDate>Sun, 25 Oct 2009 19:16:12 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/how-to-make-a-clickable-div/</guid>
       <description>Making a clickable text or image is easy, just add the &amp;lt;a&amp;gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.
 The following code is for JQuery but switching it to your favorite JS framework should be very easy.
 First start by adding this to your div
@@ -149,33 +149,33 @@ First start by adding this to your div
     </item>
     <item>
       <title>PHP Optimization Tips</title>
-      <link>https://www.david-amador.com/2009/10/php-optimization-tips/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/php-optimization-tips/</link>
       <pubDate>Thu, 22 Oct 2009 16:38:09 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/php-optimization-tips/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/php-optimization-tips/</guid>
       <description>As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.
 Loop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times.</description>
     </item>
     <item>
       <title>Search and Replace in MySQL</title>
-      <link>https://www.david-amador.com/2009/10/search-and-replace-in-mysql/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/search-and-replace-in-mysql/</link>
       <pubDate>Thu, 22 Oct 2009 11:27:10 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/search-and-replace-in-mysql/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/search-and-replace-in-mysql/</guid>
       <description>I found something very handy today, search and replace on Mysql databases. You can do it on phpmyadmin or make a php script with this.
 After moving a wordpress site from server I discovered that all image links were broken because they are placed directly inside each post. They were still linking to the old server. Changing it manually would be a nightmare.
 Luckily MySql is your friend. To search and replace a text string, start up phpMyAdmin, and click on your database name that you want to run the search and replace through.</description>
     </item>
     <item>
       <title>Test your website on multiple browsers</title>
-      <link>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/test-your-website-on-multiple-browsers/</link>
       <pubDate>Wed, 21 Oct 2009 22:06:57 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
       <description>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</description>
     </item>
     <item>
       <title>How to style a blockquote with CSS</title>
-      <link>https://www.david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</link>
       <pubDate>Wed, 21 Oct 2009 12:14:53 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</guid>
       <description>Blockquotes are an easy way to make your website stand out, by indicating that you are quoting someone you give a more professional approach to you website.
 You can do this by using
 &amp;lt;pre lang=&amp;#34;html4strict&amp;#34;&amp;gt; &amp;lt;blockquote&amp;gt; Im quoting someone else&amp;lt;/blockquote&amp;gt; But it still needs a little touch, so on your css file add this.
@@ -183,31 +183,31 @@ You can do this by using
     </item>
     <item>
       <title>Cloning Objects in C#</title>
-      <link>https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/cloning-objects-in-c-sharp/</link>
       <pubDate>Mon, 12 Oct 2009 20:21:49 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/cloning-objects-in-c-sharp/</guid>
       <description>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:
 &amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt; using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).</description>
     </item>
     <item>
       <title>The amazing lands of C&#43;&#43;</title>
-      <link>https://www.david-amador.com/2009/10/the-amazing-lands-of-cpp/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/the-amazing-lands-of-cpp/</link>
       <pubDate>Mon, 05 Oct 2009 16:16:56 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/the-amazing-lands-of-cpp/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/the-amazing-lands-of-cpp/</guid>
       <description>I’m sure every programmer will like this</description>
     </item>
     <item>
       <title>Master Web Developer</title>
-      <link>https://www.david-amador.com/2009/09/master-web-developer/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/09/master-web-developer/</link>
       <pubDate>Fri, 25 Sep 2009 18:02:46 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/09/master-web-developer/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/09/master-web-developer/</guid>
       <description>I decided to take a course on Master Web Developer. It’s a 6 months course covering PHP, actionscrip, HTML, JavaScript, Ajax and more. Hopefully I’m going to fill all my gaps on web development and possibly get more and better works in this area. Also this way I can give better credibility to Different Pixel.</description>
     </item>
     <item>
       <title>Xna 2d Engine</title>
-      <link>https://www.david-amador.com/2009/08/xna-2d-engine/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/08/xna-2d-engine/</link>
       <pubDate>Fri, 14 Aug 2009 13:39:14 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/08/xna-2d-engine/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/08/xna-2d-engine/</guid>
       <description>Lately whenever I’m off work and I have the time I’ve been working on a 2d Engine in XNA. We named it Basalt.
 Cool hum? lol
 I have almost everything done, since sprites, to sprite animations, scenes, layers, resolution independent engine, game state and a lot of other cool things.
@@ -216,34 +216,34 @@ Also I’ve been working, even though on a slower pace on Shappire, the editor a
     </item>
     <item>
       <title>DBP deadline is over, maybe next year.</title>
-      <link>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
       <pubDate>Thu, 06 Aug 2009 15:29:10 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
       <description>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.
 Meanwhile I’ve been busy making the arrangements for The Indie Bay 48 hour game development competition.
 The idea is for every entrant to make a game in 48 hours using a given theme or topic.</description>
     </item>
     <item>
       <title>-moz-opacity removed from Firefox 3.5</title>
-      <link>https://www.david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</link>
       <pubDate>Thu, 02 Jul 2009 10:05:36 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</guid>
       <description>Well i just found out that Mozzila removed -moz-opacity from Firefox 3.5. It’s been deprecated for a long time and you can how replace it for the standard css property opacity.
 So something like -moz-opacity: 0.4 is now opacity: 0.4;</description>
     </item>
     <item>
       <title>Server move</title>
-      <link>https://www.david-amador.com/2009/05/server-move/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/05/server-move/</link>
       <pubDate>Fri, 29 May 2009 13:59:35 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/05/server-move/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/05/server-move/</guid>
       <description>It’s been awhile since I last posted something here. Mostly because since my laptop fried I’ve been on a slower pace. I still couldn’t find any compatible hdd with my acer 2001 and Acer Portugal wasn’t been very helpfull.
 So last week I began migrating our server to another host provider, I got tired of down times and processes eating up all cpu, and finally about two months ago the server crashed and all information got lost.</description>
     </item>
     <item>
       <title>WordPress Gallery</title>
-      <link>https://www.david-amador.com/2009/04/wordpress-gallery/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/04/wordpress-gallery/</link>
       <pubDate>Wed, 22 Apr 2009 10:43:35 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/04/wordpress-gallery/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/04/wordpress-gallery/</guid>
       <description>During my efforts to combine Rita’s website to wordpress and with a cool gallery I came up with a few problems.
 Mainly because the top navigation bar was built using J-Query, which I’ve already made quite some time ago, and even after switching to mootools I didn’t want to be rebuilding it again.
 So yesterday after a few searches I managed to install NextGen gallery plugin for wordpress and using LightBox for popups.</description>

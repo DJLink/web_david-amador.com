@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>callbacks on David Amador</title>
-    <link>https://www.david-amador.com/tags/callbacks/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/callbacks/</link>
     <description>Recent content in callbacks on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 14 Jul 2010 15:18:21 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/callbacks/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/callbacks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Instance based Callbacks in C&#43;&#43;</title>
-      <link>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/07/instance-based-callbacks-in-cpp/</link>
       <pubDate>Wed, 14 Jul 2010 15:18:21 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/07/instance-based-callbacks-in-cpp/</guid>
       <description>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.
 When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.
 On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button.</description>

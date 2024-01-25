@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Particle System on David Amador</title>
-    <link>https://www.david-amador.com/tags/particle-system/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/particle-system/</link>
     <description>Recent content in Particle System on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 19 Feb 2010 11:46:26 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/particle-system/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/particle-system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>XNA Particle System 2D</title>
-      <link>https://www.david-amador.com/2010/02/xna-particle-system-2d/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/02/xna-particle-system-2d/</link>
       <pubDate>Fri, 19 Feb 2010 11:46:26 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/02/xna-particle-system-2d/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/02/xna-particle-system-2d/</guid>
       <description>It’s been a long week.
 Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.</description>
     </item>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>screen manager on David Amador</title>
-    <link>https://www.david-amador.com/tags/screen-manager/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/screen-manager/</link>
     <description>Recent content in screen manager on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Jan 2010 18:47:17 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/screen-manager/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/screen-manager/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xna Screen Manager</title>
-      <link>https://www.david-amador.com/2010/01/xna-screen-manager/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/01/xna-screen-manager/</link>
       <pubDate>Sun, 24 Jan 2010 18:47:17 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/01/xna-screen-manager/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/01/xna-screen-manager/</guid>
       <description>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.
 A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.
 I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</description>

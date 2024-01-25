@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gamedev book on David Amador</title>
-    <link>https://www.david-amador.com/tags/gamedev-book/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/gamedev-book/</link>
     <description>Recent content in gamedev book on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 17 Jul 2013 12:47:13 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/gamedev-book/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/gamedev-book/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Let&#39;s take a look at SDL Game Development book</title>
-      <link>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</link>
       <pubDate>Wed, 17 Jul 2013 12:47:13 +0000</pubDate>
-      <guid>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</guid>
       <description>I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.
 These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of SDL Game Development written by Shaun Mitchell that covers that new version.</description>
     </item>

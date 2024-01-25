@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PC on David Amador</title>
-    <link>https://www.david-amador.com/tags/pc/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/pc/</link>
     <description>Recent content in PC on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 26 May 2010 20:44:49 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/pc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/pc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Yay, my first Game as Indie Developer is almost out</title>
-      <link>https://www.david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</link>
       <pubDate>Wed, 26 May 2010 20:44:49 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</guid>
       <description>No, I’m not dead….yet…
 It’s just that I’ve been stuck on Different Pixel development dungeon for the past weeks finishing and polishing (bug hunting) my first game, Vizati.
 Most of you have been following the process and asking things every since we showed the beta version at XNA Pizza Night, after which we decided to finish the game and try to sell it to see how it goes.

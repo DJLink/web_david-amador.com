@@ -2,69 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Daily Things on David Amador</title>
-    <link>https://www.david-amador.com/categories/daily-things/</link>
+    <link>https://djlink.github.io/web_david-amador.com/categories/daily-things/</link>
     <description>Recent content in Daily Things on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Sep 2023 09:57:43 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/categories/daily-things/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/categories/daily-things/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unity enshittification round 2, moving on to custom tech.</title>
-      <link>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
       <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
-      <guid>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
       <description>After mostly a week of anxiety, for thousands and thousands of developers, Unity changed the rules again, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service.</description>
     </item>
     <item>
       <title>The Unity enshittification, proprietary tech dangers, and mostly not talking about what I&#39;m doing.</title>
-      <link>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</link>
       <pubDate>Sat, 16 Sep 2023 11:14:16 +0000</pubDate>
-      <guid>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
       <description>So this was an “eventful” week in the game dev community. Unity, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. Unity announced that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</description>
     </item>
     <item>
       <title>What is Mastodon, and why does it matter that it&#39;s decentralised?</title>
-      <link>https://www.david-amador.com/2022/11/what-is-mastodon-and-why-does-it-matter-that-its-decentralised/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2022/11/what-is-mastodon-and-why-does-it-matter-that-its-decentralised/</link>
       <pubDate>Sun, 06 Nov 2022 16:14:06 +0000</pubDate>
-      <guid>https://www.david-amador.com/2022/11/what-is-mastodon-and-why-does-it-matter-that-its-decentralised/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2022/11/what-is-mastodon-and-why-does-it-matter-that-its-decentralised/</guid>
       <description>&amp;gt; At the bottom of the article I added a couple links that help finding your Twitter following/followers on Mastodon and follow them
 With the recent Twitter purchase, change of ownership and rules, a lot of people are leaving the platform or just searching for alternatives. Among other platforms one that keeps showing up as an alternative is Mastodon, but change is always hard, some people have been on Twitter for years, so what exactly makes this any different?</description>
     </item>
     <item>
       <title>Merged personal and studio blogs into one</title>
-      <link>https://www.david-amador.com/2022/11/merged-personal-and-studio-blogs-into-one/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2022/11/merged-personal-and-studio-blogs-into-one/</link>
       <pubDate>Wed, 02 Nov 2022 20:18:06 +0000</pubDate>
-      <guid>https://www.david-amador.com/2022/11/merged-personal-and-studio-blogs-into-one/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2022/11/merged-personal-and-studio-blogs-into-one/</guid>
       <description>I have no idea how many people, if any, are still subscribed to this blog RSS feeds, but if they are, they probably saw a couple of new posts in burst yesterday, apologies.
 This happened because I decided to merge all the posts from my studio into this one for “cleaning house”. I’ve been thinking about it for a while that I have these 2 blogs mostly abandoned and it’s a shame, I used to be very active, but IRL stuff and especially Twitter and QoD launch got me busy elsewhere and I mostly abandoned blogging, which I enjoyed a lot.</description>
     </item>
     <item>
       <title>Vizati 10th anniversary and making if free.</title>
-      <link>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</link>
       <pubDate>Thu, 11 Jun 2020 11:00:00 +0000</pubDate>
-      <guid>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
       <description>&amp;gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but twitter kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.
 Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and Rita with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game.</description>
     </item>
     <item>
       <title>Some thoughts about a 4 year game dev cycle</title>
-      <link>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</link>
       <pubDate>Thu, 29 Dec 2016 12:35:49 +0000</pubDate>
-      <guid>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</guid>
       <description>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.
 It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.
 For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was Quest of Dungeons, which started development in 2013.</description>
     </item>
     <item>
       <title>year review log 2015</title>
-      <link>https://www.david-amador.com/2015/12/year-review-log-2015/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2015/12/year-review-log-2015/</link>
       <pubDate>Thu, 31 Dec 2015 12:14:54 +0000</pubDate>
-      <guid>https://www.david-amador.com/2015/12/year-review-log-2015/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2015/12/year-review-log-2015/</guid>
       <description>Can’t believe it’s almost new year again.
 It became a habit of mine to to hit pause for a couple minutes, look back, write about it and think about what’s next, this helps me to sort things out.
 Thank you
@@ -72,34 +72,34 @@ I have to start with something, a big Thank You for all the people who purchased
     </item>
     <item>
       <title>year review log 2014</title>
-      <link>https://www.david-amador.com/2014/12/year-review-log-2014/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2014/12/year-review-log-2014/</link>
       <pubDate>Wed, 31 Dec 2014 10:33:28 +0000</pubDate>
-      <guid>https://www.david-amador.com/2014/12/year-review-log-2014/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2014/12/year-review-log-2014/</guid>
       <description>WOW, 2014 is already coming to an end. Can’t even believe the amount of things that happened to me this year, some bad, some good, I decided to make a wall of text.
 This was been a great year for my game dev objectives. In January I got Quest of Dungeons approved on Steam in only 6 days, which was mind blowing, on March 25th I finally got it released, and during the rest of the year several other platforms got a port, like Linux and Android, both platforms that I never had worked before, so I learned a lot.</description>
     </item>
     <item>
       <title>I&#39;m a Xbox One developer now, QoD getting a port</title>
-      <link>https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</link>
       <pubDate>Sun, 14 Dec 2014 12:19:07 +0000</pubDate>
-      <guid>https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</guid>
       <description>So a lot has happened since my last post. Even before EGX I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.
 I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you.</description>
     </item>
     <item>
       <title>EGX 2014</title>
-      <link>https://www.david-amador.com/2014/10/egx-2014/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2014/10/egx-2014/</link>
       <pubDate>Fri, 03 Oct 2014 11:37:43 +0000</pubDate>
-      <guid>https://www.david-amador.com/2014/10/egx-2014/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2014/10/egx-2014/</guid>
       <description>I had the chance of going to EGX in London this year with Quest of Dungeons.
 The whole show lasted 4 days and it was AMAZING, met tons of players, and a lot of developers. Everyone was super friendly, so I had a lot of fun.
 This was the first time I did something like this, so it was a very good way to get feedback and talk in person with players and even some fans of the game.</description>
     </item>
     <item>
       <title>Quest of Dungeons is now available</title>
-      <link>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2014/04/quest-of-dungeons-is-now-available/</link>
       <pubDate>Sun, 06 Apr 2014 11:39:36 +0000</pubDate>
-      <guid>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2014/04/quest-of-dungeons-is-now-available/</guid>
       <description>I’m pleased to announce that Quest of Dungeons is finally out.
 I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.
 It was released on March 25th, for PC, Mac and iOS. You can get it on Steam, iOS App Store or directly from the site via Humble Store.
@@ -107,17 +107,17 @@ I released all platforms on the same day, which was something I always wanted to
     </item>
     <item>
       <title>First Macbook Pro</title>
-      <link>https://www.david-amador.com/2013/12/first-macbook-pro/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2013/12/first-macbook-pro/</link>
       <pubDate>Wed, 11 Dec 2013 11:41:20 +0000</pubDate>
-      <guid>https://www.david-amador.com/2013/12/first-macbook-pro/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2013/12/first-macbook-pro/</guid>
       <description>I’ve been developing apps on Mac for almost 2 years now. But usually it’s pretty much just a develop on Windows, boot my 2009 Mini Mac, build on XCode and deploy.
 I always wanted to give it a try at using MacOSX as the main development environment, but the mini mac is too slow and well, Visual Studio. Also I don’t like that new Windows 8 that much. I hope Win9 gets back on track, in the line of Win 7.</description>
     </item>
     <item>
       <title>A new game project and new job</title>
-      <link>https://www.david-amador.com/2013/10/a-new-game-project-and-new-job/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2013/10/a-new-game-project-and-new-job/</link>
       <pubDate>Fri, 04 Oct 2013 16:10:05 +0000</pubDate>
-      <guid>https://www.david-amador.com/2013/10/a-new-game-project-and-new-job/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2013/10/a-new-game-project-and-new-job/</guid>
       <description>Hey everyone!
 So a lot of things have happened since my last post.
 New project
@@ -125,26 +125,26 @@ I’ve been talking about this via twitter for the past few weeks but this is th
     </item>
     <item>
       <title>Let&#39;s take a look at SDL Game Development book</title>
-      <link>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</link>
       <pubDate>Wed, 17 Jul 2013 12:47:13 +0000</pubDate>
-      <guid>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</guid>
       <description>I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.
 These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of SDL Game Development written by Shaun Mitchell that covers that new version.</description>
     </item>
     <item>
       <title>Updates, development and new feed url</title>
-      <link>https://www.david-amador.com/2013/04/updates-development-and-new-feed-url/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2013/04/updates-development-and-new-feed-url/</link>
       <pubDate>Sat, 20 Apr 2013 12:01:44 +0000</pubDate>
-      <guid>https://www.david-amador.com/2013/04/updates-development-and-new-feed-url/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2013/04/updates-development-and-new-feed-url/</guid>
       <description>Almost 4 months without a post, this is the first time it happened.
 It was nothing in particular that held me back, I just kept postponing and, to be honest, I only write posts when I have something I really want to write about.
 Before going into the rest of the post, I would like to ask people to update my feed url on your RSS readers. I always used Feedburner to redirect feeds, and with Google Reader going down I decided to start switching, so in your new FeedsReader use this address: (&amp;lt;/feed/&amp;gt;).</description>
     </item>
     <item>
       <title>hasta la vista, 2012</title>
-      <link>https://www.david-amador.com/2012/12/hasta-la-vista-2012/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/12/hasta-la-vista-2012/</link>
       <pubDate>Sat, 22 Dec 2012 16:41:45 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/12/hasta-la-vista-2012/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/12/hasta-la-vista-2012/</guid>
       <description>So the world did no end, how about that?
 This is it, the last post I’ll make this year.
 It’s been a wild year, much much (probably too many) work this year.
@@ -153,24 +153,24 @@ Some recap:
     </item>
     <item>
       <title>Ati Radeon HD 4000 drivers for Windows 8, fix for slow OpenGL games, yes, including Minecraft</title>
-      <link>https://www.david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</link>
       <pubDate>Wed, 31 Oct 2012 09:02:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</guid>
       <description>I’m making this post solely for the purpose of people who can’t find a solution for this.
 If you have a Ati Radeon HD 4000 or lower like me you’ll notice that there are no drivers for Windows 8 listed when you go to the AMD website. AMD only supports Windows 8 from the 5000+. And the stock ones from Windows 8 are useless, mostly on the OpenGL side, some games won’t even load, or run really slowly, like your beloved Minecraft which uses OpenGL.</description>
     </item>
     <item>
       <title>QuakeCon 2012 &amp;#8211; John Carmack Keynote</title>
-      <link>https://www.david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</link>
       <pubDate>Sat, 04 Aug 2012 18:13:08 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</guid>
       <description>I usually don’t do this, but come on, it’s John Carmack, and this 3h30m keynote given at QuakeCon 2012 is fascinating.</description>
     </item>
     <item>
       <title>Gamedev is like a house of cards</title>
-      <link>https://www.david-amador.com/2012/07/gamedev-is-like-a-house-of-cards/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/07/gamedev-is-like-a-house-of-cards/</link>
       <pubDate>Mon, 30 Jul 2012 19:10:46 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/07/gamedev-is-like-a-house-of-cards/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/07/gamedev-is-like-a-house-of-cards/</guid>
       <description>It all starts so pretty isn’t it?
 A clean project, a quick prototype, it works! It’s beautiful.
 Now it’s time to add more features, everything is planned out, all cogs have a place to be, it goes smoothly for a while.
@@ -179,71 +179,71 @@ Eventually you do need to plug them into the game itself, and that’s when the 
     </item>
     <item>
       <title>Dary&#39;s Legend development Timelapse sample</title>
-      <link>https://www.david-amador.com/2012/07/darys-legend-development-timelapse-sample/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/07/darys-legend-development-timelapse-sample/</link>
       <pubDate>Sun, 01 Jul 2012 21:32:14 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/07/darys-legend-development-timelapse-sample/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/07/darys-legend-development-timelapse-sample/</guid>
       <description>Working on Dary’s Legend has been my daily routine so I decided to make a time lapse.
 So this is a video compiled using Chronolapse, by taking a screenshot every 60s during a couple of days while I’m working on Dary’s Legend, the new game from Different Pixel. The video is being played back at 10 real minutes per second.
 This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)</description>
     </item>
     <item>
       <title>Some thoughts about indie dev</title>
-      <link>https://www.david-amador.com/2012/02/some-thoughts-about-indie-dev/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/02/some-thoughts-about-indie-dev/</link>
       <pubDate>Thu, 23 Feb 2012 23:10:19 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/02/some-thoughts-about-indie-dev/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/02/some-thoughts-about-indie-dev/</guid>
       <description>1 – You either are, or you aren’t.
 People can go and , “I’m an aspiring indie game developer”. You are either doing games or not, period. If you are starting in development with your own money then you are one. People tend to think they are indie developers when money starts rolling in, well think again, cause money may never come.
 2 – It’s a jungle out there</description>
     </item>
     <item>
       <title>post mortem of another year</title>
-      <link>https://www.david-amador.com/2012/01/post-mortem-of-another-year/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/01/post-mortem-of-another-year/</link>
       <pubDate>Sun, 01 Jan 2012 21:43:43 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/01/post-mortem-of-another-year/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/01/post-mortem-of-another-year/</guid>
       <description>Another year has gone by, not quite what I was expecting developing wise, like putting another game out there, but things never turned out as planned.
 Still over the last year I’ve gradually saw out little Different Pixel brand reaching more and more places which can be very helpful in the future and sure hell is nice to see work recognized.
 From the top of my head I recall Kotaku article on the Xbox360 release, we finally managed to release the Xbox360 version, which was the first one we made.</description>
     </item>
     <item>
       <title>november progress</title>
-      <link>https://www.david-amador.com/2011/12/november-progress/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/12/november-progress/</link>
       <pubDate>Wed, 07 Dec 2011 17:16:26 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/12/november-progress/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/12/november-progress/</guid>
       <description>So as I mentioned a few weeks back, since November 1st I quit my job and I’ve been mainly focusing on our next game for Different Pixel.
 After a month, I think so far progress has been good. I’ve been able to work almost entirely on the game itself instead of the engine because most of the stuff is stable enough since Vizati.
 It’s kind of rewarding now and instead of reading tons of docs of other engines each time something doesn’t work right I usually know where the problem may be and can fix it, as good as I can at least.</description>
     </item>
     <item>
       <title>Rage</title>
-      <link>https://www.david-amador.com/2011/12/rage/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/12/rage/</link>
       <pubDate>Wed, 07 Dec 2011 16:47:43 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/12/rage/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/12/rage/</guid>
       <description>So being a big fan of Quake, Quake 3 Arena and Doom I was eager to get my hands on id Software latest game, Rage.
 Like most developers out there I’ve been impressed by John Carmack’s work and breakthroughs in gaming and computer graphics for years. When I first heard Rage was targeting 60FPS I got intrigued.
 Almost every game targets 30FPS and targeting twice as that leaves less time to render each frame, even more since they were promising vast wastelands, detailed characters, top notch animations and AI.</description>
     </item>
     <item>
       <title>something new in the horizon&amp;#8230;</title>
-      <link>https://www.david-amador.com/2011/10/something-new-in-the-horizon/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/10/something-new-in-the-horizon/</link>
       <pubDate>Thu, 27 Oct 2011 10:06:14 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/10/something-new-in-the-horizon/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/10/something-new-in-the-horizon/</guid>
       <description>So I’ve been out for quite some time, and this is just a quick update.
 First, I have tones of unread, thus answered emails on my inbox. I haven’t managed to go through that lately. I usually scroll to see if there’s a really urgent one, I will eventually read them all.
 I decided to quit my current job, my last day is October 31st. I couldn’t glimpse a very promising carrier there and I practically staggered learning-wise for the past months due to the type of work we develop so yeah, that’s it.</description>
     </item>
     <item>
       <title>So what have I learned after eight months on the App Store</title>
-      <link>https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</link>
       <pubDate>Fri, 24 Jun 2011 21:14:07 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</guid>
       <description>First of all I think this is my last idevblogaday post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn. Actually it’s just the 9th.
 I hope my words have somehow enriched your knowledge, in case you want to stick around just bookmark my feeds. I keep this fairly updated. Also since I’ve been working on a new game</description>
     </item>
     <item>
       <title>Indie Summer Six Pack</title>
-      <link>https://www.david-amador.com/2011/06/indie-summer-six-pack/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/06/indie-summer-six-pack/</link>
       <pubDate>Fri, 03 Jun 2011 17:54:35 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/06/indie-summer-six-pack/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/06/indie-summer-six-pack/</guid>
       <description>So this is what we at Different Pixel, together with 5 other developers have been working on, the “Indie Summer Six Pack”
 Six indie titles for just $10 – or a stonking $5, if you first share the offer via Facebook.
 How can you say no to that?
@@ -251,18 +251,18 @@ The games included are Aztaka, City Rain, Puzzlegeddon, Bob Came In Pieces, Viza
     </item>
     <item>
       <title>Indie and day job, making it work</title>
-      <link>https://www.david-amador.com/2011/05/indie-and-day-job-making-it-work/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/05/indie-and-day-job-making-it-work/</link>
       <pubDate>Fri, 13 May 2011 13:10:49 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/05/indie-and-day-job-making-it-work/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/05/indie-and-day-job-making-it-work/</guid>
       <description>A large percentage of the indie developers have to work on their project at night and/or weekends.
 In order to pay the bills they have to maintain a day job. There’s no shame in that, many do it, I do it, not everyone can make a mega jump right into fame and fortune with a single project.
 The rest of us mere mortals have to gradually build a fan base, learn from past mistakes, do better PR, etc.</description>
     </item>
     <item>
       <title>Why cheap games are hurting gaming</title>
-      <link>https://www.david-amador.com/2011/05/why-cheap-games-is-hurt-gaming/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/05/why-cheap-games-is-hurt-gaming/</link>
       <pubDate>Sat, 07 May 2011 20:03:52 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/05/why-cheap-games-is-hurt-gaming/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/05/why-cheap-games-is-hurt-gaming/</guid>
       <description>This has been discussed on thousands of forums and people way smarter than me have given reasons why selling games at $0.99 on the App Store is the future and others why it will hurt gaming and developers.
 I’m giving my opinion as both a developer and a consumer.
 As a consumer
@@ -270,27 +270,27 @@ As a consumer I feel like having thousands of games at that price and/or free ma
     </item>
     <item>
       <title>starlog 14042011</title>
-      <link>https://www.david-amador.com/2011/04/starlog-14042011/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/04/starlog-14042011/</link>
       <pubDate>Thu, 14 Apr 2011 20:05:06 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/04/starlog-14042011/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/04/starlog-14042011/</guid>
       <description>Hum…some stuff happened lately, some I can’t go into detail right now others I can.
 I was talking with Rita the other days and she had this nice idea for an iPhone game.
 It’s one of those small concepts that may or not work but I liked the general idea, at least enough to start a small prototype. If everything turns out the way I plan (never is) it should be a 2-3 weeks project.</description>
     </item>
     <item>
       <title>Blog new look</title>
-      <link>https://www.david-amador.com/2011/03/blog-new-look/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/03/blog-new-look/</link>
       <pubDate>Tue, 22 Mar 2011 10:56:50 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/03/blog-new-look/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/03/blog-new-look/</guid>
       <description>Spent a little time giving my blog a new look. It’s not that I didn’t like the old one but sometimes it was a bit of a mess, I’ve been getting many new readers so it was time for a cleaner look.
 My main concern was getting all code posts to be readable but I think they are
 &amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P</description>
     </item>
     <item>
       <title>So where is that motivation?</title>
-      <link>https://www.david-amador.com/2011/03/so-where-is-that-motivation/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/03/so-where-is-that-motivation/</link>
       <pubDate>Wed, 09 Mar 2011 22:27:26 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/03/so-where-is-that-motivation/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/03/so-where-is-that-motivation/</guid>
       <description>I follow a couple of dev blogs, some are game developers, others make websites or software.
 In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.
 Happens to me too, heck it happens to everyone once in a while…
@@ -298,9 +298,9 @@ It’s something that happens usually half way though or after you get the initi
     </item>
     <item>
       <title>Wrapping up year 2010</title>
-      <link>https://www.david-amador.com/2010/12/wrapping-up-year-2010/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/12/wrapping-up-year-2010/</link>
       <pubDate>Fri, 31 Dec 2010 15:06:46 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/12/wrapping-up-year-2010/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/12/wrapping-up-year-2010/</guid>
       <description>So another year has come to an end, time to make plans for a new one and look back on what has been done.
 This was one crazy year, where I embraced indie development as my free time “hobby”.
 This picture illustrates my year very well, dark link is a bonus since my twitter handle is DJ_Link
@@ -308,18 +308,18 @@ I’m tired, but happy and hoping that these were the first steps on something g
     </item>
     <item>
       <title>Quick update, Vizati won Microsoft XapFest</title>
-      <link>https://www.david-amador.com/2010/12/quick-update-vizati-won-microsoft-xapfest/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/12/quick-update-vizati-won-microsoft-xapfest/</link>
       <pubDate>Wed, 08 Dec 2010 20:39:19 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/12/quick-update-vizati-won-microsoft-xapfest/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/12/quick-update-vizati-won-microsoft-xapfest/</guid>
       <description>Yeahhh!!!!
 Just got an email a couple of hours ago confirming that Vizati for Windows Phone 7 won first prize on Microsoft XapFest. Here’s a link, be warned it’s in Portuguese, although it’s on the Microsoft official webpage I couldn’t figure out how to translate that to English on the website itself. Just use Google translate or so.
 This is great for us since Vizati has now 2 awards and this time the prizes are a Xbox360 + Kinect and a Windows Phone 7 device.</description>
     </item>
     <item>
       <title>My 2 cents on xblig current state</title>
-      <link>https://www.david-amador.com/2010/11/my-2-cents-on-xblig-current-state/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/11/my-2-cents-on-xblig-current-state/</link>
       <pubDate>Sun, 07 Nov 2010 18:26:13 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/11/my-2-cents-on-xblig-current-state/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/11/my-2-cents-on-xblig-current-state/</guid>
       <description>UPDATE: Pressure works, Microsoft backs down over XBLIG changes: http://www.digitalspy.co.uk/gaming/news/a286779/microsoft-backs-down-over-xblig-changes.html
 Let me start by saying that this is just a personal opinion, nothing more, nothing less.
 It was with great sadness that I saw what the latest update to the Xbox360 dashboard did to Xbox Indie Games
@@ -327,35 +327,35 @@ See? XBLIG is now on the “Speciality Shops”, right next to Avatar Marketplac
     </item>
     <item>
       <title>Super Meat Boy, meat dissection</title>
-      <link>https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/10/super-meat-boy-meat-dissection/</link>
       <pubDate>Sat, 23 Oct 2010 20:00:59 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/10/super-meat-boy-meat-dissection/</guid>
       <description>I don’t usually write reviews about games, maybe mostly because I don’t play as often as I used to. Most games today are just graphics graphics, I use super shader ray-traced lights but I forgot gameplay because I’m a tech demo.
 I grew up with a Super Nintendo playing Super Mario World and Zelda A Link to the Past, yeah shocker, no Spectrum to me :P, so I’m 2D gameplay type lover.</description>
     </item>
     <item>
       <title>Framework consideration and new projects</title>
-      <link>https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/10/framework-consideration-and-new-projects/</link>
       <pubDate>Mon, 04 Oct 2010 16:21:54 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/10/framework-consideration-and-new-projects/</guid>
       <description>Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
 Why?
 Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL.</description>
     </item>
     <item>
       <title>Another milestone reached, first App sent to Apple Store</title>
-      <link>https://www.david-amador.com/2010/09/another-milestone-reached-first-app-sent-to-apple-store/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/09/another-milestone-reached-first-app-sent-to-apple-store/</link>
       <pubDate>Wed, 15 Sep 2010 16:58:38 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/09/another-milestone-reached-first-app-sent-to-apple-store/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/09/another-milestone-reached-first-app-sent-to-apple-store/</guid>
       <description>Finally and after several weeks locked inside Different Pixel “dungeon” making my engine compatible with iOS, namely with iPhone/iPod touch I submitted today my first App to the Apple Store.
 The binary didn’t reported any issues so as of 15 September 2010 it’s “Waiting For Review”
 I have mixed feelings about either it’s going to be approved or rejected. On one hand we tested as much as we could, handed to some testers using iPhone 3, iPhone 4 and iPod touches.</description>
     </item>
     <item>
       <title>Vizati is 50% off during this week</title>
-      <link>https://www.david-amador.com/2010/08/vizati-is-50-off-during-this-week/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/08/vizati-is-50-off-during-this-week/</link>
       <pubDate>Tue, 10 Aug 2010 18:42:22 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/08/vizati-is-50-off-during-this-week/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/08/vizati-is-50-off-during-this-week/</guid>
       <description>Just a quick post.
 GamersGate is having a Summer Special and Vizati is with a 50% discount, costing $4.47 / €3.72 during this week only
 Buy your copy here and check out other awesome promotions here
@@ -363,81 +363,81 @@ This deal end up this August 15th</description>
     </item>
     <item>
       <title>Games and systems from childhood</title>
-      <link>https://www.david-amador.com/2010/08/games-and-systems-from-childhood/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/08/games-and-systems-from-childhood/</link>
       <pubDate>Sun, 08 Aug 2010 12:36:43 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/08/games-and-systems-from-childhood/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/08/games-and-systems-from-childhood/</guid>
       <description>I think the first game I ever played was Tetris on a 286 if my memory isn’t failing me.
 My father worked at restaurant nearby a small apartment rental office, one of the dudes that worked there occasionally would let me play. I remember one day he had this new game, Prince of Persia, my chin just fell, awesome,
 I thought games couldn’t get any better. I remember always asking him to “type the code to play” as I called it, since it was DOS based.</description>
     </item>
     <item>
       <title>We need XBOX Live Indie Games in Portugal!!</title>
-      <link>https://www.david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</link>
       <pubDate>Tue, 22 Jun 2010 18:41:51 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</guid>
       <description>See the little black country on the map? It’s Portugal. The green zone are countries around Portugal that have XBOX Live Indie Games. We are surrounded by countries that can place their games on Creator’s Club but we were left behind. I won’t say there aren’t many others but they can speak for themselves.
 I’m tired of watching developers from other countries being able to place their games there and we have to sit and watch.</description>
     </item>
     <item>
       <title>Who wants to try Vizati Demo?</title>
-      <link>https://www.david-amador.com/2010/06/who-wants-to-try-vizati-demo/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/06/who-wants-to-try-vizati-demo/</link>
       <pubDate>Tue, 08 Jun 2010 22:16:32 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/06/who-wants-to-try-vizati-demo/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/06/who-wants-to-try-vizati-demo/</guid>
       <description>Ok, I know I’ve been making far too much posts about Vizati but this time it’s for a good reason, anyone interested in trying out the game can do it…right about NOW…
 http://www.differentpixel.com/2010/06/vizati-demo-available/
 Also on a quick update, yesterday I had the chance to test Vizati at Windows Phone 7 Developer’s Hub on a real WP7 device, which was awesome. I want to thank João Antão, Nuno Costa, Ben Riga and Neil Hutson for the opportunity.</description>
     </item>
     <item>
       <title>Vizati wins XNA Pizza Night 2010</title>
-      <link>https://www.david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</link>
       <pubDate>Mon, 08 Mar 2010 10:14:08 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</guid>
       <description>Damn you should see my face when they told me we won the competition XNA Pizza Night 2010 at Microsoft.
 Originally we developed Vizati to enter Dream Build Play 2010. We started developing the game on the beginning of February and during that month we discovered another competition would be held near Dream Build Play deadline.
 We went there with the same demo we sent to DBP. The audience really liked the game and we got very positive feedback.</description>
     </item>
     <item>
       <title>I maed a Custom Script Language for my Xna Engine</title>
-      <link>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</link>
       <pubDate>Mon, 15 Feb 2010 00:29:42 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</guid>
       <description>Well the title is an Homage to James Silva‘s I MAED A GAM3 W1TH Z0MB1ES!!!1
 I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.</description>
     </item>
     <item>
       <title>Updates about Different Pixel and Sapphire</title>
-      <link>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
       <pubDate>Wed, 30 Dec 2009 22:59:00 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
       <description>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.
 I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry.</description>
     </item>
     <item>
       <title>munchies for Design</title>
-      <link>https://www.david-amador.com/2009/12/munchies-for-design/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/12/munchies-for-design/</link>
       <pubDate>Sat, 05 Dec 2009 08:40:54 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/12/munchies-for-design/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/12/munchies-for-design/</guid>
       <description>As most developers do I spend a lot of time programming. Most of us has made some sketches for prototyping games, yes, the ones no one else can understand except for ourselves. I always liked drawing and 3D modeling but I was never very good at it. I was just cleaning up some stuff on my pc and found a folder, god most of this stuff I made is UGLYYYY lol.</description>
     </item>
     <item>
       <title>Accelero twin turbo</title>
-      <link>https://www.david-amador.com/2009/10/accelero-twin-turbo/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/accelero-twin-turbo/</link>
       <pubDate>Sat, 24 Oct 2009 21:47:35 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/accelero-twin-turbo/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/accelero-twin-turbo/</guid>
       <description>Because my Ati Radeon 4890 fan fried I had to buy another cooler. After a little research I discovered Artic Accelero Twin Turbo. Today I decided to finally try it. The assembly is rather easy, the package comes with several heatsinks for memories, and of course the fans themselves. There are three ways to connect the fans, either directly to the VGA card itself, directly to the PSU with 7V or 12V.</description>
     </item>
     <item>
       <title>How To Speed Up Firefox 3</title>
-      <link>https://www.david-amador.com/2009/10/how-to-speed-up-firefox-3/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/how-to-speed-up-firefox-3/</link>
       <pubDate>Mon, 12 Oct 2009 21:22:27 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/how-to-speed-up-firefox-3/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/how-to-speed-up-firefox-3/</guid>
       <description>I decided to try Google Chrome today and was pleasantly surprised with it’s speed on loading pages. And I started seeing how slow my Firefox was. At first I thought that it might have something to do with the plugins I have, but then again they are very few, just Echofon, Firebug and Xmarks. So after a little digging I came up with a way to speed up Firefox 3, turn out it was all in the options =)</description>
     </item>
     <item>
       <title>Programmers are tiny gods</title>
-      <link>https://www.david-amador.com/2009/10/programmers-are-tiny-gods/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/programmers-are-tiny-gods/</link>
       <pubDate>Sat, 10 Oct 2009 20:20:05 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/programmers-are-tiny-gods/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/programmers-are-tiny-gods/</guid>
       <description>I’ve found this picture on the internet and also an interesting and funny article regarding Programmers/Designers relation on work.
 I’ve already talked about designers and how their critique training makes them impossible to work with.
 Luckily the designer I work with knows me well and knows how to make me want to fix that, but not pointing the obvious, issuing orders…
@@ -446,48 +446,48 @@ A good tactic is to have parameters, request help</description>
     </item>
     <item>
       <title>Stargate</title>
-      <link>https://www.david-amador.com/2009/09/stargate/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/09/stargate/</link>
       <pubDate>Tue, 15 Sep 2009 15:56:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/09/stargate/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/09/stargate/</guid>
       <description>Ok so I got addicted to Stargate Atlantis as well. After watching all 10 seasons from SG-1 I decided to give it a try to Atlantis. I was not convinced that it would be a good show, but the it’s awesome. Atlantis starts around season 8 of SG-1 when Daniel Jackson figures the location of the lost city of Atlantis.
 Atlantis follows the adventures of a team that goes to Atlantis and being on another galaxy they only have power for one trip so it’s a one way trip only.</description>
     </item>
     <item>
       <title>28 Weeks later</title>
-      <link>https://www.david-amador.com/2009/08/28-weeks-later/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/08/28-weeks-later/</link>
       <pubDate>Thu, 27 Aug 2009 20:22:40 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/08/28-weeks-later/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/08/28-weeks-later/</guid>
       <description>I watched a really nice movie today, 28 Weeks Later.
 I didn’t know anything about the movie so I got rather disappointed with the first 5-10 minutes. When the zombies showed up I thought to myself “not another zombie movie, are this guys out of ideas?” I sticked to see where it the plot was heading, and got a really nice surprise. After the initial outbreak in great Britain, the infected start to starve and they die eventually, so the movie starts 28 weeks later, when the general population starts returning to a safe zone called District One.</description>
     </item>
     <item>
       <title>New Graphic Card and psu</title>
-      <link>https://www.david-amador.com/2009/06/new-graphic-card-and-psu/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/06/new-graphic-card-and-psu/</link>
       <pubDate>Mon, 08 Jun 2009 11:15:46 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/06/new-graphic-card-and-psu/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/06/new-graphic-card-and-psu/</guid>
       <description>I decided to buy another a new graphic card. I got tired of my old Geforce 8500 GT sloweness. It was slow on 3dsmax, it was slow on recent games and most of all I have this thing for Ati so this was never my favorite.
 After some research I decided to get a XFX Ati Radeon 4890, most of the reviews were positive and its placed in a mid-range pricing.</description>
     </item>
     <item>
       <title>Server move</title>
-      <link>https://www.david-amador.com/2009/05/server-move/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/05/server-move/</link>
       <pubDate>Fri, 29 May 2009 13:59:35 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/05/server-move/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/05/server-move/</guid>
       <description>It’s been awhile since I last posted something here. Mostly because since my laptop fried I’ve been on a slower pace. I still couldn’t find any compatible hdd with my acer 2001 and Acer Portugal wasn’t been very helpfull.
 So last week I began migrating our server to another host provider, I got tired of down times and processes eating up all cpu, and finally about two months ago the server crashed and all information got lost.</description>
     </item>
     <item>
       <title>R.I.P. laptop hdd</title>
-      <link>https://www.david-amador.com/2009/05/rip-laptop-hdd/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/05/rip-laptop-hdd/</link>
       <pubDate>Mon, 04 May 2009 16:01:01 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/05/rip-laptop-hdd/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/05/rip-laptop-hdd/</guid>
       <description>This weekend was a longer one, 3 days =) but still it was a bad weekend. My old acer aspire 2000 died on me. I was starting to watch a movie when a sudden blue screen pop up. I tryed to reboot it but with no success, the problem? The hard drive is broken, when I boot it starts to make this strange mechanicall sounds and the hdd isn’t showing on the bios.</description>
     </item>
     <item>
       <title>Window of Opportunity</title>
-      <link>https://www.david-amador.com/2009/02/window-of-opportunity/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/02/window-of-opportunity/</link>
       <pubDate>Tue, 24 Feb 2009 17:46:10 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/02/window-of-opportunity/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/02/window-of-opportunity/</guid>
       <description>I started watching Stargate SG-1 on the beginning of this year, I’ve already had seen Season one, but it was almost 10 years ago so I decided to see from start.
 I’m in the middle of season 4 and last weekend I saw what may well be the most funny episode of all, Window of Opportunity.
 On this episode O’Neill and Teal’c get trapped on an endless loop, were events keep repeating themselves so, without any consequences to think on they decided to take the best of that time.</description>

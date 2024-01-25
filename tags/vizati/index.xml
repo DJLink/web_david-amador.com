@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vizati on David Amador</title>
-    <link>https://www.david-amador.com/tags/vizati/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/vizati/</link>
     <description>Recent content in Vizati on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 11 Jun 2020 11:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/vizati/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/vizati/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vizati 10th anniversary and making if free.</title>
-      <link>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</link>
       <pubDate>Thu, 11 Jun 2020 11:00:00 +0000</pubDate>
-      <guid>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
       <description>&amp;gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but twitter kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.
 Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and Rita with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game.</description>
     </item>
     <item>
       <title>Indie Summer Six Pack</title>
-      <link>https://www.david-amador.com/2011/06/indie-summer-six-pack/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/06/indie-summer-six-pack/</link>
       <pubDate>Fri, 03 Jun 2011 17:54:35 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/06/indie-summer-six-pack/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/06/indie-summer-six-pack/</guid>
       <description>So this is what we at Different Pixel, together with 5 other developers have been working on, the “Indie Summer Six Pack”
 Six indie titles for just $10 – or a stonking $5, if you first share the offer via Facebook.
 How can you say no to that?
@@ -33,26 +33,26 @@ The games included are Aztaka, City Rain, Puzzlegeddon, Bob Came In Pieces, Viza
     </item>
     <item>
       <title>Bringing a game from PC to iOS</title>
-      <link>https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</link>
       <pubDate>Fri, 04 Mar 2011 11:05:11 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</guid>
       <description>This is my first post to http://idevblogaday.com/, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.
 I’ll start by talking a bit about how we made our PC game Vizati to iPhone. When we started, this represented our chance of making games and putting ourselves into test.</description>
     </item>
     <item>
       <title>officially a Mac developer too, wait, what?</title>
-      <link>https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</link>
       <pubDate>Tue, 11 Jan 2011 01:10:44 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</guid>
       <description>It’s little over a month since I said I wouldn’t do any more porting for Vizati. Lesson learned, don’t say never again…
 When I started making the engine in C++ with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.
 Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish.</description>
     </item>
     <item>
       <title>Vizati is 50% off during this week</title>
-      <link>https://www.david-amador.com/2010/08/vizati-is-50-off-during-this-week/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/08/vizati-is-50-off-during-this-week/</link>
       <pubDate>Tue, 10 Aug 2010 18:42:22 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/08/vizati-is-50-off-during-this-week/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/08/vizati-is-50-off-during-this-week/</guid>
       <description>Just a quick post.
 GamersGate is having a Summer Special and Vizati is with a 50% discount, costing $4.47 / €3.72 during this week only
 Buy your copy here and check out other awesome promotions here
@@ -60,18 +60,18 @@ This deal end up this August 15th</description>
     </item>
     <item>
       <title>Who wants to try Vizati Demo?</title>
-      <link>https://www.david-amador.com/2010/06/who-wants-to-try-vizati-demo/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/06/who-wants-to-try-vizati-demo/</link>
       <pubDate>Tue, 08 Jun 2010 22:16:32 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/06/who-wants-to-try-vizati-demo/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/06/who-wants-to-try-vizati-demo/</guid>
       <description>Ok, I know I’ve been making far too much posts about Vizati but this time it’s for a good reason, anyone interested in trying out the game can do it…right about NOW…
 http://www.differentpixel.com/2010/06/vizati-demo-available/
 Also on a quick update, yesterday I had the chance to test Vizati at Windows Phone 7 Developer’s Hub on a real WP7 device, which was awesome. I want to thank João Antão, Nuno Costa, Ben Riga and Neil Hutson for the opportunity.</description>
     </item>
     <item>
       <title>Yay, my first Game as Indie Developer is almost out</title>
-      <link>https://www.david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</link>
       <pubDate>Wed, 26 May 2010 20:44:49 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</guid>
       <description>No, I’m not dead….yet…
 It’s just that I’ve been stuck on Different Pixel development dungeon for the past weeks finishing and polishing (bug hunting) my first game, Vizati.
 Most of you have been following the process and asking things every since we showed the beta version at XNA Pizza Night, after which we decided to finish the game and try to sell it to see how it goes.
@@ -79,27 +79,27 @@ Three months later and here I am, making the final touches on the game before it
     </item>
     <item>
       <title>Vizati on Windows Phone 7</title>
-      <link>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
       <pubDate>Fri, 07 May 2010 20:41:09 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
       <description>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.
 This week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.
 I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.</description>
     </item>
     <item>
       <title>Vizati wins XNA Pizza Night 2010</title>
-      <link>https://www.david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</link>
       <pubDate>Mon, 08 Mar 2010 10:14:08 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</guid>
       <description>Damn you should see my face when they told me we won the competition XNA Pizza Night 2010 at Microsoft.
 Originally we developed Vizati to enter Dream Build Play 2010. We started developing the game on the beginning of February and during that month we discovered another competition would be held near Dream Build Play deadline.
 We went there with the same demo we sent to DBP. The audience really liked the game and we got very positive feedback.</description>
     </item>
     <item>
       <title>Vizati Teaser</title>
-      <link>https://www.david-amador.com/2010/02/vizati-teaser/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/02/vizati-teaser/</link>
       <pubDate>Sun, 28 Feb 2010 23:50:15 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/02/vizati-teaser/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/02/vizati-teaser/</guid>
       <description>Rita and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.
 Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color.</description>
     </item>

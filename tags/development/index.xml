@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>development on David Amador</title>
-    <link>https://www.david-amador.com/tags/development/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/development/</link>
     <description>Recent content in development on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 29 Dec 2016 12:35:49 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Some thoughts about a 4 year game dev cycle</title>
-      <link>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</link>
       <pubDate>Thu, 29 Dec 2016 12:35:49 +0000</pubDate>
-      <guid>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</guid>
       <description>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.
 It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.
 For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was Quest of Dungeons, which started development in 2013.</description>
     </item>
     <item>
       <title>Dary&#39;s Legend development Timelapse sample</title>
-      <link>https://www.david-amador.com/2012/07/darys-legend-development-timelapse-sample/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/07/darys-legend-development-timelapse-sample/</link>
       <pubDate>Sun, 01 Jul 2012 21:32:14 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/07/darys-legend-development-timelapse-sample/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/07/darys-legend-development-timelapse-sample/</guid>
       <description>Working on Dary’s Legend has been my daily routine so I decided to make a time lapse.
 So this is a video compiled using Chronolapse, by taking a screenshot every 60s during a couple of days while I’m working on Dary’s Legend, the new game from Different Pixel. The video is being played back at 10 real minutes per second.
 This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)</description>

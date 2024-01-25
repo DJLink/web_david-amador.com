@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>code analysis tools on David Amador</title>
-    <link>https://www.david-amador.com/tags/code-analysis-tools/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/code-analysis-tools/</link>
     <description>Recent content in code analysis tools on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 18 Mar 2010 10:32:52 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/code-analysis-tools/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/code-analysis-tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Write better code using FxCop</title>
-      <link>https://www.david-amador.com/2010/03/write-better-code-using-fxcop/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/03/write-better-code-using-fxcop/</link>
       <pubDate>Thu, 18 Mar 2010 10:32:52 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/03/write-better-code-using-fxcop/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/03/write-better-code-using-fxcop/</guid>
       <description>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.
 For those who don’t know you can download it here and read the MSDN documentation here.
 FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</description>

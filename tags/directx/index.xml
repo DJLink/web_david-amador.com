@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>directX on David Amador</title>
-    <link>https://www.david-amador.com/tags/directx/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/directx/</link>
     <description>Recent content in directX on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 11 Jan 2015 15:20:42 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/directx/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/directx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>QoD XO devlog 2</title>
-      <link>https://www.david-amador.com/2015/01/qod-xo-devlog-2/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2015/01/qod-xo-devlog-2/</link>
       <pubDate>Sun, 11 Jan 2015 15:20:42 +0000</pubDate>
-      <guid>https://www.david-amador.com/2015/01/qod-xo-devlog-2/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2015/01/qod-xo-devlog-2/</guid>
       <description>I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.
 Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere.</description>
     </item>
     <item>
       <title>Xbox 360 Controller Input in C&#43;&#43; via XInput</title>
-      <link>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</link>
       <pubDate>Sun, 15 Apr 2012 11:41:27 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</guid>
       <description>So you have that Xbox360 controller laying around and want to connect it to your game?
 On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.
 First of all, you will need the DirecX 9.0+ sdk.

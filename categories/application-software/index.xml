@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Application &amp; Software on David Amador</title>
-    <link>https://www.david-amador.com/categories/application-software/</link>
+    <link>https://djlink.github.io/web_david-amador.com/categories/application-software/</link>
     <description>Recent content in Application &amp; Software on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Oct 2012 09:02:55 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/categories/application-software/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/categories/application-software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ati Radeon HD 4000 drivers for Windows 8, fix for slow OpenGL games, yes, including Minecraft</title>
-      <link>https://www.david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</link>
       <pubDate>Wed, 31 Oct 2012 09:02:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</guid>
       <description>I’m making this post solely for the purpose of people who can’t find a solution for this.
 If you have a Ati Radeon HD 4000 or lower like me you’ll notice that there are no drivers for Windows 8 listed when you go to the AMD website. AMD only supports Windows 8 from the 5000+. And the stock ones from Windows 8 are useless, mostly on the OpenGL side, some games won’t even load, or run really slowly, like your beloved Minecraft which uses OpenGL.</description>
     </item>
     <item>
       <title>Detecting C&#43;&#43; memory leaks in Visual Studio &amp;#8211; again</title>
-      <link>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</link>
       <pubDate>Sun, 03 Jun 2012 20:00:01 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</guid>
       <description>I made a small post about detecting C++ memory leaks in Visual Studio in 2010. At the time that seemed to suffice, but some months ago someone told me about Visual Leak Detector and boy does it work.
 According to the website itself
 Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
@@ -33,9 +33,9 @@ It’s pretty easy to use. After installing it, you just need to tell Visual C++
     </item>
     <item>
       <title>How to Restore the Windows 7 MBR (Master Boot Record)</title>
-      <link>https://www.david-amador.com/2012/01/how-to-restore-the-windows-7-mbr-master-boot-record/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2012/01/how-to-restore-the-windows-7-mbr-master-boot-record/</link>
       <pubDate>Sat, 21 Jan 2012 10:43:50 +0000</pubDate>
-      <guid>https://www.david-amador.com/2012/01/how-to-restore-the-windows-7-mbr-master-boot-record/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2012/01/how-to-restore-the-windows-7-mbr-master-boot-record/</guid>
       <description>So I had this crisis where the MBR got broken and Windows would not boot. This can happens for many reasons, maybe you tried to dual boot your PC and something went wrong.
 Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of course)!
 1 – Boot your computer to the Windows 7 DVD
@@ -44,9 +44,9 @@ Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of cours
     </item>
     <item>
       <title>Revert To The Old Tweetdeck</title>
-      <link>https://www.david-amador.com/2011/12/revert-to-the-old-tweetdeck/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2011/12/revert-to-the-old-tweetdeck/</link>
       <pubDate>Tue, 20 Dec 2011 12:34:21 +0000</pubDate>
-      <guid>https://www.david-amador.com/2011/12/revert-to-the-old-tweetdeck/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2011/12/revert-to-the-old-tweetdeck/</guid>
       <description>If you use Tweetdeck you probably already know they screwed the new version (1.0) and you want to revert back.
 Unfortunately since they are now part of Twitter I had a hard time finding the older build and decided to share it.
 And that’s why you are here too probably, here it is: Tweetdeck 0.38.2. Don’t forget you need Adobe Air installed.
@@ -56,42 +56,42 @@ Some user have experienced a
     </item>
     <item>
       <title>Testing the new Visual Studio 2010 features</title>
-      <link>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</link>
       <pubDate>Tue, 13 Apr 2010 16:30:15 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</guid>
       <description>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.
 First time I installed VS2010 was in the RC form mainly because of WP7 Developer’s Tools and XNA4.0 but haven’t made many investment in searching for new features.
 But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.</description>
     </item>
     <item>
       <title>Flex Build Path GUI bug and fix</title>
-      <link>https://www.david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</link>
       <pubDate>Wed, 20 Jan 2010 00:55:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</guid>
       <description>I recently faced myself with a really annoying bug on Flex 3, the “Flex Modules” section of the properties dialog is blank.
 After some search on the internet some suggested that it might be a resolution problem. What the f**? So I have to switch resolution to use a program? Adobe Support turned out a dead end so still no permanent fix for this. There is however a small thing you can do, just adjust the divider between the list on the left hand side of the dialog and the right hand content area.</description>
     </item>
     <item>
       <title>How To Speed Up Firefox 3</title>
-      <link>https://www.david-amador.com/2009/10/how-to-speed-up-firefox-3/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/how-to-speed-up-firefox-3/</link>
       <pubDate>Mon, 12 Oct 2009 21:22:27 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/how-to-speed-up-firefox-3/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/how-to-speed-up-firefox-3/</guid>
       <description>I decided to try Google Chrome today and was pleasantly surprised with it’s speed on loading pages. And I started seeing how slow my Firefox was. At first I thought that it might have something to do with the plugins I have, but then again they are very few, just Echofon, Firebug and Xmarks. So after a little digging I came up with a way to speed up Firefox 3, turn out it was all in the options =)</description>
     </item>
     <item>
       <title>Tech Talk: Linus Torvalds On Git</title>
-      <link>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</link>
       <pubDate>Tue, 03 Feb 2009 16:07:51 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</guid>
       <description>I recently found that there is a subversion alternative surfacing that is in many ways much better that subversion, it name is Git and it’s a creation of Linus Torvalds.
 Here’s a video of him talking about it
 https://www.youtube.com/v/4XpnKHJAok8</description>
     </item>
     <item>
       <title>How to Enable or Disable Quick Launch Bar Toolbar in Windows 7</title>
-      <link>https://www.david-amador.com/2009/01/how-to-enable-or-disable-quick-launch-bar-toolbar-in-windows-7/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/01/how-to-enable-or-disable-quick-launch-bar-toolbar-in-windows-7/</link>
       <pubDate>Fri, 23 Jan 2009 14:41:18 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/01/how-to-enable-or-disable-quick-launch-bar-toolbar-in-windows-7/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/01/how-to-enable-or-disable-quick-launch-bar-toolbar-in-windows-7/</guid>
       <description>Quick Launch Bar is slowly being deprecated. It wasn’t enable by default on windows Vista and on the new Windows 7 (build 7000 for me) it isn’t even available on the toolbars list as the whole Taskbar been replaced with a new and enhanced one, which now allows shortcut icons to be placed on it directly.
 For users, like myself who miss Quick Launch bar here’s a how to enable it:</description>
     </item>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IGF on David Amador</title>
-    <link>https://www.david-amador.com/tags/igf/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/igf/</link>
     <description>Recent content in IGF on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 06 Aug 2009 15:29:10 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/igf/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/igf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DBP deadline is over, maybe next year.</title>
-      <link>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
       <pubDate>Thu, 06 Aug 2009 15:29:10 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
       <description>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.
 Meanwhile I’ve been busy making the arrangements for The Indie Bay 48 hour game development competition.
 The idea is for every entrant to make a game in 48 hours using a given theme or topic.</description>
     </item>
     <item>
       <title>Game Contests</title>
-      <link>https://www.david-amador.com/2009/05/game-contests/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/05/game-contests/</link>
       <pubDate>Fri, 29 May 2009 14:07:40 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/05/game-contests/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/05/game-contests/</guid>
       <description>I finally decided to compete on IGF. It’s been for a long time I wanted to make a game but time is always short and It’s been postponed like forever, but this time I’m really going to do it.
 I haven’t started the development itself but the ideas and what we want to do as a game is decided. I won’t reveal anything by now, just that I’ll be working with Rita, because the idea is to launch this as a Different Pixel game and that the target platform is PC/Xbox360.</description>
     </item>

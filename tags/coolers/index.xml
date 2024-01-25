@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>coolers on David Amador</title>
-    <link>https://www.david-amador.com/tags/coolers/</link>
+    <link>https://djlink.github.io/web_david-amador.com/tags/coolers/</link>
     <description>Recent content in coolers on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Oct 2009 21:47:35 +0000</lastBuildDate>
-    <atom:link href="https://www.david-amador.com/tags/coolers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/coolers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Accelero twin turbo</title>
-      <link>https://www.david-amador.com/2009/10/accelero-twin-turbo/</link>
+      <link>https://djlink.github.io/web_david-amador.com/2009/10/accelero-twin-turbo/</link>
       <pubDate>Sat, 24 Oct 2009 21:47:35 +0000</pubDate>
-      <guid>https://www.david-amador.com/2009/10/accelero-twin-turbo/</guid>
+      <guid>https://djlink.github.io/web_david-amador.com/2009/10/accelero-twin-turbo/</guid>
       <description>Because my Ati Radeon 4890 fan fried I had to buy another cooler. After a little research I discovered Artic Accelero Twin Turbo. Today I decided to finally try it. The assembly is rather easy, the package comes with several heatsinks for memories, and of course the fans themselves. There are three ways to connect the fans, either directly to the VGA card itself, directly to the PSU with 7V or 12V.</description>
     </item>
   </channel>
