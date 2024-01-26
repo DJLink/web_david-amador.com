@@ -2,97 +2,97 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basalt on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/basalt/</link>
+    <link>https://www.david-amador.com/tags/basalt/</link>
     <description>Recent content in Basalt on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Sep 2023 09:57:43 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/basalt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/basalt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unity enshittification round 2, moving on to custom tech.</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
+      <link>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
       <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
+      <guid>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
       <description>After mostly a week of anxiety, for thousands and thousands of developers, Unity changed the rules again, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service.</description>
     </item>
     <item>
       <title>The Unity enshittification, proprietary tech dangers, and mostly not talking about what I&#39;m doing.</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</link>
+      <link>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</link>
       <pubDate>Sat, 16 Sep 2023 11:14:16 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
+      <guid>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
       <description>So this was an “eventful” week in the game dev community. Unity, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. Unity announced that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</description>
     </item>
     <item>
       <title>Quest of Dungeons development update</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/12/quest-of-dungeons-development-update/</link>
+      <link>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</link>
       <pubDate>Wed, 11 Dec 2013 12:00:14 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/12/quest-of-dungeons-development-update/</guid>
+      <guid>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</guid>
       <description>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.
 I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too.</description>
     </item>
     <item>
       <title>Engine, video player and tools, tools tools!</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</link>
+      <link>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</link>
       <pubDate>Sun, 29 Jan 2012 19:56:20 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</guid>
+      <guid>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</guid>
       <description>So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.
 Taking a rest between some more complex game mechanisms I decided to start doing a video player.
 After a bit research I decided to choose theora, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&amp;gt;RGB(A) conversion and because of video/audio sync.</description>
     </item>
     <item>
       <title>Basalt code swarm</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/12/basalt-code-swarm/</link>
+      <link>https://www.david-amador.com/2011/12/basalt-code-swarm/</link>
       <pubDate>Fri, 23 Dec 2011 16:48:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/12/basalt-code-swarm/</guid>
+      <guid>https://www.david-amador.com/2011/12/basalt-code-swarm/</guid>
       <description>I discovered code swarm a while ago and decided to test on my own repositories.
 This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.
 This is the result.</description>
     </item>
     <item>
       <title>Scripting week</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/03/scripting-week/</link>
+      <link>https://www.david-amador.com/2011/03/scripting-week/</link>
       <pubDate>Sat, 26 Mar 2011 11:36:37 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/03/scripting-week/</guid>
+      <guid>https://www.david-amador.com/2011/03/scripting-week/</guid>
       <description>This week I’ve been working on replacing my current scripting system. It worked great for Vizati but I need something with a little more flexibility.
 Instead of explaining what I’ve managed to get working I’ve made a screenshot with some notes.
 I think I’m going to make this my #ScreenshotSaturday</description>
     </item>
     <item>
       <title>Bringing a game from PC to iOS</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</link>
+      <link>https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</link>
       <pubDate>Fri, 04 Mar 2011 11:05:11 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</guid>
+      <guid>https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</guid>
       <description>This is my first post to http://idevblogaday.com/, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.
-I’ll start by talking a bit about how we made our PC game Vizati to iPhone. When we started, this represented our chance of making games and putting ourselves into test.</description>
+I’ll start by talking a bit about how we made our PC game Vizati to iPhone.When we started, this represented our chance of making games and putting ourselves into test.</description>
     </item>
     <item>
       <title>officially a Mac developer too, wait, what?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</link>
+      <link>https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</link>
       <pubDate>Tue, 11 Jan 2011 01:10:44 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</guid>
+      <guid>https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</guid>
       <description>It’s little over a month since I said I wouldn’t do any more porting for Vizati. Lesson learned, don’t say never again…
 When I started making the engine in C++ with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.
 Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish.</description>
     </item>
     <item>
       <title>Cross-Platform engine progress</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/10/cross-platform-engine-progress/</link>
+      <link>https://www.david-amador.com/2010/10/cross-platform-engine-progress/</link>
       <pubDate>Mon, 11 Oct 2010 14:20:02 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/10/cross-platform-engine-progress/</guid>
+      <guid>https://www.david-amador.com/2010/10/cross-platform-engine-progress/</guid>
       <description>If you read my recent posts you know I’ve been bringing Basalt to C++.
 The plan is to support both DirectX and OpenGL render API’s and OpenGLES for iOS devices. I’m tired of porting stuff so I want to make a better framework for future projects and I’ll leave the XNA branch for Xbox360 and Windows Phone 7. I really wished I had this before.
 Since the iPhone branch is stable I move on to making it compatible with Win32 and MacOSX.</description>
     </item>
     <item>
       <title>Fixing dark borders sprites on iPhone</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</link>
+      <link>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</link>
       <pubDate>Mon, 26 Jul 2010 12:47:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</guid>
+      <guid>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</guid>
       <description>I ran into this issue a couple hours ago working on the iPhone sdk:
 See the darker borders around the image?
 It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
@@ -101,43 +101,43 @@ The first thing I found out is that XCode grabs the png images and multiplies th
     </item>
     <item>
       <title>Developing on Mac and Basalt running on the iPhone</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
+      <link>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
       <pubDate>Fri, 09 Jul 2010 09:59:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
+      <guid>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
       <description>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.
 If you follow me on twitter you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.
 So it all started with my wish to port Vizati to the iPhone, since the game is already running on PC, Xbox360 and Windows Phone 7 one can only wish for an easy and quick port since pretty much all base code is done.</description>
     </item>
     <item>
       <title>Updates about Different Pixel and Sapphire</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
+      <link>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
       <pubDate>Wed, 30 Dec 2009 22:59:00 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
+      <guid>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
       <description>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.
 I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry.</description>
     </item>
     <item>
       <title>Basalt and Sapphire Updates</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
+      <link>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
       <pubDate>Wed, 02 Dec 2009 21:38:11 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
+      <guid>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
       <description>Lately all my free time has been spent adding new features to Basalt and developing Sapphire.
 Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.
 Here’s a screenshot of the previous alpha version:</description>
     </item>
     <item>
       <title>How to do a Xna Log file</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/11/how-to-do-a-xna-log-file/</link>
+      <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</link>
       <pubDate>Fri, 20 Nov 2009 10:53:13 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
+      <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
       <description>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.
 Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</description>
     </item>
     <item>
       <title>Prototype for xna7day competition</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/prototype-for-xna7day-competition/</link>
+      <link>https://www.david-amador.com/2009/10/prototype-for-xna7day-competition/</link>
       <pubDate>Thu, 29 Oct 2009 12:29:42 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/prototype-for-xna7day-competition/</guid>
+      <guid>https://www.david-amador.com/2009/10/prototype-for-xna7day-competition/</guid>
       <description>I decided to make a game for the xna7day competition, in which we have to make a game that only uses 2 keys, so absolutely no analog input and it has to be built on xna of course.
 This is a great opportunity to test my engine Basalt.
 I decided to make a puzzle game, basically the rules are the same of a 3 in line game.
@@ -145,35 +145,35 @@ This is what I have so far.</description>
     </item>
     <item>
       <title>XNA Camera 2d with zoom and rotation</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</link>
+      <link>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</link>
       <pubDate>Mon, 12 Oct 2009 20:51:21 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</guid>
+      <guid>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</guid>
       <description>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too
 One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
 Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself.</description>
     </item>
     <item>
       <title>Basalt gains a media player</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/basalt-gains-a-media-player/</link>
+      <link>https://www.david-amador.com/2009/10/basalt-gains-a-media-player/</link>
       <pubDate>Sun, 04 Oct 2009 18:22:30 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/basalt-gains-a-media-player/</guid>
+      <guid>https://www.david-amador.com/2009/10/basalt-gains-a-media-player/</guid>
       <description>So I’ve been working on a sort of media player in order to play movies on my 2d engine Basalt made on top of XNA.
 By extending my class Object2d I manage to get this pretty cool result. You can even apply shaders to it. Since I extended the class from Object2d I can rotate, scale and set a position to the video besides regular options like play/pause, fullscreen etc. For those who don’t know the video playing is a chunk of the series Naruto Shippuuden</description>
     </item>
     <item>
       <title>XNA Sprite Sheet</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/08/xna-sprite-sheet/</link>
+      <link>https://www.david-amador.com/2009/08/xna-sprite-sheet/</link>
       <pubDate>Sun, 23 Aug 2009 10:30:57 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/08/xna-sprite-sheet/</guid>
+      <guid>https://www.david-amador.com/2009/08/xna-sprite-sheet/</guid>
       <description>I decided to take the morning to make a small sprite sheet editor for our Xna engine. This way the artist can easily define the sprite areas and their origin saving in a file that can later on be loaded on the engine.
 Not very fancy yet but it gets the job done.
 Next step will be making an animator editor.</description>
     </item>
     <item>
       <title>Xna 2d Engine</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/08/xna-2d-engine/</link>
+      <link>https://www.david-amador.com/2009/08/xna-2d-engine/</link>
       <pubDate>Fri, 14 Aug 2009 13:39:14 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/08/xna-2d-engine/</guid>
+      <guid>https://www.david-amador.com/2009/08/xna-2d-engine/</guid>
       <description>Lately whenever I’m off work and I have the time I’ve been working on a 2d Engine in XNA. We named it Basalt.
 Cool hum? lol
 I have almost everything done, since sprites, to sprite animations, scenes, layers, resolution independent engine, game state and a lot of other cool things.
@@ -182,9 +182,9 @@ Also I’ve been working, even though on a slower pace on Shappire, the editor a
     </item>
     <item>
       <title>Pugna prototype</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/08/pugna-prototype/</link>
+      <link>https://www.david-amador.com/2009/08/pugna-prototype/</link>
       <pubDate>Sat, 01 Aug 2009 22:03:00 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/08/pugna-prototype/</guid>
+      <guid>https://www.david-amador.com/2009/08/pugna-prototype/</guid>
       <description>Hello there.
 Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.
 My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that Rita and I have for the game we should have submitted.</description>

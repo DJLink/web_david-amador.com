@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>drawings on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/drawings/</link>
+    <link>https://www.david-amador.com/tags/drawings/</link>
     <description>Recent content in drawings on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 05 Dec 2009 08:40:54 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/drawings/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/drawings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>munchies for Design</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/12/munchies-for-design/</link>
+      <link>https://www.david-amador.com/2009/12/munchies-for-design/</link>
       <pubDate>Sat, 05 Dec 2009 08:40:54 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/12/munchies-for-design/</guid>
+      <guid>https://www.david-amador.com/2009/12/munchies-for-design/</guid>
       <description>As most developers do I spend a lot of time programming. Most of us has made some sketches for prototyping games, yes, the ones no one else can understand except for ourselves. I always liked drawing and 3D modeling but I was never very good at it. I was just cleaning up some stuff on my pc and found a folder, god most of this stuff I made is UGLYYYY lol.</description>
     </item>
   </channel>

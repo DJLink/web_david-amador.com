@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Firefox on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/firefox/</link>
+    <link>https://www.david-amador.com/tags/firefox/</link>
     <description>Recent content in Firefox on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 21 Oct 2009 22:06:57 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test your website on multiple browsers</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/test-your-website-on-multiple-browsers/</link>
+      <link>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</link>
       <pubDate>Wed, 21 Oct 2009 22:06:57 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
+      <guid>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
       <description>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</description>
     </item>
     <item>
       <title>How To Speed Up Firefox 3</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/how-to-speed-up-firefox-3/</link>
+      <link>https://www.david-amador.com/2009/10/how-to-speed-up-firefox-3/</link>
       <pubDate>Mon, 12 Oct 2009 21:22:27 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/how-to-speed-up-firefox-3/</guid>
+      <guid>https://www.david-amador.com/2009/10/how-to-speed-up-firefox-3/</guid>
       <description>I decided to try Google Chrome today and was pleasantly surprised with it’s speed on loading pages. And I started seeing how slow my Firefox was. At first I thought that it might have something to do with the plugins I have, but then again they are very few, just Echofon, Firebug and Xmarks. So after a little digging I came up with a way to speed up Firefox 3, turn out it was all in the options =)</description>
     </item>
     <item>
       <title>-moz-opacity removed from Firefox 3.5</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</link>
+      <link>https://www.david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</link>
       <pubDate>Thu, 02 Jul 2009 10:05:36 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</guid>
+      <guid>https://www.david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</guid>
       <description>Well i just found out that Mozzila removed -moz-opacity from Firefox 3.5. It’s been deprecated for a long time and you can how replace it for the standard css property opacity.
 So something like -moz-opacity: 0.4 is now opacity: 0.4;</description>
     </item>

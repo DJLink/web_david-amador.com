@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSS on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/css/</link>
+    <link>https://www.david-amador.com/tags/css/</link>
     <description>Recent content in CSS on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 25 Oct 2009 19:16:12 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to make a clickable div</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/how-to-make-a-clickable-div/</link>
+      <link>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</link>
       <pubDate>Sun, 25 Oct 2009 19:16:12 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/how-to-make-a-clickable-div/</guid>
+      <guid>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</guid>
       <description>Making a clickable text or image is easy, just add the &amp;lt;a&amp;gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.
 The following code is for JQuery but switching it to your favorite JS framework should be very easy.
 First start by adding this to your div
-&amp;lt;pre lang=&amp;#34;html4strict&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;clickable&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; Now a little css to simulate the pointer on that div</description>
+&amp;lt;div class=&amp;#34;clickable&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; Now a little css to simulate the pointer on that div</description>
     </item>
     <item>
       <title>Test your website on multiple browsers</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/test-your-website-on-multiple-browsers/</link>
+      <link>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</link>
       <pubDate>Wed, 21 Oct 2009 22:06:57 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
+      <guid>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
       <description>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</description>
     </item>
     <item>
       <title>How to style a blockquote with CSS</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</link>
+      <link>https://www.david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</link>
       <pubDate>Wed, 21 Oct 2009 12:14:53 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</guid>
+      <guid>https://www.david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</guid>
       <description>Blockquotes are an easy way to make your website stand out, by indicating that you are quoting someone you give a more professional approach to you website.
 You can do this by using
-&amp;lt;pre lang=&amp;#34;html4strict&amp;#34;&amp;gt; &amp;lt;blockquote&amp;gt; Im quoting someone else&amp;lt;/blockquote&amp;gt; But it still needs a little touch, so on your css file add this.
-&amp;lt;pre lang=&amp;#34;css&amp;#34;&amp;gt;blockquote { background:transparent url(blockquote.gif) no-repeat scroll 0 0; font-family:Georgia,&amp;#34;Times New Roman&amp;#34;,Times,serif; font-size:1em; margin:15px 0; min-height:32px; padding:0 50px; } Save this image : and watch the result.</description>
+&amp;lt;blockquote&amp;gt; Im quoting someone else&amp;lt;/blockquote&amp;gt; But it still needs a little touch, so on your css file add this.
+blockquote { background:transparent url(blockquote.gif) no-repeat scroll 0 0; font-family:Georgia,&amp;#34;Times New Roman&amp;#34;,Times,serif; font-size:1em; margin:15px 0; min-height:32px; padding:0 50px; } Save this image : and watch the result.</description>
     </item>
     <item>
       <title>-moz-opacity removed from Firefox 3.5</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</link>
+      <link>https://www.david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</link>
       <pubDate>Thu, 02 Jul 2009 10:05:36 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</guid>
+      <guid>https://www.david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</guid>
       <description>Well i just found out that Mozzila removed -moz-opacity from Firefox 3.5. It’s been deprecated for a long time and you can how replace it for the standard css property opacity.
 So something like -moz-opacity: 0.4 is now opacity: 0.4;</description>
     </item>

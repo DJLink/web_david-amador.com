@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>XNA on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/xna/</link>
+    <link>https://www.david-amador.com/tags/xna/</link>
     <description>Recent content in XNA on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 11 Jun 2020 11:00:00 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/xna/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/xna/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vizati 10th anniversary and making if free.</title>
-      <link>https://djlink.github.io/web_david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</link>
+      <link>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</link>
       <pubDate>Thu, 11 Jun 2020 11:00:00 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
+      <guid>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
       <description>&amp;gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but twitter kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.
 Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and Rita with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game.</description>
     </item>
     <item>
       <title>What are your target platforms for games?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
+      <link>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
       <pubDate>Mon, 26 Jul 2010 20:37:41 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
+      <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
       <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
 The poll closes in about 6 days and you can select various options of course.</description>
     </item>
     <item>
       <title>Making a XNA Game Installer</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/06/making-a-xna-game-installer/</link>
+      <link>https://www.david-amador.com/2010/06/making-a-xna-game-installer/</link>
       <pubDate>Wed, 09 Jun 2010 22:28:16 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/06/making-a-xna-game-installer/</guid>
+      <guid>https://www.david-amador.com/2010/06/making-a-xna-game-installer/</guid>
       <description>I am going to start with a little rant about Visual Studio default Installer, you know, the one you can make for yout XNA games inside VS. Ugly and not very handy, sure it installs every dependency but doesn’t leave many options like….hum…I don’t know choosing the location where you want to install?
 Moving along…I discovered this little cool installer called InnoSetup, and best of all it’s free.
 InnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control.</description>
     </item>
     <item>
       <title>Vizati on Windows Phone 7</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
+      <link>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
       <pubDate>Fri, 07 May 2010 20:41:09 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
+      <guid>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
       <description>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.
 This week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.
 I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.</description>
     </item>
     <item>
       <title>Making Big Grass Tiled Backgrounds in XNA</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/04/making-big-grass-tiles-in-xna/</link>
+      <link>https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/</link>
       <pubDate>Mon, 19 Apr 2010 21:57:12 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/04/making-big-grass-tiles-in-xna/</guid>
+      <guid>https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/</guid>
       <description>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:
 I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?
 My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.</description>
     </item>
     <item>
       <title>XNA 2D Independent Resolution Rendering</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</link>
+      <link>https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</link>
       <pubDate>Fri, 26 Mar 2010 22:03:31 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</guid>
+      <guid>https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</guid>
       <description>Note: 22/04/2013 – Due to popular request I made an article about achieving this effect in OpenGL
 Independent Resolution Rendering?? What’s this all about?
 Basically a way of not caring what you resolution is. Ever had Gui elements misplaced because you changed the resolution? Or getting out of the screen?
@@ -68,96 +68,96 @@ If you are doing a game on Xna just for Xbox360 you can basically use a 1280×72
     </item>
     <item>
       <title>XNA 4.0 CTP and Windows Phone Developer Tools CTP now available for download</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</link>
+      <link>https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</link>
       <pubDate>Mon, 15 Mar 2010 23:42:34 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</guid>
+      <guid>https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</guid>
       <description>So I was watching Microsoft Mix10 and while talking about the new Windows Phone 7 Series, Scott Guthrie announced the availability of the Windows Phone Developer Tools CTP. What? But like now now?
 I went to http://developer.windowsphone.com/ and XNA Creator’s Club and there it was. The packages contains:
 A CTP of the new Visual Studio 2010 Express for Windows Phone Tools and framework to develop Windows Phone applications and games with Silverlight A CTP of XNA Game Studio 4.</description>
     </item>
     <item>
       <title>Vizati Teaser</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/02/vizati-teaser/</link>
+      <link>https://www.david-amador.com/2010/02/vizati-teaser/</link>
       <pubDate>Sun, 28 Feb 2010 23:50:15 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/02/vizati-teaser/</guid>
+      <guid>https://www.david-amador.com/2010/02/vizati-teaser/</guid>
       <description>Rita and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.
 Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color.</description>
     </item>
     <item>
       <title>XNA Particle System 2D</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/02/xna-particle-system-2d/</link>
+      <link>https://www.david-amador.com/2010/02/xna-particle-system-2d/</link>
       <pubDate>Fri, 19 Feb 2010 11:46:26 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/02/xna-particle-system-2d/</guid>
+      <guid>https://www.david-amador.com/2010/02/xna-particle-system-2d/</guid>
       <description>It’s been a long week.
 Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.</description>
     </item>
     <item>
       <title>I maed a Custom Script Language for my Xna Engine</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</link>
+      <link>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</link>
       <pubDate>Mon, 15 Feb 2010 00:29:42 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</guid>
+      <guid>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</guid>
       <description>Well the title is an Homage to James Silva‘s I MAED A GAM3 W1TH Z0MB1ES!!!1
 I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.</description>
     </item>
     <item>
       <title>Drawing Lines in XNA</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/01/drawing-lines-in-xna/</link>
+      <link>https://www.david-amador.com/2010/01/drawing-lines-in-xna/</link>
       <pubDate>Tue, 26 Jan 2010 00:40:48 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/01/drawing-lines-in-xna/</guid>
+      <guid>https://www.david-amador.com/2010/01/drawing-lines-in-xna/</guid>
       <description>One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.
 Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.
 You can give it 2 points ( start and end point of course) and a color.</description>
     </item>
     <item>
       <title>Xna Screen Manager</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/01/xna-screen-manager/</link>
+      <link>https://www.david-amador.com/2010/01/xna-screen-manager/</link>
       <pubDate>Sun, 24 Jan 2010 18:47:17 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/01/xna-screen-manager/</guid>
+      <guid>https://www.david-amador.com/2010/01/xna-screen-manager/</guid>
       <description>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.
 A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.
 I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</description>
     </item>
     <item>
       <title>Basalt and Sapphire Updates</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
+      <link>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
       <pubDate>Wed, 02 Dec 2009 21:38:11 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
+      <guid>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
       <description>Lately all my free time has been spent adding new features to Basalt and developing Sapphire.
 Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.
 Here’s a screenshot of the previous alpha version:</description>
     </item>
     <item>
       <title>How to do a XNA fps counter</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</link>
+      <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</link>
       <pubDate>Mon, 23 Nov 2009 17:49:38 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</guid>
+      <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</guid>
       <description>Frame rate or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.
 So how can you measure your frame rate in XNA?
 Inside your game1 class declare these vars:
-&amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt;SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fps = 0; On function LoadContent() do</description>
+SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fps = 0; On function LoadContent() do</description>
     </item>
     <item>
       <title>Using PerfHUD with XNA</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/11/using-perfhud-with-xna/</link>
+      <link>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</link>
       <pubDate>Wed, 18 Nov 2009 15:16:54 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/11/using-perfhud-with-xna/</guid>
+      <guid>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</guid>
       <description>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.</description>
     </item>
     <item>
       <title>Prototype for xna7day competition</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/prototype-for-xna7day-competition/</link>
+      <link>https://www.david-amador.com/2009/10/prototype-for-xna7day-competition/</link>
       <pubDate>Thu, 29 Oct 2009 12:29:42 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/prototype-for-xna7day-competition/</guid>
+      <guid>https://www.david-amador.com/2009/10/prototype-for-xna7day-competition/</guid>
       <description>I decided to make a game for the xna7day competition, in which we have to make a game that only uses 2 keys, so absolutely no analog input and it has to be built on xna of course.
 This is a great opportunity to test my engine Basalt.
 I decided to make a puzzle game, basically the rules are the same of a 3 in line game.
 This is what I have so far.</description>
     </item>
     <item>
-      <title>Building an 2D Game Engine in XNA &amp;#8211; Part 1</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</link>
+      <title>Building an 2D Game Engine in XNA - Part 1</title>
+      <link>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</link>
       <pubDate>Fri, 16 Oct 2009 18:10:09 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</guid>
+      <guid>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</guid>
       <description>I decided to starting writing a series of tutorials for building an 2d XNA game engine.
 Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.
 It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
@@ -166,35 +166,35 @@ You must have some Object Oriented Programming background to full understand wha
     </item>
     <item>
       <title>XNA Camera 2d with zoom and rotation</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</link>
+      <link>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</link>
       <pubDate>Mon, 12 Oct 2009 20:51:21 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</guid>
+      <guid>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</guid>
       <description>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too
 One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
 Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself.</description>
     </item>
     <item>
       <title>Basalt gains a media player</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/basalt-gains-a-media-player/</link>
+      <link>https://www.david-amador.com/2009/10/basalt-gains-a-media-player/</link>
       <pubDate>Sun, 04 Oct 2009 18:22:30 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/basalt-gains-a-media-player/</guid>
+      <guid>https://www.david-amador.com/2009/10/basalt-gains-a-media-player/</guid>
       <description>So I’ve been working on a sort of media player in order to play movies on my 2d engine Basalt made on top of XNA.
 By extending my class Object2d I manage to get this pretty cool result. You can even apply shaders to it. Since I extended the class from Object2d I can rotate, scale and set a position to the video besides regular options like play/pause, fullscreen etc. For those who don’t know the video playing is a chunk of the series Naruto Shippuuden</description>
     </item>
     <item>
       <title>XNA Sprite Sheet</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/08/xna-sprite-sheet/</link>
+      <link>https://www.david-amador.com/2009/08/xna-sprite-sheet/</link>
       <pubDate>Sun, 23 Aug 2009 10:30:57 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/08/xna-sprite-sheet/</guid>
+      <guid>https://www.david-amador.com/2009/08/xna-sprite-sheet/</guid>
       <description>I decided to take the morning to make a small sprite sheet editor for our Xna engine. This way the artist can easily define the sprite areas and their origin saving in a file that can later on be loaded on the engine.
 Not very fancy yet but it gets the job done.
 Next step will be making an animator editor.</description>
     </item>
     <item>
       <title>Xna 2d Engine</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/08/xna-2d-engine/</link>
+      <link>https://www.david-amador.com/2009/08/xna-2d-engine/</link>
       <pubDate>Fri, 14 Aug 2009 13:39:14 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/08/xna-2d-engine/</guid>
+      <guid>https://www.david-amador.com/2009/08/xna-2d-engine/</guid>
       <description>Lately whenever I’m off work and I have the time I’ve been working on a 2d Engine in XNA. We named it Basalt.
 Cool hum? lol
 I have almost everything done, since sprites, to sprite animations, scenes, layers, resolution independent engine, game state and a lot of other cool things.
@@ -203,9 +203,9 @@ Also I’ve been working, even though on a slower pace on Shappire, the editor a
     </item>
     <item>
       <title>Pugna prototype</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/08/pugna-prototype/</link>
+      <link>https://www.david-amador.com/2009/08/pugna-prototype/</link>
       <pubDate>Sat, 01 Aug 2009 22:03:00 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/08/pugna-prototype/</guid>
+      <guid>https://www.david-amador.com/2009/08/pugna-prototype/</guid>
       <description>Hello there.
 Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.
 My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that Rita and I have for the game we should have submitted.</description>

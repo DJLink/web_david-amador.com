@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EGX 2014 on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/egx-2014/</link>
+    <link>https://www.david-amador.com/tags/egx-2014/</link>
     <description>Recent content in EGX 2014 on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 Oct 2014 11:37:43 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/egx-2014/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/egx-2014/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EGX 2014</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/10/egx-2014/</link>
+      <link>https://www.david-amador.com/2014/10/egx-2014/</link>
       <pubDate>Fri, 03 Oct 2014 11:37:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/10/egx-2014/</guid>
+      <guid>https://www.david-amador.com/2014/10/egx-2014/</guid>
       <description>I had the chance of going to EGX in London this year with Quest of Dungeons.
 The whole show lasted 4 days and it was AMAZING, met tons of players, and a lot of developers. Everyone was super friendly, so I had a lot of fun.
 This was the first time I did something like this, so it was a very good way to get feedback and talk in person with players and even some fans of the game.</description>

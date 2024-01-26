@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gallery on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/gallery/</link>
+    <link>https://www.david-amador.com/tags/gallery/</link>
     <description>Recent content in gallery on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 22 Apr 2009 10:43:35 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/gallery/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/gallery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WordPress Gallery</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/04/wordpress-gallery/</link>
+      <link>https://www.david-amador.com/2009/04/wordpress-gallery/</link>
       <pubDate>Wed, 22 Apr 2009 10:43:35 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/04/wordpress-gallery/</guid>
+      <guid>https://www.david-amador.com/2009/04/wordpress-gallery/</guid>
       <description>During my efforts to combine Rita’s website to wordpress and with a cool gallery I came up with a few problems.
 Mainly because the top navigation bar was built using J-Query, which I’ve already made quite some time ago, and even after switching to mootools I didn’t want to be rebuilding it again.
 So yesterday after a few searches I managed to install NextGen gallery plugin for wordpress and using LightBox for popups.</description>

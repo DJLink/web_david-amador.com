@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>free game on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/free-game/</link>
+    <link>https://www.david-amador.com/tags/free-game/</link>
     <description>Recent content in free game on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 24 Apr 2013 23:35:33 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/free-game/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/free-game/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Puwang is running on PC, releasing it for free</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</link>
+      <link>https://www.david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</link>
       <pubDate>Wed, 24 Apr 2013 23:35:33 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</guid>
+      <guid>https://www.david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</guid>
       <description>Hey guys,
-Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it. Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.
+Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.
 I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</description>
     </item>
   </channel>

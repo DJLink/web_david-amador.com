@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>camera2d on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/camera2d/</link>
+    <link>https://www.david-amador.com/tags/camera2d/</link>
     <description>Recent content in camera2d on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 11 Jul 2013 12:09:48 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/camera2d/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/camera2d/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenGL Camera 2d with zoom and rotation</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</link>
+      <link>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</link>
       <pubDate>Thu, 11 Jul 2013 12:09:48 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</guid>
+      <guid>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</guid>
       <description>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a XNA 2D Camera I wrote some time ago.
 Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</description>
     </item>

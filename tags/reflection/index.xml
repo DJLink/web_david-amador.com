@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reflection on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/reflection/</link>
+    <link>https://www.david-amador.com/tags/reflection/</link>
     <description>Recent content in Reflection on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 12 Oct 2009 20:21:49 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloning Objects in C#</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/cloning-objects-in-c-sharp/</link>
+      <link>https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/</link>
       <pubDate>Mon, 12 Oct 2009 20:21:49 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/cloning-objects-in-c-sharp/</guid>
+      <guid>https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/</guid>
       <description>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:
-&amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt; using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).</description>
+using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).</description>
     </item>
   </channel>
 </rss>

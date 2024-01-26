@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>unity on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/unity/</link>
+    <link>https://www.david-amador.com/tags/unity/</link>
     <description>Recent content in unity on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Sep 2023 09:57:43 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/unity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unity enshittification round 2, moving on to custom tech.</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
+      <link>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
       <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
+      <guid>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
       <description>After mostly a week of anxiety, for thousands and thousands of developers, Unity changed the rules again, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service.</description>
     </item>
     <item>
       <title>The Unity enshittification, proprietary tech dangers, and mostly not talking about what I&#39;m doing.</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</link>
+      <link>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</link>
       <pubDate>Sat, 16 Sep 2023 11:14:16 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
+      <guid>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
       <description>So this was an “eventful” week in the game dev community. Unity, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. Unity announced that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</description>
     </item>
     <item>
       <title>Made a small game for Ludum Dare 42</title>
-      <link>https://djlink.github.io/web_david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</link>
+      <link>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</link>
       <pubDate>Tue, 14 Aug 2018 15:02:38 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</guid>
+      <guid>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</guid>
       <description>Hey,
 It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.
 But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.</description>

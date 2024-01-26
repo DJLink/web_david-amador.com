@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>devlog on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/devlog/</link>
+    <link>https://www.david-amador.com/tags/devlog/</link>
     <description>Recent content in devlog on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Oct 2023 17:20:55 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/devlog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/devlog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>game5 devlog #2</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-2/</link>
+      <link>https://www.david-amador.com/2023/10/game5-devlog-2/</link>
       <pubDate>Sun, 15 Oct 2023 17:20:55 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-2/</guid>
+      <guid>https://www.david-amador.com/2023/10/game5-devlog-2/</guid>
       <description>I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
 But onto game5 progress.
 Importers I managed to finish some of the importers (spreadsheets -&amp;gt; ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them.</description>
     </item>
     <item>
       <title>game5 devlog #1</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-1/</link>
+      <link>https://www.david-amador.com/2023/10/game5-devlog-1/</link>
       <pubDate>Mon, 02 Oct 2023 20:40:47 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-1/</guid>
+      <guid>https://www.david-amador.com/2023/10/game5-devlog-1/</guid>
       <description>Nothing announced, not even a name decided, but I want to vaguely blog about it as a means of brainstorming with myself. I’ll be vague as heck until I’m sure I have something worth “here’s a new game”, if that ever turns out to be the case.
 So this week’s it’s progress on my “on-going not yet announced game because not ready and might be bad” game, which I decided to for now on call Game5 here, so it’s easier to know what we are talking about.</description>
     </item>
     <item>
       <title>Unity enshittification round 2, moving on to custom tech.</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
+      <link>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
       <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
+      <guid>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
       <description>After mostly a week of anxiety, for thousands and thousands of developers, Unity changed the rules again, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service.</description>
     </item>
   </channel>

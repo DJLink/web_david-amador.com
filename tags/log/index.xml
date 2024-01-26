@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>log on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/log/</link>
+    <link>https://www.david-amador.com/tags/log/</link>
     <description>Recent content in log on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Nov 2009 10:53:13 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/log/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/log/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to do a Xna Log file</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/11/how-to-do-a-xna-log-file/</link>
+      <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</link>
       <pubDate>Fri, 20 Nov 2009 10:53:13 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
+      <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
       <description>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.
 Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</description>
     </item>

@@ -1,197 +1,557 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Xbox 360 Controller Input in C++ via XInput | David Amador</title>
-<meta name=keywords content="c++,controller,directX,Xbox360,xInput"><meta name=description content="So you have that Xbox360 controller laying around and want to connect it to your game?
-On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.
-First of all, you will need the DirecX 9.0+ sdk.
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Xbox 360 Controller Input in C&#43;&#43; via XInput | David Amador</title>
+<meta name="keywords" content="c&#43;&#43;, controller, directX, Xbox360, xInput">
+<meta name="description" content="So you have that Xbox360 controller laying around and want to connect it to your game?
+On XNA this is an out of the box option but if you’re using C&#43;&#43; you have a bit more work to do first.
+First of all, you will need the DirecX 9.0&#43; sdk.
 The includes.
-<pre lang=&#34;cpp&#34;> #define WIN32_LEAN_AND_MEAN // We don't want the extra stuff like MFC and such #include <windows> #include <xinput."><meta name=author content="David Amador"><link rel=canonical href=https://djlink.github.io/web_david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/web_david-amador.com/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z+V9+cO1A=" rel="preload stylesheet" as=style><link rel=icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="Xbox 360 Controller Input in C++ via XInput"><meta property="og:description" content="So you have that Xbox360 controller laying around and want to connect it to your game?
-On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.
-First of all, you will need the DirecX 9.0+ sdk.
-The includes.
-<pre lang=&#34;cpp&#34;> #define WIN32_LEAN_AND_MEAN // We don't want the extra stuff like MFC and such #include <windows> #include <xinput."><meta property="og:type" content="article"><meta property="og:url" content="https://djlink.github.io/web_david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/"><meta property="og:image" content="https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts"><meta property="article:published_time" content="2012-04-15T11:41:27+00:00"><meta property="article:modified_time" content="2012-04-15T11:41:27+00:00"><meta property="og:site_name" content="David Amador"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="Xbox 360 Controller Input in C++ via XInput"><meta name=twitter:description content="So you have that Xbox360 controller laying around and want to connect it to your game?
-On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.
-First of all, you will need the DirecX 9.0+ sdk.
-The includes.
-<pre lang=&#34;cpp&#34;> #define WIN32_LEAN_AND_MEAN // We don't want the extra stuff like MFC and such #include <windows> #include <xinput."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://djlink.github.io/web_david-amador.com/posts/"},{"@type":"ListItem","position":2,"name":"Xbox 360 Controller Input in C++ via XInput","item":"https://djlink.github.io/web_david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Xbox 360 Controller Input in C++ via XInput","name":"Xbox 360 Controller Input in C\u002b\u002b via XInput","description":"So you have that Xbox360 controller laying around and want to connect it to your game?\nOn XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.\nFirst of all, you will need the DirecX 9.0+ sdk.\nThe includes.\n\u0026lt;pre lang=\u0026#34;cpp\u0026#34;\u0026gt; #define WIN32_LEAN_AND_MEAN // We don\u0026#39;t want the extra stuff like MFC and such #include \u0026lt;windows\u0026gt; #include \u0026lt;xinput.","keywords":["c++","controller","directX","Xbox360","xInput"],"articleBody":"So you have that Xbox360 controller laying around and want to connect it to your game?\nOn XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.\nFirst of all, you will need the DirecX 9.0+ sdk.\nThe includes.\n#define WIN32_LEAN_AND_MEAN // We don't want the extra stuff like MFC and such #include #include // XInput API #pragma comment(lib, \"XInput.lib\") // Library. If your compiler doesn't support this type of lib include change to the corresponding one Let’s define the buttons\ntypedef enum { GamePad_Button_DPAD_UP = 0, GamePad_Button_DPAD_DOWN = 1, GamePad_Button_DPAD_LEFT = 2, GamePad_Button_DPAD_RIGHT = 3, GamePad_Button_START = 4, GamePad_Button_BACK = 5, GamePad_Button_LEFT_THUMB = 6, GamePad_Button_RIGHT_THUMB = 7, GamePad_Button_LEFT_SHOULDER = 8, GamePad_Button_RIGHT_SHOULDER = 9, GamePad_Button_A = 10, GamePad_Button_B = 11, GamePad_Button_X = 12, GamePad_Button_Y = 13, GamePadButton_Max = 14 }GamePadButton; After some digging I don’t think Microsoft exposes access to the Guide button, let me know if you find anything. Anyway it’s not something we need on Windows.\nNow the GamePadIndexes\n// GamePad Indexes typedef enum { GamePadIndex_One = 0, GamePadIndex_Two = 1, GamePadIndex_Three =2, GamePadIndex_Four = 3, }GamePadIndex; The GamePadIndex is to define the player position. Like on the Xbox360, this way we can control up to 4 controllers.\nWe need something to store the GamePad state\n// The GamePad State Stuct, were we store the buttons positions struct GamePadState { bool\t_buttons[GamePadButton_Max]; Vector2 _left_thumbstick; // Now a small class\nclass GamePadXbox { public: GamePadXbox(GamePadIndex player)\t{ _playerIndex = player; State.reset(); } virtual ~GamePadXbox(void) { // We don't want the controller to be vibrating accidentally when we exit the app if(is_connected()) vibrate(0.0f,0.0f); } bool is_connected(); void vibrate(float leftmotor = 0.0f, float rightmotor = 0.0f); void update(); public: GamePadState\tState; private: XINPUT_STATE _controllerState; GamePadIndex _playerIndex; }; Now, onto the GamePadXbox::is_connected()\nbool is_connected() { // clean the state memset(\u0026_controllerState,0, sizeof(XINPUT_STATE)); // Get the state DWORD Result = XInputGetState(_controllerNum, \u0026_controllerState); if(Result == ERROR_SUCCESS)\treturn true; else return false; } Documentation for the XInputGetState is here.\nOnto the vibrate function. Now, the Vibration accepts values between 0 and 65535. But we don't want to be typing that every time so the vibrate accepts from a range of 0.0f (0) to 1.0f (65535);\nvoid vibrate(float leftmotor = 0.0f, float rightmotor = 0.0f) { // Create a new Vibraton XINPUT_VIBRATION Vibration; memset(\u0026Vibration, 0, sizeof(XINPUT_VIBRATION)); int leftVib = (int)(leftmotor*65535.0f); int rightVib = (int)(rightmotor*65535.0f); // Set the Vibration Values Vibration.wLeftMotorSpeed = leftVib; Vibration.wRightMotorSpeed = rightVib; // Vibrate the controller XInputSetState((int)_controllerNum, \u0026Vibration); } On the destructor I've placed the vibrate at 0.0f otherwise the controller may be left vibrating after your game exits until the user unplugs it.\nFinally, the update() function. Now this one is more out of convenience, since you could get the state straight out of XINPUT_STATE but I think this is a more consistent way of doing it. You can decide how you want on yours.\nvoid update() { State.reset(); // The values of the Left and Right Triggers go from 0 to 255. We just convert them to 0.0f=\u003e1.0f if(_controllerState.Gamepad.bRightTrigger \u0026\u0026 _controllerState.Gamepad.bRightTrigger For getting all buttons here are the official flags according to msdn\nXINPUT_GAMEPAD_DPAD_UP 0x00000001 XINPUT_GAMEPAD_DPAD_DOWN 0x00000002 XINPUT_GAMEPAD_DPAD_LEFT 0x00000004 XINPUT_GAMEPAD_DPAD_RIGHT 0x00000008 XINPUT_GAMEPAD_START 0x00000010 XINPUT_GAMEPAD_BACK 0x00000020 XINPUT_GAMEPAD_LEFT_THUMB 0x00000040 XINPUT_GAMEPAD_RIGHT_THUMB 0x00000080 XINPUT_GAMEPAD_LEFT_SHOULDER 0x0100 XINPUT_GAMEPAD_RIGHT_SHOULDER 0x0200 XINPUT_GAMEPAD_A 0x1000 XINPUT_GAMEPAD_B 0x2000 XINPUT_GAMEPAD_X 0x4000 XINPUT_GAMEPAD_Y 0x8000 The ThumbSticks are a bit more tricky. They return 2 axis each but you have to make sure they are not in the deadzone. The deadzone pretty much are values !=0 but that are not relevant and can lead to errors.\n// Check to make sure we are not moving during the dead zone // Let's check the Left DeadZone if( (_controllerState.Gamepad.sThumbLX -XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE) \u0026\u0026 (_controllerState.Gamepad.sThumbLY -XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE) ) { _controllerState.Gamepad.sThumbLX = 0; _controllerState.Gamepad.sThumbLY = 0; } // Check left thumbStick float leftThumbY = _controllerState.Gamepad.sThumbLY; if(leftThumbY) { State._left_thumbstick.Y = leftThumbY; } float leftThumbX = _controllerState.Gamepad.sThumbLX; if(leftThumbX) { State._left_thumbstick.X = leftThumbX; } // For the rightThumbstick it's pretty much the same. So how would we use this then?\nint main() { GamePadXbox* pad = new GamePadXbox(GamePadIndex_One); while(1) { if(pad-\u003eis_connected()) { pad-\u003eupdate(); if(pad-\u003eState._buttons[GamePad_Button_BACK]==true) break; } } delete pad; } Anyway, most of this code is not elegant or \"pretty\" but it should work, the idea is for you to understand the concept, the rest is up to you.\n","wordCount":"742","inLanguage":"en","datePublished":"2012-04-15T11:41:27Z","dateModified":"2012-04-15T11:41:27Z","author":{"@type":"Person","name":"David Amador"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://djlink.github.io/web_david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/"},"publisher":{"@type":"Organization","name":"David Amador","logo":{"@type":"ImageObject","url":"https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://djlink.github.io/web_david-amador.com/ accesskey=h title="David Amador (Alt + H)"><img src=https://djlink.github.io/apple-touch-icon.png alt aria-label=logo height=35>David Amador</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://djlink.github.io/web_david-amador.com/ title=Blog><span>Blog</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/games/ title=Games><span>Games</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/portfolio/ title=Portfolio><span>Portfolio</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/about/ title="About Me"><span>About Me</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://djlink.github.io/web_david-amador.com/>Home</a>&nbsp;»&nbsp;<a href=https://djlink.github.io/web_david-amador.com/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">Xbox 360 Controller Input in C++ via XInput</h1><div class=post-meta><span title='2012-04-15 11:41:27 +0000 UTC'>April 15, 2012</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;742 words&nbsp;·&nbsp;David Amador&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/2012-04-15-xbox-360-controller-input-in-c-via-xinput.md rel="noopener noreferrer" target=_blank>Suggest Changes</a></div></header><div class=post-content><p>So you have that Xbox360 controller laying around and want to connect it to your game?</p><p>On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.</p><p>First of all, you will need the DirecX 9.0+ sdk.</p><p>The includes.</p><pre tabindex=0><code>&lt;pre lang=&#34;cpp&#34;&gt;
-#define WIN32_LEAN_AND_MEAN // We don&#39;t want the extra stuff like MFC and such
-#include &lt;windows&gt;
-#include &lt;xinput.h&gt;     // XInput API
-#pragma comment(lib, &#34;XInput.lib&#34;)   // Library. If your compiler doesn&#39;t support this type of lib include change to the corresponding one
+#define WIN32_LEAN_AND_MEAN // We don&#39;t want the extra stuff like MFC and such #include &lt;windows&gt; #include &lt;XInput.h&gt; // XInput API #pragma comment(lib, &#34;XInput.">
+<meta name="author" content="David Amador">
+<link rel="canonical" href="https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/">
+<meta name="google-site-verification" content="google913fe85edca3ebf5">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" integrity="sha256-dlbZmvx8fFip4Fx/XazbjpoDEIIrGxJqyFcprqEIBU8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://www.david-amador.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-&lt;/xinput.h&gt;&lt;/windows&gt;
-</code></pre><p>Let’s define the buttons</p><pre tabindex=0><code>&lt;pre lang=&#34;cpp&#34;&gt;
-typedef enum
-{
-	GamePad_Button_DPAD_UP          = 0,
-	GamePad_Button_DPAD_DOWN        = 1,
-	GamePad_Button_DPAD_LEFT        = 2,
-	GamePad_Button_DPAD_RIGHT       = 3,
-	GamePad_Button_START            = 4,
-	GamePad_Button_BACK             = 5,
-	GamePad_Button_LEFT_THUMB       = 6,
-	GamePad_Button_RIGHT_THUMB      = 7,
-	GamePad_Button_LEFT_SHOULDER    = 8,
-	GamePad_Button_RIGHT_SHOULDER   = 9,
-	GamePad_Button_A                = 10,
-	GamePad_Button_B                = 11,
-	GamePad_Button_X                = 12,
-	GamePad_Button_Y                = 13,
-	GamePadButton_Max =             14
-}GamePadButton;
-</code></pre><p><img loading=lazy src=/wp-content/uploads/2012/04/450px-360_controller.svg_.jpg alt title=450px-360_controller.svg></p><p>After some digging I don’t think Microsoft exposes access to the Guide button, let me know if you find anything. Anyway it’s not something we need on Windows.</p><p>Now the GamePadIndexes</p><pre tabindex=0><code>&lt;pre lang=&#34;cpp&#34;&gt;
-// GamePad Indexes
-typedef enum
-{
-	GamePadIndex_One =  0,
-	GamePadIndex_Two =  1,
-	GamePadIndex_Three =2,
-	GamePadIndex_Four = 3,
-}GamePadIndex;
-</code></pre><p>The GamePadIndex is to define the player position. Like on the Xbox360, this way we can control up to 4 controllers.</p><p>We need something to store the GamePad state</p><pre tabindex=0><code>&lt;pre lang=&#34;cpp&#34;&gt;
-// The GamePad State Stuct, were we store the buttons positions
-struct GamePadState 
-{
-	bool		_buttons[GamePadButton_Max];
-	Vector2 	_left_thumbstick;               // 
-&lt;p&gt;Now a small class&lt;/p&gt;
-&lt;pre lang=&#34;cpp&#34;&gt;
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-class GamePadXbox 
-{
-public: 
-	GamePadXbox(GamePadIndex player)			
-	{
-                  _playerIndex = player;
-                  State.reset();
-	}
+            .list {
+                background: var(--theme);
+            }
 
-	virtual ~GamePadXbox(void)
-	{
-		// We don&#39;t want the controller to be vibrating accidentally when we exit the app
-		if(is_connected()) vibrate(0.0f,0.0f);
-	}
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-	bool is_connected();
-        void vibrate(float leftmotor = 0.0f, float rightmotor = 0.0f);
-	void update();
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
- public:
-   GamePadState	State;
- private:
-   XINPUT_STATE _controllerState;
-   GamePadIndex _playerIndex;
-                
-};
-
-&lt;p&gt;Now, onto the GamePadXbox::is_connected()&lt;/p&gt;
-&lt;pre lang=&#34;cpp&#34;&gt;
-bool is_connected()
-{
-     // clean the state
-     memset(&amp;_controllerState,0, sizeof(XINPUT_STATE));
-
-     // Get the state
-     DWORD Result = XInputGetState(_controllerNum, &amp;_controllerState);
-
-     if(Result == ERROR_SUCCESS)	return true;
-     else return false;
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSKJ8VSQQV"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-XSKJ8VSQQV', { 'anonymize_ip': false });
 }
+</script>
+<meta property="og:title" content="Xbox 360 Controller Input in C&#43;&#43; via XInput" />
+<meta property="og:description" content="So you have that Xbox360 controller laying around and want to connect it to your game?
+On XNA this is an out of the box option but if you’re using C&#43;&#43; you have a bit more work to do first.
+First of all, you will need the DirecX 9.0&#43; sdk.
+The includes.
+#define WIN32_LEAN_AND_MEAN // We don&#39;t want the extra stuff like MFC and such #include &lt;windows&gt; #include &lt;XInput.h&gt; // XInput API #pragma comment(lib, &#34;XInput." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2012/04/Xbox-360-Controller-Connected-To-A-Windows-PC-500x375-125x166.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2012-04-15T11:41:27+00:00" />
+<meta property="article:modified_time" content="2012-04-15T11:41:27+00:00" /><meta property="og:site_name" content="David Amador" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2012/04/Xbox-360-Controller-Connected-To-A-Windows-PC-500x375-125x166.jpg" />
+<meta name="twitter:title" content="Xbox 360 Controller Input in C&#43;&#43; via XInput"/>
+<meta name="twitter:description" content="So you have that Xbox360 controller laying around and want to connect it to your game?
+On XNA this is an out of the box option but if you’re using C&#43;&#43; you have a bit more work to do first.
+First of all, you will need the DirecX 9.0&#43; sdk.
+The includes.
+#define WIN32_LEAN_AND_MEAN // We don&#39;t want the extra stuff like MFC and such #include &lt;windows&gt; #include &lt;XInput.h&gt; // XInput API #pragma comment(lib, &#34;XInput."/>
 
 
-&lt;p&gt;Documentation for the XInputGetState is &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.reference.xinputgetstate%28v=vs.85%29.aspx&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Onto the vibrate function. Now, the Vibration accepts values between 0 and 65535. But we don&#39;t want to be typing that every time so the vibrate accepts from a range of 0.0f (0) to 1.0f (65535);&lt;/p&gt;
-&lt;pre lang=&#34;cpp&#34;&gt;
-void vibrate(float leftmotor = 0.0f, float rightmotor = 0.0f)
+<script type="application/ld+json">
 {
-	// Create a new Vibraton 
-	XINPUT_VIBRATION Vibration;
-
-	memset(&amp;Vibration, 0, sizeof(XINPUT_VIBRATION));
-
-	int leftVib = (int)(leftmotor*65535.0f);
-	int rightVib = (int)(rightmotor*65535.0f);
-
-	// Set the Vibration Values
-	Vibration.wLeftMotorSpeed = leftVib;
-	Vibration.wRightMotorSpeed = rightVib;
-        // Vibrate the controller
-	XInputSetState((int)_controllerNum, &amp;Vibration);
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://www.david-amador.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Xbox 360 Controller Input in C++ via XInput",
+      "item": "https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/"
+    }
+  ]
 }
-
-&lt;p&gt;On the destructor I&#39;ve placed the vibrate at 0.0f otherwise the controller may be left vibrating after your game exits until the user unplugs it.&lt;/p&gt;
-&lt;p&gt;Finally, the update() function. Now this one is more out of convenience, since you could get the state straight out of  XINPUT_STATE but I think this is a more consistent way of doing it. You can decide how you want on yours.&lt;/p&gt;
-&lt;pre lang=&#34;cpp&#34;&gt;
-void update()
+</script>
+<script type="application/ld+json">
 {
-	State.reset();
-        // The values of the Left and Right Triggers go from 0 to 255. We just convert them to 0.0f=&gt;1.0f
-	if(_controllerState.Gamepad.bRightTrigger &amp;&amp; _controllerState.Gamepad.bRightTrigger 
-&lt;p&gt;For getting all buttons here are the official flags according to msdn&lt;/p&gt;
-&lt;pre lang=&#34;cpp&#34;&gt;
-XINPUT_GAMEPAD_DPAD_UP          0x00000001
-XINPUT_GAMEPAD_DPAD_DOWN        0x00000002
-XINPUT_GAMEPAD_DPAD_LEFT        0x00000004
-XINPUT_GAMEPAD_DPAD_RIGHT       0x00000008
-XINPUT_GAMEPAD_START            0x00000010
-XINPUT_GAMEPAD_BACK             0x00000020
-XINPUT_GAMEPAD_LEFT_THUMB       0x00000040
-XINPUT_GAMEPAD_RIGHT_THUMB      0x00000080
-XINPUT_GAMEPAD_LEFT_SHOULDER    0x0100
-XINPUT_GAMEPAD_RIGHT_SHOULDER   0x0200
-XINPUT_GAMEPAD_A                0x1000
-XINPUT_GAMEPAD_B                0x2000
-XINPUT_GAMEPAD_X                0x4000
-XINPUT_GAMEPAD_Y                0x8000
-
-&lt;p&gt;The ThumbSticks are a bit more tricky. They return 2 axis each but you have to make sure they are not in the deadzone. The deadzone pretty much are values !=0 but that are not relevant and can lead to errors.&lt;/p&gt;
-&lt;pre lang=&#34;cpp&#34;&gt;
-
-  // Check to make sure we are not moving during the dead zone
-  // Let&#39;s check the Left DeadZone
-  if( (_controllerState.Gamepad.sThumbLX  -XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE) &amp;&amp;
-	(_controllerState.Gamepad.sThumbLY  -XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE) )
-  {    
-	_controllerState.Gamepad.sThumbLX = 0;
-	_controllerState.Gamepad.sThumbLY = 0;
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Xbox 360 Controller Input in C++ via XInput",
+  "name": "Xbox 360 Controller Input in C\u002b\u002b via XInput",
+  "description": "So you have that Xbox360 controller laying around and want to connect it to your game?\nOn XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.\nFirst of all, you will need the DirecX 9.0+ sdk.\nThe includes.\n#define WIN32_LEAN_AND_MEAN // We don\u0026#39;t want the extra stuff like MFC and such #include \u0026lt;windows\u0026gt; #include \u0026lt;XInput.h\u0026gt; // XInput API #pragma comment(lib, \u0026#34;XInput.",
+  "keywords": [
+    "c++", "controller", "directX", "Xbox360", "xInput"
+  ],
+  "articleBody": "So you have that Xbox360 controller laying around and want to connect it to your game?\nOn XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.\nFirst of all, you will need the DirecX 9.0+ sdk.\nThe includes.\n#define WIN32_LEAN_AND_MEAN // We don't want the extra stuff like MFC and such #include #include // XInput API #pragma comment(lib, \"XInput.lib\") // Library. If your compiler doesn't support this type of lib include change to the corresponding one Let’s define the buttons\ntypedef enum { GamePad_Button_DPAD_UP = 0, GamePad_Button_DPAD_DOWN = 1, GamePad_Button_DPAD_LEFT = 2, GamePad_Button_DPAD_RIGHT = 3, GamePad_Button_START = 4, GamePad_Button_BACK = 5, GamePad_Button_LEFT_THUMB = 6, GamePad_Button_RIGHT_THUMB = 7, GamePad_Button_LEFT_SHOULDER = 8, GamePad_Button_RIGHT_SHOULDER = 9, GamePad_Button_A = 10, GamePad_Button_B = 11, GamePad_Button_X = 12, GamePad_Button_Y = 13, GamePadButton_Max = 14 }GamePadButton; After some digging I don’t think Microsoft exposes access to the Guide button, let me know if you find anything. Anyway it’s not something we need on Windows.\nNow the GamePadIndexes\n// GamePad Indexes typedef enum { GamePadIndex_One = 0, GamePadIndex_Two = 1, GamePadIndex_Three =2, GamePadIndex_Four = 3, }GamePadIndex; The GamePadIndex is to define the player position. Like on the Xbox360, this way we can control up to 4 controllers.\nWe need something to store the GamePad state\n// The GamePad State Stuct, were we store the buttons positions struct GamePadState { bool\t_buttons[GamePadButton_Max]; Vector2 _left_thumbstick; // \u003c= I'm using a Vector2 (floats) class but you can replaced it with a float X and Y or whatever your Vector2 class is Vector2\t_right_thumbstick; float\t_left_trigger; float\t_right_trigger;\t// Just to clear all values to default void reset() { for (int i=0;i\u003c(int)GamePadButton_Max;++i) _buttons[i] = false; _left_thumbstick.set(0.0f); _right_thumbstick.set(0.0f); _left_trigger = _right_trigger = 0.0f; } }; Now a small class\nclass GamePadXbox { public: GamePadXbox(GamePadIndex player)\t{ _playerIndex = player; State.reset(); } virtual ~GamePadXbox(void) { // We don't want the controller to be vibrating accidentally when we exit the app if(is_connected()) vibrate(0.0f,0.0f); } bool is_connected(); void vibrate(float leftmotor = 0.0f, float rightmotor = 0.0f); void update(); public: GamePadState\tState; private: XINPUT_STATE _controllerState; GamePadIndex _playerIndex; }; Now, onto the GamePadXbox::is_connected()\nbool is_connected() { // clean the state memset(\u0026_controllerState,0, sizeof(XINPUT_STATE)); // Get the state DWORD Result = XInputGetState(_controllerNum, \u0026_controllerState); if(Result == ERROR_SUCCESS)\treturn true; else return false; } Documentation for the XInputGetState is here.\nOnto the vibrate function. Now, the Vibration accepts values between 0 and 65535. But we don’t want to be typing that every time so the vibrate accepts from a range of 0.0f (0) to 1.0f (65535);\nvoid vibrate(float leftmotor = 0.0f, float rightmotor = 0.0f) { // Create a new Vibraton XINPUT_VIBRATION Vibration; memset(\u0026Vibration, 0, sizeof(XINPUT_VIBRATION)); int leftVib = (int)(leftmotor*65535.0f); int rightVib = (int)(rightmotor*65535.0f); // Set the Vibration Values Vibration.wLeftMotorSpeed = leftVib; Vibration.wRightMotorSpeed = rightVib; // Vibrate the controller XInputSetState((int)_controllerNum, \u0026Vibration); } On the destructor I’ve placed the vibrate at 0.0f otherwise the controller may be left vibrating after your game exits until the user unplugs it.\nFinally, the update() function. Now this one is more out of convenience, since you could get the state straight out of XINPUT_STATE but I think this is a more consistent way of doing it. You can decide how you want on yours.\nvoid update() { State.reset(); // The values of the Left and Right Triggers go from 0 to 255. We just convert them to 0.0f=\u003e1.0f if(_controllerState.Gamepad.bRightTrigger \u0026\u0026 _controllerState.Gamepad.bRightTrigger \u003c XINPUT_GAMEPAD_TRIGGER_THRESHOLD) { State._right_trigger = _controllerState.Gamepad.bRightTrigger/255.0f; } if(_controllerState.Gamepad.bLeftTrigger \u0026\u0026 _controllerState.Gamepad.bLeftTrigger \u003c XINPUT_GAMEPAD_TRIGGER_THRESHOLD) { State._left_trigger = _controllerState.Gamepad.bLeftTrigger/255.0f; } // Get the Buttons if(_controllerState.Gamepad.wButtons \u0026 XINPUT_GAMEPAD_A) State._buttons[GamePad_Button_A] = true; if(_controllerState.Gamepad.wButtons \u0026 XINPUT_GAMEPAD_B) State._buttons[GamePad_Button_B] = true; if(_controllerState.Gamepad.wButtons \u0026 XINPUT_GAMEPAD_X) State._buttons[GamePad_Button_X] = true; if(_controllerState.Gamepad.wButtons \u0026 XINPUT_GAMEPAD_Y) State._buttons[GamePad_Button_Y] = true; if(_controllerState.Gamepad.wButtons \u0026 XINPUT_GAMEPAD_DPAD_DOWN) State._buttons[GamePad_Button_DPAD_DOWN] = true; // The Rest is missing, you can figure out the rest :) .... (ThumbSticks code below) } For getting all buttons here are the official flags according to msdn\nXINPUT_GAMEPAD_DPAD_UP 0x00000001 XINPUT_GAMEPAD_DPAD_DOWN 0x00000002 XINPUT_GAMEPAD_DPAD_LEFT 0x00000004 XINPUT_GAMEPAD_DPAD_RIGHT 0x00000008 XINPUT_GAMEPAD_START 0x00000010 XINPUT_GAMEPAD_BACK 0x00000020 XINPUT_GAMEPAD_LEFT_THUMB 0x00000040 XINPUT_GAMEPAD_RIGHT_THUMB 0x00000080 XINPUT_GAMEPAD_LEFT_SHOULDER 0x0100 XINPUT_GAMEPAD_RIGHT_SHOULDER 0x0200 XINPUT_GAMEPAD_A 0x1000 XINPUT_GAMEPAD_B 0x2000 XINPUT_GAMEPAD_X 0x4000 XINPUT_GAMEPAD_Y 0x8000 The ThumbSticks are a bit more tricky. They return 2 axis each but you have to make sure they are not in the deadzone. The deadzone pretty much are values !=0 but that are not relevant and can lead to errors.\n// Check to make sure we are not moving during the dead zone // Let's check the Left DeadZone if( (_controllerState.Gamepad.sThumbLX -XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE) \u0026\u0026 (_controllerState.Gamepad.sThumbLY -XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE) ) { _controllerState.Gamepad.sThumbLX = 0; _controllerState.Gamepad.sThumbLY = 0; } // Check left thumbStick float leftThumbY = _controllerState.Gamepad.sThumbLY; if(leftThumbY) { State._left_thumbstick.Y = leftThumbY; } float leftThumbX = _controllerState.Gamepad.sThumbLX; if(leftThumbX) { State._left_thumbstick.X = leftThumbX; } // For the rightThumbstick it's pretty much the same. So how would we use this then?\nint main() { GamePadXbox* pad = new GamePadXbox(GamePadIndex_One); while(1) { if(pad-\u003eis_connected()) { pad-\u003eupdate(); if(pad-\u003eState._buttons[GamePad_Button_BACK]==true) break; } } delete pad; } Anyway, most of this code is not elegant or “pretty” but it should work, the idea is for you to understand the concept, the rest is up to you.\n",
+  "wordCount" : "842",
+  "inLanguage": "en",
+  "image":"https://www.david-amador.com/wp-content/uploads/2012/04/Xbox-360-Controller-Connected-To-A-Windows-PC-500x375-125x166.jpg","datePublished": "2012-04-15T11:41:27Z",
+  "dateModified": "2012-04-15T11:41:27Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Amador"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "David Amador",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.david-amador.com/favicon.ico"
+    }
   }
-
-  // Check left thumbStick
- 
-  float leftThumbY = _controllerState.Gamepad.sThumbLY;
-  if(leftThumbY)
-  {
-        State._left_thumbstick.Y = leftThumbY;
-  }
-  float leftThumbX = _controllerState.Gamepad.sThumbLX;
-  if(leftThumbX)
-  {
-	State._left_thumbstick.X = leftThumbX;
-  }    
-	
-  // For the rightThumbstick it&#39;s pretty much the same.
-
-
-&lt;p&gt;So how would we use this then?&lt;/p&gt;
-&lt;pre lang=&#34;cpp&#34;&gt;
-int main()
-{
-     GamePadXbox* pad = new GamePadXbox(GamePadIndex_One);
-     
-     while(1)
-     {
-       if(pad-&gt;is_connected())
-       {
-          pad-&gt;update();
-            
-          if(pad-&gt;State._buttons[GamePad_Button_BACK]==true) break;
-       }   
-     }
-     delete pad;
 }
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+                <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
+                    height="35">David Amador</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://www.david-amador.com/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/games/" title="Games">
+                    <span>Games</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/portfolio/" title="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/about/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Xbox 360 Controller Input in C&#43;&#43; via XInput
+    </h1>
+    <div class="post-meta"><span title='2012-04-15 11:41:27 +0000 UTC'>April 15, 2012</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;842 words&nbsp;·&nbsp;David Amador
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2012/04/Xbox-360-Controller-Connected-To-A-Windows-PC-500x375-125x166.jpg" alt="">
+        
+</figure>
+  <div class="post-content"><p>So you have that Xbox360 controller laying around and want to connect it to your game?</p>
+<p>On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.</p>
+<p>First of all, you will need the DirecX 9.0+ sdk.</p>
+<p>The includes.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#define WIN32_LEAN_AND_MEAN </span><span class="c1">// We don&#39;t want the extra stuff like MFC and such
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;windows&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;XInput.h&gt;</span><span class="cp">     </span><span class="c1">// XInput API
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#pragma comment(lib, &#34;XInput.lib&#34;)   </span><span class="c1">// Library. If your compiler doesn&#39;t support this type of lib include change to the corresponding one
+</span></span></span></code></pre></div><p>Let’s define the buttons</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">enum</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_UP</span>          <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_DOWN</span>        <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_LEFT</span>        <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_RIGHT</span>       <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_START</span>            <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_BACK</span>             <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_LEFT_THUMB</span>       <span class="o">=</span> <span class="mi">6</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_RIGHT_THUMB</span>      <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_LEFT_SHOULDER</span>    <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_RIGHT_SHOULDER</span>   <span class="o">=</span> <span class="mi">9</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_A</span>                <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_B</span>                <span class="o">=</span> <span class="mi">11</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_X</span>                <span class="o">=</span> <span class="mi">12</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_Y</span>                <span class="o">=</span> <span class="mi">13</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadButton_Max</span> <span class="o">=</span>             <span class="mi">14</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="n">GamePadButton</span><span class="p">;</span>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/04/450px-360_controller.svg_.jpg" alt=""  title="450px-360_controller.svg"  />
+</p>
+<p>After some digging I don’t think Microsoft exposes access to the Guide button, let me know if you find anything. Anyway it’s not something we need on Windows.</p>
+<p>Now the GamePadIndexes</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// GamePad Indexes
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">typedef</span> <span class="k">enum</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_One</span> <span class="o">=</span>  <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_Two</span> <span class="o">=</span>  <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_Three</span> <span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_Four</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="n">GamePadIndex</span><span class="p">;</span>
+</span></span></code></pre></div><p>The GamePadIndex is to define the player position. Like on the Xbox360, this way we can control up to 4 controllers.</p>
+<p>We need something to store the GamePad state</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// The GamePad State Stuct, were we store the buttons positions
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">struct</span> <span class="nc">GamePadState</span> 
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">bool</span>		<span class="n">_buttons</span><span class="p">[</span><span class="n">GamePadButton_Max</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Vector2</span> 	<span class="n">_left_thumbstick</span><span class="p">;</span>               <span class="c1">// &lt;= I&#39;m using a Vector2 (floats) class but you can replaced it with a float X and Y or whatever your Vector2 class is
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">Vector2</span>	        <span class="n">_right_thumbstick</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span>		<span class="n">_left_trigger</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span>		<span class="n">_right_trigger</span><span class="p">;</span>	
+</span></span><span class="line"><span class="cl">	<span class="c1">// Just to clear all values to default
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kt">void</span> <span class="nf">reset</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">GamePadButton_Max</span><span class="p">;</span><span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="n">_buttons</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_left_thumbstick</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_right_thumbstick</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_left_trigger</span> <span class="o">=</span> <span class="n">_right_trigger</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">	
+</span></span></code></pre></div><p>Now a small class</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">GamePadXbox</span> 
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span> 
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadXbox</span><span class="p">(</span><span class="n">GamePadIndex</span> <span class="n">player</span><span class="p">)</span>			
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">_playerIndex</span> <span class="o">=</span> <span class="n">player</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">State</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">virtual</span> <span class="o">~</span><span class="n">GamePadXbox</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// We don&#39;t want the controller to be vibrating accidentally when we exit the app
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="k">if</span><span class="p">(</span><span class="n">is_connected</span><span class="p">())</span> <span class="n">vibrate</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span><span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kt">bool</span> <span class="nf">is_connected</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">void</span> <span class="nf">vibrate</span><span class="p">(</span><span class="kt">float</span> <span class="n">leftmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="kt">float</span> <span class="n">rightmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">void</span> <span class="nf">update</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">   <span class="n">GamePadState</span>	<span class="n">State</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">   <span class="n">XINPUT_STATE</span> <span class="n">_controllerState</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="n">GamePadIndex</span> <span class="n">_playerIndex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>Now, onto the GamePadXbox::is_connected()</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">is_connected</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">// clean the state
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">_controllerState</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">XINPUT_STATE</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     <span class="c1">// Get the state
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="n">DWORD</span> <span class="n">Result</span> <span class="o">=</span> <span class="n">XInputGetState</span><span class="p">(</span><span class="n">_controllerNum</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">_controllerState</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     <span class="k">if</span><span class="p">(</span><span class="n">Result</span> <span class="o">==</span> <span class="n">ERROR_SUCCESS</span><span class="p">)</span>	<span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="k">else</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Documentation for the XInputGetState is <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.reference.xinputgetstate%28v=vs.85%29.aspx">here</a>.</p>
+<p>Onto the vibrate function. Now, the Vibration accepts values between 0 and 65535. But we don&rsquo;t want to be typing that every time so the vibrate accepts from a range of 0.0f (0) to 1.0f (65535);</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">vibrate</span><span class="p">(</span><span class="kt">float</span> <span class="n">leftmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="kt">float</span> <span class="n">rightmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Create a new Vibraton 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">XINPUT_VIBRATION</span> <span class="n">Vibration</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Vibration</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">XINPUT_VIBRATION</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">leftVib</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">leftmotor</span><span class="o">*</span><span class="mf">65535.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">rightVib</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">rightmotor</span><span class="o">*</span><span class="mf">65535.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Set the Vibration Values
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">Vibration</span><span class="p">.</span><span class="n">wLeftMotorSpeed</span> <span class="o">=</span> <span class="n">leftVib</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Vibration</span><span class="p">.</span><span class="n">wRightMotorSpeed</span> <span class="o">=</span> <span class="n">rightVib</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Vibrate the controller
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">XInputSetState</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">_controllerNum</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">Vibration</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>On the destructor I&rsquo;ve placed the vibrate at 0.0f otherwise the controller may be left vibrating after your game exits until the user unplugs it.</p>
+<p>Finally, the update() function. Now this one is more out of convenience, since you could get the state straight out of  XINPUT_STATE but I think this is a more consistent way of doing it. You can decide how you want on yours.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">State</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// The values of the Left and Right Triggers go from 0 to 255. We just convert them to 0.0f=&gt;1.0f
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bRightTrigger</span> <span class="o">&amp;&amp;</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bRightTrigger</span> <span class="o">&lt;</span> <span class="n">XINPUT_GAMEPAD_TRIGGER_THRESHOLD</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">State</span><span class="p">.</span><span class="n">_right_trigger</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bRightTrigger</span><span class="o">/</span><span class="mf">255.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bLeftTrigger</span> <span class="o">&amp;&amp;</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bLeftTrigger</span> <span class="o">&lt;</span> <span class="n">XINPUT_GAMEPAD_TRIGGER_THRESHOLD</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">State</span><span class="p">.</span><span class="n">_left_trigger</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bLeftTrigger</span><span class="o">/</span><span class="mf">255.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">       <span class="c1">// Get the Buttons
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_A</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_A</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_B</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_B</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_X</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_X</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_Y</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_Y</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_DPAD_DOWN</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_DPAD_DOWN</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// The Rest is missing, you can figure out the rest :)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 
+</span></span><span class="line"><span class="cl"><span class="p">....</span>
+</span></span><span class="line"><span class="cl">             <span class="p">(</span><span class="n">ThumbSticks</span> <span class="n">code</span> <span class="n">below</span><span class="p">)</span>   
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>For getting all buttons here are the official flags according to msdn</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_UP</span>          <span class="mh">0x00000001</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_DOWN</span>        <span class="mh">0x00000002</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_LEFT</span>        <span class="mh">0x00000004</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_RIGHT</span>       <span class="mh">0x00000008</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_START</span>            <span class="mh">0x00000010</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_BACK</span>             <span class="mh">0x00000020</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_LEFT_THUMB</span>       <span class="mh">0x00000040</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_RIGHT_THUMB</span>      <span class="mh">0x00000080</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_LEFT_SHOULDER</span>    <span class="mh">0x0100</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_RIGHT_SHOULDER</span>   <span class="mh">0x0200</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_A</span>                <span class="mh">0x1000</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_B</span>                <span class="mh">0x2000</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_X</span>                <span class="mh">0x4000</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_Y</span>                <span class="mh">0x8000</span>
+</span></span></code></pre></div><p>The ThumbSticks are a bit more tricky. They return 2 axis each but you have to make sure they are not in the deadzone. The deadzone pretty much are values !=0 but that are not relevant and can lead to errors.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Check to make sure we are not moving during the dead zone
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Let&#39;s check the Left DeadZone
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">if</span><span class="p">(</span> <span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLX</span>  <span class="o">-</span><span class="n">XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLY</span>  <span class="o">-</span><span class="n">XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE</span><span class="p">)</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>    
+</span></span><span class="line"><span class="cl">	<span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLX</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLY</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Check left thumbStick
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 
+</span></span><span class="line"><span class="cl">  <span class="kt">float</span> <span class="n">leftThumbY</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLY</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">(</span><span class="n">leftThumbY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">State</span><span class="p">.</span><span class="n">_left_thumbstick</span><span class="p">.</span><span class="n">Y</span> <span class="o">=</span> <span class="n">leftThumbY</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">float</span> <span class="n">leftThumbX</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLX</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">(</span><span class="n">leftThumbX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">State</span><span class="p">.</span><span class="n">_left_thumbstick</span><span class="p">.</span><span class="n">X</span> <span class="o">=</span> <span class="n">leftThumbX</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>    
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">  <span class="c1">// For the rightThumbstick it&#39;s pretty much the same.
+</span></span></span></code></pre></div><p>So how would we use this then?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="n">GamePadXbox</span><span class="o">*</span> <span class="n">pad</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GamePadXbox</span><span class="p">(</span><span class="n">GamePadIndex_One</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     
+</span></span><span class="line"><span class="cl">     <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">     <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="k">if</span><span class="p">(</span><span class="n">pad</span><span class="o">-&gt;</span><span class="n">is_connected</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">       <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="n">pad</span><span class="o">-&gt;</span><span class="n">update</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">          <span class="k">if</span><span class="p">(</span><span class="n">pad</span><span class="o">-&gt;</span><span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_BACK</span><span class="p">]</span><span class="o">==</span><span class="nb">true</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">}</span>   
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl">     <span class="k">delete</span> <span class="n">pad</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Anyway, most of this code is not elegant or &ldquo;pretty&rdquo; but it should work, the idea is for you to understand the concept, the rest is up to you.</p>
 
 
-&lt;p&gt;Anyway, most of this code is not elegant or &#34;pretty&#34; but it should work, the idea is for you to understand the concept, the rest is up to you.&lt;/p&gt;
-</code></pre></div><footer class=post-footer><ul class=post-tags><li><a href=https://djlink.github.io/web_david-amador.com/tags/c++/>c++</a></li><li><a href=https://djlink.github.io/web_david-amador.com/tags/controller/>controller</a></li><li><a href=https://djlink.github.io/web_david-amador.com/tags/directx/>directX</a></li><li><a href=https://djlink.github.io/web_david-amador.com/tags/xbox360/>Xbox360</a></li><li><a href=https://djlink.github.io/web_david-amador.com/tags/xinput/>xInput</a></li></ul><nav class=paginav><a class=prev href=https://djlink.github.io/web_david-amador.com/2012/06/darys-legend-first-teaser/><span class=title>« Prev</span><br><span>Dary's Legend First Teaser</span>
-</a><a class=next href=https://djlink.github.io/web_david-amador.com/2012/03/screenies-time/><span class=title>Next »</span><br><span>Screenies time&amp;#8230;</span></a></nav></footer><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//upfallstudios.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></article></main><footer class=footer><span>&copy; 2024 <a href=https://djlink.github.io/web_david-amador.com/>David Amador</a></span>
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://www.david-amador.com/tags/c&#43;&#43;/">c&#43;&#43;</a></li>
+      <li><a href="https://www.david-amador.com/tags/controller/">controller</a></li>
+      <li><a href="https://www.david-amador.com/tags/directx/">directX</a></li>
+      <li><a href="https://www.david-amador.com/tags/xbox360/">Xbox360</a></li>
+      <li><a href="https://www.david-amador.com/tags/xinput/">xInput</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://www.david-amador.com/2012/06/darys-legend-first-teaser/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Dary&#39;s Legend First Teaser</span>
+  </a>
+  <a class="next" href="https://www.david-amador.com/2012/03/screenies-time/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Screenies time...</span>
+  </a>
+</nav>
+
+  </footer><div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "upfallstudios" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/categories/</link>
+    <link>https://www.david-amador.com/categories/</link>
     <description>Recent content in Categories on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Oct 2023 17:20:55 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Game Development</title>
-      <link>https://djlink.github.io/web_david-amador.com/categories/game-development/</link>
+      <link>https://www.david-amador.com/categories/game-development/</link>
       <pubDate>Sun, 15 Oct 2023 17:20:55 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/categories/game-development/</guid>
+      <guid>https://www.david-amador.com/categories/game-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Daily Things</title>
-      <link>https://djlink.github.io/web_david-amador.com/categories/daily-things/</link>
+      <link>https://www.david-amador.com/categories/daily-things/</link>
       <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/categories/daily-things/</guid>
+      <guid>https://www.david-amador.com/categories/daily-things/</guid>
       <description></description>
     </item>
     <item>
       <title>Upfall Studios</title>
-      <link>https://djlink.github.io/web_david-amador.com/categories/upfall-studios/</link>
+      <link>https://www.david-amador.com/categories/upfall-studios/</link>
       <pubDate>Thu, 25 Mar 2021 14:04:50 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/categories/upfall-studios/</guid>
+      <guid>https://www.david-amador.com/categories/upfall-studios/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorials</title>
-      <link>https://djlink.github.io/web_david-amador.com/categories/tutorials/</link>
+      <link>https://www.david-amador.com/categories/tutorials/</link>
       <pubDate>Thu, 11 Jul 2013 12:09:48 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/categories/tutorials/</guid>
+      <guid>https://www.david-amador.com/categories/tutorials/</guid>
       <description></description>
     </item>
     <item>
       <title>Application &amp; Software</title>
-      <link>https://djlink.github.io/web_david-amador.com/categories/application-software/</link>
+      <link>https://www.david-amador.com/categories/application-software/</link>
       <pubDate>Wed, 31 Oct 2012 09:02:55 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/categories/application-software/</guid>
+      <guid>https://www.david-amador.com/categories/application-software/</guid>
       <description></description>
     </item>
     <item>
       <title>General Programming</title>
-      <link>https://djlink.github.io/web_david-amador.com/categories/general-programming/</link>
+      <link>https://www.david-amador.com/categories/general-programming/</link>
       <pubDate>Sun, 03 Jun 2012 20:00:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/categories/general-programming/</guid>
+      <guid>https://www.david-amador.com/categories/general-programming/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GameDev Camp 2014 on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/gamedev-camp-2014/</link>
+    <link>https://www.david-amador.com/tags/gamedev-camp-2014/</link>
     <description>Recent content in GameDev Camp 2014 on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 Oct 2014 11:36:36 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/gamedev-camp-2014/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/gamedev-camp-2014/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Indie Dev &amp;#038; Day Job, Making it work &amp;#8211; Building Quest of Dungeons</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/</link>
+      <title>Indie Dev &amp; Day Job, Making it work / Building Quest of Dungeons</title>
+      <link>https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/</link>
       <pubDate>Fri, 03 Oct 2014 11:36:36 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/</guid>
+      <guid>https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/</guid>
       <description>During Gamedev Camp 2014 in Lisbon I got to talk a bit about the development of Quest of Dungeons, and some of the problems that I had making it while still having a day job.
 Most indie developers don’t have enough money to work on their game full-time so they have to keep a day job in order to support it, so this is a bit of my own personal experience doing it, some of the problems that came with it and mistakes I did during the development and launch of the game.</description>
     </item>

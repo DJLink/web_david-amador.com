@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wp7dev on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/wp7dev/</link>
+    <link>https://www.david-amador.com/tags/wp7dev/</link>
     <description>Recent content in wp7dev on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 17 Nov 2010 23:27:04 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/wp7dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/wp7dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Viewing Windows Phone 7 Marketplace on the simulator</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</link>
+      <link>https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</link>
       <pubDate>Wed, 17 Nov 2010 23:27:04 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</guid>
+      <guid>https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</guid>
       <description>Since I’m out of the countries where WP7 Marketplace is available it’s been a real pain to check out new games and most of all if Vizati was already available.
 Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂
 So searching some forums I found a neat code to check this on the simulator.
@@ -25,45 +25,45 @@ Basically create a new WP7 Silverlight App and write this main page code</descri
     </item>
     <item>
       <title>Using Isolated Storage to save/load files on Windows Phone 7</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</link>
+      <link>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</link>
       <pubDate>Sun, 10 Oct 2010 23:37:04 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</guid>
+      <guid>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</guid>
       <description>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.
 You can use IsolatedStorage for that
-&amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt; using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
-&amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt; IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); // grab the storage FileStream stream = store.OpenFile(&amp;#34;test.txt&amp;#34;, FileMode.Create); // Open a file in Create mode BinaryWriter writer = new BinaryWriter(stream); float myvar = 5.</description>
+using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
+IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); // grab the storage FileStream stream = store.OpenFile(&amp;#34;test.txt&amp;#34;, FileMode.Create); // Open a file in Create mode BinaryWriter writer = new BinaryWriter(stream); float myvar = 5.</description>
     </item>
     <item>
       <title>Simulating tombstone (suspended state) on Windows Phone 7 emulator</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/</link>
+      <link>https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/</link>
       <pubDate>Mon, 20 Sep 2010 21:36:27 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/</guid>
+      <guid>https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/</guid>
       <description>Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.
 It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.
 So depending on you app you might want to save the current state just in case the app really closes.</description>
     </item>
     <item>
       <title>What are your target platforms for games?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
+      <link>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
       <pubDate>Mon, 26 Jul 2010 20:37:41 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
+      <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
       <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
 The poll closes in about 6 days and you can select various options of course.</description>
     </item>
     <item>
       <title>Developing on Mac and Basalt running on the iPhone</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
+      <link>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
       <pubDate>Fri, 09 Jul 2010 09:59:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
+      <guid>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
       <description>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.
 If you follow me on twitter you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.
 So it all started with my wish to port Vizati to the iPhone, since the game is already running on PC, Xbox360 and Windows Phone 7 one can only wish for an easy and quick port since pretty much all base code is done.</description>
     </item>
     <item>
       <title>Vizati on Windows Phone 7</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
+      <link>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
       <pubDate>Fri, 07 May 2010 20:41:09 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
+      <guid>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
       <description>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.
 This week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.
 I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.</description>

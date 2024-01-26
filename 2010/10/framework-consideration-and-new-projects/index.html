@@ -1,12 +1,355 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Framework consideration and new projects | David Amador</title>
-<meta name=keywords content><meta name=description content="Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Framework consideration and new projects | David Amador</title>
+<meta name="keywords" content="">
+<meta name="description" content="Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
 Why?
-Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL."><meta name=author content="David Amador"><link rel=canonical href=https://djlink.github.io/web_david-amador.com/2010/10/framework-consideration-and-new-projects/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/web_david-amador.com/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z+V9+cO1A=" rel="preload stylesheet" as=style><link rel=icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="Framework consideration and new projects"><meta property="og:description" content="Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
+Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C&#43;&#43; and then having to implement an OpenGL render layer. If I had an C&#43;&#43;/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL.">
+<meta name="author" content="David Amador">
+<link rel="canonical" href="https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/">
+<meta name="google-site-verification" content="google913fe85edca3ebf5">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" integrity="sha256-dlbZmvx8fFip4Fx/XazbjpoDEIIrGxJqyFcprqEIBU8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://www.david-amador.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSKJ8VSQQV"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-XSKJ8VSQQV', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Framework consideration and new projects" />
+<meta property="og:description" content="Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
 Why?
-Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL."><meta property="og:type" content="article"><meta property="og:url" content="https://djlink.github.io/web_david-amador.com/2010/10/framework-consideration-and-new-projects/"><meta property="og:image" content="https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts"><meta property="article:published_time" content="2010-10-04T16:21:54+00:00"><meta property="article:modified_time" content="2010-10-04T16:21:54+00:00"><meta property="og:site_name" content="David Amador"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="Framework consideration and new projects"><meta name=twitter:description content="Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
+Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C&#43;&#43; and then having to implement an OpenGL render layer. If I had an C&#43;&#43;/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2010-10-04T16:21:54+00:00" />
+<meta property="article:modified_time" content="2010-10-04T16:21:54+00:00" /><meta property="og:site_name" content="David Amador" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
+
+<meta name="twitter:title" content="Framework consideration and new projects"/>
+<meta name="twitter:description" content="Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
 Why?
-Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://djlink.github.io/web_david-amador.com/posts/"},{"@type":"ListItem","position":2,"name":"Framework consideration and new projects","item":"https://djlink.github.io/web_david-amador.com/2010/10/framework-consideration-and-new-projects/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Framework consideration and new projects","name":"Framework consideration and new projects","description":"Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).\nWhy?\nWell one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL.","keywords":[],"articleBody":"Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).\nWhy?\nWell one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL. Or maybe just using OpenGL for Windows as-well.\nIf it was up to me I would use XNA everywhere, I love it and it’s a great framework once you get the hang of it but it’s downside is being restricted to Microsoft platforms. With nowadays platforms and a bunch of market to tackle you can see many indie pc games coming to iPhone too, like Osmos and Eufloria. Many games make sense on mobiles, many don’t.\nIf there’s one thing I’ve leaned with all this process is that you’ll never know when you need your code to run somewhere else that originally intended and for that C++ is generally the way to go. I got so used to C# Reflection, instanced based objects and lambda expressions that when I got to porting that part I was ready to pull my hair off. Lucky there’s many turn around you can do.\nThis doesn’t mean C# is worse or better than C++. They are different, and if you want to reuse code check their differences. One word of advice, don’t use foreach, for(;;) is nice and you’ll have many less lines to change.\nNew Projects With Vizati almost wrapped up I want to move on to other projects and leaving Vizati on a support/bug fix state only.\nI really don’t know if we will manage to finance another game, It’s a bit dependent on the success on the iPhone/WP7 port.\nApart from financial problems deciding on a new project is always hard, not that we don’t have ideas, but the problem sometimes is having notion on what you can do instead of what you what to do. I like a few genre of games, like RPG, FPS, platform etc. If I like to play them that’s the kind of games I would like to make but this doesn’t I should do it.\nVizati was a cautions step without getting too ambitious, we knew it wasn’t a game to get us “rich and fame” but we wanted to prove ourselves that we could make a game from start to finish in a viable time. The game was well accepted, our work is starting to get respected and that’s also very nice. Things take time, even a puzzle game and embracing something an unrealistic project would probably lead to another prototype on my hard drive.\nEither way we already throwing away some ideas and have a general idea of what we want. Rita showed me some concepts yesterday and I’m really excited, I really think it’s something nice and I can’t wait to start working on it.\nWell…that’s it for now.\n","wordCount":"518","inLanguage":"en","datePublished":"2010-10-04T16:21:54Z","dateModified":"2010-10-04T16:21:54Z","author":{"@type":"Person","name":"David Amador"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://djlink.github.io/web_david-amador.com/2010/10/framework-consideration-and-new-projects/"},"publisher":{"@type":"Organization","name":"David Amador","logo":{"@type":"ImageObject","url":"https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://djlink.github.io/web_david-amador.com/ accesskey=h title="David Amador (Alt + H)"><img src=https://djlink.github.io/apple-touch-icon.png alt aria-label=logo height=35>David Amador</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://djlink.github.io/web_david-amador.com/ title=Blog><span>Blog</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/games/ title=Games><span>Games</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/portfolio/ title=Portfolio><span>Portfolio</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/about/ title="About Me"><span>About Me</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://djlink.github.io/web_david-amador.com/>Home</a>&nbsp;»&nbsp;<a href=https://djlink.github.io/web_david-amador.com/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">Framework consideration and new projects</h1><div class=post-meta><span title='2010-10-04 16:21:54 +0000 UTC'>October 4, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;518 words&nbsp;·&nbsp;David Amador&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/2010-10-04-framework-consideration-and-new-projects.md rel="noopener noreferrer" target=_blank>Suggest Changes</a></div></header><div class=post-content><h2 id=engineframework-considerations>Engine/Framework considerations<a hidden class=anchor aria-hidden=true href=#engineframework-considerations>#</a></h2><p>I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if <a href=/2010/06/we-need-xbox-live-indie-games-on-portugal/>XBLIG ever comes to Portugal</a>).</p><p><strong>Why?</strong><br>Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL. Or maybe just using OpenGL for Windows as-well.</p><p>If it was up to me I would use XNA everywhere, I love it and it’s a great framework once you get the hang of it but it’s downside is being restricted to Microsoft platforms. With nowadays platforms and a bunch of market to tackle you can see many indie pc games coming to iPhone too, like <a href=http://www.hemispheregames.com/osmos-iphone/>Osmos</a> and <a href="http://www.eufloria-game.com/blog/?p=360">Eufloria</a>. Many games make sense on mobiles, many don’t.</p><p>If there’s one thing I’ve leaned with all this process is that you’ll never know when you need your code to run somewhere else that originally intended and for that C++ is generally the way to go. I got so used to C# Reflection, <a href=/2010/07/instance-based-callbacks-in-cpp/>instanced based objects</a> and lambda expressions that when I got to porting that part I was ready to pull my hair off. Lucky there’s many turn around you can do.</p><p>This doesn’t mean C# is worse or better than C++. They are different, and if you want to reuse code check their differences. One word of advice, don’t use <a href=/2009/12/csharp-foreach-vs-for-loop/>foreach, for(;;)</a> is nice and you’ll have many less lines to change.</p><h2 id=new-projects>New Projects<a hidden class=anchor aria-hidden=true href=#new-projects>#</a></h2><p>With Vizati almost wrapped up I want to move on to other projects and leaving Vizati on a support/bug fix state only.<br>I really don’t know if we will manage to finance another game, It’s a bit dependent on the success on the iPhone/WP7 port.</p><p>Apart from financial problems deciding on a new project is always hard, not that we don’t have ideas, but the problem sometimes is having notion on what you can do instead of what you what to do. I like a few genre of games, like RPG, FPS, platform etc. If I like to play them that’s the kind of games I would like to make but this doesn’t I should do it.</p><p><img loading=lazy src=/wp-content/uploads/2010/10/game_consideration-300x271.png alt title=game_consideration></p><p>Vizati was a cautions step without getting too ambitious, we knew it wasn’t a game to get us <a href=http://www.shacknews.com/onearticle.x/65787>“rich and fame”</a> but we wanted to prove ourselves that we could make a game from start to finish in a viable time. The game was well accepted, our work is starting to get respected and that’s also very nice. Things take time, even a puzzle game and embracing something an unrealistic project would probably lead to another prototype on my hard drive.</p><p>Either way we already throwing away some ideas and have a general idea of what we want. Rita showed me some concepts yesterday and I’m really excited, I really think it’s something nice and I can’t wait to start working on it.</p><p>Well…that’s it for now.</p></div><footer class=post-footer><ul class=post-tags></ul><nav class=paginav><a class=prev href=https://djlink.github.io/web_david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/><span class=title>« Prev</span><br><span>Vizati for iPhone is now available at App Store</span>
-</a><a class=next href=https://djlink.github.io/web_david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/><span class=title>Next »</span><br><span>Simulating tombstone (suspended state) on Windows Phone 7 emulator</span></a></nav></footer><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//upfallstudios.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></article></main><footer class=footer><span>&copy; 2024 <a href=https://djlink.github.io/web_david-amador.com/>David Amador</a></span>
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C&#43;&#43; and then having to implement an OpenGL render layer. If I had an C&#43;&#43;/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://www.david-amador.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Framework consideration and new projects",
+      "item": "https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Framework consideration and new projects",
+  "name": "Framework consideration and new projects",
+  "description": "Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).\nWhy?\nWell one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).\nWhy?\nWell one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL. Or maybe just using OpenGL for Windows as-well.\nIf it was up to me I would use XNA everywhere, I love it and it’s a great framework once you get the hang of it but it’s downside is being restricted to Microsoft platforms. With nowadays platforms and a bunch of market to tackle you can see many indie pc games coming to iPhone too, like Osmos and Eufloria. Many games make sense on mobiles, many don’t.\nIf there’s one thing I’ve leaned with all this process is that you’ll never know when you need your code to run somewhere else that originally intended and for that C++ is generally the way to go. I got so used to C# Reflection, instanced based objects and lambda expressions that when I got to porting that part I was ready to pull my hair off. Lucky there’s many turn around you can do.\nThis doesn’t mean C# is worse or better than C++. They are different, and if you want to reuse code check their differences. One word of advice, don’t use foreach, for(;;) is nice and you’ll have many less lines to change.\nNew Projects With Vizati almost wrapped up I want to move on to other projects and leaving Vizati on a support/bug fix state only.\nI really don’t know if we will manage to finance another game, It’s a bit dependent on the success on the iPhone/WP7 port.\nApart from financial problems deciding on a new project is always hard, not that we don’t have ideas, but the problem sometimes is having notion on what you can do instead of what you what to do. I like a few genre of games, like RPG, FPS, platform etc. If I like to play them that’s the kind of games I would like to make but this doesn’t I should do it.\nVizati was a cautions step without getting too ambitious, we knew it wasn’t a game to get us “rich and fame” but we wanted to prove ourselves that we could make a game from start to finish in a viable time. The game was well accepted, our work is starting to get respected and that’s also very nice. Things take time, even a puzzle game and embracing something an unrealistic project would probably lead to another prototype on my hard drive.\nEither way we already throwing away some ideas and have a general idea of what we want. Rita showed me some concepts yesterday and I’m really excited, I really think it’s something nice and I can’t wait to start working on it.\nWell…that’s it for now.\n",
+  "wordCount" : "518",
+  "inLanguage": "en",
+  "datePublished": "2010-10-04T16:21:54Z",
+  "dateModified": "2010-10-04T16:21:54Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Amador"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "David Amador",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.david-amador.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+                <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
+                    height="35">David Amador</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://www.david-amador.com/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/games/" title="Games">
+                    <span>Games</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/portfolio/" title="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/about/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Framework consideration and new projects
+    </h1>
+    <div class="post-meta"><span title='2010-10-04 16:21:54 +0000 UTC'>October 4, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;518 words&nbsp;·&nbsp;David Amador
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="engineframework-considerations">Engine/Framework considerations<a hidden class="anchor" aria-hidden="true" href="#engineframework-considerations">#</a></h2>
+<p>I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if <a href="/2010/06/we-need-xbox-live-indie-games-on-portugal/">XBLIG ever comes to Portugal</a>).</p>
+<p><strong>Why?</strong><br>
+Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL. Or maybe just using OpenGL for Windows as-well.</p>
+<p>If it was up to me I would use XNA everywhere, I love it and it’s a great framework once you get the hang of it but it’s downside is being restricted to Microsoft platforms. With nowadays platforms and a bunch of market to tackle you can see many indie pc games coming to iPhone too, like <a href="http://www.hemispheregames.com/osmos-iphone/">Osmos</a> and <a href="http://www.eufloria-game.com/blog/?p=360">Eufloria</a>. Many games make sense on mobiles, many don’t.</p>
+<p>If there’s one thing I’ve leaned with all this process is that you’ll never know when you need your code to run somewhere else that originally intended and for that C++ is generally the way to go. I got so used to C# Reflection, <a href="/2010/07/instance-based-callbacks-in-cpp/">instanced based objects</a> and lambda expressions that when I got to porting that part I was ready to pull my hair off. Lucky there’s many turn around you can do.</p>
+<p>This doesn’t mean C# is worse or better than C++. They are different, and if you want to reuse code check their differences. One word of advice, don’t use <a href="/2009/12/csharp-foreach-vs-for-loop/">foreach, for(;;)</a> is nice and you’ll have many less lines to change.</p>
+<h2 id="new-projects">New Projects<a hidden class="anchor" aria-hidden="true" href="#new-projects">#</a></h2>
+<p>With Vizati almost wrapped up I want to move on to other projects and leaving Vizati on a support/bug fix state only.<br>
+I really don’t know if we will manage to finance another game, It’s a bit dependent on the success on the iPhone/WP7 port.</p>
+<p>Apart from financial problems deciding on a new project is always hard, not that we don’t have ideas, but the problem sometimes is having notion on what you can do instead of what you what to do. I like a few genre of games, like RPG, FPS, platform etc. If I like to play them that’s the kind of games I would like to make but this doesn’t I should do it.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/10/game_consideration-300x271.png" alt=""  title="game_consideration"  />
+</p>
+<p>Vizati was a cautions step without getting too ambitious, we knew it wasn’t a game to get us <a href="http://www.shacknews.com/onearticle.x/65787">“rich and fame”</a> but we wanted to prove ourselves that we could make a game from start to finish in a viable time. The game was well accepted, our work is starting to get respected and that’s also very nice. Things take time, even a puzzle game and embracing something an unrealistic project would probably lead to another prototype on my hard drive.</p>
+<p>Either way we already throwing away some ideas and have a general idea of what we want. Rita showed me some concepts yesterday and I’m really excited, I really think it’s something nice and I can’t wait to start working on it.</p>
+<p>Well…that’s it for now.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://www.david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Vizati for iPhone is now available at App Store</span>
+  </a>
+  <a class="next" href="https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Simulating tombstone (suspended state) on Windows Phone 7 emulator</span>
+  </a>
+</nav>
+
+  </footer><div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "upfallstudios" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

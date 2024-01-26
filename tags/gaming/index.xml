@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gaming on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/gaming/</link>
+    <link>https://www.david-amador.com/tags/gaming/</link>
     <description>Recent content in gaming on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 23 Oct 2010 20:00:59 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/gaming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Super Meat Boy, meat dissection</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/10/super-meat-boy-meat-dissection/</link>
+      <link>https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/</link>
       <pubDate>Sat, 23 Oct 2010 20:00:59 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/10/super-meat-boy-meat-dissection/</guid>
+      <guid>https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/</guid>
       <description>I don’t usually write reviews about games, maybe mostly because I don’t play as often as I used to. Most games today are just graphics graphics, I use super shader ray-traced lights but I forgot gameplay because I’m a tech demo.
 I grew up with a Super Nintendo playing Super Mario World and Zelda A Link to the Past, yeah shocker, no Spectrum to me :P, so I’m 2D gameplay type lover.</description>
     </item>

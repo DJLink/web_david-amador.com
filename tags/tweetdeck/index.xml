@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tweetdeck on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/tweetdeck/</link>
+    <link>https://www.david-amador.com/tags/tweetdeck/</link>
     <description>Recent content in tweetdeck on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 20 Dec 2011 12:34:21 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/tweetdeck/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/tweetdeck/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Revert To The Old Tweetdeck</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/12/revert-to-the-old-tweetdeck/</link>
+      <link>https://www.david-amador.com/2011/12/revert-to-the-old-tweetdeck/</link>
       <pubDate>Tue, 20 Dec 2011 12:34:21 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/12/revert-to-the-old-tweetdeck/</guid>
+      <guid>https://www.david-amador.com/2011/12/revert-to-the-old-tweetdeck/</guid>
       <description>If you use Tweetdeck you probably already know they screwed the new version (1.0) and you want to revert back.
 Unfortunately since they are now part of Twitter I had a hard time finding the older build and decided to share it.
 And that’s why you are here too probably, here it is: Tweetdeck 0.38.2. Don’t forget you need Adobe Air installed.

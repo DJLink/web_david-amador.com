@@ -1,11 +1,357 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>game5 devlog #2 | David Amador</title>
-<meta name=keywords content="devlog,Game5"><meta name=description content="I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>game5 devlog #2 | David Amador</title>
+<meta name="keywords" content="devlog, Game5">
+<meta name="description" content="I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
 But onto game5 progress.
-Importers I managed to finish some of the importers (spreadsheets -> ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them."><meta name=author content="David Amador"><link rel=canonical href=https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-2/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/web_david-amador.com/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z+V9+cO1A=" rel="preload stylesheet" as=style><link rel=icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="game5 devlog #2"><meta property="og:description" content="I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
+Importers I managed to finish some of the importers (spreadsheets -&gt; ScriptableObjects &#43; prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them.">
+<meta name="author" content="David Amador">
+<link rel="canonical" href="https://www.david-amador.com/2023/10/game5-devlog-2/">
+<meta name="google-site-verification" content="google913fe85edca3ebf5">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" integrity="sha256-dlbZmvx8fFip4Fx/XazbjpoDEIIrGxJqyFcprqEIBU8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://www.david-amador.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSKJ8VSQQV"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-XSKJ8VSQQV', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="game5 devlog #2" />
+<meta property="og:description" content="I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
 But onto game5 progress.
-Importers I managed to finish some of the importers (spreadsheets -> ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them."><meta property="og:type" content="article"><meta property="og:url" content="https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-2/"><meta property="og:image" content="https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-10-15T17:20:55+00:00"><meta property="article:modified_time" content="2023-10-15T17:20:55+00:00"><meta property="og:site_name" content="David Amador"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="game5 devlog #2"><meta name=twitter:description content="I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
+Importers I managed to finish some of the importers (spreadsheets -&gt; ScriptableObjects &#43; prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.david-amador.com/2023/10/game5-devlog-2/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2023/10/witch_tea____by_hoshi_pan_ddjhtc7-pre.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-15T17:20:55+00:00" />
+<meta property="article:modified_time" content="2023-10-15T17:20:55+00:00" /><meta property="og:site_name" content="David Amador" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2023/10/witch_tea____by_hoshi_pan_ddjhtc7-pre.png" />
+<meta name="twitter:title" content="game5 devlog #2"/>
+<meta name="twitter:description" content="I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
 But onto game5 progress.
-Importers I managed to finish some of the importers (spreadsheets -> ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://djlink.github.io/web_david-amador.com/posts/"},{"@type":"ListItem","position":2,"name":"game5 devlog #2","item":"https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-2/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"game5 devlog #2","name":"game5 devlog #2","description":"I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.\nBut onto game5 progress.\nImporters I managed to finish some of the importers (spreadsheets -\u0026gt; ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them.","keywords":["devlog","Game5"],"articleBody":"I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.\nBut onto game5 progress.\nImporters I managed to finish some of the importers (spreadsheets -\u003e ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them. I could have made the game parse the spreadsheet at boot time and create them, but I decided against it, I want to generate this process offline. One of the reasons is because I have more control over not replacing existing items GUIDs (to keep and existing links), and also I can tweak any individually generated files manually, if I need to.\nTesting \u0026 Automation As I start to get more pieces onto the game I’m hitting the time that I need to start testing what I do, obviously with beta testers etc, but also I need to find a way to test it on my own in an effective way. For bugs, balance and well, fun factor.\nI recall for Quest of Dungeons I had several spreadsheets with the game combat formulas and it would show up curves of progression for each character stat as it levelled up, this helped me visualising pros and cons of each one of them. And even other stuff, like how many total XP points one could get by each floor, or gold, so even with the procedural nature, I knew lower and upper bounds.\nThat meant that even if I never ended up getting a really good, or bad combination of items during my tests, I could see the best and worst case, and I would tweak monsters and boss fights accordingly.\nThis leads me to this game, where given it’s nature of it’s progression, I’m still unsure of the best tools I can cook up to help me on this, before I place it on testers hands. It won’t be bullet proof but it would be best for me to get a general idea of what to expect.\nAutomation is something I had for QoD and already have it to a certain degree here, an “auto playtester”, basically a script that just does some dumb decisions and plays the game on it’s own, this doesn’t give much info but at least I can quicky test over crashes over certain periods of time, I just let it playing on it’s own. It has limitations but it’s nice.\nContent As I’m making importers for content I’m now starting to replace some testing placeholders with what I think will be final, in terms of mechanics and items, which is why the Testing phase will start to be important as I tweak content and also gameplay values, the fun factor of the game in a way.\nThis step is usually the one I get stuck the most, because as much as I can plan on paper, some things might not work at all when testing, also trying to keep the scope realistic for me, I’m just one person coding all this, got to be real here. I always think “oh 8 items might be too little content”, but then again sometimes less is more, as long as it’s well placed. Also being less we can always add more later if needed. Doing work unnecessarily hurts more, on Vizati and QoD locking down content amount like “7 floors max, 4 characters, 10 skills per character” really helped me early on, it was tangible and gives a sense of progression and motivation as we create each one. So that’s the sort of thing I’m trying to do here.\nSo that’s one of the reasons I’m trying to decide this stuff right now, considering the very low time and budget I have available, I’m trying to realistically get a good scope for what I can do, even if it turns out a short game (and that’s ok), match everything as close as possible to what I think I’ll need in the end, so I can decide the stage of art, where to get it, or who to hire, or even if it’s something I could do on my own (some of it anyway). Yeah I know I just described that I’m lacking a proper GDD 🙂\nMood So all around I feel a bit more optimistic about game5 this week, but as any game developer will tell you, this feeling goes up and down every given week xD. Sometimes I feel like I might have something here, other times “this sucks”.\nUntil the next post!\npost feature image from deviantArt, Halloween month! 🎃 (https://www.deviantart.com/hoshi-pan/art/witch-tea-818804167)\n","wordCount":"820","inLanguage":"en","datePublished":"2023-10-15T17:20:55Z","dateModified":"2023-10-15T17:20:55Z","author":{"@type":"Person","name":"David Amador"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-2/"},"publisher":{"@type":"Organization","name":"David Amador","logo":{"@type":"ImageObject","url":"https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://djlink.github.io/web_david-amador.com/ accesskey=h title="David Amador (Alt + H)"><img src=https://djlink.github.io/apple-touch-icon.png alt aria-label=logo height=35>David Amador</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://djlink.github.io/web_david-amador.com/ title=Blog><span>Blog</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/games/ title=Games><span>Games</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/portfolio/ title=Portfolio><span>Portfolio</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/about/ title="About Me"><span>About Me</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://djlink.github.io/web_david-amador.com/>Home</a>&nbsp;»&nbsp;<a href=https://djlink.github.io/web_david-amador.com/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">game5 devlog #2</h1><div class=post-meta><span title='2023-10-15 17:20:55 +0000 UTC'>October 15, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;820 words&nbsp;·&nbsp;David Amador&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/2023-10-15-game5-devlog-2.md rel="noopener noreferrer" target=_blank>Suggest Changes</a></div></header><div class=post-content><p>I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.</p><p>But onto <a href=/2023/10/game5-devlog-1/ title="game5 devlog #1">game5</a> progress.</p><h2 id=importers>Importers<a hidden class=anchor aria-hidden=true href=#importers>#</a></h2><p>I managed to finish some of the importers (spreadsheets -> ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them. I could have made the game parse the spreadsheet at boot time and create them, but I decided against it, I want to generate this process offline. One of the reasons is because I have more control over not replacing existing items GUIDs (to keep and existing links), and also I can tweak any individually generated files manually, if I need to.</p><h2 id=testing-amp-automation>Testing & Automation<a hidden class=anchor aria-hidden=true href=#testing-amp-automation>#</a></h2><p>As I start to get more pieces onto the game I’m hitting the time that I need to start testing what I do, obviously with beta testers etc, but also I need to find a way to test it on my own in an effective way. For bugs, balance and well, fun factor.</p><p>I recall for Quest of Dungeons I had several spreadsheets with the game combat formulas and it would show up curves of progression for each character stat as it levelled up, this helped me visualising pros and cons of each one of them. And even other stuff, like how many total XP points one could get by each floor, or gold, so even with the procedural nature, I knew lower and upper bounds.</p><p>That meant that even if I never ended up getting a really good, or bad combination of items during my tests, I could see the best and worst case, and I would tweak monsters and boss fights accordingly.</p><p>This leads me to this game, where given it’s nature of it’s progression, I’m still unsure of the best tools I can cook up to help me on this, before I place it on testers hands. It won’t be bullet proof but it would be best for me to get a general idea of what to expect.</p><p>Automation is something I had for QoD and already have it to a certain degree here, an “auto playtester”, basically a script that just does some dumb decisions and plays the game on it’s own, this doesn’t give much info but at least I can quicky test over crashes over certain periods of time, I just let it playing on it’s own. It has limitations but it’s nice.</p><h2 id=content>Content<a hidden class=anchor aria-hidden=true href=#content>#</a></h2><p>As I’m making importers for content I’m now starting to replace some testing placeholders with what I think will be final, in terms of mechanics and items, which is why the Testing phase will start to be important as I tweak content and also gameplay values, the fun factor of the game in a way.</p><p>This step is usually the one I get stuck the most, because as much as I can plan on paper, some things might not work at all when testing, also trying to keep the scope realistic for me, I’m just one person coding all this, got to be real here. I always think “oh 8 items might be too little content”, but then again sometimes less is more, as long as it’s well placed. Also being less we can always add more later if needed. Doing work unnecessarily hurts more, on Vizati and QoD locking down content amount like “7 floors max, 4 characters, 10 skills per character” really helped me early on, it was tangible and gives a sense of progression and motivation as we create each one. So that’s the sort of thing I’m trying to do here.</p><p>So that’s one of the reasons I’m trying to decide this stuff right now, considering the very low time and budget I have available, I’m trying to realistically get a good scope for what I can do, even if it turns out a short game (and that’s ok), match everything as close as possible to what I think I’ll need in the end, so I can decide the stage of art, where to get it, or who to hire, or even if it’s something I could do on my own (some of it anyway). Yeah I know I just described that I’m lacking a proper <a href=https://en.wikipedia.org/wiki/Game_design_document>GDD</a> 🙂</p><h5 id=mood>Mood<a hidden class=anchor aria-hidden=true href=#mood>#</a></h5><p>So all around I feel a bit more optimistic about game5 this week, but as any game developer will tell you, this feeling goes up and down every given week xD. Sometimes I feel like I might have something here, other times “this sucks”.<br>Until the next post!</p><p>post feature image from deviantArt, Halloween month! 🎃 (<a href=https://www.deviantart.com/hoshi-pan/art/witch-tea-818804167>https://www.deviantart.com/hoshi-pan/art/witch-tea-818804167</a>)</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://djlink.github.io/web_david-amador.com/tags/devlog/>devlog</a></li><li><a href=https://djlink.github.io/web_david-amador.com/tags/game5/>Game5</a></li></ul><nav class=paginav><a class=next href=https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-1/><span class=title>Next »</span><br><span>game5 devlog #1</span></a></nav></footer><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//upfallstudios.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></article></main><footer class=footer><span>&copy; 2024 <a href=https://djlink.github.io/web_david-amador.com/>David Amador</a></span>
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+Importers I managed to finish some of the importers (spreadsheets -&gt; ScriptableObjects &#43; prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://www.david-amador.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "game5 devlog #2",
+      "item": "https://www.david-amador.com/2023/10/game5-devlog-2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "game5 devlog #2",
+  "name": "game5 devlog #2",
+  "description": "I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.\nBut onto game5 progress.\nImporters I managed to finish some of the importers (spreadsheets -\u0026gt; ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them.",
+  "keywords": [
+    "devlog", "Game5"
+  ],
+  "articleBody": "I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.\nBut onto game5 progress.\nImporters I managed to finish some of the importers (spreadsheets -\u003e ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them. I could have made the game parse the spreadsheet at boot time and create them, but I decided against it, I want to generate this process offline. One of the reasons is because I have more control over not replacing existing items GUIDs (to keep and existing links), and also I can tweak any individually generated files manually, if I need to.\nTesting \u0026 Automation As I start to get more pieces onto the game I’m hitting the time that I need to start testing what I do, obviously with beta testers etc, but also I need to find a way to test it on my own in an effective way. For bugs, balance and well, fun factor.\nI recall for Quest of Dungeons I had several spreadsheets with the game combat formulas and it would show up curves of progression for each character stat as it levelled up, this helped me visualising pros and cons of each one of them. And even other stuff, like how many total XP points one could get by each floor, or gold, so even with the procedural nature, I knew lower and upper bounds.\nThat meant that even if I never ended up getting a really good, or bad combination of items during my tests, I could see the best and worst case, and I would tweak monsters and boss fights accordingly.\nThis leads me to this game, where given it’s nature of it’s progression, I’m still unsure of the best tools I can cook up to help me on this, before I place it on testers hands. It won’t be bullet proof but it would be best for me to get a general idea of what to expect.\nAutomation is something I had for QoD and already have it to a certain degree here, an “auto playtester”, basically a script that just does some dumb decisions and plays the game on it’s own, this doesn’t give much info but at least I can quicky test over crashes over certain periods of time, I just let it playing on it’s own. It has limitations but it’s nice.\nContent As I’m making importers for content I’m now starting to replace some testing placeholders with what I think will be final, in terms of mechanics and items, which is why the Testing phase will start to be important as I tweak content and also gameplay values, the fun factor of the game in a way.\nThis step is usually the one I get stuck the most, because as much as I can plan on paper, some things might not work at all when testing, also trying to keep the scope realistic for me, I’m just one person coding all this, got to be real here. I always think “oh 8 items might be too little content”, but then again sometimes less is more, as long as it’s well placed. Also being less we can always add more later if needed. Doing work unnecessarily hurts more, on Vizati and QoD locking down content amount like “7 floors max, 4 characters, 10 skills per character” really helped me early on, it was tangible and gives a sense of progression and motivation as we create each one. So that’s the sort of thing I’m trying to do here.\nSo that’s one of the reasons I’m trying to decide this stuff right now, considering the very low time and budget I have available, I’m trying to realistically get a good scope for what I can do, even if it turns out a short game (and that’s ok), match everything as close as possible to what I think I’ll need in the end, so I can decide the stage of art, where to get it, or who to hire, or even if it’s something I could do on my own (some of it anyway). Yeah I know I just described that I’m lacking a proper GDD 🙂\nMood So all around I feel a bit more optimistic about game5 this week, but as any game developer will tell you, this feeling goes up and down every given week xD. Sometimes I feel like I might have something here, other times “this sucks”.\nUntil the next post!\npost feature image from deviantArt, Halloween month! 🎃 (https://www.deviantart.com/hoshi-pan/art/witch-tea-818804167)\n",
+  "wordCount" : "820",
+  "inLanguage": "en",
+  "image":"https://www.david-amador.com/wp-content/uploads/2023/10/witch_tea____by_hoshi_pan_ddjhtc7-pre.png","datePublished": "2023-10-15T17:20:55Z",
+  "dateModified": "2023-10-15T17:20:55Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Amador"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.david-amador.com/2023/10/game5-devlog-2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "David Amador",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.david-amador.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+                <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
+                    height="35">David Amador</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://www.david-amador.com/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/games/" title="Games">
+                    <span>Games</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/portfolio/" title="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/about/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      game5 devlog #2
+    </h1>
+    <div class="post-meta"><span title='2023-10-15 17:20:55 +0000 UTC'>October 15, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;820 words&nbsp;·&nbsp;David Amador
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2023/10/witch_tea____by_hoshi_pan_ddjhtc7-pre.png" alt="">
+        
+</figure>
+  <div class="post-content"><p>I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.</p>
+<p>But onto <a href="/2023/10/game5-devlog-1/" title="game5 devlog #1">game5</a> progress.</p>
+<h2 id="importers">Importers<a hidden class="anchor" aria-hidden="true" href="#importers">#</a></h2>
+<p>I managed to finish some of the importers (spreadsheets -&gt; ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them. I could have made the game parse the spreadsheet at boot time and create them, but I decided against it, I want to generate this process offline. One of the reasons is because I have more control over not replacing existing items GUIDs (to keep and existing links), and also I can tweak any individually generated files manually, if I need to.</p>
+<h2 id="testing-amp-automation">Testing &amp; Automation<a hidden class="anchor" aria-hidden="true" href="#testing-amp-automation">#</a></h2>
+<p>As I start to get more pieces onto the game I’m hitting the time that I need to start testing what I do, obviously with beta testers etc, but also I need to find a way to test it on my own in an effective way. For bugs, balance and well, fun factor.</p>
+<p>I recall for Quest of Dungeons I had several spreadsheets with the game combat formulas and it would show up curves of progression for each character stat as it levelled up, this helped me visualising pros and cons of each one of them. And even other stuff, like how many total XP points one could get by each floor, or gold, so even with the procedural nature, I knew lower and upper bounds.</p>
+<p>That meant that even if I never ended up getting a really good, or bad combination of items during my tests, I could see the best and worst case, and I would tweak monsters and boss fights accordingly.</p>
+<p>This leads me to this game, where given it’s nature of it’s progression, I’m still unsure of the best tools I can cook up to help me on this, before I place it on testers hands. It won’t be bullet proof but it would be best for me to get a general idea of what to expect.</p>
+<p>Automation is something I had for QoD and already have it to a certain degree here, an “auto playtester”, basically a script that just does some dumb decisions and plays the game on it’s own, this doesn’t give much info but at least I can quicky test over crashes over certain periods of time, I just let it playing on it’s own. It has limitations but it’s nice.</p>
+<h2 id="content">Content<a hidden class="anchor" aria-hidden="true" href="#content">#</a></h2>
+<p>As I’m making importers for content I’m now starting to replace some testing placeholders with what I think will be final, in terms of mechanics and items, which is why the Testing phase will start to be important as I tweak content and also gameplay values, the fun factor of the game in a way.</p>
+<p>This step is usually the one I get stuck the most, because as much as I can plan on paper, some things might not work at all when testing, also trying to keep the scope realistic for me, I’m just one person coding all this, got to be real here. I always think “oh 8 items might be too little content”, but then again sometimes less is more, as long as it’s well placed. Also being less we can always add more later if needed. Doing work unnecessarily hurts more, on Vizati and QoD locking down content amount like “7 floors max, 4 characters, 10 skills per character” really helped me early on, it was tangible and gives a sense of progression and motivation as we create each one. So that’s the sort of thing I’m trying to do here.</p>
+<p>So that’s one of the reasons I’m trying to decide this stuff right now, considering the very low time and budget I have available, I’m trying to realistically get a good scope for what I can do, even if it turns out a short game (and that’s ok), match everything as close as possible to what I think I’ll need in the end, so I can decide the stage of art, where to get it, or who to hire, or even if it’s something I could do on my own (some of it anyway). Yeah I know I just described that I’m lacking a proper <a href="https://en.wikipedia.org/wiki/Game_design_document">GDD</a> 🙂</p>
+<h5 id="mood">Mood<a hidden class="anchor" aria-hidden="true" href="#mood">#</a></h5>
+<p>So all around I feel a bit more optimistic about game5 this week, but as any game developer will tell you, this feeling goes up and down every given week xD. Sometimes I feel like I might have something here, other times “this sucks”.<br>
+Until the next post!</p>
+<p>post feature image from deviantArt, Halloween month! 🎃 (<a href="https://www.deviantart.com/hoshi-pan/art/witch-tea-818804167">https://www.deviantart.com/hoshi-pan/art/witch-tea-818804167</a>)</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://www.david-amador.com/tags/devlog/">devlog</a></li>
+      <li><a href="https://www.david-amador.com/tags/game5/">Game5</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://www.david-amador.com/2023/10/game5-devlog-1/">
+    <span class="title">Next »</span>
+    <br>
+    <span>game5 devlog #1</span>
+  </a>
+</nav>
+
+  </footer><div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "upfallstudios" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

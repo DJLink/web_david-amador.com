@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>john carmack on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/john-carmack/</link>
+    <link>https://www.david-amador.com/tags/john-carmack/</link>
     <description>Recent content in john carmack on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 04 Aug 2012 18:13:08 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/john-carmack/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/john-carmack/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>QuakeCon 2012 &amp;#8211; John Carmack Keynote</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</link>
+      <title>QuakeCon 2012 - John Carmack Keynote</title>
+      <link>https://www.david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</link>
       <pubDate>Sat, 04 Aug 2012 18:13:08 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</guid>
+      <guid>https://www.david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</guid>
       <description>I usually don’t do this, but come on, it’s John Carmack, and this 3h30m keynote given at QuakeCon 2012 is fascinating.</description>
     </item>
   </channel>

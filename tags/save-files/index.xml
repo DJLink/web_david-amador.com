@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>save files on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/save-files/</link>
+    <link>https://www.david-amador.com/tags/save-files/</link>
     <description>Recent content in save files on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 09 Apr 2015 09:27:58 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/save-files/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/save-files/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Suggestion for where to store save games</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/04/suggestion-for-where-to-store-save-games/</link>
+      <link>https://www.david-amador.com/2015/04/suggestion-for-where-to-store-save-games/</link>
       <pubDate>Thu, 09 Apr 2015 09:27:58 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/04/suggestion-for-where-to-store-save-games/</guid>
+      <guid>https://www.david-amador.com/2015/04/suggestion-for-where-to-store-save-games/</guid>
       <description>Standards are a lovely thing, but hard to achieve, it depends on one thing, everyone actually using it, otherwise it’s just a rule no one cares about.
 There is one thing that is very common to see in the “game sphere”:
 Where are [X] save games located?
@@ -25,16 +25,16 @@ There are a couple of common directories used but I think as game developers we 
     </item>
     <item>
       <title>Where do you like games to store their save data?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/03/where-do-you-like-games-to-store-their-save-data/</link>
+      <link>https://www.david-amador.com/2012/03/where-do-you-like-games-to-store-their-save-data/</link>
       <pubDate>Sat, 03 Mar 2012 12:57:47 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/03/where-do-you-like-games-to-store-their-save-data/</guid>
+      <guid>https://www.david-amador.com/2012/03/where-do-you-like-games-to-store-their-save-data/</guid>
       <description>Quick question.
 I’m trying to decide where my next game should store their save files so I decided to make a poll.
 Personally I think that
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;C:/Users/$USER$/AppData/Local/ is a total idiotic thing.
+C:/Users/$USER$/AppData/Local/ is a total idiotic thing.
 Starting on Windows Vista there’s a pre-created “Saved Games” folder but most people seem to miss it since it’s not on the “My Documents” folder.
 There’s also other possibilities which many games I own use like
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;My Documents\My Games\Game\ Others just create a folder directly on “My Documents” which some users find a bit obstructive.</description>
+My Documents\My Games\Game\ Others just create a folder directly on “My Documents” which some users find a bit obstructive.</description>
     </item>
   </channel>
 </rss>

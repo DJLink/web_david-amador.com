@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>web design on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/web-design/</link>
+    <link>https://www.david-amador.com/tags/web-design/</link>
     <description>Recent content in web design on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 22 Mar 2011 10:56:50 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/web-design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/web-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog new look</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/03/blog-new-look/</link>
+      <link>https://www.david-amador.com/2011/03/blog-new-look/</link>
       <pubDate>Tue, 22 Mar 2011 10:56:50 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/03/blog-new-look/</guid>
+      <guid>https://www.david-amador.com/2011/03/blog-new-look/</guid>
       <description>Spent a little time giving my blog a new look. It’s not that I didn’t like the old one but sometimes it was a bit of a mess, I’ve been getting many new readers so it was time for a cleaner look.
 My main concern was getting all code posts to be readable but I think they are
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P</description>
+class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P</description>
     </item>
   </channel>
 </rss>

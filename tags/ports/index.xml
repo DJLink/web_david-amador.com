@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ports on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/ports/</link>
+    <link>https://www.david-amador.com/tags/ports/</link>
     <description>Recent content in ports on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 May 2016 08:49:05 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/ports/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/ports/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>QoD 3DS/Wii U port devlog 1</title>
-      <link>https://djlink.github.io/web_david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</link>
+      <link>https://www.david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</link>
       <pubDate>Fri, 20 May 2016 08:49:05 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</guid>
+      <guid>https://www.david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</guid>
       <description>So how are the Nintendo ports coming along?
 It’s been sometime since I announced Quest of Dungeons for 3DS and Wii U, so it’s time to talk about what’s been happening in the “backstage”.
 I’m working on both versions at the same time, potentially for a simultaneous release. But this adds some extra challenges since both are very different and well, I’m juggling between two ports on my own.</description>
     </item>
     <item>
       <title>Quest of Dungeons is coming to Nintendo 3DS and Wii U</title>
-      <link>https://djlink.github.io/web_david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</link>
+      <link>https://www.david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</link>
       <pubDate>Mon, 22 Feb 2016 17:28:59 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</guid>
+      <guid>https://www.david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</guid>
       <description>Nintendo fans rejoice!!!
 It’s time to reveal what I’ve been up to lately, I’ve been very cryptic on Twitter about what I was actually doing but it was for a good cause, because Quest of Dungeons is making it’s way on to Nintendo 3DS and Wii U.
 Development started a couple months ago, so I still don’t have an ETA, but from now on I can be less vague to what I’m really doing.</description>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>macbook pro on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/macbook-pro/</link>
+    <link>https://www.david-amador.com/tags/macbook-pro/</link>
     <description>Recent content in macbook pro on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 11 Dec 2013 11:41:20 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/macbook-pro/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/macbook-pro/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Macbook Pro</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/12/first-macbook-pro/</link>
+      <link>https://www.david-amador.com/2013/12/first-macbook-pro/</link>
       <pubDate>Wed, 11 Dec 2013 11:41:20 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/12/first-macbook-pro/</guid>
+      <guid>https://www.david-amador.com/2013/12/first-macbook-pro/</guid>
       <description>I’ve been developing apps on Mac for almost 2 years now. But usually it’s pretty much just a develop on Windows, boot my 2009 Mini Mac, build on XCode and deploy.
 I always wanted to give it a try at using MacOSX as the main development environment, but the mini mac is too slow and well, Visual Studio. Also I don’t like that new Windows 8 that much. I hope Win9 gets back on track, in the line of Win 7.</description>
     </item>

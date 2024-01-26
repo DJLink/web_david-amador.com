@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>independent on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/independent/</link>
+    <link>https://www.david-amador.com/tags/independent/</link>
     <description>Recent content in independent on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 Apr 2013 11:22:22 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/independent/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/independent/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenGL 2D Independent Resolution Rendering</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</link>
+      <link>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</link>
       <pubDate>Mon, 22 Apr 2013 11:22:22 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
+      <guid>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
       <description>Around two years ago I made a tutorial for XNA in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.
 As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</description>
     </item>

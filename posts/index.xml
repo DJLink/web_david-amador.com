@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/posts/</link>
+    <link>https://www.david-amador.com/posts/</link>
     <description>Recent content in Posts on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Oct 2023 17:20:55 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>game5 devlog #2</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-2/</link>
+      <link>https://www.david-amador.com/2023/10/game5-devlog-2/</link>
       <pubDate>Sun, 15 Oct 2023 17:20:55 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-2/</guid>
+      <guid>https://www.david-amador.com/2023/10/game5-devlog-2/</guid>
       <description>I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
 But onto game5 progress.
 Importers I managed to finish some of the importers (spreadsheets -&amp;gt; ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them.</description>
     </item>
     <item>
       <title>game5 devlog #1</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-1/</link>
+      <link>https://www.david-amador.com/2023/10/game5-devlog-1/</link>
       <pubDate>Mon, 02 Oct 2023 20:40:47 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-1/</guid>
+      <guid>https://www.david-amador.com/2023/10/game5-devlog-1/</guid>
       <description>Nothing announced, not even a name decided, but I want to vaguely blog about it as a means of brainstorming with myself. I’ll be vague as heck until I’m sure I have something worth “here’s a new game”, if that ever turns out to be the case.
 So this week’s it’s progress on my “on-going not yet announced game because not ready and might be bad” game, which I decided to for now on call Game5 here, so it’s easier to know what we are talking about.</description>
     </item>
     <item>
       <title>Unity enshittification round 2, moving on to custom tech.</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
+      <link>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
       <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
+      <guid>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
       <description>After mostly a week of anxiety, for thousands and thousands of developers, Unity changed the rules again, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service.</description>
     </item>
     <item>
       <title>The Unity enshittification, proprietary tech dangers, and mostly not talking about what I&#39;m doing.</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</link>
+      <link>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</link>
       <pubDate>Sat, 16 Sep 2023 11:14:16 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
+      <guid>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
       <description>So this was an “eventful” week in the game dev community. Unity, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. Unity announced that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</description>
     </item>
     <item>
       <title>Some things to consider in multi-platform gamedev</title>
-      <link>https://djlink.github.io/web_david-amador.com/2023/09/some-things-to-consider-in-multi-platform-gamedev/</link>
+      <link>https://www.david-amador.com/2023/09/some-things-to-consider-in-multi-platform-gamedev/</link>
       <pubDate>Mon, 04 Sep 2023 20:01:23 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2023/09/some-things-to-consider-in-multi-platform-gamedev/</guid>
+      <guid>https://www.david-amador.com/2023/09/some-things-to-consider-in-multi-platform-gamedev/</guid>
       <description>Decided to write a couple things I feel can help a game in the long run when it comes to porting it to other platforms. It’s always inevitable we have to change elements in a game when targeting a new console/device we never considered, but some considerations, if done from start can save a lot of time, headaches, porting budget, and equally important, avoiding introduction of new bugs due to code changing drastically.</description>
     </item>
     <item>
       <title>What is Mastodon, and why does it matter that it&#39;s decentralised?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2022/11/what-is-mastodon-and-why-does-it-matter-that-its-decentralised/</link>
+      <link>https://www.david-amador.com/2022/11/what-is-mastodon-and-why-does-it-matter-that-its-decentralised/</link>
       <pubDate>Sun, 06 Nov 2022 16:14:06 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2022/11/what-is-mastodon-and-why-does-it-matter-that-its-decentralised/</guid>
+      <guid>https://www.david-amador.com/2022/11/what-is-mastodon-and-why-does-it-matter-that-its-decentralised/</guid>
       <description>&amp;gt; At the bottom of the article I added a couple links that help finding your Twitter following/followers on Mastodon and follow them
 With the recent Twitter purchase, change of ownership and rules, a lot of people are leaving the platform or just searching for alternatives. Among other platforms one that keeps showing up as an alternative is Mastodon, but change is always hard, some people have been on Twitter for years, so what exactly makes this any different?</description>
     </item>
     <item>
       <title>Merged personal and studio blogs into one</title>
-      <link>https://djlink.github.io/web_david-amador.com/2022/11/merged-personal-and-studio-blogs-into-one/</link>
+      <link>https://www.david-amador.com/2022/11/merged-personal-and-studio-blogs-into-one/</link>
       <pubDate>Wed, 02 Nov 2022 20:18:06 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2022/11/merged-personal-and-studio-blogs-into-one/</guid>
+      <guid>https://www.david-amador.com/2022/11/merged-personal-and-studio-blogs-into-one/</guid>
       <description>I have no idea how many people, if any, are still subscribed to this blog RSS feeds, but if they are, they probably saw a couple of new posts in burst yesterday, apologies.
 This happened because I decided to merge all the posts from my studio into this one for “cleaning house”. I’ve been thinking about it for a while that I have these 2 blogs mostly abandoned and it’s a shame, I used to be very active, but IRL stuff and especially Twitter and QoD launch got me busy elsewhere and I mostly abandoned blogging, which I enjoyed a lot.</description>
     </item>
     <item>
       <title>Quest of Dungeons Switch Physical Release</title>
-      <link>https://djlink.github.io/web_david-amador.com/2021/03/quest-of-dungeons-switch-physical-release/</link>
+      <link>https://www.david-amador.com/2021/03/quest-of-dungeons-switch-physical-release/</link>
       <pubDate>Thu, 25 Mar 2021 14:04:50 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2021/03/quest-of-dungeons-switch-physical-release/</guid>
+      <guid>https://www.david-amador.com/2021/03/quest-of-dungeons-switch-physical-release/</guid>
       <description>First of all, Happy Birthday to Quest of Dungeons 7th anniversary, initially released on March 25th 2014 for PC and iOS. QoD eventually got several other versions and big content updates over time, and that’s all thanks to the support of the fans, making it possible for me to continue working on it, so thank you.
 One thing I got asked frequently was about a physical release, and it took a bit of time but I’m happy to announce that, in cooperation with Leoful, it’s finally happening, and soon too, release date is April 13 and pre-orders are live (begin tomorrow, March 26).</description>
     </item>
     <item>
       <title>Vizati 10th anniversary and making if free.</title>
-      <link>https://djlink.github.io/web_david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</link>
+      <link>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</link>
       <pubDate>Thu, 11 Jun 2020 11:00:00 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
+      <guid>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
       <description>&amp;gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but twitter kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.
 Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and Rita with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game.</description>
     </item>
     <item>
       <title>Made a small game for Ludum Dare 42</title>
-      <link>https://djlink.github.io/web_david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</link>
+      <link>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</link>
       <pubDate>Tue, 14 Aug 2018 15:02:38 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</guid>
+      <guid>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</guid>
       <description>Hey,
 It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.
 But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.</description>
     </item>
     <item>
       <title>Quest of Dungeons is coming to Nintendo Switch</title>
-      <link>https://djlink.github.io/web_david-amador.com/2017/08/quest-of-dungeons-is-coming-to-switch-releasing-in-japan-august-10/</link>
+      <link>https://www.david-amador.com/2017/08/quest-of-dungeons-is-coming-to-switch-releasing-in-japan-august-10/</link>
       <pubDate>Wed, 02 Aug 2017 17:41:04 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2017/08/quest-of-dungeons-is-coming-to-switch-releasing-in-japan-august-10/</guid>
+      <guid>https://www.david-amador.com/2017/08/quest-of-dungeons-is-coming-to-switch-releasing-in-japan-august-10/</guid>
       <description>EDIT (09/09/2017):
 Europe and America are now scheduled for a September 14 release date.
 Hey,
@@ -105,18 +105,18 @@ Super happy to say that Quest of Dungeons is coming to Nintendo Switch. Every si
     </item>
     <item>
       <title>Quest of Dungeons turns 3 years old, a small message for the community</title>
-      <link>https://djlink.github.io/web_david-amador.com/2017/03/quest-of-dungeons-turns-3-years-old-a-small-message-for-the-community/</link>
+      <link>https://www.david-amador.com/2017/03/quest-of-dungeons-turns-3-years-old-a-small-message-for-the-community/</link>
       <pubDate>Sat, 25 Mar 2017 11:18:28 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2017/03/quest-of-dungeons-turns-3-years-old-a-small-message-for-the-community/</guid>
+      <guid>https://www.david-amador.com/2017/03/quest-of-dungeons-turns-3-years-old-a-small-message-for-the-community/</guid>
       <description>Exactly 3 years ago today, March 25th, Quest of Dungeons was released on Steam and iOS.
 Feels unreal thinking what happened in these past three years, for those who remember I wasn’t even sure the game could make it to Steam, let alone end up being accepted by PlayStation, Nintendo and Xbox for their consoles.
 A couple of days ago I was thinking I should do something special for today, but instead of discounts or promotions I decided to write a couple of words to you, the community.</description>
     </item>
     <item>
       <title>Quest of Dungeons is out now on PlayStation 4</title>
-      <link>https://djlink.github.io/web_david-amador.com/2017/01/quest-of-dungeons-is-out-now-on-playstation-4/</link>
+      <link>https://www.david-amador.com/2017/01/quest-of-dungeons-is-out-now-on-playstation-4/</link>
       <pubDate>Fri, 20 Jan 2017 10:41:09 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2017/01/quest-of-dungeons-is-out-now-on-playstation-4/</guid>
+      <guid>https://www.david-amador.com/2017/01/quest-of-dungeons-is-out-now-on-playstation-4/</guid>
       <description>It’s here, it finally happened! Quest of Dungeons is finally out for PlayStation 4 😀
 PS4 dashboard showing question of dungeons
 First of all, here are the links for the respective stores, you can also just search for the game and it should show on PSN Store.
@@ -126,18 +126,18 @@ I want to thank everyone for all the support while this was being made, really a
     </item>
     <item>
       <title>Some thoughts about a 4 year game dev cycle</title>
-      <link>https://djlink.github.io/web_david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</link>
+      <link>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</link>
       <pubDate>Thu, 29 Dec 2016 12:35:49 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</guid>
+      <guid>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</guid>
       <description>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.
 It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.
 For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was Quest of Dungeons, which started development in 2013.</description>
     </item>
     <item>
       <title>Quest of Dungeons is coming to PlayStation 4</title>
-      <link>https://djlink.github.io/web_david-amador.com/2016/11/quest-of-dungeons-is-coming-to-playstation-4/</link>
+      <link>https://www.david-amador.com/2016/11/quest-of-dungeons-is-coming-to-playstation-4/</link>
       <pubDate>Fri, 04 Nov 2016 08:59:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2016/11/quest-of-dungeons-is-coming-to-playstation-4/</guid>
+      <guid>https://www.david-amador.com/2016/11/quest-of-dungeons-is-coming-to-playstation-4/</guid>
       <description>EDIT: Release date will be January 17th 2017!
 Exciting news, Quest of Dungeons is on it’s way to PlayStation 4!!
 It’s actually been in development for some time, and it’s very near completion, so it’s not going to be a huge wait until release hopefully.
@@ -145,9 +145,9 @@ The official QoD page on PlayStation went live just now so I decided it was a go
     </item>
     <item>
       <title>QoD is now available on eShop for Nintendo 3DS and Wii U</title>
-      <link>https://djlink.github.io/web_david-amador.com/2016/09/qod-is-now-available-on-eshop-for-nintendo-3ds-and-wii-u/</link>
+      <link>https://www.david-amador.com/2016/09/qod-is-now-available-on-eshop-for-nintendo-3ds-and-wii-u/</link>
       <pubDate>Fri, 30 Sep 2016 07:34:46 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2016/09/qod-is-now-available-on-eshop-for-nintendo-3ds-and-wii-u/</guid>
+      <guid>https://www.david-amador.com/2016/09/qod-is-now-available-on-eshop-for-nintendo-3ds-and-wii-u/</guid>
       <description>The day has finally arrived!!
 Quest of Dungeons is now available in EU and US for your Wii U and/or Nintendo 3DS. If you search for the name on eShop in our device it should appear.
 Game costs $8.99/€8.99 and allows for cross buy, so if you buy the game for Wii U you’ll get the Nintendo 3DS version for free (and vice-versa).
@@ -158,9 +158,9 @@ EU Links</description>
     </item>
     <item>
       <title>Quest of Dungeons also coming to Nintendo 3DS on September 29</title>
-      <link>https://djlink.github.io/web_david-amador.com/2016/09/quest-of-dungeons-coming-to-nintendo-3ds-on-september-29/</link>
+      <link>https://www.david-amador.com/2016/09/quest-of-dungeons-coming-to-nintendo-3ds-on-september-29/</link>
       <pubDate>Tue, 27 Sep 2016 09:20:51 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2016/09/quest-of-dungeons-coming-to-nintendo-3ds-on-september-29/</guid>
+      <guid>https://www.david-amador.com/2016/09/quest-of-dungeons-coming-to-nintendo-3ds-on-september-29/</guid>
       <description>I have great news.
 Quest of Dungeons is coming to Nintendo 3DS on September 29.
 A couple weeks ago I announced that QoD was being released for Wii U on September 29 but I didn’t had a specific release date for the Nintendo 3DS version.
@@ -168,9 +168,9 @@ I spent the last few weeks trying to sort all know issues on the Nintendo 3DS ve
     </item>
     <item>
       <title>Quest of Dungeons coming to Wii U on September 29</title>
-      <link>https://djlink.github.io/web_david-amador.com/2016/08/quest-of-dungeons-coming-to-wii-u-on-september-29/</link>
+      <link>https://www.david-amador.com/2016/08/quest-of-dungeons-coming-to-wii-u-on-september-29/</link>
       <pubDate>Wed, 31 Aug 2016 08:22:58 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2016/08/quest-of-dungeons-coming-to-wii-u-on-september-29/</guid>
+      <guid>https://www.david-amador.com/2016/08/quest-of-dungeons-coming-to-wii-u-on-september-29/</guid>
       <description>Hey, I have some good news,
 I just got confirmation of the final release date for Quest of Dungeons on Wii U, it’s coming on September 29, both Europe and America. So we are nearly there, “hype.jpg”.
 Quest of Dungeons Wii U
@@ -182,35 +182,35 @@ Yes.
     </item>
     <item>
       <title>Quest of Dungeons for Nintendo 3DS screenshots</title>
-      <link>https://djlink.github.io/web_david-amador.com/2016/07/quest-of-dungeons-for-nintendo-3ds-screenshots/</link>
+      <link>https://www.david-amador.com/2016/07/quest-of-dungeons-for-nintendo-3ds-screenshots/</link>
       <pubDate>Mon, 04 Jul 2016 14:02:02 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2016/07/quest-of-dungeons-for-nintendo-3ds-screenshots/</guid>
+      <guid>https://www.david-amador.com/2016/07/quest-of-dungeons-for-nintendo-3ds-screenshots/</guid>
       <description>Hey guys, here are some screenshots of Quests of Dungeons for Nintendo 3DS. Hope you like it. Stay tuned for some news soon.
 Nintendo 3DS is a trademark of Nintendo. © 2011 Nintendo.</description>
     </item>
     <item>
       <title>QoD 3DS/Wii U port devlog 1</title>
-      <link>https://djlink.github.io/web_david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</link>
+      <link>https://www.david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</link>
       <pubDate>Fri, 20 May 2016 08:49:05 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</guid>
+      <guid>https://www.david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</guid>
       <description>So how are the Nintendo ports coming along?
 It’s been sometime since I announced Quest of Dungeons for 3DS and Wii U, so it’s time to talk about what’s been happening in the “backstage”.
 I’m working on both versions at the same time, potentially for a simultaneous release. But this adds some extra challenges since both are very different and well, I’m juggling between two ports on my own.</description>
     </item>
     <item>
       <title>Quest of Dungeons is coming to Nintendo 3DS and Wii U</title>
-      <link>https://djlink.github.io/web_david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</link>
+      <link>https://www.david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</link>
       <pubDate>Mon, 22 Feb 2016 17:28:59 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</guid>
+      <guid>https://www.david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</guid>
       <description>Nintendo fans rejoice!!!
 It’s time to reveal what I’ve been up to lately, I’ve been very cryptic on Twitter about what I was actually doing but it was for a good cause, because Quest of Dungeons is making it’s way on to Nintendo 3DS and Wii U.
 Development started a couple months ago, so I still don’t have an ETA, but from now on I can be less vague to what I’m really doing.</description>
     </item>
     <item>
       <title>year review log 2015</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/12/year-review-log-2015/</link>
+      <link>https://www.david-amador.com/2015/12/year-review-log-2015/</link>
       <pubDate>Thu, 31 Dec 2015 12:14:54 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/12/year-review-log-2015/</guid>
+      <guid>https://www.david-amador.com/2015/12/year-review-log-2015/</guid>
       <description>Can’t believe it’s almost new year again.
 It became a habit of mine to to hit pause for a couple minutes, look back, write about it and think about what’s next, this helps me to sort things out.
 Thank you
@@ -218,9 +218,9 @@ I have to start with something, a big Thank You for all the people who purchased
     </item>
     <item>
       <title>Quest of Dungeons reviews roundup</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/10/quest-of-dungeons-reviews-roundup/</link>
+      <link>https://www.david-amador.com/2015/10/quest-of-dungeons-reviews-roundup/</link>
       <pubDate>Sun, 04 Oct 2015 14:24:37 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/10/quest-of-dungeons-reviews-roundup/</guid>
+      <guid>https://www.david-amador.com/2015/10/quest-of-dungeons-reviews-roundup/</guid>
       <description>Hi everyone,
 Quest of Dungeons was released on Xbox One exactly a month ago, and the response has been very positive from both players and reviewers, so I decided to list a couple review links here. There are several more, and tons of Youtube videos, so thank you all for helping spreading the word.
 9/10 – Xbox Tavern
@@ -230,18 +230,18 @@ Quest of Dungeons was released on Xbox One exactly a month ago, and the response
     </item>
     <item>
       <title>My first ever console game is out</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/09/my-first-ever-console-game-is-out/</link>
+      <link>https://www.david-amador.com/2015/09/my-first-ever-console-game-is-out/</link>
       <pubDate>Sun, 13 Sep 2015 18:26:14 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/09/my-first-ever-console-game-is-out/</guid>
+      <guid>https://www.david-amador.com/2015/09/my-first-ever-console-game-is-out/</guid>
       <description>Hey, it’s been a while.
 For the past few months I’ve been working on porting Quest of Dungeons to Xbox One, and I’m super happy that it’s finally out. It was released around a week ago, on September 4.
 This took some time but I’m happy of the way the game is played with a gamepad, after a lot of changes to the UI I really feel like it was worth all the effort I put into it.</description>
     </item>
     <item>
       <title>Make your own QoD Xbox One controller</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/09/make-your-own-qod-xbox-one-controller/</link>
+      <link>https://www.david-amador.com/2015/09/make-your-own-qod-xbox-one-controller/</link>
       <pubDate>Fri, 04 Sep 2015 14:29:51 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/09/make-your-own-qod-xbox-one-controller/</guid>
+      <guid>https://www.david-amador.com/2015/09/make-your-own-qod-xbox-one-controller/</guid>
       <description>A lot of you asked me how they could have their Xbox One controller to look like this
 So today I’m sharing the template that you can use to print your own controller 😀
 Start by downloading this image: (Right click, open in new tab, Hi-res download)
@@ -249,18 +249,18 @@ For my own controller I used a website called decalGirl, but use whatever simila
     </item>
     <item>
       <title>Quest of Dungeons is now available on Xbox One</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/</link>
+      <link>https://www.david-amador.com/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/</link>
       <pubDate>Fri, 04 Sep 2015 14:27:30 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/</guid>
+      <guid>https://www.david-amador.com/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/</guid>
       <description>It’s alive!!!!
 Quest of Dungeons finally landed on the Xbox One, and it’s available to buy right NOW!!
 Xbox Store link: https://store.xbox.com/en-US/Xbox-One/Games/Quest-of-Dungeons/c5fc3166-ea13-4a23-becb-9e52ed638652</description>
     </item>
     <item>
       <title>Quest of Dungeons coming to Xbox One on September 4</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/07/quest-of-dungeons-coming-to-xbox-one-on-september-4/</link>
+      <link>https://www.david-amador.com/2015/07/quest-of-dungeons-coming-to-xbox-one-on-september-4/</link>
       <pubDate>Wed, 15 Jul 2015 18:33:15 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/07/quest-of-dungeons-coming-to-xbox-one-on-september-4/</guid>
+      <guid>https://www.david-amador.com/2015/07/quest-of-dungeons-coming-to-xbox-one-on-september-4/</guid>
       <description>Hey everyone!
 You know that thing you’ve been asking me these past few weeks? I finally have a release day.
 I’m very pleased to announce that Quest of Dungeons is coming to Xbox One on September 4th via the ID@Xbox self-publishing program.
@@ -269,17 +269,17 @@ Quest of Dungeons is a turn based roguelike game, featuring that good old 16-bit
     </item>
     <item>
       <title>Let&#39;s talk about the new stuff in Quest of Dungeons for Xbox One</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/</link>
+      <link>https://www.david-amador.com/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/</link>
       <pubDate>Tue, 14 Jul 2015 14:49:55 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/</guid>
+      <guid>https://www.david-amador.com/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/</guid>
       <description>I’ve been talking about some of the new stuff here and then, but it’s time to show the Xbox version in more detail. A lot of the UI was remade to allow proper gamepad support, several bugs and tweaks were made, and even new features. Lets take a closer look.
 In game First of all, here’s how it looks in game, a very minimalist UI if I might say so.</description>
     </item>
     <item>
       <title>Suggestion for where to store save games</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/04/suggestion-for-where-to-store-save-games/</link>
+      <link>https://www.david-amador.com/2015/04/suggestion-for-where-to-store-save-games/</link>
       <pubDate>Thu, 09 Apr 2015 09:27:58 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/04/suggestion-for-where-to-store-save-games/</guid>
+      <guid>https://www.david-amador.com/2015/04/suggestion-for-where-to-store-save-games/</guid>
       <description>Standards are a lovely thing, but hard to achieve, it depends on one thing, everyone actually using it, otherwise it’s just a rule no one cares about.
 There is one thing that is very common to see in the “game sphere”:
 Where are [X] save games located?
@@ -287,9 +287,9 @@ There are a couple of common directories used but I think as game developers we 
     </item>
     <item>
       <title>Necrodancer is joining</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/04/necrodancer-is-joining/</link>
+      <link>https://www.david-amador.com/2015/04/necrodancer-is-joining/</link>
       <pubDate>Tue, 07 Apr 2015 11:28:34 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/04/necrodancer-is-joining/</guid>
+      <guid>https://www.david-amador.com/2015/04/necrodancer-is-joining/</guid>
       <description>Hi!
 I’ve been keeping this one a secret, but there’s going to a be a new class, a Necrodancer.
 Yes you guessed it, it’s an homage to Cadence from the awesome game Crypt of the Necrodancer, you should buy it btw!
@@ -297,116 +297,116 @@ I’ve been thinking about adding a new class for some time but never quite foun
     </item>
     <item>
       <title>QoD 1 year anniversary</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/03/qod-1-year-anniversary/</link>
+      <link>https://www.david-amador.com/2015/03/qod-1-year-anniversary/</link>
       <pubDate>Wed, 25 Mar 2015 09:27:40 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/03/qod-1-year-anniversary/</guid>
+      <guid>https://www.david-amador.com/2015/03/qod-1-year-anniversary/</guid>
       <description>Quest of Dungeons is one year old, which means the first release was on March 25th 2014. I decided to leave you with some interesting stats collected over the whole year, it only counts Steam players , so it’s probably a bit more.</description>
     </item>
     <item>
       <title>Quest of Dungeons GDC 2015 Trailer for the Xbox One</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/03/quest-of-dungeons-gdc-2015-trailer-for-the-xbox-one/</link>
+      <link>https://www.david-amador.com/2015/03/quest-of-dungeons-gdc-2015-trailer-for-the-xbox-one/</link>
       <pubDate>Wed, 04 Mar 2015 10:10:24 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/03/quest-of-dungeons-gdc-2015-trailer-for-the-xbox-one/</guid>
+      <guid>https://www.david-amador.com/2015/03/quest-of-dungeons-gdc-2015-trailer-for-the-xbox-one/</guid>
       <description>Hey everyone, just a small update. GDC 2015 is happening right now and last night a trailer was released for Quest of Dungeons running on the Xbox One.
 I made all new footage, running at 1080p in 60FPS for this new trailer, but kept more or less the structure of the original one since I think it reflects well what the game is all about.</description>
     </item>
     <item>
       <title>QoD XO devlog 3</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/02/qod-xo-devlog-3/</link>
+      <link>https://www.david-amador.com/2015/02/qod-xo-devlog-3/</link>
       <pubDate>Tue, 24 Feb 2015 18:47:08 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/02/qod-xo-devlog-3/</guid>
+      <guid>https://www.david-amador.com/2015/02/qod-xo-devlog-3/</guid>
       <description>Last time we talked I was porting the engine to run on the actual Xbox One hardware, since them I managed to port the whole engine, it’s now running (not 100% stable), sound, rending, and input, all working. Since that part is a bit better now I decided to focus some time on new content, such as localization, the new dungeons and stuff that still doesn’t properly work with a controller.</description>
     </item>
     <item>
       <title>QoD XO devlog 2</title>
-      <link>https://djlink.github.io/web_david-amador.com/2015/01/qod-xo-devlog-2/</link>
+      <link>https://www.david-amador.com/2015/01/qod-xo-devlog-2/</link>
       <pubDate>Sun, 11 Jan 2015 15:20:42 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2015/01/qod-xo-devlog-2/</guid>
+      <guid>https://www.david-amador.com/2015/01/qod-xo-devlog-2/</guid>
       <description>I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.
 Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere.</description>
     </item>
     <item>
       <title>year review log 2014</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/12/year-review-log-2014/</link>
+      <link>https://www.david-amador.com/2014/12/year-review-log-2014/</link>
       <pubDate>Wed, 31 Dec 2014 10:33:28 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/12/year-review-log-2014/</guid>
+      <guid>https://www.david-amador.com/2014/12/year-review-log-2014/</guid>
       <description>WOW, 2014 is already coming to an end. Can’t even believe the amount of things that happened to me this year, some bad, some good, I decided to make a wall of text.
 This was been a great year for my game dev objectives. In January I got Quest of Dungeons approved on Steam in only 6 days, which was mind blowing, on March 25th I finally got it released, and during the rest of the year several other platforms got a port, like Linux and Android, both platforms that I never had worked before, so I learned a lot.</description>
     </item>
     <item>
       <title>I&#39;m a Xbox One developer now, QoD getting a port</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</link>
+      <link>https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</link>
       <pubDate>Sun, 14 Dec 2014 12:19:07 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</guid>
+      <guid>https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</guid>
       <description>So a lot has happened since my last post. Even before EGX I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.
 I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you.</description>
     </item>
     <item>
       <title>QoD iOS and Android update 1.1.1 released</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</link>
+      <link>https://www.david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</link>
       <pubDate>Mon, 08 Dec 2014 11:40:29 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</guid>
+      <guid>https://www.david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</guid>
       <description>A new patch for iOS and Android went live, v1.1.1
 There are some differences in what’s new for each one of the platforms, the biggest change being support for iPhone 6 and 6 Plus on iOS and x86 architecture support on Android.
 The reason why there are more tweaks on the iOS is because the Android version was updated more recently. After this update they are on par on features and fixes.</description>
     </item>
     <item>
       <title>QoD XO devlog 1</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/11/qod-xo-devlog-1/</link>
+      <link>https://www.david-amador.com/2014/11/qod-xo-devlog-1/</link>
       <pubDate>Sun, 16 Nov 2014 18:05:33 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/11/qod-xo-devlog-1/</guid>
+      <guid>https://www.david-amador.com/2014/11/qod-xo-devlog-1/</guid>
       <description>I’ve been doing a lot of menus and gamepad specifics related work lately.
 My first step has been to make sure all menus are easy to use with a Xbox One controller, and while most of the menus in the main screen are usable, inside the game they are not.
 Everything was made with mouse in mind at first so I decided to remake all of them again in a different way.</description>
     </item>
     <item>
       <title>Quest of Dungeons is coming to Xbox One</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/10/quest-of-dungeons-is-coming-to-xbox-one/</link>
+      <link>https://www.david-amador.com/2014/10/quest-of-dungeons-is-coming-to-xbox-one/</link>
       <pubDate>Wed, 22 Oct 2014 10:53:05 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/10/quest-of-dungeons-is-coming-to-xbox-one/</guid>
+      <guid>https://www.david-amador.com/2014/10/quest-of-dungeons-is-coming-to-xbox-one/</guid>
       <description>I’m very happy to announce that Quest of Dungeons is coming to Xbox One.
 The game was released for the first time on Steam in March 25th and the response has been super positive so I’m excited to bring QoD to new players in a “home console”. I’ll be handling the port myself, because that’s what a one man team means 🙂 I will keep you in the loop to what’s happening in the backstage so keep tuned…</description>
     </item>
     <item>
       <title>EGX 2014</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/10/egx-2014/</link>
+      <link>https://www.david-amador.com/2014/10/egx-2014/</link>
       <pubDate>Fri, 03 Oct 2014 11:37:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/10/egx-2014/</guid>
+      <guid>https://www.david-amador.com/2014/10/egx-2014/</guid>
       <description>I had the chance of going to EGX in London this year with Quest of Dungeons.
 The whole show lasted 4 days and it was AMAZING, met tons of players, and a lot of developers. Everyone was super friendly, so I had a lot of fun.
 This was the first time I did something like this, so it was a very good way to get feedback and talk in person with players and even some fans of the game.</description>
     </item>
     <item>
-      <title>Indie Dev &amp;#038; Day Job, Making it work &amp;#8211; Building Quest of Dungeons</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/</link>
+      <title>Indie Dev &amp; Day Job, Making it work / Building Quest of Dungeons</title>
+      <link>https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/</link>
       <pubDate>Fri, 03 Oct 2014 11:36:36 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/</guid>
+      <guid>https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/</guid>
       <description>During Gamedev Camp 2014 in Lisbon I got to talk a bit about the development of Quest of Dungeons, and some of the problems that I had making it while still having a day job.
 Most indie developers don’t have enough money to work on their game full-time so they have to keep a day job in order to support it, so this is a bit of my own personal experience doing it, some of the problems that came with it and mistakes I did during the development and launch of the game.</description>
     </item>
     <item>
-      <title>Native game on Android &amp;#8211; Porting Quest of Dungeons</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</link>
+      <title>Native game on Android &amp; Porting Quest of Dungeons</title>
+      <link>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</link>
       <pubDate>Sat, 30 Aug 2014 13:42:52 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</guid>
+      <guid>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</guid>
       <description>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.
 I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.</description>
     </item>
     <item>
       <title>Upfall Studios Blog launch</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/07/blog-launch/</link>
+      <link>https://www.david-amador.com/2014/07/blog-launch/</link>
       <pubDate>Mon, 21 Jul 2014 20:49:20 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/07/blog-launch/</guid>
-      <description>(update: 2022- I moved all upfallstudios.com/blog posts here, so while it’s weird to have it mid the rest of my blog, I kept it)
+      <guid>https://www.david-amador.com/2014/07/blog-launch/</guid>
+      <description>(update: 2022- Originally this was under upfallstudios.com/blog, but I moved the whole blog here, while it’s weird to have a &amp;ldquo;Blog Launch&amp;rdquo; post here, in middle of personal blog, I kept it)
 I would like to welcome everyone to the new blog.
 So what is Upfall Studios?
 It’s an independent game development studio founded by myself in order to develop and distribute games that I make. The only game so far is called Quest of Dungeons, which is out on Steam, iOS and Android.</description>
     </item>
     <item>
       <title>Quest of Dungeons is now available</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/04/quest-of-dungeons-is-now-available/</link>
+      <link>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</link>
       <pubDate>Sun, 06 Apr 2014 11:39:36 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/04/quest-of-dungeons-is-now-available/</guid>
+      <guid>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</guid>
       <description>I’m pleased to announce that Quest of Dungeons is finally out.
 I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.
 It was released on March 25th, for PC, Mac and iOS. You can get it on Steam, iOS App Store or directly from the site via Humble Store.
@@ -414,9 +414,9 @@ I released all platforms on the same day, which was something I always wanted to
     </item>
     <item>
       <title>Quest of Dungeons approved on Steam</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/02/quest-of-dungeons-approved-on-steam/</link>
+      <link>https://www.david-amador.com/2014/02/quest-of-dungeons-approved-on-steam/</link>
       <pubDate>Tue, 04 Feb 2014 21:04:34 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/02/quest-of-dungeons-approved-on-steam/</guid>
+      <guid>https://www.david-amador.com/2014/02/quest-of-dungeons-approved-on-steam/</guid>
       <description>A lot of stuff happened since my last post.
 I launched a GreenLight campaign for Quest of Dungeons on Jan 16 and it got greenlit on Jan 21, votes were coming in like crazy, I did not see that coming.
 Some sites posted about the game, like TouchArcade and PocketGamer, which was also very cool.
@@ -424,25 +424,25 @@ So right now I’m working like crazy to implement everything from steam onto th
     </item>
     <item>
       <title>Quest of Dungeons development update</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/12/quest-of-dungeons-development-update/</link>
+      <link>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</link>
       <pubDate>Wed, 11 Dec 2013 12:00:14 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/12/quest-of-dungeons-development-update/</guid>
+      <guid>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</guid>
       <description>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.
 I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too.</description>
     </item>
     <item>
       <title>First Macbook Pro</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/12/first-macbook-pro/</link>
+      <link>https://www.david-amador.com/2013/12/first-macbook-pro/</link>
       <pubDate>Wed, 11 Dec 2013 11:41:20 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/12/first-macbook-pro/</guid>
+      <guid>https://www.david-amador.com/2013/12/first-macbook-pro/</guid>
       <description>I’ve been developing apps on Mac for almost 2 years now. But usually it’s pretty much just a develop on Windows, boot my 2009 Mini Mac, build on XCode and deploy.
 I always wanted to give it a try at using MacOSX as the main development environment, but the mini mac is too slow and well, Visual Studio. Also I don’t like that new Windows 8 that much. I hope Win9 gets back on track, in the line of Win 7.</description>
     </item>
     <item>
       <title>A new game project and new job</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/10/a-new-game-project-and-new-job/</link>
+      <link>https://www.david-amador.com/2013/10/a-new-game-project-and-new-job/</link>
       <pubDate>Fri, 04 Oct 2013 16:10:05 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/10/a-new-game-project-and-new-job/</guid>
+      <guid>https://www.david-amador.com/2013/10/a-new-game-project-and-new-job/</guid>
       <description>Hey everyone!
 So a lot of things have happened since my last post.
 New project
@@ -450,51 +450,51 @@ I’ve been talking about this via twitter for the past few weeks but this is th
     </item>
     <item>
       <title>Let&#39;s take a look at SDL Game Development book</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</link>
+      <link>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</link>
       <pubDate>Wed, 17 Jul 2013 12:47:13 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</guid>
+      <guid>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</guid>
       <description>I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.
 These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of SDL Game Development written by Shaun Mitchell that covers that new version.</description>
     </item>
     <item>
       <title>OpenGL Camera 2d with zoom and rotation</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</link>
+      <link>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</link>
       <pubDate>Thu, 11 Jul 2013 12:09:48 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</guid>
+      <guid>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</guid>
       <description>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a XNA 2D Camera I wrote some time ago.
 Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</description>
     </item>
     <item>
       <title>Puwang is running on PC, releasing it for free</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</link>
+      <link>https://www.david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</link>
       <pubDate>Wed, 24 Apr 2013 23:35:33 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</guid>
+      <guid>https://www.david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</guid>
       <description>Hey guys,
-Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it. Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.
+Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.
 I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</description>
     </item>
     <item>
       <title>OpenGL 2D Independent Resolution Rendering</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</link>
+      <link>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</link>
       <pubDate>Mon, 22 Apr 2013 11:22:22 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
+      <guid>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
       <description>Around two years ago I made a tutorial for XNA in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.
 As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</description>
     </item>
     <item>
       <title>Updates, development and new feed url</title>
-      <link>https://djlink.github.io/web_david-amador.com/2013/04/updates-development-and-new-feed-url/</link>
+      <link>https://www.david-amador.com/2013/04/updates-development-and-new-feed-url/</link>
       <pubDate>Sat, 20 Apr 2013 12:01:44 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2013/04/updates-development-and-new-feed-url/</guid>
+      <guid>https://www.david-amador.com/2013/04/updates-development-and-new-feed-url/</guid>
       <description>Almost 4 months without a post, this is the first time it happened.
 It was nothing in particular that held me back, I just kept postponing and, to be honest, I only write posts when I have something I really want to write about.
 Before going into the rest of the post, I would like to ask people to update my feed url on your RSS readers. I always used Feedburner to redirect feeds, and with Google Reader going down I decided to start switching, so in your new FeedsReader use this address: (&amp;lt;/feed/&amp;gt;).</description>
     </item>
     <item>
       <title>hasta la vista, 2012</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/12/hasta-la-vista-2012/</link>
+      <link>https://www.david-amador.com/2012/12/hasta-la-vista-2012/</link>
       <pubDate>Sat, 22 Dec 2012 16:41:45 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/12/hasta-la-vista-2012/</guid>
+      <guid>https://www.david-amador.com/2012/12/hasta-la-vista-2012/</guid>
       <description>So the world did no end, how about that?
 This is it, the last post I’ll make this year.
 It’s been a wild year, much much (probably too many) work this year.
@@ -503,25 +503,25 @@ Some recap:
     </item>
     <item>
       <title>Dary&#39;s Legend alpha released</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/12/darys-legend-alpha-released/</link>
+      <link>https://www.david-amador.com/2012/12/darys-legend-alpha-released/</link>
       <pubDate>Wed, 05 Dec 2012 13:38:51 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/12/darys-legend-alpha-released/</guid>
+      <guid>https://www.david-amador.com/2012/12/darys-legend-alpha-released/</guid>
       <description>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like Puwang and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.
 Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</description>
     </item>
     <item>
       <title>Ati Radeon HD 4000 drivers for Windows 8, fix for slow OpenGL games, yes, including Minecraft</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</link>
+      <link>https://www.david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</link>
       <pubDate>Wed, 31 Oct 2012 09:02:55 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</guid>
+      <guid>https://www.david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</guid>
       <description>I’m making this post solely for the purpose of people who can’t find a solution for this.
 If you have a Ati Radeon HD 4000 or lower like me you’ll notice that there are no drivers for Windows 8 listed when you go to the AMD website. AMD only supports Windows 8 from the 5000+. And the stock ones from Windows 8 are useless, mostly on the OpenGL side, some games won’t even load, or run really slowly, like your beloved Minecraft which uses OpenGL.</description>
     </item>
     <item>
       <title>Puwang is out on the App Store</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/10/puwang-is-out-on-the-app-store/</link>
+      <link>https://www.david-amador.com/2012/10/puwang-is-out-on-the-app-store/</link>
       <pubDate>Wed, 10 Oct 2012 13:05:23 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/10/puwang-is-out-on-the-app-store/</guid>
+      <guid>https://www.david-amador.com/2012/10/puwang-is-out-on-the-app-store/</guid>
       <description>So tonight, while I was sleeping, Puwang was approved and released on the App Store.
 I made a small gameplay video where, directly from the screen.
 and there’s another one, offscreen, on a real iDevice here
@@ -529,34 +529,34 @@ Spread the word, buy it if you like =)
 App Store Link: http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;amp;mt=8</description>
     </item>
     <item>
-      <title>Puwang &amp;#8211; a 5 day work</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/09/puwang-a-5-day-work/</link>
+      <title>Puwang - a 5 day work</title>
+      <link>https://www.david-amador.com/2012/09/puwang-a-5-day-work/</link>
       <pubDate>Fri, 28 Sep 2012 20:03:40 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/09/puwang-a-5-day-work/</guid>
+      <guid>https://www.david-amador.com/2012/09/puwang-a-5-day-work/</guid>
       <description>Hi, how’s everyone doing?
 So this was a different week for me. It’s been a long time that I had the chance to work on a small prototype or a 48H competition because of my work on Dary’s Legend so I decided to stop for a couple of days and do something else.
 Also my cat’s been quite sick, and between the Vet and taking care of him, working on a fun project gave me more time do everything.</description>
     </item>
     <item>
       <title>How to take screenshots in opengl</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/09/how-to-take-screenshot-in-opengl/</link>
+      <link>https://www.david-amador.com/2012/09/how-to-take-screenshot-in-opengl/</link>
       <pubDate>Sat, 08 Sep 2012 16:53:27 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/09/how-to-take-screenshot-in-opengl/</guid>
+      <guid>https://www.david-amador.com/2012/09/how-to-take-screenshot-in-opengl/</guid>
       <description>So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt; bool save_screenshot(string filename, int w, int h) {	//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let&amp;#39;s create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let&amp;#39;s fetch them from the backbuffer	// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename.</description>
+bool save_screenshot(string filename, int w, int h) {	//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let&amp;#39;s create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let&amp;#39;s fetch them from the backbuffer	// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename.</description>
     </item>
     <item>
-      <title>QuakeCon 2012 &amp;#8211; John Carmack Keynote</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</link>
+      <title>QuakeCon 2012 - John Carmack Keynote</title>
+      <link>https://www.david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</link>
       <pubDate>Sat, 04 Aug 2012 18:13:08 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</guid>
+      <guid>https://www.david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</guid>
       <description>I usually don’t do this, but come on, it’s John Carmack, and this 3h30m keynote given at QuakeCon 2012 is fascinating.</description>
     </item>
     <item>
       <title>Gamedev is like a house of cards</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/07/gamedev-is-like-a-house-of-cards/</link>
+      <link>https://www.david-amador.com/2012/07/gamedev-is-like-a-house-of-cards/</link>
       <pubDate>Mon, 30 Jul 2012 19:10:46 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/07/gamedev-is-like-a-house-of-cards/</guid>
+      <guid>https://www.david-amador.com/2012/07/gamedev-is-like-a-house-of-cards/</guid>
       <description>It all starts so pretty isn’t it?
 A clean project, a quick prototype, it works! It’s beautiful.
 Now it’s time to add more features, everything is planned out, all cogs have a place to be, it goes smoothly for a while.
@@ -565,18 +565,18 @@ Eventually you do need to plug them into the game itself, and that’s when the 
     </item>
     <item>
       <title>Dary&#39;s Legend development Timelapse sample</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/07/darys-legend-development-timelapse-sample/</link>
+      <link>https://www.david-amador.com/2012/07/darys-legend-development-timelapse-sample/</link>
       <pubDate>Sun, 01 Jul 2012 21:32:14 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/07/darys-legend-development-timelapse-sample/</guid>
+      <guid>https://www.david-amador.com/2012/07/darys-legend-development-timelapse-sample/</guid>
       <description>Working on Dary’s Legend has been my daily routine so I decided to make a time lapse.
 So this is a video compiled using Chronolapse, by taking a screenshot every 60s during a couple of days while I’m working on Dary’s Legend, the new game from Different Pixel. The video is being played back at 10 real minutes per second.
 This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)</description>
     </item>
     <item>
-      <title>Detecting C&#43;&#43; memory leaks in Visual Studio &amp;#8211; again</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</link>
+      <title>Detecting C&#43;&#43; memory leaks in Visual Studio - again</title>
+      <link>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</link>
       <pubDate>Sun, 03 Jun 2012 20:00:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</guid>
+      <guid>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</guid>
       <description>I made a small post about detecting C++ memory leaks in Visual Studio in 2010. At the time that seemed to suffice, but some months ago someone told me about Visual Leak Detector and boy does it work.
 According to the website itself
 Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
@@ -584,9 +584,9 @@ It’s pretty easy to use. After installing it, you just need to tell Visual C++
     </item>
     <item>
       <title>Dary&#39;s Legend First Teaser</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/06/darys-legend-first-teaser/</link>
+      <link>https://www.david-amador.com/2012/06/darys-legend-first-teaser/</link>
       <pubDate>Fri, 01 Jun 2012 11:44:17 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/06/darys-legend-first-teaser/</guid>
+      <guid>https://www.david-amador.com/2012/06/darys-legend-first-teaser/</guid>
       <description>So, yeah I know I’ve been a little lazy about my blog it’s for a good cause.
 We decided to release a small teaser showing what we have. I can’t stress this enough, it’s a work in progress.
 I can’t find out how to embed the video with HD by default so don’t forget to see in 720p
@@ -594,29 +594,29 @@ Lately I’ve been working mostly on small UI stuff, pixel tuning every menu/but
     </item>
     <item>
       <title>Xbox 360 Controller Input in C&#43;&#43; via XInput</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</link>
+      <link>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</link>
       <pubDate>Sun, 15 Apr 2012 11:41:27 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</guid>
+      <guid>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</guid>
       <description>So you have that Xbox360 controller laying around and want to connect it to your game?
 On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.
 First of all, you will need the DirecX 9.0+ sdk.
 The includes.
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt; #define WIN32_LEAN_AND_MEAN // We don&amp;#39;t want the extra stuff like MFC and such #include &amp;lt;windows&amp;gt; #include &amp;lt;xinput.</description>
+#define WIN32_LEAN_AND_MEAN // We don&amp;#39;t want the extra stuff like MFC and such #include &amp;lt;windows&amp;gt; #include &amp;lt;XInput.h&amp;gt; // XInput API #pragma comment(lib, &amp;#34;XInput.</description>
     </item>
     <item>
-      <title>Screenies time&amp;#8230;</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/03/screenies-time/</link>
+      <title>Screenies time...</title>
+      <link>https://www.david-amador.com/2012/03/screenies-time/</link>
       <pubDate>Fri, 30 Mar 2012 21:36:35 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/03/screenies-time/</guid>
+      <guid>https://www.david-amador.com/2012/03/screenies-time/</guid>
       <description>We finally released some screenshots of Dary’s Legend.
 Lately I’ve been working on the light system and fog of war for the game, it’s visible on the images.
 Here’s the official post but I’ve placed the images here for convenience.</description>
     </item>
     <item>
-      <title>New game&amp;#8230;</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/03/new-game/</link>
+      <title>New game...</title>
+      <link>https://www.david-amador.com/2012/03/new-game/</link>
       <pubDate>Fri, 16 Mar 2012 17:11:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/03/new-game/</guid>
+      <guid>https://www.david-amador.com/2012/03/new-game/</guid>
       <description>New game, called Dary’s Legend, a roguelike, dungeon crawling type.
 This is what I’ve been working on lately, and … well not much more to say.
 I’ll try and do posts with relevant stuff regarding the development of the game from now on.
@@ -624,40 +624,40 @@ Going back to coding now…</description>
     </item>
     <item>
       <title>Where do you like games to store their save data?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/03/where-do-you-like-games-to-store-their-save-data/</link>
+      <link>https://www.david-amador.com/2012/03/where-do-you-like-games-to-store-their-save-data/</link>
       <pubDate>Sat, 03 Mar 2012 12:57:47 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/03/where-do-you-like-games-to-store-their-save-data/</guid>
+      <guid>https://www.david-amador.com/2012/03/where-do-you-like-games-to-store-their-save-data/</guid>
       <description>Quick question.
 I’m trying to decide where my next game should store their save files so I decided to make a poll.
 Personally I think that
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;C:/Users/$USER$/AppData/Local/ is a total idiotic thing.
+C:/Users/$USER$/AppData/Local/ is a total idiotic thing.
 Starting on Windows Vista there’s a pre-created “Saved Games” folder but most people seem to miss it since it’s not on the “My Documents” folder.
 There’s also other possibilities which many games I own use like
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;My Documents\My Games\Game\ Others just create a folder directly on “My Documents” which some users find a bit obstructive.</description>
+My Documents\My Games\Game\ Others just create a folder directly on “My Documents” which some users find a bit obstructive.</description>
     </item>
     <item>
       <title>Some thoughts about indie dev</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/02/some-thoughts-about-indie-dev/</link>
+      <link>https://www.david-amador.com/2012/02/some-thoughts-about-indie-dev/</link>
       <pubDate>Thu, 23 Feb 2012 23:10:19 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/02/some-thoughts-about-indie-dev/</guid>
+      <guid>https://www.david-amador.com/2012/02/some-thoughts-about-indie-dev/</guid>
       <description>1 – You either are, or you aren’t.
 People can go and , “I’m an aspiring indie game developer”. You are either doing games or not, period. If you are starting in development with your own money then you are one. People tend to think they are indie developers when money starts rolling in, well think again, cause money may never come.
 2 – It’s a jungle out there</description>
     </item>
     <item>
       <title>Engine, video player and tools, tools tools!</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</link>
+      <link>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</link>
       <pubDate>Sun, 29 Jan 2012 19:56:20 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</guid>
+      <guid>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</guid>
       <description>So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.
 Taking a rest between some more complex game mechanisms I decided to start doing a video player.
 After a bit research I decided to choose theora, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&amp;gt;RGB(A) conversion and because of video/audio sync.</description>
     </item>
     <item>
       <title>How to Restore the Windows 7 MBR (Master Boot Record)</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/01/how-to-restore-the-windows-7-mbr-master-boot-record/</link>
+      <link>https://www.david-amador.com/2012/01/how-to-restore-the-windows-7-mbr-master-boot-record/</link>
       <pubDate>Sat, 21 Jan 2012 10:43:50 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/01/how-to-restore-the-windows-7-mbr-master-boot-record/</guid>
+      <guid>https://www.david-amador.com/2012/01/how-to-restore-the-windows-7-mbr-master-boot-record/</guid>
       <description>So I had this crisis where the MBR got broken and Windows would not boot. This can happens for many reasons, maybe you tried to dual boot your PC and something went wrong.
 Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of course)!
 1 – Boot your computer to the Windows 7 DVD
@@ -666,38 +666,38 @@ Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of cours
     </item>
     <item>
       <title>Find/Replace in Visual Studio using regular expressions</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</link>
+      <link>https://www.david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</link>
       <pubDate>Sat, 14 Jan 2012 21:27:55 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</guid>
+      <guid>https://www.david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</guid>
       <description>Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.
 But today I had this function I wanted to get rid of and simple change it with a public variable.
 So I had something like this.
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;object-&amp;gt;setLayer(/*BLABAL BLA CODE, */); I want to replace it with something more simple
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;object-&amp;gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in regular expressions mode I used this as a search string</description>
+object-&amp;gt;setLayer(/*BLABAL BLA CODE, */); I want to replace it with something more simple
+object-&amp;gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in regular expressions mode I used this as a search string</description>
     </item>
     <item>
       <title>post mortem of another year</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/01/post-mortem-of-another-year/</link>
+      <link>https://www.david-amador.com/2012/01/post-mortem-of-another-year/</link>
       <pubDate>Sun, 01 Jan 2012 21:43:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/01/post-mortem-of-another-year/</guid>
+      <guid>https://www.david-amador.com/2012/01/post-mortem-of-another-year/</guid>
       <description>Another year has gone by, not quite what I was expecting developing wise, like putting another game out there, but things never turned out as planned.
 Still over the last year I’ve gradually saw out little Different Pixel brand reaching more and more places which can be very helpful in the future and sure hell is nice to see work recognized.
 From the top of my head I recall Kotaku article on the Xbox360 release, we finally managed to release the Xbox360 version, which was the first one we made.</description>
     </item>
     <item>
       <title>Basalt code swarm</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/12/basalt-code-swarm/</link>
+      <link>https://www.david-amador.com/2011/12/basalt-code-swarm/</link>
       <pubDate>Fri, 23 Dec 2011 16:48:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/12/basalt-code-swarm/</guid>
+      <guid>https://www.david-amador.com/2011/12/basalt-code-swarm/</guid>
       <description>I discovered code swarm a while ago and decided to test on my own repositories.
 This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.
 This is the result.</description>
     </item>
     <item>
       <title>Revert To The Old Tweetdeck</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/12/revert-to-the-old-tweetdeck/</link>
+      <link>https://www.david-amador.com/2011/12/revert-to-the-old-tweetdeck/</link>
       <pubDate>Tue, 20 Dec 2011 12:34:21 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/12/revert-to-the-old-tweetdeck/</guid>
+      <guid>https://www.david-amador.com/2011/12/revert-to-the-old-tweetdeck/</guid>
       <description>If you use Tweetdeck you probably already know they screwed the new version (1.0) and you want to revert back.
 Unfortunately since they are now part of Twitter I had a hard time finding the older build and decided to share it.
 And that’s why you are here too probably, here it is: Tweetdeck 0.38.2. Don’t forget you need Adobe Air installed.
@@ -707,45 +707,45 @@ Some user have experienced a
     </item>
     <item>
       <title>november progress</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/12/november-progress/</link>
+      <link>https://www.david-amador.com/2011/12/november-progress/</link>
       <pubDate>Wed, 07 Dec 2011 17:16:26 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/12/november-progress/</guid>
+      <guid>https://www.david-amador.com/2011/12/november-progress/</guid>
       <description>So as I mentioned a few weeks back, since November 1st I quit my job and I’ve been mainly focusing on our next game for Different Pixel.
 After a month, I think so far progress has been good. I’ve been able to work almost entirely on the game itself instead of the engine because most of the stuff is stable enough since Vizati.
 It’s kind of rewarding now and instead of reading tons of docs of other engines each time something doesn’t work right I usually know where the problem may be and can fix it, as good as I can at least.</description>
     </item>
     <item>
       <title>Rage</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/12/rage/</link>
+      <link>https://www.david-amador.com/2011/12/rage/</link>
       <pubDate>Wed, 07 Dec 2011 16:47:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/12/rage/</guid>
+      <guid>https://www.david-amador.com/2011/12/rage/</guid>
       <description>So being a big fan of Quake, Quake 3 Arena and Doom I was eager to get my hands on id Software latest game, Rage.
 Like most developers out there I’ve been impressed by John Carmack’s work and breakthroughs in gaming and computer graphics for years. When I first heard Rage was targeting 60FPS I got intrigued.
 Almost every game targets 30FPS and targeting twice as that leaves less time to render each frame, even more since they were promising vast wastelands, detailed characters, top notch animations and AI.</description>
     </item>
     <item>
-      <title>something new in the horizon&amp;#8230;</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/10/something-new-in-the-horizon/</link>
+      <title>something new in the horizon...</title>
+      <link>https://www.david-amador.com/2011/10/something-new-in-the-horizon/</link>
       <pubDate>Thu, 27 Oct 2011 10:06:14 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/10/something-new-in-the-horizon/</guid>
+      <guid>https://www.david-amador.com/2011/10/something-new-in-the-horizon/</guid>
       <description>So I’ve been out for quite some time, and this is just a quick update.
 First, I have tones of unread, thus answered emails on my inbox. I haven’t managed to go through that lately. I usually scroll to see if there’s a really urgent one, I will eventually read them all.
 I decided to quit my current job, my last day is October 31st. I couldn’t glimpse a very promising carrier there and I practically staggered learning-wise for the past months due to the type of work we develop so yeah, that’s it.</description>
     </item>
     <item>
       <title>Hurry you only have 16 ms to render everything</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/08/hurry-you-only-have-16-ms-to-render-everything/</link>
+      <link>https://www.david-amador.com/2011/08/hurry-you-only-have-16-ms-to-render-everything/</link>
       <pubDate>Mon, 08 Aug 2011 21:45:24 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/08/hurry-you-only-have-16-ms-to-render-everything/</guid>
+      <guid>https://www.david-amador.com/2011/08/hurry-you-only-have-16-ms-to-render-everything/</guid>
       <description>So I’ve been working on my new game and I’m doing some tweaks here and there on the engine.
 Mainly with the rendering section, trying to squeeze as much as possible, thus maintaining an acceptable framerate. It’s not like I’m doing a heavily graphic game but I like to know that It can be used even on slower pcs and that I’m not using more cycles than necessary.
 This past week and after reading a bunch of stuff and keynotes from John Carmack about Rage (60FPS ftw) I decided to measure my own stuff.</description>
     </item>
     <item>
       <title>Using Git for revision control</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/07/using-git-for-revision-control/</link>
+      <link>https://www.david-amador.com/2011/07/using-git-for-revision-control/</link>
       <pubDate>Fri, 08 Jul 2011 13:29:34 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/07/using-git-for-revision-control/</guid>
+      <guid>https://www.david-amador.com/2011/07/using-git-for-revision-control/</guid>
       <description>If you are coding, no matter what it is, games, software, websites, you should be using a code revision control of some sort.
 Are you using? Cool. Is it Git? Smart choice, so you probably don’t need to read the rest of this post.
 For the rest I’m giving some help on how to start from scratch.
@@ -753,27 +753,27 @@ First of all I recommend some reading on Revision Control so that you understand
     </item>
     <item>
       <title>So what have I learned after eight months on the App Store</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</link>
+      <link>https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</link>
       <pubDate>Fri, 24 Jun 2011 21:14:07 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</guid>
+      <guid>https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</guid>
       <description>First of all I think this is my last idevblogaday post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn. Actually it’s just the 9th.
 I hope my words have somehow enriched your knowledge, in case you want to stick around just bookmark my feeds. I keep this fairly updated. Also since I’ve been working on a new game</description>
     </item>
     <item>
       <title>Playing sound using OpenAL</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/06/playing-sound-using-openal/</link>
+      <link>https://www.david-amador.com/2011/06/playing-sound-using-openal/</link>
       <pubDate>Fri, 10 Jun 2011 09:22:26 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/06/playing-sound-using-openal/</guid>
+      <guid>https://www.david-amador.com/2011/06/playing-sound-using-openal/</guid>
       <description>For sound I use OpenAL, it’s free, cross-platform, I’ve managed to get it working on iPhone, Windows and Mac.
 Setting up OpenAL to play a sound is pretty straight forward, a bit like OpenGL.
 First you need to create a context.
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;ALCcontext *context; ALCdevice *device; device = alcOpenDevice(NULL, ALC_DEFAULT_DEVICE_SPECIFIER); if (device == NULL) { // Handle Exception } //Create a context context=alcCreateContext(device,NULL); //Set active context alcMakeContextCurrent(context); // Clear Error Code alGetError(); Now for the second part, loading a wav file.</description>
+ALCcontext *context; ALCdevice *device; device = alcOpenDevice(NULL, ALC_DEFAULT_DEVICE_SPECIFIER); if (device == NULL) { // Handle Exception } //Create a context context=alcCreateContext(device,NULL); //Set active context alcMakeContextCurrent(context); // Clear Error Code alGetError(); Now for the second part, loading a wav file.</description>
     </item>
     <item>
       <title>Indie Summer Six Pack</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/06/indie-summer-six-pack/</link>
+      <link>https://www.david-amador.com/2011/06/indie-summer-six-pack/</link>
       <pubDate>Fri, 03 Jun 2011 17:54:35 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/06/indie-summer-six-pack/</guid>
+      <guid>https://www.david-amador.com/2011/06/indie-summer-six-pack/</guid>
       <description>So this is what we at Different Pixel, together with 5 other developers have been working on, the “Indie Summer Six Pack”
 Six indie titles for just $10 – or a stonking $5, if you first share the offer via Facebook.
 How can you say no to that?
@@ -781,9 +781,9 @@ The games included are Aztaka, City Rain, Puzzlegeddon, Bob Came In Pieces, Viza
     </item>
     <item>
       <title>Time for some new tools and editor</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/05/time-for-some-new-tools-and-editor/</link>
+      <link>https://www.david-amador.com/2011/05/time-for-some-new-tools-and-editor/</link>
       <pubDate>Fri, 27 May 2011 12:40:29 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/05/time-for-some-new-tools-and-editor/</guid>
+      <guid>https://www.david-amador.com/2011/05/time-for-some-new-tools-and-editor/</guid>
       <description>Holy cow, this is my 100th post. “Insert epic sentence”
 Depending on how much time you follow my blog or Different Pixel activity you may know that we have an internal Editor called Sapphire
 Past
@@ -791,18 +791,18 @@ It was developed over a year ago with the intent of being a “All in one” 2D 
     </item>
     <item>
       <title>Indie and day job, making it work</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/05/indie-and-day-job-making-it-work/</link>
+      <link>https://www.david-amador.com/2011/05/indie-and-day-job-making-it-work/</link>
       <pubDate>Fri, 13 May 2011 13:10:49 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/05/indie-and-day-job-making-it-work/</guid>
+      <guid>https://www.david-amador.com/2011/05/indie-and-day-job-making-it-work/</guid>
       <description>A large percentage of the indie developers have to work on their project at night and/or weekends.
 In order to pay the bills they have to maintain a day job. There’s no shame in that, many do it, I do it, not everyone can make a mega jump right into fame and fortune with a single project.
 The rest of us mere mortals have to gradually build a fan base, learn from past mistakes, do better PR, etc.</description>
     </item>
     <item>
       <title>Why cheap games are hurting gaming</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/05/why-cheap-games-is-hurt-gaming/</link>
+      <link>https://www.david-amador.com/2011/05/why-cheap-games-is-hurt-gaming/</link>
       <pubDate>Sat, 07 May 2011 20:03:52 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/05/why-cheap-games-is-hurt-gaming/</guid>
+      <guid>https://www.david-amador.com/2011/05/why-cheap-games-is-hurt-gaming/</guid>
       <description>This has been discussed on thousands of forums and people way smarter than me have given reasons why selling games at $0.99 on the App Store is the future and others why it will hurt gaming and developers.
 I’m giving my opinion as both a developer and a consumer.
 As a consumer
@@ -810,37 +810,37 @@ As a consumer I feel like having thousands of games at that price and/or free ma
     </item>
     <item>
       <title>OpenGL Render to Texture</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/04/opengl-render-to-texture/</link>
+      <link>https://www.david-amador.com/2011/04/opengl-render-to-texture/</link>
       <pubDate>Fri, 29 Apr 2011 09:25:33 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/04/opengl-render-to-texture/</guid>
+      <guid>https://www.david-amador.com/2011/04/opengl-render-to-texture/</guid>
       <description>Render to texture is a very handy functionality.
 Imagine your game allows for some character customization. You have the body, some different hats, different clothes and other small stuff. Now the easiest way to render this is to just draw it piece by piece every frame. With the proper Z coordinates everything falls in place.
 But you now have like 4-5 draw calls for one single object. Worse, you might have different textures and swamping textures is expensive.</description>
     </item>
     <item>
       <title>Tracking/Identifying individual touches on iPhone</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/04/tracking-identifying-individual-touches-on-iphone/</link>
+      <link>https://www.david-amador.com/2011/04/tracking-identifying-individual-touches-on-iphone/</link>
       <pubDate>Fri, 15 Apr 2011 12:01:37 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/04/tracking-identifying-individual-touches-on-iphone/</guid>
+      <guid>https://www.david-amador.com/2011/04/tracking-identifying-individual-touches-on-iphone/</guid>
       <description>I got this question the other day, how to track individual touches if you are using a couple of fingers for a game?
 Actually it’s pretty easy if you can access the touch previous position and it’s current position.
 Let’s start with a small class to store the information
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt; class Touch { public: Touch(); ~Touch(); void update_position(float x, float y){ _current_position.x = x; _current_position.x = y; } bool is_same_touch(float x, float y) { if(_current_position.</description>
+class Touch { public: Touch(); ~Touch(); void update_position(float x, float y){ _current_position.x = x; _current_position.x = y; } bool is_same_touch(float x, float y) { if(_current_position.</description>
     </item>
     <item>
       <title>starlog 14042011</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/04/starlog-14042011/</link>
+      <link>https://www.david-amador.com/2011/04/starlog-14042011/</link>
       <pubDate>Thu, 14 Apr 2011 20:05:06 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/04/starlog-14042011/</guid>
+      <guid>https://www.david-amador.com/2011/04/starlog-14042011/</guid>
       <description>Hum…some stuff happened lately, some I can’t go into detail right now others I can.
 I was talking with Rita the other days and she had this nice idea for an iPhone game.
 It’s one of those small concepts that may or not work but I liked the general idea, at least enough to start a small prototype. If everything turns out the way I plan (never is) it should be a 2-3 weeks project.</description>
     </item>
     <item>
       <title>A little on how to initialize and use GameCenter</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/04/a-little-on-how-to-initialize-and-use-gamecenter/</link>
+      <link>https://www.david-amador.com/2011/04/a-little-on-how-to-initialize-and-use-gamecenter/</link>
       <pubDate>Fri, 01 Apr 2011 10:53:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/04/a-little-on-how-to-initialize-and-use-gamecenter/</guid>
+      <guid>https://www.david-amador.com/2011/04/a-little-on-how-to-initialize-and-use-gamecenter/</guid>
       <description>Small side-note first, Vizati is now available for the Super Nintendo, more info.
 For my third idevblogaday post I’m going to talk about Game Center.
 Game Center was released only a couple months ago (September or so) but already tons of applications are using it and even more, players ask for it.
@@ -848,37 +848,37 @@ It’s a way to track achievements, leader boards etc. Unfortunately It’s only
     </item>
     <item>
       <title>Scripting week</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/03/scripting-week/</link>
+      <link>https://www.david-amador.com/2011/03/scripting-week/</link>
       <pubDate>Sat, 26 Mar 2011 11:36:37 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/03/scripting-week/</guid>
+      <guid>https://www.david-amador.com/2011/03/scripting-week/</guid>
       <description>This week I’ve been working on replacing my current scripting system. It worked great for Vizati but I need something with a little more flexibility.
 Instead of explaining what I’ve managed to get working I’ve made a screenshot with some notes.
 I think I’m going to make this my #ScreenshotSaturday</description>
     </item>
     <item>
       <title>Blog new look</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/03/blog-new-look/</link>
+      <link>https://www.david-amador.com/2011/03/blog-new-look/</link>
       <pubDate>Tue, 22 Mar 2011 10:56:50 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/03/blog-new-look/</guid>
+      <guid>https://www.david-amador.com/2011/03/blog-new-look/</guid>
       <description>Spent a little time giving my blog a new look. It’s not that I didn’t like the old one but sometimes it was a bit of a mess, I’ve been getting many new readers so it was time for a cleaner look.
 My main concern was getting all code posts to be readable but I think they are
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt;class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P</description>
+class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P</description>
     </item>
     <item>
       <title>Loading images into OpenGL in iPhone</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</link>
+      <link>https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</link>
       <pubDate>Fri, 18 Mar 2011 10:06:24 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</guid>
+      <guid>https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</guid>
       <description>So you can’t make a game without images, right? Well, actually you can but that’s another story.
 But how can you load a jpg or a png and use then on OpenGLES?
 First let’s make a simple class Texture2D
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt; class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image</description>
+class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image</description>
     </item>
     <item>
       <title>So where is that motivation?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/03/so-where-is-that-motivation/</link>
+      <link>https://www.david-amador.com/2011/03/so-where-is-that-motivation/</link>
       <pubDate>Wed, 09 Mar 2011 22:27:26 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/03/so-where-is-that-motivation/</guid>
+      <guid>https://www.david-amador.com/2011/03/so-where-is-that-motivation/</guid>
       <description>I follow a couple of dev blogs, some are game developers, others make websites or software.
 In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.
 Happens to me too, heck it happens to everyone once in a while…
@@ -886,35 +886,35 @@ It’s something that happens usually half way though or after you get the initi
     </item>
     <item>
       <title>Bringing a game from PC to iOS</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</link>
+      <link>https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</link>
       <pubDate>Fri, 04 Mar 2011 11:05:11 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</guid>
+      <guid>https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</guid>
       <description>This is my first post to http://idevblogaday.com/, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.
-I’ll start by talking a bit about how we made our PC game Vizati to iPhone. When we started, this represented our chance of making games and putting ourselves into test.</description>
+I’ll start by talking a bit about how we made our PC game Vizati to iPhone.When we started, this represented our chance of making games and putting ourselves into test.</description>
     </item>
     <item>
       <title>Playtesting and Tech support, the other side of the coin</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/02/playtesting-and-tech-support-the-other-side-of-the-coin/</link>
+      <link>https://www.david-amador.com/2011/02/playtesting-and-tech-support-the-other-side-of-the-coin/</link>
       <pubDate>Fri, 18 Feb 2011 12:26:28 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/02/playtesting-and-tech-support-the-other-side-of-the-coin/</guid>
+      <guid>https://www.david-amador.com/2011/02/playtesting-and-tech-support-the-other-side-of-the-coin/</guid>
       <description>Something that has always been scary (well, it’ still is) before launching Vizati is tech support.
 No matter how much you tested your game, it’s bound to have bugs. Also what I’ve realized is that I don’t spend enough time testing the game, oh and you too, yes YOU (I’m assuming you’re a developer of course).
 The past year I gather around a few friends who never played it to test the game for 2 days.</description>
     </item>
     <item>
       <title>officially a Mac developer too, wait, what?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</link>
+      <link>https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</link>
       <pubDate>Tue, 11 Jan 2011 01:10:44 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</guid>
+      <guid>https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</guid>
       <description>It’s little over a month since I said I wouldn’t do any more porting for Vizati. Lesson learned, don’t say never again…
 When I started making the engine in C++ with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.
 Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish.</description>
     </item>
     <item>
       <title>Wrapping up year 2010</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/12/wrapping-up-year-2010/</link>
+      <link>https://www.david-amador.com/2010/12/wrapping-up-year-2010/</link>
       <pubDate>Fri, 31 Dec 2010 15:06:46 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/12/wrapping-up-year-2010/</guid>
+      <guid>https://www.david-amador.com/2010/12/wrapping-up-year-2010/</guid>
       <description>So another year has come to an end, time to make plans for a new one and look back on what has been done.
 This was one crazy year, where I embraced indie development as my free time “hobby”.
 This picture illustrates my year very well, dark link is a bonus since my twitter handle is DJ_Link
@@ -922,35 +922,35 @@ I’m tired, but happy and hoping that these were the first steps on something g
     </item>
     <item>
       <title>Quick update, Vizati won Microsoft XapFest</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/12/quick-update-vizati-won-microsoft-xapfest/</link>
+      <link>https://www.david-amador.com/2010/12/quick-update-vizati-won-microsoft-xapfest/</link>
       <pubDate>Wed, 08 Dec 2010 20:39:19 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/12/quick-update-vizati-won-microsoft-xapfest/</guid>
+      <guid>https://www.david-amador.com/2010/12/quick-update-vizati-won-microsoft-xapfest/</guid>
       <description>Yeahhh!!!!
 Just got an email a couple of hours ago confirming that Vizati for Windows Phone 7 won first prize on Microsoft XapFest. Here’s a link, be warned it’s in Portuguese, although it’s on the Microsoft official webpage I couldn’t figure out how to translate that to English on the website itself. Just use Google translate or so.
 This is great for us since Vizati has now 2 awards and this time the prizes are a Xbox360 + Kinect and a Windows Phone 7 device.</description>
     </item>
     <item>
       <title>No more porting for Vizati, time for something new</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/12/no-more-porting-for-vizati-time-for-something-new/</link>
+      <link>https://www.david-amador.com/2010/12/no-more-porting-for-vizati-time-for-something-new/</link>
       <pubDate>Sat, 04 Dec 2010 10:53:14 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/12/no-more-porting-for-vizati-time-for-something-new/</guid>
+      <guid>https://www.david-amador.com/2010/12/no-more-porting-for-vizati-time-for-something-new/</guid>
       <description>It’s been awhile since my last post.
 Regular visitors know that for the last months I’ve been working mainly on Vizati, bringing it first from the Xbox360 (never released, no xblig here) to a PC digital release, followed by a complete rewrite of the engine to C++/OpenGL for a iPhone port, next there was the Windows Phone 7 version. I had the iPad on a backburner since I don’t own a device and optimizing code without seeing the result is crappy but about 2 weeks ago it went gold and it’s finished.</description>
     </item>
     <item>
       <title>Testing if a point is inside a Polygon</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/11/testing-if-a-point-is-inside-a-polygon/</link>
+      <link>https://www.david-amador.com/2010/11/testing-if-a-point-is-inside-a-polygon/</link>
       <pubDate>Fri, 19 Nov 2010 15:35:25 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/11/testing-if-a-point-is-inside-a-polygon/</guid>
+      <guid>https://www.david-amador.com/2010/11/testing-if-a-point-is-inside-a-polygon/</guid>
       <description>I’ve been playing with polygons and collisions lately so I decided to share some stuff.
 Using rectangles to detect if the mouse is inside is handy for Buttons and rectangular shaped objects, but what about other irregular shaped objects?
 Taking this into account I decided to create a Polygon class that basically has a List of Vector3 points. Although I’m just covering 2D collision you should use Vector3 for a more generic class.</description>
     </item>
     <item>
       <title>Viewing Windows Phone 7 Marketplace on the simulator</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</link>
+      <link>https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</link>
       <pubDate>Wed, 17 Nov 2010 23:27:04 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</guid>
+      <guid>https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</guid>
       <description>Since I’m out of the countries where WP7 Marketplace is available it’s been a real pain to check out new games and most of all if Vizati was already available.
 Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂
 So searching some forums I found a neat code to check this on the simulator.
@@ -958,9 +958,9 @@ Basically create a new WP7 Silverlight App and write this main page code</descri
     </item>
     <item>
       <title>My 2 cents on xblig current state</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/11/my-2-cents-on-xblig-current-state/</link>
+      <link>https://www.david-amador.com/2010/11/my-2-cents-on-xblig-current-state/</link>
       <pubDate>Sun, 07 Nov 2010 18:26:13 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/11/my-2-cents-on-xblig-current-state/</guid>
+      <guid>https://www.david-amador.com/2010/11/my-2-cents-on-xblig-current-state/</guid>
       <description>UPDATE: Pressure works, Microsoft backs down over XBLIG changes: http://www.digitalspy.co.uk/gaming/news/a286779/microsoft-backs-down-over-xblig-changes.html
 Let me start by saying that this is just a personal opinion, nothing more, nothing less.
 It was with great sadness that I saw what the latest update to the Xbox360 dashboard did to Xbox Indie Games
@@ -968,9 +968,9 @@ See? XBLIG is now on the “Speciality Shops”, right next to Avatar Marketplac
     </item>
     <item>
       <title>A* Pathfinding</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/10/a-pathfinding/</link>
+      <link>https://www.david-amador.com/2010/10/a-pathfinding/</link>
       <pubDate>Wed, 27 Oct 2010 10:48:46 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/10/a-pathfinding/</guid>
+      <guid>https://www.david-amador.com/2010/10/a-pathfinding/</guid>
       <description>For my current project I’ve been working with A* as a path-finding solution.
 Basically it’s a way to get from point A to point B.
 This is used for AI in games mostly on tiled based games, It’s very simple to understand and implement.
@@ -978,46 +978,46 @@ As A* traverses the graph, it follows a path of the lowest known cost, keeping a
     </item>
     <item>
       <title>Super Meat Boy, meat dissection</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/10/super-meat-boy-meat-dissection/</link>
+      <link>https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/</link>
       <pubDate>Sat, 23 Oct 2010 20:00:59 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/10/super-meat-boy-meat-dissection/</guid>
+      <guid>https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/</guid>
       <description>I don’t usually write reviews about games, maybe mostly because I don’t play as often as I used to. Most games today are just graphics graphics, I use super shader ray-traced lights but I forgot gameplay because I’m a tech demo.
 I grew up with a Super Nintendo playing Super Mario World and Zelda A Link to the Past, yeah shocker, no Spectrum to me :P, so I’m 2D gameplay type lover.</description>
     </item>
     <item>
       <title>Tracking memory leaks in Visual Studio</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</link>
+      <link>https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</link>
       <pubDate>Tue, 19 Oct 2010 14:09:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</guid>
+      <guid>https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</guid>
       <description>I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.
 I know there are other and better solution but this can be handy for quick findings without much hassle.
 First place this code in your entry point file, generally main.cpp inside your main() function
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt; #ifdef _DEBUG int flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG); flag |= _CRTDBG_LEAK_CHECK_DF; // Turn on leak-checking bit _CrtSetDbgFlag(flag); #endif Now just run you game/program as you would normally, in debug mode of course.</description>
+#ifdef _DEBUG int flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG); flag |= _CRTDBG_LEAK_CHECK_DF; // Turn on leak-checking bit _CrtSetDbgFlag(flag); #endif Now just run you game/program as you would normally, in debug mode of course.</description>
     </item>
     <item>
       <title>Cross-Platform engine progress</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/10/cross-platform-engine-progress/</link>
+      <link>https://www.david-amador.com/2010/10/cross-platform-engine-progress/</link>
       <pubDate>Mon, 11 Oct 2010 14:20:02 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/10/cross-platform-engine-progress/</guid>
+      <guid>https://www.david-amador.com/2010/10/cross-platform-engine-progress/</guid>
       <description>If you read my recent posts you know I’ve been bringing Basalt to C++.
 The plan is to support both DirectX and OpenGL render API’s and OpenGLES for iOS devices. I’m tired of porting stuff so I want to make a better framework for future projects and I’ll leave the XNA branch for Xbox360 and Windows Phone 7. I really wished I had this before.
 Since the iPhone branch is stable I move on to making it compatible with Win32 and MacOSX.</description>
     </item>
     <item>
       <title>Using Isolated Storage to save/load files on Windows Phone 7</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</link>
+      <link>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</link>
       <pubDate>Sun, 10 Oct 2010 23:37:04 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</guid>
+      <guid>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</guid>
       <description>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.
 You can use IsolatedStorage for that
-&amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt; using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
-&amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt; IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); // grab the storage FileStream stream = store.OpenFile(&amp;#34;test.txt&amp;#34;, FileMode.Create); // Open a file in Create mode BinaryWriter writer = new BinaryWriter(stream); float myvar = 5.</description>
+using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
+IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); // grab the storage FileStream stream = store.OpenFile(&amp;#34;test.txt&amp;#34;, FileMode.Create); // Open a file in Create mode BinaryWriter writer = new BinaryWriter(stream); float myvar = 5.</description>
     </item>
     <item>
       <title>Vizati for iPhone is now available at App Store</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/</link>
+      <link>https://www.david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/</link>
       <pubDate>Wed, 06 Oct 2010 17:33:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/</guid>
+      <guid>https://www.david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/</guid>
       <description>People who follow me on twitter are probably aware, or maybe not:
 After 3 months tacking an iPhone port it was finally approved by Apple to the App store and it’s on sale today!!!
 Hypnotizing start…
@@ -1031,45 +1031,45 @@ I’ve searched some forums and found some talking about it and that they liked,
     </item>
     <item>
       <title>Framework consideration and new projects</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/10/framework-consideration-and-new-projects/</link>
+      <link>https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/</link>
       <pubDate>Mon, 04 Oct 2010 16:21:54 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/10/framework-consideration-and-new-projects/</guid>
+      <guid>https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/</guid>
       <description>Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
 Why?
 Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL.</description>
     </item>
     <item>
       <title>Simulating tombstone (suspended state) on Windows Phone 7 emulator</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/</link>
+      <link>https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/</link>
       <pubDate>Mon, 20 Sep 2010 21:36:27 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/</guid>
+      <guid>https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/</guid>
       <description>Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.
 It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.
 So depending on you app you might want to save the current state just in case the app really closes.</description>
     </item>
     <item>
       <title>Another milestone reached, first App sent to Apple Store</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/09/another-milestone-reached-first-app-sent-to-apple-store/</link>
+      <link>https://www.david-amador.com/2010/09/another-milestone-reached-first-app-sent-to-apple-store/</link>
       <pubDate>Wed, 15 Sep 2010 16:58:38 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/09/another-milestone-reached-first-app-sent-to-apple-store/</guid>
+      <guid>https://www.david-amador.com/2010/09/another-milestone-reached-first-app-sent-to-apple-store/</guid>
       <description>Finally and after several weeks locked inside Different Pixel “dungeon” making my engine compatible with iOS, namely with iPhone/iPod touch I submitted today my first App to the Apple Store.
 The binary didn’t reported any issues so as of 15 September 2010 it’s “Waiting For Review”
 I have mixed feelings about either it’s going to be approved or rejected. On one hand we tested as much as we could, handed to some testers using iPhone 3, iPhone 4 and iPod touches.</description>
     </item>
     <item>
       <title>iPad launch images support for all orientations</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/09/ipad-launch-images-support-for-all-orientations/</link>
+      <link>https://www.david-amador.com/2010/09/ipad-launch-images-support-for-all-orientations/</link>
       <pubDate>Fri, 10 Sep 2010 23:23:49 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/09/ipad-launch-images-support-for-all-orientations/</guid>
+      <guid>https://www.david-amador.com/2010/09/ipad-launch-images-support-for-all-orientations/</guid>
       <description>When loading an application on an iPhone or iPad, a launch image can be shown to provide feedback to the user that the application is loading.
 On the iPhone a Default.png was used, with the iPad we need to anticipate the device being started in any orientation.
 Filename Dimensions Default-Portrait.png * 768w x 1024h Default-PortraitUpsideDown.png 768w x 1024h Default-Landscape.png ** 1024w x 768h Default-LandscapeLeft.png 1024w x 768h Default-LandscapeRight.png 1024w x 768h Default.</description>
     </item>
     <item>
       <title>Setting OpenGL view for iPhone 4 retina hi resolution</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</link>
+      <link>https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</link>
       <pubDate>Fri, 10 Sep 2010 09:24:23 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</guid>
+      <guid>https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</guid>
       <description>This had me scratching my head for awhile.
 At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.
 A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.
@@ -1077,9 +1077,9 @@ To properly simulate older games resolutions iOS will replace each of your 320×
     </item>
     <item>
       <title>Targetting iOS devices hardware</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/09/targetting-ios-devices-hardware/</link>
+      <link>https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/</link>
       <pubDate>Wed, 08 Sep 2010 12:01:37 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/09/targetting-ios-devices-hardware/</guid>
+      <guid>https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/</guid>
       <description>I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.
 This covers iPhones, iPod Touches and iPad.
 iPhone/iPhone 3G – 412 MHz / 128MB / 320×480
@@ -1090,27 +1090,27 @@ iPod Touch 2G – 532 MHz / 128MB / 320×480</description>
     </item>
     <item>
       <title>iPhone OpenGL screen orientation using the accelerometer</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</link>
+      <link>https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</link>
       <pubDate>Fri, 27 Aug 2010 14:49:39 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</guid>
+      <guid>https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</guid>
       <description>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.
 Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.
 I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.</description>
     </item>
     <item>
       <title>Developers log stardate 26082010</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/08/developers-log-stardate-26082010/</link>
+      <link>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</link>
       <pubDate>Thu, 26 Aug 2010 19:05:55 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/08/developers-log-stardate-26082010/</guid>
+      <guid>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</guid>
       <description>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.
 Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.
 Here’s a picture she took after a few adjustments.</description>
     </item>
     <item>
       <title>Vizati is 50% off during this week</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/08/vizati-is-50-off-during-this-week/</link>
+      <link>https://www.david-amador.com/2010/08/vizati-is-50-off-during-this-week/</link>
       <pubDate>Tue, 10 Aug 2010 18:42:22 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/08/vizati-is-50-off-during-this-week/</guid>
+      <guid>https://www.david-amador.com/2010/08/vizati-is-50-off-during-this-week/</guid>
       <description>Just a quick post.
 GamersGate is having a Summer Special and Vizati is with a 50% discount, costing $4.47 / €3.72 during this week only
 Buy your copy here and check out other awesome promotions here
@@ -1118,26 +1118,26 @@ This deal end up this August 15th</description>
     </item>
     <item>
       <title>Games and systems from childhood</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/08/games-and-systems-from-childhood/</link>
+      <link>https://www.david-amador.com/2010/08/games-and-systems-from-childhood/</link>
       <pubDate>Sun, 08 Aug 2010 12:36:43 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/08/games-and-systems-from-childhood/</guid>
+      <guid>https://www.david-amador.com/2010/08/games-and-systems-from-childhood/</guid>
       <description>I think the first game I ever played was Tetris on a 286 if my memory isn’t failing me.
 My father worked at restaurant nearby a small apartment rental office, one of the dudes that worked there occasionally would let me play. I remember one day he had this new game, Prince of Persia, my chin just fell, awesome,
 I thought games couldn’t get any better. I remember always asking him to “type the code to play” as I called it, since it was DOS based.</description>
     </item>
     <item>
       <title>What are your target platforms for games?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
+      <link>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
       <pubDate>Mon, 26 Jul 2010 20:37:41 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
+      <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
       <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
 The poll closes in about 6 days and you can select various options of course.</description>
     </item>
     <item>
       <title>Fixing dark borders sprites on iPhone</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</link>
+      <link>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</link>
       <pubDate>Mon, 26 Jul 2010 12:47:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</guid>
+      <guid>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</guid>
       <description>I ran into this issue a couple hours ago working on the iPhone sdk:
 See the darker borders around the image?
 It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
@@ -1146,61 +1146,61 @@ The first thing I found out is that XCode grabs the png images and multiplies th
     </item>
     <item>
       <title>Instance based Callbacks in C&#43;&#43;</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/instance-based-callbacks-in-cpp/</link>
+      <link>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</link>
       <pubDate>Wed, 14 Jul 2010 15:18:21 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/instance-based-callbacks-in-cpp/</guid>
+      <guid>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</guid>
       <description>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.
 When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.
 On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button.</description>
     </item>
     <item>
       <title>Developing on Mac and Basalt running on the iPhone</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
+      <link>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
       <pubDate>Fri, 09 Jul 2010 09:59:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
+      <guid>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
       <description>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.
 If you follow me on twitter you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.
 So it all started with my wish to port Vizati to the iPhone, since the game is already running on PC, Xbox360 and Windows Phone 7 one can only wish for an easy and quick port since pretty much all base code is done.</description>
     </item>
     <item>
       <title>We need XBOX Live Indie Games in Portugal!!</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</link>
+      <link>https://www.david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</link>
       <pubDate>Tue, 22 Jun 2010 18:41:51 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</guid>
+      <guid>https://www.david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</guid>
       <description>See the little black country on the map? It’s Portugal. The green zone are countries around Portugal that have XBOX Live Indie Games. We are surrounded by countries that can place their games on Creator’s Club but we were left behind. I won’t say there aren’t many others but they can speak for themselves.
 I’m tired of watching developers from other countries being able to place their games there and we have to sit and watch.</description>
     </item>
     <item>
       <title>Making a XNA Game Installer</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/06/making-a-xna-game-installer/</link>
+      <link>https://www.david-amador.com/2010/06/making-a-xna-game-installer/</link>
       <pubDate>Wed, 09 Jun 2010 22:28:16 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/06/making-a-xna-game-installer/</guid>
+      <guid>https://www.david-amador.com/2010/06/making-a-xna-game-installer/</guid>
       <description>I am going to start with a little rant about Visual Studio default Installer, you know, the one you can make for yout XNA games inside VS. Ugly and not very handy, sure it installs every dependency but doesn’t leave many options like….hum…I don’t know choosing the location where you want to install?
 Moving along…I discovered this little cool installer called InnoSetup, and best of all it’s free.
 InnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control.</description>
     </item>
     <item>
       <title>Who wants to try Vizati Demo?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/06/who-wants-to-try-vizati-demo/</link>
+      <link>https://www.david-amador.com/2010/06/who-wants-to-try-vizati-demo/</link>
       <pubDate>Tue, 08 Jun 2010 22:16:32 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/06/who-wants-to-try-vizati-demo/</guid>
+      <guid>https://www.david-amador.com/2010/06/who-wants-to-try-vizati-demo/</guid>
       <description>Ok, I know I’ve been making far too much posts about Vizati but this time it’s for a good reason, anyone interested in trying out the game can do it…right about NOW…
 http://www.differentpixel.com/2010/06/vizati-demo-available/
 Also on a quick update, yesterday I had the chance to test Vizati at Windows Phone 7 Developer’s Hub on a real WP7 device, which was awesome. I want to thank João Antão, Nuno Costa, Ben Riga and Neil Hutson for the opportunity.</description>
     </item>
     <item>
       <title>A good Reference system can help your game</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/06/a-good-reference-system-can-help-your-game/</link>
+      <link>https://www.david-amador.com/2010/06/a-good-reference-system-can-help-your-game/</link>
       <pubDate>Sun, 06 Jun 2010 09:49:36 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/06/a-good-reference-system-can-help-your-game/</guid>
+      <guid>https://www.david-amador.com/2010/06/a-good-reference-system-can-help-your-game/</guid>
       <description>How many times has it happened where you have this one class, let’s say it’s a spaceship that was destroyed.
 Now you have tell all other dependent objects that she died, any independent sprite animation class, AI, etc etc because they were relying on her. Another thing is, in my case, having a scene that contains all the objects and by deleting the ship It won’t get removed from the scene, keeping the reference alive and so Garbage collector won’t kick in.</description>
     </item>
     <item>
       <title>Yay, my first Game as Indie Developer is almost out</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</link>
+      <link>https://www.david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</link>
       <pubDate>Wed, 26 May 2010 20:44:49 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</guid>
+      <guid>https://www.david-amador.com/2010/05/yay-my-first-game-as-indie-developer-is-almost-out/</guid>
       <description>No, I’m not dead….yet…
 It’s just that I’ve been stuck on Different Pixel development dungeon for the past weeks finishing and polishing (bug hunting) my first game, Vizati.
 Most of you have been following the process and asking things every since we showed the beta version at XNA Pizza Night, after which we decided to finish the game and try to sell it to see how it goes.
@@ -1208,36 +1208,36 @@ Three months later and here I am, making the final touches on the game before it
     </item>
     <item>
       <title>Vizati on Windows Phone 7</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
+      <link>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
       <pubDate>Fri, 07 May 2010 20:41:09 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
+      <guid>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
       <description>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.
 This week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.
 I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.</description>
     </item>
     <item>
       <title>Making Big Grass Tiled Backgrounds in XNA</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/04/making-big-grass-tiles-in-xna/</link>
+      <link>https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/</link>
       <pubDate>Mon, 19 Apr 2010 21:57:12 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/04/making-big-grass-tiles-in-xna/</guid>
+      <guid>https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/</guid>
       <description>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:
 I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?
 My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.</description>
     </item>
     <item>
       <title>Testing the new Visual Studio 2010 features</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</link>
+      <link>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</link>
       <pubDate>Tue, 13 Apr 2010 16:30:15 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</guid>
+      <guid>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</guid>
       <description>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.
 First time I installed VS2010 was in the RC form mainly because of WP7 Developer’s Tools and XNA4.0 but haven’t made many investment in searching for new features.
 But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.</description>
     </item>
     <item>
       <title>XNA 2D Independent Resolution Rendering</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</link>
+      <link>https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</link>
       <pubDate>Fri, 26 Mar 2010 22:03:31 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</guid>
+      <guid>https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</guid>
       <description>Note: 22/04/2013 – Due to popular request I made an article about achieving this effect in OpenGL
 Independent Resolution Rendering?? What’s this all about?
 Basically a way of not caring what you resolution is. Ever had Gui elements misplaced because you changed the resolution? Or getting out of the screen?
@@ -1245,161 +1245,161 @@ If you are doing a game on Xna just for Xbox360 you can basically use a 1280×72
     </item>
     <item>
       <title>Write better code using FxCop</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/03/write-better-code-using-fxcop/</link>
+      <link>https://www.david-amador.com/2010/03/write-better-code-using-fxcop/</link>
       <pubDate>Thu, 18 Mar 2010 10:32:52 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/03/write-better-code-using-fxcop/</guid>
+      <guid>https://www.david-amador.com/2010/03/write-better-code-using-fxcop/</guid>
       <description>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.
 For those who don’t know you can download it here and read the MSDN documentation here.
 FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</description>
     </item>
     <item>
       <title>XNA 4.0 CTP and Windows Phone Developer Tools CTP now available for download</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</link>
+      <link>https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</link>
       <pubDate>Mon, 15 Mar 2010 23:42:34 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</guid>
+      <guid>https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</guid>
       <description>So I was watching Microsoft Mix10 and while talking about the new Windows Phone 7 Series, Scott Guthrie announced the availability of the Windows Phone Developer Tools CTP. What? But like now now?
 I went to http://developer.windowsphone.com/ and XNA Creator’s Club and there it was. The packages contains:
 A CTP of the new Visual Studio 2010 Express for Windows Phone Tools and framework to develop Windows Phone applications and games with Silverlight A CTP of XNA Game Studio 4.</description>
     </item>
     <item>
       <title>Vizati wins XNA Pizza Night 2010</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</link>
+      <link>https://www.david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</link>
       <pubDate>Mon, 08 Mar 2010 10:14:08 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</guid>
+      <guid>https://www.david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</guid>
       <description>Damn you should see my face when they told me we won the competition XNA Pizza Night 2010 at Microsoft.
 Originally we developed Vizati to enter Dream Build Play 2010. We started developing the game on the beginning of February and during that month we discovered another competition would be held near Dream Build Play deadline.
 We went there with the same demo we sent to DBP. The audience really liked the game and we got very positive feedback.</description>
     </item>
     <item>
       <title>Vizati Teaser</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/02/vizati-teaser/</link>
+      <link>https://www.david-amador.com/2010/02/vizati-teaser/</link>
       <pubDate>Sun, 28 Feb 2010 23:50:15 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/02/vizati-teaser/</guid>
+      <guid>https://www.david-amador.com/2010/02/vizati-teaser/</guid>
       <description>Rita and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.
 Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color.</description>
     </item>
     <item>
       <title>XNA Particle System 2D</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/02/xna-particle-system-2d/</link>
+      <link>https://www.david-amador.com/2010/02/xna-particle-system-2d/</link>
       <pubDate>Fri, 19 Feb 2010 11:46:26 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/02/xna-particle-system-2d/</guid>
+      <guid>https://www.david-amador.com/2010/02/xna-particle-system-2d/</guid>
       <description>It’s been a long week.
 Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.</description>
     </item>
     <item>
       <title>I maed a Custom Script Language for my Xna Engine</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</link>
+      <link>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</link>
       <pubDate>Mon, 15 Feb 2010 00:29:42 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</guid>
+      <guid>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</guid>
       <description>Well the title is an Homage to James Silva‘s I MAED A GAM3 W1TH Z0MB1ES!!!1
 I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.</description>
     </item>
     <item>
       <title>Drawing Lines in XNA</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/01/drawing-lines-in-xna/</link>
+      <link>https://www.david-amador.com/2010/01/drawing-lines-in-xna/</link>
       <pubDate>Tue, 26 Jan 2010 00:40:48 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/01/drawing-lines-in-xna/</guid>
+      <guid>https://www.david-amador.com/2010/01/drawing-lines-in-xna/</guid>
       <description>One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.
 Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.
 You can give it 2 points ( start and end point of course) and a color.</description>
     </item>
     <item>
       <title>Xna Screen Manager</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/01/xna-screen-manager/</link>
+      <link>https://www.david-amador.com/2010/01/xna-screen-manager/</link>
       <pubDate>Sun, 24 Jan 2010 18:47:17 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/01/xna-screen-manager/</guid>
+      <guid>https://www.david-amador.com/2010/01/xna-screen-manager/</guid>
       <description>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.
 A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.
 I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</description>
     </item>
     <item>
       <title>Flex Build Path GUI bug and fix</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</link>
+      <link>https://www.david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</link>
       <pubDate>Wed, 20 Jan 2010 00:55:55 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</guid>
+      <guid>https://www.david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</guid>
       <description>I recently faced myself with a really annoying bug on Flex 3, the “Flex Modules” section of the properties dialog is blank.
 After some search on the internet some suggested that it might be a resolution problem. What the f**? So I have to switch resolution to use a program? Adobe Support turned out a dead end so still no permanent fix for this. There is however a small thing you can do, just adjust the divider between the list on the left hand side of the dialog and the right hand content area.</description>
     </item>
     <item>
       <title>Updates about Different Pixel and Sapphire</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
+      <link>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
       <pubDate>Wed, 30 Dec 2009 22:59:00 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
+      <guid>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
       <description>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.
 I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry.</description>
     </item>
     <item>
       <title>C# foreach VS for loop</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/12/csharp-foreach-vs-for-loop/</link>
+      <link>https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/</link>
       <pubDate>Sat, 12 Dec 2009 18:38:33 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/12/csharp-foreach-vs-for-loop/</guid>
+      <guid>https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/</guid>
       <description>When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.
 Today I decided to see the differences between them:
 FOR
-&amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt;int[] values = new int[1]; int total = 0; for(int i = 0; i &amp;lt; values.</description>
+int[] values = new int[1]; int total = 0; for(int i = 0; i &amp;lt; values.</description>
     </item>
     <item>
       <title>munchies for Design</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/12/munchies-for-design/</link>
+      <link>https://www.david-amador.com/2009/12/munchies-for-design/</link>
       <pubDate>Sat, 05 Dec 2009 08:40:54 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/12/munchies-for-design/</guid>
+      <guid>https://www.david-amador.com/2009/12/munchies-for-design/</guid>
       <description>As most developers do I spend a lot of time programming. Most of us has made some sketches for prototyping games, yes, the ones no one else can understand except for ourselves. I always liked drawing and 3D modeling but I was never very good at it. I was just cleaning up some stuff on my pc and found a folder, god most of this stuff I made is UGLYYYY lol.</description>
     </item>
     <item>
       <title>Basalt and Sapphire Updates</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
+      <link>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
       <pubDate>Wed, 02 Dec 2009 21:38:11 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
+      <guid>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
       <description>Lately all my free time has been spent adding new features to Basalt and developing Sapphire.
 Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.
 Here’s a screenshot of the previous alpha version:</description>
     </item>
     <item>
       <title>How to do a XNA fps counter</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</link>
+      <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</link>
       <pubDate>Mon, 23 Nov 2009 17:49:38 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</guid>
+      <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</guid>
       <description>Frame rate or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.
 So how can you measure your frame rate in XNA?
 Inside your game1 class declare these vars:
-&amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt;SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fps = 0; On function LoadContent() do</description>
+SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fps = 0; On function LoadContent() do</description>
     </item>
     <item>
       <title>How to do a Xna Log file</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/11/how-to-do-a-xna-log-file/</link>
+      <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</link>
       <pubDate>Fri, 20 Nov 2009 10:53:13 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
+      <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
       <description>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.
 Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</description>
     </item>
     <item>
       <title>Using PerfHUD with XNA</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/11/using-perfhud-with-xna/</link>
+      <link>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</link>
       <pubDate>Wed, 18 Nov 2009 15:16:54 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/11/using-perfhud-with-xna/</guid>
+      <guid>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</guid>
       <description>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.</description>
     </item>
     <item>
       <title>Unreal Engine 3 is now free</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/11/unreal-engine-3-is-now-free/</link>
+      <link>https://www.david-amador.com/2009/11/unreal-engine-3-is-now-free/</link>
       <pubDate>Thu, 05 Nov 2009 15:09:53 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/11/unreal-engine-3-is-now-free/</guid>
+      <guid>https://www.david-amador.com/2009/11/unreal-engine-3-is-now-free/</guid>
       <description>Epic decided to offer Unreal Engine 3 for free to non-commercial applications. Sounds kind of weird considering it’s one of the best and most licensed engine out there, but maybe the recent release of Unity 3d free for all uses made them consider this option.
 Named UDK (Unreal Development Kit) you can download it here and have access to all tools and features that the full commercial Engine contains, well, except for the source code of course.</description>
     </item>
     <item>
       <title>Force a wmv to download instead of opening in browser</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</link>
+      <link>https://www.david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</link>
       <pubDate>Fri, 30 Oct 2009 11:09:38 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</guid>
+      <guid>https://www.david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</guid>
       <description>I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.
 So just place this on your .htaccess on the root of your website.</description>
     </item>
     <item>
       <title>Prototype for xna7day competition</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/prototype-for-xna7day-competition/</link>
+      <link>https://www.david-amador.com/2009/10/prototype-for-xna7day-competition/</link>
       <pubDate>Thu, 29 Oct 2009 12:29:42 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/prototype-for-xna7day-competition/</guid>
+      <guid>https://www.david-amador.com/2009/10/prototype-for-xna7day-competition/</guid>
       <description>I decided to make a game for the xna7day competition, in which we have to make a game that only uses 2 keys, so absolutely no analog input and it has to be built on xna of course.
 This is a great opportunity to test my engine Basalt.
 I decided to make a puzzle game, basically the rules are the same of a 3 in line game.
@@ -1407,60 +1407,60 @@ This is what I have so far.</description>
     </item>
     <item>
       <title>How to make a clickable div</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/how-to-make-a-clickable-div/</link>
+      <link>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</link>
       <pubDate>Sun, 25 Oct 2009 19:16:12 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/how-to-make-a-clickable-div/</guid>
+      <guid>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</guid>
       <description>Making a clickable text or image is easy, just add the &amp;lt;a&amp;gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.
 The following code is for JQuery but switching it to your favorite JS framework should be very easy.
 First start by adding this to your div
-&amp;lt;pre lang=&amp;#34;html4strict&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;clickable&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; Now a little css to simulate the pointer on that div</description>
+&amp;lt;div class=&amp;#34;clickable&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; Now a little css to simulate the pointer on that div</description>
     </item>
     <item>
       <title>Accelero twin turbo</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/accelero-twin-turbo/</link>
+      <link>https://www.david-amador.com/2009/10/accelero-twin-turbo/</link>
       <pubDate>Sat, 24 Oct 2009 21:47:35 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/accelero-twin-turbo/</guid>
+      <guid>https://www.david-amador.com/2009/10/accelero-twin-turbo/</guid>
       <description>Because my Ati Radeon 4890 fan fried I had to buy another cooler. After a little research I discovered Artic Accelero Twin Turbo. Today I decided to finally try it. The assembly is rather easy, the package comes with several heatsinks for memories, and of course the fans themselves. There are three ways to connect the fans, either directly to the VGA card itself, directly to the PSU with 7V or 12V.</description>
     </item>
     <item>
       <title>PHP Optimization Tips</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/php-optimization-tips/</link>
+      <link>https://www.david-amador.com/2009/10/php-optimization-tips/</link>
       <pubDate>Thu, 22 Oct 2009 16:38:09 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/php-optimization-tips/</guid>
+      <guid>https://www.david-amador.com/2009/10/php-optimization-tips/</guid>
       <description>As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.
 Loop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times.</description>
     </item>
     <item>
       <title>Search and Replace in MySQL</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/search-and-replace-in-mysql/</link>
+      <link>https://www.david-amador.com/2009/10/search-and-replace-in-mysql/</link>
       <pubDate>Thu, 22 Oct 2009 11:27:10 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/search-and-replace-in-mysql/</guid>
+      <guid>https://www.david-amador.com/2009/10/search-and-replace-in-mysql/</guid>
       <description>I found something very handy today, search and replace on Mysql databases. You can do it on phpmyadmin or make a php script with this.
 After moving a wordpress site from server I discovered that all image links were broken because they are placed directly inside each post. They were still linking to the old server. Changing it manually would be a nightmare.
 Luckily MySql is your friend. To search and replace a text string, start up phpMyAdmin, and click on your database name that you want to run the search and replace through.</description>
     </item>
     <item>
       <title>Test your website on multiple browsers</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/test-your-website-on-multiple-browsers/</link>
+      <link>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</link>
       <pubDate>Wed, 21 Oct 2009 22:06:57 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
+      <guid>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
       <description>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</description>
     </item>
     <item>
       <title>How to style a blockquote with CSS</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</link>
+      <link>https://www.david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</link>
       <pubDate>Wed, 21 Oct 2009 12:14:53 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</guid>
+      <guid>https://www.david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</guid>
       <description>Blockquotes are an easy way to make your website stand out, by indicating that you are quoting someone you give a more professional approach to you website.
 You can do this by using
-&amp;lt;pre lang=&amp;#34;html4strict&amp;#34;&amp;gt; &amp;lt;blockquote&amp;gt; Im quoting someone else&amp;lt;/blockquote&amp;gt; But it still needs a little touch, so on your css file add this.
-&amp;lt;pre lang=&amp;#34;css&amp;#34;&amp;gt;blockquote { background:transparent url(blockquote.gif) no-repeat scroll 0 0; font-family:Georgia,&amp;#34;Times New Roman&amp;#34;,Times,serif; font-size:1em; margin:15px 0; min-height:32px; padding:0 50px; } Save this image : and watch the result.</description>
+&amp;lt;blockquote&amp;gt; Im quoting someone else&amp;lt;/blockquote&amp;gt; But it still needs a little touch, so on your css file add this.
+blockquote { background:transparent url(blockquote.gif) no-repeat scroll 0 0; font-family:Georgia,&amp;#34;Times New Roman&amp;#34;,Times,serif; font-size:1em; margin:15px 0; min-height:32px; padding:0 50px; } Save this image : and watch the result.</description>
     </item>
     <item>
-      <title>Building an 2D Game Engine in XNA &amp;#8211; Part 1</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</link>
+      <title>Building an 2D Game Engine in XNA - Part 1</title>
+      <link>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</link>
       <pubDate>Fri, 16 Oct 2009 18:10:09 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</guid>
+      <guid>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</guid>
       <description>I decided to starting writing a series of tutorials for building an 2d XNA game engine.
 Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.
 It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
@@ -1469,33 +1469,33 @@ You must have some Object Oriented Programming background to full understand wha
     </item>
     <item>
       <title>How To Speed Up Firefox 3</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/how-to-speed-up-firefox-3/</link>
+      <link>https://www.david-amador.com/2009/10/how-to-speed-up-firefox-3/</link>
       <pubDate>Mon, 12 Oct 2009 21:22:27 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/how-to-speed-up-firefox-3/</guid>
+      <guid>https://www.david-amador.com/2009/10/how-to-speed-up-firefox-3/</guid>
       <description>I decided to try Google Chrome today and was pleasantly surprised with it’s speed on loading pages. And I started seeing how slow my Firefox was. At first I thought that it might have something to do with the plugins I have, but then again they are very few, just Echofon, Firebug and Xmarks. So after a little digging I came up with a way to speed up Firefox 3, turn out it was all in the options =)</description>
     </item>
     <item>
       <title>XNA Camera 2d with zoom and rotation</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</link>
+      <link>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</link>
       <pubDate>Mon, 12 Oct 2009 20:51:21 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</guid>
+      <guid>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</guid>
       <description>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too
 One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
 Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself.</description>
     </item>
     <item>
       <title>Cloning Objects in C#</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/cloning-objects-in-c-sharp/</link>
+      <link>https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/</link>
       <pubDate>Mon, 12 Oct 2009 20:21:49 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/cloning-objects-in-c-sharp/</guid>
+      <guid>https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/</guid>
       <description>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:
-&amp;lt;pre lang=&amp;#34;csharp&amp;#34;&amp;gt; using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).</description>
+using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).</description>
     </item>
     <item>
       <title>Programmers are tiny gods</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/programmers-are-tiny-gods/</link>
+      <link>https://www.david-amador.com/2009/10/programmers-are-tiny-gods/</link>
       <pubDate>Sat, 10 Oct 2009 20:20:05 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/programmers-are-tiny-gods/</guid>
+      <guid>https://www.david-amador.com/2009/10/programmers-are-tiny-gods/</guid>
       <description>I’ve found this picture on the internet and also an interesting and funny article regarding Programmers/Designers relation on work.
 I’ve already talked about designers and how their critique training makes them impossible to work with.
 Luckily the designer I work with knows me well and knows how to make me want to fix that, but not pointing the obvious, issuing orders…
@@ -1504,31 +1504,31 @@ A good tactic is to have parameters, request help</description>
     </item>
     <item>
       <title>The amazing lands of C&#43;&#43;</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/the-amazing-lands-of-cpp/</link>
+      <link>https://www.david-amador.com/2009/10/the-amazing-lands-of-cpp/</link>
       <pubDate>Mon, 05 Oct 2009 16:16:56 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/the-amazing-lands-of-cpp/</guid>
+      <guid>https://www.david-amador.com/2009/10/the-amazing-lands-of-cpp/</guid>
       <description>I’m sure every programmer will like this</description>
     </item>
     <item>
       <title>Basalt gains a media player</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/basalt-gains-a-media-player/</link>
+      <link>https://www.david-amador.com/2009/10/basalt-gains-a-media-player/</link>
       <pubDate>Sun, 04 Oct 2009 18:22:30 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/basalt-gains-a-media-player/</guid>
+      <guid>https://www.david-amador.com/2009/10/basalt-gains-a-media-player/</guid>
       <description>So I’ve been working on a sort of media player in order to play movies on my 2d engine Basalt made on top of XNA.
 By extending my class Object2d I manage to get this pretty cool result. You can even apply shaders to it. Since I extended the class from Object2d I can rotate, scale and set a position to the video besides regular options like play/pause, fullscreen etc. For those who don’t know the video playing is a chunk of the series Naruto Shippuuden</description>
     </item>
     <item>
       <title>Master Web Developer</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/09/master-web-developer/</link>
+      <link>https://www.david-amador.com/2009/09/master-web-developer/</link>
       <pubDate>Fri, 25 Sep 2009 18:02:46 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/09/master-web-developer/</guid>
+      <guid>https://www.david-amador.com/2009/09/master-web-developer/</guid>
       <description>I decided to take a course on Master Web Developer. It’s a 6 months course covering PHP, actionscrip, HTML, JavaScript, Ajax and more. Hopefully I’m going to fill all my gaps on web development and possibly get more and better works in this area. Also this way I can give better credibility to Different Pixel.</description>
     </item>
     <item>
       <title>Game Competition</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/09/game-competition/</link>
+      <link>https://www.david-amador.com/2009/09/game-competition/</link>
       <pubDate>Thu, 17 Sep 2009 11:24:14 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/09/game-competition/</guid>
+      <guid>https://www.david-amador.com/2009/09/game-competition/</guid>
       <description>Some time ago I decided to launch a new website with a 48h Game Competition.
 We are now 2 days away from the Compo#1. This is for every indie game developer wannabe =)
 [Edit]
@@ -1537,34 +1537,34 @@ One of the games made in the competition</description>
     </item>
     <item>
       <title>Stargate</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/09/stargate/</link>
+      <link>https://www.david-amador.com/2009/09/stargate/</link>
       <pubDate>Tue, 15 Sep 2009 15:56:55 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/09/stargate/</guid>
+      <guid>https://www.david-amador.com/2009/09/stargate/</guid>
       <description>Ok so I got addicted to Stargate Atlantis as well. After watching all 10 seasons from SG-1 I decided to give it a try to Atlantis. I was not convinced that it would be a good show, but the it’s awesome. Atlantis starts around season 8 of SG-1 when Daniel Jackson figures the location of the lost city of Atlantis.
 Atlantis follows the adventures of a team that goes to Atlantis and being on another galaxy they only have power for one trip so it’s a one way trip only.</description>
     </item>
     <item>
       <title>28 Weeks later</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/08/28-weeks-later/</link>
+      <link>https://www.david-amador.com/2009/08/28-weeks-later/</link>
       <pubDate>Thu, 27 Aug 2009 20:22:40 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/08/28-weeks-later/</guid>
+      <guid>https://www.david-amador.com/2009/08/28-weeks-later/</guid>
       <description>I watched a really nice movie today, 28 Weeks Later.
 I didn’t know anything about the movie so I got rather disappointed with the first 5-10 minutes. When the zombies showed up I thought to myself “not another zombie movie, are this guys out of ideas?” I sticked to see where it the plot was heading, and got a really nice surprise. After the initial outbreak in great Britain, the infected start to starve and they die eventually, so the movie starts 28 weeks later, when the general population starts returning to a safe zone called District One.</description>
     </item>
     <item>
       <title>XNA Sprite Sheet</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/08/xna-sprite-sheet/</link>
+      <link>https://www.david-amador.com/2009/08/xna-sprite-sheet/</link>
       <pubDate>Sun, 23 Aug 2009 10:30:57 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/08/xna-sprite-sheet/</guid>
+      <guid>https://www.david-amador.com/2009/08/xna-sprite-sheet/</guid>
       <description>I decided to take the morning to make a small sprite sheet editor for our Xna engine. This way the artist can easily define the sprite areas and their origin saving in a file that can later on be loaded on the engine.
 Not very fancy yet but it gets the job done.
 Next step will be making an animator editor.</description>
     </item>
     <item>
       <title>Xna 2d Engine</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/08/xna-2d-engine/</link>
+      <link>https://www.david-amador.com/2009/08/xna-2d-engine/</link>
       <pubDate>Fri, 14 Aug 2009 13:39:14 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/08/xna-2d-engine/</guid>
+      <guid>https://www.david-amador.com/2009/08/xna-2d-engine/</guid>
       <description>Lately whenever I’m off work and I have the time I’ve been working on a 2d Engine in XNA. We named it Basalt.
 Cool hum? lol
 I have almost everything done, since sprites, to sprite animations, scenes, layers, resolution independent engine, game state and a lot of other cool things.
@@ -1573,110 +1573,109 @@ Also I’ve been working, even though on a slower pace on Shappire, the editor a
     </item>
     <item>
       <title>DBP deadline is over, maybe next year.</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
+      <link>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
       <pubDate>Thu, 06 Aug 2009 15:29:10 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
+      <guid>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
       <description>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.
 Meanwhile I’ve been busy making the arrangements for The Indie Bay 48 hour game development competition.
 The idea is for every entrant to make a game in 48 hours using a given theme or topic.</description>
     </item>
     <item>
       <title>Pugna prototype</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/08/pugna-prototype/</link>
+      <link>https://www.david-amador.com/2009/08/pugna-prototype/</link>
       <pubDate>Sat, 01 Aug 2009 22:03:00 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/08/pugna-prototype/</guid>
+      <guid>https://www.david-amador.com/2009/08/pugna-prototype/</guid>
       <description>Hello there.
 Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.
 My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that Rita and I have for the game we should have submitted.</description>
     </item>
     <item>
       <title>-moz-opacity removed from Firefox 3.5</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</link>
+      <link>https://www.david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</link>
       <pubDate>Thu, 02 Jul 2009 10:05:36 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</guid>
+      <guid>https://www.david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</guid>
       <description>Well i just found out that Mozzila removed -moz-opacity from Firefox 3.5. It’s been deprecated for a long time and you can how replace it for the standard css property opacity.
 So something like -moz-opacity: 0.4 is now opacity: 0.4;</description>
     </item>
     <item>
       <title>New Graphic Card and psu</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/06/new-graphic-card-and-psu/</link>
+      <link>https://www.david-amador.com/2009/06/new-graphic-card-and-psu/</link>
       <pubDate>Mon, 08 Jun 2009 11:15:46 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/06/new-graphic-card-and-psu/</guid>
+      <guid>https://www.david-amador.com/2009/06/new-graphic-card-and-psu/</guid>
       <description>I decided to buy another a new graphic card. I got tired of my old Geforce 8500 GT sloweness. It was slow on 3dsmax, it was slow on recent games and most of all I have this thing for Ati so this was never my favorite.
 After some research I decided to get a XFX Ati Radeon 4890, most of the reviews were positive and its placed in a mid-range pricing.</description>
     </item>
     <item>
       <title>Game Contests</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/05/game-contests/</link>
+      <link>https://www.david-amador.com/2009/05/game-contests/</link>
       <pubDate>Fri, 29 May 2009 14:07:40 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/05/game-contests/</guid>
+      <guid>https://www.david-amador.com/2009/05/game-contests/</guid>
       <description>I finally decided to compete on IGF. It’s been for a long time I wanted to make a game but time is always short and It’s been postponed like forever, but this time I’m really going to do it.
 I haven’t started the development itself but the ideas and what we want to do as a game is decided. I won’t reveal anything by now, just that I’ll be working with Rita, because the idea is to launch this as a Different Pixel game and that the target platform is PC/Xbox360.</description>
     </item>
     <item>
       <title>Server move</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/05/server-move/</link>
+      <link>https://www.david-amador.com/2009/05/server-move/</link>
       <pubDate>Fri, 29 May 2009 13:59:35 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/05/server-move/</guid>
+      <guid>https://www.david-amador.com/2009/05/server-move/</guid>
       <description>It’s been awhile since I last posted something here. Mostly because since my laptop fried I’ve been on a slower pace. I still couldn’t find any compatible hdd with my acer 2001 and Acer Portugal wasn’t been very helpfull.
 So last week I began migrating our server to another host provider, I got tired of down times and processes eating up all cpu, and finally about two months ago the server crashed and all information got lost.</description>
     </item>
     <item>
       <title>R.I.P. laptop hdd</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/05/rip-laptop-hdd/</link>
+      <link>https://www.david-amador.com/2009/05/rip-laptop-hdd/</link>
       <pubDate>Mon, 04 May 2009 16:01:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/05/rip-laptop-hdd/</guid>
+      <guid>https://www.david-amador.com/2009/05/rip-laptop-hdd/</guid>
       <description>This weekend was a longer one, 3 days =) but still it was a bad weekend. My old acer aspire 2000 died on me. I was starting to watch a movie when a sudden blue screen pop up. I tryed to reboot it but with no success, the problem? The hard drive is broken, when I boot it starts to make this strange mechanicall sounds and the hdd isn’t showing on the bios.</description>
     </item>
     <item>
-      <title>Testing Iphone Sdk and MacOSX</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</link>
+      <title>Testing iPhone Sdk and MacOSX</title>
+      <link>https://www.david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</link>
       <pubDate>Wed, 29 Apr 2009 11:48:38 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</guid>
-      <description>So last weekend I finally got my hands on a fully operational Mac OSX with the Iphone SDK so I decided to give it a try.
+      <guid>https://www.david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</guid>
+      <description>So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.
 First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.
-I booted up X-Code and decided to test an Iphone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen.</description>
+I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen.</description>
     </item>
     <item>
       <title>WordPress Gallery</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/04/wordpress-gallery/</link>
+      <link>https://www.david-amador.com/2009/04/wordpress-gallery/</link>
       <pubDate>Wed, 22 Apr 2009 10:43:35 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/04/wordpress-gallery/</guid>
+      <guid>https://www.david-amador.com/2009/04/wordpress-gallery/</guid>
       <description>During my efforts to combine Rita’s website to wordpress and with a cool gallery I came up with a few problems.
 Mainly because the top navigation bar was built using J-Query, which I’ve already made quite some time ago, and even after switching to mootools I didn’t want to be rebuilding it again.
 So yesterday after a few searches I managed to install NextGen gallery plugin for wordpress and using LightBox for popups.</description>
     </item>
     <item>
       <title>Make a Game Week</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/03/make-a-game-week/</link>
+      <link>https://www.david-amador.com/2009/03/make-a-game-week/</link>
       <pubDate>Fri, 13 Mar 2009 17:33:12 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/03/make-a-game-week/</guid>
+      <guid>https://www.david-amador.com/2009/03/make-a-game-week/</guid>
       <description>I work on a game creation company and this week the administration decided to give us a challenge, to make a game. Using whatever tools we want to whatever platform we like.
 After we got divided between 4 teams the challenge was to make every minute count. My team got composed by me (programmer), a designer and a person from man resources. Of course I was going to handle every bit of code, the designer the art and the third person the level design and documentation.</description>
     </item>
     <item>
       <title>Window of Opportunity</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/02/window-of-opportunity/</link>
+      <link>https://www.david-amador.com/2009/02/window-of-opportunity/</link>
       <pubDate>Tue, 24 Feb 2009 17:46:10 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/02/window-of-opportunity/</guid>
+      <guid>https://www.david-amador.com/2009/02/window-of-opportunity/</guid>
       <description>I started watching Stargate SG-1 on the beginning of this year, I’ve already had seen Season one, but it was almost 10 years ago so I decided to see from start.
 I’m in the middle of season 4 and last weekend I saw what may well be the most funny episode of all, Window of Opportunity.
 On this episode O’Neill and Teal’c get trapped on an endless loop, were events keep repeating themselves so, without any consequences to think on they decided to take the best of that time.</description>
     </item>
     <item>
       <title>Tech Talk: Linus Torvalds On Git</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</link>
+      <link>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</link>
       <pubDate>Tue, 03 Feb 2009 16:07:51 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</guid>
+      <guid>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</guid>
       <description>I recently found that there is a subversion alternative surfacing that is in many ways much better that subversion, it name is Git and it’s a creation of Linus Torvalds.
-Here’s a video of him talking about it
-https://www.youtube.com/v/4XpnKHJAok8</description>
+Here’s a video of him talking about it</description>
     </item>
     <item>
       <title>How to Enable or Disable Quick Launch Bar Toolbar in Windows 7</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/01/how-to-enable-or-disable-quick-launch-bar-toolbar-in-windows-7/</link>
+      <link>https://www.david-amador.com/2009/01/how-to-enable-or-disable-quick-launch-bar-toolbar-in-windows-7/</link>
       <pubDate>Fri, 23 Jan 2009 14:41:18 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/01/how-to-enable-or-disable-quick-launch-bar-toolbar-in-windows-7/</guid>
+      <guid>https://www.david-amador.com/2009/01/how-to-enable-or-disable-quick-launch-bar-toolbar-in-windows-7/</guid>
       <description>Quick Launch Bar is slowly being deprecated. It wasn’t enable by default on windows Vista and on the new Windows 7 (build 7000 for me) it isn’t even available on the toolbars list as the whole Taskbar been replaced with a new and enhanced one, which now allows shortcut icons to be placed on it directly.
 For users, like myself who miss Quick Launch bar here’s a how to enable it:</description>
     </item>

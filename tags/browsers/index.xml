@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Browsers on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/browsers/</link>
+    <link>https://www.david-amador.com/tags/browsers/</link>
     <description>Recent content in Browsers on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 12 Oct 2009 21:22:27 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/browsers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/browsers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How To Speed Up Firefox 3</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/10/how-to-speed-up-firefox-3/</link>
+      <link>https://www.david-amador.com/2009/10/how-to-speed-up-firefox-3/</link>
       <pubDate>Mon, 12 Oct 2009 21:22:27 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/10/how-to-speed-up-firefox-3/</guid>
+      <guid>https://www.david-amador.com/2009/10/how-to-speed-up-firefox-3/</guid>
       <description>I decided to try Google Chrome today and was pleasantly surprised with it’s speed on loading pages. And I started seeing how slow my Firefox was. At first I thought that it might have something to do with the plugins I have, but then again they are very few, just Echofon, Firebug and Xmarks. So after a little digging I came up with a way to speed up Firefox 3, turn out it was all in the options =)</description>
     </item>
   </channel>

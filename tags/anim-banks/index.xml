@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>anim banks on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/anim-banks/</link>
+    <link>https://www.david-amador.com/tags/anim-banks/</link>
     <description>Recent content in anim banks on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 29 Jan 2012 19:56:20 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/anim-banks/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/anim-banks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Engine, video player and tools, tools tools!</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</link>
+      <link>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</link>
       <pubDate>Sun, 29 Jan 2012 19:56:20 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</guid>
+      <guid>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</guid>
       <description>So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.
 Taking a rest between some more complex game mechanisms I decided to start doing a video player.
 After a bit research I decided to choose theora, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&amp;gt;RGB(A) conversion and because of video/audio sync.</description>

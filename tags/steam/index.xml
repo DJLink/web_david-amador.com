@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>steam on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/steam/</link>
+    <link>https://www.david-amador.com/tags/steam/</link>
     <description>Recent content in steam on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 06 Apr 2014 11:39:36 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/steam/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/steam/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quest of Dungeons is now available</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/04/quest-of-dungeons-is-now-available/</link>
+      <link>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</link>
       <pubDate>Sun, 06 Apr 2014 11:39:36 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/04/quest-of-dungeons-is-now-available/</guid>
+      <guid>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</guid>
       <description>I’m pleased to announce that Quest of Dungeons is finally out.
 I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.
 It was released on March 25th, for PC, Mac and iOS. You can get it on Steam, iOS App Store or directly from the site via Humble Store.
@@ -25,9 +25,9 @@ I released all platforms on the same day, which was something I always wanted to
     </item>
     <item>
       <title>Quest of Dungeons approved on Steam</title>
-      <link>https://djlink.github.io/web_david-amador.com/2014/02/quest-of-dungeons-approved-on-steam/</link>
+      <link>https://www.david-amador.com/2014/02/quest-of-dungeons-approved-on-steam/</link>
       <pubDate>Tue, 04 Feb 2014 21:04:34 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2014/02/quest-of-dungeons-approved-on-steam/</guid>
+      <guid>https://www.david-amador.com/2014/02/quest-of-dungeons-approved-on-steam/</guid>
       <description>A lot of stuff happened since my last post.
 I launched a GreenLight campaign for Quest of Dungeons on Jan 16 and it got greenlit on Jan 21, votes were coming in like crazy, I did not see that coming.
 Some sites posted about the game, like TouchArcade and PocketGamer, which was also very cool.

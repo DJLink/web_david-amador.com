@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xbox360 on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/xbox360/</link>
+    <link>https://www.david-amador.com/tags/xbox360/</link>
     <description>Recent content in Xbox360 on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Apr 2012 11:41:27 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/xbox360/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/xbox360/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xbox 360 Controller Input in C&#43;&#43; via XInput</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</link>
+      <link>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</link>
       <pubDate>Sun, 15 Apr 2012 11:41:27 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</guid>
+      <guid>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</guid>
       <description>So you have that Xbox360 controller laying around and want to connect it to your game?
 On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.
 First of all, you will need the DirecX 9.0+ sdk.
 The includes.
-&amp;lt;pre lang=&amp;#34;cpp&amp;#34;&amp;gt; #define WIN32_LEAN_AND_MEAN // We don&amp;#39;t want the extra stuff like MFC and such #include &amp;lt;windows&amp;gt; #include &amp;lt;xinput.</description>
+#define WIN32_LEAN_AND_MEAN // We don&amp;#39;t want the extra stuff like MFC and such #include &amp;lt;windows&amp;gt; #include &amp;lt;XInput.h&amp;gt; // XInput API #pragma comment(lib, &amp;#34;XInput.</description>
     </item>
     <item>
       <title>What are your target platforms for games?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
+      <link>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
       <pubDate>Mon, 26 Jul 2010 20:37:41 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
+      <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
       <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
 The poll closes in about 6 days and you can select various options of course.</description>
     </item>
     <item>
       <title>We need XBOX Live Indie Games in Portugal!!</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</link>
+      <link>https://www.david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</link>
       <pubDate>Tue, 22 Jun 2010 18:41:51 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</guid>
+      <guid>https://www.david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</guid>
       <description>See the little black country on the map? It’s Portugal. The green zone are countries around Portugal that have XBOX Live Indie Games. We are surrounded by countries that can place their games on Creator’s Club but we were left behind. I won’t say there aren’t many others but they can speak for themselves.
 I’m tired of watching developers from other countries being able to place their games there and we have to sit and watch.</description>
     </item>
     <item>
       <title>R.I.P. laptop hdd</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/05/rip-laptop-hdd/</link>
+      <link>https://www.david-amador.com/2009/05/rip-laptop-hdd/</link>
       <pubDate>Mon, 04 May 2009 16:01:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/05/rip-laptop-hdd/</guid>
+      <guid>https://www.david-amador.com/2009/05/rip-laptop-hdd/</guid>
       <description>This weekend was a longer one, 3 days =) but still it was a bad weekend. My old acer aspire 2000 died on me. I was starting to watch a movie when a sudden blue screen pop up. I tryed to reboot it but with no success, the problem? The hard drive is broken, when I boot it starts to make this strange mechanicall sounds and the hdd isn’t showing on the bios.</description>
     </item>
   </channel>

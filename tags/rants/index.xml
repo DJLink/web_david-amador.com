@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rants on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/rants/</link>
+    <link>https://www.david-amador.com/tags/rants/</link>
     <description>Recent content in rants on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 22 Jun 2010 18:41:51 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/rants/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/rants/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>We need XBOX Live Indie Games in Portugal!!</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</link>
+      <link>https://www.david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</link>
       <pubDate>Tue, 22 Jun 2010 18:41:51 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</guid>
+      <guid>https://www.david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</guid>
       <description>See the little black country on the map? It’s Portugal. The green zone are countries around Portugal that have XBOX Live Indie Games. We are surrounded by countries that can place their games on Creator’s Club but we were left behind. I won’t say there aren’t many others but they can speak for themselves.
 I’m tired of watching developers from other countries being able to place their games there and we have to sit and watch.</description>
     </item>

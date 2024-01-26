@@ -1,28 +1,434 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Game Development | David Amador</title>
-<meta name=keywords content><meta name=description content="David Amador Blog - Indie Game Developer"><meta name=author content="David Amador"><link rel=canonical href=https://djlink.github.io/web_david-amador.com/categories/game-development/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/web_david-amador.com/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z+V9+cO1A=" rel="preload stylesheet" as=style><link rel=icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://djlink.github.io/web_david-amador.com/categories/game-development/index.xml><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="Game Development"><meta property="og:description" content="David Amador Blog - Indie Game Developer"><meta property="og:type" content="website"><meta property="og:url" content="https://djlink.github.io/web_david-amador.com/categories/game-development/"><meta property="og:image" content="https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="David Amador"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="Game Development"><meta name=twitter:description content="David Amador Blog - Indie Game Developer"></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://djlink.github.io/web_david-amador.com/ accesskey=h title="David Amador (Alt + H)"><img src=https://djlink.github.io/apple-touch-icon.png alt aria-label=logo height=35>David Amador</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://djlink.github.io/web_david-amador.com/ title=Blog><span>Blog</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/games/ title=Games><span>Games</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/portfolio/ title=Portfolio><span>Portfolio</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/about/ title="About Me"><span>About Me</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://djlink.github.io/web_david-amador.com/>Home</a>&nbsp;»&nbsp;<a href=https://djlink.github.io/web_david-amador.com/categories/>Categories</a></div><h1>Game Development
-<a href=/web_david-amador.com/categories/game-development/index.xml title=RSS aria-label=RSS><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="23"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Indie and day job, making it work</h2></header><div class=entry-content><p>A large percentage of the indie developers have to work on their project at night and/or weekends.
-In order to pay the bills they have to maintain a day job. There’s no shame in that, many do it, I do it, not everyone can make a mega jump right into fame and fortune with a single project.
-The rest of us mere mortals have to gradually build a fan base, learn from past mistakes, do better PR, etc....</p></div><footer class=entry-footer><span title='2011-05-13 13:10:49 +0000 UTC'>May 13, 2011</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;781 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Indie and day job, making it work" href=https://djlink.github.io/web_david-amador.com/2011/05/indie-and-day-job-making-it-work/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>OpenGL Render to Texture</h2></header><div class=entry-content><p>Render to texture is a very handy functionality.
-Imagine your game allows for some character customization. You have the body, some different hats, different clothes and other small stuff. Now the easiest way to render this is to just draw it piece by piece every frame. With the proper Z coordinates everything falls in place.
-But you now have like 4-5 draw calls for one single object. Worse, you might have different textures and swamping textures is expensive....</p></div><footer class=entry-footer><span title='2011-04-29 09:25:33 +0000 UTC'>April 29, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;246 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to OpenGL Render to Texture" href=https://djlink.github.io/web_david-amador.com/2011/04/opengl-render-to-texture/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Tracking/Identifying individual touches on iPhone</h2></header><div class=entry-content><p>I got this question the other day, how to track individual touches if you are using a couple of fingers for a game?
-Actually it’s pretty easy if you can access the touch previous position and it’s current position.
-Let’s start with a small class to store the information
-&lt;pre lang="cpp"> class Touch { public: Touch(); ~Touch(); void update_position(float x, float y){ _current_position.x = x; _current_position.x = y; } bool is_same_touch(float x, float y) { if(_current_position....</p></div><footer class=entry-footer><span title='2011-04-15 12:01:37 +0000 UTC'>April 15, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;189 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Tracking/Identifying individual touches on iPhone" href=https://djlink.github.io/web_david-amador.com/2011/04/tracking-identifying-individual-touches-on-iphone/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>A little on how to initialize and use GameCenter</h2></header><div class=entry-content><p>Small side-note first, Vizati is now available for the Super Nintendo, more info.
-For my third idevblogaday post I’m going to talk about Game Center.
-Game Center was released only a couple months ago (September or so) but already tons of applications are using it and even more, players ask for it.
-It’s a way to track achievements, leader boards etc. Unfortunately It’s only available from iOS 4.1+, so some compatibility check has to be done....</p></div><footer class=entry-footer><span title='2011-04-01 10:53:01 +0000 UTC'>April 1, 2011</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;453 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to A little on how to initialize and use GameCenter" href=https://djlink.github.io/web_david-amador.com/2011/04/a-little-on-how-to-initialize-and-use-gamecenter/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Scripting week</h2></header><div class=entry-content><p>This week I’ve been working on replacing my current scripting system. It worked great for Vizati but I need something with a little more flexibility.
-Instead of explaining what I’ve managed to get working I’ve made a screenshot with some notes.
-I think I’m going to make this my #ScreenshotSaturday</p></div><footer class=entry-footer><span title='2011-03-26 11:36:37 +0000 UTC'>March 26, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;50 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Scripting week" href=https://djlink.github.io/web_david-amador.com/2011/03/scripting-week/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Loading images into OpenGL in iPhone</h2></header><div class=entry-content><p>So you can’t make a game without images, right? Well, actually you can but that’s another story.
-But how can you load a jpg or a png and use then on OpenGLES?
-First let’s make a simple class Texture2D
-&lt;pre lang="cpp"> class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image...</p></div><footer class=entry-footer><span title='2011-03-18 10:06:24 +0000 UTC'>March 18, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;327 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Loading images into OpenGL in iPhone" href=https://djlink.github.io/web_david-amador.com/2011/03/loading-images-into-opengl-in-iphone/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Bringing a game from PC to iOS</h2></header><div class=entry-content><p>This is my first post to http://idevblogaday.com/, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.
-I’ll start by talking a bit about how we made our PC game Vizati to iPhone. When we started, this represented our chance of making games and putting ourselves into test....</p></div><footer class=entry-footer><span title='2011-03-04 11:05:11 +0000 UTC'>March 4, 2011</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;627 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Bringing a game from PC to iOS" href=https://djlink.github.io/web_david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Playtesting and Tech support, the other side of the coin</h2></header><div class=entry-content><p>Something that has always been scary (well, it’ still is) before launching Vizati is tech support.
-No matter how much you tested your game, it’s bound to have bugs. Also what I’ve realized is that I don’t spend enough time testing the game, oh and you too, yes YOU (I’m assuming you’re a developer of course).
-The past year I gather around a few friends who never played it to test the game for 2 days....</p></div><footer class=entry-footer><span title='2011-02-18 12:26:28 +0000 UTC'>February 18, 2011</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;987 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Playtesting and Tech support, the other side of the coin" href=https://djlink.github.io/web_david-amador.com/2011/02/playtesting-and-tech-support-the-other-side-of-the-coin/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>officially a Mac developer too, wait, what?</h2></header><div class=entry-content><p>It’s little over a month since I said I wouldn’t do any more porting for Vizati. Lesson learned, don’t say never again…
-When I started making the engine in C++ with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.
-Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish....</p></div><footer class=entry-footer><span title='2011-01-11 01:10:44 +0000 UTC'>January 11, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;271 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to officially a Mac developer too, wait, what?" href=https://djlink.github.io/web_david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>No more porting for Vizati, time for something new</h2></header><div class=entry-content><p>It’s been awhile since my last post.
-Regular visitors know that for the last months I’ve been working mainly on Vizati, bringing it first from the Xbox360 (never released, no xblig here) to a PC digital release, followed by a complete rewrite of the engine to C++/OpenGL for a iPhone port, next there was the Windows Phone 7 version. I had the iPad on a backburner since I don’t own a device and optimizing code without seeing the result is crappy but about 2 weeks ago it went gold and it’s finished....</p></div><footer class=entry-footer><span title='2010-12-04 10:53:14 +0000 UTC'>December 4, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;289 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to No more porting for Vizati, time for something new" href=https://djlink.github.io/web_david-amador.com/2010/12/no-more-porting-for-vizati-time-for-something-new/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://djlink.github.io/web_david-amador.com/categories/game-development/page/4/>«&nbsp;Prev&nbsp;4/10
-</a><a class=next href=https://djlink.github.io/web_david-amador.com/categories/game-development/page/6/>Next&nbsp;6/10&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2024 <a href=https://djlink.github.io/web_david-amador.com/>David Amador</a></span>
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Game Development | David Amador</title>
+<meta name="keywords" content="">
+<meta name="description" content="David Amador Blog - Indie Game Developer">
+<meta name="author" content="David Amador">
+<link rel="canonical" href="https://www.david-amador.com/categories/game-development/">
+<meta name="google-site-verification" content="google913fe85edca3ebf5">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" integrity="sha256-dlbZmvx8fFip4Fx/XazbjpoDEIIrGxJqyFcprqEIBU8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://www.david-amador.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://www.david-amador.com/categories/game-development/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSKJ8VSQQV"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-XSKJ8VSQQV', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Game Development" />
+<meta property="og:description" content="David Amador Blog - Indie Game Developer" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.david-amador.com/categories/game-development/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="og:site_name" content="David Amador" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
+
+<meta name="twitter:title" content="Game Development"/>
+<meta name="twitter:description" content="David Amador Blog - Indie Game Developer"/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+                <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
+                    height="35">David Amador</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://www.david-amador.com/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/games/" title="Games">
+                    <span>Games</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/portfolio/" title="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/about/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/categories/">Categories</a></div>
+  <h1>
+    Game Development
+    <a href="/categories/game-development/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/01/Screen-shot-2011-01-11-at-12.45.43-AM-125x166.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">officially a Mac developer too, wait, what?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>It’s little over a month since I said I wouldn’t do any more porting for Vizati. Lesson learned, don’t say never again…
+When I started making the engine in C&#43;&#43; with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.
+Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish....</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-01-11 01:10:44 +0000 UTC'>January 11, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;271 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to officially a Mac developer too, wait, what?" href="https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">No more porting for Vizati, time for something new
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>It’s been awhile since my last post.
+Regular visitors know that for the last months I’ve been working mainly on Vizati, bringing it first from the Xbox360 (never released, no xblig here) to a PC digital release, followed by a complete rewrite of the engine to C&#43;&#43;/OpenGL for a iPhone port, next there was the Windows Phone 7 version. I had the iPad on a backburner since I don’t own a device and optimizing code without seeing the result is crappy but about 2 weeks ago it went gold and it’s finished....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-12-04 10:53:14 +0000 UTC'>December 4, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;289 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to No more porting for Vizati, time for something new" href="https://www.david-amador.com/2010/12/no-more-porting-for-vizati-time-for-something-new/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Testing if a point is inside a Polygon
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve been playing with polygons and collisions lately so I decided to share some stuff.
+Using rectangles to detect if the mouse is inside is handy for Buttons and rectangular shaped objects, but what about other irregular shaped objects?
+Taking this into account I decided to create a Polygon class that basically has a List of Vector3 points. Although I’m just covering 2D collision you should use Vector3 for a more generic class....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-11-19 15:35:25 +0000 UTC'>November 19, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;288 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Testing if a point is inside a Polygon" href="https://www.david-amador.com/2010/11/testing-if-a-point-is-inside-a-polygon/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_-125x166.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A* Pathfinding
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>For my current project I’ve been working with A* as a path-finding solution.
+Basically it’s a way to get from point A to point B.
+This is used for AI in games mostly on tiled based games, It’s very simple to understand and implement.
+As A* traverses the graph, it follows a path of the lowest known cost, keeping a sorted priority queue of alternate path segments along the way. If, at any point, a segment of the path being traversed has a higher cost than another encountered path segment, it abandons the higher-cost path segment and traverses the lower-cost path segment instead....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-10-27 10:48:46 +0000 UTC'>October 27, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;395 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to A* Pathfinding" href="https://www.david-amador.com/2010/10/a-pathfinding/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/basalt_xna_vs_basalt_cpp-125x166.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cross-Platform engine progress
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>If you read my recent posts you know I’ve been bringing Basalt to C&#43;&#43;.
+The plan is to support both DirectX and OpenGL render API’s and OpenGLES for iOS devices. I’m tired of porting stuff so I want to make a better framework for future projects and I’ll leave the XNA branch for Xbox360 and Windows Phone 7. I really wished I had this before.
+Since the iPhone branch is stable I move on to making it compatible with Win32 and MacOSX....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-10-11 14:20:02 +0000 UTC'>October 11, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;272 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Cross-Platform engine progress" href="https://www.david-amador.com/2010/10/cross-platform-engine-progress/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Vizati for iPhone is now available at App Store
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>People who follow me on twitter are probably aware, or maybe not:
+After 3 months tacking an iPhone port it was finally approved by Apple to the App store and it’s on sale today!!!
+Hypnotizing start…
+Buy buy buy….
+On the count of 3 you will feel refreshed and happy for buying this awesome game…
+1
+2
+3
+Oh right, here’s the trailer:
+I’ve searched some forums and found some talking about it and that they liked, general feedback looks positive....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-10-06 17:33:43 +0000 UTC'>October 6, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;163 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Vizati for iPhone is now available at App Store" href="https://www.david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Simulating tombstone (suspended state) on Windows Phone 7 emulator
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.
+It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.
+So depending on you app you might want to save the current state just in case the app really closes....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-09-20 21:36:27 +0000 UTC'>September 20, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;218 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Simulating tombstone (suspended state) on Windows Phone 7 emulator" href="https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Another milestone reached, first App sent to Apple Store
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Finally and after several weeks locked inside Different Pixel “dungeon” making my engine compatible with iOS, namely with iPhone/iPod touch I submitted today my first App to the Apple Store.
+The binary didn’t reported any issues so as of 15 September 2010 it’s “Waiting For Review”
+I have mixed feelings about either it’s going to be approved or rejected. On one hand we tested as much as we could, handed to some testers using iPhone 3, iPhone 4 and iPod touches....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-09-15 16:58:38 +0000 UTC'>September 15, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;383 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Another milestone reached, first App sent to Apple Store" href="https://www.david-amador.com/2010/09/another-milestone-reached-first-app-sent-to-apple-store/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">iPad launch images support for all orientations
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>When loading an application on an iPhone or iPad, a launch image can be shown to provide feedback to the user that the application is loading.
+On the iPhone a Default.png was used, with the iPad we need to anticipate the device being started in any orientation.
+Filename Dimensions Default-Portrait.png * 768w x 1024h Default-PortraitUpsideDown.png 768w x 1024h Default-Landscape.png ** 1024w x 768h Default-LandscapeLeft.png 1024w x 768h Default-LandscapeRight.png 1024w x 768h Default....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-09-10 23:23:49 +0000 UTC'>September 10, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;105 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to iPad launch images support for all orientations" href="https://www.david-amador.com/2010/09/ipad-launch-images-support-for-all-orientations/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Setting OpenGL view for iPhone 4 retina hi resolution
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This had me scratching my head for awhile.
+At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.
+A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.
+To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-09-10 09:24:23 +0000 UTC'>September 10, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;256 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Setting OpenGL view for iPhone 4 retina hi resolution" href="https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Targetting iOS devices hardware
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.
+This covers iPhones, iPod Touches and iPad.
+iPhone/iPhone 3G – 412 MHz / 128MB / 320×480
+iPhone 3GS – 600 MHz / 256MB / 320×480
+iPhone 4 -~800MHz / 512MB / 640×960
+iPod Touch 1G – 412 MHz / 128MB / 320×480
+iPod Touch 2G – 532 MHz / 128MB / 320×480...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-09-08 12:01:37 +0000 UTC'>September 8, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;156 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Targetting iOS devices hardware" href="https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">iPhone OpenGL screen orientation using the accelerometer
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.
+Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.
+I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-08-27 14:49:39 +0000 UTC'>August 27, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;500 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to iPhone OpenGL screen orientation using the accelerometer" href="https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://www.david-amador.com/categories/game-development/page/4/">
+      «&nbsp;Prev&nbsp;4/8
+    </a>
+    <a class="next" href="https://www.david-amador.com/categories/game-development/page/6/">Next&nbsp;6/8&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>XCode on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/xcode/</link>
+    <link>https://www.david-amador.com/tags/xcode/</link>
     <description>Recent content in XCode on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 28 Sep 2012 20:03:40 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Puwang &amp;#8211; a 5 day work</title>
-      <link>https://djlink.github.io/web_david-amador.com/2012/09/puwang-a-5-day-work/</link>
+      <title>Puwang - a 5 day work</title>
+      <link>https://www.david-amador.com/2012/09/puwang-a-5-day-work/</link>
       <pubDate>Fri, 28 Sep 2012 20:03:40 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2012/09/puwang-a-5-day-work/</guid>
+      <guid>https://www.david-amador.com/2012/09/puwang-a-5-day-work/</guid>
       <description>Hi, how’s everyone doing?
 So this was a different week for me. It’s been a long time that I had the chance to work on a small prototype or a 48H competition because of my work on Dary’s Legend so I decided to stop for a couple of days and do something else.
 Also my cat’s been quite sick, and between the Vet and taking care of him, working on a fun project gave me more time do everything.</description>
     </item>
     <item>
       <title>Fixing dark borders sprites on iPhone</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</link>
+      <link>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</link>
       <pubDate>Mon, 26 Jul 2010 12:47:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</guid>
+      <guid>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</guid>
       <description>I ran into this issue a couple hours ago working on the iPhone sdk:
 See the darker borders around the image?
 It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
@@ -34,13 +34,13 @@ Well that’s because that alpha isn’t 0 or 1 or 0 or 255.
 The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha.</description>
     </item>
     <item>
-      <title>Testing Iphone Sdk and MacOSX</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</link>
+      <title>Testing iPhone Sdk and MacOSX</title>
+      <link>https://www.david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</link>
       <pubDate>Wed, 29 Apr 2009 11:48:38 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</guid>
-      <description>So last weekend I finally got my hands on a fully operational Mac OSX with the Iphone SDK so I decided to give it a try.
+      <guid>https://www.david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</guid>
+      <description>So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.
 First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.
-I booted up X-Code and decided to test an Iphone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen.</description>
+I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen.</description>
     </item>
   </channel>
 </rss>

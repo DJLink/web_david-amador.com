@@ -1,19 +1,426 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Game Development | David Amador</title>
-<meta name=keywords content><meta name=description content="David Amador Blog - Indie Game Developer"><meta name=author content="David Amador"><link rel=canonical href=https://djlink.github.io/web_david-amador.com/categories/game-development/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/web_david-amador.com/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z+V9+cO1A=" rel="preload stylesheet" as=style><link rel=icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://djlink.github.io/web_david-amador.com/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://djlink.github.io/web_david-amador.com/categories/game-development/index.xml><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="Game Development"><meta property="og:description" content="David Amador Blog - Indie Game Developer"><meta property="og:type" content="website"><meta property="og:url" content="https://djlink.github.io/web_david-amador.com/categories/game-development/"><meta property="og:image" content="https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="David Amador"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="Game Development"><meta name=twitter:description content="David Amador Blog - Indie Game Developer"></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://djlink.github.io/web_david-amador.com/ accesskey=h title="David Amador (Alt + H)"><img src=https://djlink.github.io/apple-touch-icon.png alt aria-label=logo height=35>David Amador</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://djlink.github.io/web_david-amador.com/ title=Blog><span>Blog</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/games/ title=Games><span>Games</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/portfolio/ title=Portfolio><span>Portfolio</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/about/ title="About Me"><span>About Me</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://djlink.github.io/web_david-amador.com/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><header class=page-header><div class=breadcrumbs><a href=https://djlink.github.io/web_david-amador.com/>Home</a>&nbsp;»&nbsp;<a href=https://djlink.github.io/web_david-amador.com/categories/>Categories</a></div><h1>Game Development
-<a href=/web_david-amador.com/categories/game-development/index.xml title=RSS aria-label=RSS><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="23"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>game5 devlog #2</h2></header><div class=entry-content><p>I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Game Development | David Amador</title>
+<meta name="keywords" content="">
+<meta name="description" content="David Amador Blog - Indie Game Developer">
+<meta name="author" content="David Amador">
+<link rel="canonical" href="https://www.david-amador.com/categories/game-development/">
+<meta name="google-site-verification" content="google913fe85edca3ebf5">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" integrity="sha256-dlbZmvx8fFip4Fx/XazbjpoDEIIrGxJqyFcprqEIBU8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://www.david-amador.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://www.david-amador.com/categories/game-development/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSKJ8VSQQV"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-XSKJ8VSQQV', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Game Development" />
+<meta property="og:description" content="David Amador Blog - Indie Game Developer" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.david-amador.com/categories/game-development/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="og:site_name" content="David Amador" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
+
+<meta name="twitter:title" content="Game Development"/>
+<meta name="twitter:description" content="David Amador Blog - Indie Game Developer"/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+                <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
+                    height="35">David Amador</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://www.david-amador.com/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/games/" title="Games">
+                    <span>Games</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/portfolio/" title="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/about/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/categories/">Categories</a></div>
+  <h1>
+    Game Development
+    <a href="/categories/game-development/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2023/10/witch_tea____by_hoshi_pan_ddjhtc7-pre.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">game5 devlog #2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
 But onto game5 progress.
-Importers I managed to finish some of the importers (spreadsheets -> ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them....</p></div><footer class=entry-footer><span title='2023-10-15 17:20:55 +0000 UTC'>October 15, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;820 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to game5 devlog #2" href=https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-2/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>game5 devlog #1</h2></header><div class=entry-content><p>Nothing announced, not even a name decided, but I want to vaguely blog about it as a means of brainstorming with myself. I’ll be vague as heck until I’m sure I have something worth “here’s a new game”, if that ever turns out to be the case.
-So this week’s it’s progress on my “on-going not yet announced game because not ready and might be bad” game, which I decided to for now on call Game5 here, so it’s easier to know what we are talking about....</p></div><footer class=entry-footer><span title='2023-10-02 20:40:47 +0000 UTC'>October 2, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;685 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to game5 devlog #1" href=https://djlink.github.io/web_david-amador.com/2023/10/game5-devlog-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Unity enshittification round 2, moving on to custom tech.</h2></header><div class=entry-content><p>After mostly a week of anxiety, for thousands and thousands of developers, Unity changed the rules again, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service....</p></div><footer class=entry-footer><span title='2023-09-24 09:57:43 +0000 UTC'>September 24, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;685 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Unity enshittification round 2, moving on to custom tech." href=https://djlink.github.io/web_david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>The Unity enshittification, proprietary tech dangers, and mostly not talking about what I'm doing.</h2></header><div class=entry-content><p>So this was an “eventful” week in the game dev community. Unity, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. Unity announced that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane....</p></div><footer class=entry-footer><span title='2023-09-16 11:14:16 +0000 UTC'>September 16, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;830 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to The Unity enshittification, proprietary tech dangers, and mostly not talking about what I'm doing." href=https://djlink.github.io/web_david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Some things to consider in multi-platform gamedev</h2></header><div class=entry-content><p>Decided to write a couple things I feel can help a game in the long run when it comes to porting it to other platforms. It’s always inevitable we have to change elements in a game when targeting a new console/device we never considered, but some considerations, if done from start can save a lot of time, headaches, porting budget, and equally important, avoiding introduction of new bugs due to code changing drastically....</p></div><footer class=entry-footer><span title='2023-09-04 20:01:23 +0000 UTC'>September 4, 2023</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;1502 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Some things to consider in multi-platform gamedev" href=https://djlink.github.io/web_david-amador.com/2023/09/some-things-to-consider-in-multi-platform-gamedev/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Vizati 10th anniversary and making if free.</h2></header><div class=entry-content><p>> Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but twitter kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.
-Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and Rita with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game....</p></div><footer class=entry-footer><span title='2020-06-11 11:00:00 +0000 UTC'>June 11, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;368 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Vizati 10th anniversary and making if free." href=https://djlink.github.io/web_david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Made a small game for Ludum Dare 42</h2></header><div class=entry-content><p>Hey,
+Importers I managed to finish some of the importers (spreadsheets -&gt; ScriptableObjects &#43; prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-10-15 17:20:55 +0000 UTC'>October 15, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;820 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to game5 devlog #2" href="https://www.david-amador.com/2023/10/game5-devlog-2/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/12/chibi_dark_link_icon_by_creamy423-d2xgzv9-125x160.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">game5 devlog #1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Nothing announced, not even a name decided, but I want to vaguely blog about it as a means of brainstorming with myself. I’ll be vague as heck until I’m sure I have something worth “here’s a new game”, if that ever turns out to be the case.
+So this week’s it’s progress on my “on-going not yet announced game because not ready and might be bad” game, which I decided to for now on call Game5 here, so it’s easier to know what we are talking about....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-10-02 20:40:47 +0000 UTC'>October 2, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;685 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to game5 devlog #1" href="https://www.david-amador.com/2023/10/game5-devlog-1/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2023/09/pexels-photo-18358262.jpeg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Unity enshittification round 2, moving on to custom tech.
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>After mostly a week of anxiety, for thousands and thousands of developers, Unity changed the rules again, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS&#43; (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-09-24 09:57:43 +0000 UTC'>September 24, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;685 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Unity enshittification round 2, moving on to custom tech." href="https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2023/09/pexels-photo-682933.jpeg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Unity enshittification, proprietary tech dangers, and mostly not talking about what I&#39;m doing.
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So this was an “eventful” week in the game dev community. Unity, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. Unity announced that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-09-16 11:14:16 +0000 UTC'>September 16, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;830 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to The Unity enshittification, proprietary tech dangers, and mostly not talking about what I&#39;m doing." href="https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2023/09/pexels-photo-577585.jpeg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Some things to consider in multi-platform gamedev
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Decided to write a couple things I feel can help a game in the long run when it comes to porting it to other platforms. It’s always inevitable we have to change elements in a game when targeting a new console/device we never considered, but some considerations, if done from start can save a lot of time, headaches, porting budget, and equally important, avoiding introduction of new bugs due to code changing drastically....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-09-04 20:01:23 +0000 UTC'>September 4, 2023</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;1502 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Some things to consider in multi-platform gamedev" href="https://www.david-amador.com/2023/09/some-things-to-consider-in-multi-platform-gamedev/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/05/box_vizati_11.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Vizati 10th anniversary and making if free.
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>&gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but twitter kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.
+Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and Rita with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game....</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-06-11 11:00:00 +0000 UTC'>June 11, 2020</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;368 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Vizati 10th anniversary and making if free." href="https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2018/08/Honeycam-2018-08-13-22-21-37.gif" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Made a small game for Ludum Dare 42
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hey,
 It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.
-But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment....</p></div><footer class=entry-footer><span title='2018-08-14 15:02:38 +0000 UTC'>August 14, 2018</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;172 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Made a small game for Ludum Dare 42" href=https://djlink.github.io/web_david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Some thoughts about a 4 year game dev cycle</h2></header><div class=entry-content><p>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.
+But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment....</p>
+  </div>
+  <footer class="entry-footer"><span title='2018-08-14 15:02:38 +0000 UTC'>August 14, 2018</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;172 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Made a small game for Ludum Dare 42" href="https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Some thoughts about a 4 year game dev cycle
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.
 It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.
-For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was Quest of Dungeons, which started development in 2013....</p></div><footer class=entry-footer><span title='2016-12-29 12:35:49 +0000 UTC'>December 29, 2016</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;1904 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Some thoughts about a 4 year game dev cycle" href=https://djlink.github.io/web_david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>My first ever console game is out</h2></header><div class=entry-content><p>Hey, it’s been a while.
+For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was Quest of Dungeons, which started development in 2013....</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-12-29 12:35:49 +0000 UTC'>December 29, 2016</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;1904 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Some thoughts about a 4 year game dev cycle" href="https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2015/09/branded_key_art_584x800-copy-210x288.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My first ever console game is out
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hey, it’s been a while.
 For the past few months I’ve been working on porting Quest of Dungeons to Xbox One, and I’m super happy that it’s finally out. It was released around a week ago, on September 4.
-This took some time but I’m happy of the way the game is played with a gamepad, after a lot of changes to the UI I really feel like it was worth all the effort I put into it....</p></div><footer class=entry-footer><span title='2015-09-13 18:26:14 +0000 UTC'>September 13, 2015</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;299 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to My first ever console game is out" href=https://djlink.github.io/web_david-amador.com/2015/09/my-first-ever-console-game-is-out/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>Suggestion for where to store save games</h2></header><div class=entry-content><p>Standards are a lovely thing, but hard to achieve, it depends on one thing, everyone actually using it, otherwise it’s just a rule no one cares about.
+This took some time but I’m happy of the way the game is played with a gamepad, after a lot of changes to the UI I really feel like it was worth all the effort I put into it....</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-09-13 18:26:14 +0000 UTC'>September 13, 2015</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;299 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to My first ever console game is out" href="https://www.david-amador.com/2015/09/my-first-ever-console-game-is-out/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2015/04/my_documents-210x161.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Suggestion for where to store save games
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Standards are a lovely thing, but hard to achieve, it depends on one thing, everyone actually using it, otherwise it’s just a rule no one cares about.
 There is one thing that is very common to see in the “game sphere”:
 Where are [X] save games located?
-There are a couple of common directories used but I think as game developers we could do a bit better and using a common location....</p></div><footer class=entry-footer><span title='2015-04-09 09:27:58 +0000 UTC'>April 9, 2015</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;403 words&nbsp;·&nbsp;David Amador</footer><a class=entry-link aria-label="post link to Suggestion for where to store save games" href=https://djlink.github.io/web_david-amador.com/2015/04/suggestion-for-where-to-store-save-games/></a></article><footer class=page-footer><nav class=pagination><a class=next href=https://djlink.github.io/web_david-amador.com/categories/game-development/page/2/>Next&nbsp;2/10&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2024 <a href=https://djlink.github.io/web_david-amador.com/>David Amador</a></span>
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+There are a couple of common directories used but I think as game developers we could do a bit better and using a common location....</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-04-09 09:27:58 +0000 UTC'>April 9, 2015</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;397 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Suggestion for where to store save games" href="https://www.david-amador.com/2015/04/suggestion-for-where-to-store-save-games/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2014/12/xbox_one_console-210x135.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">I&#39;m a Xbox One developer now, QoD getting a port
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So a lot has happened since my last post. Even before EGX I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.
+I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you....</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-12-14 12:19:07 +0000 UTC'>December 14, 2014</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;220 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to I&#39;m a Xbox One developer now, QoD getting a port" href="https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2014/10/Screen-Shot-2014-10-03-at-11.35.20-210x118.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Indie Dev &amp; Day Job, Making it work / Building Quest of Dungeons
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>During Gamedev Camp 2014 in Lisbon I got to talk a bit about the development of Quest of Dungeons, and some of the problems that I had making it while still having a day job.
+Most indie developers don’t have enough money to work on their game full-time so they have to keep a day job in order to support it, so this is a bit of my own personal experience doing it, some of the problems that came with it and mistakes I did during the development and launch of the game....</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-10-03 11:36:36 +0000 UTC'>October 3, 2014</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;118 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Indie Dev &amp; Day Job, Making it work / Building Quest of Dungeons" href="https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="https://www.david-amador.com/categories/game-development/page/2/">Next&nbsp;2/8&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

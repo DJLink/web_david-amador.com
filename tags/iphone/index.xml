@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Iphone on David Amador</title>
-    <link>https://djlink.github.io/web_david-amador.com/tags/iphone/</link>
+    <link>https://www.david-amador.com/tags/iphone/</link>
     <description>Recent content in Iphone on David Amador</description>
     <image>
       <title>David Amador</title>
-      <url>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://djlink.github.io/web_david-amador.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 26 Aug 2010 19:05:55 +0000</lastBuildDate>
-    <atom:link href="https://djlink.github.io/web_david-amador.com/tags/iphone/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.david-amador.com/tags/iphone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developers log stardate 26082010</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/08/developers-log-stardate-26082010/</link>
+      <link>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</link>
       <pubDate>Thu, 26 Aug 2010 19:05:55 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/08/developers-log-stardate-26082010/</guid>
+      <guid>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</guid>
       <description>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.
 Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.
 Here’s a picture she took after a few adjustments.</description>
     </item>
     <item>
       <title>What are your target platforms for games?</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
+      <link>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
       <pubDate>Mon, 26 Jul 2010 20:37:41 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
+      <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
       <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
 The poll closes in about 6 days and you can select various options of course.</description>
     </item>
     <item>
       <title>Fixing dark borders sprites on iPhone</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</link>
+      <link>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</link>
       <pubDate>Mon, 26 Jul 2010 12:47:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</guid>
+      <guid>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</guid>
       <description>I ran into this issue a couple hours ago working on the iPhone sdk:
 See the darker borders around the image?
 It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
@@ -43,21 +43,21 @@ The first thing I found out is that XCode grabs the png images and multiplies th
     </item>
     <item>
       <title>Developing on Mac and Basalt running on the iPhone</title>
-      <link>https://djlink.github.io/web_david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
+      <link>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
       <pubDate>Fri, 09 Jul 2010 09:59:01 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
+      <guid>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
       <description>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.
 If you follow me on twitter you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.
 So it all started with my wish to port Vizati to the iPhone, since the game is already running on PC, Xbox360 and Windows Phone 7 one can only wish for an easy and quick port since pretty much all base code is done.</description>
     </item>
     <item>
-      <title>Testing Iphone Sdk and MacOSX</title>
-      <link>https://djlink.github.io/web_david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</link>
+      <title>Testing iPhone Sdk and MacOSX</title>
+      <link>https://www.david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</link>
       <pubDate>Wed, 29 Apr 2009 11:48:38 +0000</pubDate>
-      <guid>https://djlink.github.io/web_david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</guid>
-      <description>So last weekend I finally got my hands on a fully operational Mac OSX with the Iphone SDK so I decided to give it a try.
+      <guid>https://www.david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</guid>
+      <description>So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.
 First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.
-I booted up X-Code and decided to test an Iphone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen.</description>
+I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen.</description>
     </item>
   </channel>
 </rss>
