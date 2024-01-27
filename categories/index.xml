@@ -11,20 +11,27 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Oct 2023 17:20:55 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jan 2024 17:20:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Game Development</title>
-      <link>https://www.david-amador.com/categories/game-development/</link>
-      <pubDate>Sun, 15 Oct 2023 17:20:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/categories/game-development/</guid>
+      <title>Application &amp; Software</title>
+      <link>https://www.david-amador.com/categories/application-software/</link>
+      <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/categories/application-software/</guid>
       <description></description>
     </item>
     <item>
       <title>Daily Things</title>
       <link>https://www.david-amador.com/categories/daily-things/</link>
-      <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
+      <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
       <guid>https://www.david-amador.com/categories/daily-things/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Game Development</title>
+      <link>https://www.david-amador.com/categories/game-development/</link>
+      <pubDate>Sun, 15 Oct 2023 17:20:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/categories/game-development/</guid>
       <description></description>
     </item>
     <item>
@@ -39,13 +46,6 @@
       <link>https://www.david-amador.com/categories/tutorials/</link>
       <pubDate>Thu, 11 Jul 2013 12:09:48 +0000</pubDate>
       <guid>https://www.david-amador.com/categories/tutorials/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Application &amp; Software</title>
-      <link>https://www.david-amador.com/categories/application-software/</link>
-      <pubDate>Wed, 31 Oct 2012 09:02:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/categories/application-software/</guid>
       <description></description>
     </item>
     <item>

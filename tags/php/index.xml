@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 Oct 2009 16:38:09 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jan 2024 17:20:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Converting the blog from WordPress to Hugo</title>
+      <link>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</link>
+      <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</guid>
+      <description>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&amp;rsquo;ve moved everything to static content, including this website.
+📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper.</description>
+    </item>
     <item>
       <title>PHP Optimization Tips</title>
       <link>https://www.david-amador.com/2009/10/php-optimization-tips/</link>

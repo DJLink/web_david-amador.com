@@ -11,8 +11,50 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Oct 2023 17:20:55 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jan 2024 17:20:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS</title>
+      <link>https://www.david-amador.com/tags/css/</link>
+      <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/css/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>git</title>
+      <link>https://www.david-amador.com/tags/git/</link>
+      <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>hugo</title>
+      <link>https://www.david-amador.com/tags/hugo/</link>
+      <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>javascript</title>
+      <link>https://www.david-amador.com/tags/javascript/</link>
+      <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PHP</title>
+      <link>https://www.david-amador.com/tags/php/</link>
+      <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/php/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>wordpress</title>
+      <link>https://www.david-amador.com/tags/wordpress/</link>
+      <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/wordpress/</guid>
+      <description></description>
+    </item>
     <item>
       <title>devlog</title>
       <link>https://www.david-amador.com/tags/devlog/</link>
@@ -630,13 +672,6 @@
       <description></description>
     </item>
     <item>
-      <title>git</title>
-      <link>https://www.david-amador.com/tags/git/</link>
-      <pubDate>Fri, 08 Jul 2011 13:29:34 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/git/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>idevblogaday</title>
       <link>https://www.david-amador.com/tags/idevblogaday/</link>
       <pubDate>Fri, 24 Jun 2011 21:14:07 +0000</pubDate>
@@ -1008,24 +1043,10 @@
       <description></description>
     </item>
     <item>
-      <title>CSS</title>
-      <link>https://www.david-amador.com/tags/css/</link>
-      <pubDate>Sun, 25 Oct 2009 19:16:12 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/css/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>div</title>
       <link>https://www.david-amador.com/tags/div/</link>
       <pubDate>Sun, 25 Oct 2009 19:16:12 +0000</pubDate>
       <guid>https://www.david-amador.com/tags/div/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>javascript</title>
-      <link>https://www.david-amador.com/tags/javascript/</link>
-      <pubDate>Sun, 25 Oct 2009 19:16:12 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
@@ -1050,13 +1071,6 @@
       <description></description>
     </item>
     <item>
-      <title>PHP</title>
-      <link>https://www.david-amador.com/tags/php/</link>
-      <pubDate>Thu, 22 Oct 2009 16:38:09 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/php/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>mysql</title>
       <link>https://www.david-amador.com/tags/mysql/</link>
       <pubDate>Thu, 22 Oct 2009 11:27:10 +0000</pubDate>
@@ -1068,13 +1082,6 @@
       <link>https://www.david-amador.com/tags/phpmyadmin/</link>
       <pubDate>Thu, 22 Oct 2009 11:27:10 +0000</pubDate>
       <guid>https://www.david-amador.com/tags/phpmyadmin/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>wordpress</title>
-      <link>https://www.david-amador.com/tags/wordpress/</link>
-      <pubDate>Thu, 22 Oct 2009 11:27:10 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/wordpress/</guid>
       <description></description>
     </item>
     <item>

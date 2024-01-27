@@ -141,6 +141,21 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Using Isolated Storage to save/load files on Windows Phone 7
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.
+You can use IsolatedStorage for that
+using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
+IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); // grab the storage FileStream stream = store.OpenFile(&#34;test.txt&#34;, FileMode.Create); // Open a file in Create mode BinaryWriter writer = new BinaryWriter(stream); float myvar = 5....</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-10-10 23:37:04 +0000 UTC'>October 10, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;153 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Using Isolated Storage to save/load files on Windows Phone 7" href="https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Vizati for iPhone is now available at App Store
     </h2>
   </header>
@@ -304,19 +319,6 @@ I thought games couldn’t get any better. I remember always asking him to “ty
   </div>
   <footer class="entry-footer"><span title='2010-08-08 12:36:43 +0000 UTC'>August 8, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;614 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Games and systems from childhood" href="https://www.david-amador.com/2010/08/games-and-systems-from-childhood/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What are your target platforms for games?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
-The poll closes in about 6 days and you can select various options of course.</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-07-26 20:37:41 +0000 UTC'>July 26, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;60 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to What are your target platforms for games?" href="https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
