@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>darys legend on David Amador</title>
     <link>https://www.david-amador.com/tags/darys-legend/</link>
@@ -21,6 +21,39 @@
       <description>Almost 4 months without a post, this is the first time it happened.
 It was nothing in particular that held me back, I just kept postponing and, to be honest, I only write posts when I have something I really want to write about.
 Before going into the rest of the post, I would like to ask people to update my feed url on your RSS readers. I always used Feedburner to redirect feeds, and with Google Reader going down I decided to start switching, so in your new FeedsReader use this address: (&amp;lt;/feed/&amp;gt;).</description>
+      <content:encoded><![CDATA[<p>Almost 4 months without a post, this is the first time it happened.<br>
+It was nothing in particular that held me back, I just kept postponing and, to be honest, I only write posts when I have something I really want to write about.</p>
+<blockquote>
+<p>Before going into the rest of the post, I would like to ask people to update my feed url on your RSS readers. I always used Feedburner to redirect feeds, and with Google Reader going down I decided to start switching, so in your new FeedsReader use this address: (&lt;/feed/&gt;). I didn’t deactivated the old one, so they will work both for now (if I didn’t broke anything). Also, give Feedly a try in case you haven’t found a replacement for Reader.</p>
+</blockquote>
+<p>So what’s been happening? I’ll try to compress here a bunch of things that I’ve been doing, if you want to know.</p>
+<p><strong>Puwang new update</strong></p>
+<p><a href="/wp-content/uploads/2013/04/puwang_screen.jpg"><img loading="lazy" src="/wp-content/uploads/2013/04/puwang_screen.jpg" alt="puwang_screen"  />
+</a></p>
+<p>If you follow my twitter you may already know this, but I released a new update with two new game modes (yes, free, no IAP’s). A Hard and Survivor mode, which is pretty much self-explanatory, the Hard mode has more enemies and they spawn anywhere on the screen. Survivor mode is the same as normal but your ship won’t evolve, making it harder to survive.</p>
+<p>I did these two modes mainly because while it can can be fun to pick up the game once in a while, once you get used to the controls anytime I played it I was like “God, I wish the faster action started faster”, because the game gets incrementally harder to play, but it starts out pretty easy. This was also something many told me personally or via twitter, so I decided to make it.<br>
+New modes have their own separate Leaderboards too.</p>
+<p>There’s an extra feature I’m considering for Puwang, but for a later time, which is recording the game, so you can share it via Twitter, Facebook, etc. I think it might be a nice addition, but it will take some time, whenever I decide to start working on it anyway. It’s just something on my head.</p>
+<p>There’s one extra improvement, which is the rendering pipeline was written to be faster, so less battery usage, check Dary’s Legend below for more info.</p>
+<p><a href="https://itunes.apple.com/app/id566365237?mt=8&amp;affId=1860684">iTunes link</a></p>
+<p><strong>Dary’s Legend</strong></p>
+<p>This has been my main project for a long time now, I’ve been making posts about it on the game page itself, felt a bit weird to replicated them here, because I assume if anyone is interesting in knowing about the game they will probably check the official places anyway.</p>
+<p>But related to development I might say I made some considerable improvements on the rendering pipeline, gained 10FPS in debug mode, while the game runs at 60FPS in release I always had low FPS in debug, since my pc is old, around 20-25FPS. After the changes I get 30-35FPS).</p>
+<p>I achieved this tweaking two sections. First I cached a bunch of calculations on my Sprite class, most of they where done in each draw, which was stupid since most of the time I only needed them to be done when an image change occurs or a scale.</p>
+<p><a href="/wp-content/uploads/2013/04/triangles.jpg"><img loading="lazy" src="/wp-content/uploads/2013/04/triangles.jpg" alt="triangles"  />
+</a></p>
+<p>The other tweak was using glDrawElements instead of glDrawArrays and sending vertex data with indices. I’m not entirely sure this will lead to immediate FPS improvement but at least less data is send to GPU.</p>
+<p>So for a quad I use GL_TRIANGLES with 4 points. Now has you know GL_TRIANGLES required 3 points per triangle, so since a Quad is two triangle this would required 6 points. So I send the 4 points with 6 indices instead. This proved particularly good for iOS devices. Much less GPU usage, which leads to a smoother game and less battery usage.</p>
+<p>I pushed both this improvements to Puwang too.</p>
+<p>Right now I have the next update almost finished, it’s just missing art, so it’s on the artist’s hands now, I’m already working on the next feature which are Pets.</p>
+<p><a href="http://www.daryslegend.com">DL Official site</a></p>
+<p><strong>New layout</strong></p>
+<p>If you are reading this from a feed disregard the rest of this section. As you may noticed the site has a new layout, I honestly don’t know if it’s better or worst, for now I like it. The older one had too much stuff going around, this is a bit cleaner. I’m a fan of darker themes, but it’s hard to find good ones, well, for free at least. I payed for some in the past, but the problem is as time goes by and WordPress updates they start breaking everywhere. Hope you like it, leave comments if you don’t.</p>
+<p><strong>Back pain</strong></p>
+<p>So as any programmer we eventually develop some back pain due to the very long hours we are forced to work in front of computers. I started having this occasional really intense pain for little more than a year. Not frequent, like every 2 months, lasted only like 2-3 days but to the point where I could barely walk. Of course I went to a doctor, “Drink more water he said, that’s just kidneys”. It made some sense so I decided to drink even more water, I usually keep a bottle near the computer I already drink some, but decided to drink even more. Around 3 weeks ago I had to take a 3-4 hour bus trip, the pain kicked in again, bad. Someone recommended me going to one of those guys that check your bones, if everything is ok, really don’t know the name since it’s not an official job. I went there, the guy told me I had a rib making pressure into my right kidney. He did his thing and I felt immediate relief, like magic really, of course it was only momentarily, but after that I only felt discomfort of him pulling the rib to the right place. I honestly felt bad for not having more money with me at the time, he didn’t even want any, but I gave him anyway. He told me this doesn’t mean I’m cured, I still have to control the amount of hours I spend on the computer, drink water, exercise, the usually actually, and wait and see if the really intense pain comes back. I have my movements a bit restricted now since I have to be careful for some weeks to make sure the rib doesn’t get in the way again. I feel some discomfort in that area sometimes but nothing compared to the pain it was before, and only in a couple of months will I know if it actually helped in the long run. But for now it’s much better, I’ve been able to work, I just can’t lift anything heavy for now.</p>
+<p><strong>Still here?</strong></p>
+<p>I’ve been playing some games but I’ll leave that to another separate post. Maybe two posts on the same day? Anyway I’ll try to keep this more updated and as always thanks for reading.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Dary&#39;s Legend alpha released</title>
@@ -29,6 +62,23 @@ Before going into the rest of the post, I would like to ask people to update my 
       <guid>https://www.david-amador.com/2012/12/darys-legend-alpha-released/</guid>
       <description>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like Puwang and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.
 Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</description>
+      <content:encoded><![CDATA[<p><a href="http://www.daryslegend.com"><img loading="lazy" src="/wp-content/uploads/2012/12/header.jpg" alt=""  title="Dary&#39;s Legend"  />
+</a></p>
+<p>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like <a href="/2012/10/puwang-is-out-on-the-app-store/" title="Puwang is out on the App Store">Puwang</a> and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.</p>
+<p>Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</p>
+<p>So yesterday we released it, and you can buy the game right now, get an alpha build with a nice discount while it doesn’t reach the final build and help us funding the development along the way.</p>
+<p>The build is relatively stable, no major crashes crashes that we know and there’s a Windows and Mac build.</p>
+<p><a href="http://www.desura.com/games/darys-legend" title="Dary's Legend on Desura"><img loading="lazy" src="http://button.desura.com/play/outline/games/17158.png" alt="Desura Digital Distribution"  />
+</a></p>
+<p><em>Coder-Side-Notes</em></p>
+<p>Personally, and although I’m happy that I managed to get a Windows and Mac build released side-by-side I’m also a bit sad that I haven’t been able to release it simultaneously for Linux as well.</p>
+<p>Initially my thought was, “Windows only till the final release, I’ll deal with ports later”. But the market is harsh and getting into 2 different platforms can get you more chances of selling.</p>
+<p>There wasn’t a Mac build until a month ago, but I decided to take a couple of days, created a Xcode project and build the source.<br>
+After a few tweaks and hacks I had it running, why not release it? So right now, by using Git, since projects are already configured on Windows and Mac, I just need to commit changes, boot the other machine, build and that’s it.</p>
+<p>Linux is a little trickier, first I have little experience with that OS. Second I never had my engine running there, missing all kind of abstraction layers, directory access, mouse, keyboard, etc. And honestly right now I don’t have the time to be handling 3 versions at the same time. So Linux is probably going to be off the table until the final build is done.</p>
+<p>Oh, another thing is that, after getting it running on Mac, I tried building for iPad, the game runs almost perfectly at 60FPS @1024×768, apart from the interface not being prepared for Touch of course, it was designer for a 2 button mouse. So there might be an iPad eventually.</p>
+<p>This whole process has made me consider if I should’t find an “OK” (cause VS is the best) cross-platform IDE, like Eclipse or so. Configuring a project on Visual Studio, than on Xcode and another one on Linux (whatever I might end using) is an nightmare. On the other hand I could also take a plunge into makefiles with CMake…guess I’ll leave that to another project.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Dary&#39;s Legend development Timelapse sample</title>
@@ -38,6 +88,15 @@ Around two months ago I coincidentally bumped into a conversation about funding 
       <description>Working on Dary’s Legend has been my daily routine so I decided to make a time lapse.
 So this is a video compiled using Chronolapse, by taking a screenshot every 60s during a couple of days while I’m working on Dary’s Legend, the new game from Different Pixel. The video is being played back at 10 real minutes per second.
 This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)</description>
+      <content:encoded><![CDATA[<p>Working on Dary’s Legend has been my daily routine so I decided to make a time lapse.</p>
+<p>So this is a video compiled using Chronolapse, by taking a screenshot every 60s during a couple of days while I’m working on Dary’s Legend, the new game from Different Pixel. The video is being played back at 10 real minutes per second.</p>
+<p>This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/STazyKAMBsE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
     <item>
       <title>Dary&#39;s Legend First Teaser</title>
@@ -48,6 +107,22 @@ This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)</des
 We decided to release a small teaser showing what we have. I can’t stress this enough, it’s a work in progress.
 I can’t find out how to embed the video with HD by default so don’t forget to see in 720p
 Lately I’ve been working mostly on small UI stuff, pixel tuning every menu/button and graphical interfaces in the game.</description>
+      <content:encoded><![CDATA[<p>So, yeah I know I’ve been a little lazy about my blog it’s for a good cause.<br>
+We decided to release a small teaser showing what we have. I can’t stress this enough, it’s a work in progress.</p>
+<p>I can’t find out how to embed the video with HD by default so don’t forget to see in 720p</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/1sd07tBgrrc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Lately I’ve been working mostly on small UI stuff, pixel tuning every menu/button and graphical interfaces in the game. It’s a bit hard mixing a lot of menus keeping a consistent and nice user experience.</p>
+<p>Also I’m tackling on the algorithm for the dungeon/rooms/items generation in order to keep things interesting and fresh each time the game is started.<br>
+Most of the items have a probability of showing up but still there’s much more rules that I want to place.</p>
+<p>See you in a couple of weeks…</p>
+<p>Oh, almost forgot…</p>
+<p><a href="/wp-content/uploads/2012/06/AuO2bo5CAAAlrXF.jpg-large.jpg"><img loading="lazy" src="/wp-content/uploads/2012/06/AuO2bo5CAAAlrXF.jpg-large.jpg" alt=""  title="Dary&#39;s Legend"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Screenies time...</title>
@@ -57,6 +132,18 @@ Lately I’ve been working mostly on small UI stuff, pixel tuning every menu/but
       <description>We finally released some screenshots of Dary’s Legend.
 Lately I’ve been working on the light system and fog of war for the game, it’s visible on the images.
 Here’s the official post but I’ve placed the images here for convenience.</description>
+      <content:encoded><![CDATA[<p>We finally released some screenshots of Dary’s Legend.</p>
+<p>Lately I’ve been working on the light system and fog of war for the game, it’s visible on the images.</p>
+<p>Here’s the <a href="http://www.differentpixel.com/2012/03/first-darys-legend-screenshots/">official post</a> but I’ve placed the images here for convenience.</p>
+<p><a href="/wp-content/uploads/2012/03/dary_screenshots3.png"><img loading="lazy" src="/wp-content/uploads/2012/03/dary_screenshots3.png" alt=""  title="dary_screenshots3"  />
+</a></p>
+<p><a href="/wp-content/uploads/2012/03/dary_screenshots2.png"><img loading="lazy" src="/wp-content/uploads/2012/03/dary_screenshots2.png" alt=""  title="dary_screenshots2"  />
+</a></p>
+<p><a href="/wp-content/uploads/2012/03/dary_screenshots1.png"><img loading="lazy" src="/wp-content/uploads/2012/03/dary_screenshots1.png" alt=""  title="dary_screenshots1"  />
+</a></p>
+<p><a href="/wp-content/uploads/2012/03/dary_screenshots4.png"><img loading="lazy" src="/wp-content/uploads/2012/03/dary_screenshots4.png" alt=""  title="dary_screenshots4"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>New game...</title>
@@ -67,6 +154,13 @@ Here’s the official post but I’ve placed the images here for convenience.</d
 This is what I’ve been working on lately, and … well not much more to say.
 I’ll try and do posts with relevant stuff regarding the development of the game from now on.
 Going back to coding now…</description>
+      <content:encoded><![CDATA[<p><a href="http://www.daryslegend.com"><img loading="lazy" src="/wp-content/uploads/2012/03/dp_site_dary_header.jpg" alt=""  title="dp_site_dary_header"  />
+</a></p>
+<p>New game, called <a href="http://www.daryslegend.com">Dary’s Legend</a>, a roguelike, dungeon crawling type.<br>
+This is what I’ve been working on lately, and … well not much more to say.</p>
+<p>I’ll try and do posts with relevant stuff regarding the development of the game from now on.</p>
+<p>Going back to coding now…</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

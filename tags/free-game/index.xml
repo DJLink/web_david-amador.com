@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>free game on David Amador</title>
     <link>https://www.david-amador.com/tags/free-game/</link>
@@ -21,6 +21,28 @@
       <description>Hey guys,
 Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.
 I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</description>
+      <content:encoded><![CDATA[<p>Hey guys,</p>
+<p>Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.<a href="/wp-content/uploads/2013/04/puwang.jpg"><img loading="lazy" src="/wp-content/uploads/2013/04/puwang.jpg" alt="puwang"  />
+</a><br>
+Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.</p>
+<p>I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</p>
+<p>Here’s a video I just made of the PC version</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/1UkJHDLfI-A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<blockquote>
+<p>The Game requires some external frameworks to be installed, so in event it crashes at start please make sure all dependencies are correctly installed.<br>
+–<a href="http://www.microsoft.com/en-us/download/details.aspx?id=5555">Microsoft Visual C++ 2010 Redistributable Package (x86) </a><br>
+–<a href="http://connect.creativelabs.com/openal/Downloads/Forms/AllItems.aspx">OpenAL</a><br>
+–<a href="http://www.microsoft.com/en-us/download/details.aspx?id=35">DirectX9</a></p>
+</blockquote>
+<p>So I hope you have fun, let me know what you think.</p>
+<p>Don’t forget that you can still grab the original iOS (Universal) game <a href="https://web.archive.org/web/20151117181201/https://itunes.apple.com/us/app/puwang/id566365237?mt=8">here</a>.</p>
+<p>Download:<br>
+<a href="https://dj_link.itch.io/puwang-notepad-shump">Puwang – (Windows) – 16.1MB</a></p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>tiling on David Amador</title>
     <link>https://www.david-amador.com/tags/tiling/</link>
@@ -21,6 +21,30 @@
       <description>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:
 I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?
 My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.</description>
+      <content:encoded><![CDATA[<p>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:</p>
+<blockquote>
+<p>I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?</p>
+</blockquote>
+<p>My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.</p>
+<p>The drawing lots of small images can actually work, if they are few. Let’s say your small texture size is 64×64. That means in order to fill up the 3000×3000 you have to draw it (3000/64) = 47 times. Since it’s a 3000×3000 that sums to (47×47) = 2209 Draws. Just for a background. Not to mention the rest of the actual game 😛</p>
+<p>What if you could do this in just one Draw()?</p>
+<p>It’s very very easy to achieve this effect by setting TextureAddressMode to Wrap. Basically giving it a bigger Rectangle but telling to wrap the texture so you are gonna get tiles =)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">     <span class="n">spriteBatch</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="n">SpriteBlendMode</span><span class="p">.</span><span class="n">AlphaBlend</span><span class="p">,</span><span class="n">SpriteSortMode</span><span class="p">.</span><span class="n">Immediate</span><span class="p">,</span><span class="n">SaveStateMode</span><span class="p">.</span><span class="n">None</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     <span class="n">GraphicsDevice</span><span class="p">.</span><span class="n">SamplerStates</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">AddressU</span> <span class="p">=</span> <span class="n">TextureAddressMode</span><span class="p">.</span><span class="n">Wrap</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="n">GraphicsDevice</span><span class="p">.</span><span class="n">SamplerStates</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">AddressV</span> <span class="p">=</span> <span class="n">TextureAddressMode</span><span class="p">.</span><span class="n">Wrap</span><span class="p">;</span>
+</span></span></code></pre></div><p>Next we draw a texture with a big source rectangle</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">     <span class="n">Rectangle</span> <span class="n">source</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">400</span><span class="p">,</span> <span class="m">200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     <span class="n">spriteBatch</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">texture</span><span class="p">,</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">Color</span><span class="p">.</span><span class="n">White</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="m">1.0f</span><span class="p">,</span> <span class="n">SpriteEffects</span><span class="p">.</span><span class="n">None</span><span class="p">,</span> <span class="m">0.5f</span><span class="p">);</span>
+</span></span></code></pre></div><p>So instead of this:</p>
+<p><a href="/wp-content/uploads/2010/04/tiling_01.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_01-300x234.jpg" alt=""  title="tiling_01"  />
+</a></p>
+<p>You end up with this:</p>
+<p><a href="/wp-content/uploads/2010/04/tiling_02.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_02-300x234.jpg" alt=""  title="tiling_02"  />
+</a></p>
+<p>On a small test I made, using a 30000×30000 Rectangle I got a frame drop to 35 FPS by doing tons of regular Draws, when switching to Wrap mode a solid 60 FPS.</p>
+<p>As I told you it’s very easy. I’ll write more advance tutorial one of this days on how to achieve cool effect like mixing two textures with a noise/normal map.</p>
+<p>You can play with this sample by downloading it <a href="/xna_code/TilingSprites.zip">here</a>.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

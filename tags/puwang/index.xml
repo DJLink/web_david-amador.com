@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>puwang on David Amador</title>
     <link>https://www.david-amador.com/tags/puwang/</link>
@@ -21,6 +21,28 @@
       <description>Hey guys,
 Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.
 I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</description>
+      <content:encoded><![CDATA[<p>Hey guys,</p>
+<p>Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.<a href="/wp-content/uploads/2013/04/puwang.jpg"><img loading="lazy" src="/wp-content/uploads/2013/04/puwang.jpg" alt="puwang"  />
+</a><br>
+Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.</p>
+<p>I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</p>
+<p>Here’s a video I just made of the PC version</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/1UkJHDLfI-A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<blockquote>
+<p>The Game requires some external frameworks to be installed, so in event it crashes at start please make sure all dependencies are correctly installed.<br>
+–<a href="http://www.microsoft.com/en-us/download/details.aspx?id=5555">Microsoft Visual C++ 2010 Redistributable Package (x86) </a><br>
+–<a href="http://connect.creativelabs.com/openal/Downloads/Forms/AllItems.aspx">OpenAL</a><br>
+–<a href="http://www.microsoft.com/en-us/download/details.aspx?id=35">DirectX9</a></p>
+</blockquote>
+<p>So I hope you have fun, let me know what you think.</p>
+<p>Don’t forget that you can still grab the original iOS (Universal) game <a href="https://web.archive.org/web/20151117181201/https://itunes.apple.com/us/app/puwang/id566365237?mt=8">here</a>.</p>
+<p>Download:<br>
+<a href="https://dj_link.itch.io/puwang-notepad-shump">Puwang – (Windows) – 16.1MB</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Updates, development and new feed url</title>
@@ -30,6 +52,39 @@ I decided to release it for Windows for free, because the game isn’t exactly d
       <description>Almost 4 months without a post, this is the first time it happened.
 It was nothing in particular that held me back, I just kept postponing and, to be honest, I only write posts when I have something I really want to write about.
 Before going into the rest of the post, I would like to ask people to update my feed url on your RSS readers. I always used Feedburner to redirect feeds, and with Google Reader going down I decided to start switching, so in your new FeedsReader use this address: (&amp;lt;/feed/&amp;gt;).</description>
+      <content:encoded><![CDATA[<p>Almost 4 months without a post, this is the first time it happened.<br>
+It was nothing in particular that held me back, I just kept postponing and, to be honest, I only write posts when I have something I really want to write about.</p>
+<blockquote>
+<p>Before going into the rest of the post, I would like to ask people to update my feed url on your RSS readers. I always used Feedburner to redirect feeds, and with Google Reader going down I decided to start switching, so in your new FeedsReader use this address: (&lt;/feed/&gt;). I didn’t deactivated the old one, so they will work both for now (if I didn’t broke anything). Also, give Feedly a try in case you haven’t found a replacement for Reader.</p>
+</blockquote>
+<p>So what’s been happening? I’ll try to compress here a bunch of things that I’ve been doing, if you want to know.</p>
+<p><strong>Puwang new update</strong></p>
+<p><a href="/wp-content/uploads/2013/04/puwang_screen.jpg"><img loading="lazy" src="/wp-content/uploads/2013/04/puwang_screen.jpg" alt="puwang_screen"  />
+</a></p>
+<p>If you follow my twitter you may already know this, but I released a new update with two new game modes (yes, free, no IAP’s). A Hard and Survivor mode, which is pretty much self-explanatory, the Hard mode has more enemies and they spawn anywhere on the screen. Survivor mode is the same as normal but your ship won’t evolve, making it harder to survive.</p>
+<p>I did these two modes mainly because while it can can be fun to pick up the game once in a while, once you get used to the controls anytime I played it I was like “God, I wish the faster action started faster”, because the game gets incrementally harder to play, but it starts out pretty easy. This was also something many told me personally or via twitter, so I decided to make it.<br>
+New modes have their own separate Leaderboards too.</p>
+<p>There’s an extra feature I’m considering for Puwang, but for a later time, which is recording the game, so you can share it via Twitter, Facebook, etc. I think it might be a nice addition, but it will take some time, whenever I decide to start working on it anyway. It’s just something on my head.</p>
+<p>There’s one extra improvement, which is the rendering pipeline was written to be faster, so less battery usage, check Dary’s Legend below for more info.</p>
+<p><a href="https://itunes.apple.com/app/id566365237?mt=8&amp;affId=1860684">iTunes link</a></p>
+<p><strong>Dary’s Legend</strong></p>
+<p>This has been my main project for a long time now, I’ve been making posts about it on the game page itself, felt a bit weird to replicated them here, because I assume if anyone is interesting in knowing about the game they will probably check the official places anyway.</p>
+<p>But related to development I might say I made some considerable improvements on the rendering pipeline, gained 10FPS in debug mode, while the game runs at 60FPS in release I always had low FPS in debug, since my pc is old, around 20-25FPS. After the changes I get 30-35FPS).</p>
+<p>I achieved this tweaking two sections. First I cached a bunch of calculations on my Sprite class, most of they where done in each draw, which was stupid since most of the time I only needed them to be done when an image change occurs or a scale.</p>
+<p><a href="/wp-content/uploads/2013/04/triangles.jpg"><img loading="lazy" src="/wp-content/uploads/2013/04/triangles.jpg" alt="triangles"  />
+</a></p>
+<p>The other tweak was using glDrawElements instead of glDrawArrays and sending vertex data with indices. I’m not entirely sure this will lead to immediate FPS improvement but at least less data is send to GPU.</p>
+<p>So for a quad I use GL_TRIANGLES with 4 points. Now has you know GL_TRIANGLES required 3 points per triangle, so since a Quad is two triangle this would required 6 points. So I send the 4 points with 6 indices instead. This proved particularly good for iOS devices. Much less GPU usage, which leads to a smoother game and less battery usage.</p>
+<p>I pushed both this improvements to Puwang too.</p>
+<p>Right now I have the next update almost finished, it’s just missing art, so it’s on the artist’s hands now, I’m already working on the next feature which are Pets.</p>
+<p><a href="http://www.daryslegend.com">DL Official site</a></p>
+<p><strong>New layout</strong></p>
+<p>If you are reading this from a feed disregard the rest of this section. As you may noticed the site has a new layout, I honestly don’t know if it’s better or worst, for now I like it. The older one had too much stuff going around, this is a bit cleaner. I’m a fan of darker themes, but it’s hard to find good ones, well, for free at least. I payed for some in the past, but the problem is as time goes by and WordPress updates they start breaking everywhere. Hope you like it, leave comments if you don’t.</p>
+<p><strong>Back pain</strong></p>
+<p>So as any programmer we eventually develop some back pain due to the very long hours we are forced to work in front of computers. I started having this occasional really intense pain for little more than a year. Not frequent, like every 2 months, lasted only like 2-3 days but to the point where I could barely walk. Of course I went to a doctor, “Drink more water he said, that’s just kidneys”. It made some sense so I decided to drink even more water, I usually keep a bottle near the computer I already drink some, but decided to drink even more. Around 3 weeks ago I had to take a 3-4 hour bus trip, the pain kicked in again, bad. Someone recommended me going to one of those guys that check your bones, if everything is ok, really don’t know the name since it’s not an official job. I went there, the guy told me I had a rib making pressure into my right kidney. He did his thing and I felt immediate relief, like magic really, of course it was only momentarily, but after that I only felt discomfort of him pulling the rib to the right place. I honestly felt bad for not having more money with me at the time, he didn’t even want any, but I gave him anyway. He told me this doesn’t mean I’m cured, I still have to control the amount of hours I spend on the computer, drink water, exercise, the usually actually, and wait and see if the really intense pain comes back. I have my movements a bit restricted now since I have to be careful for some weeks to make sure the rib doesn’t get in the way again. I feel some discomfort in that area sometimes but nothing compared to the pain it was before, and only in a couple of months will I know if it actually helped in the long run. But for now it’s much better, I’ve been able to work, I just can’t lift anything heavy for now.</p>
+<p><strong>Still here?</strong></p>
+<p>I’ve been playing some games but I’ll leave that to another separate post. Maybe two posts on the same day? Anyway I’ll try to keep this more updated and as always thanks for reading.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Puwang is out on the App Store</title>
@@ -41,6 +96,19 @@ I made a small gameplay video where, directly from the screen.
 and there’s another one, offscreen, on a real iDevice here
 Spread the word, buy it if you like =)
 App Store Link: http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;amp;mt=8</description>
+      <content:encoded><![CDATA[<p>So tonight, while I was sleeping, Puwang was approved and released on the App Store.</p>
+<p><a href="http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;mt=8"><img loading="lazy" src="/wp-content/uploads/2012/10/puwang_icon.png" alt=""  title="Puwang"  />
+</a></p>
+<p>I made a small gameplay video where, directly from the screen.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/EVFTiA2BZiQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>and there’s another one, offscreen, on a real iDevice <a href="https://www.youtube.com/watch?v=AIiKBVTiEhM&amp;feature=g-upl">here</a></p>
+<p>Spread the word, buy it if you like =)</p>
+<p>App Store Link: <a href="http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;mt=8">http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;mt=8</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Puwang - a 5 day work</title>
@@ -50,6 +118,38 @@ App Store Link: http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;amp;m
       <description>Hi, how’s everyone doing?
 So this was a different week for me. It’s been a long time that I had the chance to work on a small prototype or a 48H competition because of my work on Dary’s Legend so I decided to stop for a couple of days and do something else.
 Also my cat’s been quite sick, and between the Vet and taking care of him, working on a fun project gave me more time do everything.</description>
+      <content:encoded><![CDATA[<p>Hi, how’s everyone doing?</p>
+<p>So this was a different week for me. It’s been a long time that I had the chance to work on a small prototype or a 48H competition because of my work on Dary’s Legend so I decided to stop for a couple of days and do something else.</p>
+<p>Also my cat’s been quite sick, and between the Vet and taking care of him, working on a fun project gave me more time do everything.</p>
+<p>Since I love shump games I decided to do one. The idea is simple, you are in a arena with your ship and you just blast enemies away.</p>
+<p>Initially I worked around 6-8hours on this back in August but had to drop it because of some much other work I had, so it wasn’t until this monday I grabbed it again.</p>
+<p>I decided to make the game for iOS because it’s easier to make prototypes there and I can carry them around everywhere, playing them, to see if they are any good.</p>
+<p>Actually the first 8 hours where quite productive and this is what I had after that time:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/sfxpNnfoZQI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>So during these past 5 days I polished it a little, grabbed myself a notepad and hand-drawn everything. It’s not much artistic, but I’m not a designer.<br>
+Had a few problems with iOS 6 due to some deprecated stuff but in the end it all fall into place.<br>
+Also some tweaks performance-wise on the Engine where made since with a lot of stuff on screen things can get out of control pretty easily specially on these portable devices.</p>
+<p>iPhone 5 just came out and I even took the time to add support for those extra pixels, actually I just increased the viewport, no scaling.</p>
+<p>I probably named it poorly but it’s <strong>Puwang</strong>.</p>
+<p><a href="/wp-content/uploads/2012/09/puwang2.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang2.png" alt=""  title="puwang2"  />
+</a><br>
+<a href="/wp-content/uploads/2012/09/puwang.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang.png" alt=""  title="puwang"  />
+</a><br>
+<a href="/wp-content/uploads/2012/09/puwang_icon_screen.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang_icon_screen-200x300.png" alt=""  title="puwang_icon_screen"  />
+</a></p>
+<p>Also added some Leaderboards via Gamecenter and as I write this I’m starting to receive some feedback of the early beta builds I sent to a couple of testers. If people like it I might release it on the App Store.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/AIiKBVTiEhM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><del>If you want to participate in the beta test use this link: <a href="http://tflig.ht/SRB5aP">http://tflig.ht/SRB5aP</a></del></p>
+<p><!-- raw HTML omitted -->[Edit 10-10-2012]<!-- raw HTML omitted --> Puwang is now out on the app store, you can get it <a href="http://itunes.apple.com/us/app/puwang/id566365237?ls=1&amp;mt=8">here</a></p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>General Programming on David Amador</title>
     <link>https://www.david-amador.com/categories/general-programming/</link>
@@ -22,6 +22,19 @@
 According to the website itself
 Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
 It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</description>
+      <content:encoded><![CDATA[<p>I made a small post about detecting C++ <a href="/2010/10/tracking-memory-leaks-in-visual-studio/" title="Tracking memory leaks in Visual Studio">memory leaks in Visual Studio</a> in 2010. At the time that seemed to suffice, but some months ago someone told me about <a href="http://vld.codeplex.com/">Visual Leak Detector</a> and boy does it work.</p>
+<p>According to the website itself</p>
+<blockquote>
+<p>Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.</p>
+<p>It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</p>
+<p>Then it can be used with any C/C++ project simply by adding the following line to your code:</p>
+<pre tabindex="0"><code>&lt;pre lang=&#34;cpp&#34;&gt;#include &#34;vld.h&#34;
+</code></pre></blockquote>
+<p>It’s very easy to use and I tracked down a bunch of memory leaks hidden inside my code since the time I released Vizati.</p>
+<p>As expected this is a heavy beast and debbuding while using VLD required much more memory, but totally worth it. You can even output to a file</p>
+<p><a href="/wp-content/uploads/2012/06/vld.png"><img loading="lazy" src="/wp-content/uploads/2012/06/vld.png" alt=""  title="vld"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Find/Replace in Visual Studio using regular expressions</title>
@@ -33,6 +46,23 @@ But today I had this function I wanted to get rid of and simple change it with a
 So I had something like this.
 object-&amp;gt;setLayer(/*BLABAL BLA CODE, */); I want to replace it with something more simple
 object-&amp;gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in regular expressions mode I used this as a search string</description>
+      <content:encoded><![CDATA[<p>Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.</p>
+<p>But today I had this function I wanted to get rid of and simple change it with a public variable.</p>
+<p>So I had something like this.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">object</span><span class="o">-&gt;</span><span class="n">setLayer</span><span class="p">(</span><span class="cm">/*BLABAL BLA CODE, */</span><span class="p">);</span>
+</span></span></code></pre></div><p>I want to replace it with something more simple</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">object</span><span class="o">-&gt;</span><span class="n">Z</span> <span class="o">=</span> <span class="cm">/*BLABAL BLA CODE, */</span><span class="p">;</span>
+</span></span></code></pre></div><p>So using Visual Studio Find/Replace in regular expressions mode I used this as a search string</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">setLayer</span><span class="err">\</span><span class="p">({.</span><span class="o">+</span><span class="p">}</span><span class="err">\</span><span class="p">);</span>
+</span></span></code></pre></div><p>And this as a Replace with string</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">Z</span><span class="o">=</span><span class="err">\</span><span class="mi">1</span><span class="p">;</span>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/regular-expression.jpg" alt=""  title="regular expression"  />
+</p>
+<p>Now, notice the first one, it’s actually simple, you have “setLayer”, followed by “\(” to tell the expression we really need to be that character, after than we have “.+”, which means match any single character except a line break and at least one occurrence. Followed by “\);”</p>
+<p>Now if you notice we have curly brackets around the inside of what the function receives as parameter, that’s because we are tagging that string to use it later.</p>
+<p>This way on the replace we simply need “Z=” followed by the first tagged string we have “\1”. if we have more curly brackets it would be “\2”, “\3” etc.</p>
+<p>Check the full list for more options: <a href="http://msdn.microsoft.com/en-us/library/2k3te2cs%28v=vs.80%29.aspx">http://msdn.microsoft.com/en-us/library/2k3te2cs%28v=vs.80%29.aspx</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Basalt code swarm</title>
@@ -42,6 +72,15 @@ object-&amp;gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in
       <description>I discovered code swarm a while ago and decided to test on my own repositories.
 This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.
 This is the result.</description>
+      <content:encoded><![CDATA[<p>I discovered <a href="http://code.google.com/p/codeswarm/">code swarm</a> a while ago and decided to test on my own repositories.</p>
+<p>This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.</p>
+<p>This is the result.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/sOpYY2PhIb4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
     <item>
       <title>Blog new look</title>
@@ -51,6 +90,23 @@ This is the result.</description>
       <description>Spent a little time giving my blog a new look. It’s not that I didn’t like the old one but sometimes it was a bit of a mess, I’ve been getting many new readers so it was time for a cleaner look.
 My main concern was getting all code posts to be readable but I think they are
 class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P</description>
+      <content:encoded><![CDATA[<p>Spent a little time giving my blog a new look. It’s not that I didn’t like the old one but sometimes it was a bit of a mess, I’ve been getting many new readers so it was time for a cleaner look.</p>
+<p>My main concern was getting all code posts to be readable but I think they are</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">XPTO</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span><span class="o">:</span> <span class="n">XPTO</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P<br>
+Also feedback on the new layout is most appreciated.</p>
+<p>Here’s how it looked before</p>
+<p><a href="/wp-content/uploads/2011/03/david_amador_old_layout.jpg"><img loading="lazy" src="/wp-content/uploads/2011/03/david_amador_old_layout.jpg" alt=""  title="david_amador_old_layout"  />
+</a></p>
+<p>Another thing that’s been bothering me, which you may have noticed is that on the sidebar I have a small ad. It’s Google AdSense. I’ve been keeping it for almost 2 years now and I’m getting tired of it.<br>
+Why don’t I remove it? Well because I managed to sum up $84 in these last 2 years. And google only pays when we reach $100. It’s a small amount but well it’s mine, so I can either forget it or keep with it.<br>
+If I ever reach $100 and get paid I’m obviously removing it. I was hoping to use that money to pay for this blog hosting for another 1-2 years.</p>
+<p>For those wondering those $84 where gathered from around 59k visitors. Some click it, others don’t and I get money each time someone clicks it. Simple as that.<br>
+So until I reach those $100 I’m keeping it around.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>So where is that motivation?</title>
@@ -61,6 +117,41 @@ class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m 
 In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.
 Happens to me too, heck it happens to everyone once in a while…
 It’s something that happens usually half way though or after you get the initial prototype running.</description>
+      <content:encoded><![CDATA[<p>I follow a couple of dev blogs, some are game developers, others make websites or software.<br>
+In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.</p>
+<blockquote>
+<p><strong>Happens to me too, heck it happens to everyone once in a while…</strong></p>
+</blockquote>
+<p>It’s something that happens usually half way though or after you get the initial prototype running.<br>
+Around one year ago (Feb 2010) when I started developing our first game it was all great, new stuff every day, things starting to work, replacing my crappy programmer art by Rita’s drawings.<br>
+The real endurance was after we had a working demo, and the decision of actually finishing the game.</p>
+<blockquote>
+<p>Should be 2-3 weeks, it’s just making more levels</p>
+</blockquote>
+<p>I really said that, worst, I was convinced that would be the case. But it wasn’t, and fine tuning stuff is the worst part, when the game mechanics are there and you are lacking the patient to add that one more feature that will probably induce 5 bugs.</p>
+<blockquote>
+<p><strong>Finish you game</strong></p>
+</blockquote>
+<p>Many indie devs never finish their game due to time constrains and/or their real job, but there’s a bunch that never finish anything because half-way though they loose interest and move to another project.</p>
+<p>Moving to another project can sometimes be forced, you don’t have the money to pull it off, you don’t have the time to make such a big project or the game simply sucks, these are all valid. I have some projects on the back-burner that are not possible at this moment.</p>
+<blockquote>
+<p>New ideas can be a bitch…</p>
+</blockquote>
+<p>But how to deal with the fact that you are tired of making the game, even though it has potential?<br>
+When first starting I always think, nah, that’s not going to happen, it’s a great idea. But how many times are you making one game and thinking on the next idea, and damn, that new idea is even greater, why not drop everything and make that one instead?</p>
+<p>That’s when problems start, because even though you won’t switch when bugs/problems for the current project start popping you won’t have as much patient as you should, because in your mind you should be doing something else.</p>
+<blockquote>
+<p>Working with someone or showing you game to friends helps.</p>
+</blockquote>
+<p>If you are working with someone else it’s a bit easier to work this out. 2 people working for the same goal gives a sense of “this is it” to the whole thing.<br>
+Working alone sucks a bit more, but you just have to set some goals.<br>
+Make a working prototype, give it to some friends, collect feedback, they will probably make tons of suggestions, and you’ll get more excited with it.</p>
+<blockquote>
+<p>Easy to say, hard to to so.</p>
+</blockquote>
+<p>I still find it hard to do so, especially the whole “I shouldn’t have any more ideas while working on this”.<br>
+But it happens, the other night I woke up at 6AM, had an idea for something so instead I wrote it down on a notepad, and I’ll grab it when I’m out of ideas.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Viewing Windows Phone 7 Marketplace on the simulator</title>
@@ -71,6 +162,30 @@ It’s something that happens usually half way though or after you get the initi
 Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂
 So searching some forums I found a neat code to check this on the simulator.
 Basically create a new WP7 Silverlight App and write this main page code</description>
+      <content:encoded><![CDATA[<p>Since I’m out of the countries where WP7 Marketplace is available it’s been a real pain to check out new games and most of all if Vizati was already available.<br>
+Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂</p>
+<p>So searching some forums I found a neat code to check this on the simulator.</p>
+<p>Basically create a new WP7 Silverlight App and write this main page code</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">partial</span> <span class="k">class</span> <span class="nc">MainPage</span> <span class="p">:</span> <span class="n">PhoneApplicationPage</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Constructor</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="n">MainPage</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">InitializeComponent</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">var</span> <span class="n">task</span> <span class="p">=</span> <span class="k">new</span> <span class="n">MarketplaceHubTask</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">task</span><span class="p">.</span><span class="n">ContentType</span> <span class="p">=</span> <span class="n">MarketplaceContentType</span><span class="p">.</span><span class="n">Applications</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">task</span><span class="p">.</span><span class="n">Show</span><span class="p">();</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>Run it and you’ll get this<br>
+<a href="/wp-content/uploads/2010/11/wp7_marketplace.jpg"><img loading="lazy" src="/wp-content/uploads/2010/11/wp7_marketplace.jpg" alt=""  title="wp7_marketplace"  />
+</a></p>
+<p>Oh, the first time you launch the simulator you’ll get a connection error, usually if the simulator just booted. Just launch the app again</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Tracking memory leaks in Visual Studio</title>
@@ -81,6 +196,28 @@ Basically create a new WP7 Silverlight App and write this main page code</descri
 I know there are other and better solution but this can be handy for quick findings without much hassle.
 First place this code in your entry point file, generally main.cpp inside your main() function
 #ifdef _DEBUG int flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG); flag |= _CRTDBG_LEAK_CHECK_DF; // Turn on leak-checking bit _CrtSetDbgFlag(flag); #endif Now just run you game/program as you would normally, in debug mode of course.</description>
+      <content:encoded><![CDATA[<p>I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.<br>
+I know there are other and better solution but this can be handy for quick findings without much hassle.</p>
+<p>First place this code in your entry point file, generally main.cpp inside your main() function</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#ifdef _DEBUG
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>	<span class="kt">int</span> <span class="n">flag</span> <span class="o">=</span> <span class="n">_CrtSetDbgFlag</span><span class="p">(</span><span class="n">_CRTDBG_REPORT_FLAG</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="n">flag</span> <span class="o">|=</span> <span class="n">_CRTDBG_LEAK_CHECK_DF</span><span class="p">;</span> <span class="c1">// Turn on leak-checking bit
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">_CrtSetDbgFlag</span><span class="p">(</span><span class="n">flag</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span></code></pre></div><p>Now just run you game/program as you would normally, in debug mode of course.</p>
+<p>After you close it you’ll get a nice log in the output window like this one:</p>
+<p><a href="/wp-content/uploads/2010/10/memory_leaks_output.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/memory_leaks_output.jpg" alt=""  title="memory_leaks_output"  />
+</a></p>
+<p>See those numbers before each memory leak between brackets? Grab one of those and add this line right before the #endif</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl">      <span class="n">_CrtSetDbgFlag</span><span class="p">(</span><span class="n">flag</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">_CrtSetBreakAlloc</span><span class="p">(</span><span class="mi">689</span><span class="p">);</span> <span class="c1">// Comment or un-comment on need basis
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#endif
+</span></span></span></code></pre></div><p>Now run the game again, you shall get a break-point where the {689} memory leak happened.</p>
+<p>I hope this is the correct way to use it, if not, let me know.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Using Isolated Storage to save/load files on Windows Phone 7</title>
@@ -91,6 +228,34 @@ First place this code in your entry point file, generally main.cpp inside your m
 You can use IsolatedStorage for that
 using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
 IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); // grab the storage FileStream stream = store.OpenFile(&amp;#34;test.txt&amp;#34;, FileMode.Create); // Open a file in Create mode BinaryWriter writer = new BinaryWriter(stream); float myvar = 5.</description>
+      <content:encoded><![CDATA[<p>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.<br>
+You can use <strong>IsolatedStorage</strong> for that</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.IO.IsolatedStorage</span><span class="p">;</span>
+</span></span></code></pre></div><p>Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">IsolatedStorageFile</span> <span class="n">store</span> <span class="p">=</span> <span class="n">IsolatedStorageFile</span><span class="p">.</span><span class="n">GetUserStoreForApplication</span><span class="p">();</span> <span class="c1">// grab the storage</span>
+</span></span><span class="line"><span class="cl"><span class="n">FileStream</span> <span class="n">stream</span> <span class="p">=</span> <span class="n">store</span><span class="p">.</span><span class="n">OpenFile</span><span class="p">(</span><span class="s">&#34;test.txt&#34;</span><span class="p">,</span> <span class="n">FileMode</span><span class="p">.</span><span class="n">Create</span><span class="p">);</span> <span class="c1">// Open a file in Create mode</span>
+</span></span><span class="line"><span class="cl"><span class="n">BinaryWriter</span> <span class="n">writer</span> <span class="p">=</span> <span class="k">new</span> <span class="n">BinaryWriter</span><span class="p">(</span><span class="n">stream</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">myvar</span> <span class="p">=</span> <span class="m">5.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">writer</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&#34;something&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">writer</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">myvar</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">writer</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
+</span></span></code></pre></div><p>For loading is pretty much the same thing:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">IsolatedStorageFile</span> <span class="n">store</span> <span class="p">=</span> <span class="n">IsolatedStorageFile</span><span class="p">.</span><span class="n">GetUserStoreForApplication</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">store</span><span class="p">.</span><span class="n">FileExists</span><span class="p">(</span><span class="s">&#34;test.txt&#34;</span><span class="p">))</span> <span class="c1">// Check if file exists</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="n">IsolatedStorageFileStream</span> <span class="n">save</span> <span class="p">=</span> <span class="k">new</span> <span class="n">IsolatedStorageFileStream</span><span class="p">(</span><span class="s">&#34;test.txt&#34;</span><span class="p">,</span> <span class="n">FileMode</span><span class="p">.</span><span class="n">Open</span><span class="p">,</span> <span class="n">store</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="n">BinaryReader</span> <span class="n">reader</span> <span class="p">=</span> <span class="k">new</span> <span class="n">BinaryReader</span><span class="p">(</span><span class="n">save</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="kt">string</span> <span class="n">mystring</span> <span class="p">=</span> <span class="n">reader</span><span class="p">.</span><span class="n">ReadString</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">       <span class="kt">float</span> <span class="n">myfloat</span>  <span class="p">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">reader</span><span class="p">.</span><span class="n">ReadSingle</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">       <span class="n">reader</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">     
+</span></span></code></pre></div><p>Simple right? I really don’t know if this is the best way but I’ve tested on both the emulator and a real device and it works.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Instance based Callbacks in C&#43;&#43;</title>
@@ -100,6 +265,38 @@ IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); //
       <description>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.
 When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.
 On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button.</description>
+      <content:encoded><![CDATA[<p>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.<br>
+When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.</p>
+<p>On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button. Sure you can point it to the same one and make a bunch of if’s and then point to a Global var which does the correct action, but this is not elegant and sure as hell not easy to add/modify stuff.</p>
+<p>I came across a couple of solutions for having an instance based callback:<br>
+1- Do your own – I’ve made one that worked but couldn’t get around to add parameters. I think we might skip this one since you are probably looking for a quick solution.<br>
+2 – Use <a href="http://www.boost.org/">boost</a> – If you don’t know this have a look, even for other stuff, Boost has tons of awesome apis for helping C++ development. Including smart pointers that basically delete themselves automatically.<br>
+3 – Use <a href="http://codeplea.com/pluscallback/">PlusCallback</a> – I decided to use this one.</p>
+<p><a href="/wp-content/uploads/2010/07/cpp_callback_benchmark.png"><img loading="lazy" src="/wp-content/uploads/2010/07/cpp_callback_benchmark.png" alt=""  title="cpp_callback_benchmark"  />
+</a></p>
+<p>And it’s simple to use</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// Callback without parameters
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 
+</span></span><span class="line"><span class="cl"><span class="c1">// My example class
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Sprite</span><span class="o">*</span> <span class="n">sprite</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Sprite</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">cb</span><span class="o">::</span><span class="n">Callback0</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="n">call1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Bind callback
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">call1</span><span class="p">.</span><span class="n">Reset</span><span class="p">(</span><span class="n">sprite</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">Sprite</span><span class="o">::</span><span class="n">SomeFunction</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="c1">// Call callback
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">call1</span><span class="p">();.</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="c1">// Example with parameter
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">cb</span><span class="o">::</span><span class="n">Callback1</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">,</span> <span class="n">Sprite</span><span class="o">*&gt;</span> <span class="n">call2</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl"><span class="c1">// Bind callback
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">call2</span><span class="p">.</span><span class="n">Reset</span><span class="p">(</span><span class="n">sprite</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">Sprite</span><span class="o">::</span><span class="n">SomeFunctionWithParameterSprite</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="c1">// Your function should be something like 
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Sprite::SomeFunctionWithParameterSprite(Sprite* sprite);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">call2</span><span class="p">(</span><span class="n">sprite</span><span class="p">);</span>
+</span></span></code></pre></div><p>Easy right? It even work with return, just switch that void to something else. Let me know if you find a better solution. For now I’m sticking with this one.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Testing the new Visual Studio 2010 features</title>
@@ -109,6 +306,36 @@ On game development one of the things callbacks are usually used is for Buttons,
       <description>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.
 First time I installed VS2010 was in the RC form mainly because of WP7 Developer’s Tools and XNA4.0 but haven’t made many investment in searching for new features.
 But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.</description>
+      <content:encoded><![CDATA[<p>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.</p>
+<p>First time I installed VS2010 was in the RC form mainly because of <a href="/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/">WP7 Developer’s Tools and XNA4.0</a> but haven’t made many investment in searching for new features.</p>
+<p>But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.</p>
+<p>On a side note to WP7 developers, if you are using VS RC to develop application to the phone don’t install the <a href="https://web.archive.org/web/20100623130306/http://klucher.com:80/blog/visual-studio-2010-and-windows-phone-developer-toolsxna-game-studio-4-0/">RTM version of VS2010 since it’s not compatible with WP7 developer tools</a> yet. You have to stick with the RC for now.</p>
+<p>Booting the new VS we get a nice splash screen</p>
+<p><a href="/wp-content/uploads/2010/04/vs_splash_logo.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_splash_logo-300x210.jpg" alt=""  title="vs_splash_logo"  />
+</a></p>
+<p>The new UI looks really clean and pretty.</p>
+<p><a href="/wp-content/uploads/2010/04/vs_entry.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_entry-300x162.jpg" alt=""  title="vs_entry"  />
+</a></p>
+<p>The new Code Editor allows zooming in and out of code. For those days were your eyes are already red from trying to read so much tiny code. Sure you can always change the font size but doing this on the fly is way better.</p>
+<p><a href="/wp-content/uploads/2010/04/vs_zoom_feature.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_zoom_feature-300x178.jpg" alt=""  title="vs_zoom_feature"  />
+</a></p>
+<p>One feature that I would never remember on asking but it’s really handy is Code Selection Block, basically by pressing the Alt Key and making a selection around a block of code, like this:</p>
+<p><a href="/wp-content/uploads/2010/04/vs_code_block_selection_01.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_code_block_selection_01-300x144.jpg" alt=""  title="vs_code_block_selection_01"  />
+</a></p>
+<p>See how just Vector3 is selected?</p>
+<p>Now start changing that block to something else</p>
+<p><a href="/wp-content/uploads/2010/04/vs_code_block_selection_02.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_code_block_selection_02-300x144.jpg" alt=""  title="vs_code_block_selection_02"  />
+</a></p>
+<p>And voila, you are changing that block of code on the fly 😀 This works for copy paste as well. I’m pretty convinced this allows other stuff too but can’t figure out more usages.</p>
+<p>Now, for the new intellisense. It’s not just plain dumb anymore, It won’t search just Classes/Members starting with the letters you typed, it will actively search patterns as well.</p>
+<p><a href="/wp-content/uploads/2010/04/vs_intelissense.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_intelissense-300x144.jpg" alt=""  title="vs_intelissense"  />
+</a></p>
+<p>Multi Monitor FTW</p>
+<p><a href="/wp-content/uploads/2010/04/vs_dual_monitor.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_dual_monitor-300x101.jpg" alt=""  title="vs_dual_monitor"  />
+</a></p>
+<p>Just drag and drop your files to another screen and there you go, multi monitor support. No more opening another instance of Visual Studio to do this 😀</p>
+<p>I know there’s tons of other stuff but that’s what I uncovered so far. Know any more stuff? Please do tell.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Write better code using FxCop</title>
@@ -118,6 +345,15 @@ But being available at Dreamspark I downloaded the Professional version and deci
       <description>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.
 For those who don’t know you can download it here and read the MSDN documentation here.
 FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</description>
+      <content:encoded><![CDATA[<p>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.</p>
+<p>For those who don’t know you can download it <a href="http://www.microsoft.com/downloads/details.aspx?familyid=3389F7E4-0E55-4A4D-BC74-4AEABB17997B&amp;displaylang=en">here</a> and read the MSDN documentation <a href="http://msdn.microsoft.com/en-us/library/bb429476%28VS.80%29.aspx">here</a>.</p>
+<p>FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</p>
+<p>Basically it suggests you better name conventions, members that could be static, using arrays where you are using multidimensional ones, It even reported an incorrect way I used Garbage Collector.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/fxcop_01.png" alt=""  title="fxcop_01"  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/fxcop_02.png" alt=""  title="fxcop_02"  />
+</p>
+]]></content:encoded>
     </item>
     <item>
       <title>C# foreach VS for loop</title>
@@ -128,6 +364,81 @@ FxCop is a is an application that analyzes managed code assemblies and reports i
 Today I decided to see the differences between them:
 FOR
 int[] values = new int[1]; int total = 0; for(int i = 0; i &amp;lt; values.</description>
+      <content:encoded><![CDATA[<p>When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.</p>
+<p>Today I decided to see the differences between them:</p>
+<p>FOR</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[]</span> <span class="n">values</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="m">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">total</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">total</span> <span class="p">+=</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>FOREACH</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[]</span> <span class="n">values</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="m">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">total</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">foreach</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="k">in</span> <span class="n">values</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">total</span> <span class="p">+=</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><blockquote>
+<p>In variable declaration, foreach has five variable declarations (three Int32 integers and two arrays of Int32) while for has only three (two Int32 integers and one Int32 array). When it goes to loop through, foreach copies the current array to a new one for the operation. While for doesn’t care of that part.</p>
+</blockquote>
+<p>After the compiler interpretation to Assembly we get this:</p>
+<p>FOR</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">cmp</span>     <span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">eax</span><span class="p">+</span><span class="m">4</span><span class="p">],</span><span class="m">0</span>           <span class="n">i</span>
+</span></span><span class="line"><span class="cl"><span class="n">jle</span>     <span class="m">0000000F</span>
+</span></span><span class="line"><span class="cl"><span class="n">mov</span>     <span class="n">ecx</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">eax</span><span class="p">+</span><span class="n">edx</span><span class="p">*</span><span class="m">4</span><span class="p">+</span><span class="m">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">inc</span>     <span class="n">edx</span>
+</span></span><span class="line"><span class="cl"><span class="n">cmp</span>     <span class="n">esi</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">eax</span><span class="p">+</span><span class="m">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">jl</span>      <span class="n">FFFFFFF8</span>
+</span></span></code></pre></div><p>FOREACH</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">cmp</span>     <span class="n">esi</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebx</span><span class="p">+</span><span class="m">4</span><span class="p">]</span>          <span class="n">i</span>
+</span></span><span class="line"><span class="cl"><span class="n">jl</span>      <span class="n">FFFFFFE3</span>
+</span></span><span class="line"><span class="cl"><span class="n">cmp</span>     <span class="n">esi</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebx</span><span class="p">+</span><span class="m">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">jb</span>      <span class="m">00000009</span>
+</span></span><span class="line"><span class="cl"><span class="n">mov</span>     <span class="n">eax</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebx</span><span class="p">+</span><span class="n">esi</span><span class="p">*</span><span class="m">4</span><span class="p">+</span><span class="m">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">mov</span>     <span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebp</span><span class="p">-</span><span class="m">0</span><span class="n">Ch</span><span class="p">],</span><span class="n">eax</span>
+</span></span><span class="line"><span class="cl"><span class="n">mov</span>     <span class="n">eax</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebp</span><span class="p">-</span><span class="m">0</span><span class="n">Ch</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">add</span>     <span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebp</span><span class="p">-</span><span class="m">8</span><span class="p">],</span><span class="n">eax</span>
+</span></span><span class="line"><span class="cl"><span class="n">inc</span>     <span class="n">esi</span>
+</span></span><span class="line"><span class="cl"><span class="n">cmp</span>     <span class="n">esi</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebx</span><span class="p">+</span><span class="m">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">jl</span>      <span class="n">FFFFFFE3</span>
+</span></span></code></pre></div><p>As you can see we end up with much more instructions.<br>
+Some simple tests gives these results:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Using Objects</th>
+<th style="text-align:center">Using Integers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align:center">FOR</td>
+<td style="text-align:center">FOREACH</td>
+</tr>
+<tr>
+<td>ArrayList – 2147483 items</td>
+<td style="text-align:center">88.6</td>
+<td style="text-align:center">115.9</td>
+</tr>
+<tr>
+<td>generic collection – 2147483 items</td>
+<td style="text-align:center">84.4</td>
+<td style="text-align:center">87.1</td>
+</tr>
+<tr>
+<td>Array – 2147483 items</td>
+<td style="text-align:center">48.1</td>
+<td style="text-align:center">49.8</td>
+</tr>
+</tbody>
+</table>
+<p>*Time is in milliseconds.</p>
+<p>So what I’ve done after this was to replace some heavy foreach code on my engine by for loops. I guess small things can be neglected but it’s always nice to know where bottlenecks may happen.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Force a wmv to download instead of opening in browser</title>
@@ -136,6 +447,14 @@ int[] values = new int[1]; int total = 0; for(int i = 0; i &amp;lt; values.</des
       <guid>https://www.david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</guid>
       <description>I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.
 So just place this on your .htaccess on the root of your website.</description>
+      <content:encoded><![CDATA[<p>I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.</p>
+<p>So just place this on your .htaccess on the root of your website.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-apache" data-lang="apache"><span class="line"><span class="cl">      <span class="nt">&lt;filesmatch&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">ForceType</span> application/octet-stream
+</span></span><span class="line"><span class="cl">      <span class="nb">Header</span> set Content-Disposition attachment
+</span></span><span class="line"><span class="cl">      <span class="nt">&lt;/filesmatch&gt;</span>
+</span></span></code></pre></div><p>This will consider any files and it’s not case sensitive, WMV, wmv, WmV are all acceptable.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>How to make a clickable div</title>
@@ -146,6 +465,30 @@ So just place this on your .htaccess on the root of your website.</description>
 The following code is for JQuery but switching it to your favorite JS framework should be very easy.
 First start by adding this to your div
 &amp;lt;div class=&amp;#34;clickable&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; Now a little css to simulate the pointer on that div</description>
+      <content:encoded><![CDATA[<p>Making a clickable text or image is easy, just add the &lt;a&gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.<br>
+The following code is for JQuery but switching it to your favorite JS framework should be very easy.</p>
+<p>First start by adding this to your div</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#34;clickable&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/div&gt;</span>
+</span></span></code></pre></div><p>Now a little css to simulate the pointer on that div</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">clickable</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span> <span class="k">cursor</span><span class="p">:</span><span class="kc">pointer</span><span class="p">;</span> <span class="p">}</span>
+</span></span></code></pre></div><p>Now onto the JavaScript part</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span><span class="o">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">$</span><span class="p">(</span><span class="s2">&#34;div.clickable&#34;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nb">window</span><span class="p">.</span><span class="nx">location</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&#34;url&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></div><p>You can use as many clickable divs as you want.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>PHP Optimization Tips</title>
@@ -154,6 +497,47 @@ First start by adding this to your div
       <guid>https://www.david-amador.com/2009/10/php-optimization-tips/</guid>
       <description>As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.
 Loop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times.</description>
+      <content:encoded><![CDATA[<p>As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.</p>
+<h2 id="loop">Loop</h2>
+<p>At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times. There are many ways we can define a loop in PHP. But how do you know which one is the best way to loop your data? Apparently, using a for loop is better than foreach and while loop if the maximum loop is pre-calculated outside the for loop!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="c1">// For each loop the count function is being called.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nx">count</span><span class="p">(</span><span class="nv">$array</span><span class="p">);</span><span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl"><span class="k">echo</span> <span class="s1">&#39;This is bad&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Better than foreach and while loop
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$total</span> <span class="o">=</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nx">count</span><span class="p">(</span><span class="nv">$array</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="nv">$i</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nv">$total</span><span class="p">;</span><span class="nv">$i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl"><span class="k">echo</span> <span class="s1">&#39;This better, max loop was pre-calculated&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="single-vs-double-quotes">Single Vs Double Quotes</h2>
+<p>single(’) quote is faster than double(”) quote. Why? Because PHP will scan through double quote strings for any PHP variables (additional operation). So unless you have a $var inside the string use single quotes.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$var</span> <span class="o">=</span> <span class="s1">&#39;I have some text&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$var2</span> <span class="o">=</span> <span class="s2">&#34;I have some text&#34;</span><span class="p">;</span> <span class="c1">// We dont have vars so single would be good;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$var3</span> <span class="o">=</span> <span class="s2">&#34;I have some </span><span class="si">$var</span><span class="s2">&#34;</span><span class="p">;</span> <span class="c1">// In this case the double quotes is necessary
+</span></span></span></code></pre></div><h2 id="pre-increment-vs-post-increment">Pre increment vs Post increment</h2>
+<p>In PHP, it seems like pre increment is better than the other ways of performing an increment. Its around 10% better than post increment? The reason? Some said that post increment made certain copy unlike pre increment.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="err">$</span><span class="o">++</span><span class="nx">i</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$i</span><span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$i</span> <span class="o">=</span> <span class="nv">$i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="echo-vs-print">Echo Vs Print</h2>
+<p>echo is better. But how much better? Its around 12%-20% faster using echo compare to print when there is no $ symbol in the printing string. And around 40-80% faster if there is an $ symbol used in a printing string!</p>
+<h2 id="dot-vs-commas-concatenation">Dot Vs Commas Concatenation</h2>
+<p>I use dot to concatenate my stuff. Such as the one shown below:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$a</span> <span class="o">=</span> <span class="s1">&#39;PHP  &#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$b</span> <span class="o">=</span> <span class="s1">&#39;Tips&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">echo</span> <span class="nv">$a</span><span class="o">.</span><span class="nv">$b</span><span class="p">;</span>
+</span></span></code></pre></div><p>The other way is:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$a</span> <span class="o">=</span> <span class="s1">&#39;PHP &#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$b</span> <span class="o">=</span> <span class="s1">&#39;Tips&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">echo</span> <span class="nv">$a</span><span class="p">,</span><span class="nv">$b</span><span class="p">;</span>
+</span></span></code></pre></div><p>Tests show that dot is more preferable if there are no variables or $ symbol involved which is around 200% faster. On the other hand, commas will help to increase around 20%-35% efficiency when dealing with $ symbols.</p>
+<h2 id="explode-vs-preg_split">explode Vs preg_split</h2>
+<p>To split a string the usual way is to use explode because it support even on PHP4.0 and that’s also what i was taught on school. The answer in term of efficiency is explode. Split supports regular express and this makes it quite the same comparison between str_replace and preg_replace, anything that have regular expression support will usually be a bit more slower than those that doesn’t support it. It took around 20.563% faster using explode in PHP.</p>
+<p>These benchmarks and others can be found here: <a href="https://web.archive.org/web/20140628181350/http://net-beta.net/ubench/">http://net-beta.net/ubench/</a></p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

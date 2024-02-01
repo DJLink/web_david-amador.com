@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>tweetdeck on David Amador</title>
     <link>https://www.david-amador.com/tags/tweetdeck/</link>
@@ -24,6 +24,18 @@ And that’s why you are here too probably, here it is: Tweetdeck 0.38.2. Don’
 Edit 29-12-2011
 Some user have experienced a
 “This application cannot be installed because this installer has been mis-configured.</description>
+      <content:encoded><![CDATA[<p>If you use Tweetdeck you probably already know they screwed the new version (1.0) and you want to revert back.</p>
+<p>Unfortunately since they are now part of Twitter I had a hard time finding the older build and decided to share it.</p>
+<p>And that’s why you are here too probably, here it is: <a href="https://www.dropbox.com/scl/fi/yeihkkv6n8rprp6m61e2b/TweetDeck_0_38.2.air?rlkey=n39r51q05jr6ucwcsf55bbgqu&amp;dl=0">Tweetdeck 0.38.2</a>. Don’t forget you need <a href="http://www.adobe.com/products/air.html">Adobe Air</a> installed.</p>
+<p><!-- raw HTML omitted -->Edit 29-12-2011<!-- raw HTML omitted --><br>
+Some user have experienced a</p>
+<blockquote>
+<p>“This application cannot be installed because this installer has been mis-configured. Please contact the application author for assistance.”</p>
+</blockquote>
+<p>They solved it by uninstalling all previous versions of tweetdeck. Make sure you don’t have another one already installed.</p>
+<p><!-- raw HTML omitted -->Edit 11-10-2023<!-- raw HTML omitted --></p>
+<p>If you are reaching this page in search for a way to revert to the non-paied version of Tweetdeck, becauseTwitter introduced all those crazy new rules, sorry, I have no solution. This post was made back when Twitter purchased Tweetdeck company and messed it up, I guess they ended up nearly killing the best tool they had :/</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>codeswarm on David Amador</title>
     <link>https://www.david-amador.com/tags/codeswarm/</link>
@@ -21,6 +21,15 @@
       <description>I discovered code swarm a while ago and decided to test on my own repositories.
 This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.
 This is the result.</description>
+      <content:encoded><![CDATA[<p>I discovered <a href="http://code.google.com/p/codeswarm/">code swarm</a> a while ago and decided to test on my own repositories.</p>
+<p>This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.</p>
+<p>This is the result.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/sOpYY2PhIb4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
   </channel>
 </rss>

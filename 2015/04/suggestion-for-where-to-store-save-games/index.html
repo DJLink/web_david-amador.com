@@ -48,12 +48,12 @@ Where are [X] save games located?
 There are a couple of common directories used but I think as game developers we could do a bit better and using a common location." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.david-amador.com/2015/04/suggestion-for-where-to-store-save-games/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2015/04/my_documents-210x161.png" /><meta property="article:section" content="posts" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2015/04/my_documents.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2015-04-09T09:27:58+00:00" />
 <meta property="article:modified_time" content="2015-04-09T09:27:58+00:00" /><meta property="og:site_name" content="David Amador" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2015/04/my_documents-210x161.png" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2015/04/my_documents.png" />
 <meta name="twitter:title" content="Suggestion for where to store save games"/>
 <meta name="twitter:description" content="Standards are a lovely thing, but hard to achieve, it depends on one thing, everyone actually using it, otherwise it’s just a rule no one cares about.
 There is one thing that is very common to see in the “game sphere”:
@@ -94,7 +94,7 @@ There are a couple of common directories used but I think as game developers we 
   "articleBody": "Standards are a lovely thing, but hard to achieve, it depends on one thing, everyone actually using it, otherwise it’s just a rule no one cares about.\nThere is one thing that is very common to see in the “game sphere”:\nWhere are [X] save games located?\nThere are a couple of common directories used but I think as game developers we could do a bit better and using a common location.\nSome games create a folder on My Documents:\nThis is a bit messy, you have your games mixed with other software, if you have 5-10 games it’s hard to manage since it gets in the way of your work files.\nOther games save them on obscure locations like\nC:\\Users\\[USER]\\AppData\\Game that can lead to lost save files as some cleaning software might erase them, also it’s hard to find. And lately I’ve been noticing that some Steam games store them directly on the Game Directory itself, that’s not very intuitive as well.\nWindows introduced a system folder some time ago called “Saved Games”\nC:\\Users\\David\\Saved Games But from my research it’s not very used, I think one of the reasons is that older Windows versions didn’t had them, like Windows XP and it wasn’t very adopted. I also noticed some games creating their own versions of “common” folders inside Documents, like “SaveGames” or “SavedGames”.\nWhat can we do?\nI did noticed that more devs are using a solution that I personally like, and I adopted it for my last game.\nSo my suggestion for all game developers for a save game directory is\n[User Documents Folder]\\My Games\\[Game]\\ For example\nC:\\Users\\David\\Documents\\My Games\\AwesomeGame\\ Here’s that folder on my computer right now\nAs you can see some developers already use it, from indie developers to AAA studios.\nThis way, everything is inside your Documents, the user can easily access, backup, restore, everything is inside that folder.\nEven if a studio were to create a folder for its own brand, that would be ok too.\nC:\\Users\\David\\Documents\\My Games\\CAPCOM\\ C:\\Users\\David\\Documents\\My Games\\CAPCOM\\Resident Evil C:\\Users\\David\\Documents\\My Games\\CAPCOM\\Resident Evil 2 How can you get the current user documents location you ask?\nCHAR my_documents[MAX_PATH]; HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, my_documents); if (result != S_OK) { //Handle no save permissions } else { //Append \\My Games\\[Your Game] to my_documents and there's your final save location } So my vote is for this solution.\nWhat do you think?\n",
   "wordCount" : "397",
   "inLanguage": "en",
-  "image":"https://www.david-amador.com/wp-content/uploads/2015/04/my_documents-210x161.png","datePublished": "2015-04-09T09:27:58Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2015/04/my_documents.png","datePublished": "2015-04-09T09:27:58Z",
   "dateModified": "2015-04-09T09:27:58Z",
   "author":{
     "@type": "Person",
@@ -199,7 +199,7 @@ There are a couple of common directories used but I think as game developers we 
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2015/04/my_documents-210x161.png" alt="">
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2015/04/my_documents.png" alt="">
         
 </figure>
   <div class="post-content"><p>Standards are a lovely thing, but hard to achieve, it depends on one thing, everyone actually using it, otherwise it’s just a rule no one cares about.</p>
@@ -207,7 +207,7 @@ There are a couple of common directories used but I think as game developers we 
 <strong>Where are [X] save games located?</strong></p>
 <p>There are a couple of common directories used but I think as game developers we could do a bit better and using a common location.</p>
 <p>Some games create a folder on My Documents:<br>
-<a href="/wp-content/uploads/2015/04/my_documents.png"><img loading="lazy" src="/wp-content/uploads/2015/04/my_documents-300x230.png" alt="my_documents"  />
+<a href="/wp-content/uploads/2015/04/my_documents.png"><img loading="lazy" src="/wp-content/uploads/2015/04/my_documents.png" alt="my_documents"  />
 </a></p>
 <p>This is a bit messy, you have your games mixed with other software, if you have 5-10 games it’s hard to manage since it gets in the way of your work files.</p>
 <p>Other games save them on obscure locations like</p>

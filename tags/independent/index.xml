@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>independent on David Amador</title>
     <link>https://www.david-amador.com/tags/independent/</link>
@@ -20,6 +20,98 @@
       <guid>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
       <description>Around two years ago I made a tutorial for XNA in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.
 As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</description>
+      <content:encoded><![CDATA[<p>Around two years ago I made a <a href="/2010/03/xna-2d-independent-resolution-rendering/" title="XNA 2D Independent Resolution Rendering">tutorial for XNA</a> in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.</p>
+<p>As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</p>
+<p>The code is quite straight forward actually. In case you are not familiar with what we are trying to achieve here I recommend my other tutorial first, where I explain this is more detail.</p>
+<p>So first we need to set our viewport with proper letterbox or pillar box, if required.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Let&#39;s start by clearing the whole screen with black
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glClearColor</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">1.0f</span><span class="p">);</span>	
+</span></span><span class="line"><span class="cl"><span class="n">glClear</span><span class="p">(</span><span class="n">GL_COLOR_BUFFER_BIT</span> <span class="o">|</span> <span class="n">GL_DEPTH_BUFFER_BIT</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Both these values must be your real window size, so of course these values can&#39;t be static
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">screen_width</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">;</span>  
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">screen_height</span> <span class="o">=</span> <span class="mi">728</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// This is your target virtual resolution for the game, the size you built your game to
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">virtual_width</span><span class="o">=</span><span class="mi">1280</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">virtual_height</span><span class="o">=</span><span class="mi">720</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">targetAspectRatio</span> <span class="o">=</span> <span class="n">virtual_width</span><span class="o">/</span><span class="n">virtual_height</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl"><span class="c1">// figure out the largest area that fits in this resolution at the desired aspect ratio
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">width</span> <span class="o">=</span> <span class="n">screen_width</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">height</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">width</span> <span class="o">/</span> <span class="n">targetAspectRatio</span> <span class="o">+</span> <span class="mf">0.5f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">height</span> <span class="o">&gt;</span> <span class="n">screen_height</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="c1">//It doesn&#39;t fit our height, we must switch to pillarbox then
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">height</span> <span class="o">=</span> <span class="n">screen_height</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">width</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">height</span> <span class="o">*</span> <span class="n">targetAspectRatio</span> <span class="o">+</span> <span class="mf">0.5f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// set up the new viewport centered in the backbuffer
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">vp_x</span> <span class="o">=</span> <span class="p">(</span><span class="n">screen_width</span>  <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">vp_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">screen_height</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">height</span><span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">   
+</span></span><span class="line"><span class="cl"><span class="n">glViewport</span><span class="p">(</span><span class="n">vp_x</span><span class="p">,</span><span class="n">vp_y</span><span class="p">,</span><span class="n">width</span><span class="p">,</span><span class="n">height</span><span class="p">);</span>
+</span></span></code></pre></div><p>Now that our viewport is set we should set our 2d perspective</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Now we use glOrtho
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_PROJECTION</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPushMatrix</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">glLoadIdentity</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// This function is for Mac and Windows only, if you are using
+</span></span></span><span class="line"><span class="cl"><span class="c1">// iOS you should use glOrthof instead
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glOrtho</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">screen_width</span><span class="p">,</span> <span class="n">screen_height</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/*if on iOS*/</span> <span class="c1">//glOrthof(0, screen_width, screen_height, 0, -1, 1);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPushMatrix</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">glLoadIdentity</span><span class="p">();</span>
+</span></span></code></pre></div><p>So now we should push the transformations before actually drawing anything</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Push in scale transformations
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPushMatrix</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//Now to calculate the scale considering the screen size and virtual size
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">float</span> <span class="n">scale_x</span> <span class="o">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)((</span><span class="kt">float</span><span class="p">)(</span><span class="n">screen_width</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">virtual_width</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">scale_y</span> <span class="o">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)((</span><span class="kt">float</span><span class="p">)(</span><span class="n">screen_height</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">virtual_height</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glScalef</span><span class="p">(</span><span class="n">scale_x</span><span class="p">,</span> <span class="n">scale_y</span><span class="p">,</span> <span class="mf">1.0f</span><span class="p">);</span>		
+</span></span></code></pre></div><p>We can now proceed to drawing everything we want, that’s is really up to you now.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Place your sprites drawing code here
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Example
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glBegin</span><span class="p">(</span><span class="n">GL_TRIANGLES</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glColor3f</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glVertex3f</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glVertex3f</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glVertex3f</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glEnd</span><span class="p">();</span>
+</span></span></code></pre></div><p>I really don’t recommend using glBegin() and glEnd(), this was just for simplicity, you should use glDrawElements or glDrawArrays</p>
+<p>After you finish you drawing code we can proceed to the rest</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// This pops those matrices for the scale transformations.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glLoadIdentity</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPopMatrix</span><span class="p">();</span>		
+</span></span></code></pre></div><p>//Now to finish we should end our 2D perspective</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_PROJECTION</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPopMatrix</span><span class="p">();</span>   
+</span></span><span class="line"><span class="cl"><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPopMatrix</span><span class="p">();</span>	
+</span></span></code></pre></div><p>And that’s pretty much it. I have this code on my games and it works fine, at least for what I usually need. Feel free to tweak it around for your needs. Hope this helps to get a picture on how to achieve this effect. Let me know if you find any bug.</p>
+<p>Here’s an example of what you might achieve with this</p>
+<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg" alt="Base_1280x720_Res_1280x800"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg" alt="Base_1280x720_Res_800x600"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg" alt="Base_1024x768_Res_800x600"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg" alt="Base_1280x720_Res_480x640"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg" alt="Base_1024x768_Res_1280x720"  />
+</a></p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

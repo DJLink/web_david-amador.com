@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Iphone on David Amador</title>
     <link>https://www.david-amador.com/tags/iphone/</link>
@@ -21,6 +21,53 @@
       <description>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.
 Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.
 Here’s a picture she took after a few adjustments.</description>
+      <content:encoded><![CDATA[<p>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.</p>
+<p>Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.</p>
+<p>Here’s a picture she took after a few adjustments.</p>
+<p><a href="http://www.indiedb.com/games/vizati/images/vizati-iphone" title="Vizati iPhone - Indie DB"><img loading="lazy" src="http://media.indiedb.com/cache/images/games/1/13/12804/thumb_620x2000/vizati_iphone.jpg" alt="Vizati iPhone"  />
+</a></p>
+<p><strong>Initial testing</strong></p>
+<p>First thing I notice when testing on the device were slowdowns when the cube is fading, it had a lot of particles filling the screen and the framerate dropped down, although this only happens when each level loads and doesn’t interfere with gameplay itself I got a little frustrated.<br>
+On the simulator It slowed down a little but only on Debug and even more OpenGL on the emulator is by software.<br>
+Another issue was the sound, I’m using OpenAL + a custom OGG parser, and sound was also slow, with hiccups.</p>
+<p><strong>Sound</strong><br>
+For the sound it turned out a little easier than I expected, there as nothing wrong with the parser, what would happen is that if the CPU would sometimes take longer than expected on someplace and the player would run out of data making those hiccups, since it was constantly running out of data and getting more.<br>
+I increased the buffers size and numbers, so now I have 5 buffers with 65536 bytes each. Every time a buffer is parsed I read another one and queue it.<br>
+Solved the problem immediately. Yesterday while playing the game (after 10-20m) the sound started having hiccups again, although the game was fine, so I may still have some flaw in there, must research it more.</p>
+<p>Here’s a video where of me playing with some particles:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ch3QvoBd1_c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><strong>Primitives</strong><br>
+I can get much more particles on screen now because my first attempt to draw primitives in OpenGLES was drawing Quads with an mapped texture. When I got that working I would just send vertex points and texture coordinates and iterate all objects I wanted to draw.<br>
+WROONGGGGGGG…..<br>
+Although this works you should always batch as much geometry (within limits of course) as you can to make it on as fewer draw calls as you can. On both OpenGL and DirectX draw calls are the slowest part.<br>
+It’s faster to draw 1000 triangles in one call than on 1 triangle per call. You get the point.<br>
+So I started by making a PrimitiveBatch, sort of what XNA has, I just pass along vertex points, texture coordinates, color refs etc.<br>
+Since it’s 2D I try to group by texture and by Z. All primitives with same texture on the same Z position can be drawn at once. You can’t draw all with same texture regardless of the Z some elements may be occluded when it was not intended, basically because it will keep drawing on top of what you have, at least for the current Buffer.</p>
+<p>After this I got enough drawing boost to have the same amount of particles that the PC version, which is cool.</p>
+<p><strong>Some tips</strong><br>
+Although I’m still kind of new at this all iPhone things I can give you a few tips, they work for everything but are particular handy on devices with lower CPU power.</p>
+<ul>
+<li>Avoid using std::list:end(), on big lists it carries an extra burden.</li>
+</ul>
+<p>If you don’t intend to add/remove anything from the list during the cycle just save that at first</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">   <span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">iterator</span> <span class="n">b</span> <span class="o">=</span> <span class="n">_mylist</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">   <span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">iterator</span> <span class="n">e</span> <span class="o">=</span> <span class="n">_mylist</span><span class="p">.</span><span class="n">end</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">   <span class="k">while</span><span class="p">(</span><span class="n">b</span><span class="o">!=</span><span class="n">e</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">/// Do stuff
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="o">++</span><span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>Avoid deleting stuff on loops. One example, I have a list where I stack stuff to be drawn on my PrimitiveBatch, typically when you start drawing you add everything, the lists keeps growing, you draw and then delete, and you go back to “start drawing” again. You can optimize this by never deleting and only creating on a need basis. Belize me it makes huge difference, and besides you will need to create that again so might as well not delete it and when starting over just update values. Small things like this may not be an issue on PC but on small devices every cycle counts.</li>
+</ul>
+<p>Most of this stuff you may already know but there are many who don’t. I’ll try to update this more often.</p>
+<p>So now I’ll get back to my testing to see if we get to testing and later to the app store asap =)</p>
+<p>PS: I need iPhone/IPod Touch testers, drop me an email with your UDID if you are interested…</p>
+]]></content:encoded>
     </item>
     <item>
       <title>What are your target platforms for games?</title>
@@ -29,6 +76,11 @@ Here’s a picture she took after a few adjustments.</description>
       <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
       <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
 The poll closes in about 6 days and you can select various options of course.</description>
+      <content:encoded><![CDATA[<p>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (<a href="http://twtpoll.com/dar51l">http://twtpoll.com/dar51l</a>) so that we can have more accurate results.</p>
+<p>The poll closes in about 6 days and you can select various options of course.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+]]></content:encoded>
     </item>
     <item>
       <title>Fixing dark borders sprites on iPhone</title>
@@ -40,6 +92,39 @@ See the darker borders around the image?
 It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
 Well that’s because that alpha isn’t 0 or 1 or 0 or 255.
 The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha.</description>
+      <content:encoded><![CDATA[<p>I ran into this issue a couple hours ago working on the iPhone sdk:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders.png" alt=""  title="iphone_image_dark_borders"  />
+<img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" alt=""  title="iphone_image_dark_borders_2"  />
+</p>
+<p>See the darker borders around the image?</p>
+<p>It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?<br>
+Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
+<p>The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha. So you can understand now why only 0 or 1 works right? Everything in between get’s changed. This is why Apple recommends using PNG over JPGS, although they consume more space they are altered for speed.</p>
+<p>This is refereed as using images with <a href="http://en.wikipedia.org/wiki/User:Lkesteloot/premultiplied_alpha">pre-multiplied alpha</a>.</p>
+<p>If you don’t care about this and just want to use regular alpha blend one quick fix up for this is on each image load to reset the correct RGB values and maintain the A component</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">pixelcount</span> <span class="o">=</span> <span class="n">width</span><span class="o">*</span><span class="n">height</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="c1">// Image data is a pointer for your image data
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="n">width</span><span class="o">*</span><span class="n">height</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span> <span class="n">off</span> <span class="o">=</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">imageData</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span> <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">alpha</span> <span class="o">=</span> <span class="n">off</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span> <span class="n">alpha</span><span class="o">!=</span><span class="mi">255</span> <span class="o">||</span> <span class="n">alpha</span><span class="o">!=</span><span class="mi">0</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">off</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">off</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="n">alpha</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">off</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">off</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="n">alpha</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">off</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">off</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">*</span><span class="mi">255</span><span class="o">/</span><span class="n">alpha</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="n">off</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_fixed_border.png" alt="image"  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_border_fixed2.png" alt="image"  />
+</p>
+<p>There may be other solutions but this won&rsquo;t have any impact on the game, just when loading images. Let me know if you find any other solution.</p>
+<p>EDIT: Quick note here: this is not the correct way to deal with pre-multiplied alpha but a patching. XNA recently embraced pre multiplied alpha to avoid this issues. More <a href="http://blogs.msdn.com/b/shawnhar/archive/2009/11/06/premultiplied-alpha.aspx">here</a>  (Thanks Elisée Maurer)</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Developing on Mac and Basalt running on the iPhone</title>
@@ -49,6 +134,48 @@ The first thing I found out is that XCode grabs the png images and multiplies th
       <description>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.
 If you follow me on twitter you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.
 So it all started with my wish to port Vizati to the iPhone, since the game is already running on PC, Xbox360 and Windows Phone 7 one can only wish for an easy and quick port since pretty much all base code is done.</description>
+      <content:encoded><![CDATA[<p>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.<br>
+If you follow me on <a href="https://www.twitter.com/DJ_Link">twitter</a> you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.</p>
+<p>So it all started with my wish to port Vizati to the iPhone, since the game is already running on <a href="http://www.youtube.com/watch?v=F9vf17HSXcQ">PC</a>, Xbox360 and <a href="http://www.youtube.com/watch?v=hX18tuujAEY">Windows Phone 7</a> one can only wish for an easy and quick port since pretty much all base code is done.</p>
+<p>As you know for developing on the iPhone you require an actual Mac, I know there’s virtualization but my 5 year old PC can’t take it, believe me I tried. So I bought myself a mini mac which are much cheaper that IMac and macbooks, around $499 or so, and another extra $30 for a mini-Dvi to VGA adapter for my 1080p Samsung.</p>
+<p>Let me tell you, that bastard is silent, I mean I can’t listen to anything, powering off my desktop PC and I have this relaxing environment to work in, it’s great for coding during the night when everyone is asleep. I can only hear my keyboard strokes and my cat snoring.<br>
+Here’s a picture of it near the keyboard, it’s really small.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" alt=""  title="Mini Mac"  />
+</p>
+<p>Now, moving on to the development part, on MacOS your IDE is XCode.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/xcode.png" alt=""  title="xcode"  />
+</p>
+<p>It’s no Visual Studio but it gets the job done. Has some strange shortcuts but I’ve found a neat <a href="https://web.archive.org/web/20150413150630/http://www.1729.us/xcode/Xcode%20Shortcuts.pdf">shortcut pdf</a>.</p>
+<p>Next was my struggle for testing available engines and frameworks and learning how much of Objective-C do you have to know and can I run C++ on it?</p>
+<p>I tested some engines:<br>
+<a href="http://www.cocos2d-iphone.org/">Cocos2D</a> – 2D engine, Purely Objective-C, very consistent API, it’s was very close to my way of making things on Basalt actually, with scenes and layers.<br>
+<a href="https://web.archive.org/web/20100726050150/http://sio2interactive.com/SIO2_Free_Open_Source_3D_Game_Engine_for_iPad,_iPhone_and_iPod_Touch/SIO2_Free_Open_Source_3D_Game_Engine_for_iPad,_iPhone_and_iPod_Touch.html">SIO2</a> – Mainly 3D stuff, might be a good starting point, it’s mainly coded in C++, has built in physics, Lua, lightning and shadow<br>
+<a href="http://code.google.com/p/oolongengine/">OolongEngine</a> – 3D engine, imports .3dsmax and .blend, bullet physics<br>
+<a href="http://www.bork3d.com/">Bork3D</a> – C++ engine based on Rude Engine. Seems good but I could only find one game made with it from the author itself, lacks documentation but at least it works. Had major performance issues on the iPad sample that comes with the SDK.</p>
+<p>I research a little on those well know tools such as Unity3D, ITorque, etc but those kind of editor aren’t really my thing.</p>
+<p>At one point I convinced myself that the way to go would be learning Objective-C since most tutorials for iPhone are written using it, it’s Iphone OS native language and everyone recommends learning it, but after a few hours watching the amount of square brackets that things has on it I decided another way.</p>
+<p>I ported my C# engine Basalt to C++, literally making .h and .cpp files. I hooked up my main animation and draw pump to some Objective-C classes (don’t forget to use .mm if you are mixing Objective-C with C++) and everything started working.</p>
+<p>The next bit was implementing the SpriteBatch class and make it draw in OpenGL, took me around two days to have the Matrices working, correct texture mapping to quads, Alpha Blend and Additive. The idea is that by the time I port an XNA game to C++ I can still use SpriteBatches, Texture2D etc.</p>
+<p>After these two weeks of development here’s what’s working:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/IPhone-Basalt-Particle-System-2D.png" alt=""  title="iPhone Basalt Particle System 2D"  />
+</p>
+<ul>
+<li>Draw Sprites – SpriteBatch is working, texture regions, SpriteBlendModes, Matrices etc</li>
+<li>Sprite Animations</li>
+<li>Particle System 2D – Although not a priority it allowed me to test Additive</li>
+<li>Independent Resolution Rendering – Wasn’t much of deal actually, it’s basically a matrix</li>
+<li>JPG/PNG load – I made this in Objective-C, 20 lines of code or so</li>
+</ul>
+<p>Here’s a video showing what I have so far:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ALzSzhvp2ns" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Next in my list is Input, Script, music and then porting the whole game to C++, which I think will work nicely once the whole engine base is done.<br>
+Oh, and probably try to get a real device for proper testing.</p>
+<p>PS: Monkey Island 2 Special Edition is awesome….</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Testing iPhone Sdk and MacOSX</title>
@@ -58,6 +185,12 @@ So it all started with my wish to port Vizati to the iPhone, since the game is a
       <description>So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.
 First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.
 I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen.</description>
+      <content:encoded><![CDATA[<p>So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.</p>
+<p>First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.</p>
+<p>I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen. Too bad I don’t have an actual Iphone to test it, so I just used the provided iphone simulator.</p>
+<p>The simulator is actually very neat but lacks the accelerometer functions. Just touch is available. Although this may seem logical an option to simulate the iphone rotation shouldn’t be that very hard, but then again they want to sell them like hot muffins.</p>
+<p>Next weekend I’ll try to make a basic and fully functional game.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

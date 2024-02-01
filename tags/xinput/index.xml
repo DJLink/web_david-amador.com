@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>xInput on David Amador</title>
     <link>https://www.david-amador.com/tags/xinput/</link>
@@ -23,6 +23,211 @@ On XNA this is an out of the box option but if you’re using C++ you have a bit
 First of all, you will need the DirecX 9.0+ sdk.
 The includes.
 #define WIN32_LEAN_AND_MEAN // We don&amp;#39;t want the extra stuff like MFC and such #include &amp;lt;windows&amp;gt; #include &amp;lt;XInput.h&amp;gt; // XInput API #pragma comment(lib, &amp;#34;XInput.</description>
+      <content:encoded><![CDATA[<p>So you have that Xbox360 controller laying around and want to connect it to your game?</p>
+<p>On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.</p>
+<p>First of all, you will need the DirecX 9.0+ sdk.</p>
+<p>The includes.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#define WIN32_LEAN_AND_MEAN </span><span class="c1">// We don&#39;t want the extra stuff like MFC and such
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;windows&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;XInput.h&gt;</span><span class="cp">     </span><span class="c1">// XInput API
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#pragma comment(lib, &#34;XInput.lib&#34;)   </span><span class="c1">// Library. If your compiler doesn&#39;t support this type of lib include change to the corresponding one
+</span></span></span></code></pre></div><p>Let’s define the buttons</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">enum</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_UP</span>          <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_DOWN</span>        <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_LEFT</span>        <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_RIGHT</span>       <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_START</span>            <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_BACK</span>             <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_LEFT_THUMB</span>       <span class="o">=</span> <span class="mi">6</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_RIGHT_THUMB</span>      <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_LEFT_SHOULDER</span>    <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_RIGHT_SHOULDER</span>   <span class="o">=</span> <span class="mi">9</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_A</span>                <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_B</span>                <span class="o">=</span> <span class="mi">11</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_X</span>                <span class="o">=</span> <span class="mi">12</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_Y</span>                <span class="o">=</span> <span class="mi">13</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadButton_Max</span> <span class="o">=</span>             <span class="mi">14</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="n">GamePadButton</span><span class="p">;</span>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/04/450px-360_controller.svg_.jpg" alt=""  title="450px-360_controller.svg"  />
+</p>
+<p>After some digging I don’t think Microsoft exposes access to the Guide button, let me know if you find anything. Anyway it’s not something we need on Windows.</p>
+<p>Now the GamePadIndexes</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// GamePad Indexes
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">typedef</span> <span class="k">enum</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_One</span> <span class="o">=</span>  <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_Two</span> <span class="o">=</span>  <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_Three</span> <span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_Four</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="n">GamePadIndex</span><span class="p">;</span>
+</span></span></code></pre></div><p>The GamePadIndex is to define the player position. Like on the Xbox360, this way we can control up to 4 controllers.</p>
+<p>We need something to store the GamePad state</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// The GamePad State Stuct, were we store the buttons positions
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">struct</span> <span class="nc">GamePadState</span> 
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">bool</span>		<span class="n">_buttons</span><span class="p">[</span><span class="n">GamePadButton_Max</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Vector2</span> 	<span class="n">_left_thumbstick</span><span class="p">;</span>               <span class="c1">// &lt;= I&#39;m using a Vector2 (floats) class but you can replaced it with a float X and Y or whatever your Vector2 class is
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">Vector2</span>	        <span class="n">_right_thumbstick</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span>		<span class="n">_left_trigger</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span>		<span class="n">_right_trigger</span><span class="p">;</span>	
+</span></span><span class="line"><span class="cl">	<span class="c1">// Just to clear all values to default
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kt">void</span> <span class="nf">reset</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">GamePadButton_Max</span><span class="p">;</span><span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="n">_buttons</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_left_thumbstick</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_right_thumbstick</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_left_trigger</span> <span class="o">=</span> <span class="n">_right_trigger</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">	
+</span></span></code></pre></div><p>Now a small class</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">GamePadXbox</span> 
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span> 
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadXbox</span><span class="p">(</span><span class="n">GamePadIndex</span> <span class="n">player</span><span class="p">)</span>			
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">_playerIndex</span> <span class="o">=</span> <span class="n">player</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">State</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">virtual</span> <span class="o">~</span><span class="n">GamePadXbox</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// We don&#39;t want the controller to be vibrating accidentally when we exit the app
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="k">if</span><span class="p">(</span><span class="n">is_connected</span><span class="p">())</span> <span class="n">vibrate</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span><span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kt">bool</span> <span class="nf">is_connected</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">void</span> <span class="nf">vibrate</span><span class="p">(</span><span class="kt">float</span> <span class="n">leftmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="kt">float</span> <span class="n">rightmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">void</span> <span class="nf">update</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">   <span class="n">GamePadState</span>	<span class="n">State</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">   <span class="n">XINPUT_STATE</span> <span class="n">_controllerState</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="n">GamePadIndex</span> <span class="n">_playerIndex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>Now, onto the GamePadXbox::is_connected()</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">is_connected</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">// clean the state
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">_controllerState</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">XINPUT_STATE</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     <span class="c1">// Get the state
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="n">DWORD</span> <span class="n">Result</span> <span class="o">=</span> <span class="n">XInputGetState</span><span class="p">(</span><span class="n">_controllerNum</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">_controllerState</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     <span class="k">if</span><span class="p">(</span><span class="n">Result</span> <span class="o">==</span> <span class="n">ERROR_SUCCESS</span><span class="p">)</span>	<span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="k">else</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Documentation for the XInputGetState is <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.reference.xinputgetstate%28v=vs.85%29.aspx">here</a>.</p>
+<p>Onto the vibrate function. Now, the Vibration accepts values between 0 and 65535. But we don&rsquo;t want to be typing that every time so the vibrate accepts from a range of 0.0f (0) to 1.0f (65535);</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">vibrate</span><span class="p">(</span><span class="kt">float</span> <span class="n">leftmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="kt">float</span> <span class="n">rightmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Create a new Vibraton 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">XINPUT_VIBRATION</span> <span class="n">Vibration</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Vibration</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">XINPUT_VIBRATION</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">leftVib</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">leftmotor</span><span class="o">*</span><span class="mf">65535.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">rightVib</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">rightmotor</span><span class="o">*</span><span class="mf">65535.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Set the Vibration Values
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">Vibration</span><span class="p">.</span><span class="n">wLeftMotorSpeed</span> <span class="o">=</span> <span class="n">leftVib</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Vibration</span><span class="p">.</span><span class="n">wRightMotorSpeed</span> <span class="o">=</span> <span class="n">rightVib</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Vibrate the controller
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">XInputSetState</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">_controllerNum</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">Vibration</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>On the destructor I&rsquo;ve placed the vibrate at 0.0f otherwise the controller may be left vibrating after your game exits until the user unplugs it.</p>
+<p>Finally, the update() function. Now this one is more out of convenience, since you could get the state straight out of  XINPUT_STATE but I think this is a more consistent way of doing it. You can decide how you want on yours.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">State</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// The values of the Left and Right Triggers go from 0 to 255. We just convert them to 0.0f=&gt;1.0f
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bRightTrigger</span> <span class="o">&amp;&amp;</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bRightTrigger</span> <span class="o">&lt;</span> <span class="n">XINPUT_GAMEPAD_TRIGGER_THRESHOLD</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">State</span><span class="p">.</span><span class="n">_right_trigger</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bRightTrigger</span><span class="o">/</span><span class="mf">255.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bLeftTrigger</span> <span class="o">&amp;&amp;</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bLeftTrigger</span> <span class="o">&lt;</span> <span class="n">XINPUT_GAMEPAD_TRIGGER_THRESHOLD</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">State</span><span class="p">.</span><span class="n">_left_trigger</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bLeftTrigger</span><span class="o">/</span><span class="mf">255.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">       <span class="c1">// Get the Buttons
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_A</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_A</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_B</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_B</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_X</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_X</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_Y</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_Y</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_DPAD_DOWN</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_DPAD_DOWN</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// The Rest is missing, you can figure out the rest :)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 
+</span></span><span class="line"><span class="cl"><span class="p">....</span>
+</span></span><span class="line"><span class="cl">             <span class="p">(</span><span class="n">ThumbSticks</span> <span class="n">code</span> <span class="n">below</span><span class="p">)</span>   
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>For getting all buttons here are the official flags according to msdn</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_UP</span>          <span class="mh">0x00000001</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_DOWN</span>        <span class="mh">0x00000002</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_LEFT</span>        <span class="mh">0x00000004</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_RIGHT</span>       <span class="mh">0x00000008</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_START</span>            <span class="mh">0x00000010</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_BACK</span>             <span class="mh">0x00000020</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_LEFT_THUMB</span>       <span class="mh">0x00000040</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_RIGHT_THUMB</span>      <span class="mh">0x00000080</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_LEFT_SHOULDER</span>    <span class="mh">0x0100</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_RIGHT_SHOULDER</span>   <span class="mh">0x0200</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_A</span>                <span class="mh">0x1000</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_B</span>                <span class="mh">0x2000</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_X</span>                <span class="mh">0x4000</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_Y</span>                <span class="mh">0x8000</span>
+</span></span></code></pre></div><p>The ThumbSticks are a bit more tricky. They return 2 axis each but you have to make sure they are not in the deadzone. The deadzone pretty much are values !=0 but that are not relevant and can lead to errors.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Check to make sure we are not moving during the dead zone
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Let&#39;s check the Left DeadZone
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">if</span><span class="p">(</span> <span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLX</span>  <span class="o">-</span><span class="n">XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLY</span>  <span class="o">-</span><span class="n">XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE</span><span class="p">)</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>    
+</span></span><span class="line"><span class="cl">	<span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLX</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLY</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Check left thumbStick
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 
+</span></span><span class="line"><span class="cl">  <span class="kt">float</span> <span class="n">leftThumbY</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLY</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">(</span><span class="n">leftThumbY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">State</span><span class="p">.</span><span class="n">_left_thumbstick</span><span class="p">.</span><span class="n">Y</span> <span class="o">=</span> <span class="n">leftThumbY</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">float</span> <span class="n">leftThumbX</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLX</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">(</span><span class="n">leftThumbX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">State</span><span class="p">.</span><span class="n">_left_thumbstick</span><span class="p">.</span><span class="n">X</span> <span class="o">=</span> <span class="n">leftThumbX</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>    
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">  <span class="c1">// For the rightThumbstick it&#39;s pretty much the same.
+</span></span></span></code></pre></div><p>So how would we use this then?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="n">GamePadXbox</span><span class="o">*</span> <span class="n">pad</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GamePadXbox</span><span class="p">(</span><span class="n">GamePadIndex_One</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     
+</span></span><span class="line"><span class="cl">     <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">     <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="k">if</span><span class="p">(</span><span class="n">pad</span><span class="o">-&gt;</span><span class="n">is_connected</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">       <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="n">pad</span><span class="o">-&gt;</span><span class="n">update</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">          <span class="k">if</span><span class="p">(</span><span class="n">pad</span><span class="o">-&gt;</span><span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_BACK</span><span class="p">]</span><span class="o">==</span><span class="nb">true</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">}</span>   
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl">     <span class="k">delete</span> <span class="n">pad</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Anyway, most of this code is not elegant or &ldquo;pretty&rdquo; but it should work, the idea is for you to understand the concept, the rest is up to you.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>web design on David Amador</title>
     <link>https://www.david-amador.com/tags/web-design/</link>
@@ -21,6 +21,23 @@
       <description>Spent a little time giving my blog a new look. It’s not that I didn’t like the old one but sometimes it was a bit of a mess, I’ve been getting many new readers so it was time for a cleaner look.
 My main concern was getting all code posts to be readable but I think they are
 class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P</description>
+      <content:encoded><![CDATA[<p>Spent a little time giving my blog a new look. It’s not that I didn’t like the old one but sometimes it was a bit of a mess, I’ve been getting many new readers so it was time for a cleaner look.</p>
+<p>My main concern was getting all code posts to be readable but I think they are</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">XPTO</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span><span class="o">:</span> <span class="n">XPTO</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P<br>
+Also feedback on the new layout is most appreciated.</p>
+<p>Here’s how it looked before</p>
+<p><a href="/wp-content/uploads/2011/03/david_amador_old_layout.jpg"><img loading="lazy" src="/wp-content/uploads/2011/03/david_amador_old_layout.jpg" alt=""  title="david_amador_old_layout"  />
+</a></p>
+<p>Another thing that’s been bothering me, which you may have noticed is that on the sidebar I have a small ad. It’s Google AdSense. I’ve been keeping it for almost 2 years now and I’m getting tired of it.<br>
+Why don’t I remove it? Well because I managed to sum up $84 in these last 2 years. And google only pays when we reach $100. It’s a small amount but well it’s mine, so I can either forget it or keep with it.<br>
+If I ever reach $100 and get paid I’m obviously removing it. I was hoping to use that money to pay for this blog hosting for another 1-2 years.</p>
+<p>For those wondering those $84 where gathered from around 59k visitors. Some click it, others don’t and I get money each time someone clicks it. Simple as that.<br>
+So until I reach those $100 I’m keeping it around.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

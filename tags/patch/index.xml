@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>patch on David Amador</title>
     <link>https://www.david-amador.com/tags/patch/</link>
@@ -21,6 +21,35 @@
       <description>A new patch for iOS and Android went live, v1.1.1
 There are some differences in what’s new for each one of the platforms, the biggest change being support for iPhone 6 and 6 Plus on iOS and x86 architecture support on Android.
 The reason why there are more tweaks on the iOS is because the Android version was updated more recently. After this update they are on par on features and fixes.</description>
+      <content:encoded><![CDATA[<p>A new patch for iOS and Android went live, v1.1.1</p>
+<p>There are some differences in what’s new for each one of the platforms, the biggest change being support for iPhone 6 and 6 Plus on iOS and x86 architecture support on Android.</p>
+<p><a href="/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png"><img loading="lazy" src="/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png" alt="quest_of_dungeons_iphone6_plus_vs_iphone_5"  />
+</a></p>
+<p>The reason why there are more tweaks on the iOS is because the Android version was updated more recently. After this update they are on par on features and fixes.</p>
+<p>-General-</p>
+<ul>
+<li>Warnings (Low Mana, Choose target) are no longer displayed on top of menus</li>
+<li>Several improvements and glitch fixes</li>
+</ul>
+<p>-iOS specifics</p>
+<ul>
+<li>Added support for iPhone 6 and iPhone 6 Plus</li>
+<li>New Difficulty mode “Hell”</li>
+<li>Achievement added for completing “Hell”</li>
+<li>Added current Save information when loading (Level, Class, Difficulty, etc) (iPad only)</li>
+<li>Fixed “Create New Game” screen animation glitch where class selector would jump from off screen</li>
+<li>Fixed typo in “Pierce Skin”</li>
+<li>Fixed Store bug where quickly walking away before Store menu completely opens would show the menu empty</li>
+<li>Store menu now remembers if Inventory was open or not before closing it</li>
+<li>When playing a new game the last played difficulty is the one used by default</li>
+<li>New achievement “Listen Closely”</li>
+</ul>
+<p>-Android specifics</p>
+<ul>
+<li>Can turn on 2d light effects via Start Menu-&gt;Options-&gt;High Performance</li>
+<li>Added native x86 platform support</li>
+</ul>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

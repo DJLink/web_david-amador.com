@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>psu on David Amador</title>
     <link>https://www.david-amador.com/tags/psu/</link>
@@ -20,6 +20,12 @@
       <guid>https://www.david-amador.com/2009/06/new-graphic-card-and-psu/</guid>
       <description>I decided to buy another a new graphic card. I got tired of my old Geforce 8500 GT sloweness. It was slow on 3dsmax, it was slow on recent games and most of all I have this thing for Ati so this was never my favorite.
 After some research I decided to get a XFX Ati Radeon 4890, most of the reviews were positive and its placed in a mid-range pricing.</description>
+      <content:encoded><![CDATA[<p>I decided to buy another a new graphic card. I got tired of my old Geforce 8500 GT sloweness. It was slow on 3dsmax, it was slow on recent games and most of all I have this thing for Ati so this was never my favorite.</p>
+<p>After some research I decided to get a XFX Ati Radeon 4890, most of the reviews were positive and its placed in a mid-range pricing. The first thing I was dissapointed was that my old Eurotech PSU would not be enough since my 12v rail had only 16A so I also bought a Corsair TX 650W.</p>
+<p>After installing all I booted up the pc to find that the new psu was more silent that my old one but the xfx is louder, which is no surprise.</p>
+<p>I was able to run Crysis at 1920×1080 on very high with no antialiasing at a stable 30fps, so with a little tweaking i should be able to get a much higher framerate. Left 4 Dead at same resolution everything maxed up runs between 50-60 fps 😀</p>
+<p>I’m very happy with it. 3dsmax 2010 also runs faster and i notice the diference particularly on skining and mapping.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

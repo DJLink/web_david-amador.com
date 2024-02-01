@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>motivation on David Amador</title>
     <link>https://www.david-amador.com/tags/motivation/</link>
@@ -22,6 +22,41 @@
 In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.
 Happens to me too, heck it happens to everyone once in a while…
 It’s something that happens usually half way though or after you get the initial prototype running.</description>
+      <content:encoded><![CDATA[<p>I follow a couple of dev blogs, some are game developers, others make websites or software.<br>
+In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.</p>
+<blockquote>
+<p><strong>Happens to me too, heck it happens to everyone once in a while…</strong></p>
+</blockquote>
+<p>It’s something that happens usually half way though or after you get the initial prototype running.<br>
+Around one year ago (Feb 2010) when I started developing our first game it was all great, new stuff every day, things starting to work, replacing my crappy programmer art by Rita’s drawings.<br>
+The real endurance was after we had a working demo, and the decision of actually finishing the game.</p>
+<blockquote>
+<p>Should be 2-3 weeks, it’s just making more levels</p>
+</blockquote>
+<p>I really said that, worst, I was convinced that would be the case. But it wasn’t, and fine tuning stuff is the worst part, when the game mechanics are there and you are lacking the patient to add that one more feature that will probably induce 5 bugs.</p>
+<blockquote>
+<p><strong>Finish you game</strong></p>
+</blockquote>
+<p>Many indie devs never finish their game due to time constrains and/or their real job, but there’s a bunch that never finish anything because half-way though they loose interest and move to another project.</p>
+<p>Moving to another project can sometimes be forced, you don’t have the money to pull it off, you don’t have the time to make such a big project or the game simply sucks, these are all valid. I have some projects on the back-burner that are not possible at this moment.</p>
+<blockquote>
+<p>New ideas can be a bitch…</p>
+</blockquote>
+<p>But how to deal with the fact that you are tired of making the game, even though it has potential?<br>
+When first starting I always think, nah, that’s not going to happen, it’s a great idea. But how many times are you making one game and thinking on the next idea, and damn, that new idea is even greater, why not drop everything and make that one instead?</p>
+<p>That’s when problems start, because even though you won’t switch when bugs/problems for the current project start popping you won’t have as much patient as you should, because in your mind you should be doing something else.</p>
+<blockquote>
+<p>Working with someone or showing you game to friends helps.</p>
+</blockquote>
+<p>If you are working with someone else it’s a bit easier to work this out. 2 people working for the same goal gives a sense of “this is it” to the whole thing.<br>
+Working alone sucks a bit more, but you just have to set some goals.<br>
+Make a working prototype, give it to some friends, collect feedback, they will probably make tons of suggestions, and you’ll get more excited with it.</p>
+<blockquote>
+<p>Easy to say, hard to to so.</p>
+</blockquote>
+<p>I still find it hard to do so, especially the whole “I shouldn’t have any more ideas while working on this”.<br>
+But it happens, the other night I woke up at 6AM, had an idea for something so instead I wrote it down on a notepad, and I’ll grab it when I’m out of ideas.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

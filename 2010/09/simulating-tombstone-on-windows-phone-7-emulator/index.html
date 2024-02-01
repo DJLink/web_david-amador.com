@@ -45,13 +45,13 @@ if (!doNotTrack) {
 It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.
 So depending on you app you might want to save the current state just in case the app really closes." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-09-20T21:36:27+00:00" />
 <meta property="article:modified_time" content="2010-09-20T21:36:27+00:00" /><meta property="og:site_name" content="David Amador" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg" />
 <meta name="twitter:title" content="Simulating tombstone (suspended state) on Windows Phone 7 emulator"/>
 <meta name="twitter:description" content="Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.
 It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.
@@ -91,7 +91,7 @@ So depending on you app you might want to save the current state just in case th
   "articleBody": "Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.\nIt’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.\nSo depending on you app you might want to save the current state just in case the app really closes.\nSimulating this on the emulator took me awhile to get it right.\nPress F5 on Visual Studio do start debugging your App.\nPress the Start button and your app received a Deactivated event. Save what you need. Now, and here is the tricky part, the debugger also exited.\nThis took me awhile because pressing the back button wouldn’t do anything and pressing F5 again would just restart.\nSo you have to Press F5 and keep an eye on the compiler. When you receive a “Deploy Success” message\nquickly press the Back button on the simulator\nYou app should now start and receive the Activated event.\nBasically the debugger has to start between you pressing the Back button and before the black screen disappears otherwise the emulator while assume the app is closed and get back to home.\n",
   "wordCount" : "218",
   "inLanguage": "en",
-  "datePublished": "2010-09-20T21:36:27Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg","datePublished": "2010-09-20T21:36:27Z",
   "dateModified": "2010-09-20T21:36:27Z",
   "author":{
     "@type": "Person",
@@ -196,6 +196,9 @@ So depending on you app you might want to save the current state just in case th
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg" alt="">
+        
+</figure>
   <div class="post-content"><p>Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.<br>
 It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.</p>
 <p>So depending on you app you might want to save the current state just in case the app really closes.</p>

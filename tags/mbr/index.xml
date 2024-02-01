@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>mbr on David Amador</title>
     <link>https://www.david-amador.com/tags/mbr/</link>
@@ -23,6 +23,44 @@ Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of cours
 1 – Boot your computer to the Windows 7 DVD
 2 – Select your language and click next.
 3 – Click the button for “Use recovery tools”.</description>
+      <content:encoded><![CDATA[<p>So I had this crisis where the MBR got broken and Windows would not boot. This can happens for many reasons, maybe you tried to dual boot your PC and something went wrong.</p>
+<p>Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of course)!</p>
+<p>1 – Boot your computer to the Windows 7 DVD<br>
+2 – Select your language and click next.<br>
+3 – Click the button for “Use recovery tools”.<br>
+4 – Then select “Command Prompt”.</p>
+<p>Do this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Type: diskpart
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: <span class="k">select</span> disk <span class="m">0</span>
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">type: list volume
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a.png" alt=""  title="53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a"  />
+</p>
+<p>6 – Use your DVD drive letter so we can access the DVD</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Type: <span class="nb">exit</span>
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">to close Diskpart
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: G: <span class="o">(</span>DVD drive<span class="o">)</span>
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: <span class="nb">cd</span> boot
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: dir
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/53600d1251414836-mbr-restore-windows-7-master-boot-record-mbr_18a.png" alt=""  title="53600d1251414836-mbr-restore-windows-7-master-boot-record-mbr_18a"  />
+</p>
+<p>7 – To restore the “bootsector code”:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">TYPE: bootsect /nt60 SYS /mbr
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span></code></pre></div><p>You should be able to restart and boot you Windows now, if it fails, well, I’m out of ideas</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>poll on David Amador</title>
     <link>https://www.david-amador.com/tags/poll/</link>
@@ -20,6 +20,11 @@
       <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
       <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
 The poll closes in about 6 days and you can select various options of course.</description>
+      <content:encoded><![CDATA[<p>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (<a href="http://twtpoll.com/dar51l">http://twtpoll.com/dar51l</a>) so that we can have more accurate results.</p>
+<p>The poll closes in about 6 days and you can select various options of course.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+]]></content:encoded>
     </item>
   </channel>
 </rss>

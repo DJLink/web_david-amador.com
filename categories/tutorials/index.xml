@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tutorials on David Amador</title>
     <link>https://www.david-amador.com/categories/tutorials/</link>
@@ -20,6 +20,96 @@
       <guid>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</guid>
       <description>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a XNA 2D Camera I wrote some time ago.
 Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</description>
+      <content:encoded><![CDATA[<p>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a <a href="/2009/10/xna-camera-2d-with-zoom-and-rotation/" title="XNA Camera 2d with zoom and rotation">XNA 2D Camera</a> I wrote some time ago.<br>
+Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</p>
+<p><a href="/wp-content/uploads/2013/07/camera2d.jpg"><img loading="lazy" src="/wp-content/uploads/2013/07/camera2d-300x234.jpg" alt="camera2d"  />
+</a></p>
+<p>The Camera2D class is simple enough:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Camera2d</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Camera2d</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">virtual</span> <span class="o">~</span><span class="n">Camera2d</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>	
+</span></span><span class="line"><span class="cl">	<span class="kr">inline</span> <span class="kt">void</span>	<span class="nf">set_zoom</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="n">zoom</span><span class="p">){</span> <span class="n">_zoom</span> <span class="o">=</span> <span class="n">zoom</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="kr">inline</span> <span class="kt">float</span>	<span class="nf">get_zoom</span><span class="p">()</span><span class="k">const</span><span class="p">{</span> <span class="k">return</span> <span class="n">_zoom</span><span class="p">;</span> <span class="p">}</span>	
+</span></span><span class="line"><span class="cl">	       <span class="n">Matrix</span>	<span class="nf">get_transformation</span><span class="p">();</span>	
+</span></span><span class="line"><span class="cl"><span class="k">protected</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">       <span class="kt">void</span> <span class="n">recreate_tranformation_matrix</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">protected</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Saves Last Property
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">// This is used for knowing when to update the Matrix
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="k">struct</span> <span class="nc">Transformation</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Matrix</span>       <span class="n">_matrix</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Vector2f</span>     <span class="n">_last_pos</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kt">float</span>        <span class="n">_last_zoom</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Vector2f</span>     <span class="n">_last_origin</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kt">float</span>        <span class="n">_last_rotation</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kt">void</span> <span class="nf">update</span><span class="p">(</span><span class="k">const</span> <span class="n">Vector2f</span><span class="o">&amp;</span> <span class="n">p</span><span class="p">,</span> <span class="k">const</span> <span class="n">Vector2f</span><span class="o">&amp;</span> <span class="n">origin</span><span class="p">,</span> <span class="k">const</span> <span class="kt">float</span> <span class="n">zoom</span><span class="p">,</span> <span class="k">const</span> <span class="kt">float</span> <span class="n">rotation</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                 <span class="p">{</span> <span class="n">_last_pos</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span> <span class="n">_last_origin</span> <span class="o">=</span> <span class="n">origin</span><span class="p">;</span> <span class="n">_last_zoom</span> <span class="o">=</span> <span class="n">zoom</span><span class="p">;</span> <span class="n">_last_rotation</span> <span class="o">=</span> <span class="n">rotation</span><span class="p">;</span>	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">protected</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span>		<span class="n">_zoom</span><span class="p">;</span>	
+</span></span><span class="line"><span class="cl">	<span class="n">Transformation</span>  <span class="n">_transform</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Vector2f</span>	<span class="n">_pos</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Vector2f</span>	<span class="n">_origin</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span>		<span class="n">_rotation</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>As the name implies Vector2f and Matrix are the Vector and the Matrix, the full code is included in the project that you can download at the end of the article so I’m just going to mention the most important parts.<br>
+In Camera2D class the most important function is the recreate_tranformation_matrix(), get_transformation() just checks if we should recreate it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="n">Camera2d</span><span class="o">::</span><span class="n">recreate_tranformation_matrix</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Update Variables
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">_transform</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">_pos</span><span class="p">,</span><span class="n">_origin</span><span class="p">,</span><span class="n">_zoom</span><span class="p">,</span><span class="n">_rotation</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">_transform</span><span class="p">.</span><span class="n">_matrix</span> <span class="o">=</span> 
+</span></span><span class="line"><span class="cl">		<span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">			Create our camera matrix, 
+</span></span></span><span class="line"><span class="cl"><span class="cm">			translation to origin, then rotation, scale and finally translation to the camera position
+</span></span></span><span class="line"><span class="cl"><span class="cm">		*/</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Matrix</span><span class="o">::</span><span class="n">CreateTranslation</span><span class="p">(</span><span class="o">-</span><span class="n">_pos</span><span class="p">.</span><span class="n">X</span><span class="p">,</span><span class="o">-</span><span class="n">_pos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Matrix</span><span class="o">::</span><span class="n">CreateScale</span><span class="p">(</span><span class="n">_zoom</span><span class="p">,</span> <span class="n">_zoom</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">*</span>						
+</span></span><span class="line"><span class="cl">		<span class="n">Matrix</span><span class="o">::</span><span class="n">CreateRotationZ</span><span class="p">(</span><span class="n">_rotation</span><span class="p">)</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Matrix</span><span class="o">::</span><span class="n">CreateTranslation</span><span class="p">(</span><span class="n">_origin</span><span class="p">.</span><span class="n">X</span><span class="p">,</span><span class="n">_origin</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>		   
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>As you can see we create our finally Matrix considering several things, first there’s the camera origin or center. This is useful for rotations and scales when you want to keep the camera focusing on a certain element, usually the center. The most common positions will probably be the center of the camera or 0,0.<br>
+Next we have a rotation on Z, next Zoom, this is how much the camera will zoom in or out, again the origin will impact where the zoom center is. Finally the camera position itself. The order of these operations is extremely important since mat1*mat2 != mat2*mat1.</p>
+<p>So how could you use this?<br>
+First the camera setup</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Create our new camera
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Camera2d</span><span class="o">*</span> <span class="n">camera</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Camera2d</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">camera</span><span class="o">-&gt;</span><span class="n">_origin</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="n">width</span><span class="o">/</span><span class="mf">2.0f</span><span class="p">,</span> <span class="n">height</span><span class="o">/</span><span class="mf">2.0f</span><span class="p">);</span> <span class="c1">// width and height are the screen sizes, so we can focus on the center
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">camera</span><span class="o">-&gt;</span><span class="n">pos</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="mf">250.0f</span><span class="p">,</span><span class="mf">100.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">camera</span><span class="o">-&gt;</span><span class="n">set_zoom</span><span class="p">(</span><span class="mf">2.0f</span><span class="p">);</span>
+</span></span></code></pre></div><p>Now to actually draw.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPushMatrix</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">glLoadIdentity</span><span class="p">();</span>	
+</span></span><span class="line"><span class="cl"><span class="c1">// Get our transformation matrix
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Matrix</span> <span class="n">mat</span> <span class="o">=</span> <span class="n">camera</span><span class="o">-&gt;</span><span class="n">get_transformation</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Convert it to a float 16
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">float</span> <span class="n">m</span><span class="p">[</span><span class="mi">16</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">mat</span><span class="p">.</span><span class="n">to_mat4</span><span class="p">(</span><span class="n">m</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/* Send matrix to opengl*/</span>
+</span></span><span class="line"><span class="cl"><span class="n">glMultMatrixf</span><span class="p">(</span><span class="n">m</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Draw anything we want
+</span></span></span></code></pre></div><p>This code can be optimized in many ways, but the idea here is to be simple enough to understand, that is the most important.</p>
+<p>Download: <a href="/blog_tutorials/OpenGLCamera2D.rar">OpenGLCamera2D.rar</a></p>
+<blockquote>
+<p>This is a VS 2010 project using GLFW for window creation. I usually don’t use GLFW but this kept me for writing a bunch of window handling code. You can use whatever library you want, this was just to keep the project as clean as possible.<br>
+Arrow Keys- Camera movement<br>
+Page Up/Down – Camera Rotation<br>
+Home/End – Camera zoom</p>
+</blockquote>
+<p>As always let me know if you find any problems/bugs with the article. I wrote all this code late last night so that’s usually recipe for doom.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>OpenGL 2D Independent Resolution Rendering</title>
@@ -28,6 +118,98 @@ Some of them where just subtracting the camera position to all objects drawn, bu
       <guid>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
       <description>Around two years ago I made a tutorial for XNA in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.
 As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</description>
+      <content:encoded><![CDATA[<p>Around two years ago I made a <a href="/2010/03/xna-2d-independent-resolution-rendering/" title="XNA 2D Independent Resolution Rendering">tutorial for XNA</a> in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.</p>
+<p>As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</p>
+<p>The code is quite straight forward actually. In case you are not familiar with what we are trying to achieve here I recommend my other tutorial first, where I explain this is more detail.</p>
+<p>So first we need to set our viewport with proper letterbox or pillar box, if required.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Let&#39;s start by clearing the whole screen with black
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glClearColor</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">1.0f</span><span class="p">);</span>	
+</span></span><span class="line"><span class="cl"><span class="n">glClear</span><span class="p">(</span><span class="n">GL_COLOR_BUFFER_BIT</span> <span class="o">|</span> <span class="n">GL_DEPTH_BUFFER_BIT</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Both these values must be your real window size, so of course these values can&#39;t be static
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">screen_width</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">;</span>  
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">screen_height</span> <span class="o">=</span> <span class="mi">728</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// This is your target virtual resolution for the game, the size you built your game to
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">virtual_width</span><span class="o">=</span><span class="mi">1280</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">virtual_height</span><span class="o">=</span><span class="mi">720</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">targetAspectRatio</span> <span class="o">=</span> <span class="n">virtual_width</span><span class="o">/</span><span class="n">virtual_height</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl"><span class="c1">// figure out the largest area that fits in this resolution at the desired aspect ratio
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">width</span> <span class="o">=</span> <span class="n">screen_width</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">height</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">width</span> <span class="o">/</span> <span class="n">targetAspectRatio</span> <span class="o">+</span> <span class="mf">0.5f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">height</span> <span class="o">&gt;</span> <span class="n">screen_height</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="c1">//It doesn&#39;t fit our height, we must switch to pillarbox then
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">height</span> <span class="o">=</span> <span class="n">screen_height</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">width</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">height</span> <span class="o">*</span> <span class="n">targetAspectRatio</span> <span class="o">+</span> <span class="mf">0.5f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// set up the new viewport centered in the backbuffer
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">vp_x</span> <span class="o">=</span> <span class="p">(</span><span class="n">screen_width</span>  <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">vp_y</span> <span class="o">=</span> <span class="p">(</span><span class="n">screen_height</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">height</span><span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">   
+</span></span><span class="line"><span class="cl"><span class="n">glViewport</span><span class="p">(</span><span class="n">vp_x</span><span class="p">,</span><span class="n">vp_y</span><span class="p">,</span><span class="n">width</span><span class="p">,</span><span class="n">height</span><span class="p">);</span>
+</span></span></code></pre></div><p>Now that our viewport is set we should set our 2d perspective</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Now we use glOrtho
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_PROJECTION</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPushMatrix</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">glLoadIdentity</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// This function is for Mac and Windows only, if you are using
+</span></span></span><span class="line"><span class="cl"><span class="c1">// iOS you should use glOrthof instead
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glOrtho</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">screen_width</span><span class="p">,</span> <span class="n">screen_height</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/*if on iOS*/</span> <span class="c1">//glOrthof(0, screen_width, screen_height, 0, -1, 1);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPushMatrix</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">glLoadIdentity</span><span class="p">();</span>
+</span></span></code></pre></div><p>So now we should push the transformations before actually drawing anything</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Push in scale transformations
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPushMatrix</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//Now to calculate the scale considering the screen size and virtual size
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">float</span> <span class="n">scale_x</span> <span class="o">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)((</span><span class="kt">float</span><span class="p">)(</span><span class="n">screen_width</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">virtual_width</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">scale_y</span> <span class="o">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)((</span><span class="kt">float</span><span class="p">)(</span><span class="n">screen_height</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">virtual_height</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glScalef</span><span class="p">(</span><span class="n">scale_x</span><span class="p">,</span> <span class="n">scale_y</span><span class="p">,</span> <span class="mf">1.0f</span><span class="p">);</span>		
+</span></span></code></pre></div><p>We can now proceed to drawing everything we want, that’s is really up to you now.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Place your sprites drawing code here
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Example
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glBegin</span><span class="p">(</span><span class="n">GL_TRIANGLES</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glColor3f</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glVertex3f</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glVertex3f</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glVertex3f</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glEnd</span><span class="p">();</span>
+</span></span></code></pre></div><p>I really don’t recommend using glBegin() and glEnd(), this was just for simplicity, you should use glDrawElements or glDrawArrays</p>
+<p>After you finish you drawing code we can proceed to the rest</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// This pops those matrices for the scale transformations.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glLoadIdentity</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPopMatrix</span><span class="p">();</span>		
+</span></span></code></pre></div><p>//Now to finish we should end our 2D perspective</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_PROJECTION</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPopMatrix</span><span class="p">();</span>   
+</span></span><span class="line"><span class="cl"><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPopMatrix</span><span class="p">();</span>	
+</span></span></code></pre></div><p>And that’s pretty much it. I have this code on my games and it works fine, at least for what I usually need. Feel free to tweak it around for your needs. Hope this helps to get a picture on how to achieve this effect. Let me know if you find any bug.</p>
+<p>Here’s an example of what you might achieve with this</p>
+<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg" alt="Base_1280x720_Res_1280x800"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg" alt="Base_1280x720_Res_800x600"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg" alt="Base_1024x768_Res_800x600"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg" alt="Base_1280x720_Res_480x640"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg" alt="Base_1024x768_Res_1280x720"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Xbox 360 Controller Input in C&#43;&#43; via XInput</title>
@@ -39,6 +221,211 @@ On XNA this is an out of the box option but if you’re using C++ you have a bit
 First of all, you will need the DirecX 9.0+ sdk.
 The includes.
 #define WIN32_LEAN_AND_MEAN // We don&amp;#39;t want the extra stuff like MFC and such #include &amp;lt;windows&amp;gt; #include &amp;lt;XInput.h&amp;gt; // XInput API #pragma comment(lib, &amp;#34;XInput.</description>
+      <content:encoded><![CDATA[<p>So you have that Xbox360 controller laying around and want to connect it to your game?</p>
+<p>On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.</p>
+<p>First of all, you will need the DirecX 9.0+ sdk.</p>
+<p>The includes.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#define WIN32_LEAN_AND_MEAN </span><span class="c1">// We don&#39;t want the extra stuff like MFC and such
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#include</span> <span class="cpf">&lt;windows&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;XInput.h&gt;</span><span class="cp">     </span><span class="c1">// XInput API
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#pragma comment(lib, &#34;XInput.lib&#34;)   </span><span class="c1">// Library. If your compiler doesn&#39;t support this type of lib include change to the corresponding one
+</span></span></span></code></pre></div><p>Let’s define the buttons</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">typedef</span> <span class="k">enum</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_UP</span>          <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_DOWN</span>        <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_LEFT</span>        <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_DPAD_RIGHT</span>       <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_START</span>            <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_BACK</span>             <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_LEFT_THUMB</span>       <span class="o">=</span> <span class="mi">6</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_RIGHT_THUMB</span>      <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_LEFT_SHOULDER</span>    <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_RIGHT_SHOULDER</span>   <span class="o">=</span> <span class="mi">9</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_A</span>                <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_B</span>                <span class="o">=</span> <span class="mi">11</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_X</span>                <span class="o">=</span> <span class="mi">12</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_Y</span>                <span class="o">=</span> <span class="mi">13</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadButton_Max</span> <span class="o">=</span>             <span class="mi">14</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="n">GamePadButton</span><span class="p">;</span>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/04/450px-360_controller.svg_.jpg" alt=""  title="450px-360_controller.svg"  />
+</p>
+<p>After some digging I don’t think Microsoft exposes access to the Guide button, let me know if you find anything. Anyway it’s not something we need on Windows.</p>
+<p>Now the GamePadIndexes</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// GamePad Indexes
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">typedef</span> <span class="k">enum</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_One</span> <span class="o">=</span>  <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_Two</span> <span class="o">=</span>  <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_Three</span> <span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadIndex_Four</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="n">GamePadIndex</span><span class="p">;</span>
+</span></span></code></pre></div><p>The GamePadIndex is to define the player position. Like on the Xbox360, this way we can control up to 4 controllers.</p>
+<p>We need something to store the GamePad state</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// The GamePad State Stuct, were we store the buttons positions
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">struct</span> <span class="nc">GamePadState</span> 
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">bool</span>		<span class="n">_buttons</span><span class="p">[</span><span class="n">GamePadButton_Max</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Vector2</span> 	<span class="n">_left_thumbstick</span><span class="p">;</span>               <span class="c1">// &lt;= I&#39;m using a Vector2 (floats) class but you can replaced it with a float X and Y or whatever your Vector2 class is
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">Vector2</span>	        <span class="n">_right_thumbstick</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span>		<span class="n">_left_trigger</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span>		<span class="n">_right_trigger</span><span class="p">;</span>	
+</span></span><span class="line"><span class="cl">	<span class="c1">// Just to clear all values to default
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kt">void</span> <span class="nf">reset</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">GamePadButton_Max</span><span class="p">;</span><span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="n">_buttons</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_left_thumbstick</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_right_thumbstick</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_left_trigger</span> <span class="o">=</span> <span class="n">_right_trigger</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">	
+</span></span></code></pre></div><p>Now a small class</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">GamePadXbox</span> 
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span> 
+</span></span><span class="line"><span class="cl">	<span class="n">GamePadXbox</span><span class="p">(</span><span class="n">GamePadIndex</span> <span class="n">player</span><span class="p">)</span>			
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">_playerIndex</span> <span class="o">=</span> <span class="n">player</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">State</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">virtual</span> <span class="o">~</span><span class="n">GamePadXbox</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// We don&#39;t want the controller to be vibrating accidentally when we exit the app
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="k">if</span><span class="p">(</span><span class="n">is_connected</span><span class="p">())</span> <span class="n">vibrate</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span><span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kt">bool</span> <span class="nf">is_connected</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">void</span> <span class="nf">vibrate</span><span class="p">(</span><span class="kt">float</span> <span class="n">leftmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="kt">float</span> <span class="n">rightmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">void</span> <span class="nf">update</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">   <span class="n">GamePadState</span>	<span class="n">State</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">   <span class="n">XINPUT_STATE</span> <span class="n">_controllerState</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="n">GamePadIndex</span> <span class="n">_playerIndex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>Now, onto the GamePadXbox::is_connected()</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">bool</span> <span class="nf">is_connected</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">// clean the state
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">_controllerState</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">XINPUT_STATE</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     <span class="c1">// Get the state
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="n">DWORD</span> <span class="n">Result</span> <span class="o">=</span> <span class="n">XInputGetState</span><span class="p">(</span><span class="n">_controllerNum</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">_controllerState</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     <span class="k">if</span><span class="p">(</span><span class="n">Result</span> <span class="o">==</span> <span class="n">ERROR_SUCCESS</span><span class="p">)</span>	<span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="k">else</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Documentation for the XInputGetState is <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.reference.xinputgetstate%28v=vs.85%29.aspx">here</a>.</p>
+<p>Onto the vibrate function. Now, the Vibration accepts values between 0 and 65535. But we don&rsquo;t want to be typing that every time so the vibrate accepts from a range of 0.0f (0) to 1.0f (65535);</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">vibrate</span><span class="p">(</span><span class="kt">float</span> <span class="n">leftmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="kt">float</span> <span class="n">rightmotor</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Create a new Vibraton 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">XINPUT_VIBRATION</span> <span class="n">Vibration</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Vibration</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">XINPUT_VIBRATION</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">leftVib</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">leftmotor</span><span class="o">*</span><span class="mf">65535.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">rightVib</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">rightmotor</span><span class="o">*</span><span class="mf">65535.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Set the Vibration Values
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">Vibration</span><span class="p">.</span><span class="n">wLeftMotorSpeed</span> <span class="o">=</span> <span class="n">leftVib</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Vibration</span><span class="p">.</span><span class="n">wRightMotorSpeed</span> <span class="o">=</span> <span class="n">rightVib</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Vibrate the controller
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">XInputSetState</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="n">_controllerNum</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">Vibration</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>On the destructor I&rsquo;ve placed the vibrate at 0.0f otherwise the controller may be left vibrating after your game exits until the user unplugs it.</p>
+<p>Finally, the update() function. Now this one is more out of convenience, since you could get the state straight out of  XINPUT_STATE but I think this is a more consistent way of doing it. You can decide how you want on yours.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">State</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// The values of the Left and Right Triggers go from 0 to 255. We just convert them to 0.0f=&gt;1.0f
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bRightTrigger</span> <span class="o">&amp;&amp;</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bRightTrigger</span> <span class="o">&lt;</span> <span class="n">XINPUT_GAMEPAD_TRIGGER_THRESHOLD</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">State</span><span class="p">.</span><span class="n">_right_trigger</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bRightTrigger</span><span class="o">/</span><span class="mf">255.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bLeftTrigger</span> <span class="o">&amp;&amp;</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bLeftTrigger</span> <span class="o">&lt;</span> <span class="n">XINPUT_GAMEPAD_TRIGGER_THRESHOLD</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">State</span><span class="p">.</span><span class="n">_left_trigger</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">bLeftTrigger</span><span class="o">/</span><span class="mf">255.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">       <span class="c1">// Get the Buttons
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_A</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_A</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_B</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_B</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_X</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_X</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_Y</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_Y</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">wButtons</span> <span class="o">&amp;</span> <span class="n">XINPUT_GAMEPAD_DPAD_DOWN</span><span class="p">)</span> <span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_DPAD_DOWN</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// The Rest is missing, you can figure out the rest :)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 
+</span></span><span class="line"><span class="cl"><span class="p">....</span>
+</span></span><span class="line"><span class="cl">             <span class="p">(</span><span class="n">ThumbSticks</span> <span class="n">code</span> <span class="n">below</span><span class="p">)</span>   
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>For getting all buttons here are the official flags according to msdn</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_UP</span>          <span class="mh">0x00000001</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_DOWN</span>        <span class="mh">0x00000002</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_LEFT</span>        <span class="mh">0x00000004</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_DPAD_RIGHT</span>       <span class="mh">0x00000008</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_START</span>            <span class="mh">0x00000010</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_BACK</span>             <span class="mh">0x00000020</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_LEFT_THUMB</span>       <span class="mh">0x00000040</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_RIGHT_THUMB</span>      <span class="mh">0x00000080</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_LEFT_SHOULDER</span>    <span class="mh">0x0100</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_RIGHT_SHOULDER</span>   <span class="mh">0x0200</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_A</span>                <span class="mh">0x1000</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_B</span>                <span class="mh">0x2000</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_X</span>                <span class="mh">0x4000</span>
+</span></span><span class="line"><span class="cl"><span class="n">XINPUT_GAMEPAD_Y</span>                <span class="mh">0x8000</span>
+</span></span></code></pre></div><p>The ThumbSticks are a bit more tricky. They return 2 axis each but you have to make sure they are not in the deadzone. The deadzone pretty much are values !=0 but that are not relevant and can lead to errors.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Check to make sure we are not moving during the dead zone
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// Let&#39;s check the Left DeadZone
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">if</span><span class="p">(</span> <span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLX</span>  <span class="o">-</span><span class="n">XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">(</span><span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLY</span>  <span class="o">-</span><span class="n">XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE</span><span class="p">)</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>    
+</span></span><span class="line"><span class="cl">	<span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLX</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLY</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// Check left thumbStick
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> 
+</span></span><span class="line"><span class="cl">  <span class="kt">float</span> <span class="n">leftThumbY</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLY</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">(</span><span class="n">leftThumbY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">State</span><span class="p">.</span><span class="n">_left_thumbstick</span><span class="p">.</span><span class="n">Y</span> <span class="o">=</span> <span class="n">leftThumbY</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">float</span> <span class="n">leftThumbX</span> <span class="o">=</span> <span class="n">_controllerState</span><span class="p">.</span><span class="n">Gamepad</span><span class="p">.</span><span class="n">sThumbLX</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">(</span><span class="n">leftThumbX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">State</span><span class="p">.</span><span class="n">_left_thumbstick</span><span class="p">.</span><span class="n">X</span> <span class="o">=</span> <span class="n">leftThumbX</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>    
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">  <span class="c1">// For the rightThumbstick it&#39;s pretty much the same.
+</span></span></span></code></pre></div><p>So how would we use this then?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="n">GamePadXbox</span><span class="o">*</span> <span class="n">pad</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GamePadXbox</span><span class="p">(</span><span class="n">GamePadIndex_One</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     
+</span></span><span class="line"><span class="cl">     <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">     <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="k">if</span><span class="p">(</span><span class="n">pad</span><span class="o">-&gt;</span><span class="n">is_connected</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">       <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="n">pad</span><span class="o">-&gt;</span><span class="n">update</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">          <span class="k">if</span><span class="p">(</span><span class="n">pad</span><span class="o">-&gt;</span><span class="n">State</span><span class="p">.</span><span class="n">_buttons</span><span class="p">[</span><span class="n">GamePad_Button_BACK</span><span class="p">]</span><span class="o">==</span><span class="nb">true</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">}</span>   
+</span></span><span class="line"><span class="cl">     <span class="p">}</span>
+</span></span><span class="line"><span class="cl">     <span class="k">delete</span> <span class="n">pad</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Anyway, most of this code is not elegant or &ldquo;pretty&rdquo; but it should work, the idea is for you to understand the concept, the rest is up to you.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Using Git for revision control</title>
@@ -49,6 +436,38 @@ The includes.
 Are you using? Cool. Is it Git? Smart choice, so you probably don’t need to read the rest of this post.
 For the rest I’m giving some help on how to start from scratch.
 First of all I recommend some reading on Revision Control so that you understand what I’m talking about.</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2011/07/header.gif" alt=""  title="header"  />
+<br>
+If you are coding, no matter what it is, games, software, websites, you should be using a code revision control of some sort.<br>
+Are you using? Cool. Is it Git? Smart choice, so you probably don’t need to read the rest of this post.</p>
+<p>For the rest I’m giving some help on how to start from scratch.</p>
+<p>First of all I recommend some reading on <a href="http://en.wikipedia.org/wiki/Revision_control">Revision Control</a> so that you understand what I’m talking about.</p>
+<p>Start by going to Git download page and get the proper one for your system, there’s a Windows, Mac and Linux version.</p>
+<p><a href="http://git-scm.com/download"><img loading="lazy" src="/wp-content/uploads/2011/07/Screen-shot-2011-07-08-at-1.11.10-PM.png" alt=""  title="Screen shot 2011-07-08 at 1.11.10 PM"  />
+</a></p>
+<p>Next step, to configure it.<br>
+Start by opening a Git Bash Console (Windows) or a Terminal (Mac) and do the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="n">global</span> <span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="s">&#34;Your Name&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="n">global</span> <span class="n">user</span><span class="p">.</span><span class="n">email</span> <span class="s">&#34;Your email&#34;</span>
+</span></span></code></pre></div><p>Navigate to your projects folder and do something like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">mkdir</span> <span class="s">&#34;folder name&#34;</span> <span class="c1">//This creates your folder, let&#39;s say your game is called Asteroids or something
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">cd</span> <span class="s">&#34;folder name&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">git</span> <span class="n">init</span>           <span class="c1">// Inits the folder as a Git repository     
+</span></span></span></code></pre></div><p>Now add some file on the folder, a readme.txt or something like that and do this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">git</span> <span class="n">add</span> <span class="n">readme</span><span class="p">.</span><span class="n">txt</span>   <span class="c1">// This adds the file to the repository
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="err">&#39;</span><span class="n">My</span> <span class="n">first</span> <span class="n">commit</span><span class="err">&#39;</span> <span class="c1">// Makes a commit with a message
+</span></span></span></code></pre></div><p>There you have it, readme.txt is now part of the repository.<br>
+Now try changing the contents of the file, save it and commit again with another message.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="err">&#39;</span><span class="n">Changed</span> <span class="n">readme</span><span class="p">.</span><span class="n">txt</span><span class="err">&#39;</span>
+</span></span></code></pre></div><p>Git keeps an historic of what was changed =)</p>
+<p>For using Git you don’t require to have a dedicated machine for this but for obvious reasons it’s nice to have a web repository that you can access anywhere you go. Let’s say you are working on your desktop, need to go away for a week, you push everything to the server, and keep working on your laptop. Cool right?</p>
+<p>I’ve used a couple of online services and lately I’ve switched to <a href="https://github.com/">github</a>. It’s entirely free if you want to do open-source code or don’t care if others see it. If you need private repositories there are cheap plans available.</p>
+<p>I’ll do a more detailed post another time with some of the advanced features.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Making Big Grass Tiled Backgrounds in XNA</title>
@@ -58,6 +477,30 @@ First of all I recommend some reading on Revision Control so that you understand
       <description>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:
 I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?
 My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.</description>
+      <content:encoded><![CDATA[<p>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:</p>
+<blockquote>
+<p>I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?</p>
+</blockquote>
+<p>My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.</p>
+<p>The drawing lots of small images can actually work, if they are few. Let’s say your small texture size is 64×64. That means in order to fill up the 3000×3000 you have to draw it (3000/64) = 47 times. Since it’s a 3000×3000 that sums to (47×47) = 2209 Draws. Just for a background. Not to mention the rest of the actual game 😛</p>
+<p>What if you could do this in just one Draw()?</p>
+<p>It’s very very easy to achieve this effect by setting TextureAddressMode to Wrap. Basically giving it a bigger Rectangle but telling to wrap the texture so you are gonna get tiles =)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">     <span class="n">spriteBatch</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="n">SpriteBlendMode</span><span class="p">.</span><span class="n">AlphaBlend</span><span class="p">,</span><span class="n">SpriteSortMode</span><span class="p">.</span><span class="n">Immediate</span><span class="p">,</span><span class="n">SaveStateMode</span><span class="p">.</span><span class="n">None</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     <span class="n">GraphicsDevice</span><span class="p">.</span><span class="n">SamplerStates</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">AddressU</span> <span class="p">=</span> <span class="n">TextureAddressMode</span><span class="p">.</span><span class="n">Wrap</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">     <span class="n">GraphicsDevice</span><span class="p">.</span><span class="n">SamplerStates</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">AddressV</span> <span class="p">=</span> <span class="n">TextureAddressMode</span><span class="p">.</span><span class="n">Wrap</span><span class="p">;</span>
+</span></span></code></pre></div><p>Next we draw a texture with a big source rectangle</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">     <span class="n">Rectangle</span> <span class="n">source</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">400</span><span class="p">,</span> <span class="m">200</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     <span class="n">spriteBatch</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">texture</span><span class="p">,</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">Color</span><span class="p">.</span><span class="n">White</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="m">1.0f</span><span class="p">,</span> <span class="n">SpriteEffects</span><span class="p">.</span><span class="n">None</span><span class="p">,</span> <span class="m">0.5f</span><span class="p">);</span>
+</span></span></code></pre></div><p>So instead of this:</p>
+<p><a href="/wp-content/uploads/2010/04/tiling_01.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_01-300x234.jpg" alt=""  title="tiling_01"  />
+</a></p>
+<p>You end up with this:</p>
+<p><a href="/wp-content/uploads/2010/04/tiling_02.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_02-300x234.jpg" alt=""  title="tiling_02"  />
+</a></p>
+<p>On a small test I made, using a 30000×30000 Rectangle I got a frame drop to 35 FPS by doing tons of regular Draws, when switching to Wrap mode a solid 60 FPS.</p>
+<p>As I told you it’s very easy. I’ll write more advance tutorial one of this days on how to achieve cool effect like mixing two textures with a noise/normal map.</p>
+<p>You can play with this sample by downloading it <a href="/xna_code/TilingSprites.zip">here</a>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>XNA 2D Independent Resolution Rendering</title>
@@ -68,6 +511,43 @@ My answer is neither of them. The big image has a huge impact on every Draw and 
 Independent Resolution Rendering?? What’s this all about?
 Basically a way of not caring what you resolution is. Ever had Gui elements misplaced because you changed the resolution? Or getting out of the screen?
 If you are doing a game on Xna just for Xbox360 you can basically use a 1280×720 base resolution and the Xbox will scale the game for you making the proper Letterbox.</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>Note: 22/04/2013 – Due to popular request I made an <a href="/2013/04/opengl-2d-independent-resolution-rendering/" title="OpenGL 2D Independent Resolution Rendering">article</a> about achieving this effect in OpenGL</p>
+</blockquote>
+<p>Independent Resolution Rendering?? What’s this all about?</p>
+<p>Basically a way of not caring what you resolution is. Ever had Gui elements misplaced because you changed the resolution? Or getting out of the screen?</p>
+<p>If you are doing a game on Xna just for Xbox360 you can basically use a 1280×720 base resolution and the Xbox will scale the game for you making the proper Letterbox.</p>
+<p>But what about on Windows? Or if you use a different resolution on the Xbox? You have to manage that yourself.</p>
+<p>I’ve made a small example on how to achieve this.</p>
+<p>By the means of a class that I called Resolution ( just change it for whatever you feel it’s better) you can set both Virtual and Actual Resolution. Virtual or Base resolution is what I call the actual resolution in which I’ll work everything, and you stick with it, for both moving sprites, calculations etc. It’s your working Resolution. The other one is the resolution at which the game is rendering, which we want to be independent of the game. So the class will scale your Virtual to the Actual, making a <a href="http://en.wikipedia.org/wiki/Letterbox">LetterBox</a> or a <a href="http://en.wikipedia.org/wiki/Pillarbox">PillarBox</a> to match them.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Resolution</span><span class="p">.</span><span class="n">SetVirtualResolution</span><span class="p">(</span><span class="m">1280</span><span class="p">,</span> <span class="m">720</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">Resolution</span><span class="p">.</span><span class="n">SetResolution</span><span class="p">(</span><span class="m">800</span><span class="p">,</span> <span class="m">600</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+</span></span></code></pre></div><p>This is telling that you are working as if the game is on a 1280×720 but it is rendering on a window of 800×600.<br>
+The third flag is fullscreen or windowed.</p>
+<p>On the main Draw Pump just add the following so that the class can make the appropriate viewport.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Resolution</span><span class="p">.</span><span class="n">BeginDraw</span><span class="p">();</span>
+</span></span></code></pre></div><p>Next whenever you make a SpriteBatch.Begin() you have to pass the Resolution Scale Matrix as the forth parameter:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="n">SpriteBlendMode</span><span class="p">.</span><span class="n">AlphaBlend</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                   <span class="n">SpriteSortMode</span><span class="p">.</span><span class="n">Immediate</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                   <span class="n">SaveStateMode</span><span class="p">.</span><span class="n">SaveState</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                   <span class="n">Resolution</span><span class="p">.</span><span class="n">getTransformationMatrix</span><span class="p">());</span>
+</span></span></code></pre></div><p>Now you can draw everything on the same way you would normally do</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">_texture</span><span class="p">,</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="n">Color</span><span class="p">.</span><span class="n">White</span><span class="p">);</span>
+</span></span></code></pre></div><p>This said you can now change to different Resolutions keeping the same base and the same code and this will scale everything for you, neat right?</p>
+<p>Here are a few screenshots of an application (using Machinarium) with a Virtual resolution of 1024×768 on different real resolutions</p>
+<p><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x800-300x193.jpg" alt=""  title="Base_1024x768_Res_1280x800"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg" alt=""  title="Base_1024x768_Res_1280x720"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1024x768.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1024x768-300x232.jpg" alt=""  title="Base_1024x768_Res_1024x768"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg" alt=""  title="Base_1024x768_Res_800x600"  />
+</a></p>
+<p>An another example (using Braid) with a Virtual Resolution of 1280×720</p>
+<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x720-300x175.jpg" alt=""  title="Base_1280x720_Res_1280x720"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg" alt=""  title="Base_1280x720_Res_1280x800"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg" alt=""  title="Base_1280x720_Res_800x600"  />
+</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg" alt=""  title="Base_1280x720_Res_480x640"  />
+</a></p>
+<p>You can download the project with the source <a href="/xna_code/IndependentResolutionRendering.zip">here</a>. Once again if you run into any mistakes (most probably 😛 ) let me know.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Drawing Lines in XNA</title>
@@ -77,6 +557,27 @@ If you are doing a game on Xna just for Xbox360 you can basically use a 1280×72
       <description>One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.
 Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.
 You can give it 2 points ( start and end point of course) and a color.</description>
+      <content:encoded><![CDATA[<p>One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.<br>
+Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.<br>
+You can give it 2 points ( start and end point of course) and a color. There’s an overload function that receives the Layer parameter.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">LineBatch</span><span class="p">::</span><span class="n">DrawLine</span><span class="p">(</span><span class="n">SpriteBatch</span> <span class="n">batch</span><span class="p">,</span> <span class="n">Color</span> <span class="n">color</span><span class="p">,</span> <span class="n">Vector2</span> <span class="n">point1</span><span class="p">,</span> <span class="n">Vector2</span> <span class="n">point2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">LineBatch</span><span class="p">::</span><span class="n">DrawLine</span><span class="p">(</span><span class="n">SpriteBatch</span> <span class="n">batch</span><span class="p">,</span> <span class="n">Color</span> <span class="n">color</span><span class="p">,</span> <span class="n">Vector2</span> <span class="n">point1</span><span class="p">,</span> <span class="n">Vector2</span> <span class="n">point2</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Layer</span><span class="p">);</span>
+</span></span></code></pre></div><p>LineBatch is a static class, you only need to call LineBatch::Init(GraphicsDevice) somewhere on your code.<br>
+Then use you can use like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">LineBatch</span><span class="p">.</span><span class="n">DrawLine</span><span class="p">(</span><span class="n">_spriteBatch</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                          <span class="n">Color</span><span class="p">.</span><span class="n">Black</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                          <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                          <span class="k">new</span> <span class="n">Vector2</span><span class="p">(</span><span class="m">100</span><span class="p">,</span><span class="m">300</span><span class="p">));</span>
+</span></span></code></pre></div><p>I’ve made a small unit test that you can <a href="/xna_code/LineBatch.rar">download here</a>. Try clicking the screen to set a start and end point.</p>
+<p><a href="/wp-content/uploads/2010/01/xna_linebatch.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/xna_linebatch-300x234.jpg" alt=""  title="xna_linebatch"  />
+</a></p>
+<p>Here’s a video showing the result:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/GiKPSF_e880" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
     <item>
       <title>Xna Screen Manager</title>
@@ -86,6 +587,60 @@ You can give it 2 points ( start and end point of course) and a color.</descript
       <description>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.
 A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.
 I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</description>
+      <content:encoded><![CDATA[<p>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.</p>
+<p>A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.</p>
+<p>I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"> <span class="kd">protected</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Update</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Tell ScreenManager to Update</span>
+</span></span><span class="line"><span class="cl">            <span class="n">SCREEN_MANAGER</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">protected</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Draw</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Tell ScreenManager to draw</span>
+</span></span><span class="line"><span class="cl">            <span class="n">SCREEN_MANAGER</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span></code></pre></div><p>This way we are telling the Screen Manager to handle the draws and Updates. And the ScreenManager then tell the active screen to Draw/Update.</p>
+<p>In this sample if you press the keys ‘m’ or ‘n’ you can switch from screen1 to screen2 and vice-versa. Notice that the color changes, you are inside a different Screen now.</p>
+<p>In order to add another screen it would be something simple as:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">    <span class="k">class</span> <span class="nc">Screen3</span> <span class="p">:</span> <span class="n">Screen</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="n">Screen1</span><span class="p">(</span><span class="n">GraphicsDevice</span> <span class="n">device</span><span class="p">)</span> <span class="p">:</span><span class="k">base</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="s">&#34;screen3&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kd">override</span> <span class="kt">bool</span> <span class="n">Init</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="n">Init</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Shutdown</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Shutdown</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Draw</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Update</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>You can tell the Screen Manager to switch screen by doing:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">SCREEN_MANAGER</span><span class="p">.</span><span class="n">goto_screen</span><span class="p">(</span><span class="s">&#34;screen3&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>Screen Manager then calls the virtual function shutdown() of the current screen and then the init() of the requested Screen, so you might want to always override them for your purposes.</p>
+<p>You’ll understand better by viewing the code itself. Use it in any way you want. I now this example may not be the best solution but it gives a good start to those wanting to implement their own.</p>
+<p><a href="/xna_code/ScreenManager.rar">Download the source</a>.</p>
+<p><!-- raw HTML omitted -->EDIT: <!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->(04-02-2010) Removed unused member _current; (Thanks Jason)<!-- raw HTML omitted --></p>
+]]></content:encoded>
     </item>
     <item>
       <title>How to do a XNA fps counter</title>
@@ -96,6 +651,58 @@ I’ve made a small project with a Screen Manager. The ScreenManager is static a
 So how can you measure your frame rate in XNA?
 Inside your game1 class declare these vars:
 SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fps = 0; On function LoadContent() do</description>
+      <content:encoded><![CDATA[<p><a href="http://en.wikipedia.org/wiki/Frame_rate">Frame rate</a> or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.</p>
+<p>So how can you measure your frame rate in XNA?</p>
+<p>Inside your game1 class declare these vars:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">SpriteFont</span>  <span class="n">_spr_font</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">_total_frames</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">_elapsed_time</span> <span class="p">=</span> <span class="m">0.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">_fps</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span></code></pre></div><p>On function LoadContent() do</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Put the name of the font</span>
+</span></span><span class="line"><span class="cl"><span class="n">_spr_font</span> <span class="p">=</span> <span class="n">Content</span><span class="p">.</span><span class="n">Load</span><span class="p">(</span><span class="s">&#34;kootenay&#34;</span><span class="p">);</span> <span class="n">you</span> <span class="n">have</span> <span class="k">on</span> <span class="n">your</span> <span class="n">project</span>
+</span></span></code></pre></div><p>On the update pump do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"> <span class="kd">protected</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Update</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Update</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_elapsed_time</span> <span class="p">+=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">gameTime</span><span class="p">.</span><span class="n">ElapsedGameTime</span><span class="p">.</span><span class="n">TotalMilliseconds</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">// 1 Second has passed</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">_elapsed_time</span> <span class="p">&gt;=</span> <span class="m">1000.0f</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">_fps</span> <span class="p">=</span> <span class="n">_total_frames</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="n">_total_frames</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="n">_elapsed_time</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">// Allows the game to exit</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">Keyboard</span><span class="p">.</span><span class="n">GetState</span><span class="p">().</span><span class="n">IsKeyDown</span><span class="p">(</span><span class="n">Keys</span><span class="p">.</span><span class="n">Escape</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="k">this</span><span class="p">.</span><span class="n">Exit</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span></code></pre></div><p>Finally on Draw function do:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">protected</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Draw</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Only update total frames when drawing</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_total_frames</span><span class="p">++;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">GraphicsDevice</span><span class="p">.</span><span class="n">Clear</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="n">CornflowerBlue</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">spriteBatch</span><span class="p">.</span><span class="n">Begin</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="n">spriteBatch</span><span class="p">.</span><span class="n">DrawString</span><span class="p">(</span><span class="n">_spr_font</span><span class="p">,</span> <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">&#34;FPS={0}&#34;</span><span class="p">,</span> <span class="n">_fps</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                <span class="k">new</span> <span class="n">Vector2</span><span class="p">(</span><span class="m">10.0f</span><span class="p">,</span> <span class="m">20.0f</span><span class="p">),</span> <span class="n">Color</span><span class="p">.</span><span class="n">White</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">spriteBatch</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span></code></pre></div><p>If everything went alright you should have a white counter on the upper left screen. You probably want to turn this into a drawable component or adjusting it to be an independent component on your engine.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2009/11/xna_fps_counter.png" alt="xna_fps_counter"  />
+</p>
+<p><strong>Here’s the project for VC# Express : <a href="/wp-content/uploads/2009/11/FpsCounter.zip">download</a></strong></p>
+<blockquote>
+<p>note: For those who have asked me why do I use a prefix _ on some variables. I use this to help me know which vars are members of the class and which aren’t. I don’t like using mPosition, instead I use _Position.</p>
+</blockquote>
+]]></content:encoded>
     </item>
     <item>
       <title>How to do a Xna Log file</title>
@@ -104,6 +711,85 @@ SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fp
       <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
       <description>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.
 Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</description>
+      <content:encoded><![CDATA[<p>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.</p>
+<p>Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</p>
+<p>I’ve recently build one for my engine Basalt so I decided to share the result, start by creating log type:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Log_Type</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ERROR</span> <span class="p">=</span> <span class="m">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">WARNING</span> <span class="p">=</span> <span class="m">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">INFO</span> <span class="p">=</span> <span class="m">2</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>Next, the class itself:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"> <span class="kd">public</span> <span class="kd">static</span> <span class="k">class</span> <span class="nc">Logger</span>
+</span></span><span class="line"><span class="cl">   <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">static</span> <span class="kd">protected</span> <span class="kt">bool</span>              <span class="n">_active</span><span class="p">;</span>  <span class="c1">// In case you want to deactivate the logger</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">static</span> <span class="kd">public</span> <span class="k">init</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_active</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#if</span> <span class="n">WINDOWS</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">StreamWriter</span> <span class="n">textOut</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StreamWriter</span><span class="p">(</span><span class="k">new</span> <span class="n">FileStream</span><span class="p">(</span><span class="s">&#34;log.html&#34;</span><span class="p">,</span> <span class="n">FileMode</span><span class="p">.</span><span class="n">Create</span><span class="p">,</span> <span class="n">FileAccess</span><span class="p">.</span><span class="n">Write</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">            <span class="n">textOut</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Log File&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">textOut</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">textOut</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;&lt;span style=&#34;</span><span class="n">font</span><span class="p">-</span><span class="n">family</span><span class="p">:</span> <span class="s">&#34;Kootenay&#34;</span><span class="p">;</span> <span class="n">color</span><span class="p">:</span> <span class="err">#</span><span class="m">000000</span><span class="p">;</span><span class="s">&#34;&gt;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">textOut</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Log started at &#34;</span> <span class="p">+</span> <span class="n">System</span><span class="p">.</span><span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="n">ToLongTimeString</span><span class="p">()+</span><span class="s">&#34;&lt;/span&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s"></span><span class="p">&lt;</span><span class="n">hr</span><span class="p">&gt;&lt;/</span><span class="n">hr</span><span class="p">&gt;</span><span class="s">&#34;);
+</span></span></span><span class="line"><span class="cl"><span class="s"></span>            <span class="n">textOut</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#endif</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">static</span> <span class="kd">public</span> <span class="kt">bool</span> <span class="n">Active</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_active</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">set</span> <span class="p">{</span> <span class="n">_active</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">static</span> <span class="kd">public</span> <span class="k">void</span> <span class="n">log</span><span class="p">(</span><span class="n">Log_Type</span> <span class="n">type</span><span class="p">,</span> <span class="kt">string</span> <span class="n">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#if</span> <span class="n">WINDOWS</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(!</span><span class="n">_active</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span> <span class="n">begin</span> <span class="p">=</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">switch</span> <span class="p">(</span><span class="n">type</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">case</span> <span class="n">Log_Type</span><span class="p">.</span><span class="n">ERROR</span><span class="p">:</span> <span class="n">begin</span> <span class="p">=</span> <span class="s">&#34;&lt;span style=&#34;</span><span class="n">color</span><span class="p">:</span> <span class="err">#</span><span class="m">00f000</span><span class="p">;</span><span class="s">&#34;&gt;&#34;</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="k">case</span> <span class="n">Log_Type</span><span class="p">.</span><span class="n">INFO</span><span class="p">:</span> <span class="n">begin</span> <span class="p">=</span> <span class="s">&#34;&lt;span style=&#34;</span><span class="n">color</span><span class="p">:</span> <span class="err">#</span><span class="m">0008f0</span><span class="p">;</span><span class="s">&#34;&gt;&#34;</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="k">case</span> <span class="n">Log_Type</span><span class="p">.</span><span class="n">WARNING</span><span class="p">:</span> <span class="n">begin</span> <span class="p">=</span> <span class="s">&#34;&lt;span style=&#34;</span><span class="n">color</span><span class="p">:</span> <span class="err">#</span><span class="m">00f</span><span class="n">f00</span><span class="p">;</span><span class="s">&#34;&gt;&#34;</span><span class="p">;</span> <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">text</span> <span class="p">=</span> <span class="n">begin</span><span class="p">+</span><span class="n">System</span><span class="p">.</span><span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="n">ToLongTimeString</span><span class="p">()</span> <span class="p">+</span> <span class="s">&#34; : &#34;</span> <span class="p">+</span> <span class="n">text</span> <span class="p">+</span> <span class="s">&#34;&lt;/span&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Output</span><span class="p">(</span><span class="n">text</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#endif</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">static</span> <span class="kd">private</span> <span class="k">void</span> <span class="n">Output</span><span class="p">(</span><span class="kt">string</span> <span class="n">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#if</span> <span class="n">WINDOWS</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">StreamWriter</span> <span class="n">textOut</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StreamWriter</span><span class="p">(</span><span class="k">new</span> <span class="n">FileStream</span><span class="p">(</span><span class="s">&#34;log.html&#34;</span><span class="p">,</span> <span class="n">FileMode</span><span class="p">.</span><span class="n">Append</span><span class="p">,</span> <span class="n">FileAccess</span><span class="p">.</span><span class="n">Write</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                <span class="n">textOut</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">text</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">textOut</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">catch</span> <span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">string</span> <span class="n">error</span> <span class="p">=</span> <span class="n">e</span><span class="p">.</span><span class="n">Message</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#endif</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">	
+</span></span></code></pre></div><p>For using just do on your game constructor:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Logger</span><span class="p">.</span><span class="k">init</span><span class="p">();</span>
+</span></span></code></pre></div><p>After this since it’s a static class you can do wherever you want a log, something like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Logger</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">Log_Type</span><span class="p">.</span><span class="n">INFO</span><span class="p">,</span><span class="s">&#34;Resolution Changed&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">Logger</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">Log_Type</span><span class="p">.</span><span class="n">ERROR</span><span class="p">,</span><span class="s">&#34;Unable to find texture XPTO&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>This will output a log.html file that you can open with your favorite browser.</p>
+<p><a href="/wp-content/uploads/2009/11/basalt_log.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/basalt_log-300x189.jpg" alt="basalt_log"  title="basalt_log"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Using PerfHUD with XNA</title>
@@ -111,6 +797,65 @@ Many have asked me why take time to do a log file when you can throw exceptions 
       <pubDate>Wed, 18 Nov 2009 15:16:54 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</guid>
       <description>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.</description>
+      <content:encoded><![CDATA[<p>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.<br>
+Anyway for those who have one and are developing for XNA you may have noticed that it doesn’t run PerfHUD out of the box.<br>
+You will get an error, something like:<br>
+<strong>“This applications is not configured for using PerfHUD. Consult the User’s Guide for more information”</strong></p>
+<p><img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_Error.jpg" alt="perfHUD_Error"  title="perfHUD_Error"  />
+]</p>
+<p>Luckily there’s a little trick we can use to fix this, first we create a new class:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// class that inherits from GraphicsDeviceManager</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">PerfHUDGraphicDeviceManager</span> <span class="p">:</span> <span class="n">GraphicsDeviceManager</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="n">PerfHUDGraphicDeviceManager</span><span class="p">(</span><span class="n">Game</span> <span class="n">game</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">:</span> <span class="k">base</span><span class="p">(</span><span class="n">game</span><span class="p">)</span> <span class="c1">// Pass game to base class</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// We override the RankDevices to search for a PerfHUD</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">protected</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">RankDevices</span><span class="p">(</span><span class="n">List</span> <span class="n">foundDevices</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">RankDevices</span><span class="p">(</span><span class="n">foundDevices</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">bool</span> <span class="n">has_perfHud</span> <span class="p">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">device</span> <span class="k">in</span> <span class="n">foundDevices</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">device</span><span class="p">.</span><span class="n">Adapter</span><span class="p">.</span><span class="n">Description</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="s">&#34;PerfHUD&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">has_perfHud</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Found PerfHUD</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">has_perfHud</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">var</span> <span class="n">temp</span> <span class="p">=</span> <span class="n">foundDevices</span><span class="p">.</span><span class="n">OrderBy</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">(</span><span class="n">gdi</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">!(</span><span class="n">gdi</span><span class="p">.</span><span class="n">Adapter</span><span class="p">.</span><span class="n">Description</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="s">&#34;PerfHUD&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="p">).</span><span class="n">ToArray</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="n">foundDevices</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                <span class="n">foundDevices</span><span class="p">.</span><span class="n">AddRange</span><span class="p">(</span><span class="n">temp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">dev</span> <span class="k">in</span> <span class="n">foundDevices</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">dev</span><span class="p">.</span><span class="n">DeviceType</span> <span class="p">=</span> <span class="n">DeviceType</span><span class="p">.</span><span class="n">Reference</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>This class basically searches for PerfHUD, so when you open it with it this class detects that the software exists and allows it’s usage. If not found, the regular GraphicDeviceManager is used. Now instead of creating a new GraphicsDeviceManager() on your Game class just do something like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Game1</span> <span class="p">:</span> <span class="n">Game</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="n">Game1</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">new</span> <span class="n">PerfHUDGraphicDeviceManager</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_run.png" alt="perfHUD_run"  title="perfHUD_run"  />
+]
+<img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_working_xna.jpg" alt="perfHUD_working_xna"  title="perfHUD_working_xna"  />
+]</p>
+<p>I hope this helps.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>XNA Camera 2d with zoom and rotation</title>
@@ -120,6 +865,92 @@ Many have asked me why take time to do a log file when you can throw exceptions 
       <description>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too
 One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
 Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself.</description>
+      <content:encoded><![CDATA[<p><strong>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too</strong></p>
+<p>One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.</p>
+<p>Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself. Although this work from my point of view it’s not elegant and you can’t have neat features like zooming and rotation. So for my tutorial I’ll do all transformations using a Matrix.<br>
+Start off by creating the basic class Camera2d</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Camera2d</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">protected</span> <span class="kt">float</span>          <span class="n">_zoom</span><span class="p">;</span> <span class="c1">// Camera Zoom</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">public</span> <span class="n">Matrix</span>             <span class="n">_transform</span><span class="p">;</span> <span class="c1">// Matrix Transform</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">public</span> <span class="n">Vector2</span>          <span class="n">_pos</span><span class="p">;</span> <span class="c1">// Camera Position</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">protected</span> <span class="kt">float</span>         <span class="n">_rotation</span><span class="p">;</span> <span class="c1">// Camera Rotation</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kd">public</span> <span class="n">Camera2d</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_zoom</span> <span class="p">=</span> <span class="m">1.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_rotation</span> <span class="p">=</span> <span class="m">0.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_pos</span> <span class="p">=</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Now that we have the basic setup onto the variables it’s time to create a couple of functions to manipulate the variables</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Sets and gets zoom</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kt">float</span> <span class="n">Zoom</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_zoom</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">set</span> <span class="p">{</span> <span class="n">_zoom</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">_zoom</span> <span class="p">&lt;</span> <span class="m">0.1f</span><span class="p">)</span> <span class="n">_zoom</span> <span class="p">=</span> <span class="m">0.1f</span><span class="p">;</span> <span class="p">}</span> <span class="c1">// Negative zoom will flip image</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="kd">public</span> <span class="kt">float</span> <span class="n">Rotation</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">get</span> <span class="p">{</span><span class="k">return</span> <span class="n">_rotation</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">set</span> <span class="p">{</span> <span class="n">_rotation</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">        <span class="c1">// Auxiliary function to move the camera</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="k">void</span> <span class="n">Move</span><span class="p">(</span><span class="n">Vector2</span> <span class="n">amount</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">           <span class="n">_pos</span> <span class="p">+=</span> <span class="n">amount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">// Get set position</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="n">Vector2</span> <span class="n">Pos</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">             <span class="k">get</span><span class="p">{</span> <span class="k">return</span>  <span class="n">_pos</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">             <span class="k">set</span><span class="p">{</span> <span class="n">_pos</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> 
+</span></span></code></pre></div><p>And now for the function that calculates all the transformations</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">Matrix</span> <span class="n">get_transformation</span><span class="p">(</span><span class="n">GraphicsDevice</span> <span class="n">graphicsDevice</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">_transform</span> <span class="p">=</span>       <span class="c1">// Thanks to o KB o for this solution</span>
+</span></span><span class="line"><span class="cl">	  <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateTranslation</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">(-</span><span class="n">_pos</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="p">-</span><span class="n">_pos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="m">0</span><span class="p">))</span> <span class="p">*</span>
+</span></span><span class="line"><span class="cl">								 <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateRotationZ</span><span class="p">(</span><span class="n">Rotation</span><span class="p">)</span> <span class="p">*</span>
+</span></span><span class="line"><span class="cl">								 <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateScale</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="n">Zoom</span><span class="p">,</span> <span class="n">Zoom</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span> <span class="p">*</span>
+</span></span><span class="line"><span class="cl">								 <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateTranslation</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="n">ViewportWidth</span> <span class="p">*</span> <span class="m">0.5f</span><span class="p">,</span> <span class="n">ViewportHeight</span> <span class="p">*</span> <span class="m">0.5f</span><span class="p">,</span> <span class="m">0</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">_transform</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>So now how can we use it?</p>
+<p>Simple on your sprite batch begin you must add the camera transformation.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Camera2d</span> <span class="n">cam</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Camera2d</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">cam</span><span class="p">.</span><span class="n">Pos</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector2</span><span class="p">(</span><span class="m">500.0f</span><span class="p">,</span><span class="m">200.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// cam.Zoom = 2.0f // Example of Zoom in</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// cam.Zoom = 0.5f // Example of Zoom out</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="cs">//// if using XNA 3.1</span>
+</span></span><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="n">SpriteBlendMode</span><span class="p">.</span><span class="n">AlphaBlend</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">SpriteSortMode</span><span class="p">.</span><span class="n">Immediate</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">SaveStateMode</span><span class="p">.</span><span class="n">SaveState</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">cam</span><span class="p">.</span><span class="n">get_transformation</span><span class="p">(</span><span class="n">device</span> <span class="cm">/*Send the variable that has your graphic device here*/</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="cs">//// if using XNA 4.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="n">SpriteSortMode</span><span class="p">.</span><span class="n">BackToFront</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">BlendState</span><span class="p">.</span><span class="n">AlphaBlend</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">cam</span><span class="p">.</span><span class="n">get_transformation</span><span class="p">(</span><span class="n">device</span> <span class="cm">/*Send the variable that has your graphic device here*/</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="c1">// Draw Everything</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// You can draw everything in their positions since the cam matrix has already done the maths for you </span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">End</span><span class="p">();</span> <span class="c1">// Call Sprite Batch End</span>
+</span></span></code></pre></div><p>Found any errors? Please let me know.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/InRm4ClDneI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<pre tabindex="0"><code></code></pre>]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>regular expressions on David Amador</title>
     <link>https://www.david-amador.com/tags/regular-expressions/</link>
@@ -23,6 +23,23 @@ But today I had this function I wanted to get rid of and simple change it with a
 So I had something like this.
 object-&amp;gt;setLayer(/*BLABAL BLA CODE, */); I want to replace it with something more simple
 object-&amp;gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in regular expressions mode I used this as a search string</description>
+      <content:encoded><![CDATA[<p>Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.</p>
+<p>But today I had this function I wanted to get rid of and simple change it with a public variable.</p>
+<p>So I had something like this.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">object</span><span class="o">-&gt;</span><span class="n">setLayer</span><span class="p">(</span><span class="cm">/*BLABAL BLA CODE, */</span><span class="p">);</span>
+</span></span></code></pre></div><p>I want to replace it with something more simple</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">object</span><span class="o">-&gt;</span><span class="n">Z</span> <span class="o">=</span> <span class="cm">/*BLABAL BLA CODE, */</span><span class="p">;</span>
+</span></span></code></pre></div><p>So using Visual Studio Find/Replace in regular expressions mode I used this as a search string</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">setLayer</span><span class="err">\</span><span class="p">({.</span><span class="o">+</span><span class="p">}</span><span class="err">\</span><span class="p">);</span>
+</span></span></code></pre></div><p>And this as a Replace with string</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">Z</span><span class="o">=</span><span class="err">\</span><span class="mi">1</span><span class="p">;</span>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/regular-expression.jpg" alt=""  title="regular expression"  />
+</p>
+<p>Now, notice the first one, it’s actually simple, you have “setLayer”, followed by “\(” to tell the expression we really need to be that character, after than we have “.+”, which means match any single character except a line break and at least one occurrence. Followed by “\);”</p>
+<p>Now if you notice we have curly brackets around the inside of what the function receives as parameter, that’s because we are tagging that string to use it later.</p>
+<p>This way on the replace we simply need “Z=” followed by the first tagged string we have “\1”. if we have more curly brackets it would be “\2”, “\3” etc.</p>
+<p>Check the full list for more options: <a href="http://msdn.microsoft.com/en-us/library/2k3te2cs%28v=vs.80%29.aspx">http://msdn.microsoft.com/en-us/library/2k3te2cs%28v=vs.80%29.aspx</a></p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

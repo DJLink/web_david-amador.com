@@ -47,13 +47,13 @@ Independent Resolution Rendering?? What’s this all about?
 Basically a way of not caring what you resolution is. Ever had Gui elements misplaced because you changed the resolution? Or getting out of the screen?
 If you are doing a game on Xna just for Xbox360 you can basically use a 1280×720 base resolution and the Xbox will scale the game for you making the proper Letterbox." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-03-26T22:03:31+00:00" />
 <meta property="article:modified_time" content="2010-03-26T22:03:31+00:00" /><meta property="og:site_name" content="David Amador" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg" />
 <meta name="twitter:title" content="XNA 2D Independent Resolution Rendering"/>
 <meta name="twitter:description" content="Note: 22/04/2013 – Due to popular request I made an article about achieving this effect in OpenGL
 Independent Resolution Rendering?? What’s this all about?
@@ -94,7 +94,7 @@ If you are doing a game on Xna just for Xbox360 you can basically use a 1280×72
   "articleBody": " Note: 22/04/2013 – Due to popular request I made an article about achieving this effect in OpenGL\nIndependent Resolution Rendering?? What’s this all about?\nBasically a way of not caring what you resolution is. Ever had Gui elements misplaced because you changed the resolution? Or getting out of the screen?\nIf you are doing a game on Xna just for Xbox360 you can basically use a 1280×720 base resolution and the Xbox will scale the game for you making the proper Letterbox.\nBut what about on Windows? Or if you use a different resolution on the Xbox? You have to manage that yourself.\nI’ve made a small example on how to achieve this.\nBy the means of a class that I called Resolution ( just change it for whatever you feel it’s better) you can set both Virtual and Actual Resolution. Virtual or Base resolution is what I call the actual resolution in which I’ll work everything, and you stick with it, for both moving sprites, calculations etc. It’s your working Resolution. The other one is the resolution at which the game is rendering, which we want to be independent of the game. So the class will scale your Virtual to the Actual, making a LetterBox or a PillarBox to match them.\nResolution.SetVirtualResolution(1280, 720); Resolution.SetResolution(800, 600, false); This is telling that you are working as if the game is on a 1280×720 but it is rendering on a window of 800×600.\nThe third flag is fullscreen or windowed.\nOn the main Draw Pump just add the following so that the class can make the appropriate viewport.\nResolution.BeginDraw(); Next whenever you make a SpriteBatch.Begin() you have to pass the Resolution Scale Matrix as the forth parameter:\nspriteBatch.Begin(SpriteBlendMode.AlphaBlend, SpriteSortMode.Immediate, SaveStateMode.SaveState, Resolution.getTransformationMatrix()); Now you can draw everything on the same way you would normally do\nspriteBatch.Draw(_texture, Vector2.Zero, Color.White); This said you can now change to different Resolutions keeping the same base and the same code and this will scale everything for you, neat right?\nHere are a few screenshots of an application (using Machinarium) with a Virtual resolution of 1024×768 on different real resolutions\nAn another example (using Braid) with a Virtual Resolution of 1280×720\nYou can download the project with the source here. Once again if you run into any mistakes (most probably 😛 ) let me know.\n",
   "wordCount" : "386",
   "inLanguage": "en",
-  "datePublished": "2010-03-26T22:03:31Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg","datePublished": "2010-03-26T22:03:31Z",
   "dateModified": "2010-03-26T22:03:31Z",
   "author":{
     "@type": "Person",
@@ -199,6 +199,9 @@ If you are doing a game on Xna just for Xbox360 you can basically use a 1280×72
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg" alt="">
+        
+</figure>
   <div class="post-content"><blockquote>
 <p>Note: 22/04/2013 – Due to popular request I made an <a href="/2013/04/opengl-2d-independent-resolution-rendering/" title="OpenGL 2D Independent Resolution Rendering">article</a> about achieving this effect in OpenGL</p>
 </blockquote>

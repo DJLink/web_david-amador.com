@@ -45,13 +45,13 @@ if (!doNotTrack) {
 Using rectangles to detect if the mouse is inside is handy for Buttons and rectangular shaped objects, but what about other irregular shaped objects?
 Taking this into account I decided to create a Polygon class that basically has a List of Vector3 points. Although I’m just covering 2D collision you should use Vector3 for a more generic class." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/11/testing-if-a-point-is-inside-a-polygon/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.david-amador.com/2010/11/testing-if-a-point-is-inside-a-polygon/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/11/5polygons.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-11-19T15:35:25+00:00" />
 <meta property="article:modified_time" content="2010-11-19T15:35:25+00:00" /><meta property="og:site_name" content="David Amador" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/11/5polygons.png" />
 <meta name="twitter:title" content="Testing if a point is inside a Polygon"/>
 <meta name="twitter:description" content="I’ve been playing with polygons and collisions lately so I decided to share some stuff.
 Using rectangles to detect if the mouse is inside is handy for Buttons and rectangular shaped objects, but what about other irregular shaped objects?
@@ -91,7 +91,7 @@ Taking this into account I decided to create a Polygon class that basically has 
   "articleBody": "I’ve been playing with polygons and collisions lately so I decided to share some stuff.\nUsing rectangles to detect if the mouse is inside is handy for Buttons and rectangular shaped objects, but what about other irregular shaped objects?\nTaking this into account I decided to create a Polygon class that basically has a List of Vector3 points. Although I’m just covering 2D collision you should use Vector3 for a more generic class.\nSomething like:\nclass Polygon { public Polygon() { _vertexes = new List\u003cVector3\u003e(); } public void add_vertex(Vector3 v) { _vertexes.Add(v); } public List\u003cVector3\u003e _vertexes; } Now to the collision itself. A way to check if the point is inside is to compute the sum of the angles made between the test point and each pair of points making up the polygon. If this sum is 2 pi then the point is an interior point, if 0 then the point is an exterior point.\nbool isInside(ref Polygon polygon, Vector2 point) { int i; double angle = 0; Vector2 p1, p2; int n = polygon.get_vertex_count(); for (i = 0; i \u003c n; i++) { p1.X = polygon._vertexes[i].X - point.X; p1.Y = polygon._vertexes[i].Y - point.Y; p2.X = polygon._vertexes[(i + 1) % n].X - point.X; p2.Y = polygon._vertexes[(i + 1) % n].Y - point.Y; angle += getAngle(p1.X, p1.Y, p2.X, p2.Y); } if (Math.Abs(angle) \u003c Math.PI) return false; else return true; } double getAngle(double x1, double y1, double x2, double y2) { double twoPI = 6.283185307179586476925287; // PI*2 double dtheta, theta1, theta2; theta1 = Math.Atan2(y1, x1); theta2 = Math.Atan2(y2, x2); dtheta = theta2 - theta1; while (dtheta \u003e Math.PI) dtheta -= twoPI; while (dtheta \u003c -Math.PI) dtheta += twoPI; return (dtheta); } That’s it for now. Robin, to the Code Cave!!!\n",
   "wordCount" : "288",
   "inLanguage": "en",
-  "datePublished": "2010-11-19T15:35:25Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2010/11/5polygons.png","datePublished": "2010-11-19T15:35:25Z",
   "dateModified": "2010-11-19T15:35:25Z",
   "author":{
     "@type": "Person",
@@ -196,6 +196,9 @@ Taking this into account I decided to create a Polygon class that basically has 
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/11/5polygons.png" alt="">
+        
+</figure>
   <div class="post-content"><p>I’ve been playing with polygons and collisions lately so I decided to share some stuff.</p>
 <p>Using rectangles to detect if the mouse is inside is handy for Buttons and rectangular shaped objects, but what about other irregular shaped objects?</p>
 <p><a href="/wp-content/uploads/2010/11/5polygons.png"><img loading="lazy" src="/wp-content/uploads/2010/11/5polygons.png" alt=""  title="5polygons"  />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>linus torvalds on David Amador</title>
     <link>https://www.david-amador.com/tags/linus-torvalds/</link>
@@ -20,6 +20,14 @@
       <guid>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</guid>
       <description>I recently found that there is a subversion alternative surfacing that is in many ways much better that subversion, it name is Git and it’s a creation of Linus Torvalds.
 Here’s a video of him talking about it</description>
+      <content:encoded><![CDATA[<p>I recently found that there is a subversion alternative surfacing that is in <a href="http://git.or.cz/gitwiki/GitSvnComparsion">many ways much better that subversion</a>, it name is <a href="http://git-scm.com">Git</a> and it’s a creation of Linus Torvalds.</p>
+<p>Here’s a video of him talking about it<br>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/4XpnKHJAok8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

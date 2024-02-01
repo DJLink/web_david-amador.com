@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>screen manager on David Amador</title>
     <link>https://www.david-amador.com/tags/screen-manager/</link>
@@ -21,6 +21,60 @@
       <description>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.
 A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.
 I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</description>
+      <content:encoded><![CDATA[<p>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.</p>
+<p>A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.</p>
+<p>I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"> <span class="kd">protected</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Update</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Tell ScreenManager to Update</span>
+</span></span><span class="line"><span class="cl">            <span class="n">SCREEN_MANAGER</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">protected</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Draw</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Tell ScreenManager to draw</span>
+</span></span><span class="line"><span class="cl">            <span class="n">SCREEN_MANAGER</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span></code></pre></div><p>This way we are telling the Screen Manager to handle the draws and Updates. And the ScreenManager then tell the active screen to Draw/Update.</p>
+<p>In this sample if you press the keys ‘m’ or ‘n’ you can switch from screen1 to screen2 and vice-versa. Notice that the color changes, you are inside a different Screen now.</p>
+<p>In order to add another screen it would be something simple as:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">    <span class="k">class</span> <span class="nc">Screen3</span> <span class="p">:</span> <span class="n">Screen</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="n">Screen1</span><span class="p">(</span><span class="n">GraphicsDevice</span> <span class="n">device</span><span class="p">)</span> <span class="p">:</span><span class="k">base</span><span class="p">(</span><span class="n">device</span><span class="p">,</span><span class="s">&#34;screen3&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kd">override</span> <span class="kt">bool</span> <span class="n">Init</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="n">Init</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Shutdown</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Shutdown</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Draw</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Update</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>You can tell the Screen Manager to switch screen by doing:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">SCREEN_MANAGER</span><span class="p">.</span><span class="n">goto_screen</span><span class="p">(</span><span class="s">&#34;screen3&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>Screen Manager then calls the virtual function shutdown() of the current screen and then the init() of the requested Screen, so you might want to always override them for your purposes.</p>
+<p>You’ll understand better by viewing the code itself. Use it in any way you want. I now this example may not be the best solution but it gives a good start to those wanting to implement their own.</p>
+<p><a href="/xna_code/ScreenManager.rar">Download the source</a>.</p>
+<p><!-- raw HTML omitted -->EDIT: <!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->(04-02-2010) Removed unused member _current; (Thanks Jason)<!-- raw HTML omitted --></p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

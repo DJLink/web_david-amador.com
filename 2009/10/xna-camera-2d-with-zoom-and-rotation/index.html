@@ -45,13 +45,13 @@ if (!doNotTrack) {
 One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
 Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2009/10/basalt_camera_2d.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2009-10-12T20:51:21+00:00" />
 <meta property="article:modified_time" content="2009-10-12T20:51:21+00:00" /><meta property="og:site_name" content="David Amador" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2009/10/basalt_camera_2d.jpg" />
 <meta name="twitter:title" content="XNA Camera 2d with zoom and rotation"/>
 <meta name="twitter:description" content="07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too
 One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
@@ -91,7 +91,7 @@ Most of the time the solution given is to have a class camera with a Vector2 pos
   "articleBody": "07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too\nOne of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.\nMost of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself. Although this work from my point of view it’s not elegant and you can’t have neat features like zooming and rotation. So for my tutorial I’ll do all transformations using a Matrix.\nStart off by creating the basic class Camera2d\npublic class Camera2d { protected float _zoom; // Camera Zoom public Matrix _transform; // Matrix Transform public Vector2 _pos; // Camera Position protected float _rotation; // Camera Rotation public Camera2d() { _zoom = 1.0f; _rotation = 0.0f; _pos = Vector2.Zero; } } Now that we have the basic setup onto the variables it’s time to create a couple of functions to manipulate the variables\n// Sets and gets zoom public float Zoom { get { return _zoom; } set { _zoom = value; if (_zoom \u003c 0.1f) _zoom = 0.1f; } // Negative zoom will flip image } public float Rotation { get {return _rotation; } set { _rotation = value; } } // Auxiliary function to move the camera public void Move(Vector2 amount) { _pos += amount; } // Get set position public Vector2 Pos { get{ return _pos; } set{ _pos = value; } } And now for the function that calculates all the transformations\npublic Matrix get_transformation(GraphicsDevice graphicsDevice) { _transform = // Thanks to o KB o for this solution Matrix.CreateTranslation(new Vector3(-_pos.X, -_pos.Y, 0)) * Matrix.CreateRotationZ(Rotation) * Matrix.CreateScale(new Vector3(Zoom, Zoom, 1)) * Matrix.CreateTranslation(new Vector3(ViewportWidth * 0.5f, ViewportHeight * 0.5f, 0)); return _transform; } So now how can we use it?\nSimple on your sprite batch begin you must add the camera transformation.\nCamera2d cam = new Camera2d(); cam.Pos = new Vector2(500.0f,200.0f); // cam.Zoom = 2.0f // Example of Zoom in // cam.Zoom = 0.5f // Example of Zoom out //// if using XNA 3.1 spriteBatch.Begin(SpriteBlendMode.AlphaBlend, SpriteSortMode.Immediate, SaveStateMode.SaveState, cam.get_transformation(device /*Send the variable that has your graphic device here*/)); //// if using XNA 4.0 spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend, null, null, null, null, cam.get_transformation(device /*Send the variable that has your graphic device here*/)); // Draw Everything // You can draw everything in their positions since the cam matrix has already done the maths for you spriteBatch.End(); // Call Sprite Batch End Found any errors? Please let me know.\n",
   "wordCount" : "433",
   "inLanguage": "en",
-  "datePublished": "2009-10-12T20:51:21Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2009/10/basalt_camera_2d.jpg","datePublished": "2009-10-12T20:51:21Z",
   "dateModified": "2009-10-12T20:51:21Z",
   "author":{
     "@type": "Person",
@@ -196,6 +196,9 @@ Most of the time the solution given is to have a class camera with a Vector2 pos
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2009/10/basalt_camera_2d.jpg" alt="">
+        
+</figure>
   <div class="post-content"><p><strong>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too</strong></p>
 <p>One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.</p>
 <p>Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself. Although this work from my point of view it’s not elegant and you can’t have neat features like zooming and rotation. So for my tutorial I’ll do all transformations using a Matrix.<br>

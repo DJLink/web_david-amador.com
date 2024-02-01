@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>rants on David Amador</title>
     <link>https://www.david-amador.com/tags/rants/</link>
@@ -20,6 +20,14 @@
       <guid>https://www.david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</guid>
       <description>See the little black country on the map? It’s Portugal. The green zone are countries around Portugal that have XBOX Live Indie Games. We are surrounded by countries that can place their games on Creator’s Club but we were left behind. I won’t say there aren’t many others but they can speak for themselves.
 I’m tired of watching developers from other countries being able to place their games there and we have to sit and watch.</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2010/06/xbox_live_europe.jpg" alt=""  title="xbox_live_europe"  />
+</p>
+<p>See the little black country on the map? It’s Portugal. The green zone are countries around Portugal that have XBOX Live Indie Games. We are surrounded by countries that can place their games on <a href="http://creators.xna.com/">Creator’s Club</a> but we were left behind. I won’t say there aren’t many others but they can speak for themselves.</p>
+<p>I’m tired of watching developers from other countries being able to place their games there and we have to sit and watch.</p>
+<p>Yeah I know there’s money involved and it’s not easy to add a country just because. Even more Portugal doesn’t have a great reputation on gaming and some even think we don’t have anything worth it (<a href="http://creators.xna.com/en-US/spotlight/MicrosoftPortugal">Microsoft XNA Pizza Night proved that wrong</a>) but we have a cool xna community that’s fading away and moving to other platforms because it’s not only about making games but also getting money from that.<br>
+If they can’t find it on Xbox they move to others, iPhone, PC etc.</p>
+<p>I have <a href="https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/">Vizati</a> ready for Playtesting and I’m waiting that someday we get XBLIG here. I hope that with the release of Windows Phone 7, which will be available here that some other doors might also open.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

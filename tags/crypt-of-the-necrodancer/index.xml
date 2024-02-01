@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Crypt of the Necrodancer on David Amador</title>
     <link>https://www.david-amador.com/tags/crypt-of-the-necrodancer/</link>
@@ -22,6 +22,21 @@
 I’ve been keeping this one a secret, but there’s going to a be a new class, a Necrodancer.
 Yes you guessed it, it’s an homage to Cadence from the awesome game Crypt of the Necrodancer, you should buy it btw!
 I’ve been thinking about adding a new class for some time but never quite found anything interesting, each character, in my mind has it’s own personality and charisma and I was having a hard time finding any other interesting class.</description>
+      <content:encoded><![CDATA[<p>Hi!</p>
+<p>I’ve been keeping this one a secret, but there’s going to a be a new class, a Necrodancer.<br>
+Yes you guessed it, it’s an homage to Cadence from the awesome game Crypt of the Necrodancer, you should buy it btw!<br>
+I’ve been thinking about adding a new class for some time but never quite found anything interesting, each character, in my mind has it’s own personality and charisma and I was having a hard time finding any other interesting class. I had the crazy idea of bringing Cadence to the game as an unlock-able and not one of the main starting characters, talked to the devs of CotN and the liked the idea (thank you again), so it’s happening.<br>
+So among the things that you unlock when you finish the game, you also unlock the Necrodancer, she’s going to be a mix of several things, close combat, magic and debuffs.</p>
+<p>On the development side of things, it’s been progressing, I’m now putting together the code that handles achievements, stats, save games and all that stuff for the Xbox One, I expect to enter beta testing soon, it’s in alpha right now since I’m still finishing features. I’m probably expanding the testing to more people (PC with game controller) since some stuff is radically different (UI, controls) and I need more feedback/testing for that.</p>
+<p>But for now I’ll leave you with some images and a video.</p>
+<p><em><strong>(EDIT 2022: Unfortunately the video attached was from Vine which is long gone)</strong></em></p>
+<p><a href="/wp-content/uploads/2015/04/cadence_02.png"><img loading="lazy" src="/wp-content/uploads/2015/04/cadence_02.png" alt="cadence_02"  />
+</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/04/necro_1.jpeg" alt="necro_1"  />
+</p>
+<p><a href="/wp-content/uploads/2015/04/necrodancer_using_bomb_spell.png"><img loading="lazy" src="/wp-content/uploads/2015/04/necrodancer_using_bomb_spell.png" alt="necrodancer_using_bomb_spell"  />
+</a></p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

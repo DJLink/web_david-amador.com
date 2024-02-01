@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Unreal Development Kit on David Amador</title>
     <link>https://www.david-amador.com/tags/unreal-development-kit/</link>
@@ -20,6 +20,26 @@
       <guid>https://www.david-amador.com/2009/11/unreal-engine-3-is-now-free/</guid>
       <description>Epic decided to offer Unreal Engine 3 for free to non-commercial applications. Sounds kind of weird considering it’s one of the best and most licensed engine out there, but maybe the recent release of Unity 3d free for all uses made them consider this option.
 Named UDK (Unreal Development Kit) you can download it here and have access to all tools and features that the full commercial Engine contains, well, except for the source code of course.</description>
+      <content:encoded><![CDATA[<p>Epic decided to offer Unreal Engine 3 for free to non-commercial applications. Sounds kind of weird considering it’s one of the best and most licensed engine out there, but maybe the recent release of Unity 3d free for all uses made them consider this option.<br>
+Named UDK (Unreal Development Kit) you can download it <a href="https://web.archive.org/web/20120627195552/http://www.udk.com:80/">here</a> and have access to all tools and features that the full commercial Engine contains, well, except for the source code of course.<br>
+This opens a lot of doors to students and indie hobbyists as me. I just can’t wait to have the time to get my hands on this.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/YNNhZrE1KN8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><a href="/wp-content/uploads/2009/11/features-hero.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/features-hero-300x168.jpg" alt=""  />
+</a> <a href="/wp-content/uploads/2009/11/showcase-the-ball-1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-the-ball-1-300x240.jpg" alt=""  />
+</a> <a href="/wp-content/uploads/2009/11/showcase-the-ball-2.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-the-ball-2-300x240.jpg" alt=""  />
+</a> <a href="/wp-content/uploads/2009/11/showcase-the-ball-3.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-the-ball-3-300x240.jpg" alt=""  />
+</a> <a href="/wp-content/uploads/2009/11/showcase-ut-game-1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-ut-game-1-300x225.jpg" alt=""  />
+</a> <a href="/wp-content/uploads/2009/11/showcase-ut-game-2.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-ut-game-2-300x225.jpg" alt=""  />
+</a> <a href="/wp-content/uploads/2009/11/showcase-ut-game-3a.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-ut-game-3a-300x240.jpg" alt=""  />
+</a> <a href="/wp-content/uploads/2009/11/showcase-whizzle-1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-whizzle-1-300x187.jpg" alt=""  />
+</a> <a href="/wp-content/uploads/2009/11/showcase-whizzle-2.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-whizzle-2-300x187.jpg" alt=""  />
+</a> <a href="/wp-content/uploads/2009/11/showcase-whizzle-3.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-whizzle-3-300x187.jpg" alt=""  />
+</a></p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

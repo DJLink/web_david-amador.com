@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>script on David Amador</title>
     <link>https://www.david-amador.com/tags/script/</link>
@@ -21,6 +21,12 @@
       <description>This week I’ve been working on replacing my current scripting system. It worked great for Vizati but I need something with a little more flexibility.
 Instead of explaining what I’ve managed to get working I’ve made a screenshot with some notes.
 I think I’m going to make this my #ScreenshotSaturday</description>
+      <content:encoded><![CDATA[<p>This week I’ve been working on replacing my current <a href="/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/" title="I maed a Custom Script Language for my Xna Engine">scripting system</a>. It worked great for Vizati but I need something with a little more flexibility.</p>
+<p>Instead of explaining what I’ve managed to get working I’ve made a screenshot with some notes.</p>
+<p><a href="/wp-content/uploads/2011/03/basalt_scripting_v2.jpg"><img loading="lazy" src="/wp-content/uploads/2011/03/basalt_scripting_v2.jpg" alt=""  title="basalt_scripting_v2"  />
+</a></p>
+<p>I think I’m going to make this my #ScreenshotSaturday</p>
+]]></content:encoded>
     </item>
     <item>
       <title>I maed a Custom Script Language for my Xna Engine</title>
@@ -29,6 +35,40 @@ I think I’m going to make this my #ScreenshotSaturday</description>
       <guid>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</guid>
       <description>Well the title is an Homage to James Silva‘s I MAED A GAM3 W1TH Z0MB1ES!!!1
 I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.</description>
+      <content:encoded><![CDATA[<p>Well the title is an Homage to <a href="http://www.ska-studios.com/">James Silva</a>‘s I MAED A GAM3 W1TH Z0MB1ES!!!1</p>
+<p>I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.</p>
+<p>Back to the development part yesterday I panicked when she asked me if it was possible to make some some small cutscenes on each level which could include moving images, changing an animation, trigger a sound, trigger another movement after another has finished etc.</p>
+<p>Some triggers and such would be suffice but since I like a good challenge and always loved Lua on C++ I decided to do a little research just to find that there isn’t many options for XNA, luainterface only works on Windows.</p>
+<p>I decided to write a little parser that finds functions from a file to C# delegates and vice versa.</p>
+<p>Here’s an example of what one of my scripts look like:</p>
+<pre tabindex="0"><code>
+function game_start
+	set_background_image  level2
+	set_text name:level_indicator scene:main &#34;Level 2&#34;	
+end
+</code></pre><p>function indicates the beginning of a function. I can call it by doing:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ScriptManager</span><span class="p">.</span><span class="n">Invoke</span><span class="p">(</span><span class="s">&#34;game_start&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>No binding of any kind are need till this point. Now if you read the first instruction on the script its set_background_image which is bind to a c# function, something like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="n">ScriptManager</span><span class="p">.</span><span class="n">addBind</span><span class="p">(</span><span class="s">&#34;set_background_image&#34;</span><span class="p">,</span> <span class="n">SB_set_background_image</span><span class="p">);</span>
+</span></span></code></pre></div><p>Easy right? So now I can call my game_start function that can call other stuff on C#, I just have to hook it to a function. Any leading parameters after the instruction are passed send to it. In this case “level2” which is the image name.</p>
+<p>Another cool stuff I’ve made and that you can see on the video below is a sleep.</p>
+<pre tabindex="0"><code>
+function game_start
+	set_background_image  level2
+        sleep 2000
+	set_text name:level_indicator scene:main &#34;Level 2&#34;	
+end
+</code></pre><p>In this case the function will “Sleep” for 2 seconds before resuming the next Line, and yes the rest of the game still carries on its normal way.<br>
+This may not seem much but after a few more tweaks I can make simple scripts pretty easy, not powerful as lua, not even close but it will work great for my Dream Build Play game.<br>
+Watch the video below:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/czJSQcE0kOo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
   </channel>
 </rss>

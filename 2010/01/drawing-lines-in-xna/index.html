@@ -45,13 +45,13 @@ if (!doNotTrack) {
 Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.
 You can give it 2 points ( start and end point of course) and a color." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/01/drawing-lines-in-xna/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.david-amador.com/2010/01/drawing-lines-in-xna/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/01/xna_linebatch.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-01-26T00:40:48+00:00" />
 <meta property="article:modified_time" content="2010-01-26T00:40:48+00:00" /><meta property="og:site_name" content="David Amador" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/01/xna_linebatch.jpg" />
 <meta name="twitter:title" content="Drawing Lines in XNA"/>
 <meta name="twitter:description" content="One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.
 Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.
@@ -91,7 +91,7 @@ You can give it 2 points ( start and end point of course) and a color."/>
   "articleBody": "One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.\nBasically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.\nYou can give it 2 points ( start and end point of course) and a color. There’s an overload function that receives the Layer parameter.\nLineBatch::DrawLine(SpriteBatch batch, Color color, Vector2 point1, Vector2 point2); LineBatch::DrawLine(SpriteBatch batch, Color color, Vector2 point1, Vector2 point2, float Layer); LineBatch is a static class, you only need to call LineBatch::Init(GraphicsDevice) somewhere on your code.\nThen use you can use like this:\nLineBatch.DrawLine(_spriteBatch, Color.Black, Vector2.Zero, new Vector2(100,300)); I’ve made a small unit test that you can download here. Try clicking the screen to set a start and end point.\nHere’s a video showing the result:\n",
   "wordCount" : "163",
   "inLanguage": "en",
-  "datePublished": "2010-01-26T00:40:48Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2010/01/xna_linebatch.jpg","datePublished": "2010-01-26T00:40:48Z",
   "dateModified": "2010-01-26T00:40:48Z",
   "author":{
     "@type": "Person",
@@ -196,6 +196,9 @@ You can give it 2 points ( start and end point of course) and a color."/>
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/01/xna_linebatch.jpg" alt="">
+        
+</figure>
   <div class="post-content"><p>One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.<br>
 Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.<br>
 You can give it 2 points ( start and end point of course) and a color. There’s an overload function that receives the Layer parameter.</p>

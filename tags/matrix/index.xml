@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>matrix on David Amador</title>
     <link>https://www.david-amador.com/tags/matrix/</link>
@@ -20,6 +20,96 @@
       <guid>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</guid>
       <description>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a XNA 2D Camera I wrote some time ago.
 Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</description>
+      <content:encoded><![CDATA[<p>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a <a href="/2009/10/xna-camera-2d-with-zoom-and-rotation/" title="XNA Camera 2d with zoom and rotation">XNA 2D Camera</a> I wrote some time ago.<br>
+Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</p>
+<p><a href="/wp-content/uploads/2013/07/camera2d.jpg"><img loading="lazy" src="/wp-content/uploads/2013/07/camera2d-300x234.jpg" alt="camera2d"  />
+</a></p>
+<p>The Camera2D class is simple enough:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Camera2d</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Camera2d</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">virtual</span> <span class="o">~</span><span class="n">Camera2d</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>	
+</span></span><span class="line"><span class="cl">	<span class="kr">inline</span> <span class="kt">void</span>	<span class="nf">set_zoom</span><span class="p">(</span><span class="k">const</span> <span class="kt">float</span> <span class="n">zoom</span><span class="p">){</span> <span class="n">_zoom</span> <span class="o">=</span> <span class="n">zoom</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="kr">inline</span> <span class="kt">float</span>	<span class="nf">get_zoom</span><span class="p">()</span><span class="k">const</span><span class="p">{</span> <span class="k">return</span> <span class="n">_zoom</span><span class="p">;</span> <span class="p">}</span>	
+</span></span><span class="line"><span class="cl">	       <span class="n">Matrix</span>	<span class="nf">get_transformation</span><span class="p">();</span>	
+</span></span><span class="line"><span class="cl"><span class="k">protected</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">       <span class="kt">void</span> <span class="n">recreate_tranformation_matrix</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">protected</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Saves Last Property
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">// This is used for knowing when to update the Matrix
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="k">struct</span> <span class="nc">Transformation</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Matrix</span>       <span class="n">_matrix</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Vector2f</span>     <span class="n">_last_pos</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kt">float</span>        <span class="n">_last_zoom</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Vector2f</span>     <span class="n">_last_origin</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kt">float</span>        <span class="n">_last_rotation</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kt">void</span> <span class="nf">update</span><span class="p">(</span><span class="k">const</span> <span class="n">Vector2f</span><span class="o">&amp;</span> <span class="n">p</span><span class="p">,</span> <span class="k">const</span> <span class="n">Vector2f</span><span class="o">&amp;</span> <span class="n">origin</span><span class="p">,</span> <span class="k">const</span> <span class="kt">float</span> <span class="n">zoom</span><span class="p">,</span> <span class="k">const</span> <span class="kt">float</span> <span class="n">rotation</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                 <span class="p">{</span> <span class="n">_last_pos</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span> <span class="n">_last_origin</span> <span class="o">=</span> <span class="n">origin</span><span class="p">;</span> <span class="n">_last_zoom</span> <span class="o">=</span> <span class="n">zoom</span><span class="p">;</span> <span class="n">_last_rotation</span> <span class="o">=</span> <span class="n">rotation</span><span class="p">;</span>	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">protected</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span>		<span class="n">_zoom</span><span class="p">;</span>	
+</span></span><span class="line"><span class="cl">	<span class="n">Transformation</span>  <span class="n">_transform</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Vector2f</span>	<span class="n">_pos</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Vector2f</span>	<span class="n">_origin</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span>		<span class="n">_rotation</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>As the name implies Vector2f and Matrix are the Vector and the Matrix, the full code is included in the project that you can download at the end of the article so I’m just going to mention the most important parts.<br>
+In Camera2D class the most important function is the recreate_tranformation_matrix(), get_transformation() just checks if we should recreate it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="n">Camera2d</span><span class="o">::</span><span class="n">recreate_tranformation_matrix</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Update Variables
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">_transform</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">_pos</span><span class="p">,</span><span class="n">_origin</span><span class="p">,</span><span class="n">_zoom</span><span class="p">,</span><span class="n">_rotation</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">_transform</span><span class="p">.</span><span class="n">_matrix</span> <span class="o">=</span> 
+</span></span><span class="line"><span class="cl">		<span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">			Create our camera matrix, 
+</span></span></span><span class="line"><span class="cl"><span class="cm">			translation to origin, then rotation, scale and finally translation to the camera position
+</span></span></span><span class="line"><span class="cl"><span class="cm">		*/</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Matrix</span><span class="o">::</span><span class="n">CreateTranslation</span><span class="p">(</span><span class="o">-</span><span class="n">_pos</span><span class="p">.</span><span class="n">X</span><span class="p">,</span><span class="o">-</span><span class="n">_pos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Matrix</span><span class="o">::</span><span class="n">CreateScale</span><span class="p">(</span><span class="n">_zoom</span><span class="p">,</span> <span class="n">_zoom</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">*</span>						
+</span></span><span class="line"><span class="cl">		<span class="n">Matrix</span><span class="o">::</span><span class="n">CreateRotationZ</span><span class="p">(</span><span class="n">_rotation</span><span class="p">)</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Matrix</span><span class="o">::</span><span class="n">CreateTranslation</span><span class="p">(</span><span class="n">_origin</span><span class="p">.</span><span class="n">X</span><span class="p">,</span><span class="n">_origin</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>		   
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>As you can see we create our finally Matrix considering several things, first there’s the camera origin or center. This is useful for rotations and scales when you want to keep the camera focusing on a certain element, usually the center. The most common positions will probably be the center of the camera or 0,0.<br>
+Next we have a rotation on Z, next Zoom, this is how much the camera will zoom in or out, again the origin will impact where the zoom center is. Finally the camera position itself. The order of these operations is extremely important since mat1*mat2 != mat2*mat1.</p>
+<p>So how could you use this?<br>
+First the camera setup</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Create our new camera
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Camera2d</span><span class="o">*</span> <span class="n">camera</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Camera2d</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">camera</span><span class="o">-&gt;</span><span class="n">_origin</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="n">width</span><span class="o">/</span><span class="mf">2.0f</span><span class="p">,</span> <span class="n">height</span><span class="o">/</span><span class="mf">2.0f</span><span class="p">);</span> <span class="c1">// width and height are the screen sizes, so we can focus on the center
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">camera</span><span class="o">-&gt;</span><span class="n">pos</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="mf">250.0f</span><span class="p">,</span><span class="mf">100.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">camera</span><span class="o">-&gt;</span><span class="n">set_zoom</span><span class="p">(</span><span class="mf">2.0f</span><span class="p">);</span>
+</span></span></code></pre></div><p>Now to actually draw.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">glMatrixMode</span><span class="p">(</span><span class="n">GL_MODELVIEW</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glPushMatrix</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">glLoadIdentity</span><span class="p">();</span>	
+</span></span><span class="line"><span class="cl"><span class="c1">// Get our transformation matrix
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Matrix</span> <span class="n">mat</span> <span class="o">=</span> <span class="n">camera</span><span class="o">-&gt;</span><span class="n">get_transformation</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Convert it to a float 16
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">float</span> <span class="n">m</span><span class="p">[</span><span class="mi">16</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">mat</span><span class="p">.</span><span class="n">to_mat4</span><span class="p">(</span><span class="n">m</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cm">/* Send matrix to opengl*/</span>
+</span></span><span class="line"><span class="cl"><span class="n">glMultMatrixf</span><span class="p">(</span><span class="n">m</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Draw anything we want
+</span></span></span></code></pre></div><p>This code can be optimized in many ways, but the idea here is to be simple enough to understand, that is the most important.</p>
+<p>Download: <a href="/blog_tutorials/OpenGLCamera2D.rar">OpenGLCamera2D.rar</a></p>
+<blockquote>
+<p>This is a VS 2010 project using GLFW for window creation. I usually don’t use GLFW but this kept me for writing a bunch of window handling code. You can use whatever library you want, this was just to keep the project as clean as possible.<br>
+Arrow Keys- Camera movement<br>
+Page Up/Down – Camera Rotation<br>
+Home/End – Camera zoom</p>
+</blockquote>
+<p>As always let me know if you find any problems/bugs with the article. I wrote all this code late last night so that’s usually recipe for doom.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

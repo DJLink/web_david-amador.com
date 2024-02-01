@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Reflection on David Amador</title>
     <link>https://www.david-amador.com/tags/reflection/</link>
@@ -20,6 +20,39 @@
       <guid>https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/</guid>
       <description>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:
 using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).</description>
+      <content:encoded><![CDATA[<p>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Reflection</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MyClass</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="kd">public</span> <span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="kd">public</span> <span class="kt">float</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">MyClass</span><span class="p">()</span> 
+</span></span><span class="line"><span class="cl"> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="c1">// default constructor</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">MyClass</span> <span class="p">(</span><span class="n">MyClass</span> <span class="n">my</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   <span class="n">FieldInfo</span><span class="p">[]</span> <span class="n">fields</span> <span class="p">=</span> <span class="k">typeof</span><span class="p">(</span><span class="n">MyClass</span><span class="p">).</span><span class="n">GetFields</span><span class="p">(</span><span class="n">BindingFlags</span><span class="p">.</span><span class="n">Public</span>
+</span></span><span class="line"><span class="cl">   <span class="p">|</span> <span class="n">BindingFlags</span><span class="p">.</span><span class="n">NonPublic</span> <span class="p">|</span> <span class="n">BindingFlags</span><span class="p">.</span><span class="n">Instance</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">foreach</span><span class="p">(</span><span class="n">FieldInfo</span> <span class="n">f</span> <span class="k">in</span> <span class="n">fields</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">   <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="n">f</span><span class="p">.</span><span class="n">SetValue</span><span class="p">(</span><span class="k">this</span><span class="p">,</span><span class="n">f</span><span class="p">.</span><span class="n">GetValue</span><span class="p">(</span><span class="n">oth</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">MyClass</span> <span class="n">obj1</span> <span class="p">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">obj1</span><span class="p">.</span><span class="n">a</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">obj1</span><span class="p">.</span><span class="n">x</span> <span class="p">=</span> <span class="m">2.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">MyClass</span> <span class="n">obj2</span> <span class="p">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="p">(</span><span class="n">obj1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"> <span class="c1">// Obj2 will have same values as obj1 and you </span>
+</span></span><span class="line"><span class="cl"><span class="c1">// can now use them independently.</span>
+</span></span></code></pre></div><p>I hope this is helpful. Let me know if you know a better way</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

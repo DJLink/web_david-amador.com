@@ -45,13 +45,13 @@ if (!doNotTrack) {
 When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.
 On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/07/cpp_callback_benchmark.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-07-14T15:18:21+00:00" />
 <meta property="article:modified_time" content="2010-07-14T15:18:21+00:00" /><meta property="og:site_name" content="David Amador" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/07/cpp_callback_benchmark.png" />
 <meta name="twitter:title" content="Instance based Callbacks in C&#43;&#43;"/>
 <meta name="twitter:description" content="One of the things that was probably forgotten but the dudes who made C&#43;&#43; standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.
 When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.
@@ -91,7 +91,7 @@ On game development one of the things callbacks are usually used is for Buttons,
   "articleBody": "One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.\nWhen I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.\nOn game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button. Sure you can point it to the same one and make a bunch of if’s and then point to a Global var which does the correct action, but this is not elegant and sure as hell not easy to add/modify stuff.\nI came across a couple of solutions for having an instance based callback:\n1- Do your own – I’ve made one that worked but couldn’t get around to add parameters. I think we might skip this one since you are probably looking for a quick solution.\n2 – Use boost – If you don’t know this have a look, even for other stuff, Boost has tons of awesome apis for helping C++ development. Including smart pointers that basically delete themselves automatically.\n3 – Use PlusCallback – I decided to use this one.\nAnd it’s simple to use\n// Callback without parameters // My example class Sprite* sprite = new Sprite(); cb::Callback0\u003cvoid\u003e call1; // Bind callback call1.Reset(sprite, \u0026Sprite::SomeFunction); // Call callback call1();. // Example with parameter cb::Callback1\u003cvoid, Sprite*\u003e call2; // Bind callback call2.Reset(sprite, \u0026Sprite::SomeFunctionWithParameterSprite); // Your function should be something like // Sprite::SomeFunctionWithParameterSprite(Sprite* sprite); call2(sprite); Easy right? It even work with return, just switch that void to something else. Let me know if you find a better solution. For now I’m sticking with this one.\n",
   "wordCount" : "296",
   "inLanguage": "en",
-  "datePublished": "2010-07-14T15:18:21Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2010/07/cpp_callback_benchmark.png","datePublished": "2010-07-14T15:18:21Z",
   "dateModified": "2010-07-14T15:18:21Z",
   "author":{
     "@type": "Person",
@@ -196,6 +196,9 @@ On game development one of the things callbacks are usually used is for Buttons,
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/07/cpp_callback_benchmark.png" alt="">
+        
+</figure>
   <div class="post-content"><p>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.<br>
 When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.</p>
 <p>On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button. Sure you can point it to the same one and make a bunch of if’s and then point to a Global var which does the correct action, but this is not elegant and sure as hell not easy to add/modify stuff.</p>

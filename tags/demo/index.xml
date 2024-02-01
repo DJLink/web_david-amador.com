@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Demo on David Amador</title>
     <link>https://www.david-amador.com/tags/demo/</link>
@@ -21,6 +21,23 @@
       <description>Ok, I know I’ve been making far too much posts about Vizati but this time it’s for a good reason, anyone interested in trying out the game can do it…right about NOW…
 http://www.differentpixel.com/2010/06/vizati-demo-available/
 Also on a quick update, yesterday I had the chance to test Vizati at Windows Phone 7 Developer’s Hub on a real WP7 device, which was awesome. I want to thank João Antão, Nuno Costa, Ben Riga and Neil Hutson for the opportunity.</description>
+      <content:encoded><![CDATA[<p>Ok, I know I’ve been making far too much posts about Vizati but this time it’s for a good reason, anyone interested in trying out the game can do it…right about NOW…</p>
+<blockquote>
+<p><!-- raw HTML omitted --><a href="http://www.differentpixel.com/2010/06/vizati-demo-available/">http://www.differentpixel.com/2010/06/vizati-demo-available/</a><!-- raw HTML omitted --></p>
+</blockquote>
+<p>Also on a quick update, yesterday I had the chance to test Vizati at Windows Phone 7 Developer’s Hub on a real WP7 device, which was awesome. I want to thank João Antão, Nuno Costa, Ben Riga and Neil Hutson for the opportunity.</p>
+<p>The version tested was a direct port from the PC version and only the input was changed to make use of the touch screen.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0003.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0004.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0006.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0009.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0010.jpg" alt=""  />
+</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

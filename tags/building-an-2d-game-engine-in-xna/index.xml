@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Building an 2D Game Engine in XNA on David Amador</title>
     <link>https://www.david-amador.com/tags/building-an-2d-game-engine-in-xna/</link>
@@ -23,6 +23,22 @@ Keep in mind that while the main focus is 2d nothing prevents us from adding the
 It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
 Requirements:
 You must have some Object Oriented Programming background to full understand what we will do here.</description>
+      <content:encoded><![CDATA[<p>I decided to starting writing a series of tutorials for building an 2d XNA game engine.</p>
+<p>Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.</p>
+<p>It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.</p>
+<p>Requirements:</p>
+<ul>
+<li>You must have some <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">Object Oriented Programming</a> background to full understand what we will do here.</li>
+<li><a href="http://creators.xna.com/">XNA 3.1</a></li>
+<li><a href="http://www.microsoft.com/express/">Visual C# Express or Professional 2008</a></li>
+</ul>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Nnu_9qk6Jfs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

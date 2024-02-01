@@ -43,13 +43,13 @@ if (!doNotTrack) {
 <meta property="og:description" content="Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.
 Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2009/11/basalt_log.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2009-11-20T10:53:13+00:00" />
 <meta property="article:modified_time" content="2009-11-20T10:53:13+00:00" /><meta property="og:site_name" content="David Amador" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2009/11/basalt_log.jpg" />
 <meta name="twitter:title" content="How to do a Xna Log file"/>
 <meta name="twitter:description" content="Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.
 Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong."/>
@@ -88,7 +88,7 @@ Many have asked me why take time to do a log file when you can throw exceptions 
   "articleBody": "Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.\nMany have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.\nI’ve recently build one for my engine Basalt so I decided to share the result, start by creating log type:\npublic enum Log_Type { ERROR = 0, WARNING = 1, INFO = 2 } Next, the class itself:\npublic static class Logger { static protected bool _active; // In case you want to deactivate the logger static public init() { _active = true; #if WINDOWS StreamWriter textOut = new StreamWriter(new FileStream(\"log.html\", FileMode.Create, FileAccess.Write)); textOut.WriteLine(\"Log File\"); textOut.WriteLine(\"\"); textOut.WriteLine(\"",
   "wordCount" : "350",
   "inLanguage": "en",
-  "datePublished": "2009-11-20T10:53:13Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2009/11/basalt_log.jpg","datePublished": "2009-11-20T10:53:13Z",
   "dateModified": "2009-11-20T10:53:13Z",
   "author":{
     "@type": "Person",
@@ -193,6 +193,9 @@ Many have asked me why take time to do a log file when you can throw exceptions 
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2009/11/basalt_log.jpg" alt="">
+        
+</figure>
   <div class="post-content"><p>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.</p>
 <p>Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</p>
 <p>I’ve recently build one for my engine Basalt so I decided to share the result, start by creating log type:</p>

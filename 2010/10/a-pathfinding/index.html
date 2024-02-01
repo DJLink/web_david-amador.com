@@ -48,12 +48,12 @@ This is used for AI in games mostly on tiled based games, It’s very simple to 
 As A* traverses the graph, it follows a path of the lowest known cost, keeping a sorted priority queue of alternate path segments along the way. If, at any point, a segment of the path being traversed has a higher cost than another encountered path segment, it abandons the higher-cost path segment and traverses the lower-cost path segment instead." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.david-amador.com/2010/10/a-pathfinding/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_-125x166.png" /><meta property="article:section" content="posts" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-10-27T10:48:46+00:00" />
 <meta property="article:modified_time" content="2010-10-27T10:48:46+00:00" /><meta property="og:site_name" content="David Amador" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_-125x166.png" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_.png" />
 <meta name="twitter:title" content="A* Pathfinding"/>
 <meta name="twitter:description" content="For my current project I’ve been working with A* as a path-finding solution.
 Basically it’s a way to get from point A to point B.
@@ -94,7 +94,7 @@ As A* traverses the graph, it follows a path of the lowest known cost, keeping a
   "articleBody": "For my current project I’ve been working with A* as a path-finding solution.\nBasically it’s a way to get from point A to point B.\nThis is used for AI in games mostly on tiled based games, It’s very simple to understand and implement.\nAs A* traverses the graph, it follows a path of the lowest known cost, keeping a sorted priority queue of alternate path segments along the way. If, at any point, a segment of the path being traversed has a higher cost than another encountered path segment, it abandons the higher-cost path segment and traverses the lower-cost path segment instead. This process continues until the goal is reached.\nThe major choke point is the heuristic used to calculate which node to take next. I’ve started by using Manhattan Distance.\nIts primary advantage is that it will generally get you to the target faster than most alternatives. Its primary drawback is that in a 8-way pathfinder so it is not guaranteed to give us the shortest possible path.\nfloat cost = 10*(abs(currentX-targetX) + abs(currentY-targetY)) Although it works fast it’s not accurate and if I forced for finding the shortest possible it was rather slow for my 80×44 grid (3520 tiles), sometimes taking 3-4 seconds to find a path.\nI decided to take another approach and using Diagonal Shortcut, its primary advantage is that, because it is balanced, it is able to fully consider small modifiers like a turning penalty or influence map modifier like having a non walkable tile, a rock, a tree, whatever. It is a bit slower than the Manhattan method, though.\nfloat cost; float xDistance = abs(currentX-targetX) float yDistance = abs(currentY-targetY) if (xDistance \u003e yDistance) cost = 14*yDistance + 10*(xDistance-yDistance) else cost = 14*xDistance + 10*(yDistance-xDistance) In case you are wondering the 10 and the 14 are to define if it’s a diagonal or a horizontal/vertical movement since diagonals take longer to traverse than straight lines of course.\nAfter I’m getting much faster movements.\nIt’s not that Manhattan is worse and you shouldn’t use it, it all depends on the application your using.\n* On a square grid that allows 4 directions of movement, use Manhattan distance.\n* On a square grid that allows 8 directions of movement, use Diagonal distance.\nThis is a video I’ve done using Manhattan distance using tile grids generated from a black and white image.\n",
   "wordCount" : "395",
   "inLanguage": "en",
-  "image":"https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_-125x166.png","datePublished": "2010-10-27T10:48:46Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_.png","datePublished": "2010-10-27T10:48:46Z",
   "dateModified": "2010-10-27T10:48:46Z",
   "author":{
     "@type": "Person",
@@ -199,7 +199,7 @@ As A* traverses the graph, it follows a path of the lowest known cost, keeping a
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_-125x166.png" alt="">
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_.png" alt="">
         
 </figure>
   <div class="post-content"><p>For my current project I’ve been working with A* as a <a href="http://en.wikipedia.org/wiki/Pathfinding#In_video_games">path-finding</a> solution.</p>

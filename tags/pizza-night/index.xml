@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Pizza Night on David Amador</title>
     <link>https://www.david-amador.com/tags/pizza-night/</link>
@@ -21,6 +21,21 @@
       <description>Damn you should see my face when they told me we won the competition XNA Pizza Night 2010 at Microsoft.
 Originally we developed Vizati to enter Dream Build Play 2010. We started developing the game on the beginning of February and during that month we discovered another competition would be held near Dream Build Play deadline.
 We went there with the same demo we sent to DBP. The audience really liked the game and we got very positive feedback.</description>
+      <content:encoded><![CDATA[<p>Damn you should see my face when they told me we won the competition XNA Pizza Night 2010 at Microsoft.</p>
+<p>Originally we developed Vizati to enter Dream Build Play 2010. We started developing the game on the beginning of February and during that month we discovered another competition would be held near Dream Build Play deadline.</p>
+<p>We went there with the same demo we sent to DBP. The audience really liked the game and we got very positive feedback. I remember during the first minutes someone in the audience asking if the game was already on sale and where could they buy it.</p>
+<p>There were some pretty cool games there and I got know many other people that develop games as a hobby or as a Indie Developer wannabe. Oh and there was free Pizza and drinks, just in case you were wondering about the name.</p>
+<p><a href="/wp-content/uploads/2010/03/pn-1.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-1.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> The 360 to run the games <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-2.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-2.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> The auditorium <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-7.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-7.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Audience and other participants <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-9.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-9.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> It’s free pizza time <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-12.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-12.jpg" alt=""  />
+</a> <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-14.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-14.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> We called someone to test the game <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-20.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-20.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Different Pixel team presenting Vizati <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-21.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-21.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Rita and I with the event organizers <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-22.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-22.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Another picture with the event organizers <!-- raw HTML omitted --></p>
+]]></content:encoded>
     </item>
     <item>
       <title>XNA Particle System 2D</title>
@@ -29,6 +44,25 @@ We went there with the same demo we sent to DBP. The audience really liked the g
       <guid>https://www.david-amador.com/2010/02/xna-particle-system-2d/</guid>
       <description>It’s been a long week.
 Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.</description>
+      <content:encoded><![CDATA[<p>It’s been a long week.<br>
+Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.<br>
+Then it began, the one task that all programmers should ask someone else to do, because once you get the first one working you are gonna keep adding features because is so FUC**** pretty 😀</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg" alt="ParticleSystem_Radial_Gravity.jpg"  />
+</p>
+<p>I decided the best way was to quick implement it on our editor Sapphire, it now features:<br>
+– Color Interpolation<br>
+– Alpha Interpolation<br>
+– Scale Interpolation<br>
+– Linear Gravity<br>
+– Radial Gravity (This is more of a gravity Well, everything gets sucked in Geometry Wars style)</p>
+<p>Here’s the video</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/SLd4PxJlVlE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Also I’ve found out that this March 5th near where I live Microsoft is doing a XNA Pizza Night, it’s a contest with prizes to the best games, and best of all, free Pizza and Drinks for everyone. I’m gonna enter with the same game of course so wish me luck.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

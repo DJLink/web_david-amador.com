@@ -48,12 +48,12 @@ First place this code in your entry point file, generally main.cpp inside your m
 #ifdef _DEBUG int flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG); flag |= _CRTDBG_LEAK_CHECK_DF; // Turn on leak-checking bit _CrtSetDbgFlag(flag); #endif Now just run you game/program as you would normally, in debug mode of course." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/memory_leaks_output-125x166.jpg" /><meta property="article:section" content="posts" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/memory_leaks_output.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-10-19T14:09:01+00:00" />
 <meta property="article:modified_time" content="2010-10-19T14:09:01+00:00" /><meta property="og:site_name" content="David Amador" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/memory_leaks_output-125x166.jpg" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/memory_leaks_output.jpg" />
 <meta name="twitter:title" content="Tracking memory leaks in Visual Studio"/>
 <meta name="twitter:description" content="I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.
 I know there are other and better solution but this can be handy for quick findings without much hassle.
@@ -94,7 +94,7 @@ First place this code in your entry point file, generally main.cpp inside your m
   "articleBody": "I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.\nI know there are other and better solution but this can be handy for quick findings without much hassle.\nFirst place this code in your entry point file, generally main.cpp inside your main() function\n#ifdef _DEBUG int flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG); flag |= _CRTDBG_LEAK_CHECK_DF; // Turn on leak-checking bit _CrtSetDbgFlag(flag); #endif Now just run you game/program as you would normally, in debug mode of course.\nAfter you close it you’ll get a nice log in the output window like this one:\nSee those numbers before each memory leak between brackets? Grab one of those and add this line right before the #endif\n... _CrtSetDbgFlag(flag); _CrtSetBreakAlloc(689); // Comment or un-comment on need basis #endif Now run the game again, you shall get a break-point where the {689} memory leak happened.\nI hope this is the correct way to use it, if not, let me know.\n",
   "wordCount" : "165",
   "inLanguage": "en",
-  "image":"https://www.david-amador.com/wp-content/uploads/2010/10/memory_leaks_output-125x166.jpg","datePublished": "2010-10-19T14:09:01Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2010/10/memory_leaks_output.jpg","datePublished": "2010-10-19T14:09:01Z",
   "dateModified": "2010-10-19T14:09:01Z",
   "author":{
     "@type": "Person",
@@ -199,7 +199,7 @@ First place this code in your entry point file, generally main.cpp inside your m
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/10/memory_leaks_output-125x166.jpg" alt="">
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/10/memory_leaks_output.jpg" alt="">
         
 </figure>
   <div class="post-content"><p>I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.<br>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Windows Phone 7 on David Amador</title>
     <link>https://www.david-amador.com/tags/windows-phone-7/</link>
@@ -20,6 +20,11 @@
       <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
       <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
 The poll closes in about 6 days and you can select various options of course.</description>
+      <content:encoded><![CDATA[<p>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (<a href="http://twtpoll.com/dar51l">http://twtpoll.com/dar51l</a>) so that we can have more accurate results.</p>
+<p>The poll closes in about 6 days and you can select various options of course.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+]]></content:encoded>
     </item>
     <item>
       <title>Who wants to try Vizati Demo?</title>
@@ -29,6 +34,23 @@ The poll closes in about 6 days and you can select various options of course.</d
       <description>Ok, I know I’ve been making far too much posts about Vizati but this time it’s for a good reason, anyone interested in trying out the game can do it…right about NOW…
 http://www.differentpixel.com/2010/06/vizati-demo-available/
 Also on a quick update, yesterday I had the chance to test Vizati at Windows Phone 7 Developer’s Hub on a real WP7 device, which was awesome. I want to thank João Antão, Nuno Costa, Ben Riga and Neil Hutson for the opportunity.</description>
+      <content:encoded><![CDATA[<p>Ok, I know I’ve been making far too much posts about Vizati but this time it’s for a good reason, anyone interested in trying out the game can do it…right about NOW…</p>
+<blockquote>
+<p><!-- raw HTML omitted --><a href="http://www.differentpixel.com/2010/06/vizati-demo-available/">http://www.differentpixel.com/2010/06/vizati-demo-available/</a><!-- raw HTML omitted --></p>
+</blockquote>
+<p>Also on a quick update, yesterday I had the chance to test Vizati at Windows Phone 7 Developer’s Hub on a real WP7 device, which was awesome. I want to thank João Antão, Nuno Costa, Ben Riga and Neil Hutson for the opportunity.</p>
+<p>The version tested was a direct port from the PC version and only the input was changed to make use of the touch screen.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0003.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0004.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0006.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0009.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0010.jpg" alt=""  />
+</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Yay, my first Game as Indie Developer is almost out</title>
@@ -39,6 +61,23 @@ Also on a quick update, yesterday I had the chance to test Vizati at Windows Pho
 It’s just that I’ve been stuck on Different Pixel development dungeon for the past weeks finishing and polishing (bug hunting) my first game, Vizati.
 Most of you have been following the process and asking things every since we showed the beta version at XNA Pizza Night, after which we decided to finish the game and try to sell it to see how it goes.
 Three months later and here I am, making the final touches on the game before it’s release on 11th June.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2010/05/box_vizati_11.jpg"><img loading="lazy" src="/wp-content/uploads/2010/05/box_vizati_11.jpg" alt=""  title="box_vizati_1"  />
+</a></p>
+<blockquote>
+<p>No, I’m not dead….yet…</p>
+</blockquote>
+<p>It’s just that I’ve been stuck on <a href="http://www.differentpixel.com">Different Pixel</a> development dungeon for the past weeks finishing and polishing (bug hunting) my first game, <a href="https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/">Vizati</a>.</p>
+<p>Most of you have been following the process and asking things every since we showed the beta version at <a href="/2010/03/vizati-wins-xna-pizza-night-2010/">XNA Pizza Night</a>, after which we decided to finish the game and try to sell it to see how it goes.</p>
+<p>Three months later and here I am, making the final touches on the game before it’s release on 11th June. The game will be available thought <a href="http://www.gamersgate.com/DD-VIZ/vizati">GamersGate</a> (maybe others, I’ll update in the future).</p>
+<p>It has always been a personal dream of mine to be a game developer so I’m crossing fingers to see if this works and most of all so that people like the game, we want them to have fun with it.</p>
+<p>The game was made from scratch by me and Rita (one programmer and one designer) with a $0 budget (just the enough to eat 😛 ) in XNA. We used it because the competition we went required it and since it has been a stable framework we decided to stick with it even on PC. We even have a <a href="/2010/05/vizati-in-windows-phone-7/">Windows Phone 7 </a>working version.</p>
+<p>So in the next few days (as soon as the Gold Master is released) I’ll be shouting and annoying everyone to buy the game.</p>
+<blockquote>
+<p>You can follow our small indie studio by twitter <a href="http://twitter.com/DifferentPixel">@DifferentPixel</a> , <a href="http://www.facebook.com/differentpixel.fb">Facebook Page</a> or by visiting the website.</p>
+</blockquote>
+<p><a href="http://www.gamersgate.com/DD-VIZ/vizati"><img loading="lazy" src="/wp-content/uploads/2010/05/promotion_gamersgate.jpg" alt=""  title="promotion_gamersgate"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Vizati on Windows Phone 7</title>
@@ -48,6 +87,27 @@ Three months later and here I am, making the final touches on the game before it
       <description>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.
 This week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.
 I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.</description>
+      <content:encoded><![CDATA[<p>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.<br>
+This week I got an invitation from <a href="http://gozoomin.com/blogs/antao/">João Antão</a> to showcase <a href="https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/">Vizati</a> as part of his XNA Framework presentation. This occurred during the <a href="http://imaginecup.com/">Imagine Cup final on Portugal</a>.</p>
+<p>I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.<br>
+The result was pretty good i think. It’s virtually identical.</p>
+<p>You can see it for yourself, the speed on the video is not very good due to the screen capture software.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/hX18tuujAEY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Now for the tech part. Grabbing my 3.1 solution what have I made to have this running? What have I changed?</p>
+<p>I had to create a XNA 4 empty project and add all code files and assets (no direct upgrade now)<br>
+Had to change to TitleContainer for opening files, transparencies made with Color.A replaced to make use of <a href="https://web.archive.org/web/20100412140933/http://blogs.msdn.com:80/shawnhar/archive/2010/04/08/premultiplied-alpha-in-xna-game-studio-4-0.aspx">PreMultiplied Alpha</a>, basically using Color*Color.<br>
+The assets are the same…</p>
+<blockquote>
+<p>Wait …what? Why?</p>
+</blockquote>
+<p>Since this was a test I wanted to test how could the framework handle a simple platform change with minimal code changed, after all that’s the whole purpose of XNA. Of course on the final version proper assets will be placed but taking in account some 1024×1024 and higher images the results are pretty good.<br>
+Notice the particle effects, there are around 2500 particles over there. And it’s on an emulator so I can’t wait to get my hands on the real deal.</p>
+<p>Change the input to make use of the Touchscreen, and finally since I’m using my engine basalt I have <a href="/2010/03/xna-2d-independent-resolution-rendering/">independent resolution rendering</a> so I just told the system “run in 800×480 now” and the native resolution is still the PC/Xbox version one 1280×720.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>XNA 4.0 CTP and Windows Phone Developer Tools CTP now available for download</title>
@@ -57,6 +117,44 @@ I’ve been playing with the WP7 tools and I decided to try and port Vizati to X
       <description>So I was watching Microsoft Mix10 and while talking about the new Windows Phone 7 Series, Scott Guthrie announced the availability of the Windows Phone Developer Tools CTP. What? But like now now?
 I went to http://developer.windowsphone.com/ and XNA Creator’s Club and there it was. The packages contains:
 A CTP of the new Visual Studio 2010 Express for Windows Phone Tools and framework to develop Windows Phone applications and games with Silverlight A CTP of XNA Game Studio 4.</description>
+      <content:encoded><![CDATA[<p>So I was watching Microsoft <a href="http://live.visitmix.com/">Mix10</a> and while talking about the new Windows Phone 7 Series, Scott Guthrie announced the availability of the Windows Phone Developer Tools CTP. What? But like now now?</p>
+<p>I went to <a href="http://developer.windowsphone.com/">http://developer.windowsphone.com/</a> and XNA Creator’s Club and there it was. The packages contains:</p>
+<ul>
+<li>A CTP of the new Visual Studio 2010 Express for Windows Phone</li>
+<li>Tools and framework to develop Windows Phone applications and games with Silverlight</li>
+<li>A CTP of XNA Game Studio 4.0 that allows you to develop Windows Phone games with the XNA Framework</li>
+<li>A Windows Phone 7 Series emulator that can be used to deploy and debug Windows Phone applications and games</li>
+<li>Add-on to allow you to use the Visual Studio 2010 Ultimate Release Candidate to develop Windows Phone applications and games if you have it installed</li>
+</ul>
+<p>Pretty good right? For those who have been living under a rock the XNA 4.0 brings another development platform, Windows Phone 7 series, which leaves us with XBOX360, PC and the new mobile.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_7.jpg" alt=""  title="windows_phone_7"  />
+</p>
+<p>XNA 4.0 CTP requires Visual Studio 2010, <a href="http://msdn.microsoft.com/en-us/vstudio/dd582936.aspx">download RC here</a>, and for now it only allows debugging on PC and Windows Phone by means of an emulator. No Xbox360 deployment for now so don’t go converting your games and engines for now.</p>
+<p>Still this is a great way to test the new 4.0 features and Visual Studio which I honestly haven’t tried yet.</p>
+<p>I started a new Windows Phone 4.0 project and decided to test the emulator, on the above video you can see the touch feature working, took me 4minutes to get that working. Very easy, can’t wait for XNA final version.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/jWf_Z4W9rsg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><strong>Some Images</strong></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/visual_studio_2010.png" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_emulator.png" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_game_project.png" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/xna4.0_new_project.png" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_7.jpg" alt=""  />
+</p>
+<p>Notes for Game Studio developers (<a href="https://web.archive.org/web/20100305042530/http://blogs.msdn.com:80/shawnhar/">Shawn Hargreaves</a>):</p>
+<ul>
+<li>Although this CTP includes Game Studio 4.0 assemblies for Windows as well as Windows Phone, it only supports the Reach profile. If you try to create a HiDef game, you will get an error saying your hardware does not support HiDef capabilities. Don’t worry, this doesn’t mean your GPU sucks, just that we don’t support HiDef in the CTP.</li>
+<li>The CTP does not support deployment to Xbox 360.</li>
+<li>The automatic scaling and rotation feature is not included in the CTP, so for now you must always choose 480×800 portrait resolution. If you want to make a landscape game, or render at some other resolution, the best way is to draw your scene into a rendertarget, then rotate or scale while copying it to the screen using SpriteBatch. This is not the best approach for performance or battery life on actual phone hardware, but don’t worry, you can take out the rendertarget code out once we release final bits that support the image scaler.</li>
+</ul>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

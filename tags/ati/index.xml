@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ati on David Amador</title>
     <link>https://www.david-amador.com/tags/ati/</link>
@@ -19,6 +19,65 @@
       <pubDate>Wed, 18 Nov 2009 15:16:54 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</guid>
       <description>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.</description>
+      <content:encoded><![CDATA[<p>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.<br>
+Anyway for those who have one and are developing for XNA you may have noticed that it doesn’t run PerfHUD out of the box.<br>
+You will get an error, something like:<br>
+<strong>“This applications is not configured for using PerfHUD. Consult the User’s Guide for more information”</strong></p>
+<p><img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_Error.jpg" alt="perfHUD_Error"  title="perfHUD_Error"  />
+]</p>
+<p>Luckily there’s a little trick we can use to fix this, first we create a new class:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// class that inherits from GraphicsDeviceManager</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">PerfHUDGraphicDeviceManager</span> <span class="p">:</span> <span class="n">GraphicsDeviceManager</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="n">PerfHUDGraphicDeviceManager</span><span class="p">(</span><span class="n">Game</span> <span class="n">game</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">:</span> <span class="k">base</span><span class="p">(</span><span class="n">game</span><span class="p">)</span> <span class="c1">// Pass game to base class</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// We override the RankDevices to search for a PerfHUD</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">protected</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">RankDevices</span><span class="p">(</span><span class="n">List</span> <span class="n">foundDevices</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">RankDevices</span><span class="p">(</span><span class="n">foundDevices</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">bool</span> <span class="n">has_perfHud</span> <span class="p">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">device</span> <span class="k">in</span> <span class="n">foundDevices</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">device</span><span class="p">.</span><span class="n">Adapter</span><span class="p">.</span><span class="n">Description</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="s">&#34;PerfHUD&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">has_perfHud</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Found PerfHUD</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">has_perfHud</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">var</span> <span class="n">temp</span> <span class="p">=</span> <span class="n">foundDevices</span><span class="p">.</span><span class="n">OrderBy</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">(</span><span class="n">gdi</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">!(</span><span class="n">gdi</span><span class="p">.</span><span class="n">Adapter</span><span class="p">.</span><span class="n">Description</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="s">&#34;PerfHUD&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="p">).</span><span class="n">ToArray</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="n">foundDevices</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                <span class="n">foundDevices</span><span class="p">.</span><span class="n">AddRange</span><span class="p">(</span><span class="n">temp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">dev</span> <span class="k">in</span> <span class="n">foundDevices</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">dev</span><span class="p">.</span><span class="n">DeviceType</span> <span class="p">=</span> <span class="n">DeviceType</span><span class="p">.</span><span class="n">Reference</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>This class basically searches for PerfHUD, so when you open it with it this class detects that the software exists and allows it’s usage. If not found, the regular GraphicDeviceManager is used. Now instead of creating a new GraphicsDeviceManager() on your Game class just do something like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Game1</span> <span class="p">:</span> <span class="n">Game</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="n">Game1</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">new</span> <span class="n">PerfHUDGraphicDeviceManager</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_run.png" alt="perfHUD_run"  title="perfHUD_run"  />
+]
+<img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_working_xna.jpg" alt="perfHUD_working_xna"  title="perfHUD_working_xna"  />
+]</p>
+<p>I hope this helps.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Accelero twin turbo</title>
@@ -26,6 +85,12 @@
       <pubDate>Sat, 24 Oct 2009 21:47:35 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/accelero-twin-turbo/</guid>
       <description>Because my Ati Radeon 4890 fan fried I had to buy another cooler. After a little research I discovered Artic Accelero Twin Turbo. Today I decided to finally try it. The assembly is rather easy, the package comes with several heatsinks for memories, and of course the fans themselves. There are three ways to connect the fans, either directly to the VGA card itself, directly to the PSU with 7V or 12V.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2009/10/twinturbo_02l.jpg"><img loading="lazy" src="/wp-content/uploads/2009/10/twinturbo_02l-150x150.jpg" alt="twinturbo_02l"  title="twinturbo_02l"  />
+</a>Because my Ati Radeon 4890 fan fried I had to buy another cooler. After a little research I discovered <a href="https://web.archive.org/web/20101017105319/http://www.arctic-cooling.com:80/catalog/product_info.php?cPath=2_&amp;mID=101&amp;language=en">Artic Accelero Twin Turbo</a>. Today I decided to finally try it. The assembly is rather easy, the package comes with several heatsinks for memories, and of course the fans themselves. There are three ways to connect the fans, either directly to the VGA card itself, directly to the PSU with 7V or 12V.<br>
+My stock cooler was connected to the vga card so I left it the same. Bad choice, with the card idle I was getting around 70º, way hot. I switched the fans to the PSU with 12V and voila, the Artic promissed values, around 50º, a decrease of around 20º, which is great. As for the noise I can barely hear it. So if you buy one connect it to the board.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2009/10/AtiOverdrive.jpg" alt="AtiOverdrive"  title="AtiOverdrive"  />
+</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

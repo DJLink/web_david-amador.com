@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Application &amp; Software on David Amador</title>
     <link>https://www.david-amador.com/categories/application-software/</link>
@@ -20,6 +20,51 @@
       <guid>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</guid>
       <description>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&amp;rsquo;ve moved everything to static content, including this website.
 📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper.</description>
+      <content:encoded><![CDATA[<p>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&rsquo;ve moved everything to static content, including this website.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/shutting-down-server.gif" alt=""  />
+</p>
+<h1 id="-wordpress">📝 WordPress</h1>
+<p>Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.</p>
+<p>So for the past couple of years I&rsquo;ve been thinking in migrating it to something like Jekyll or Hugo, to serve it as static content. But the few times I looked into the process it seemed like a big task especially because I have 184 posts, I wasn&rsquo;t just starting from 0, I wanted to maintain the existing content, posts, images, URLs etc. So, a couple days ago I decided it was time.</p>
+<h1 id="-converting-and-moving-the-websites">📝 Converting and Moving the websites</h1>
+<h3 id="-questofdungeonscom">🔗 questofdungeons.com</h3>
+<p>This was the easier of them, it&rsquo;s just not working 100% as it was before (more on that in a bit). Site was just a couple of hand-made pages I hacked in HTML/CSS/JS years ago, so that was already done.</p>
+<p>The only problem was the <a href="https://www.questofdungeons.com/stats.html">stats page</a>  relied on a PHP script to pull the stats from Steam. PHP was out of the question since I wanted to host on GitHub, so I tried the full JavaScript approach, but that hits the <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> issue, and I would need a proxy for that, so for now I grabbed the last stats and it&rsquo;s serving it statically. I have to think of something else later since I don&rsquo;t have PHP anymore etc. But it&rsquo;s not important and the numbers aren&rsquo;t moving as much as they used to. I grabbed all files, pushed to a GitHub repo, activated pages, changed the nameservers, queued SSL cert, and voilá, the site is now live.</p>
+<h3 id="-upfallstudioscom">🔗 upfallStudios.com</h3>
+<p>The <a href="/2022/11/merged-personal-and-studio-blogs-into-one/">merging the Upfall Studios blog</a> a while ago was not an isolated act, I was thinking about this already. After the merge, <a href="https://www.upfallstudios.com">www.upfallstudios.com</a> was left with only the front page, which was static content already. I also had a doPresskit() <a href="https://www.upfallstudios.com/press/">page</a>, which was all PHP, and I need to keep it for games info etc. After a bit of search I found there is an <a href="https://github.com/Dvergar/dopresskit-static">alternative</a>, serving static content, so I converted and updated the site to use it, that way 100% of the site was ready. Easy and working as before.</p>
+<h3 id="-david-amadorcom">🔗 david-amador.com</h3>
+<p>And now I was free to focus on the one I knew would be a headache, this blog. Full wordpress site, no static content, everything dynamic using plugins, MySQL, PHP and custom .htaccess rules.</p>
+<ul>
+<li>❌ Jekyll</li>
+</ul>
+<p>From prior research, I was inclined to <a href="https://jekyllrb.com/">Jekyll</a> since all I read online was that it was good, also it&rsquo;s been around for 15 years, so it has proved it works and should be stable.
+But after a couple days of messing around with configs and pre-requisites, packages versions mismatches between Jekyll, ruby, wordpress exporters etc, I gave up. Booting up a new site can be achieved fast, but I needed to also be able to import all of my content, and that proved to be hard. Also I started thinking about the future of the blog, what if in a couple years the version breaks on modern OS version, and I can&rsquo;t run the latest one due to some incompatibility, even on a VM that would be a nightmare to keep around just for one site.</p>
+<ul>
+<li>✅ Hugo</li>
+</ul>
+<p>So I decided to go for <a href="https://gohugo.io/">Hugo</a>, single executable, it works, it&rsquo;s fast. Highly recommend it. The documentation does lacks sometimes, but between the forums, and looking at other people&rsquo;s pages on GitHub it&rsquo;s perfectly doable.</p>
+<p>I had to export the data, and there are a couple of Wordpress plugins for that, the problem was that my server was old, i386, outdated Ubuntu version, the PHP server version had no Zip support, which most of those plugins needed. After messing around a bit with the server trying to install the proper dependencies, which included actually breaking the entire thing and having to restore from backup, I decided a different approached. Created a Docker VM with wordpress, imported my existing WP files and database locally, installed the required plugins and was finally able to export all.</p>
+<p>📄 Now that I had all the files in markdown format, it was really more of a going through Hugo documentation, placing all freshly made files in place and cleaning up stuff. One neat thing is that you can run and edit an Hugo website live.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Hugo.exe server -D
+</span></span></code></pre></div><p>This will make the site run on localhost:1313/ , so while you edit the markdown files, it will keep refreshing, I didn&rsquo;t even had to press F5, I could have it side by side and Ctrl+S, super fast to iterate.</p>
+<p>🎥 There was a LOT of YouTube embed code, that I placed over the years, and was not ever working anymore on original website, some of it had Macromedia code, yeah, that old! So I tried to fix all that, then just regex replace some stuff like wrong image paths.</p>
+<p>🧑‍💻 I also had to fix some of the programming code block notation. I was using</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">pre</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;LANG&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>for code blocks, but the parser collapsed in a couple posts, leaving pre tags, which was helpful in searching for them actually. I fixed all I could find.</p>
+<p>🗣️ As for the comments, I had Disqus installed on Upfall Studios blog, but on this blog it was on WP system, so what I did was just import all the comments on Disqus and merged both. So the comment system should work on the bottom of all posts (say Hi if you want :)</p>
+<p>I&rsquo;m not sure if all the comments are there though, one particular post I had to go back and import it manually again, but it also had over 100 comments, so it might have failed the first time. I still have all the old data, so if needed (and I can spot it) I can always import it again on Disqus.</p>
+<p>📰 The RSS feed should theoretically still work for everyone who had from the old blog, but I&rsquo;m not 100% sure, once I put this post live I guess I&rsquo;ll know.</p>
+<p>💻 So my current workflow is: I have a git repo with all the markdown and website code and I have the live website as a submodule, so whenever I made a change, I export it with Hugo, git commit all changes and GitHub pages just deploys them, feels like magic :D</p>
+<h3 id="-speed">🚀 Speed</h3>
+<p>Oh its much faster, obviously, but look at the changes of before (left) and after (right) using PageSpeed Insights.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/david_amador_site_wordpress_vs_hugo_speed.png" alt=""  />
+</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Still there? Well so far I&rsquo;m happy with the move, I do miss the nice WordPress backend thing if I&rsquo;m being honest, but I can live without it. I feel like in the long run I won&rsquo;t miss having to maintain that server, also the costs. Right now I&rsquo;m editing this on Obsidian, about to commit and see if it goes live, RSS and all. If you find any broken stuff or have suggestions let me know, either mastodon, email or a comment here.</p>
+<p>Until the next time, where hopefully I&rsquo;ll talk about games! Thanks for reading.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Ati Radeon HD 4000 drivers for Windows 8, fix for slow OpenGL games, yes, including Minecraft</title>
@@ -28,6 +73,22 @@
       <guid>https://www.david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</guid>
       <description>I’m making this post solely for the purpose of people who can’t find a solution for this.
 If you have a Ati Radeon HD 4000 or lower like me you’ll notice that there are no drivers for Windows 8 listed when you go to the AMD website. AMD only supports Windows 8 from the 5000+. And the stock ones from Windows 8 are useless, mostly on the OpenGL side, some games won’t even load, or run really slowly, like your beloved Minecraft which uses OpenGL.</description>
+      <content:encoded><![CDATA[<p>I’m making this post solely for the purpose of people who can’t find a solution for this.</p>
+<p>If you have a Ati Radeon HD 4000 or lower like me you’ll notice that there are no drivers for Windows 8 listed when you go to the AMD website. AMD only supports Windows 8 from the 5000+. And the stock ones from Windows 8 are useless, mostly on the OpenGL side, some games won’t even load, or run really slowly, like your beloved Minecraft which uses OpenGL. The stock drivers won’t even allow 2048×2048 textures 😐</p>
+<p>After some digging around the internet I found this article for old legacy drivers under Windows 8, weirdly not displayed on the list. So here you have it, it worked properly for me.</p>
+<p><!-- raw HTML omitted --><a href="http://support.amd.com/us/kbarticles/Pages/catalystlegacywin8.aspx">http://support.amd.com/us/kbarticles/Pages/catalystlegacywin8.aspx</a><!-- raw HTML omitted --></p>
+<p><a href="http://support.amd.com/en-us/download/desktop/legacy?product=legacy2&amp;os=Windows%208%20-%2064">http://support.amd.com/en-us/download/desktop/legacy?product=legacy2&amp;os=Windows%208%20-%2064</a></p>
+<p>Hardware:<br>
+AMD Radeon HD 4000 Series<br>
+AMD Radeon HD 3000 Series<br>
+AMD Radeon HD 2000 Series<br>
+AMD Mobility Radeon HD 4000 Series<br>
+AMD Mobility Radeon HD 3000 Series<br>
+AMD Mobility Radeon HD 2000 Series</p>
+<p>Operating Systems:<br>
+Windows 8 64-bit Edition<br>
+Windows 8 32-bit Edition</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Detecting C&#43;&#43; memory leaks in Visual Studio - again</title>
@@ -38,6 +99,19 @@ If you have a Ati Radeon HD 4000 or lower like me you’ll notice that there are
 According to the website itself
 Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
 It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</description>
+      <content:encoded><![CDATA[<p>I made a small post about detecting C++ <a href="/2010/10/tracking-memory-leaks-in-visual-studio/" title="Tracking memory leaks in Visual Studio">memory leaks in Visual Studio</a> in 2010. At the time that seemed to suffice, but some months ago someone told me about <a href="http://vld.codeplex.com/">Visual Leak Detector</a> and boy does it work.</p>
+<p>According to the website itself</p>
+<blockquote>
+<p>Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.</p>
+<p>It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</p>
+<p>Then it can be used with any C/C++ project simply by adding the following line to your code:</p>
+<pre tabindex="0"><code>&lt;pre lang=&#34;cpp&#34;&gt;#include &#34;vld.h&#34;
+</code></pre></blockquote>
+<p>It’s very easy to use and I tracked down a bunch of memory leaks hidden inside my code since the time I released Vizati.</p>
+<p>As expected this is a heavy beast and debbuding while using VLD required much more memory, but totally worth it. You can even output to a file</p>
+<p><a href="/wp-content/uploads/2012/06/vld.png"><img loading="lazy" src="/wp-content/uploads/2012/06/vld.png" alt=""  title="vld"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>How to Restore the Windows 7 MBR (Master Boot Record)</title>
@@ -49,6 +123,44 @@ Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of cours
 1 – Boot your computer to the Windows 7 DVD
 2 – Select your language and click next.
 3 – Click the button for “Use recovery tools”.</description>
+      <content:encoded><![CDATA[<p>So I had this crisis where the MBR got broken and Windows would not boot. This can happens for many reasons, maybe you tried to dual boot your PC and something went wrong.</p>
+<p>Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of course)!</p>
+<p>1 – Boot your computer to the Windows 7 DVD<br>
+2 – Select your language and click next.<br>
+3 – Click the button for “Use recovery tools”.<br>
+4 – Then select “Command Prompt”.</p>
+<p>Do this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Type: diskpart
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: <span class="k">select</span> disk <span class="m">0</span>
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">type: list volume
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a.png" alt=""  title="53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a"  />
+</p>
+<p>6 – Use your DVD drive letter so we can access the DVD</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Type: <span class="nb">exit</span>
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">to close Diskpart
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: G: <span class="o">(</span>DVD drive<span class="o">)</span>
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: <span class="nb">cd</span> boot
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: dir
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/53600d1251414836-mbr-restore-windows-7-master-boot-record-mbr_18a.png" alt=""  title="53600d1251414836-mbr-restore-windows-7-master-boot-record-mbr_18a"  />
+</p>
+<p>7 – To restore the “bootsector code”:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">TYPE: bootsect /nt60 SYS /mbr
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span></code></pre></div><p>You should be able to restart and boot you Windows now, if it fails, well, I’m out of ideas</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Revert To The Old Tweetdeck</title>
@@ -61,6 +173,18 @@ And that’s why you are here too probably, here it is: Tweetdeck 0.38.2. Don’
 Edit 29-12-2011
 Some user have experienced a
 “This application cannot be installed because this installer has been mis-configured.</description>
+      <content:encoded><![CDATA[<p>If you use Tweetdeck you probably already know they screwed the new version (1.0) and you want to revert back.</p>
+<p>Unfortunately since they are now part of Twitter I had a hard time finding the older build and decided to share it.</p>
+<p>And that’s why you are here too probably, here it is: <a href="https://www.dropbox.com/scl/fi/yeihkkv6n8rprp6m61e2b/TweetDeck_0_38.2.air?rlkey=n39r51q05jr6ucwcsf55bbgqu&amp;dl=0">Tweetdeck 0.38.2</a>. Don’t forget you need <a href="http://www.adobe.com/products/air.html">Adobe Air</a> installed.</p>
+<p><!-- raw HTML omitted -->Edit 29-12-2011<!-- raw HTML omitted --><br>
+Some user have experienced a</p>
+<blockquote>
+<p>“This application cannot be installed because this installer has been mis-configured. Please contact the application author for assistance.”</p>
+</blockquote>
+<p>They solved it by uninstalling all previous versions of tweetdeck. Make sure you don’t have another one already installed.</p>
+<p><!-- raw HTML omitted -->Edit 11-10-2023<!-- raw HTML omitted --></p>
+<p>If you are reaching this page in search for a way to revert to the non-paied version of Tweetdeck, becauseTwitter introduced all those crazy new rules, sorry, I have no solution. This post was made back when Twitter purchased Tweetdeck company and messed it up, I guess they ended up nearly killing the best tool they had :/</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Testing the new Visual Studio 2010 features</title>
@@ -70,6 +194,36 @@ Some user have experienced a
       <description>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.
 First time I installed VS2010 was in the RC form mainly because of WP7 Developer’s Tools and XNA4.0 but haven’t made many investment in searching for new features.
 But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.</description>
+      <content:encoded><![CDATA[<p>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.</p>
+<p>First time I installed VS2010 was in the RC form mainly because of <a href="/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/">WP7 Developer’s Tools and XNA4.0</a> but haven’t made many investment in searching for new features.</p>
+<p>But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.</p>
+<p>On a side note to WP7 developers, if you are using VS RC to develop application to the phone don’t install the <a href="https://web.archive.org/web/20100623130306/http://klucher.com:80/blog/visual-studio-2010-and-windows-phone-developer-toolsxna-game-studio-4-0/">RTM version of VS2010 since it’s not compatible with WP7 developer tools</a> yet. You have to stick with the RC for now.</p>
+<p>Booting the new VS we get a nice splash screen</p>
+<p><a href="/wp-content/uploads/2010/04/vs_splash_logo.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_splash_logo-300x210.jpg" alt=""  title="vs_splash_logo"  />
+</a></p>
+<p>The new UI looks really clean and pretty.</p>
+<p><a href="/wp-content/uploads/2010/04/vs_entry.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_entry-300x162.jpg" alt=""  title="vs_entry"  />
+</a></p>
+<p>The new Code Editor allows zooming in and out of code. For those days were your eyes are already red from trying to read so much tiny code. Sure you can always change the font size but doing this on the fly is way better.</p>
+<p><a href="/wp-content/uploads/2010/04/vs_zoom_feature.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_zoom_feature-300x178.jpg" alt=""  title="vs_zoom_feature"  />
+</a></p>
+<p>One feature that I would never remember on asking but it’s really handy is Code Selection Block, basically by pressing the Alt Key and making a selection around a block of code, like this:</p>
+<p><a href="/wp-content/uploads/2010/04/vs_code_block_selection_01.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_code_block_selection_01-300x144.jpg" alt=""  title="vs_code_block_selection_01"  />
+</a></p>
+<p>See how just Vector3 is selected?</p>
+<p>Now start changing that block to something else</p>
+<p><a href="/wp-content/uploads/2010/04/vs_code_block_selection_02.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_code_block_selection_02-300x144.jpg" alt=""  title="vs_code_block_selection_02"  />
+</a></p>
+<p>And voila, you are changing that block of code on the fly 😀 This works for copy paste as well. I’m pretty convinced this allows other stuff too but can’t figure out more usages.</p>
+<p>Now, for the new intellisense. It’s not just plain dumb anymore, It won’t search just Classes/Members starting with the letters you typed, it will actively search patterns as well.</p>
+<p><a href="/wp-content/uploads/2010/04/vs_intelissense.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_intelissense-300x144.jpg" alt=""  title="vs_intelissense"  />
+</a></p>
+<p>Multi Monitor FTW</p>
+<p><a href="/wp-content/uploads/2010/04/vs_dual_monitor.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_dual_monitor-300x101.jpg" alt=""  title="vs_dual_monitor"  />
+</a></p>
+<p>Just drag and drop your files to another screen and there you go, multi monitor support. No more opening another instance of Visual Studio to do this 😀</p>
+<p>I know there’s tons of other stuff but that’s what I uncovered so far. Know any more stuff? Please do tell.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Flex Build Path GUI bug and fix</title>
@@ -78,6 +232,15 @@ But being available at Dreamspark I downloaded the Professional version and deci
       <guid>https://www.david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</guid>
       <description>I recently faced myself with a really annoying bug on Flex 3, the “Flex Modules” section of the properties dialog is blank.
 After some search on the internet some suggested that it might be a resolution problem. What the f**? So I have to switch resolution to use a program? Adobe Support turned out a dead end so still no permanent fix for this. There is however a small thing you can do, just adjust the divider between the list on the left hand side of the dialog and the right hand content area.</description>
+      <content:encoded><![CDATA[<p>I recently faced myself with a really annoying bug on Flex 3, the “Flex Modules” section of the properties dialog is blank.</p>
+<p><a href="/wp-content/uploads/2010/01/flex_missing_gui_bug.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/flex_missing_gui_bug-300x278.jpg" alt=""  title="flex_missing_gui_bug"  />
+</a></p>
+<p>After some search on the internet some suggested that it might be a resolution problem. What the f**? So I have to switch resolution to use a program? Adobe Support turned out a dead end so still no permanent fix for this. There is however a small thing you can do, just adjust the divider between the list on the left hand side of the dialog and the right hand content area. Just adjusting the divider a smidge will cause everything to magically appear.</p>
+<p><a href="/wp-content/uploads/2010/01/flex_missing_gui_fixed.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/flex_missing_gui_fixed-300x278.jpg" alt=""  title="flex_missing_gui_fixed"  />
+</a></p>
+<p>Even though It might seem obvious now it certainly gave me some headaches no being able to add source paths.</p>
+<p>Cheers</p>
+]]></content:encoded>
     </item>
     <item>
       <title>How To Speed Up Firefox 3</title>
@@ -85,6 +248,18 @@ After some search on the internet some suggested that it might be a resolution p
       <pubDate>Mon, 12 Oct 2009 21:22:27 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/how-to-speed-up-firefox-3/</guid>
       <description>I decided to try Google Chrome today and was pleasantly surprised with it’s speed on loading pages. And I started seeing how slow my Firefox was. At first I thought that it might have something to do with the plugins I have, but then again they are very few, just Echofon, Firebug and Xmarks. So after a little digging I came up with a way to speed up Firefox 3, turn out it was all in the options =)</description>
+      <content:encoded><![CDATA[<p>I decided to try Google Chrome today and was pleasantly surprised with it’s speed on loading pages. And I started seeing how slow my Firefox was. At first I thought that it might have something to do with the plugins I have, but then again they are very few, just Echofon, Firebug and Xmarks. So after a little digging I came up with a way to speed up Firefox 3, turn out it was all in the options =)</p>
+<ol>
+<li>Open Firefox, and type about:config in the address bar. Don’t worry about the warning that comes out.<img loading="lazy" src="/wp-content/uploads/2009/10/about-config_warning.gif" alt="about-config_warning"  title="about-config_warning"  />
+</li>
+<li><strong>Use the filter above</strong> to find <em>network.http.pipelining</em> and set it to True by double clicking on it.</li>
+<li><strong>Create a new boolean value named</strong> <em>network.http.pipelining.firstrequest</em> and set that to True, as well.</li>
+<li><strong>Find</strong> <em>network.http.pipelining.maxrequests</em>, double click on it, and change its value to 8.</li>
+<li><strong>Now look for</strong> <em>network.http.proxy.pipelining</em> and again set it to True.</li>
+<li><strong>Create two new integers named</strong> <em>nglayout.initialpaint.delay</em> and <em>content.notify.interval</em>, setting them to 0.</li>
+</ol>
+<p><strong>Now restart your browser</strong> and see the results, mine is way faster loading stuff. Hope this helped.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Tech Talk: Linus Torvalds On Git</title>
@@ -93,6 +268,14 @@ After some search on the internet some suggested that it might be a resolution p
       <guid>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</guid>
       <description>I recently found that there is a subversion alternative surfacing that is in many ways much better that subversion, it name is Git and it’s a creation of Linus Torvalds.
 Here’s a video of him talking about it</description>
+      <content:encoded><![CDATA[<p>I recently found that there is a subversion alternative surfacing that is in <a href="http://git.or.cz/gitwiki/GitSvnComparsion">many ways much better that subversion</a>, it name is <a href="http://git-scm.com">Git</a> and it’s a creation of Linus Torvalds.</p>
+<p>Here’s a video of him talking about it<br>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/4XpnKHJAok8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+]]></content:encoded>
     </item>
     <item>
       <title>How to Enable or Disable Quick Launch Bar Toolbar in Windows 7</title>
@@ -101,6 +284,18 @@ Here’s a video of him talking about it</description>
       <guid>https://www.david-amador.com/2009/01/how-to-enable-or-disable-quick-launch-bar-toolbar-in-windows-7/</guid>
       <description>Quick Launch Bar is slowly being deprecated. It wasn’t enable by default on windows Vista and on the new Windows 7 (build 7000 for me) it isn’t even available on the toolbars list as the whole Taskbar been replaced with a new and enhanced one, which now allows shortcut icons to be placed on it directly.
 For users, like myself who miss Quick Launch bar here’s a how to enable it:</description>
+      <content:encoded><![CDATA[<p>Quick Launch Bar is slowly being deprecated. It wasn’t enable by default on windows Vista and on the new Windows 7 (build 7000 for me) it isn’t even available on the toolbars list as the whole Taskbar been replaced with a new and enhanced one, which now allows shortcut icons to be placed on it directly.</p>
+<p>For users, like myself who miss Quick Launch bar here’s a how to enable it:</p>
+<ol>
+<li>Right click on Windows 7 Taskbar, and point to <strong>Toolbars</strong> context menu item, and then select <strong>New Toolbar…</strong>.</li>
+<li>Browse to the following folder (easy way is to copy and paste to Address box to automatically navigate to):<strong>%SystemDrive%\Users\%username%\AppData\Roaming\Microsoft\Internet Explorer\</strong></li>
+<li>Locate and highlight the <strong>Quick Launch</strong> folder, and then click on <strong>Select Folder</strong> button.</li>
+<li>A Quick Launch Toolbar will be added to Windows Taskbar close to notification area. Unlock the Taskbar (right click on Taskbar and uncheck <strong>Lock the taskbar</strong>) to move the Quick Launch Toolbar.</li>
+<li>To move the Quick Launch Toolbar to the left of Taskbar next to Start button, unpin all application programs from the Superbar by right click on each and every icons, then select <strong>Unpin this program from taskbar</strong>.Move the both borders of Quick Launch Toolbar to the furthest left, and then re-pin the applications to Taskbar if you still require them.</li>
+<li>Optionally, right click on empty space inside Quick Launch Toolbar area, and unselect <strong>Show Title</strong> to remove the Quick Launch wording, or uncheck <strong>Show Text</strong> to remove the label next to the shortcuts and icons in Quick Launch bar.</li>
+<li>Add the icons and/or shortcuts to Quick Launch Bar by drag and drop to the Quick Launch Bar Toolbar or to %SystemDrive%\Users\%username%\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\ folder, while delete the icon as you would with any typical file (right click on it, and then select Delete).<strong>How to Disable and Remove Quick Launch Toolbar in Windows 7</strong>After added the Quick Launch bar in Windows 7, to remove the QuickLaunch Toolbar, just right click on Taskbar, and go to <strong>Toolbars</strong>, then uncheck <strong>Quick Launch</strong> menu item. The Quick Launch Toolbar will be removed from Taskbar and the toolbar item in Toolbars folder will also be deleted.</li>
+</ol>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

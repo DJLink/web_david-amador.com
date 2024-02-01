@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>mastodon on David Amador</title>
     <link>https://www.david-amador.com/tags/mastodon/</link>
@@ -20,6 +20,37 @@
       <guid>https://www.david-amador.com/2022/11/what-is-mastodon-and-why-does-it-matter-that-its-decentralised/</guid>
       <description>&amp;gt; At the bottom of the article I added a couple links that help finding your Twitter following/followers on Mastodon and follow them
 With the recent Twitter purchase, change of ownership and rules, a lot of people are leaving the platform or just searching for alternatives. Among other platforms one that keeps showing up as an alternative is Mastodon, but change is always hard, some people have been on Twitter for years, so what exactly makes this any different?</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2022/11/bn-ba-mastodon.jpg" alt=""  />
+&gt; <strong>At the bottom of the article I added a couple links that help finding your Twitter following/followers on Mastodon and follow them</strong></p>
+<p>With the recent Twitter purchase, change of ownership and rules, a lot of people are leaving the platform or just searching for alternatives. Among other platforms one that keeps showing up as an alternative is <a href="https://joinmastodon.org/">Mastodon</a>, but change is always hard, some people have been on Twitter for years, so what exactly makes this any different?</p>
+<hr>
+<p>I created a Mastodon back in 2018 but never really payed much attention to it, I have to be honest, there weren’t as many people using it back then, I lost interest a bit fast, and I never really got past the “just another social network”. But recently things changed, a LOT of people have joined, it feels more alive, and I started to look more into the decentralised nature of it, which is the opposite of Twitter centralised, and one of it’s best weapons at keeping ppl stuck there, you’ve build up a network, if you leave, it’s all gone.</p>
+<hr>
+<p>Ok so right now one of the problems with Twitter is, either you agree with how things are or not, but your profile is locked on that platform, if you leave all is gone, followers, posts etc, you start from scratch elsewhere. This was never particularly too much of any issue until now, I wanna keep in touch with people I follow, updates on their work, they are leaving, ideally I should be able to follow them if they leave twitter server, regardless if I wanna move or not.</p>
+<p>But let’s start by the similarities, on Mastodon you can make posts (the tweets), follow people, be followed, make lists, search hashtags, post pictures etc, on the surface level, give or take, it’s more or less the same, but Mastodon gives us more control on a couple levels, but one of the best features might be the decentralisation.</p>
+<p>And this is were the big differences show up, Mastodon doesn’t exist in a single place, Twitter entry point is twitter.com, everyone logins there, and everything is there, if Twitter closes tomorrow, they own all the data, everything is gone.</p>
+<p>But with Mastodon anyone can make a new server, based on interests, topics, workplace, whatever. By now you might be asking</p>
+<blockquote>
+<p><!-- raw HTML omitted -->But that just means everyone is a different place, multiple servers, where do I join, that sounds too much work, what if I join a server with few people or that stagnates?<br>
+<!-- raw HTML omitted --></p>
+</blockquote>
+<p>All good questions, which I made myself, but here’s where the decentralised part enters, all Mastodon servers talk with each other, so you can follow people from any server, get their notifications and talk with them, regardless of where you created your account, they are all connected. On top of that, you can migrate your account to different servers if you don’t agree with any new rules, it’s too crowded, or too empty or you just wanna go to a new one, you can even run your own server, just your account, and never be isolated, I’m following 3 people who run their own instance, and it doesn’t matter.</p>
+<p>The server you choose matters for the Local Timeline, where you see a feed of all updates from anyone in the server you choose, so in my case, I joined the <a href="https://mastodon.gamedev.place">https://mastodon.gamedev.place</a> and I see a local timeline with a lot of gamedev content, but there is also a Federated tab, which shows updates from all Mastadon instances, like a “global feed” list.</p>
+<p>So we have 3 levels:</p>
+<p>–<strong>The people you follow</strong>: doesn’t matter which server they are on, you’ll see their stuff.<br>
+–<strong>The Local Feed</strong>: here it will matter the server you pick, you see content of all people in your server, but don’t worry, don’t like it? Move your account to another one.<br>
+–<strong>The Federated Feed</strong>: Posts from people in from the whole network related to the people you follow.</p>
+<p>But you can just see the people you follow of course, you have a lot of control, nothing forces you to see stuff from people you don’t follow.</p>
+<p>All this together has been very interesting to me, because that means as we grow a userbase on Mastodon, if somewhere in the future we are unhappy with the server picked, we can move, create our own and still keep our data, just elsewhere, still following the same people. It’s a different kind of concept which has tremendous potential in a future where we want to be more and more in control of our own data.</p>
+<!-- raw HTML omitted -->
+<p>If people you are following created Mastodon accounts there are a few tools you can use to find them, these will search their bios for Mastodon links, or even if someone you follow on Twitter used the same tool to search, which means they have an account. I used these and found several people I was following, as time passes more will join so running the tools in a couple weeks will probably bring more results. After you use it, it will export a .csv file which you can use to import on Mastodon, don’t forget to use “merge” and not “replace”.</p>
+<p><a href="https://pruvisto.org/debirdify/">https://pruvisto.org/debirdify/</a><br>
+<a href="https://fedifinder.glitch.me/">fedifinder.glitch.me</a><br>
+<a href="https://twitodon.com/">https://twitodon.com</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2022/11/mastodon_importer.png" alt=""  />
+I’m not leaving Twitter for now, but I’m actively using Mastodon, can’t hurt, and it’s kind of exciting, I’m meeting a ton of new developers. I’m also using a Mastodon to Twitter cross poster <a href="https://crossposter.masto.donte.com.br/">https://crossposter.masto.donte.com.br</a>, which makes all my tweets post on Mastodon as well. You can control not to post RTs for example, which might look weird on Mastodon and vice versa.</p>
+<p>If anyone wants to follow me feel free I’m <a href="https://mastodon.gamedev.place/@djlink">DJLink@mastodon.gamedev.place</a></p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

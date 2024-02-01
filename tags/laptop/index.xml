@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>laptop on David Amador</title>
     <link>https://www.david-amador.com/tags/laptop/</link>
@@ -19,6 +19,12 @@
       <pubDate>Mon, 04 May 2009 16:01:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/05/rip-laptop-hdd/</guid>
       <description>This weekend was a longer one, 3 days =) but still it was a bad weekend. My old acer aspire 2000 died on me. I was starting to watch a movie when a sudden blue screen pop up. I tryed to reboot it but with no success, the problem? The hard drive is broken, when I boot it starts to make this strange mechanicall sounds and the hdd isn’t showing on the bios.</description>
+      <content:encoded><![CDATA[<p>This weekend was a longer one, 3 days =) but still it was a bad weekend. My old acer aspire 2000 died on me. I was starting to watch a movie when a sudden blue screen pop up. I tryed to reboot it but with no success, the problem? The hard drive is broken, when I boot it starts to make this strange mechanicall sounds and the hdd isn’t showing on the bios.</p>
+<p>Result? Many things lost, much of them are recoverable though downloads since my main working computer as long been my desktop, but the book I was writing was entirely wipped out from this world =(</p>
+<p>I hopping to find some store that maybe can recover it for me, but it may not be possible.</p>
+<p>On the other hand I finnaly got myselft a xbox360-&gt;RGB converter and I also bought a 1920×1080 monitor so I can finally play on my Xbox properly. It’s really much better to play on a monitor unless you have a proper tv which wasn’t my case. I spent most of saturday playing Resident Evil 5 and I”m really enjoying it, controls are very much alike RE4 so no adaptation time for me.</p>
+<p>Meanwhile I also discovered that the xbox can play divx movie from a disc or an usb drive and it’s a must. Just don’t forget that your drive must be in FAT32 or HFS+. The downside is that srt subtitles are out of question.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

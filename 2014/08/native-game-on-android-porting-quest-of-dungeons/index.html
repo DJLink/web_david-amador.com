@@ -44,12 +44,12 @@ if (!doNotTrack) {
 I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2014/08/android-210x201.png" /><meta property="article:section" content="posts" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2014/08/android.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2014-08-30T13:42:52+00:00" />
 <meta property="article:modified_time" content="2014-08-30T13:42:52+00:00" /><meta property="og:site_name" content="David Amador" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2014/08/android-210x201.png" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2014/08/android.png" />
 <meta name="twitter:title" content="Native game on Android &amp; Porting Quest of Dungeons"/>
 <meta name="twitter:description" content="Quest of Dungeons was made in C&#43;&#43; and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.
 I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect."/>
@@ -88,7 +88,7 @@ I never made anything for Android, in fact I never even used one before this, so
   "articleBody": "Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.\nI never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.\nBack in 2010 I did some research and the NDK was pretty bad, I don’t think it even had stl at the time, but things have changed since then. I decided to jump in and try to port the whole thing. As a primary goal I want to keep as much native code as possible, because it’s already working, porting it to Java could only lead to further bugs in the process.\nTools\nAfter some digging I found that you can use Visual Studio to code for Android (oh happy dayyy).\nVisual Studio 2010: http://www.visualstudio.com/pt-br/visual-studio-homepage-vs.aspx\nVS-Android: https://code.google.com/p/vs-android/\nAndroid NDK, Revision 10 : https://developer.android.com/tools/sdk/ndk/index.html\nAndroid SDK : http://developer.android.com/sdk/index.html\nant-1.9.4: http://ant.apache.org/bindownload.cgi\njdk 1.8.0: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html\nDependencies\nMy next concern were some dependencies that I have on the other versions:\nOpenAL – for sound card access\nVorbis – for OGG load/parsing\nFreeType 2 – for ttf loading\nTinyXML – XML parser\nFortunately all of these were possible to compile to Android.\nApplication\nAs an entry point I used android_native_app_glue which comes with the NDK, this way you can skip all Java (I have 0 lines of java code in the game)\nAnother important thing is this line, telling our manifest file that we have no Java code\n",
   "wordCount" : "1205",
   "inLanguage": "en",
-  "image":"https://www.david-amador.com/wp-content/uploads/2014/08/android-210x201.png","datePublished": "2014-08-30T13:42:52Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2014/08/android.png","datePublished": "2014-08-30T13:42:52Z",
   "dateModified": "2014-08-30T13:42:52Z",
   "author":{
     "@type": "Person",
@@ -193,7 +193,7 @@ I never made anything for Android, in fact I never even used one before this, so
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2014/08/android-210x201.png" alt="">
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2014/08/android.png" alt="">
         
 </figure>
   <div class="post-content"><p>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.</p>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Particle System on David Amador</title>
     <link>https://www.david-amador.com/tags/particle-system/</link>
@@ -20,6 +20,25 @@
       <guid>https://www.david-amador.com/2010/02/xna-particle-system-2d/</guid>
       <description>It’s been a long week.
 Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.</description>
+      <content:encoded><![CDATA[<p>It’s been a long week.<br>
+Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.<br>
+Then it began, the one task that all programmers should ask someone else to do, because once you get the first one working you are gonna keep adding features because is so FUC**** pretty 😀</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg" alt="ParticleSystem_Radial_Gravity.jpg"  />
+</p>
+<p>I decided the best way was to quick implement it on our editor Sapphire, it now features:<br>
+– Color Interpolation<br>
+– Alpha Interpolation<br>
+– Scale Interpolation<br>
+– Linear Gravity<br>
+– Radial Gravity (This is more of a gravity Well, everything gets sucked in Geometry Wars style)</p>
+<p>Here’s the video</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/SLd4PxJlVlE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Also I’ve found out that this March 5th near where I live Microsoft is doing a XNA Pizza Night, it’s a contest with prizes to the best games, and best of all, free Pizza and Drinks for everyone. I’m gonna enter with the same game of course so wish me luck.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

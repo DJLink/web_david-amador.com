@@ -47,13 +47,13 @@ So how can you measure your frame rate in XNA?
 Inside your game1 class declare these vars:
 SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fps = 0; On function LoadContent() do" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2009/11/how-to-do-a-xna-fps-counter/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.david-amador.com/2009/11/how-to-do-a-xna-fps-counter/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2009/11/xna_fps_counter.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2009-11-23T17:49:38+00:00" />
 <meta property="article:modified_time" content="2009-11-23T17:49:38+00:00" /><meta property="og:site_name" content="David Amador" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2009/11/xna_fps_counter.png" />
 <meta name="twitter:title" content="How to do a XNA fps counter"/>
 <meta name="twitter:description" content="Frame rate or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.
 So how can you measure your frame rate in XNA?
@@ -94,7 +94,7 @@ SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fp
   "articleBody": "Frame rate or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.\nSo how can you measure your frame rate in XNA?\nInside your game1 class declare these vars:\nSpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fps = 0; On function LoadContent() do\n// Put the name of the font _spr_font = Content.Load(\"kootenay\"); you have on your project On the update pump do:\nprotected override void Update(GameTime gameTime) { // Update _elapsed_time += (float)gameTime.ElapsedGameTime.TotalMilliseconds; // 1 Second has passed if (_elapsed_time \u003e= 1000.0f) { _fps = _total_frames; _total_frames = 0; _elapsed_time = 0; } // Allows the game to exit if (Keyboard.GetState().IsKeyDown(Keys.Escape)) this.Exit(); base.Update(gameTime); } Finally on Draw function do:\nprotected override void Draw(GameTime gameTime) { // Only update total frames when drawing _total_frames++; GraphicsDevice.Clear(Color.CornflowerBlue); spriteBatch.Begin(); spriteBatch.DrawString(_spr_font, string.Format(\"FPS={0}\", _fps), new Vector2(10.0f, 20.0f), Color.White); spriteBatch.End(); base.Draw(gameTime); } If everything went alright you should have a white counter on the upper left screen. You probably want to turn this into a drawable component or adjusting it to be an independent component on your engine.\nHere’s the project for VC# Express : download\nnote: For those who have asked me why do I use a prefix _ on some variables. I use this to help me know which vars are members of the class and which aren’t. I don’t like using mPosition, instead I use _Position.\n",
   "wordCount" : "254",
   "inLanguage": "en",
-  "datePublished": "2009-11-23T17:49:38Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2009/11/xna_fps_counter.png","datePublished": "2009-11-23T17:49:38Z",
   "dateModified": "2009-11-23T17:49:38Z",
   "author":{
     "@type": "Person",
@@ -199,6 +199,9 @@ SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fp
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2009/11/xna_fps_counter.png" alt="">
+        
+</figure>
   <div class="post-content"><p><a href="http://en.wikipedia.org/wiki/Frame_rate">Frame rate</a> or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.</p>
 <p>So how can you measure your frame rate in XNA?</p>
 <p>Inside your game1 class declare these vars:</p>
@@ -244,8 +247,8 @@ SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fp
 </span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span></code></pre></div><p>If everything went alright you should have a white counter on the upper left screen. You probably want to turn this into a drawable component or adjusting it to be an independent component on your engine.</p>
-<p><a href="/wp-content/uploads/2009/11/xna_fps_counter.png"><img loading="lazy" src="/wp-content/uploads/2009/11/xna_fps_counter-300x234.png" alt="xna_fps_counter"  title="xna_fps_counter"  />
-</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2009/11/xna_fps_counter.png" alt="xna_fps_counter"  />
+</p>
 <p><strong>Here’s the project for VC# Express : <a href="/wp-content/uploads/2009/11/FpsCounter.zip">download</a></strong></p>
 <blockquote>
 <p>note: For those who have asked me why do I use a prefix _ on some variables. I use this to help me know which vars are members of the class and which aren’t. I don’t like using mPosition, instead I use _Position.</p>

@@ -48,12 +48,12 @@ Let’s start with a small class to store the information
 class Touch { public: Touch(); ~Touch(); void update_position(float x, float y){ _current_position.x = x; _current_position.x = y; } bool is_same_touch(float x, float y) { if(_current_position." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.david-amador.com/2011/04/tracking-identifying-individual-touches-on-iphone/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2011/04/minority-report-touch-screen-125x166.jpg" /><meta property="article:section" content="posts" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2011/04/minority-report-touch-screen.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2011-04-15T12:01:37+00:00" />
 <meta property="article:modified_time" content="2011-04-15T12:01:37+00:00" /><meta property="og:site_name" content="David Amador" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2011/04/minority-report-touch-screen-125x166.jpg" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2011/04/minority-report-touch-screen.jpg" />
 <meta name="twitter:title" content="Tracking/Identifying individual touches on iPhone"/>
 <meta name="twitter:description" content="I got this question the other day, how to track individual touches if you are using a couple of fingers for a game?
 Actually it’s pretty easy if you can access the touch previous position and it’s current position.
@@ -94,7 +94,7 @@ class Touch { public: Touch(); ~Touch(); void update_position(float x, float y){
   "articleBody": "I got this question the other day, how to track individual touches if you are using a couple of fingers for a game?\nActually it’s pretty easy if you can access the touch previous position and it’s current position.\nLet’s start with a small class to store the information\nclass Touch { public: Touch(); ~Touch(); void update_position(float x, float y){ _current_position.x = x; _current_position.x = y; } bool is_same_touch(float x, float y) { if(_current_position.x == x \u0026\u0026 _current_position.y == y) return true; return false; } protected: CGPoint _current_position; }; Let’s a assume the “move” movement\n- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event { // Loop all touches for (UITouch *touch in touches) {\t// Get current position in view CGPoint touchPoint = [touch locationInView:self]; // Get previous position CGPoint prevPoint = [touch previousLocationInView:self];\t// compare with your stored touch if(stored_touch-\u003eis_same_touch(prevPoint.x, prevPoint.y)) { // Do stuff with the movement // Update stored_touch-\u003eupdate_position(touchPoint.x,touchPoint.y); } } } As you can see you now have for each touch it’s current and previous position. So by storing each touch you can later compare it’s current position with the new touch old position.\n",
   "wordCount" : "185",
   "inLanguage": "en",
-  "image":"https://www.david-amador.com/wp-content/uploads/2011/04/minority-report-touch-screen-125x166.jpg","datePublished": "2011-04-15T12:01:37Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2011/04/minority-report-touch-screen.jpg","datePublished": "2011-04-15T12:01:37Z",
   "dateModified": "2011-04-15T12:01:37Z",
   "author":{
     "@type": "Person",
@@ -199,7 +199,7 @@ class Touch { public: Touch(); ~Touch(); void update_position(float x, float y){
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2011/04/minority-report-touch-screen-125x166.jpg" alt="">
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2011/04/minority-report-touch-screen.jpg" alt="">
         
 </figure>
   <div class="post-content"><p>I got this question the other day, how to track individual touches if you are using a couple of fingers for a game?</p>

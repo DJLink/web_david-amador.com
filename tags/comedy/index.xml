@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>comedy on David Amador</title>
     <link>https://www.david-amador.com/tags/comedy/</link>
@@ -21,6 +21,16 @@
       <description>I started watching Stargate SG-1 on the beginning of this year, I’ve already had seen Season one, but it was almost 10 years ago so I decided to see from start.
 I’m in the middle of season 4 and last weekend I saw what may well be the most funny episode of all, Window of Opportunity.
 On this episode O’Neill and Teal’c get trapped on an endless loop, were events keep repeating themselves so, without any consequences to think on they decided to take the best of that time.</description>
+      <content:encoded><![CDATA[<p>I started watching <a href="http://en.wikipedia.org/wiki/Stargate_SG-1">Stargate SG-1</a> on the beginning of this year, I’ve already had seen Season one, but it was almost 10 years ago so I decided to see from start.</p>
+<p>I’m in the middle of season 4 and last weekend I saw what may well be the most funny episode of all, <a href="http://en.wikipedia.org/wiki/Window_of_Opportunity_(Stargate_SG-1)">Window of Opportunity</a>.</p>
+<p>On this episode O’Neill and Teal’c get trapped on an endless loop, were events keep repeating themselves so, without any consequences to think on they decided to take the best of that time.</p>
+<p>Here’s a small video of some of the most enjoyable scenes.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/7R3vhUaWOMM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
   </channel>
 </rss>

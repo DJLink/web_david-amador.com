@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Internet Explorer on David Amador</title>
     <link>https://www.david-amador.com/tags/internet-explorer/</link>
@@ -19,6 +19,10 @@
       <pubDate>Wed, 21 Oct 2009 22:06:57 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
       <description>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</description>
+      <content:encoded><![CDATA[<p>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</p>
+<p>Adobe has launched a neat website for testing this, just go to <a href="https://browserlab.adobe.com/">https://browserlab.adobe.com/</a>, register an account and test it for yourself, it was a side by site view and even a <a href="http://en.wikipedia.org/wiki/Onion_skinning">Onion view</a></p>
+<!-- raw HTML omitted -->
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>csharp on David Amador</title>
     <link>https://www.david-amador.com/tags/csharp/</link>
@@ -22,6 +22,34 @@
 You can use IsolatedStorage for that
 using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
 IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); // grab the storage FileStream stream = store.OpenFile(&amp;#34;test.txt&amp;#34;, FileMode.Create); // Open a file in Create mode BinaryWriter writer = new BinaryWriter(stream); float myvar = 5.</description>
+      <content:encoded><![CDATA[<p>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.<br>
+You can use <strong>IsolatedStorage</strong> for that</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.IO.IsolatedStorage</span><span class="p">;</span>
+</span></span></code></pre></div><p>Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">IsolatedStorageFile</span> <span class="n">store</span> <span class="p">=</span> <span class="n">IsolatedStorageFile</span><span class="p">.</span><span class="n">GetUserStoreForApplication</span><span class="p">();</span> <span class="c1">// grab the storage</span>
+</span></span><span class="line"><span class="cl"><span class="n">FileStream</span> <span class="n">stream</span> <span class="p">=</span> <span class="n">store</span><span class="p">.</span><span class="n">OpenFile</span><span class="p">(</span><span class="s">&#34;test.txt&#34;</span><span class="p">,</span> <span class="n">FileMode</span><span class="p">.</span><span class="n">Create</span><span class="p">);</span> <span class="c1">// Open a file in Create mode</span>
+</span></span><span class="line"><span class="cl"><span class="n">BinaryWriter</span> <span class="n">writer</span> <span class="p">=</span> <span class="k">new</span> <span class="n">BinaryWriter</span><span class="p">(</span><span class="n">stream</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">myvar</span> <span class="p">=</span> <span class="m">5.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">writer</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&#34;something&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">writer</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">myvar</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">writer</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
+</span></span></code></pre></div><p>For loading is pretty much the same thing:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">IsolatedStorageFile</span> <span class="n">store</span> <span class="p">=</span> <span class="n">IsolatedStorageFile</span><span class="p">.</span><span class="n">GetUserStoreForApplication</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">store</span><span class="p">.</span><span class="n">FileExists</span><span class="p">(</span><span class="s">&#34;test.txt&#34;</span><span class="p">))</span> <span class="c1">// Check if file exists</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="n">IsolatedStorageFileStream</span> <span class="n">save</span> <span class="p">=</span> <span class="k">new</span> <span class="n">IsolatedStorageFileStream</span><span class="p">(</span><span class="s">&#34;test.txt&#34;</span><span class="p">,</span> <span class="n">FileMode</span><span class="p">.</span><span class="n">Open</span><span class="p">,</span> <span class="n">store</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="n">BinaryReader</span> <span class="n">reader</span> <span class="p">=</span> <span class="k">new</span> <span class="n">BinaryReader</span><span class="p">(</span><span class="n">save</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="kt">string</span> <span class="n">mystring</span> <span class="p">=</span> <span class="n">reader</span><span class="p">.</span><span class="n">ReadString</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">       <span class="kt">float</span> <span class="n">myfloat</span>  <span class="p">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">reader</span><span class="p">.</span><span class="n">ReadSingle</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">       <span class="n">reader</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">     
+</span></span></code></pre></div><p>Simple right? I really don’t know if this is the best way but I’ve tested on both the emulator and a real device and it works.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>A good Reference system can help your game</title>
@@ -30,6 +58,79 @@ IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); //
       <guid>https://www.david-amador.com/2010/06/a-good-reference-system-can-help-your-game/</guid>
       <description>How many times has it happened where you have this one class, let’s say it’s a spaceship that was destroyed.
 Now you have tell all other dependent objects that she died, any independent sprite animation class, AI, etc etc because they were relying on her. Another thing is, in my case, having a scene that contains all the objects and by deleting the ship It won’t get removed from the scene, keeping the reference alive and so Garbage collector won’t kick in.</description>
+      <content:encoded><![CDATA[<p>How many times has it happened where you have this one class, let’s say it’s a spaceship that was destroyed.</p>
+<p>Now you have tell all other dependent objects that she died, any independent sprite animation class, AI, etc etc because they were relying on her. Another thing is, in my case, having a scene that contains all the objects and by deleting the ship It won’t get removed from the scene, keeping the reference alive and so Garbage collector won’t kick in. Deleting and removing from the list is a way, but why should you inside the spaceship class have know how to remove from the Scene list? Makes no sense. The list should know how to treat a deleted object.</p>
+<p>I made a somewhat satisfactory solution.</p>
+<p>A base class called Reference</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">   <span class="kd">public</span> <span class="k">class</span> <span class="nc">Reference</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">protected</span> <span class="kt">string</span>    <span class="n">_name</span> <span class="p">=</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">protected</span> <span class="kt">bool</span>      <span class="n">_notifying</span> <span class="p">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">protected</span>   <span class="n">List</span> <span class="n">_to_alert_of_death</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="n">Reference</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Name</span> <span class="p">=</span> <span class="s">&#34;UnknownReference&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kt">string</span> <span class="n">Name</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_name</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">set</span> <span class="p">{</span> <span class="n">_name</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="k">void</span> <span class="n">add_reference</span><span class="p">(</span><span class="n">Reference</span> <span class="n">to_alert</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_to_alert_of_death</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">to_alert</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="k">void</span> <span class="n">remove_reference</span><span class="p">(</span><span class="n">Reference</span> <span class="n">to_alert</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_to_alert_of_death</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="n">to_alert</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="k">void</span> <span class="n">NotifyDeathToChilds</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Prevents stack overflow if double reference exists</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">_notifying</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Reference will be erase, notify children of death</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_notifying</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">_to_alert_of_death</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span> <span class="p">++</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">_to_alert_of_death</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">notify_death</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_to_alert_of_death</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_notifying</span> <span class="p">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="k">virtual</span> <span class="k">void</span> <span class="n">DeleteThis</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">NotifyDeathToChilds</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="k">virtual</span> <span class="k">void</span> <span class="n">notify_death</span><span class="p">(</span><span class="n">Reference</span> <span class="n">reference</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_to_alert_of_death</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="n">reference</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>So when you create your dependent spaceship objects you just do something like:</p>
+<p>Spaceship.add_reference(DepedentObject);</p>
+<p>When you want to delete SpaceShip just do SpaceShip.DeleteThis(); and it will warn all dependent object that it’s being deleted</p>
+<p>But how will the Dependent Object be aware of this?<br>
+Make it inherit from Reference and override notify_death()</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">        <span class="kd">public</span> <span class="k">virtual</span> <span class="k">void</span> <span class="n">notify_death</span><span class="p">(</span><span class="n">Reference</span> <span class="n">reference</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">              <span class="c1">// Compare reference var with the pointer you have to spaceship</span>
+</span></span><span class="line"><span class="cl">              <span class="k">if</span><span class="p">(</span><span class="n">reference</span> <span class="p">==</span> <span class="n">mySpaceshipPointer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">             <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// This means the class is being deleted so either delete this one as well or just put</span>
+</span></span><span class="line"><span class="cl">               <span class="c1">// mySpaceshipPointer to null</span>
+</span></span><span class="line"><span class="cl">               <span class="n">mySpaceshipPointer</span> <span class="p">=</span> <span class="kc">null</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">             <span class="p">}</span>
+</span></span><span class="line"><span class="cl">             <span class="k">base</span><span class="p">.</span><span class="n">notify</span><span class="p">(</span><span class="n">reference</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span></code></pre></div><p>On a list case you would remove that reference from the list.</p>
+<p>This solution is obviously not the best but it turned out pretty great for my games. I don’t have to care how many dependence there are. I delete one and all objects will be warned. How they treat that warning is up to you.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Write better code using FxCop</title>
@@ -39,6 +140,15 @@ Now you have tell all other dependent objects that she died, any independent spr
       <description>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.
 For those who don’t know you can download it here and read the MSDN documentation here.
 FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</description>
+      <content:encoded><![CDATA[<p>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.</p>
+<p>For those who don’t know you can download it <a href="http://www.microsoft.com/downloads/details.aspx?familyid=3389F7E4-0E55-4A4D-BC74-4AEABB17997B&amp;displaylang=en">here</a> and read the MSDN documentation <a href="http://msdn.microsoft.com/en-us/library/bb429476%28VS.80%29.aspx">here</a>.</p>
+<p>FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</p>
+<p>Basically it suggests you better name conventions, members that could be static, using arrays where you are using multidimensional ones, It even reported an incorrect way I used Garbage Collector.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/fxcop_01.png" alt=""  title="fxcop_01"  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/fxcop_02.png" alt=""  title="fxcop_02"  />
+</p>
+]]></content:encoded>
     </item>
     <item>
       <title>C# foreach VS for loop</title>
@@ -49,6 +159,81 @@ FxCop is a is an application that analyzes managed code assemblies and reports i
 Today I decided to see the differences between them:
 FOR
 int[] values = new int[1]; int total = 0; for(int i = 0; i &amp;lt; values.</description>
+      <content:encoded><![CDATA[<p>When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.</p>
+<p>Today I decided to see the differences between them:</p>
+<p>FOR</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[]</span> <span class="n">values</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="m">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">total</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">total</span> <span class="p">+=</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>FOREACH</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[]</span> <span class="n">values</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="m">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">total</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">foreach</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="k">in</span> <span class="n">values</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">total</span> <span class="p">+=</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><blockquote>
+<p>In variable declaration, foreach has five variable declarations (three Int32 integers and two arrays of Int32) while for has only three (two Int32 integers and one Int32 array). When it goes to loop through, foreach copies the current array to a new one for the operation. While for doesn’t care of that part.</p>
+</blockquote>
+<p>After the compiler interpretation to Assembly we get this:</p>
+<p>FOR</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">cmp</span>     <span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">eax</span><span class="p">+</span><span class="m">4</span><span class="p">],</span><span class="m">0</span>           <span class="n">i</span>
+</span></span><span class="line"><span class="cl"><span class="n">jle</span>     <span class="m">0000000F</span>
+</span></span><span class="line"><span class="cl"><span class="n">mov</span>     <span class="n">ecx</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">eax</span><span class="p">+</span><span class="n">edx</span><span class="p">*</span><span class="m">4</span><span class="p">+</span><span class="m">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">inc</span>     <span class="n">edx</span>
+</span></span><span class="line"><span class="cl"><span class="n">cmp</span>     <span class="n">esi</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">eax</span><span class="p">+</span><span class="m">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">jl</span>      <span class="n">FFFFFFF8</span>
+</span></span></code></pre></div><p>FOREACH</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">cmp</span>     <span class="n">esi</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebx</span><span class="p">+</span><span class="m">4</span><span class="p">]</span>          <span class="n">i</span>
+</span></span><span class="line"><span class="cl"><span class="n">jl</span>      <span class="n">FFFFFFE3</span>
+</span></span><span class="line"><span class="cl"><span class="n">cmp</span>     <span class="n">esi</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebx</span><span class="p">+</span><span class="m">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">jb</span>      <span class="m">00000009</span>
+</span></span><span class="line"><span class="cl"><span class="n">mov</span>     <span class="n">eax</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebx</span><span class="p">+</span><span class="n">esi</span><span class="p">*</span><span class="m">4</span><span class="p">+</span><span class="m">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">mov</span>     <span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebp</span><span class="p">-</span><span class="m">0</span><span class="n">Ch</span><span class="p">],</span><span class="n">eax</span>
+</span></span><span class="line"><span class="cl"><span class="n">mov</span>     <span class="n">eax</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebp</span><span class="p">-</span><span class="m">0</span><span class="n">Ch</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">add</span>     <span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebp</span><span class="p">-</span><span class="m">8</span><span class="p">],</span><span class="n">eax</span>
+</span></span><span class="line"><span class="cl"><span class="n">inc</span>     <span class="n">esi</span>
+</span></span><span class="line"><span class="cl"><span class="n">cmp</span>     <span class="n">esi</span><span class="p">,</span><span class="n">dword</span> <span class="n">ptr</span> <span class="p">[</span><span class="n">ebx</span><span class="p">+</span><span class="m">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">jl</span>      <span class="n">FFFFFFE3</span>
+</span></span></code></pre></div><p>As you can see we end up with much more instructions.<br>
+Some simple tests gives these results:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Using Objects</th>
+<th style="text-align:center">Using Integers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align:center">FOR</td>
+<td style="text-align:center">FOREACH</td>
+</tr>
+<tr>
+<td>ArrayList – 2147483 items</td>
+<td style="text-align:center">88.6</td>
+<td style="text-align:center">115.9</td>
+</tr>
+<tr>
+<td>generic collection – 2147483 items</td>
+<td style="text-align:center">84.4</td>
+<td style="text-align:center">87.1</td>
+</tr>
+<tr>
+<td>Array – 2147483 items</td>
+<td style="text-align:center">48.1</td>
+<td style="text-align:center">49.8</td>
+</tr>
+</tbody>
+</table>
+<p>*Time is in milliseconds.</p>
+<p>So what I’ve done after this was to replace some heavy foreach code on my engine by for loops. I guess small things can be neglected but it’s always nice to know where bottlenecks may happen.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>XNA Camera 2d with zoom and rotation</title>
@@ -58,6 +243,92 @@ int[] values = new int[1]; int total = 0; for(int i = 0; i &amp;lt; values.</des
       <description>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too
 One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
 Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself.</description>
+      <content:encoded><![CDATA[<p><strong>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too</strong></p>
+<p>One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.</p>
+<p>Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself. Although this work from my point of view it’s not elegant and you can’t have neat features like zooming and rotation. So for my tutorial I’ll do all transformations using a Matrix.<br>
+Start off by creating the basic class Camera2d</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Camera2d</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">protected</span> <span class="kt">float</span>          <span class="n">_zoom</span><span class="p">;</span> <span class="c1">// Camera Zoom</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">public</span> <span class="n">Matrix</span>             <span class="n">_transform</span><span class="p">;</span> <span class="c1">// Matrix Transform</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">public</span> <span class="n">Vector2</span>          <span class="n">_pos</span><span class="p">;</span> <span class="c1">// Camera Position</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">protected</span> <span class="kt">float</span>         <span class="n">_rotation</span><span class="p">;</span> <span class="c1">// Camera Rotation</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kd">public</span> <span class="n">Camera2d</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_zoom</span> <span class="p">=</span> <span class="m">1.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_rotation</span> <span class="p">=</span> <span class="m">0.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_pos</span> <span class="p">=</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Now that we have the basic setup onto the variables it’s time to create a couple of functions to manipulate the variables</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Sets and gets zoom</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kt">float</span> <span class="n">Zoom</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_zoom</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">set</span> <span class="p">{</span> <span class="n">_zoom</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">_zoom</span> <span class="p">&lt;</span> <span class="m">0.1f</span><span class="p">)</span> <span class="n">_zoom</span> <span class="p">=</span> <span class="m">0.1f</span><span class="p">;</span> <span class="p">}</span> <span class="c1">// Negative zoom will flip image</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="kd">public</span> <span class="kt">float</span> <span class="n">Rotation</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">get</span> <span class="p">{</span><span class="k">return</span> <span class="n">_rotation</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">set</span> <span class="p">{</span> <span class="n">_rotation</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">        <span class="c1">// Auxiliary function to move the camera</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="k">void</span> <span class="n">Move</span><span class="p">(</span><span class="n">Vector2</span> <span class="n">amount</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">           <span class="n">_pos</span> <span class="p">+=</span> <span class="n">amount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">// Get set position</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="n">Vector2</span> <span class="n">Pos</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">             <span class="k">get</span><span class="p">{</span> <span class="k">return</span>  <span class="n">_pos</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">             <span class="k">set</span><span class="p">{</span> <span class="n">_pos</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> 
+</span></span></code></pre></div><p>And now for the function that calculates all the transformations</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">Matrix</span> <span class="n">get_transformation</span><span class="p">(</span><span class="n">GraphicsDevice</span> <span class="n">graphicsDevice</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">_transform</span> <span class="p">=</span>       <span class="c1">// Thanks to o KB o for this solution</span>
+</span></span><span class="line"><span class="cl">	  <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateTranslation</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">(-</span><span class="n">_pos</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="p">-</span><span class="n">_pos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="m">0</span><span class="p">))</span> <span class="p">*</span>
+</span></span><span class="line"><span class="cl">								 <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateRotationZ</span><span class="p">(</span><span class="n">Rotation</span><span class="p">)</span> <span class="p">*</span>
+</span></span><span class="line"><span class="cl">								 <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateScale</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="n">Zoom</span><span class="p">,</span> <span class="n">Zoom</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span> <span class="p">*</span>
+</span></span><span class="line"><span class="cl">								 <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateTranslation</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="n">ViewportWidth</span> <span class="p">*</span> <span class="m">0.5f</span><span class="p">,</span> <span class="n">ViewportHeight</span> <span class="p">*</span> <span class="m">0.5f</span><span class="p">,</span> <span class="m">0</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">_transform</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>So now how can we use it?</p>
+<p>Simple on your sprite batch begin you must add the camera transformation.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Camera2d</span> <span class="n">cam</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Camera2d</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">cam</span><span class="p">.</span><span class="n">Pos</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector2</span><span class="p">(</span><span class="m">500.0f</span><span class="p">,</span><span class="m">200.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// cam.Zoom = 2.0f // Example of Zoom in</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// cam.Zoom = 0.5f // Example of Zoom out</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="cs">//// if using XNA 3.1</span>
+</span></span><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="n">SpriteBlendMode</span><span class="p">.</span><span class="n">AlphaBlend</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">SpriteSortMode</span><span class="p">.</span><span class="n">Immediate</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">SaveStateMode</span><span class="p">.</span><span class="n">SaveState</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">cam</span><span class="p">.</span><span class="n">get_transformation</span><span class="p">(</span><span class="n">device</span> <span class="cm">/*Send the variable that has your graphic device here*/</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="cs">//// if using XNA 4.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="n">SpriteSortMode</span><span class="p">.</span><span class="n">BackToFront</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">BlendState</span><span class="p">.</span><span class="n">AlphaBlend</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">cam</span><span class="p">.</span><span class="n">get_transformation</span><span class="p">(</span><span class="n">device</span> <span class="cm">/*Send the variable that has your graphic device here*/</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="c1">// Draw Everything</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// You can draw everything in their positions since the cam matrix has already done the maths for you </span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">End</span><span class="p">();</span> <span class="c1">// Call Sprite Batch End</span>
+</span></span></code></pre></div><p>Found any errors? Please let me know.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/InRm4ClDneI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<pre tabindex="0"><code></code></pre>]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>apache on David Amador</title>
     <link>https://www.david-amador.com/tags/apache/</link>
@@ -20,6 +20,14 @@
       <guid>https://www.david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</guid>
       <description>I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.
 So just place this on your .htaccess on the root of your website.</description>
+      <content:encoded><![CDATA[<p>I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.</p>
+<p>So just place this on your .htaccess on the root of your website.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-apache" data-lang="apache"><span class="line"><span class="cl">      <span class="nt">&lt;filesmatch&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="nb">ForceType</span> application/octet-stream
+</span></span><span class="line"><span class="cl">      <span class="nb">Header</span> set Content-Disposition attachment
+</span></span><span class="line"><span class="cl">      <span class="nt">&lt;/filesmatch&gt;</span>
+</span></span></code></pre></div><p>This will consider any files and it’s not case sensitive, WMV, wmv, WmV are all acceptable.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

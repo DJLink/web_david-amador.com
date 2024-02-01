@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>render to texture on David Amador</title>
     <link>https://www.david-amador.com/tags/render-to-texture/</link>
@@ -21,6 +21,34 @@
       <description>Render to texture is a very handy functionality.
 Imagine your game allows for some character customization. You have the body, some different hats, different clothes and other small stuff. Now the easiest way to render this is to just draw it piece by piece every frame. With the proper Z coordinates everything falls in place.
 But you now have like 4-5 draw calls for one single object. Worse, you might have different textures and swamping textures is expensive.</description>
+      <content:encoded><![CDATA[<p>Render to texture is a very handy functionality.<br>
+Imagine your game allows for some character customization. You have the body, some different hats, different clothes and other small stuff. Now the easiest way to render this is to just draw it piece by piece every frame. With the proper Z coordinates everything falls in place.</p>
+<p>But you now have like 4-5 draw calls for one single object. Worse, you might have different textures and swamping textures is expensive.</p>
+<p>What Render to Texture allows is to render those pieces into another texture that you might use later. So you need to draw all pieces once into a new texture, save it and use that from now on.</p>
+<p>Of course this is a simple example, there are way cooler ways to use RTT’s.</p>
+<p><a href="/wp-content/uploads/2011/04/gl_fbo02.png"><img loading="lazy" src="/wp-content/uploads/2011/04/gl_fbo02.png" alt=""  title="gl_fbo02"  />
+</a></p>
+<p>OpenGL supports fast crossplatform offscreen rendering through the GL_EXT_framebuffer_object extension.</p>
+<p>To render to a texture using the framebuffer object you must</p>
+<p>Create a framebuffer object</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">glGenFramebuffersEXT</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">myFBO</span><span class="p">);</span>
+</span></span></code></pre></div><p>Bind the framebuffer object</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">glBindFramebufferEXT</span><span class="p">(</span><span class="n">GL_FRAMEBUFFER_EXT</span><span class="p">,</span> <span class="n">myFBO</span><span class="p">);</span>
+</span></span></code></pre></div><p>Attach a texture to the Frame Buffer Object</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">glFramebufferTexture2DEXT</span><span class="p">(</span><span class="n">GL_FRAMEBUFFER_EXT</span><span class="p">,</span> <span class="n">GL_COLOR_ATTACHMENT0_EXT</span><span class="p">,</span> <span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">myTexture</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span></code></pre></div><p>If you need depth testing, create and attach a depth renderbuffer</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">glGenRenderbuffersEXT</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">myRB</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glBindRenderbufferEXT</span><span class="p">(</span><span class="n">GL_RENDERBUFFER_EXT</span><span class="p">,</span> <span class="n">myRB</span><span class="p">);</span>
+</span></span></code></pre></div><p>Init as a depth buffer</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">glRenderbufferStorageEXT</span><span class="p">(</span> <span class="n">GL_RENDERBUFFER_EXT</span><span class="p">,</span> <span class="n">GL_DEPTH_COMPONENT24</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">);</span>
+</span></span></code></pre></div><p>Attach for depth</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">glFramebufferRenderbufferEXT</span><span class="p">(</span> <span class="n">GL_FRAMEBUFFER_EXT</span><span class="p">,</span> <span class="n">GL_DEPTH_ATTACHMENT_EXT</span><span class="p">,</span> <span class="n">GL_RENDERBUFFER_EXT</span><span class="p">,</span> <span class="n">myRB</span><span class="p">);</span>
+</span></span></code></pre></div><p>Render the stuff you need like you would do normally.</p>
+<p>Unbind the Frame Buffer Object</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">glBindFramebufferEXT</span><span class="p">(</span><span class="n">GL_FRAMEBUFFER_EXT</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl"><span class="n">glBindRenderbufferEXT</span><span class="p">(</span><span class="n">GL_RENDERBUFFER_EXT</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span></code></pre></div><p>Use the texture you rendered to the regular way.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

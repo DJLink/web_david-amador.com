@@ -45,13 +45,13 @@ if (!doNotTrack) {
 Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.
 I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/08/iphone_angles_orientation.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-08-27T14:49:39+00:00" />
 <meta property="article:modified_time" content="2010-08-27T14:49:39+00:00" /><meta property="og:site_name" content="David Amador" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/08/iphone_angles_orientation.png" />
 <meta name="twitter:title" content="iPhone OpenGL screen orientation using the accelerometer"/>
 <meta name="twitter:description" content="Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.
 Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.
@@ -91,7 +91,7 @@ I’ve been using OpenGL to support the device orientation, most people on forum
   "articleBody": "Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.\nLet’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.\nI’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.\nSo for Landscape with Home button on the right\nIt’s something like:\nglPushMatrix(); // Push a matrix to the stack glRotatef(90.0f, 0.0f, 0.0f, 1.0f); // Rotate 90 degrees glTranslatef(0.0f, -320, 0.0f); // Move vertically the screen Width /// Draw Stuff glPopMatrix(); So basically we are drawing all in a regular direction but rotating everything 90 degrees and translating to fit the screen properly.\nFor the home button on the left\nglPushMatrix(); glRotatef(-90.0f, 0.0f, 0.0f, 1.0f); glTranslatef(-480, 0.0f, 0.0f); // Move horizontally the screen Height // Draw Stuff glPopMatrix(); These are the tricky ones, you can figure out the Portrait Upside down =)\nOh, I’ve hard-coded the values (480 and 320) but you should make this a variable to support higher resolutions, iPhone 4 and iPad for instance.\nAlthough you could use iOS api to auto rotate this automatically I’ve read on numerous places that it’s slows down everything a bit and doing this on OpenGL is pretty quick and clean and if you ever port your game to another device (Android, etc) you don’t have to care about this again.\nSo now for the tricky part, to detect the device current orientation, the accelerometer can help out pretty good. We can check for the current angle to calculate where the device is pointing.\n- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration { // Get the current device angle float x = [acceleration x]; float y = [acceleration y]; float angle = atan2(y, x); if(angle \u003e= -2.25 \u0026\u0026 angle \u003c= -0.25) { /// Orientation is regular Portrait } else if(angle \u003e= -1.75 \u0026\u0026 angle \u003c= 0.75) { /// Orientation is Landscape with Home Button on the Left } else if(angle \u003e= 0.75 \u0026\u0026 angle \u003c= 2.25) { /// Orientation is Portrait flipped upside down } else if(angle \u003c= -2.25 || angle \u003e= 2.25) { /// Orientation is Landscape with Home Button on the Right } } So what you should do is keep a variable that stores the current Orientation so when you draw you know exactly what rotation to apply to the matrix.\nI’ve tested this code on a real device with pretty good results. Also it won’t slow down everything and if you think it does just check screen orientation at greater intervals.\nSome cool things you can do it when switching to iterate the rotation angle, that way you can simulate the screen rotation same way iOS does. Also you may want to put some sort of delay when switching.\nHere’s the result\n",
   "wordCount" : "500",
   "inLanguage": "en",
-  "datePublished": "2010-08-27T14:49:39Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2010/08/iphone_angles_orientation.png","datePublished": "2010-08-27T14:49:39Z",
   "dateModified": "2010-08-27T14:49:39Z",
   "author":{
     "@type": "Person",
@@ -196,6 +196,9 @@ I’ve been using OpenGL to support the device orientation, most people on forum
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/08/iphone_angles_orientation.png" alt="">
+        
+</figure>
   <div class="post-content"><p>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.</p>
 <p>Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.</p>
 <p>I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.</p>
@@ -225,7 +228,7 @@ I’ve been using OpenGL to support the device orientation, most people on forum
 Oh, I’ve hard-coded the values (480 and 320) but you should make this a variable to support higher resolutions, iPhone 4 and iPad for instance.</p>
 <p>Although you could use iOS api to auto rotate this automatically I’ve read on numerous places that it’s slows down everything a bit and doing this on OpenGL is pretty quick and clean and if you ever port your game to another device (Android, etc) you don’t have to care about this again.</p>
 <p>So now for the tricky part, to detect the device current orientation, the accelerometer can help out pretty good. We can check for the current angle to calculate where the device is pointing.</p>
-<p><a href="/wp-content/uploads/2010/08/iphone_angles_orientation.png"><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_angles_orientation-300x225.png" alt=""  title="iphone_angles_orientation"  />
+<p><a href="/wp-content/uploads/2010/08/iphone_angles_orientation.png"><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_angles_orientation.png" alt=""  title="iphone_angles_orientation"  />
 </a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">accelerometer</span><span class="p">:(</span><span class="n">UIAccelerometer</span> <span class="o">*</span><span class="p">)</span><span class="n">accelerometer</span> <span class="nl">didAccelerate</span><span class="p">:(</span><span class="n">UIAcceleration</span> <span class="o">*</span><span class="p">)</span><span class="n">acceleration</span>
 </span></span><span class="line"><span class="cl"> <span class="p">{</span>

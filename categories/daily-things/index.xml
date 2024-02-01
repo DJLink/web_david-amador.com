@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Daily Things on David Amador</title>
     <link>https://www.david-amador.com/categories/daily-things/</link>
@@ -20,6 +20,51 @@
       <guid>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</guid>
       <description>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&amp;rsquo;ve moved everything to static content, including this website.
 📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper.</description>
+      <content:encoded><![CDATA[<p>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&rsquo;ve moved everything to static content, including this website.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/shutting-down-server.gif" alt=""  />
+</p>
+<h1 id="-wordpress">📝 WordPress</h1>
+<p>Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.</p>
+<p>So for the past couple of years I&rsquo;ve been thinking in migrating it to something like Jekyll or Hugo, to serve it as static content. But the few times I looked into the process it seemed like a big task especially because I have 184 posts, I wasn&rsquo;t just starting from 0, I wanted to maintain the existing content, posts, images, URLs etc. So, a couple days ago I decided it was time.</p>
+<h1 id="-converting-and-moving-the-websites">📝 Converting and Moving the websites</h1>
+<h3 id="-questofdungeonscom">🔗 questofdungeons.com</h3>
+<p>This was the easier of them, it&rsquo;s just not working 100% as it was before (more on that in a bit). Site was just a couple of hand-made pages I hacked in HTML/CSS/JS years ago, so that was already done.</p>
+<p>The only problem was the <a href="https://www.questofdungeons.com/stats.html">stats page</a>  relied on a PHP script to pull the stats from Steam. PHP was out of the question since I wanted to host on GitHub, so I tried the full JavaScript approach, but that hits the <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> issue, and I would need a proxy for that, so for now I grabbed the last stats and it&rsquo;s serving it statically. I have to think of something else later since I don&rsquo;t have PHP anymore etc. But it&rsquo;s not important and the numbers aren&rsquo;t moving as much as they used to. I grabbed all files, pushed to a GitHub repo, activated pages, changed the nameservers, queued SSL cert, and voilá, the site is now live.</p>
+<h3 id="-upfallstudioscom">🔗 upfallStudios.com</h3>
+<p>The <a href="/2022/11/merged-personal-and-studio-blogs-into-one/">merging the Upfall Studios blog</a> a while ago was not an isolated act, I was thinking about this already. After the merge, <a href="https://www.upfallstudios.com">www.upfallstudios.com</a> was left with only the front page, which was static content already. I also had a doPresskit() <a href="https://www.upfallstudios.com/press/">page</a>, which was all PHP, and I need to keep it for games info etc. After a bit of search I found there is an <a href="https://github.com/Dvergar/dopresskit-static">alternative</a>, serving static content, so I converted and updated the site to use it, that way 100% of the site was ready. Easy and working as before.</p>
+<h3 id="-david-amadorcom">🔗 david-amador.com</h3>
+<p>And now I was free to focus on the one I knew would be a headache, this blog. Full wordpress site, no static content, everything dynamic using plugins, MySQL, PHP and custom .htaccess rules.</p>
+<ul>
+<li>❌ Jekyll</li>
+</ul>
+<p>From prior research, I was inclined to <a href="https://jekyllrb.com/">Jekyll</a> since all I read online was that it was good, also it&rsquo;s been around for 15 years, so it has proved it works and should be stable.
+But after a couple days of messing around with configs and pre-requisites, packages versions mismatches between Jekyll, ruby, wordpress exporters etc, I gave up. Booting up a new site can be achieved fast, but I needed to also be able to import all of my content, and that proved to be hard. Also I started thinking about the future of the blog, what if in a couple years the version breaks on modern OS version, and I can&rsquo;t run the latest one due to some incompatibility, even on a VM that would be a nightmare to keep around just for one site.</p>
+<ul>
+<li>✅ Hugo</li>
+</ul>
+<p>So I decided to go for <a href="https://gohugo.io/">Hugo</a>, single executable, it works, it&rsquo;s fast. Highly recommend it. The documentation does lacks sometimes, but between the forums, and looking at other people&rsquo;s pages on GitHub it&rsquo;s perfectly doable.</p>
+<p>I had to export the data, and there are a couple of Wordpress plugins for that, the problem was that my server was old, i386, outdated Ubuntu version, the PHP server version had no Zip support, which most of those plugins needed. After messing around a bit with the server trying to install the proper dependencies, which included actually breaking the entire thing and having to restore from backup, I decided a different approached. Created a Docker VM with wordpress, imported my existing WP files and database locally, installed the required plugins and was finally able to export all.</p>
+<p>📄 Now that I had all the files in markdown format, it was really more of a going through Hugo documentation, placing all freshly made files in place and cleaning up stuff. One neat thing is that you can run and edit an Hugo website live.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Hugo.exe server -D
+</span></span></code></pre></div><p>This will make the site run on localhost:1313/ , so while you edit the markdown files, it will keep refreshing, I didn&rsquo;t even had to press F5, I could have it side by side and Ctrl+S, super fast to iterate.</p>
+<p>🎥 There was a LOT of YouTube embed code, that I placed over the years, and was not ever working anymore on original website, some of it had Macromedia code, yeah, that old! So I tried to fix all that, then just regex replace some stuff like wrong image paths.</p>
+<p>🧑‍💻 I also had to fix some of the programming code block notation. I was using</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">pre</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;LANG&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>for code blocks, but the parser collapsed in a couple posts, leaving pre tags, which was helpful in searching for them actually. I fixed all I could find.</p>
+<p>🗣️ As for the comments, I had Disqus installed on Upfall Studios blog, but on this blog it was on WP system, so what I did was just import all the comments on Disqus and merged both. So the comment system should work on the bottom of all posts (say Hi if you want :)</p>
+<p>I&rsquo;m not sure if all the comments are there though, one particular post I had to go back and import it manually again, but it also had over 100 comments, so it might have failed the first time. I still have all the old data, so if needed (and I can spot it) I can always import it again on Disqus.</p>
+<p>📰 The RSS feed should theoretically still work for everyone who had from the old blog, but I&rsquo;m not 100% sure, once I put this post live I guess I&rsquo;ll know.</p>
+<p>💻 So my current workflow is: I have a git repo with all the markdown and website code and I have the live website as a submodule, so whenever I made a change, I export it with Hugo, git commit all changes and GitHub pages just deploys them, feels like magic :D</p>
+<h3 id="-speed">🚀 Speed</h3>
+<p>Oh its much faster, obviously, but look at the changes of before (left) and after (right) using PageSpeed Insights.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/david_amador_site_wordpress_vs_hugo_speed.png" alt=""  />
+</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Still there? Well so far I&rsquo;m happy with the move, I do miss the nice WordPress backend thing if I&rsquo;m being honest, but I can live without it. I feel like in the long run I won&rsquo;t miss having to maintain that server, also the costs. Right now I&rsquo;m editing this on Obsidian, about to commit and see if it goes live, RSS and all. If you find any broken stuff or have suggestions let me know, either mastodon, email or a comment here.</p>
+<p>Until the next time, where hopefully I&rsquo;ll talk about games! Thanks for reading.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Unity enshittification round 2, moving on to custom tech.</title>
@@ -27,6 +72,21 @@
       <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
       <guid>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
       <description>After mostly a week of anxiety, for thousands and thousands of developers, Unity changed the rules again, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service.</description>
+      <content:encoded><![CDATA[<p>After mostly a <a href="/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/" title="The Unity enshittification, proprietary tech dangers, and mostly not talking about what I’m doing.">week of anxiety,</a> for thousands and thousands of developers, Unity <a href="https://blog.unity.com/news/open-letter-on-runtime-fee">changed the rules again</a>, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service. This will be impossible on mobile and consoles in a short time frame due to SDKs, but for PC should be fine.</p>
+<p>So that’s good huh? Well not quite imo, because the rest pretty much maintains, more or less with some changes, Unity Plus still gone (although expected), but <a href="https://unity.com/pricing-updates">it’s a revenue/pay-per-install deal</a>, on top of the yearly license fees. I feel they fear they tainted their image so much they aren’t even forcing the Unity splash screen anymore, probably because players will now fear every Unity game will come with install tracking software.</p>
+<p>I think the subscription plan, especially for mobile/consoles is needed, it’s a company and needs to make money to maintain the software, fair. However for me it’s a lot of the break of trust they did, and trying for the SECOND time (that I recall) to change the Terms of Service retroactively and only after industry-wide outrage did they backtracked slightly. So for now the new-new rules only apply to a smaller %, which I guess they expect will calm down most of the community. In a couple years they’ll pull some other stunt and we’ll recall “oh right, they did this before”.</p>
+<p>Furthermore, they had deleted the transparency repo with the Terms of Service from GitHub, which raised many eyebrows, when enquired to why they deleted the answer was “low views so it was deleted”. The repo is back up meanwhile, I mean, what the heck?</p>
+<p><a href="https://twitter.com/unity/status/1705317639478751611"><img loading="lazy" src="/wp-content/uploads/2023/09/image-2.png" alt=""  />
+</a></p>
+<h2 id="moving-forward">Moving forward</h2>
+<p>So as I mentioned in last post I have been working on a prototype for what I hope I can turn into a new game, in Unity. I decided that I’ll continue working on the prototype in Unity (actually taking a break from work right now to write this), it would be slightly silly to change now. And when I feel most of the features are done, I’ll try to move to my own tech, yes again.</p>
+<p>I’ve been doing some research and tests and I’ll be dismantling <a href="/tags/quest-of-dungeons/" title="Quest of Dungeons development update">Quest of Dungeons</a> engine, which was all <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>, to adding <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a>, using <a href="https://github.com/SanderMertens/flecs/">Flecs</a>, this is a major thing I’m taking with me from my time using Unity, I like that it helps solving a lot of issues sometimes, even if full ECS is not the solution for me. But having that will be nice, I can see the benefit now. Another thing might also be trying to mimick Prefabs and/or ScriptableObjects, that would be nice, but that’s just in the back of my head at the moment. I already started the process of integrating Flecs, so slowly and gradually, and hopefully, when it’s time to switch engine it will be a suitable alternative. If not well, better not update to 2023LTS I guess.</p>
+<p>At least this is the plan right now, who knows, maybe I’ll reach a point where it feels too frustrating to rewrite it all in a different engine and language (c# to cpp), or ran out of budget to do so, plans do change. But at the moment at least it moves forward like this.</p>
+<h2 id="list-of-mostly-open-source-game-engines-and-frameworks">List of mostly open-source game engines and frameworks</h2>
+<p>Using suggestions I compiled a list of game engines and frameworks, mostly open-source and free, but there are a few with licenses, regardless, for anyone looking to test alternatives, there’s a bunch of stuff.</p>
+<p><a href="https://github.com/DJLink/list-of-game-engines-and-frameworks">https://github.com/DJLink/list-of-game-engines-and-frameworks</a></p>
+<p>My personal suggestion for anyone who wants to try the “make my own engine” approach, for 2D stuff (don’t get too deep the rabbit hole on 3D), will be to use SDL to bootstrap window creation, input etc. I’ve used that in a bunch of stuff in the past and can vouch for it.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>The Unity enshittification, proprietary tech dangers, and mostly not talking about what I&#39;m doing.</title>
@@ -34,6 +94,24 @@
       <pubDate>Sat, 16 Sep 2023 11:14:16 +0000</pubDate>
       <guid>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
       <description>So this was an “eventful” week in the game dev community. Unity, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. Unity announced that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</description>
+      <content:encoded><![CDATA[<p>So this was an “eventful” week in the game dev community. <a href="https://unity.com/">Unity</a>, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. <a href="https://blog.unity.com/news/plan-pricing-and-packaging-updates">Unity announced </a>that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</p>
+<p><a href="https://blog.unity.com/news/plan-pricing-and-packaging-updates"><img loading="lazy" src="/wp-content/uploads/2023/09/unity-new-runtime-free-pricing-image.png" alt=""  />
+</a></p>
+<p>Also they are removing the Plus subscription, which honestly this one I was kind of expecting for a while now. Which means a lot of people would have to jump to the nearly $2k yearly subscriptions. This on it’s own, while a big jump, at least is more understandable, building tech is expensive. The pay-per-install is crazy though.</p>
+<p><a href="https://twitter.com/DJ_Link/status/1666532480646627329"><img loading="lazy" src="/wp-content/uploads/2023/09/image-1.png" alt=""  />
+</a>On top of all, the thing that breaks trust the most, is the retroactive thing, games already released on older versions will be affected. The Terms of Service for those older versions, which developers agreed on installing X version, are no longer valid, they changed them, which means it’s no longer safe to trust the rules, Unity can just flip them. What’s for tomorrow?</p>
+<h2 id="proprietary-tech">Proprietary tech</h2>
+<p>This is, and always be one of the downsides of depending on other people technology, if the whole company depends on it, and there’s no easy replacement, a drastic change can hurt the whole business bad. This is not to say that we must avoid it 100% of the time, but it clearly shows that if a company amasses too much power, <a href="https://en.wikipedia.org/wiki/Murphy's_law">murphy’s law</a>!</p>
+<p>I usually like to discuss this subject, even before this whole thing, not because I think everyone should do custom engines (even if fun) but because we shouldn’t trick ourselves in believing “my choice of engine is forever!”, it won’t be, unless it’s our own tech that we spend tons of time supporting/improving it, everything else eventually mutates too much, fades or gets killed. So we should always try to at the very least, be mentally prepared.</p>
+<p>A very large amount of developers probably entered gamedev through Unity, it was mostly the goto suggestion everyone gave, and never tried anything else (and why would they, if it worked right?), but after years of learning that tool, it might be frustrating to change, but trust me, you got this. It will be hard, but if you ever change again it will be easier.</p>
+<h2 id="what-im-up-to">What I’m up to</h2>
+<p>Personally I’ve been using Unity for the ~5 years maybe, mostly for contract work and porting stuff. But recently, and after years of shipping stuff on <a href="/tags/basalt/">custom framework</a> I decided to work on my current game prototype in Unity, it made sense, my day work is 80% on that tech, built in Editor, multi-platform, so I would also be learning more and prototyping in Unity is generally quite fun. But these changes now mean I’ll be changing for something else, not because these rules will affect me, I don’t see ever reaching the $200k yearly, but because I don’t know what they’ll do next. I’d rather risk elsewhere.</p>
+<h4 id="what-next">What next?</h4>
+<p>For the past couple days I’ve trying to decide on exactly where, but haven’t made my mind yet. But I have decided that I’ll at least try to wrap up the prototype phase in Unity, makes sense, game is still a bit barebones (why I’m not talking about it yet) but there’s a lot done, so I’d rather pass the whole “toy prototyping messy code” in Unity, and when it feels time to move to production port the whole thing elsewhere and in the process hopefully have a cleaner code base.</p>
+<p>Custom or another engine I’m unsure, but atm I’m leaning more towards custom, but that would mean I’d probably either reshape my entire custom engine, or do from scratch, reason being, it’s 100% object oriented, and while working with Unity I discovered there’s tons of advantages to the Entity Component System, so I want that on my framework. Might be more initial setup, but after shipping a couple games on tons of platforms in OOP, I discovered that some of the issues would have been easier to solve with ECS, not all but several.</p>
+<p>Overall I’m excited about the possibility of working on my own tech, because well, it’s fun. As for my next game, progress has been slow, because I’m still taking the approach of contract work, and working on it on my spare time until it feels like a viable project and deciding full or part-time.</p>
+<p>After working on Quest of Dungeons for many years (which I’m grateful) I did several prototypes that were, to be honest, not good games, and I will never ship something that at the very least I don’t find fun, so yeah sorry it’s been a while. The hope is that if I find it fun, more people will, so until that time, work moves on, maybe I’ll have more news about something sooner than later.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>What is Mastodon, and why does it matter that it&#39;s decentralised?</title>
@@ -42,6 +120,37 @@
       <guid>https://www.david-amador.com/2022/11/what-is-mastodon-and-why-does-it-matter-that-its-decentralised/</guid>
       <description>&amp;gt; At the bottom of the article I added a couple links that help finding your Twitter following/followers on Mastodon and follow them
 With the recent Twitter purchase, change of ownership and rules, a lot of people are leaving the platform or just searching for alternatives. Among other platforms one that keeps showing up as an alternative is Mastodon, but change is always hard, some people have been on Twitter for years, so what exactly makes this any different?</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2022/11/bn-ba-mastodon.jpg" alt=""  />
+&gt; <strong>At the bottom of the article I added a couple links that help finding your Twitter following/followers on Mastodon and follow them</strong></p>
+<p>With the recent Twitter purchase, change of ownership and rules, a lot of people are leaving the platform or just searching for alternatives. Among other platforms one that keeps showing up as an alternative is <a href="https://joinmastodon.org/">Mastodon</a>, but change is always hard, some people have been on Twitter for years, so what exactly makes this any different?</p>
+<hr>
+<p>I created a Mastodon back in 2018 but never really payed much attention to it, I have to be honest, there weren’t as many people using it back then, I lost interest a bit fast, and I never really got past the “just another social network”. But recently things changed, a LOT of people have joined, it feels more alive, and I started to look more into the decentralised nature of it, which is the opposite of Twitter centralised, and one of it’s best weapons at keeping ppl stuck there, you’ve build up a network, if you leave, it’s all gone.</p>
+<hr>
+<p>Ok so right now one of the problems with Twitter is, either you agree with how things are or not, but your profile is locked on that platform, if you leave all is gone, followers, posts etc, you start from scratch elsewhere. This was never particularly too much of any issue until now, I wanna keep in touch with people I follow, updates on their work, they are leaving, ideally I should be able to follow them if they leave twitter server, regardless if I wanna move or not.</p>
+<p>But let’s start by the similarities, on Mastodon you can make posts (the tweets), follow people, be followed, make lists, search hashtags, post pictures etc, on the surface level, give or take, it’s more or less the same, but Mastodon gives us more control on a couple levels, but one of the best features might be the decentralisation.</p>
+<p>And this is were the big differences show up, Mastodon doesn’t exist in a single place, Twitter entry point is twitter.com, everyone logins there, and everything is there, if Twitter closes tomorrow, they own all the data, everything is gone.</p>
+<p>But with Mastodon anyone can make a new server, based on interests, topics, workplace, whatever. By now you might be asking</p>
+<blockquote>
+<p><!-- raw HTML omitted -->But that just means everyone is a different place, multiple servers, where do I join, that sounds too much work, what if I join a server with few people or that stagnates?<br>
+<!-- raw HTML omitted --></p>
+</blockquote>
+<p>All good questions, which I made myself, but here’s where the decentralised part enters, all Mastodon servers talk with each other, so you can follow people from any server, get their notifications and talk with them, regardless of where you created your account, they are all connected. On top of that, you can migrate your account to different servers if you don’t agree with any new rules, it’s too crowded, or too empty or you just wanna go to a new one, you can even run your own server, just your account, and never be isolated, I’m following 3 people who run their own instance, and it doesn’t matter.</p>
+<p>The server you choose matters for the Local Timeline, where you see a feed of all updates from anyone in the server you choose, so in my case, I joined the <a href="https://mastodon.gamedev.place">https://mastodon.gamedev.place</a> and I see a local timeline with a lot of gamedev content, but there is also a Federated tab, which shows updates from all Mastadon instances, like a “global feed” list.</p>
+<p>So we have 3 levels:</p>
+<p>–<strong>The people you follow</strong>: doesn’t matter which server they are on, you’ll see their stuff.<br>
+–<strong>The Local Feed</strong>: here it will matter the server you pick, you see content of all people in your server, but don’t worry, don’t like it? Move your account to another one.<br>
+–<strong>The Federated Feed</strong>: Posts from people in from the whole network related to the people you follow.</p>
+<p>But you can just see the people you follow of course, you have a lot of control, nothing forces you to see stuff from people you don’t follow.</p>
+<p>All this together has been very interesting to me, because that means as we grow a userbase on Mastodon, if somewhere in the future we are unhappy with the server picked, we can move, create our own and still keep our data, just elsewhere, still following the same people. It’s a different kind of concept which has tremendous potential in a future where we want to be more and more in control of our own data.</p>
+<!-- raw HTML omitted -->
+<p>If people you are following created Mastodon accounts there are a few tools you can use to find them, these will search their bios for Mastodon links, or even if someone you follow on Twitter used the same tool to search, which means they have an account. I used these and found several people I was following, as time passes more will join so running the tools in a couple weeks will probably bring more results. After you use it, it will export a .csv file which you can use to import on Mastodon, don’t forget to use “merge” and not “replace”.</p>
+<p><a href="https://pruvisto.org/debirdify/">https://pruvisto.org/debirdify/</a><br>
+<a href="https://fedifinder.glitch.me/">fedifinder.glitch.me</a><br>
+<a href="https://twitodon.com/">https://twitodon.com</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2022/11/mastodon_importer.png" alt=""  />
+I’m not leaving Twitter for now, but I’m actively using Mastodon, can’t hurt, and it’s kind of exciting, I’m meeting a ton of new developers. I’m also using a Mastodon to Twitter cross poster <a href="https://crossposter.masto.donte.com.br/">https://crossposter.masto.donte.com.br</a>, which makes all my tweets post on Mastodon as well. You can control not to post RTs for example, which might look weird on Mastodon and vice versa.</p>
+<p>If anyone wants to follow me feel free I’m <a href="https://mastodon.gamedev.place/@djlink">DJLink@mastodon.gamedev.place</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Merged personal and studio blogs into one</title>
@@ -50,6 +159,19 @@ With the recent Twitter purchase, change of ownership and rules, a lot of people
       <guid>https://www.david-amador.com/2022/11/merged-personal-and-studio-blogs-into-one/</guid>
       <description>I have no idea how many people, if any, are still subscribed to this blog RSS feeds, but if they are, they probably saw a couple of new posts in burst yesterday, apologies.
 This happened because I decided to merge all the posts from my studio into this one for “cleaning house”. I’ve been thinking about it for a while that I have these 2 blogs mostly abandoned and it’s a shame, I used to be very active, but IRL stuff and especially Twitter and QoD launch got me busy elsewhere and I mostly abandoned blogging, which I enjoyed a lot.</description>
+      <content:encoded><![CDATA[<p>I have no idea how many people, if any, are still subscribed to this blog RSS feeds, but if they are, they probably saw a couple of new posts in burst yesterday, apologies.</p>
+<p>This happened because I decided to merge all the posts from my <a href="https://www.upfallstudios.com" title="Upfall Studios link">studio</a> into this one for “cleaning house”. I’ve been thinking about it for a while that I have these 2 blogs mostly abandoned and it’s a shame, I used to be very active, but IRL stuff and especially Twitter and QoD launch got me busy elsewhere and I mostly abandoned blogging, which I enjoyed a lot. It felt like the audiences were in other places so it made more sense. Upfall Studios blog was mostly created as I felt it needed to have a more professional look for the devlogs of all the ports I made, and it helped doing that, explaining the new features, it was a place for players to see the roadmap, and blogs are perfect for that.</p>
+<p>Twitter is still a place that I enjoy (even if less these days) doing little silly posts but I’d like to revive an alternative, and I now had these 2 blogs that only I post, one for more personal stuff, the other for work stuff, maintaining both is probably not a good idea in the long run, so I moved all the studio blog posts here, so they can still exist, and redirected everything under upfallstudios.com/blog/ to this domain, under a <a href="/categories/upfall-studios/" title="Upfall Studios Blog Category">Upfall Studios category</a>, I 301 the URLS there via .htaccess, I hope I covered all, so everyone following old links should be redirected here for the blog content, there might be some weird broken images (I found a few and fixed) since WordPress is kinda weird with importing, so for any future game updates, tech stuff, or roadmaps I’ll use this space.</p>
+<p>This blog has a lot of content, which for most part is now outdated (most of my XNA stuff) but I’ll keep it alive as long as I can, like a diary.</p>
+<hr>
+<p>With the recent Twitter changes there seems to be a lot of people unhappy and wanting to try other stuff, like CoHost, which I investigated a bit, looks like a cool mini blog sort of social network, reminded me a bit about Medium, which just reminded me again “David, you HAVE a blog, just use it”. I think the new rules of websites requiring the “must gather followers” for helping reach more people has conditioned me a lot, and usually is the thing that I (and probably more people) look into when evaluating any social website, the growth potential. But it doesn’t always have to be about that, and blogs have served me well in the past to talk about something or pass a message.</p>
+<hr>
+<p>In terms of work related stuff I’ll do a more detailed post eventually, but I’ve been very busy with contract work, since a while before the pandemic started in March 2020, I’ve been working in porting games to consoles, Unity and GameMaker 2, it has been a very interesting learning experience. I really like coding my own frameworks (heck this whole blog is mostly about that kind stuff), but it has been interesting to code on other engines, take inspiration, see tools that work in new modern paradigms, tech moves so fast that it’s easy to stand still, and using these tools has re-think a lot of things, that I would probably approach different the next time I decide to “code from scratch”.</p>
+<p>Unity has made me go back again to C#, which was my main language during XNA time (how I miss it), and after a few years of C++ I sort of missed some of it’s things, that C++ still complicates often, even if it’s better these days.</p>
+<hr>
+<p>Well that’s it for now, this ran a bit longer than I anticipated, I just wanted to update on the blog merge, for any possible visitors. If you are still around thank you so much, I’ll see you next time.</p>
+<p>PS: I have no idea if the comment section still works, I should test it myself to see if it does. (I should probably shape up the presentation of the site when I find the time, a lot of stuff got broken over the years, might not be suitable for mobile devices either.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Vizati 10th anniversary and making if free.</title>
@@ -58,6 +180,16 @@ This happened because I decided to merge all the posts from my studio into this 
       <guid>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
       <description>&amp;gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but twitter kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.
 Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and Rita with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game.</description>
+      <content:encoded><![CDATA[<p><a href="https://dj_link.itch.io/vizati"><img loading="lazy" src="/wp-content/uploads/2011/03/vizati_letterbox.jpg" alt=""  />
+</a>&gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but <a href="https://www.twitter.com/DJ_Link">twitter</a> kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.</p>
+<p>Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and <a href="http://rita-silva.com/" title="rita-silva.com/">Rita</a> with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game. Things changed a lot over the years and the original team is no longer working together, also because of OS updates, like the iOS versions etc or hardware not being around anymore the game has mostly vanished from all stores. The other day I was thinking about game preservation and thought it would be a shame to leave this only in our computers, combined with the 10th anniversary we decided to make it free to everyone, the original game can now be downloaded and played even on the newest Windows versions (thank you XNA).</p>
+<p>Here’s the official <a href="https://dj_link.itch.io/vizati" title="https://dj_link.itch.io/vizati">itch.io</a> page, there you’ll find not only the original XNA version that was being sold, but also an unfinished version using a custom engine that I build when porting it to iOS, this framework ended up powering <a href="https://www.questofdungeons.com" title="https://www.questofdungeons.com">Quest of Dungeons</a>, a game I made a few years after. It’s not finished but should be mostly playable, although only works in window mode.</p>
+<p>I also created a GitHub repo, which has a couple more things, like the original website code, some screenshots, the code using for creating the XNA installer, PDF manual and a couple more things. This way those things will never get lost in case my computer + backups ever go bad.</p>
+<p>Download: <a href="https://dj_link.itch.io/vizati">https://dj_link.itch.io/vizati</a><br>
+GitHub: <a href="https://github.com/DJLink/Vizati">https://github.com/DJLink/Vizati</a></p>
+<p>Hope you have fun, either you are rediscovering the game or playing it for the first time, it’s a product of it’s time, from an inexperienced team trying to make their first indie game, but I’m proud of how it turned out.</p>
+<p>See you around!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Some thoughts about a 4 year game dev cycle</title>
@@ -67,6 +199,36 @@ Second, but not least important, Vizati is turning 10 years old today (11 June 2
       <description>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.
 It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.
 For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was Quest of Dungeons, which started development in 2013.</description>
+      <content:encoded><![CDATA[<p>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.<br>
+It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.</p>
+<p>For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was <a href="http://www.questofdungeons.com">Quest of Dungeons</a>, which started development in 2013.</p>
+<p><strong>Right now</strong> I still have one more platform to release, on Playstation 4, 17 January 2017, it passed certification, ready to be released, so for the first time in years it feels that my QoD journey is finally completing. I still intend to patch the Android port with all last updates and sure, there will always be patches and things to take care of, but it will be in a whole different way now. Until now it always felt incomplete and a never ending task that extended for months, years.</p>
+<p><strong>Working for so much time</strong> on the same project can be incredibly frustrating, especially if working alone, so one thing that I’m proud of myself is that I actually finished it. You wouldn’t believe the amount of times that I said “F** it, is not worth it”. Things went good with the game, in a sense that I was able to put it on a lot of platforms and it was well received for the most part.<br>
+I think I was able to find a good “niche” of players that understood what QoD was all about, with all its flaws and good things.</p>
+<p>The game was never meant to be released outside of PC, heck, during the first month of development it was a Tablet only game. That led to decisions that I regretted later when porting to consoles, but also allowed me to cut corners and not caring about things that weren’t meant for a PC game early on, thus speeding up development time. I spent a lot of time just rethinking the whole interface for each new platform (except PS4 which is identical to Xbox One) and that is time consuming, not to mention specific console features, on the other hand players do feel like it was hand-crafted for their device, so there’s that. Each new platform was made possible with the previous one, so it’s not something that I can say it was a total mistake.</p>
+<p><strong>Technology wise</strong>, I’ve kept using my own tech for all releases, stubbornness perhaps? And that is not without it’s caveats. With engines like Unreal 4, Unity and Gamemaker these days if feels almost ridiculous to consider building your own tech for many, but not for me, not yet anyway. I used other engines in the past, I did release my first 2 games on XNA, and after that I decided that it was time to build my own tech, so I could be more flexible and not caring if an engine is discontinued or not, that was the goal. And on that part it succeeded, the same code runs on all platforms, except for specific render, input, etc. It took work, a lot, and after so many platforms I have a better idea of things that need better abstraction, in fact for the past week I’ve been just cleaning up code for future projects, feels more robust now. But I have a bit of regret of platforms that I ported the engine and possibly will never use it again, like Wii U, maybe even Nintendo 3DS. While the others, now that the work is done I can reuse for future games, it’s possible that I’ll never use for some again, so it was an effort for a one time only, and that is a problem, one that could have been prevented by using an existent engine.<br>
+I tried using Unity for 3 weeks, did some tests with GameMaker, and it was a cool experience, knowledge doesn’t hurt right? But haven’t made my mind yet about switching away from my own tech, mostly because I know it well, I can quickly changes things around for each project and mostly because I love working on that part as well, it’s fun, even if it’s just for me. I’ll revisit this if/when I need to switch to a “full 3d” game.</p>
+<p><strong>So many platforms!!</strong><br>
+It’s a game that’s on a lot of devices now, and there are several reasons to do so, more audience, chance to make more money, get the game more known, etc, brand recognition and proving the studio is capable of delivering. I also made it because I had the chance right now, I don’t know the future, may not be able to pull that again, also it was a chance to establish a relation with Steam, Xbox, Nintendo and Sony. My idea is to keep making games for platforms that each makes sense, but trying to cut down time between each release. It was too sparse now, because of the reasons mentioned above.</p>
+<p><strong>Marketing</strong> is still something I suck at, I do have a twitter account where I talk about my games, but also about tons of other stuff, mostly movies and general day things, is that even called marketing? Too late I decided to setup a newsletter list and put it on Upfall Studios website, should have done it earlier, I got 100 people to subscribe in the last year and half, I could have way more in these nearly 7 years as indie dev.<br>
+I also created a twitter account for <a href="http://www.twitter.com/UpfallStudios">Upfall Studios</a>, so it’s basically a cleaned up version of my own, just news about the games and launches, a more “professional” account I call it. Taking care of so many social stuff, twitter, facebook, etc is time consuming and doesn’t come to me as naturally as using my personal account, so that is still a problem probably. For the most part I follow devs and not “companies” even when they are indies, so that’s mostly what I like to do, chances are there are more people like me.</p>
+<p><strong>Community</strong> (love you guys)<br>
+I like responding to people, I don’t mind getting asked questions and I’ve answered to 100% of emails I got, either about the game or gamedev in general. I’ve taken time to meet other developers in person when they wanna ask me questions. Treat others the way you wanna be treated, easy right?<br>
+I’ve been extremely luck with the players and community surrounding QoD, they are nice, active in recommending the game to friends and I couldn’t have wished for a better community. Goal is to keep incrementing the amount of course =)<br>
+Never lie or go on radio silence regarding customers. There are tons of Early access games that suddenly stop and not even a goodbye post, that’s the worse part, the waiting for months to see if project is alive. They won’t trust you again, even if you switch to a different studio, they won’t forget. So if project fails explain it, if you are delayed on a patch say so. Almost all the time players will understand and be supportive. When I was making the Xbox One and Nintendo ports I had to delay the PC updates for a couple months and players were really supportive, as long as they know why you are late on some promise.</p>
+<p><strong>It’s never just “X more months of dev”</strong><br>
+NEVER, ever, if you think it’s just 2 more months, odds are that it’s 4 more. We suck at calculating time for the most part (or at least I do), because we conceive the game in your minds and you can see it, mostly complete, but making that happen takes much more time. PC version was delayed, both Xbox and Nintendo ports took much longer than I expected, the PS4 one was shorted, because I counted with worst case scenario but things went well at first try. In my experience completing the game 1-2 months before the release can have a positive effect, especially for a 1 man team. I finished the Xbox One version 2 months before, full approved on certification, and spent that time just trying to promote it, and was able to gather some awareness for the game. I finished the Nintendo versions just 10 days before, and even had to delay the game once, I regret now that I didn’t calculated/handled things better. Lesson learned, let’s see if I don’t make that mistake again.</p>
+<p><strong>Everything else</strong><br>
+I made that mistake in the past and I still do, I can’t separate well development time and actual life time, so I end up working too many hours, and it’s addicting.<br>
+QoD was made partially at night when I still had a day job, and the last 1 and a half year in full time, but that doesn’t mean I was able to do twice as much work unfortunately.<br>
+When you work for someone else you have a schedule, but if you work on your own time, it’s harder. Most people tell me it’s hard to stay focused working, and I have that problem too, but not in a way that I can’t work, but mostly because I blend in leisure time with work, and working from home doesn’t help. It’s easy to get distracted, then you feel guilty and spend a couple more hours working. And while I don’t think I’m super slow, I could be using my time better. That’s something I want to change, I don’t thing strict work schedules work well, but not having clear boundaries doesn’t either. If anyone is managing this well please let me know. Open to suggestions 🙂<br>
+It’s easy to find people saying this, but I’ve now experienced it myself, when you have a problem that you can’t solve don’t spend hours on the PC, take a walk, go do something else, the solution will come to mind, seriously, it works very often. You trick your mind into something else and the other problem keeps getting solved in the background.</p>
+<p><strong>What now?</strong><br>
+In approximately 3 weeks the PS4 version will be released, I don’t any plans for more ports so I intend to move to a new game, and honestly I’m scared, I don’t have a solid idea yet, been mostly sketching ideas or trying some prototypes, and the thought of deciding “let me spend 1-2 years” in this new game is a bit scary, “can I come up with all the money?”, “will it be good?”.<br>
+I wish I had a small cool idea to try for a couple months instead of a bigger one, but as I mentioned before, QoD was also supposed to be a 6 months project that turned out into 4 years so better not force anything. I’m trying not to think of “this is gonna be a cool idea that everyone will like” and instead trying to come up again with something that I would like to play, even if others don’t like it, development flows more naturally like that.<br>
+Oh and I want to take 2 weeks of proper vacations after the PS4 release, haven’t had vacations in over two years, thinking of backpacking a couple countries, it’s cheaper and it’s good “mind food”-</p>
+<p>Still there? thanks for reading – David</p>
+]]></content:encoded>
     </item>
     <item>
       <title>year review log 2015</title>
@@ -77,6 +239,39 @@ For those who follow my work a bit more closely you probably know that for almos
 It became a habit of mine to to hit pause for a couple minutes, look back, write about it and think about what’s next, this helps me to sort things out.
 Thank you
 I have to start with something, a big Thank You for all the people who purchased QoD, everyone who helped spreading the word, the ones who wrote emails, tweeted and help my solo developer work became an even better thing to do.</description>
+      <content:encoded><![CDATA[<p>Can’t believe it’s almost new year again.<br>
+It became a habit of mine to to hit pause for a couple minutes, look back, write about it and think about what’s next, this helps me to sort things out.</p>
+<p><strong>Thank you</strong><br>
+I have to start with something, a big Thank You for all the people who purchased QoD, everyone who helped spreading the word, the ones who wrote emails, tweeted and help my solo developer work became an even better thing to do. This wouldn’t be possible without everyone who supported me, in one way or another, so even if I do work a lot to make the best possible I can, if no one cared, it wouldn’t be possible, so thank you.</p>
+<p><strong>Indie life</strong><br>
+I took the jump to full time indie developer this year again, back in March, it wasn’t something I was planning, but was semi forced to do because of some internal restructuring the company was having, so I left. With the <a href="/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/">Xbox One port of Quest of Dungeons</a> in hands, and falling behind on my personal deadlines, I decided to risk take a couple months and finish it. One one hand I have more freedom, and can work on games, on the other hand there’s the constant fear of “this is the last month” if everything fails and games stop selling. I also decided to start taking care of myself health-wise, by exercising more regularly, and for the most part of the year I did almost everyday a 6-8 KM fast-paced walk right after waking up, overall I fell much better, which helps with the mood and work altogether. The weird thing is that I had to get a gadget in order to feel more motivated, got a fitbit that tracks daily activity, been wearing it for 10 months now, so gamificating health ftw. Personal note, take some proper vacations next year, and by proper I mean, in any place, but disconnected from emails/work and whatever.</p>
+<p><a href="/wp-content/uploads/2015/12/944873_10156260342525364_3728126092064434364_n.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/944873_10156260342525364_3728126092064434364_n-150x150.jpg" alt="i find your lack of faith distrurbing"  />
+</a></p>
+<p><strong>QoD on Xbox One</strong><br>
+When I left in March, I was already way behind on my original launch plans, because developing for a console is a whole different thing and doing it during nights only was quickly draining my energies.<br>
+The following months were mainly devoted to finishing the game, I had to redo a lot of the UI and gameplay to <a href="http://www.upfallstudios.com/blog/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">accommodate a game controller and other stuff</a>, but eventually on September 4 I <a href="http://www.upfallstudios.com/blog/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/">finally released it</a> and I was genuinely surprised by the overwhelming <a href="http://www.upfallstudios.com/blog/2015/10/quest-of-dungeons-reviews-roundup/">positive feedback</a>, since, at that point the game was out for some time in its PC and Mobile form, but the new additions/changes and the fact that you could play it with a controller for the first time made it more appealing for many people.</p>
+<p>Looking back, it took me a full year, from getting the game approved to the actual release. While it’s a lot of time, I also think it was worth it, a lot of the game was tweaked, also for some part I still had my day job, certifications take some time also. In fact the final build was finished around June, I just took those “extra” months to finding bugs/polishing and start to approach journalists/websites.</p>
+<p><a href="/wp-content/uploads/2015/07/branded_key_art_584x800_alt_version.png"><img loading="lazy" src="/wp-content/uploads/2015/07/branded_key_art_584x800_alt_version.png" alt="Quest of Dungeons Xbox One box art"  />
+</a></p>
+<p><a href="/wp-content/uploads/2015/12/11942205_310047909119021_6766836944566229236_o.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/11942205_310047909119021_6766836944566229236_o-150x150.jpg" alt="Quest of Dungeons Xbox One"  />
+</a></p>
+<p><a href="/wp-content/uploads/2015/12/XboxOne_Image_01.png"><img loading="lazy" src="/wp-content/uploads/2015/12/XboxOne_Image_01.png" alt="Quest of Dungeons Xbox One screenshot warrior"  />
+</a></p>
+<p><strong>GDC/Gamescom</strong></p>
+<p>One of the things I’ve always wanted to attend, at least once, was GDC (Game Developers Conference), and this year I was finally able to, to the European one, which despite being expensive, is still less expensive then traveling to the US. And of course since it’s on the same week, I also went to Gamescom, and it was amazing, it’s much bigger then <a href="/2014/10/egx-2014/">EGX</a>, I had no idea. During GDC I was able to meet tons of cool developers, attend some parties (which is usually not my thing) and learn a lot overall.<br>
+I was also able to watch a Video Games Live concert for the first time, and I loved it, even got a photo with Tommy Tallarico.</p>
+<p><a href="/wp-content/uploads/2015/12/11800512_10155811214270364_267427683833702867_n.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/11800512_10155811214270364_267427683833702867_n-150x150.jpg" alt="Gamescom 2015"  />
+</a><a href="/wp-content/uploads/2015/12/11866409_10155826026945364_3741151929249482381_n.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/11866409_10155826026945364_3741151929249482381_n-150x150.jpg" alt="Video Games Live 2015 Koln"  />
+</a><a href="/wp-content/uploads/2015/12/11866259_10155826026335364_4527137215117046469_n.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/11866259_10155826026335364_4527137215117046469_n-150x150.jpg" alt="Video Games Live 2015 Koln"  />
+</a><a href="/wp-content/uploads/2015/12/11828828_10155803526680364_299957432295330404_n.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/11828828_10155803526680364_299957432295330404_n-150x150.jpg" alt="GDC Europe 2015"  />
+</a></p>
+<p><strong>Now &amp; Future(?)</strong></p>
+<p>With the release of the XO version, a lot of people are asking what am I doing right now, “Are you on vacation?”, “New game?”. I can definitely say that I’m not on vacation mode right now, I’m already working on something for next year, which is kind of a semi-secret right now, mostly because I’m still unsure if I can pull it off. I started working on a concept for a new game, but something unexpected came up and it’s possible that Quest of Dungeons will get a new port, but now is not the time to talk about it, because at this point is not 100% sure it will, but that’s what I’m working on now.</p>
+<p><a href="/wp-content/uploads/2015/12/Back_to_the_Future_time_travel_test_with_Michael_J._Fox_as_Marty_McFly.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/Back_to_the_Future_time_travel_test_with_Michael_J._Fox_as_Marty_McFly-150x150.jpg" alt="Back to the Future (1985) Directed by Robert Zemeckis Shown from left: Christopher Lloyd (as Dr. Emmett Brown), Michael J. Fox (as Marty McFly)"  />
+</a></p>
+<p>On a final note, another thing that comes to mind is that I’ve been blogging way less, I used to post a lot more stuff, especially tutorials of some kind, and I haven’t, so one of the things I wanna change is to write at least one post a month next year. It happened very little this year because I’ve been mostly working with NDA stuff and it’s hard to “Here’s how I fixed this”.</p>
+<p>Happy New year!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>year review log 2014</title>
@@ -85,6 +280,31 @@ I have to start with something, a big Thank You for all the people who purchased
       <guid>https://www.david-amador.com/2014/12/year-review-log-2014/</guid>
       <description>WOW, 2014 is already coming to an end. Can’t even believe the amount of things that happened to me this year, some bad, some good, I decided to make a wall of text.
 This was been a great year for my game dev objectives. In January I got Quest of Dungeons approved on Steam in only 6 days, which was mind blowing, on March 25th I finally got it released, and during the rest of the year several other platforms got a port, like Linux and Android, both platforms that I never had worked before, so I learned a lot.</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2014/10/BydRYlOIIAAOAkL-225x300.jpg" alt="BydRYlOIIAAOAkL"  />
+ WOW, 2014 is already coming to an end. Can’t even believe the amount of things that happened to me this year, some bad, some good, I decided to make a wall of text.</p>
+<p>This was been a great year for my game dev objectives. In January I got <a href="/2014/02/quest-of-dungeons-approved-on-steam/" title="Quest of Dungeons approved on Steam">Quest of Dungeons approved on Steam</a> in only 6 days, which was mind blowing, on March 25th I finally got it released, and during the rest of the year several other platforms got a port, like Linux and <a href="/2014/08/native-game-on-android-porting-quest-of-dungeons/" title="Native game on Android – Porting Quest of Dungeons">Android</a>, both platforms that I never had worked before, so I learned a lot. Finally on October I got QoD <a href="http://www.upfallstudios.com/blog/2014/10/quest-of-dungeons-is-coming-to-xbox-one/">approved for Xbox One</a>.</p>
+<p>I was lucky enough to be at <a href="/2014/10/egx-2014/" title="EGX 2014">EGX 2014 in London</a>, I loved it, this was my first time on such an event and I was amazed by everything, even more because I got to meet so many cool people, and other developers who I’ve been following their work for years.</p>
+<p>Also I created a new brand for my indie games, called <a href="http://www.upfallstudios.com">Upfall Studios</a>, in order to give it a more professional look.</p>
+<p>Not everything is good and this year I got a glimpse of what happens when you push yourself for years, I’ve been making games for quite some time now, switching between working on them full time or splitting with a day job (gotta pay rent), around February I collapsed, ended up in the hospital and had to take a 2 week sick leave, it was not pretty. So resolution for next year, taking care of myself better, work less but more efficiently.</p>
+<p>It was kind of a weird year in gaming for me, I skipped the Wii completely (last generation was the Xbox 360) but for this generation I got the WiiU, which I love btw, and I started having that nostalgia feeling and playing older games, in fact I spent Christmas playing Super Mario World and Mario RPG on my SNES.</p>
+<p><em>Some of the coolest games</em>:</p>
+<p>Shovel Knight<br>
+Crypt of the Necrodancer<br>
+Nuclear Throne<br>
+Mario Kart 8<br>
+The Last of Us Remastered<br>
+Bayonetta<br>
+Super Mario 3D World<br>
+Alien Isolation</p>
+<p><em>Movies</em>:<br>
+Guardians on the Galaxy<br>
+OMG GO SEE INTERSTELLAR RIGHT NOW!!</p>
+<p><em>TV Shows</em>:<br>
+True Detective</p>
+<p><em>(there are several other, this is just a very small curated list)</em></p>
+<p>I have to idea what 2015 holds but I’m looking forward to it, the plans so far are to finish the Xbox One port and start working on the next project.</p>
+<p>Happy New Year everyone!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>I&#39;m a Xbox One developer now, QoD getting a port</title>
@@ -93,6 +313,15 @@ This was been a great year for my game dev objectives. In January I got Quest of
       <guid>https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</guid>
       <description>So a lot has happened since my last post. Even before EGX I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.
 I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you.</description>
+      <content:encoded><![CDATA[<p>So a lot has happened since my last post. Even before <a href="/2014/10/egx-2014/" title="EGX 2014">EGX</a> I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.<br>
+I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you.</p>
+<p>Since pushing on making games with just displaying my name felt a bit weird I decided (a couple months ago) to give a brand to my indie games, called <a href="http://www.upfallstudios.com">Upfall Studios</a>. Looks a bit more professional and it’s easier to approach other people, because either we like it or not, this is a business and people always ask “what’s the studio name?”.</p>
+<p><del>I also created a blog (<a href="http://www.upfallstudios.com/">http://www.upfallstudios.com/</a>) where I’ll be talking about the games and development, which is something I usually don’t do here in much dept, is mostly “new game”, “game is out”, so if you want to keep track of that feel free.</del></p>
+<p>Edit 2024: I&rsquo;ve since <a href="/2022/11/merged-personal-and-studio-blogs-into-one/">merged the upfallstudios blog onto this one</a>.</p>
+<p>I’m forcing myself to do a year summary post soon so see you soon.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2014/12/xbox_one_console.jpg" alt="xbox_one_console"  />
+</p>
+]]></content:encoded>
     </item>
     <item>
       <title>EGX 2014</title>
@@ -102,6 +331,71 @@ I don’t think this would have been possible without all the gamers that have p
       <description>I had the chance of going to EGX in London this year with Quest of Dungeons.
 The whole show lasted 4 days and it was AMAZING, met tons of players, and a lot of developers. Everyone was super friendly, so I had a lot of fun.
 This was the first time I did something like this, so it was a very good way to get feedback and talk in person with players and even some fans of the game.</description>
+      <content:encoded><![CDATA[<p>I had the chance of going to EGX in London this year with Quest of Dungeons.<br>
+The whole show lasted 4 days and it was AMAZING, met tons of players, and a lot of developers. Everyone was super friendly, so I had a lot of fun.</p>
+<p>This was the first time I did something like this, so it was a very good way to get feedback and talk in person with players and even some fans of the game.</p>
+<p>Among others I had the chance to meet <a href="http://mikebithellgames.com/">Mike Bithell</a> (Alone Was Thomas), <a href="http://positech.co.uk">Cliff Harris</a> (Positech Games), Introversion, and <a href="http://chipzel.co.uk">Chipzel</a>, she even signed me a CD, how awesome is that?</p>
+<p>I’m leaving you with some pictures:</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2014/10/chipzel_signed_cd.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/chipzel_signed_cd-150x150.jpg" alt="chipzel_signed_cd"  />
+</a></th>
+<th><a href="/wp-content/uploads/2014/10/team17_trying_qod.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/team17_trying_qod-150x150.jpg" alt="team17_trying_qod"  />
+</a></th>
+<th><a href="/wp-content/uploads/2014/10/BydRYlOIIAAOAkL.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/BydRYlOIIAAOAkL-150x150.jpg" alt="BydRYlOIIAAOAkL"  />
+</a></th>
+<th><a href="/wp-content/uploads/2014/10/david_amador_and_chipzel.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/david_amador_and_chipzel-150x150.jpg" alt="david_amador_and_chipzel"  />
+</a></th>
+<th><a href="/wp-content/uploads/2014/10/david_and_cliff_harris.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/david_and_cliff_harris-150x150.jpg" alt="david_and_cliff_harris"  />
+</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/wp-content/uploads/2014/10/david_tiny_build_and_speedrunners.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/david_tiny_build_and_speedrunners-150x150.jpg" alt="david_tiny_build_and_speedrunners"  />
+</a></td>
+<td><a href="/wp-content/uploads/2014/10/IMG_0449.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0449-150x150.jpg" alt="IMG_0449"  />
+</a></td>
+<td><a href="/wp-content/uploads/2014/10/IMG_0451.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0451-150x150.jpg" alt="IMG_0451"  />
+</a></td>
+<td><a href="/wp-content/uploads/2014/10/IMG_0630.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0630-150x150.jpg" alt="IMG_0630"  />
+</a></td>
+<td><a href="/wp-content/uploads/2014/10/IMG_0644.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0644-150x150.jpg" alt="IMG_0644"  />
+</a></td>
+</tr>
+<tr>
+<td><a href="/wp-content/uploads/2014/10/IMG_0650.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0650-150x150.jpg" alt="IMG_0650"  />
+</a></td>
+<td><a href="/wp-content/uploads/2014/10/IMG_0694.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0694-150x150.jpg" alt="IMG_0694"  />
+</a></td>
+<td><a href="/wp-content/uploads/2014/10/IMG_0711.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0711-150x150.jpg" alt="IMG_0711"  />
+</a></td>
+<td><a href="/wp-content/uploads/2014/10/IMG_0717.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0717-150x150.jpg" alt="IMG_0717"  />
+</a></td>
+<td><a href="/wp-content/uploads/2014/10/IMG_0726.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0726-150x150.jpg" alt="IMG_0726"  />
+</a></td>
+</tr>
+<tr>
+<td><a href="/wp-content/uploads/2014/10/IMG_0736.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0736-150x150.jpg" alt="IMG_0736"  />
+</a></td>
+<td><a href="/wp-content/uploads/2014/10/IMG_0742.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0742-150x150.jpg" alt="IMG_0742"  />
+</a></td>
+<td><a href="/wp-content/uploads/2014/10/IMG_0778.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0778-150x150.jpg" alt="IMG_0778"  />
+</a></td>
+<td><a href="/wp-content/uploads/2014/10/IMG_0780.jpg"><img loading="lazy" src="/wp-content/uploads/2014/10/IMG_0780-150x150.jpg" alt="IMG_0780"  />
+</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Also a small video tour I did of the Rezzed Area (Indies)</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/jZk54pizfqY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
     <item>
       <title>Quest of Dungeons is now available</title>
@@ -112,6 +406,23 @@ This was the first time I did something like this, so it was a very good way to 
 I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.
 It was released on March 25th, for PC, Mac and iOS. You can get it on Steam, iOS App Store or directly from the site via Humble Store.
 I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought.</description>
+      <content:encoded><![CDATA[<p><a href="http://www.questofdungeons.com"><img loading="lazy" src="http://www.questofdungeons.com/imgs/icon.png" alt="Quest of Dungeons"  />
+  </a></p>
+<p>I’m pleased to announce that Quest of Dungeons is finally out.<br>
+I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.</p>
+<p>It was released on March 25th, for PC, Mac and iOS. You can get it on <a href="store.steampowered.com/app/270050">Steam</a>, <a href="http://itunes.apple.com/app/id698726956/">iOS App Store</a> or directly from the <a href="http://www.questofdungeons.com/">site</a> via Humble Store.</p>
+<p>I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought. As some of you know I have a day job so I had to take 2 vacation days to simple answer emails and do quick fixes, especially to the PC/Mac version. With each new software is natural to have problems at launch and Quest of Dungeons was no exception, and right now I’m still working on a daily basis in fixing some stuff and attending to some popular requests/changes from players to the game.</p>
+<p>It was an extremely complicated task to do on my own, managing marketing, answering emails and tweets, scouting Steam forums to see if players are reporting problems, oh and do some actual coding, because you know, bugs don’t fix themselves. But overall I’m happy with the results so far.</p>
+<p>The response to the game has been overall positive, and despite a few problems the game has gathered some good reviews.</p>
+<p>TouchArcade – 4/5 – <a href="http://toucharcade.com/2014/04/03/quest-of-dungeons-review/">Review</a><br>
+CriticalIndieGamer – 9/10 – <a href="http://criticalindiegamer.com/2014/04/quest-of-dungeons-review-pc/">Review</a><br>
+SoftPedia – 7/10 – <a href="softpedia.com/reviews/games/pc/Quest-of-Dungeons-Review-435164.shtml">Review</a><br>
+148Apps – 4/5 – <a href="http://www.148apps.com/reviews/quest-of-dungeons-review/">Review</a><br>
+PocketGamer – 6/10 – <a href="http://www.pocketgamer.co.uk/r/iPad/Quest+of+Dungeons/review.asp?c=58622&amp;srch=quest+of+dungeons">Review</a></p>
+<p>There are several <a href="https://www.youtube.com/results?search_query=%22quest+of+dungeons%22">youtube videos</a>, and I even caught a few people live streaming it on Twitch, it’s always awesome to see people playing your game, and having genuine reactions.</p>
+<p>This is one of my favourite moments (#spoilers)</p>
+<p>{&laquo; youtube ef9Z-Zs23GQ &gt;}}</p>
+]]></content:encoded>
     </item>
     <item>
       <title>First Macbook Pro</title>
@@ -120,6 +431,17 @@ I released all platforms on the same day, which was something I always wanted to
       <guid>https://www.david-amador.com/2013/12/first-macbook-pro/</guid>
       <description>I’ve been developing apps on Mac for almost 2 years now. But usually it’s pretty much just a develop on Windows, boot my 2009 Mini Mac, build on XCode and deploy.
 I always wanted to give it a try at using MacOSX as the main development environment, but the mini mac is too slow and well, Visual Studio. Also I don’t like that new Windows 8 that much. I hope Win9 gets back on track, in the line of Win 7.</description>
+      <content:encoded><![CDATA[<p>I’ve been developing apps on Mac for almost 2 years now. But usually it’s pretty much just a develop on Windows, boot my 2009 Mini Mac, build on XCode and deploy.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" alt="Mini Mac"  />
+</p>
+<p>I always wanted to give it a try at using MacOSX as the main development environment, but the mini mac is too slow and well, Visual Studio. Also I don’t like that new Windows 8 that much. I hope Win9 gets back on track, in the line of Win 7. I never owned a Mac other than the Mac Mini but since recently Apple released some new Macbook pro models, which have <a href="http://en.wikipedia.org/wiki/Haswell_(microarchitecture)">Haswell</a> processors and I decided to get one.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2013/11/first-macbook-pro-2013.jpg" alt="first-macbook-pro-2013"  />
+</p>
+<p>Since on my day job I work on Linux and I’m trying to use only Mac at home I haven’t used Windows for over two months.<br>
+Overall the experience has been great, mostly because it’s an extremely fast machine. A full build of Quest of Dungeons (game+engine) takes around 1m, on my old computer a full build would take between 4-5m. Oh and the retina screen, so gorgeous, everything else seems out of focus now, it’s really a huge difference, coding on that screen is a real treat.<br>
+The window management on OSX is really cool, it remembers the last positions of multiple displays, so if I unplug the laptop from my external monitor, even if I move around the windows and then reconnect the monitor it remembers the dual-monitor windows positions and puts them into place, time saver.</p>
+<p>There are a few issues/dislikes I have with OSX, but most of them are habits from windows.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>A new game project and new job</title>
@@ -130,6 +452,23 @@ I always wanted to give it a try at using MacOSX as the main development environ
 So a lot of things have happened since my last post.
 New project
 I’ve been talking about this via twitter for the past few weeks but this is the first official post talking about it. In last 7 Days Rogue-like I had this desire to make another one, a faster, less feature oriented RL, just explore and kill. I didn’t made much of the prototype at that time, but in the past month I returned to it, worked a bit more intensively and decided to launch it to iOS.</description>
+      <content:encoded><![CDATA[<p>Hey everyone!</p>
+<p>So a lot of things have happened since my last post.</p>
+<p><strong>New project</strong><br>
+I’ve been talking about this via twitter for the past few weeks but this is the first official post talking about it. In last 7 Days Rogue-like I had this desire to make another one, a faster, less feature oriented RL, just explore and kill. I didn’t made much of the prototype at that time, but in the past month I returned to it, worked a bit more intensively and decided to launch it to iOS. The game is nearly finished and I’m just tweaking difficulty and other bugs.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/8LO2xd8Ij_k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>I’m in the final stages of development, so if everything goes as planned I’m releasing it in ~ 2 months.</p>
+<p><strong>New job</strong></p>
+<p>About a month ago I was approached by a company (Sapo) for a possible job position. After a series of interviews I was offered the job and I accepted it. As most of you know I’ve been working in gamedev for most of my professional career. This new job position is not related to game development, but it’s an excellent opportunity in what I consider a good company. One of the things that got me to accept is the fact that I’m being thrown out of my comfort zone, which is something that is going to make me have to learn and dig into new technologies, and that is always valuable for a programmer. The fact that I’ll be working with a bigger team is also good, in past jobs teams were smaller and in my gamedev works it’s usually 1-2 people.<br>
+They were very cool about letting me do my indie game development on my free time, which is something great, because I intend to keep doing it. I’ve been doing it for the past 3 years and I intend to keep it that way.</p>
+<p>As part of this I had to move to a new town (Lisbon), I lived nearby a couple years ago so it’s not totally unknown to me.<br>
+I’ll update once I know more info about the release date for Quest of Dungeon.<br>
+And you know you can always poke me via twitter, where I do my daily rants.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Let&#39;s take a look at SDL Game Development book</title>
@@ -138,6 +477,19 @@ I’ve been talking about this via twitter for the past few weeks but this is th
       <guid>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</guid>
       <description>I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.
 These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of SDL Game Development written by Shaun Mitchell that covers that new version.</description>
+      <content:encoded><![CDATA[<p>I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.</p>
+<p>These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of <a href="http://www.packtpub.com/simple-directmedia-layer-game-development/book">SDL Game Development</a> written by Shaun Mitchell that covers that new version.</p>
+<p><a href="http://www.packtpub.com/simple-directmedia-layer-game-development/book"><img loading="lazy" src="/wp-content/uploads/2013/07/6821OT_cov-243x300.jpg" alt="6821OT_cov"  />
+</a></p>
+<p>For anyone who is starting on game development and wants to use SDL this is a good book, it has simple code and everything is very well explained. But make no mistake, I don’t recommend this for someone who doesn’t know code at all, you need to know some C++ to use it, or at least some object oriented language, but chances are, if you are reading my blog you know a OOP language already.</p>
+<p>Everything in the book is explained in a simple way and I don’t see anyone having any problems, I really liked the code examples, usually some books have a very “non real” code, stuff that while it works no-one usually does it like that, but this one has stuff that I would do that exact same way. It guides you from making the first hello project to loading an image, a game state machine, getting input from Keyboard, Mouse and Joysticks, a manager to handle textures, and creating a tilemap using <a href="http://www.mapeditor.org/">Tiled</a>. The Tiled chapter was a positive surprise since not many beginner/intermediate books go much into a data-driven design, and this is very important to make modern games, while it might seem hard to implement for a beginner, trust me it is well worth it.</p>
+<p>Now for things that you might be expecting but are not covered, the book doesn’t cover any OpenGL/DirectX specifics, so if you are looking for that you won’t find it here. It is possible to directly call GL/DX instead of using SDL draw calls, this is something I do, but you might lose platform independence if not done properly. Shaders are something also not covered, but then again SDL has no native support for that, you have to do it yourself.</p>
+<p>I also would have liked if the book covered more on configuring SDL on Mac, Linux too, since most people who choose SDL usually do want to build on those platforms.</p>
+<p>To end this short review, I would say that for everyone that are starting in gamedev, or never used SDL this is a good book, for someone who has already used SDL 2.0 or even 1.2 in the past you probably won’t find much here that you don’t already know.</p>
+<blockquote>
+<p>I was not payed in any form to take a look at this book, nor was this post redacted/altered in any way. I reviewed the book by reading the digital format. You can find both the digital and physical book on the link above.</p>
+</blockquote>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

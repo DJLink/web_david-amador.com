@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>The Indie Bay on David Amador</title>
     <link>https://www.david-amador.com/tags/the-indie-bay/</link>
@@ -21,6 +21,11 @@
       <description>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.
 Meanwhile I’ve been busy making the arrangements for The Indie Bay 48 hour game development competition.
 The idea is for every entrant to make a game in 48 hours using a given theme or topic.</description>
+      <content:encoded><![CDATA[<p>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.</p>
+<p>Meanwhile I’ve been busy making the arrangements for <a href="http://www.theindiebay.com">The Indie Bay</a> 48 hour <a href="http://www.theindiebay.com/competition">game development competition</a>.</p>
+<p>The idea is for every entrant to make a game in 48 hours using a given theme or topic. Some cool prototypes may show up, games like Braid or World of Goo have been created in competitions like this one.</p>
+<p>I’m also writing a couple of tutorials for <a href="http://www.theindiebay.com/category/articles/xna/building-a-2d-game-engine-in-xna/">building a 2d Game Engine in XNA</a>.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

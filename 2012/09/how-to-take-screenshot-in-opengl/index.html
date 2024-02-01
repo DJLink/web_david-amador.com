@@ -44,12 +44,12 @@ if (!doNotTrack) {
 bool save_screenshot(string filename, int w, int h) {	//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let&#39;s create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let&#39;s fetch them from the backbuffer	// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.david-amador.com/2012/09/how-to-take-screenshot-in-opengl/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2-125x166.png" /><meta property="article:section" content="posts" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2012-09-08T16:53:27+00:00" />
 <meta property="article:modified_time" content="2012-09-08T16:53:27+00:00" /><meta property="og:site_name" content="David Amador" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2-125x166.png" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" />
 <meta name="twitter:title" content="How to take screenshots in opengl"/>
 <meta name="twitter:description" content="So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.
 bool save_screenshot(string filename, int w, int h) {	//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let&#39;s create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let&#39;s fetch them from the backbuffer	// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename."/>
@@ -88,7 +88,7 @@ bool save_screenshot(string filename, int w, int h) {	//This prevents the images
   "articleBody": "So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.\nbool save_screenshot(string filename, int w, int h) {\t//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let's create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let's fetch them from the backbuffer\t// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename.c_str(), \"wb\"); if (!filePtr) return false; unsigned char TGAheader[12]={0,0,2,0,0,0,0,0,0,0,0,0}; unsigned char header[6] = { w%256,w/256, h%256,h/256, 24,0}; // We write the headers fwrite(TGAheader,\tsizeof(unsigned char),\t12,\tfilePtr); fwrite(header,\tsizeof(unsigned char),\t6,\tfilePtr); // And finally our image data fwrite(dataBuffer,\tsizeof(GLubyte),\tnSize,\tfilePtr); fclose(filePtr); free(dataBuffer); return true; } I’ve been using this on my projects and it works, although I read a couple of times it’s better to use p-buffer or FBO, but I leave that for you to research.\nEDIT (24/03/2016) : Thanks to Roger Dahl for pointing out the missing free(), leading to memory leaks\n",
   "wordCount" : "199",
   "inLanguage": "en",
-  "image":"https://www.david-amador.com/wp-content/uploads/2011/03/opengl2-125x166.png","datePublished": "2012-09-08T16:53:27Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png","datePublished": "2012-09-08T16:53:27Z",
   "dateModified": "2012-09-08T16:53:27Z",
   "author":{
     "@type": "Person",
@@ -193,7 +193,7 @@ bool save_screenshot(string filename, int w, int h) {	//This prevents the images
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2-125x166.png" alt="">
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
         
 </figure>
   <div class="post-content"><p>So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.</p>

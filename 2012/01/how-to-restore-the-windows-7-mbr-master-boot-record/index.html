@@ -50,12 +50,12 @@ Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of cours
 3 – Click the button for “Use recovery tools”." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.david-amador.com/2012/01/how-to-restore-the-windows-7-mbr-master-boot-record/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2012/01/53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a-125x166.png" /><meta property="article:section" content="posts" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2012/01/53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2012-01-21T10:43:50+00:00" />
 <meta property="article:modified_time" content="2012-01-21T10:43:50+00:00" /><meta property="og:site_name" content="David Amador" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2012/01/53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a-125x166.png" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2012/01/53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a.png" />
 <meta name="twitter:title" content="How to Restore the Windows 7 MBR (Master Boot Record)"/>
 <meta name="twitter:description" content="So I had this crisis where the MBR got broken and Windows would not boot. This can happens for many reasons, maybe you tried to dual boot your PC and something went wrong.
 Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of course)!
@@ -97,7 +97,7 @@ Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of cours
   "articleBody": "So I had this crisis where the MBR got broken and Windows would not boot. This can happens for many reasons, maybe you tried to dual boot your PC and something went wrong.\nAnyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of course)!\n1 – Boot your computer to the Windows 7 DVD\n2 – Select your language and click next.\n3 – Click the button for “Use recovery tools”.\n4 – Then select “Command Prompt”.\nDo this:\nType: diskpart and press Enter Type: select disk 0 and press Enter type: list volume and press Enter 6 – Use your DVD drive letter so we can access the DVD\nType: exit and press Enter to close Diskpart Type: G: (DVD drive) and press Enter Type: cd boot and press Enter Type: dir and press Enter 7 – To restore the “bootsector code”:\nTYPE: bootsect /nt60 SYS /mbr and press Enter You should be able to restart and boot you Windows now, if it fails, well, I’m out of ideas\n",
   "wordCount" : "177",
   "inLanguage": "en",
-  "image":"https://www.david-amador.com/wp-content/uploads/2012/01/53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a-125x166.png","datePublished": "2012-01-21T10:43:50Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2012/01/53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a.png","datePublished": "2012-01-21T10:43:50Z",
   "dateModified": "2012-01-21T10:43:50Z",
   "author":{
     "@type": "Person",
@@ -202,7 +202,7 @@ Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of cours
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2012/01/53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a-125x166.png" alt="">
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2012/01/53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a.png" alt="">
         
 </figure>
   <div class="post-content"><p>So I had this crisis where the MBR got broken and Windows would not boot. This can happens for many reasons, maybe you tried to dual boot your PC and something went wrong.</p>
@@ -212,8 +212,7 @@ Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of cours
 3 – Click the button for “Use recovery tools”.<br>
 4 – Then select “Command Prompt”.</p>
 <p>Do this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Type: diskpart
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Type: diskpart
 </span></span><span class="line"><span class="cl">and press Enter
 </span></span><span class="line"><span class="cl"> 
 </span></span><span class="line"><span class="cl">Type: <span class="k">select</span> disk <span class="m">0</span>

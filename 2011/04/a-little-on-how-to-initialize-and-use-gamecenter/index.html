@@ -48,12 +48,12 @@ Game Center was released only a couple months ago (September or so) but already 
 It’s a way to track achievements, leader boards etc. Unfortunately It’s only available from iOS 4.1&#43;, so some compatibility check has to be done." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.david-amador.com/2011/04/a-little-on-how-to-initialize-and-use-gamecenter/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2011/04/game-center-icon-125x166.jpg" /><meta property="article:section" content="posts" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2011/04/game-center-icon.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2011-04-01T10:53:01+00:00" />
 <meta property="article:modified_time" content="2011-04-01T10:53:01+00:00" /><meta property="og:site_name" content="David Amador" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2011/04/game-center-icon-125x166.jpg" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2011/04/game-center-icon.jpg" />
 <meta name="twitter:title" content="A little on how to initialize and use GameCenter"/>
 <meta name="twitter:description" content="Small side-note first, Vizati is now available for the Super Nintendo, more info.
 For my third idevblogaday post I’m going to talk about Game Center.
@@ -94,7 +94,7 @@ It’s a way to track achievements, leader boards etc. Unfortunately It’s only
   "articleBody": " Small side-note first, Vizati is now available for the Super Nintendo, more info.\nFor my third idevblogaday post I’m going to talk about Game Center.\nGame Center was released only a couple months ago (September or so) but already tons of applications are using it and even more, players ask for it.\nIt’s a way to track achievements, leader boards etc. Unfortunately It’s only available from iOS 4.1+, so some compatibility check has to be done.\nLet’s start by checking if the device is able to use Game Center\n- (BOOL)isGameCenterAvailable {\t// Check for presence of GKLocalPlayer API.\tClass gcClass = (NSClassFromString(@\"GKLocalPlayer\")); // The device must be running running iOS 4.1 or later.\tNSString *reqSysVer = @\"4.1\"; // Get Current sys version\tNSString *currSysVer = [[UIDevice currentDevice] systemVersion];\t// Compare both versions BOOL osVersionSupported = ([currSysVer compare:reqSysVer options:NSNumericSearch] != NSOrderedAscending);\t// Final Check return (gcClass \u0026\u0026 osVersionSupported); } Now we can use it to check if it’s available before actually using it. I would advise you to make this check only once at start and store it somewhere. Using this function intensively is not recommended.\nSo to init Game Center:\n- (void)initGameCenter { // Only continue if Game Center is available on this device if ([self isGameCenterAvailable]) { // Authenticate the local player [self gameCenterAuthenticate]; // Register the GKPlayerAuthenticationDidChangeNotificationName notification NSNotificationCenter *nc = [NSNotificationCenter defaultCenter]; [nc addObserver: self selector:@selector(gameCenterAuthenticationChanged) name:GKPlayerAuthenticationDidChangeNotificationName object:nil]; } } Noticed the gameCenterAuthenticate and gameCenterAuthenticationChanged we registered?\nFirst our registered function will check if the player has logged in, if not it will prompt it.\n- (void)gameCenterAuthenticate { // Authenticate the local user if([GKLocalPlayer localPlayer].authenticated == NO) { [[GKLocalPlayer localPlayer] authenticateWithCompletionHandler:^(NSError *error) { if(error == nil) { // Game Center Active and Player Sucessfully logged in // Store in your global vars that Game Center is Active } else { // Player Is not Logged In, so proceed as not having Game Center // Store in your global vars that Game Center is INACTIVE } }]; } } - (void)gameCenterAuthenticationChanged { [self gameCenterAuthenticate]; // In case the player makes logout we prompt it with login again. } To submit something to Game Center:\nstd::string category = \"top_score\"; // Identifier you registered for your App with Apple, check iTunesConnect int value = 1000; // Let's say your player made 1000 points NSString *cat = [[NSString alloc] initWithUTF8String:category.c_str()]; // Report the high score to Game Center GKScore *scoreReporter = [[[GKScore alloc] initWithCategory:cat] autorelease]; scoreReporter.value = value; [scoreReporter reportScoreWithCompletionHandler:^(NSError *error) { if (error == nil) { NSLog(@\"Game Center - High score successfully sent\"); } }];\tAnd that’s it. There’s tons of other stuff like achievements, online playing etc. But this should get you started.\n",
   "wordCount" : "445",
   "inLanguage": "en",
-  "image":"https://www.david-amador.com/wp-content/uploads/2011/04/game-center-icon-125x166.jpg","datePublished": "2011-04-01T10:53:01Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2011/04/game-center-icon.jpg","datePublished": "2011-04-01T10:53:01Z",
   "dateModified": "2011-04-01T10:53:01Z",
   "author":{
     "@type": "Person",
@@ -199,7 +199,7 @@ It’s a way to track achievements, leader boards etc. Unfortunately It’s only
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2011/04/game-center-icon-125x166.jpg" alt="">
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2011/04/game-center-icon.jpg" alt="">
         
 </figure>
   <div class="post-content"><blockquote>

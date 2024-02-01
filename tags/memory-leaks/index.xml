@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>memory leaks on David Amador</title>
     <link>https://www.david-amador.com/tags/memory-leaks/</link>
@@ -22,6 +22,19 @@
 According to the website itself
 Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
 It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</description>
+      <content:encoded><![CDATA[<p>I made a small post about detecting C++ <a href="/2010/10/tracking-memory-leaks-in-visual-studio/" title="Tracking memory leaks in Visual Studio">memory leaks in Visual Studio</a> in 2010. At the time that seemed to suffice, but some months ago someone told me about <a href="http://vld.codeplex.com/">Visual Leak Detector</a> and boy does it work.</p>
+<p>According to the website itself</p>
+<blockquote>
+<p>Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.</p>
+<p>It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</p>
+<p>Then it can be used with any C/C++ project simply by adding the following line to your code:</p>
+<pre tabindex="0"><code>&lt;pre lang=&#34;cpp&#34;&gt;#include &#34;vld.h&#34;
+</code></pre></blockquote>
+<p>It’s very easy to use and I tracked down a bunch of memory leaks hidden inside my code since the time I released Vizati.</p>
+<p>As expected this is a heavy beast and debbuding while using VLD required much more memory, but totally worth it. You can even output to a file</p>
+<p><a href="/wp-content/uploads/2012/06/vld.png"><img loading="lazy" src="/wp-content/uploads/2012/06/vld.png" alt=""  title="vld"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Tracking memory leaks in Visual Studio</title>
@@ -32,6 +45,28 @@ It’s pretty easy to use. After installing it, you just need to tell Visual C++
 I know there are other and better solution but this can be handy for quick findings without much hassle.
 First place this code in your entry point file, generally main.cpp inside your main() function
 #ifdef _DEBUG int flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG); flag |= _CRTDBG_LEAK_CHECK_DF; // Turn on leak-checking bit _CrtSetDbgFlag(flag); #endif Now just run you game/program as you would normally, in debug mode of course.</description>
+      <content:encoded><![CDATA[<p>I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.<br>
+I know there are other and better solution but this can be handy for quick findings without much hassle.</p>
+<p>First place this code in your entry point file, generally main.cpp inside your main() function</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#ifdef _DEBUG
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>	<span class="kt">int</span> <span class="n">flag</span> <span class="o">=</span> <span class="n">_CrtSetDbgFlag</span><span class="p">(</span><span class="n">_CRTDBG_REPORT_FLAG</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="n">flag</span> <span class="o">|=</span> <span class="n">_CRTDBG_LEAK_CHECK_DF</span><span class="p">;</span> <span class="c1">// Turn on leak-checking bit
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">_CrtSetDbgFlag</span><span class="p">(</span><span class="n">flag</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#endif
+</span></span></span></code></pre></div><p>Now just run you game/program as you would normally, in debug mode of course.</p>
+<p>After you close it you’ll get a nice log in the output window like this one:</p>
+<p><a href="/wp-content/uploads/2010/10/memory_leaks_output.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/memory_leaks_output.jpg" alt=""  title="memory_leaks_output"  />
+</a></p>
+<p>See those numbers before each memory leak between brackets? Grab one of those and add this line right before the #endif</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl">      <span class="n">_CrtSetDbgFlag</span><span class="p">(</span><span class="n">flag</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">_CrtSetBreakAlloc</span><span class="p">(</span><span class="mi">689</span><span class="p">);</span> <span class="c1">// Comment or un-comment on need basis
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="cp">#endif
+</span></span></span></code></pre></div><p>Now run the game again, you shall get a break-point where the {689} memory leak happened.</p>
+<p>I hope this is the correct way to use it, if not, let me know.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

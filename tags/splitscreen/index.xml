@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>splitscreen on David Amador</title>
     <link>https://www.david-amador.com/tags/splitscreen/</link>
@@ -21,6 +21,23 @@
       <description>Hello there.
 Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.
 My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that Rita and I have for the game we should have submitted.</description>
+      <content:encoded><![CDATA[<p>Hello there.</p>
+<p>Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.</p>
+<p>My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that <a href="http://www.rita-silva.com">Rita</a> and I have for the game we should have submitted.</p>
+<p>One of my favorites games was Zelda The Fours Sword Adventures, the hole 4 players playing on one screen is cool. I picked the name Pugna, means fight. So the game allows up to 4 players on split screen.</p>
+<p><a href="/wp-content/uploads/2009/08/Screenshot002.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Screenshot002-300x168.jpg" alt="Screenshot002"  title="Screenshot002"  />
+</a></p>
+<p>I’ve quite proud of having made this in around 4-5 hours. Till now I have a scalable level that renders grass. Screen division is made automatically according to number of players. As you can see on the following image it has a 2 split.</p>
+<p><a href="/wp-content/uploads/2009/08/Screenshot001.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Screenshot001-300x168.jpg" alt="Screenshot001"  title="Screenshot001"  />
+</a></p>
+<p>I have basic movement and rotation and a title screen. I won’t be having a great game but I have a couple of nice ideas that can work out with time.</p>
+<p>Here’s a small video, the framerate is due to the sofware i use to record.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/w0bELIEC0Q8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
   </channel>
 </rss>

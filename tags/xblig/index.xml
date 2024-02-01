@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>XBLIG on David Amador</title>
     <link>https://www.david-amador.com/tags/xblig/</link>
@@ -22,6 +22,22 @@
 Let me start by saying that this is just a personal opinion, nothing more, nothing less.
 It was with great sadness that I saw what the latest update to the Xbox360 dashboard did to Xbox Indie Games
 See? XBLIG is now on the “Speciality Shops”, right next to Avatar Marketplace, not even worthy of being the Games section. Even if you search a XBLIG game there it won’t return any result.</description>
+      <content:encoded><![CDATA[<blockquote>
+<p>UPDATE: Pressure works, Microsoft backs down over XBLIG changes: <a href="http://www.digitalspy.co.uk/gaming/news/a286779/microsoft-backs-down-over-xblig-changes.html">http://www.digitalspy.co.uk/gaming/news/a286779/microsoft-backs-down-over-xblig-changes.html</a></p>
+</blockquote>
+<p>Let me start by saying that this is just a personal opinion, nothing more, nothing less.</p>
+<p>It was with great sadness that I saw what the latest update to the Xbox360 dashboard did to Xbox Indie Games</p>
+<p><a href="/wp-content/uploads/2010/11/Capture6_-_specialty_shops.jpg"><img loading="lazy" src="/wp-content/uploads/2010/11/Capture6_-_specialty_shops.jpg" alt=""  title="xblig new dashboard"  />
+</a></p>
+<p>See? XBLIG is now on the “Speciality Shops”, right next to Avatar Marketplace, not even worthy of being the Games section. Even if you search a XBLIG game there it won’t return any result.</p>
+<p>Since XBLIG is on the second tab most people will see Avatar and scroll down or up, it took me a couple minutes tracking it down and I was searching everywhere, so odds of someone seeing XBLIG are way lower, even lower to find your game, not to mention actually buying it.</p>
+<p>A couple reports and developers are saying that sales dropped around 80%, going from around 100 to 18 copies/day for some.</p>
+<p>I can’t say I’m surprised, with the launch of Windows Phone 7, the deletion of Creator’s Club just to merge us with WP7 devs in App Hub, it was obvious XBLIG devs would lose focus and attention.</p>
+<p>Let’s recap, XNA gained momentum purely on XBLIG because there just a few titles for PC using XNA framework and most of them are Ports, and now they are turning their backs on the ones who proved XNA could have some future. Sure many devs can jump right into the WP7 without relearning anything else, but most of them grabbed XNA not only for the money but for being able to develop to they console, how cool is that right? Honestly I prefer developing for PC or Xbox360 or any TV-plugged console than any mobile device.</p>
+<p>Why? Well, mobile games are expected to be packed with features, updated regularly and priced and 0.99. This is depressing for most devs, not being able to put the price they think their game is worth. Also people expect their 0.99 game to last hours and will bitch about everything. The PC indie scene is a little more gentile and filled with indie-scene lovers, also games can generally be placed up till $20 which is more worthy of your 1 year development effort right?</p>
+<p>It’s not that I hate mobiles but it’s a very different market to handle and not everyone will like it.</p>
+<p>I hope they come around and give a little more attention to this, maybe someone just screwed up with the tabs and all will be fixed soon.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>We need XBOX Live Indie Games in Portugal!!</title>
@@ -30,6 +46,14 @@ See? XBLIG is now on the “Speciality Shops”, right next to Avatar Marketplac
       <guid>https://www.david-amador.com/2010/06/we-need-xbox-live-indie-games-on-portugal/</guid>
       <description>See the little black country on the map? It’s Portugal. The green zone are countries around Portugal that have XBOX Live Indie Games. We are surrounded by countries that can place their games on Creator’s Club but we were left behind. I won’t say there aren’t many others but they can speak for themselves.
 I’m tired of watching developers from other countries being able to place their games there and we have to sit and watch.</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2010/06/xbox_live_europe.jpg" alt=""  title="xbox_live_europe"  />
+</p>
+<p>See the little black country on the map? It’s Portugal. The green zone are countries around Portugal that have XBOX Live Indie Games. We are surrounded by countries that can place their games on <a href="http://creators.xna.com/">Creator’s Club</a> but we were left behind. I won’t say there aren’t many others but they can speak for themselves.</p>
+<p>I’m tired of watching developers from other countries being able to place their games there and we have to sit and watch.</p>
+<p>Yeah I know there’s money involved and it’s not easy to add a country just because. Even more Portugal doesn’t have a great reputation on gaming and some even think we don’t have anything worth it (<a href="http://creators.xna.com/en-US/spotlight/MicrosoftPortugal">Microsoft XNA Pizza Night proved that wrong</a>) but we have a cool xna community that’s fading away and moving to other platforms because it’s not only about making games but also getting money from that.<br>
+If they can’t find it on Xbox they move to others, iPhone, PC etc.</p>
+<p>I have <a href="https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/">Vizati</a> ready for Playtesting and I’m waiting that someday we get XBLIG here. I hope that with the release of Windows Phone 7, which will be available here that some other doors might also open.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

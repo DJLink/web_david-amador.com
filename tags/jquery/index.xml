@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jquery on David Amador</title>
     <link>https://www.david-amador.com/tags/jquery/</link>
@@ -22,6 +22,30 @@
 The following code is for JQuery but switching it to your favorite JS framework should be very easy.
 First start by adding this to your div
 &amp;lt;div class=&amp;#34;clickable&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; Now a little css to simulate the pointer on that div</description>
+      <content:encoded><![CDATA[<p>Making a clickable text or image is easy, just add the &lt;a&gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.<br>
+The following code is for JQuery but switching it to your favorite JS framework should be very easy.</p>
+<p>First start by adding this to your div</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#34;clickable&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/div&gt;</span>
+</span></span></code></pre></div><p>Now a little css to simulate the pointer on that div</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">clickable</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span> <span class="k">cursor</span><span class="p">:</span><span class="kc">pointer</span><span class="p">;</span> <span class="p">}</span>
+</span></span></code></pre></div><p>Now onto the JavaScript part</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span><span class="o">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">$</span><span class="p">(</span><span class="s2">&#34;div.clickable&#34;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nb">window</span><span class="p">.</span><span class="nx">location</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&#34;url&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></div><p>You can use as many clickable divs as you want.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>WordPress Gallery</title>
@@ -31,6 +55,14 @@ First start by adding this to your div
       <description>During my efforts to combine Rita’s website to wordpress and with a cool gallery I came up with a few problems.
 Mainly because the top navigation bar was built using J-Query, which I’ve already made quite some time ago, and even after switching to mootools I didn’t want to be rebuilding it again.
 So yesterday after a few searches I managed to install NextGen gallery plugin for wordpress and using LightBox for popups.</description>
+      <content:encoded><![CDATA[<p>During my efforts to combine <a href="http://www.rita-silva.com">Rita’s website</a> to wordpress and with a cool gallery I came up with a few problems.</p>
+<p>Mainly because the top navigation bar was built using <a href="http://www.jquery.com">J-Query</a>, which I’ve already made quite some time ago, and even after switching to mootools I didn’t want to be rebuilding it again.</p>
+<p><a href="/wp-content/uploads/2009/04/rita_top_menu.jpg"><img loading="lazy" src="/wp-content/uploads/2009/04/rita_top_menu-300x103.jpg" alt="rita_top_menu"  title="rita_top_menu"  />
+</a></p>
+<p>So yesterday after a few searches I managed to install <a href="http://alexrabe.boelinger.com/wordpress-plugins/nextgen-gallery/">NextGen</a> gallery plugin for wordpress and using LightBox for popups. It even has a watermark option. I recommend anyone having a gallery on their website to give it a try. It’s really cool and free for use.</p>
+<p><a href="/wp-content/uploads/2009/04/nextgen_gallery.jpg"><img loading="lazy" src="/wp-content/uploads/2009/04/nextgen_gallery-300x209.jpg" alt="nextgen_gallery"  title="nextgen_gallery"  />
+</a></p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -205,7 +205,7 @@ After a bit research I decided to choose theora, but a bit skeptic, I’ve used 
 <p>If I remember correctly we couldn’t play audio, we where using separated tracks and paying the audio via a normal music play and big resolution videos (&gt;500??) where a killer.</p>
 <p>Anyway, since I’m already using OpenAL for audio I decided to give it a try. Unfortunately I didn’t had that code we where using back then so I had to do some digging on the internet.</p>
 <p>So after a few days I had it working but bumped into the same problem, a bit slow. Not as slow as before cause computers have evolved. But after some reading I discovered that you can actually cache some YUV-&gt;RBG values and speed went up by like 10 fold.</p>
-<p><a href="/wp-content/uploads/2012/01/theora_player.png"><img loading="lazy" src="/wp-content/uploads/2012/01/theora_player-300x175.png" alt=""  title="theora_player"  />
+<p><a href="/wp-content/uploads/2012/01/theora_player.png"><img loading="lazy" src="/wp-content/uploads/2012/01/theora_player.png" alt=""  title="theora_player"  />
 </a></p>
 <p>I can decode 1080p videos with audio on my Core2Duo @ 2 GHz. And I mention the core since I have the decoding from the file on a separated thread so on a single core it’s probably a bit slower.<br>
 But we probably will be placing videos around 512px width so there’s no problem there. I wonder if we could do the YUV-&gt;RGBA on the GPU side via a shader?</p>
@@ -213,13 +213,14 @@ But we probably will be placing videos around 512px width so there’s no proble
 <p><strong>Tools</strong></p>
 <p>On the tools realm there was a need for a better Particle System Editor, the one we had has many things but adding stuff was turning into a nightmare, the old editor was build on XNA 3.1 which isn’t supported by VS2010.<br>
 Since the engine is already in C++ I started from scratch and built this handy tool in 3 days or so:</p>
-<p><a href="/wp-content/uploads/2012/01/screenshots2.png"><img loading="lazy" src="/wp-content/uploads/2012/01/screenshots2-300x175.png" alt=""  title="screenshots2"  />
-</a><a href="/wp-content/uploads/2012/01/Screenshot1.png"><img loading="lazy" src="/wp-content/uploads/2012/01/Screenshot1-300x175.png" alt=""  title="Screenshot1"  />
+<p><a href="/wp-content/uploads/2012/01/screenshots2.png"><img loading="lazy" src="/wp-content/uploads/2012/01/screenshots2.png" alt=""  title="screenshots2"  />
+</a></p>
+<p><a href="/wp-content/uploads/2012/01/Screenshot1.png"><img loading="lazy" src="/wp-content/uploads/2012/01/Screenshot1.png" alt=""  title="Screenshot1"  />
 </a></p>
 <p>Not vary fancy but it gets the job done.</p>
 <p>My next step was to fix most of the Sprite Sheet Editor bugs and issues my designer had been complaining about.</p>
 <p>I already have an offline tool that grabs a bunch of tiny images and place them in an Atlas but most of the time the designer has the pieces together already on Photoshop so I incorporated a snippet of code that on double clicking an area tries to automatically detect the region around it. Anything that fails can be manually defined, the old fashioned way.</p>
-<p><a href="/wp-content/uploads/2012/01/sprite_editor.png"><img loading="lazy" src="/wp-content/uploads/2012/01/sprite_editor-300x175.png" alt=""  title="sprite_editor"  />
+<p><a href="/wp-content/uploads/2012/01/sprite_editor.png"><img loading="lazy" src="/wp-content/uploads/2012/01/sprite_editor.png" alt=""  title="sprite_editor"  />
 </a></p>
 <p>So in the next few days I’m working on the Animation Editor so the artist can quickly create and preview the animations from the sprite sheets without the need for me to place them in the game before hand.</p>
 <p>I had most of these tools but they where awful. They did the trick for Vizati but now I’m trying to do things a bit better.</p>

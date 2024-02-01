@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>android on David Amador</title>
     <link>https://www.david-amador.com/tags/android/</link>
@@ -20,6 +20,110 @@
       <guid>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</guid>
       <description>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.
 I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.</description>
+      <content:encoded><![CDATA[<p>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.</p>
+<p>I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.</p>
+<p>Back in 2010 I did some research and the NDK was pretty bad, I don’t think it even had stl at the time, but things have changed since then. I decided to jump in and try to port the whole thing. As a primary goal I want to keep as much native code as possible, because it’s already working, porting it to Java could only lead to further bugs in the process.</p>
+<p><strong>Tools</strong></p>
+<p>After some digging I found that you can use Visual Studio to code for Android (oh happy dayyy).</p>
+<p><em>Visual Studio 2010</em>: <a href="http://www.visualstudio.com/pt-br/visual-studio-homepage-vs.aspx">http://www.visualstudio.com/pt-br/visual-studio-homepage-vs.aspx</a><br>
+<em>VS-Android</em>: <a href="https://code.google.com/p/vs-android/">https://code.google.com/p/vs-android/</a><br>
+<em>Android NDK, Revision 10</em> : <a href="https://developer.android.com/tools/sdk/ndk/index.html">https://developer.android.com/tools/sdk/ndk/index.html</a><br>
+<em>Android SDK</em> : <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a><br>
+<em>ant-1.9.4</em>: <a href="http://ant.apache.org/bindownload.cgi">http://ant.apache.org/bindownload.cgi</a><br>
+<em>jdk 1.8.0</em>: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
+<p><strong>Dependencies</strong></p>
+<p>My next concern were some dependencies that I have on the other versions:</p>
+<p>OpenAL – for sound card access<br>
+Vorbis – for OGG load/parsing<br>
+FreeType 2 – for ttf loading<br>
+TinyXML – XML parser</p>
+<p>Fortunately all of these were possible to compile to Android.</p>
+<p><strong>Application</strong></p>
+<p>As an entry point I used android_native_app_glue which comes with the NDK, this way you can skip all Java (I have 0 lines of java code in the game)</p>
+<p>Another important thing is this line, telling our manifest file that we have no Java code</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;application</span> <span class="na">android:hascode=</span><span class="s">&#34;false&#34;</span> <span class="na">android:label=</span><span class="s">&#34;@string/app_name&#34;</span><span class="nt">&gt;</span>
+</span></span></code></pre></div><h3 id="resource-loading">Resource Loading</h3>
+<p>Usually you just need to do fopen(filename) to open a file. For each platform I would just have to concern with knowing the root folder of where the resources are. But Android works differently, all resources are compressed and you need to use AAssetManager to load them. This proceeds to unpack the file and retrieve a pointer to it. At least this is what I managed to understand from the process.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">AAsset</span><span class="o">*</span> <span class="n">asset</span> <span class="o">=</span> <span class="n">AAssetManager_open</span><span class="p">(</span><span class="n">android_asset_manager</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span></code></pre></div><p>But this caused a big problem, some of the dependencies, like TinyXML receive a string and proceeds to load file file using fopen(). This meant remaking all frameworks, which is not a very good perspective.</p>
+<p>I had some code using fopen and the fact that some external libs used it too posed a problem. I actually spent a couple of days contemplating what would be the best approach but after some research I found a very simple solution.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#define fopen(name, mode) android_file_open(name, mode)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="n">FILE</span><span class="o">*</span> <span class="nf">android_file_open</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">fname</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">);</span>
+</span></span></code></pre></div><p>Now every fopen will be replaced with android_file_open</p>
+<p>As for the function itself it will try to open the file with AssetManager and return a FILE*</p>
+<p>I also did a small hack that if you try to open the file with write permissions &lsquo;w&rsquo;, it will use the standard fopen, that way we can properly write files to the user documents, for save game data and other stuff.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">FILE</span><span class="o">*</span> <span class="nf">android_file_open</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">fname</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">mode</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;w&#39;</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#undef  fopen
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>		<span class="k">return</span> <span class="n">fopen</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span><span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#define fopen(name, mode) android_fopen(name, mode)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>        <span class="n">AAsset</span><span class="o">*</span> <span class="n">asset</span> <span class="o">=</span> <span class="n">AAssetManager_open</span><span class="p">(</span><span class="n">android_asset_manager</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">asset</span><span class="p">)</span> <span class="k">return</span> <span class="n">funopen</span><span class="p">(</span><span class="n">asset</span><span class="p">,</span> <span class="n">android_file_read</span><span class="p">,</span> <span class="n">android_file_write</span><span class="p">,</span> <span class="n">android_file_seek</span><span class="p">,</span> <span class="n">android_file_close</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#undef  fopen
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>	<span class="k">return</span> <span class="n">fopen</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span><span class="n">mode</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">int</span> <span class="nf">android_file_read</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">cookie</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">buf</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">AAsset_read</span><span class="p">((</span><span class="n">AAsset</span><span class="o">*</span><span class="p">)</span><span class="n">cookie</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">int</span> <span class="nf">android_file_write</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">cookie</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">buf</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="n">fpos_t</span> <span class="nf">android_file_seek</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">cookie</span><span class="p">,</span> <span class="n">fpos_t</span> <span class="n">offset</span><span class="p">,</span> <span class="kt">int</span> <span class="n">whence</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">AAsset_seek</span><span class="p">((</span><span class="n">AAsset</span><span class="o">*</span><span class="p">)</span><span class="n">cookie</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">whence</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">int</span> <span class="nf">android_file_close</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">cookie</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">AAsset_close</span><span class="p">((</span><span class="n">AAsset</span><span class="o">*</span><span class="p">)</span><span class="n">cookie</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Now just adding this line to the makefile to force the game/libraries to pre-include our file before everything else</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="nl">LOCAL_CFLAGS</span> <span class="p">:</span><span class="o">=</span> <span class="o">-</span><span class="n">g</span> <span class="o">-</span><span class="n">include</span> <span class="n">android_file_open</span><span class="p">.</span><span class="n">h</span>
+</span></span></code></pre></div><p>So now all my fopen code works perfectly without any change.</p>
+<h3 id="opengl">OpenGL</h3>
+<p>I was using GLES for the iOS version already so I had no problems with the code itself, I did however had some problems with performance on older devices, for example 2010 devices with version 2.3 (the game targets 2.3+)</p>
+<p>Especially on this function glCopyTexSubImage2D</p>
+<p><img loading="lazy" src="/wp-content/uploads/2014/08/soft_shadows.png" alt="soft shadows"  />
+</p>
+<p>The game uses some 2d soft shadows for giving a nice atmosphere, it&rsquo;s updated once in a while and I just used glCopyTexSubImage2D with a 256x256 texture instead of a VBO because it worked perfectly on everything else (including all iOS devices), but turns out this is very slow on older Android devices, so I ended up adding an option to the game to disable those effects. This way, newer devices can have all bells and whistles and older devices can still run the game fine. One of the testing devices was a Samsung Galaxy S1 and it went from 5 FPS to 30, which is more then acceptable to play. All 4.0+ devices should have no problem running this, and even if they have they can just disable the option.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2014/08/photo.png" alt="High Performance"  />
+</p>
+<h3 id="application-cycle">Application cycle</h3>
+<p>There is a strong possibility the GL view is trashed when the app goes to background, to save resources the view is recreated each time you go back from background to the app. This poses a problem since all gl objects, textures, shaders, VBOs are destroyed too. There is no secure way to ensure the view never gets destroyed while your app is running so I had to make sure each time the view is recreated I re-load all required assets once again. Really not happy with reloading everything again but its the only secure way, if you detect the view was destroyed and the app is still running you have no other choice. For this game it&rsquo;s not a big deal, I have few resources and they are fast to load so the user can&rsquo;t even tell. If I had a bigger game with lots of big textures I would probably had to show a loading screen again.</p>
+<h3 id="screen-size">Screen size</h3>
+<p>The different screen sizes for Android can pose a problem, but you can detect screen density and size and scale your game or take proper actions according to what you have.<!-- raw HTML omitted --><!-- raw HTML omitted -->
+Here&rsquo;s how you can detect it in C++</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">density</span> <span class="o">=</span> <span class="n">AConfiguration_getDensity</span><span class="p">(</span><span class="n">engine</span><span class="o">-&gt;</span><span class="n">app</span><span class="o">-&gt;</span><span class="n">config</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">screen_size</span> <span class="o">=</span> <span class="n">AConfiguration_getScreenSize</span><span class="p">(</span><span class="n">engine</span><span class="o">-&gt;</span><span class="n">app</span><span class="o">-&gt;</span><span class="n">config</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="n">density</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_DENSITY_DEFAULT</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_DENSITY_LOW</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_DENSITY_MEDIUM</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_DENSITY_HIGH</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="n">screen_size</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_SCREENSIZE_SMALL</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_SCREENSIZE_NORMAL</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_SCREENSIZE_LARGE</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_SCREENSIZE_XLARGE</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>You can use screen size to detect if the current device is a tablet or a phone.</p>
+<h3 id="final">Final</h3>
+<p>Now that I finished the port it doesn&rsquo;t seem that I had to change that much, in fact the game code it self is nearly untouched, just the engine was altered to accommodate for Android. Porting took me ~ 2 months (I have a day job) and while working on a expansion for the game. It&rsquo;s not all chaos in the Android universe, although the hardware fragmentation poses some very serious problems, some devices may be too slow to run even the simpler games.</p>
+<p>If you have questions about anything else I didn&rsquo;t cover on this article, feel free to ask.</p>
+<p>In case you are interested in the game, it&rsquo;s out on <a href="http://store.steampowered.com/app/270050/">Steam</a>, <a href="https://itunes.apple.com/us/app/quest-of-dungeons/id698726956?mt=8">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.davidamador.quest_of_dungeons">Google Play</a>, feel free to check it out: <a href="http://www.questofdungeons.com">http://www.questofdungeons.com</a></p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

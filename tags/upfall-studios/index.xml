@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>upfall studios on David Amador</title>
     <link>https://www.david-amador.com/tags/upfall-studios/</link>
@@ -20,6 +20,15 @@
       <guid>https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</guid>
       <description>So a lot has happened since my last post. Even before EGX I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.
 I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you.</description>
+      <content:encoded><![CDATA[<p>So a lot has happened since my last post. Even before <a href="/2014/10/egx-2014/" title="EGX 2014">EGX</a> I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.<br>
+I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you.</p>
+<p>Since pushing on making games with just displaying my name felt a bit weird I decided (a couple months ago) to give a brand to my indie games, called <a href="http://www.upfallstudios.com">Upfall Studios</a>. Looks a bit more professional and it’s easier to approach other people, because either we like it or not, this is a business and people always ask “what’s the studio name?”.</p>
+<p><del>I also created a blog (<a href="http://www.upfallstudios.com/">http://www.upfallstudios.com/</a>) where I’ll be talking about the games and development, which is something I usually don’t do here in much dept, is mostly “new game”, “game is out”, so if you want to keep track of that feel free.</del></p>
+<p>Edit 2024: I&rsquo;ve since <a href="/2022/11/merged-personal-and-studio-blogs-into-one/">merged the upfallstudios blog onto this one</a>.</p>
+<p>I’m forcing myself to do a year summary post soon so see you soon.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2014/12/xbox_one_console.jpg" alt="xbox_one_console"  />
+</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

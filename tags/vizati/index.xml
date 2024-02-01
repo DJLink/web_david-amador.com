@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Vizati on David Amador</title>
     <link>https://www.david-amador.com/tags/vizati/</link>
@@ -20,6 +20,16 @@
       <guid>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
       <description>&amp;gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but twitter kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.
 Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and Rita with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game.</description>
+      <content:encoded><![CDATA[<p><a href="https://dj_link.itch.io/vizati"><img loading="lazy" src="/wp-content/uploads/2011/03/vizati_letterbox.jpg" alt=""  />
+</a>&gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but <a href="https://www.twitter.com/DJ_Link">twitter</a> kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.</p>
+<p>Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and <a href="http://rita-silva.com/" title="rita-silva.com/">Rita</a> with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game. Things changed a lot over the years and the original team is no longer working together, also because of OS updates, like the iOS versions etc or hardware not being around anymore the game has mostly vanished from all stores. The other day I was thinking about game preservation and thought it would be a shame to leave this only in our computers, combined with the 10th anniversary we decided to make it free to everyone, the original game can now be downloaded and played even on the newest Windows versions (thank you XNA).</p>
+<p>Here’s the official <a href="https://dj_link.itch.io/vizati" title="https://dj_link.itch.io/vizati">itch.io</a> page, there you’ll find not only the original XNA version that was being sold, but also an unfinished version using a custom engine that I build when porting it to iOS, this framework ended up powering <a href="https://www.questofdungeons.com" title="https://www.questofdungeons.com">Quest of Dungeons</a>, a game I made a few years after. It’s not finished but should be mostly playable, although only works in window mode.</p>
+<p>I also created a GitHub repo, which has a couple more things, like the original website code, some screenshots, the code using for creating the XNA installer, PDF manual and a couple more things. This way those things will never get lost in case my computer + backups ever go bad.</p>
+<p>Download: <a href="https://dj_link.itch.io/vizati">https://dj_link.itch.io/vizati</a><br>
+GitHub: <a href="https://github.com/DJLink/Vizati">https://github.com/DJLink/Vizati</a></p>
+<p>Hope you have fun, either you are rediscovering the game or playing it for the first time, it’s a product of it’s time, from an inexperienced team trying to make their first indie game, but I’m proud of how it turned out.</p>
+<p>See you around!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Indie Summer Six Pack</title>
@@ -30,6 +40,13 @@ Second, but not least important, Vizati is turning 10 years old today (11 June 2
 Six indie titles for just $10 – or a stonking $5, if you first share the offer via Facebook.
 How can you say no to that?
 The games included are Aztaka, City Rain, Puzzlegeddon, Bob Came In Pieces, Vizati and Lylian.</description>
+      <content:encoded><![CDATA[<p>So this is what we at Different Pixel, together with 5 other developers have been working on, the “<strong>Indie Summer Six Pack</strong>”</p>
+<p><a href="http://www.indiegamespack.com/"><img loading="lazy" src="/wp-content/uploads/2011/06/indiepack.jpg" alt=""  title="indiepack"  />
+</a></p>
+<p><a href="http://indiegamespack.com/">Six indie titles for just $10</a> – or a stonking $5, if you first share the offer via Facebook.</p>
+<p>How can you say no to that?</p>
+<p>The games included are <strong>Aztaka</strong>, <strong>City Rain</strong>, <strong>Puzzlegeddon</strong>, <strong>Bob Came In Pieces</strong>, <strong>Vizati</strong> and <strong>Lylian</strong>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Bringing a game from PC to iOS</title>
@@ -38,6 +55,29 @@ The games included are Aztaka, City Rain, Puzzlegeddon, Bob Came In Pieces, Viza
       <guid>https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</guid>
       <description>This is my first post to http://idevblogaday.com/, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.
 I’ll start by talking a bit about how we made our PC game Vizati to iPhone.When we started, this represented our chance of making games and putting ourselves into test.</description>
+      <content:encoded><![CDATA[<p>This is my first post to <a href="http://idevblogaday.com/">http://idevblogaday.com/</a>, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.</p>
+<p>I’ll start by talking a bit about how we made our PC game <a href="https://dj_link.itch.io/vizati/">Vizati</a> to iPhone.<a href="http://itunes.apple.com/app/vizati/id393099810?mt=8"><img loading="lazy" src="/wp-content/uploads/2010/05/box_vizati_11.jpg" alt=""  title="box_vizati_1"  />
+</a></p>
+<p>When we started, this represented our chance of making games and putting ourselves into test. Without any pre determined rules and/or a major company dictating what to do we were able to have full creative control to try and do something a bit different.</p>
+<p><em>Vizati</em> is a casual puzzle game with a story as a background. The game is now available for Windows, Mac, iPhone, iPad and Windows Phone 7. Developed by only two people, it thankfully received several good reviews.</p>
+<p><strong>Launching for Windows</strong></p>
+<p>We started out building for Windows and Xbox360 because it was a very well known platform for us; we had tools and knowledge from other games so it felt right.</p>
+<p>We launched the game on June 6<!-- raw HTML omitted -->th; <!-- raw HTML omitted --> and got some very positive reviews, being its freshness, graphics and music the most acclaimed features.</p>
+<p>Right away we started making plans for bringing the game to iOS devices, iPhone, iPad etc. The mobile devices felt like a great platform for such a game.</p>
+<p><strong>First speed bump</strong></p>
+<p>For the PC we had built the game engine using XNA framework as a base, it is DirectX based but it uses .Net languages which are a no go for iOS devices of course. It was stable enough to ensure a high compatibility with all the different machines out there, and we never thought at start to make it for any other platforms. This was our first mistake.</p>
+<p>For the next 3 months I had to rewrite all the game codebase to C++ including building the engine itself using render API OpenGLES. <a href="/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/" title="Developing on Mac and Basalt running on the iPhone">[Dedicated Post]</a></p>
+<p>During these 3 months we also had to adjust the game to the iPhone screen size. Just out of curiosity the native resolution on PC is HD, 1280×720 and the iPhone native is 640×426. <a href="/2010/09/targetting-ios-devices-hardware/" title="Targetting iOS devices hardware">[See more on iOS hardware]</a></p>
+<p>At first we considered using the same images and using the same feature we used on PC to <a href="/2010/03/xna-2d-independent-resolution-rendering/" title="XNA 2D Independent Resolution Rendering">automatically scale the game</a> to the screen size. But doing that would be a tremendous effort to the device since the iPhone screen size was almost 3 times smaller; memory and CPU cycles are more limited in mobiles so we had to make a smarter approach.</p>
+<p>One of the problems was the game being extremely slow on older devices. The amount of particles and animations on some parts was a total killer. I eventually had to <a href="/2010/08/developers-log-stardate-26082010/" title="Developers log stardate 26082010">rewrite my primitive drawing code </a>to batch stuff as much as possible</p>
+<p>Another problem was the aspect ratio, which would lead to either stretching the game vertically thus distorting the images or making it letterboxed.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2011/03/vizati_letterbox.jpg" alt=""  title="vizati_letterbox"  />
+</p>
+<p>The screen is already small so it would be a mistake not to take advantage of all the area. Rita had to redo some of the art to fit a different aspect ratio.</p>
+<p>Fortunately touch felt a very natural way for controlling the game, even more than a keyboard. Using the fingers to rotate, shake and flip the cube feels right and natural.</p>
+<p>The iPad version was easy once we had the iPhone version made, basically we just had to bundle high-resolution images since its screen resolution is 1024×768. This version features the HD graphics that so many loved in the PC version.</p>
+<p>Most recently the hard work I did doing a somewhat multi-platform engine payed off and we released it for <a href="http://www.differentpixel.com/2011/02/vizati-now-available-for-mac/">Mac on the App Store</a> with around just <a href="/2011/01/officially-a-mac-developer-too-wait-what/">4 days of extra work</a>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>officially a Mac developer too, wait, what?</title>
@@ -47,6 +87,16 @@ I’ll start by talking a bit about how we made our PC game Vizati to iPhone.Wh
       <description>It’s little over a month since I said I wouldn’t do any more porting for Vizati. Lesson learned, don’t say never again…
 When I started making the engine in C++ with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.
 Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish.</description>
+      <content:encoded><![CDATA[<p>It’s little over a month since I said I wouldn’t do any more <a href="/2010/12/no-more-porting-for-vizati-time-for-something-new/">porting for Vizati</a>. Lesson learned, don’t say never again…</p>
+<p>When I started making the engine in C++ with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.<br>
+Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish. Anyway the engine already supports Windows, iPhone and iPad.</p>
+<p>During this Christmas I started wondering if I had made if good enough to try a Mac port. So in 3 days I got Vizati running on MacOSX, which is great, and I must honestly say that 1 day and half was spend on making it actually compile, once it did the game began running, which proves on one hand that the game itself is really platform independent. On the other hand I realized that I still have too much stuff that needs a better handling, I speed hacked some stuff to make the engine run.</p>
+<p>I remember that immediately after that I went ahead and registered myself as a Mac Developer at Apple 😛</p>
+<p>I encounter this one crazy error where only by renaming my “Math.h” file to “Math.c” would make it work, which is weird since it works on Windows and iPhone with .h. Probably some crazy linkage error, XCode is weird.</p>
+<p>So that said it makes sense to release Vizati to MacOSX, it’s ready and working, we are just doing some testing. I’ve made a build for both Intel and PPC processors but this needs further testing.</p>
+<p><a href="/wp-content/uploads/2011/01/vizati_mac.png"><img loading="lazy" src="/wp-content/uploads/2011/01/vizati_mac.png" alt=""  title="Vizati MacOSX"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Vizati is 50% off during this week</title>
@@ -57,6 +107,13 @@ Keeping rendering and OS specific calls abstract from the game itself and the en
 GamersGate is having a Summer Special and Vizati is with a 50% discount, costing $4.47 / €3.72 during this week only
 Buy your copy here and check out other awesome promotions here
 This deal end up this August 15th</description>
+      <content:encoded><![CDATA[<p>Just a quick post.<br>
+GamersGate is having a Summer Special and <strong>Vizati</strong> is with a <strong>50% discount</strong>, costing <strong>$4.47 / €3.72</strong> during this week only</p>
+<p>Buy your copy <a href="http://www.gamersgate.com/DD-VIZ/vizati">here</a> and check out other awesome promotions <a href="http://www.gamersgate.com/DD-VIZ/vizati">here</a></p>
+<p><a href="http://www.gamersgate.com/DD-VIZ/vizati"></a><a href="http://www.gamersgate.com/DD-VIZ/vizati"><img loading="lazy" src="/wp-content/uploads/2010/08/vizati_50_off.jpg" alt=""  title="vizati_50_off"  />
+</a></p>
+<p><strong>This deal end up this August 15th</strong></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Who wants to try Vizati Demo?</title>
@@ -66,6 +123,23 @@ This deal end up this August 15th</description>
       <description>Ok, I know I’ve been making far too much posts about Vizati but this time it’s for a good reason, anyone interested in trying out the game can do it…right about NOW…
 http://www.differentpixel.com/2010/06/vizati-demo-available/
 Also on a quick update, yesterday I had the chance to test Vizati at Windows Phone 7 Developer’s Hub on a real WP7 device, which was awesome. I want to thank João Antão, Nuno Costa, Ben Riga and Neil Hutson for the opportunity.</description>
+      <content:encoded><![CDATA[<p>Ok, I know I’ve been making far too much posts about Vizati but this time it’s for a good reason, anyone interested in trying out the game can do it…right about NOW…</p>
+<blockquote>
+<p><!-- raw HTML omitted --><a href="http://www.differentpixel.com/2010/06/vizati-demo-available/">http://www.differentpixel.com/2010/06/vizati-demo-available/</a><!-- raw HTML omitted --></p>
+</blockquote>
+<p>Also on a quick update, yesterday I had the chance to test Vizati at Windows Phone 7 Developer’s Hub on a real WP7 device, which was awesome. I want to thank João Antão, Nuno Costa, Ben Riga and Neil Hutson for the opportunity.</p>
+<p>The version tested was a direct port from the PC version and only the input was changed to make use of the touch screen.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0003.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0004.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0006.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0009.jpg" alt=""  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/06/DSCF0010.jpg" alt=""  />
+</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Yay, my first Game as Indie Developer is almost out</title>
@@ -76,6 +150,23 @@ Also on a quick update, yesterday I had the chance to test Vizati at Windows Pho
 It’s just that I’ve been stuck on Different Pixel development dungeon for the past weeks finishing and polishing (bug hunting) my first game, Vizati.
 Most of you have been following the process and asking things every since we showed the beta version at XNA Pizza Night, after which we decided to finish the game and try to sell it to see how it goes.
 Three months later and here I am, making the final touches on the game before it’s release on 11th June.</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2010/05/box_vizati_11.jpg"><img loading="lazy" src="/wp-content/uploads/2010/05/box_vizati_11.jpg" alt=""  title="box_vizati_1"  />
+</a></p>
+<blockquote>
+<p>No, I’m not dead….yet…</p>
+</blockquote>
+<p>It’s just that I’ve been stuck on <a href="http://www.differentpixel.com">Different Pixel</a> development dungeon for the past weeks finishing and polishing (bug hunting) my first game, <a href="https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/">Vizati</a>.</p>
+<p>Most of you have been following the process and asking things every since we showed the beta version at <a href="/2010/03/vizati-wins-xna-pizza-night-2010/">XNA Pizza Night</a>, after which we decided to finish the game and try to sell it to see how it goes.</p>
+<p>Three months later and here I am, making the final touches on the game before it’s release on 11th June. The game will be available thought <a href="http://www.gamersgate.com/DD-VIZ/vizati">GamersGate</a> (maybe others, I’ll update in the future).</p>
+<p>It has always been a personal dream of mine to be a game developer so I’m crossing fingers to see if this works and most of all so that people like the game, we want them to have fun with it.</p>
+<p>The game was made from scratch by me and Rita (one programmer and one designer) with a $0 budget (just the enough to eat 😛 ) in XNA. We used it because the competition we went required it and since it has been a stable framework we decided to stick with it even on PC. We even have a <a href="/2010/05/vizati-in-windows-phone-7/">Windows Phone 7 </a>working version.</p>
+<p>So in the next few days (as soon as the Gold Master is released) I’ll be shouting and annoying everyone to buy the game.</p>
+<blockquote>
+<p>You can follow our small indie studio by twitter <a href="http://twitter.com/DifferentPixel">@DifferentPixel</a> , <a href="http://www.facebook.com/differentpixel.fb">Facebook Page</a> or by visiting the website.</p>
+</blockquote>
+<p><a href="http://www.gamersgate.com/DD-VIZ/vizati"><img loading="lazy" src="/wp-content/uploads/2010/05/promotion_gamersgate.jpg" alt=""  title="promotion_gamersgate"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Vizati on Windows Phone 7</title>
@@ -85,6 +176,27 @@ Three months later and here I am, making the final touches on the game before it
       <description>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.
 This week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.
 I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.</description>
+      <content:encoded><![CDATA[<p>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.<br>
+This week I got an invitation from <a href="http://gozoomin.com/blogs/antao/">João Antão</a> to showcase <a href="https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/">Vizati</a> as part of his XNA Framework presentation. This occurred during the <a href="http://imaginecup.com/">Imagine Cup final on Portugal</a>.</p>
+<p>I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.<br>
+The result was pretty good i think. It’s virtually identical.</p>
+<p>You can see it for yourself, the speed on the video is not very good due to the screen capture software.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/hX18tuujAEY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Now for the tech part. Grabbing my 3.1 solution what have I made to have this running? What have I changed?</p>
+<p>I had to create a XNA 4 empty project and add all code files and assets (no direct upgrade now)<br>
+Had to change to TitleContainer for opening files, transparencies made with Color.A replaced to make use of <a href="https://web.archive.org/web/20100412140933/http://blogs.msdn.com:80/shawnhar/archive/2010/04/08/premultiplied-alpha-in-xna-game-studio-4-0.aspx">PreMultiplied Alpha</a>, basically using Color*Color.<br>
+The assets are the same…</p>
+<blockquote>
+<p>Wait …what? Why?</p>
+</blockquote>
+<p>Since this was a test I wanted to test how could the framework handle a simple platform change with minimal code changed, after all that’s the whole purpose of XNA. Of course on the final version proper assets will be placed but taking in account some 1024×1024 and higher images the results are pretty good.<br>
+Notice the particle effects, there are around 2500 particles over there. And it’s on an emulator so I can’t wait to get my hands on the real deal.</p>
+<p>Change the input to make use of the Touchscreen, and finally since I’m using my engine basalt I have <a href="/2010/03/xna-2d-independent-resolution-rendering/">independent resolution rendering</a> so I just told the system “run in 800×480 now” and the native resolution is still the PC/Xbox version one 1280×720.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Vizati wins XNA Pizza Night 2010</title>
@@ -94,6 +206,21 @@ I’ve been playing with the WP7 tools and I decided to try and port Vizati to X
       <description>Damn you should see my face when they told me we won the competition XNA Pizza Night 2010 at Microsoft.
 Originally we developed Vizati to enter Dream Build Play 2010. We started developing the game on the beginning of February and during that month we discovered another competition would be held near Dream Build Play deadline.
 We went there with the same demo we sent to DBP. The audience really liked the game and we got very positive feedback.</description>
+      <content:encoded><![CDATA[<p>Damn you should see my face when they told me we won the competition XNA Pizza Night 2010 at Microsoft.</p>
+<p>Originally we developed Vizati to enter Dream Build Play 2010. We started developing the game on the beginning of February and during that month we discovered another competition would be held near Dream Build Play deadline.</p>
+<p>We went there with the same demo we sent to DBP. The audience really liked the game and we got very positive feedback. I remember during the first minutes someone in the audience asking if the game was already on sale and where could they buy it.</p>
+<p>There were some pretty cool games there and I got know many other people that develop games as a hobby or as a Indie Developer wannabe. Oh and there was free Pizza and drinks, just in case you were wondering about the name.</p>
+<p><a href="/wp-content/uploads/2010/03/pn-1.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-1.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> The 360 to run the games <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-2.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-2.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> The auditorium <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-7.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-7.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Audience and other participants <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-9.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-9.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> It’s free pizza time <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-12.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-12.jpg" alt=""  />
+</a> <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-14.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-14.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> We called someone to test the game <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-20.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-20.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Different Pixel team presenting Vizati <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-21.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-21.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Rita and I with the event organizers <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-22.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-22.jpg" alt=""  />
+</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Another picture with the event organizers <!-- raw HTML omitted --></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Vizati Teaser</title>
@@ -102,6 +229,22 @@ We went there with the same demo we sent to DBP. The audience really liked the g
       <guid>https://www.david-amador.com/2010/02/vizati-teaser/</guid>
       <description>Rita and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.
 Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color.</description>
+      <content:encoded><![CDATA[<p><a href="http://www.rita-silva.com">Rita</a> and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.</p>
+<blockquote>
+<p>Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color. There’s 2 different modes of playing it. One of them is story mode where the stone Vizati is discovered by some people and they try to find out what it is and uncover it’s secrets. The other one, Arcade mode is a more traditional way to play it but with special vizati stones and power-ups</p>
+</blockquote>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/CzZipbjCvNs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Also for anyone who has interest in these sort of things here’s my first successful test on the 360 of Vizati</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/uyn8OpPJ40A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
   </channel>
 </rss>

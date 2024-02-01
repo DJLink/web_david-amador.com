@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>windows on David Amador</title>
     <link>https://www.david-amador.com/tags/windows/</link>
@@ -20,6 +20,21 @@
       <guid>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</guid>
       <description>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.
 I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too.</description>
+      <content:encoded><![CDATA[<p>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.<br>
+I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too. I’m just polishing the game and finishing some bugs, but I’m close, I can feel it =)<br>
+Right now I’m targeting for a late January release, but I’ll have a more precise date in the next few weeks.</p>
+<p>Meanwhile here are a couple of screenshots.</p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01-300x187.png" alt="quest_of_dungeons_mac_01"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02-300x187.png" alt="quest_of_dungeons_mac_02"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03-300x187.png" alt="quest_of_dungeons_mac_03"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04-300x187.png" alt="quest_of_dungeons_mac_04"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05-300x187.png" alt="quest_of_dungeons_mac_05"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Puwang is running on PC, releasing it for free</title>
@@ -29,6 +44,28 @@ I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps w
       <description>Hey guys,
 Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.
 I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</description>
+      <content:encoded><![CDATA[<p>Hey guys,</p>
+<p>Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.<a href="/wp-content/uploads/2013/04/puwang.jpg"><img loading="lazy" src="/wp-content/uploads/2013/04/puwang.jpg" alt="puwang"  />
+</a><br>
+Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.</p>
+<p>I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</p>
+<p>Here’s a video I just made of the PC version</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/1UkJHDLfI-A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<blockquote>
+<p>The Game requires some external frameworks to be installed, so in event it crashes at start please make sure all dependencies are correctly installed.<br>
+–<a href="http://www.microsoft.com/en-us/download/details.aspx?id=5555">Microsoft Visual C++ 2010 Redistributable Package (x86) </a><br>
+–<a href="http://connect.creativelabs.com/openal/Downloads/Forms/AllItems.aspx">OpenAL</a><br>
+–<a href="http://www.microsoft.com/en-us/download/details.aspx?id=35">DirectX9</a></p>
+</blockquote>
+<p>So I hope you have fun, let me know what you think.</p>
+<p>Don’t forget that you can still grab the original iOS (Universal) game <a href="https://web.archive.org/web/20151117181201/https://itunes.apple.com/us/app/puwang/id566365237?mt=8">here</a>.</p>
+<p>Download:<br>
+<a href="https://dj_link.itch.io/puwang-notepad-shump">Puwang – (Windows) – 16.1MB</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Dary&#39;s Legend alpha released</title>
@@ -37,6 +74,23 @@ I decided to release it for Windows for free, because the game isn’t exactly d
       <guid>https://www.david-amador.com/2012/12/darys-legend-alpha-released/</guid>
       <description>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like Puwang and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.
 Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</description>
+      <content:encoded><![CDATA[<p><a href="http://www.daryslegend.com"><img loading="lazy" src="/wp-content/uploads/2012/12/header.jpg" alt=""  title="Dary&#39;s Legend"  />
+</a></p>
+<p>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like <a href="/2012/10/puwang-is-out-on-the-app-store/" title="Puwang is out on the App Store">Puwang</a> and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.</p>
+<p>Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</p>
+<p>So yesterday we released it, and you can buy the game right now, get an alpha build with a nice discount while it doesn’t reach the final build and help us funding the development along the way.</p>
+<p>The build is relatively stable, no major crashes crashes that we know and there’s a Windows and Mac build.</p>
+<p><a href="http://www.desura.com/games/darys-legend" title="Dary's Legend on Desura"><img loading="lazy" src="http://button.desura.com/play/outline/games/17158.png" alt="Desura Digital Distribution"  />
+</a></p>
+<p><em>Coder-Side-Notes</em></p>
+<p>Personally, and although I’m happy that I managed to get a Windows and Mac build released side-by-side I’m also a bit sad that I haven’t been able to release it simultaneously for Linux as well.</p>
+<p>Initially my thought was, “Windows only till the final release, I’ll deal with ports later”. But the market is harsh and getting into 2 different platforms can get you more chances of selling.</p>
+<p>There wasn’t a Mac build until a month ago, but I decided to take a couple of days, created a Xcode project and build the source.<br>
+After a few tweaks and hacks I had it running, why not release it? So right now, by using Git, since projects are already configured on Windows and Mac, I just need to commit changes, boot the other machine, build and that’s it.</p>
+<p>Linux is a little trickier, first I have little experience with that OS. Second I never had my engine running there, missing all kind of abstraction layers, directory access, mouse, keyboard, etc. And honestly right now I don’t have the time to be handling 3 versions at the same time. So Linux is probably going to be off the table until the final build is done.</p>
+<p>Oh, another thing is that, after getting it running on Mac, I tried building for iPad, the game runs almost perfectly at 60FPS @1024×768, apart from the interface not being prepared for Touch of course, it was designer for a 2 button mouse. So there might be an iPad eventually.</p>
+<p>This whole process has made me consider if I should’t find an “OK” (cause VS is the best) cross-platform IDE, like Eclipse or so. Configuring a project on Visual Studio, than on Xcode and another one on Linux (whatever I might end using) is an nightmare. On the other hand I could also take a plunge into makefiles with CMake…guess I’ll leave that to another project.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

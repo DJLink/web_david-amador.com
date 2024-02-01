@@ -43,13 +43,13 @@ if (!doNotTrack) {
 <meta property="og:description" content="How many times has it happened where you have this one class, let’s say it’s a spaceship that was destroyed.
 Now you have tell all other dependent objects that she died, any independent sprite animation class, AI, etc etc because they were relying on her. Another thing is, in my case, having a scene that contains all the objects and by deleting the ship It won’t get removed from the scene, keeping the reference alive and so Garbage collector won’t kick in." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/06/a-good-reference-system-can-help-your-game/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.david-amador.com/2010/06/a-good-reference-system-can-help-your-game/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/06/reference.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-06-06T09:49:36+00:00" />
 <meta property="article:modified_time" content="2010-06-06T09:49:36+00:00" /><meta property="og:site_name" content="David Amador" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/06/reference.jpg" />
 <meta name="twitter:title" content="A good Reference system can help your game"/>
 <meta name="twitter:description" content="How many times has it happened where you have this one class, let’s say it’s a spaceship that was destroyed.
 Now you have tell all other dependent objects that she died, any independent sprite animation class, AI, etc etc because they were relying on her. Another thing is, in my case, having a scene that contains all the objects and by deleting the ship It won’t get removed from the scene, keeping the reference alive and so Garbage collector won’t kick in."/>
@@ -88,7 +88,7 @@ Now you have tell all other dependent objects that she died, any independent spr
   "articleBody": "How many times has it happened where you have this one class, let’s say it’s a spaceship that was destroyed.\nNow you have tell all other dependent objects that she died, any independent sprite animation class, AI, etc etc because they were relying on her. Another thing is, in my case, having a scene that contains all the objects and by deleting the ship It won’t get removed from the scene, keeping the reference alive and so Garbage collector won’t kick in. Deleting and removing from the list is a way, but why should you inside the spaceship class have know how to remove from the Scene list? Makes no sense. The list should know how to treat a deleted object.\nI made a somewhat satisfactory solution.\nA base class called Reference\npublic class Reference { protected string _name = \"\"; protected bool _notifying = false; protected List _to_alert_of_death = new List(); public Reference() { Name = \"UnknownReference\"; } public string Name { get { return _name; } set { _name = value; } } public void add_reference(Reference to_alert) { _to_alert_of_death.Add(to_alert); } public void remove_reference(Reference to_alert) { _to_alert_of_death.Remove(to_alert); } public void NotifyDeathToChilds() { // Prevents stack overflow if double reference exists if (_notifying) return; // Reference will be erase, notify children of death _notifying = true; for (int i = 0; i \u003c _to_alert_of_death.Count; ++i) { _to_alert_of_death[i].notify_death(this); } _to_alert_of_death.Clear(); _notifying = false; } public virtual void DeleteThis() { NotifyDeathToChilds(); } public virtual void notify_death(Reference reference) { _to_alert_of_death.Remove(reference); } } So when you create your dependent spaceship objects you just do something like:\nSpaceship.add_reference(DepedentObject);\nWhen you want to delete SpaceShip just do SpaceShip.DeleteThis(); and it will warn all dependent object that it’s being deleted\nBut how will the Dependent Object be aware of this?\nMake it inherit from Reference and override notify_death()\npublic virtual void notify_death(Reference reference) { // Compare reference var with the pointer you have to spaceship if(reference == mySpaceshipPointer) { // This means the class is being deleted so either delete this one as well or just put // mySpaceshipPointer to null mySpaceshipPointer = null; } base.notify(reference); } On a list case you would remove that reference from the list.\nThis solution is obviously not the best but it turned out pretty great for my games. I don’t have to care how many dependence there are. I delete one and all objects will be warned. How they treat that warning is up to you.\n",
   "wordCount" : "406",
   "inLanguage": "en",
-  "datePublished": "2010-06-06T09:49:36Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2010/06/reference.jpg","datePublished": "2010-06-06T09:49:36Z",
   "dateModified": "2010-06-06T09:49:36Z",
   "author":{
     "@type": "Person",
@@ -193,6 +193,9 @@ Now you have tell all other dependent objects that she died, any independent spr
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/06/reference.jpg" alt="">
+        
+</figure>
   <div class="post-content"><p>How many times has it happened where you have this one class, let’s say it’s a spaceship that was destroyed.</p>
 <p>Now you have tell all other dependent objects that she died, any independent sprite animation class, AI, etc etc because they were relying on her. Another thing is, in my case, having a scene that contains all the objects and by deleting the ship It won’t get removed from the scene, keeping the reference alive and so Garbage collector won’t kick in. Deleting and removing from the list is a way, but why should you inside the spaceship class have know how to remove from the Scene list? Makes no sense. The list should know how to treat a deleted object.</p>
 <p>I made a somewhat satisfactory solution.</p>

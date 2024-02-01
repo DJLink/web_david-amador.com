@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Web Hosting on David Amador</title>
     <link>https://www.david-amador.com/tags/web-hosting/</link>
@@ -20,6 +20,10 @@
       <guid>https://www.david-amador.com/2009/05/server-move/</guid>
       <description>It’s been awhile since I last posted something here. Mostly because since my laptop fried I’ve been on a slower pace. I still couldn’t find any compatible hdd with my acer 2001 and Acer Portugal wasn’t been very helpfull.
 So last week I began migrating our server to another host provider, I got tired of down times and processes eating up all cpu, and finally about two months ago the server crashed and all information got lost.</description>
+      <content:encoded><![CDATA[<p>It’s been awhile since I last posted something here. Mostly because since my laptop fried I’ve been on a slower pace. I still couldn’t find any compatible hdd with my acer 2001 and Acer Portugal wasn’t been very helpfull.</p>
+<p>So last week I began migrating our server to another host provider, I got tired of down times and processes eating up all cpu, and finally about two months ago the server crashed and all information got lost. Yeah of course one has to be responsible with backups and all, but come on, who can trust a hosting that succumbs to a hdd crash with techology such as RAID and all?<br>
+So I moved all to another one and the downtime was around 1 or 2 hours, so no big losses here. All is running smothly now and I finnaly have unlimited bandwith 😀</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

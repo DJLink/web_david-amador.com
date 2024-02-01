@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>style on David Amador</title>
     <link>https://www.david-amador.com/tags/style/</link>
@@ -22,6 +22,25 @@
 You can do this by using
 &amp;lt;blockquote&amp;gt; Im quoting someone else&amp;lt;/blockquote&amp;gt; But it still needs a little touch, so on your css file add this.
 blockquote { background:transparent url(blockquote.gif) no-repeat scroll 0 0; font-family:Georgia,&amp;#34;Times New Roman&amp;#34;,Times,serif; font-size:1em; margin:15px 0; min-height:32px; padding:0 50px; } Save this image : and watch the result.</description>
+      <content:encoded><![CDATA[<p>Blockquotes are an easy way to make your website stand out, by indicating that you are quoting someone you give a more professional approach to you website.<br>
+You can do this by using</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;blockquote&gt;</span> Im quoting someone else<span class="nt">&lt;/blockquote&gt;</span>
+</span></span></code></pre></div><p>But it still needs a little touch, so on your css file add this.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">blockquote</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">background</span><span class="p">:</span><span class="kc">transparent</span> <span class="nb">url</span><span class="p">(</span><span class="sx">blockquote.gif</span><span class="p">)</span> <span class="kc">no-repeat</span> <span class="kc">scroll</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">font-family</span><span class="p">:</span><span class="n">Georgia</span><span class="p">,</span><span class="s2">&#34;Times New Roman&#34;</span><span class="p">,</span><span class="n">Times</span><span class="p">,</span><span class="kc">serif</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">font-size</span><span class="p">:</span><span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">margin</span><span class="p">:</span><span class="mi">15</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">min-height</span><span class="p">:</span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">padding</span><span class="p">:</span><span class="mi">0</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Save this image : <a href="/wp-content/uploads/2009/10/blockquote.gif"><img loading="lazy" src="/wp-content/uploads/2009/10/blockquote.gif" alt="blockquote"  title="blockquote"  />
+</a> and watch the result. It will turn out something like this:</p>
+<blockquote>
+<p>Im quoting someone else</p>
+</blockquote>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -45,13 +45,13 @@ if (!doNotTrack) {
 I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?
 My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/04/tiling_02.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2010-04-19T21:57:12+00:00" />
 <meta property="article:modified_time" content="2010-04-19T21:57:12+00:00" /><meta property="og:site_name" content="David Amador" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/04/tiling_02.jpg" />
 <meta name="twitter:title" content="Making Big Grass Tiled Backgrounds in XNA"/>
 <meta name="twitter:description" content="I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:
 I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?
@@ -91,7 +91,7 @@ My answer is neither of them. The big image has a huge impact on every Draw and 
   "articleBody": "I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:\nI want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?\nMy answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.\nThe drawing lots of small images can actually work, if they are few. Let’s say your small texture size is 64×64. That means in order to fill up the 3000×3000 you have to draw it (3000/64) = 47 times. Since it’s a 3000×3000 that sums to (47×47) = 2209 Draws. Just for a background. Not to mention the rest of the actual game 😛\nWhat if you could do this in just one Draw()?\nIt’s very very easy to achieve this effect by setting TextureAddressMode to Wrap. Basically giving it a bigger Rectangle but telling to wrap the texture so you are gonna get tiles =)\nspriteBatch.Begin(SpriteBlendMode.AlphaBlend,SpriteSortMode.Immediate,SaveStateMode.None); GraphicsDevice.SamplerStates[0].AddressU = TextureAddressMode.Wrap; GraphicsDevice.SamplerStates[0].AddressV = TextureAddressMode.Wrap; Next we draw a texture with a big source rectangle\nRectangle source = new Rectangle(0, 0, 400, 200); spriteBatch.Draw(texture, Vector2.Zero, source, Color.White, 0, Vector2.Zero, 1.0f, SpriteEffects.None, 0.5f); So instead of this:\nYou end up with this:\nOn a small test I made, using a 30000×30000 Rectangle I got a frame drop to 35 FPS by doing tons of regular Draws, when switching to Wrap mode a solid 60 FPS.\nAs I told you it’s very easy. I’ll write more advance tutorial one of this days on how to achieve cool effect like mixing two textures with a noise/normal map.\nYou can play with this sample by downloading it here.\n",
   "wordCount" : "308",
   "inLanguage": "en",
-  "datePublished": "2010-04-19T21:57:12Z",
+  "image":"https://www.david-amador.com/wp-content/uploads/2010/04/tiling_02.jpg","datePublished": "2010-04-19T21:57:12Z",
   "dateModified": "2010-04-19T21:57:12Z",
   "author":{
     "@type": "Person",
@@ -196,6 +196,9 @@ My answer is neither of them. The big image has a huge impact on every Draw and 
 
 </div>
   </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2010/04/tiling_02.jpg" alt="">
+        
+</figure>
   <div class="post-content"><p>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:</p>
 <blockquote>
 <p>I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?</p>

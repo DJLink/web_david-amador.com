@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>iphonedev on David Amador</title>
     <link>https://www.david-amador.com/tags/iphonedev/</link>
@@ -22,6 +22,84 @@
 But how can you load a jpg or a png and use then on OpenGLES?
 First let’s make a simple class Texture2D
 class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image</description>
+      <content:encoded><![CDATA[<p>So you can’t make a game without images, right? Well, actually <a href="http://en.wikipedia.org/wiki/List_of_text-based_computer_games">you can</a> but that’s another story.</p>
+<p>But how can you load a jpg or a png and use then on OpenGLES?</p>
+<p>First let’s make a simple class Texture2D</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Texture2D</span> 
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Texture2D</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">,</span> <span class="kt">int</span> <span class="n">width</span><span class="p">,</span> <span class="kt">int</span> <span class="n">height</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">           <span class="n">_textureId</span> <span class="o">=</span> <span class="n">id</span><span class="p">;</span> <span class="n">_width</span> <span class="o">=</span> <span class="n">width</span><span class="p">;</span> <span class="n">_height</span> <span class="o">=</span> <span class="n">height</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">virtual</span> <span class="o">~</span><span class="n">Texture2D</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">             <span class="c1">// Delete Texture from HGL Memory
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>             <span class="n">glDeleteTextures</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">((</span><span class="n">GLuint</span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">_textureId</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span>  <span class="nf">getTextureId</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="n">_textureId</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">protected</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">_textureId</span><span class="p">;</span>   <span class="c1">// The reference ID of the texture in OpenGL memory
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">_width</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">_height</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>Now for the code to actually load the image</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="n">Texture2D</span><span class="o">*</span> <span class="n">iPhoneOperativeSystem</span><span class="o">::</span><span class="n">LoadImage</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">imagefile</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="c1">// Id for texture
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">GLuint</span> <span class="n">texture</span><span class="p">;</span>	
+</span></span><span class="line"><span class="cl">        <span class="c1">// Generate textures
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">glGenTextures</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">texture</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">	<span class="c1">// Bind it
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">glBindTexture</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">texture</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Set a few parameters to handle drawing the image at lower and higher sizes than original
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">glTexParameteri</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span><span class="n">GL_TEXTURE_MIN_FILTER</span><span class="p">,</span><span class="n">GL_LINEAR</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">glTexParameteri</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span><span class="n">GL_TEXTURE_MAG_FILTER</span><span class="p">,</span><span class="n">GL_LINEAR</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="n">glTexParameteri</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">GL_GENERATE_MIPMAP</span><span class="p">,</span> <span class="n">GL_TRUE</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	<span class="n">NSString</span> <span class="o">*</span><span class="n">path</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSString</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithUTF8String</span><span class="p">:</span><span class="n">imagefile</span><span class="p">.</span><span class="n">c_str</span><span class="p">()];</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">         <span class="n">NSData</span> <span class="o">*</span><span class="n">texData</span> <span class="o">=</span> <span class="p">[[</span><span class="n">NSData</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithContentsOfFile</span><span class="p">:</span><span class="n">path</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="n">UIImage</span> <span class="o">*</span><span class="n">image</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIImage</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithData</span><span class="p">:</span><span class="n">texData</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">image</span> <span class="o">==</span> <span class="n">nil</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	  <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>	
+</span></span><span class="line"><span class="cl">        <span class="c1">// Get Image size
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">GLuint</span> <span class="n">width</span> <span class="o">=</span> <span class="n">CGImageGetWidth</span><span class="p">(</span><span class="n">image</span><span class="p">.</span><span class="n">CGImage</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="n">GLuint</span> <span class="n">height</span> <span class="o">=</span> <span class="n">CGImageGetHeight</span><span class="p">(</span><span class="n">image</span><span class="p">.</span><span class="n">CGImage</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="n">CGColorSpaceRef</span> <span class="n">colorSpace</span> <span class="o">=</span> <span class="n">CGColorSpaceCreateDeviceRGB</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">// Allocate memory for image
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="kt">void</span> <span class="o">*</span><span class="n">imageData</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span> <span class="n">height</span> <span class="o">*</span> <span class="n">width</span> <span class="o">*</span> <span class="mi">4</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="n">CGContextRef</span> <span class="n">imgcontext</span> <span class="o">=</span> <span class="n">CGBitmapContextCreate</span><span class="p">(</span> <span class="n">imageData</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">width</span><span class="p">,</span> <span class="n">colorSpace</span><span class="p">,</span> <span class="n">kCGImageAlphaPremultipliedLast</span> <span class="o">|</span> <span class="n">kCGBitmapByteOrder32Big</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="n">CGColorSpaceRelease</span><span class="p">(</span> <span class="n">colorSpace</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="n">CGContextClearRect</span><span class="p">(</span> <span class="n">imgcontext</span><span class="p">,</span> <span class="n">CGRectMake</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="p">)</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="n">CGContextTranslateCTM</span><span class="p">(</span> <span class="n">imgcontext</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">height</span> <span class="o">-</span> <span class="n">height</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="n">CGContextDrawImage</span><span class="p">(</span> <span class="n">imgcontext</span><span class="p">,</span> <span class="n">CGRectMake</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="p">),</span> <span class="n">image</span><span class="p">.</span><span class="n">CGImage</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">       
+</span></span><span class="line"><span class="cl">        <span class="c1">// Generate texture in opengl
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">glTexImage2D</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">GL_RGBA</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">GL_RGBA</span><span class="p">,</span> <span class="n">GL_UNSIGNED_BYTE</span><span class="p">,</span> <span class="n">imageData</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Release context
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">CGContextRelease</span><span class="p">(</span><span class="n">imgcontext</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Free Stuff
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">free</span><span class="p">(</span><span class="n">imageData</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="p">[</span><span class="n">image</span> <span class="n">release</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">       <span class="p">[</span><span class="n">texData</span> <span class="n">release</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">       <span class="c1">// Create and return texture
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">Texture2D</span><span class="o">*</span> <span class="n">tex</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Texture2D</span><span class="p">(</span><span class="n">texture</span><span class="p">,</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="k">return</span> <span class="n">tex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>So right now you can do something like</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   <span class="n">Texture2D</span><span class="o">*</span> <span class="n">tree_image</span> <span class="o">=</span> <span class="n">iPhoneOperativeSystem</span><span class="o">::</span><span class="n">LoadImage</span><span class="p">(</span><span class="s">&#34;tree_image.jpg&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>For drawing, before sending your primitives just do something like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">glBindTexture</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">tree_image</span><span class="o">-&gt;</span><span class="n">getTextureId</span><span class="p">());</span>
+</span></span></code></pre></div><p>This code should work on all iOS devices</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Vizati for iPhone is now available at App Store</title>
@@ -38,6 +116,29 @@ On the count of 3 you will feel refreshed and happy for buying this awesome game
 3
 Oh right, here’s the trailer:
 I’ve searched some forums and found some talking about it and that they liked, general feedback looks positive.</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2010/10/vizati-iphone-icon.png" alt=""  title="vizati-iphone-icon"  />
+<br>
+People who follow me on twitter are probably aware, or maybe not:</p>
+<p>After 3 months tacking an iPhone port it was finally approved by Apple to the App store and it’s on sale today!!!</p>
+<p><strong>Hypnotizing start…</strong></p>
+<p><strong>Buy buy buy….</strong></p>
+<p><a href="http://itunes.apple.com/us/app/vizati/id393099810?mt=8"><img loading="lazy" src="/wp-content/uploads/2010/10/iphone_buy_btn.png" alt=""  title="Buy Vizati"  />
+</a></p>
+<p>On the count of 3 you will feel refreshed and happy for buying this awesome game…</p>
+<p>1<br>
+2<br>
+3</p>
+<p>Oh right, here’s the trailer:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/XxwNDTA1SmI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>I’ve searched some forums and found some talking about it and that they liked, general feedback looks positive. It’s great that people have fun with out little game.<br>
+If everything goes as planned a version 1.1 with <a href="http://www.differentpixel.com/2010/09/vizati-iphone-small-faq/">retina support a few other improvements</a>.</p>
+<p>On the other hand I’m still lacking the iPad version, which is a shame, it’s really pretty and nearly finished but I don’t have a real iPad to test and I won’t release just testing on the emulator. So it’s on back-burn for now.</p>
+<p>So feel free to give us feedback to our <a href="http://www.differentpixel.com/forum">forums</a>, <a href="http://www.facebook.com/differentpixel.fb">facebook</a> or <a href="http://www.twitter.com/DifferentPixel">twitter</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Setting OpenGL view for iPhone 4 retina hi resolution</title>
@@ -48,6 +149,38 @@ I’ve searched some forums and found some talking about it and that they liked,
 At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.
 A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.
 To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.</description>
+      <content:encoded><![CDATA[<p>This had me scratching my head for awhile.<br>
+At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.</p>
+<p>A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.<br>
+To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/09/retina_pixels.jpg" alt=""  title="retina_pixels"  />
+</p>
+<p>So the API handles this differently. If you developed for iPad you notice that glGetRenderbufferParameterivOES return 1024×768 but not retina displays. Instead you have to check it yourself:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">w</span> <span class="o">=</span> <span class="mi">320</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">h</span> <span class="o">=</span> <span class="mi">480</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">ver</span> <span class="o">=</span> <span class="p">[[[</span><span class="n">UIDevice</span> <span class="n">currentDevice</span><span class="p">]</span> <span class="n">systemVersion</span><span class="p">]</span> <span class="n">floatValue</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// You can&#39;t detect screen resolutions in pre 3.2 devices, but they are all 320x480
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="n">ver</span> <span class="o">&gt;=</span> <span class="mf">3.2f</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">UIScreen</span><span class="o">*</span> <span class="n">mainscr</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIScreen</span> <span class="n">mainScreen</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="n">w</span> <span class="o">=</span> <span class="n">mainscr</span><span class="p">.</span><span class="n">currentMode</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">width</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">h</span> <span class="o">=</span> <span class="n">mainscr</span><span class="p">.</span><span class="n">currentMode</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">height</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">w</span> <span class="o">==</span> <span class="mi">640</span> <span class="o">&amp;&amp;</span> <span class="n">h</span> <span class="o">==</span> <span class="mi">960</span><span class="p">)</span> <span class="c1">// Retina display detected
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Set contentScale Factor to 2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">self</span><span class="p">.</span><span class="n">contentScaleFactor</span> <span class="o">=</span> <span class="mf">2.0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Also set our glLayer contentScale Factor to 2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">CAEAGLLayer</span> <span class="o">*</span><span class="n">eaglLayer</span> <span class="o">=</span> <span class="p">(</span><span class="n">CAEAGLLayer</span> <span class="o">*</span><span class="p">)</span><span class="n">self</span><span class="p">.</span><span class="n">layer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">eaglLayer</span><span class="p">.</span><span class="n">contentsScale</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span> <span class="c1">//new line
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>Easy right? Remember, you must do this before calling glGetRenderbufferParameterivOES.<br>
+For touch positions just multiply each position by the scale factor.</p>
+<p>I’ve only tested this on the simulator since I don’t own an iPhone 4 but it should work and detect either you are on a regular or retina screen.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Targetting iOS devices hardware</title>
@@ -61,6 +194,19 @@ iPhone 3GS – 600 MHz / 256MB / 320×480
 iPhone 4 -~800MHz / 512MB / 640×960
 iPod Touch 1G – 412 MHz / 128MB / 320×480
 iPod Touch 2G – 532 MHz / 128MB / 320×480</description>
+      <content:encoded><![CDATA[<p>I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.</p>
+<p>This covers iPhones, iPod Touches and iPad.</p>
+<p><strong>iPhone/iPhone 3G</strong> – 412 MHz / 128MB / 320×480<br>
+<strong>iPhone 3GS</strong> – 600 MHz / 256MB / 320×480<br>
+<strong>iPhone 4</strong> -~800MHz / 512MB / 640×960</p>
+<p><strong>iPod Touch 1G</strong> – 412 MHz / 128MB / 320×480<br>
+<strong>iPod Touch 2G</strong> – 532 MHz / 128MB / 320×480<br>
+<strong>iPod Touch 3G</strong> – 600 MHz / 256MB / 320×480<br>
+<strong>iPod Touch 4G</strong> – 800 MHz / 256MB / 640×960</p>
+<p><strong>iPad</strong> – 1 GHz / 256MB /1024×768</p>
+<p>I think this data is correct (Wikipedia) but let me know if some is wrong.</p>
+<p>As you can see there’s some great deal of difference in CPU clocks on some models. So watch out if you want to target all generations since some games can be run slow on older devices.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>iPhone OpenGL screen orientation using the accelerometer</title>
@@ -70,6 +216,71 @@ iPod Touch 2G – 532 MHz / 128MB / 320×480</description>
       <description>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.
 Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.
 I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.</description>
+      <content:encoded><![CDATA[<p>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.</p>
+<p>Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.</p>
+<p>I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.</p>
+<p>So for Landscape with Home button on the right</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_portrait_homebutton_right.png" alt=""  title="iphone_portrait_homebutton_right"  />
+</p>
+<p>It’s something like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"> <span class="n">glPushMatrix</span><span class="p">();</span>   <span class="c1">// Push a matrix to the stack
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> <span class="n">glRotatef</span><span class="p">(</span><span class="mf">90.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">1.0f</span><span class="p">);</span> <span class="c1">// Rotate 90 degrees
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> <span class="n">glTranslatef</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">,</span> <span class="o">-</span><span class="mi">320</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">);</span>  <span class="c1">// Move vertically the screen Width
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"> <span class="c1">/// Draw Stuff
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"> <span class="n">glPopMatrix</span><span class="p">();</span>
+</span></span></code></pre></div><p>So basically we are drawing all in a regular direction but rotating everything 90 degrees and translating to fit the screen properly.</p>
+<p>For the home button on the left</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_portrait_homebutton_left.png" alt=""  title="iphone_portrait_homebutton_left"  />
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">glPushMatrix</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">glRotatef</span><span class="p">(</span><span class="o">-</span><span class="mf">90.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">1.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">glTranslatef</span><span class="p">(</span><span class="o">-</span><span class="mi">480</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">);</span> <span class="c1">// Move horizontally the screen Height
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Draw Stuff
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="n">glPopMatrix</span><span class="p">();</span>
+</span></span></code></pre></div><p>These are the tricky ones, you can figure out the Portrait Upside down =)<br>
+Oh, I’ve hard-coded the values (480 and 320) but you should make this a variable to support higher resolutions, iPhone 4 and iPad for instance.</p>
+<p>Although you could use iOS api to auto rotate this automatically I’ve read on numerous places that it’s slows down everything a bit and doing this on OpenGL is pretty quick and clean and if you ever port your game to another device (Android, etc) you don’t have to care about this again.</p>
+<p>So now for the tricky part, to detect the device current orientation, the accelerometer can help out pretty good. We can check for the current angle to calculate where the device is pointing.</p>
+<p><a href="/wp-content/uploads/2010/08/iphone_angles_orientation.png"><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_angles_orientation.png" alt=""  title="iphone_angles_orientation"  />
+</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">accelerometer</span><span class="p">:(</span><span class="n">UIAccelerometer</span> <span class="o">*</span><span class="p">)</span><span class="n">accelerometer</span> <span class="nl">didAccelerate</span><span class="p">:(</span><span class="n">UIAcceleration</span> <span class="o">*</span><span class="p">)</span><span class="n">acceleration</span>
+</span></span><span class="line"><span class="cl"> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get the current device angle
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kt">float</span> <span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">acceleration</span> <span class="n">x</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="n">acceleration</span> <span class="n">y</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">float</span> <span class="n">angle</span> <span class="o">=</span> <span class="n">atan2</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">angle</span> <span class="o">&gt;=</span> <span class="o">-</span><span class="mf">2.25</span> <span class="o">&amp;&amp;</span> <span class="n">angle</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="mf">0.25</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">/// Orientation is regular Portrait
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">angle</span> <span class="o">&gt;=</span> <span class="o">-</span><span class="mf">1.75</span> <span class="o">&amp;&amp;</span> <span class="n">angle</span> <span class="o">&lt;=</span> <span class="mf">0.75</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">/// Orientation is Landscape with Home Button on the Left
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">angle</span> <span class="o">&gt;=</span> <span class="mf">0.75</span> <span class="o">&amp;&amp;</span> <span class="n">angle</span> <span class="o">&lt;=</span> <span class="mf">2.25</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">/// Orientation is Portrait flipped upside down
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">angle</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="mf">2.25</span> <span class="o">||</span> <span class="n">angle</span> <span class="o">&gt;=</span> <span class="mf">2.25</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">/// Orientation is Landscape with Home Button on the Right
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>So what you should do is keep a variable that stores the current Orientation so when you draw you know exactly what rotation to apply to the matrix.</p>
+<p>I’ve tested this code on a real device with pretty good results. Also it won’t slow down everything and if you think it does just check screen orientation at greater intervals.</p>
+<p>Some cool things you can do it when switching to iterate the rotation angle, that way you can simulate the screen rotation same way iOS does. Also you may want to put some sort of delay when switching.</p>
+<p>Here’s the result</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/OfETeCcpM7U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
     <item>
       <title>Developers log stardate 26082010</title>
@@ -79,6 +290,53 @@ I’ve been using OpenGL to support the device orientation, most people on forum
       <description>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.
 Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.
 Here’s a picture she took after a few adjustments.</description>
+      <content:encoded><![CDATA[<p>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.</p>
+<p>Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.</p>
+<p>Here’s a picture she took after a few adjustments.</p>
+<p><a href="http://www.indiedb.com/games/vizati/images/vizati-iphone" title="Vizati iPhone - Indie DB"><img loading="lazy" src="http://media.indiedb.com/cache/images/games/1/13/12804/thumb_620x2000/vizati_iphone.jpg" alt="Vizati iPhone"  />
+</a></p>
+<p><strong>Initial testing</strong></p>
+<p>First thing I notice when testing on the device were slowdowns when the cube is fading, it had a lot of particles filling the screen and the framerate dropped down, although this only happens when each level loads and doesn’t interfere with gameplay itself I got a little frustrated.<br>
+On the simulator It slowed down a little but only on Debug and even more OpenGL on the emulator is by software.<br>
+Another issue was the sound, I’m using OpenAL + a custom OGG parser, and sound was also slow, with hiccups.</p>
+<p><strong>Sound</strong><br>
+For the sound it turned out a little easier than I expected, there as nothing wrong with the parser, what would happen is that if the CPU would sometimes take longer than expected on someplace and the player would run out of data making those hiccups, since it was constantly running out of data and getting more.<br>
+I increased the buffers size and numbers, so now I have 5 buffers with 65536 bytes each. Every time a buffer is parsed I read another one and queue it.<br>
+Solved the problem immediately. Yesterday while playing the game (after 10-20m) the sound started having hiccups again, although the game was fine, so I may still have some flaw in there, must research it more.</p>
+<p>Here’s a video where of me playing with some particles:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ch3QvoBd1_c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><strong>Primitives</strong><br>
+I can get much more particles on screen now because my first attempt to draw primitives in OpenGLES was drawing Quads with an mapped texture. When I got that working I would just send vertex points and texture coordinates and iterate all objects I wanted to draw.<br>
+WROONGGGGGGG…..<br>
+Although this works you should always batch as much geometry (within limits of course) as you can to make it on as fewer draw calls as you can. On both OpenGL and DirectX draw calls are the slowest part.<br>
+It’s faster to draw 1000 triangles in one call than on 1 triangle per call. You get the point.<br>
+So I started by making a PrimitiveBatch, sort of what XNA has, I just pass along vertex points, texture coordinates, color refs etc.<br>
+Since it’s 2D I try to group by texture and by Z. All primitives with same texture on the same Z position can be drawn at once. You can’t draw all with same texture regardless of the Z some elements may be occluded when it was not intended, basically because it will keep drawing on top of what you have, at least for the current Buffer.</p>
+<p>After this I got enough drawing boost to have the same amount of particles that the PC version, which is cool.</p>
+<p><strong>Some tips</strong><br>
+Although I’m still kind of new at this all iPhone things I can give you a few tips, they work for everything but are particular handy on devices with lower CPU power.</p>
+<ul>
+<li>Avoid using std::list:end(), on big lists it carries an extra burden.</li>
+</ul>
+<p>If you don’t intend to add/remove anything from the list during the cycle just save that at first</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">   <span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">iterator</span> <span class="n">b</span> <span class="o">=</span> <span class="n">_mylist</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">   <span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">::</span><span class="n">iterator</span> <span class="n">e</span> <span class="o">=</span> <span class="n">_mylist</span><span class="p">.</span><span class="n">end</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">   <span class="k">while</span><span class="p">(</span><span class="n">b</span><span class="o">!=</span><span class="n">e</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">/// Do stuff
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="o">++</span><span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>Avoid deleting stuff on loops. One example, I have a list where I stack stuff to be drawn on my PrimitiveBatch, typically when you start drawing you add everything, the lists keeps growing, you draw and then delete, and you go back to “start drawing” again. You can optimize this by never deleting and only creating on a need basis. Belize me it makes huge difference, and besides you will need to create that again so might as well not delete it and when starting over just update values. Small things like this may not be an issue on PC but on small devices every cycle counts.</li>
+</ul>
+<p>Most of this stuff you may already know but there are many who don’t. I’ll try to update this more often.</p>
+<p>So now I’ll get back to my testing to see if we get to testing and later to the app store asap =)</p>
+<p>PS: I need iPhone/IPod Touch testers, drop me an email with your UDID if you are interested…</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

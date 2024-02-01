@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Game Development on David Amador</title>
     <link>https://www.david-amador.com/categories/game-development/</link>
@@ -21,6 +21,25 @@
       <description>I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
 But onto game5 progress.
 Importers I managed to finish some of the importers (spreadsheets -&amp;gt; ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them.</description>
+      <content:encoded><![CDATA[<p>I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.</p>
+<p>But onto <a href="/2023/10/game5-devlog-1/" title="game5 devlog #1">game5</a> progress.</p>
+<h2 id="importers">Importers</h2>
+<p>I managed to finish some of the importers (spreadsheets -&gt; ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them. I could have made the game parse the spreadsheet at boot time and create them, but I decided against it, I want to generate this process offline. One of the reasons is because I have more control over not replacing existing items GUIDs (to keep and existing links), and also I can tweak any individually generated files manually, if I need to.</p>
+<h2 id="testing-amp-automation">Testing &amp; Automation</h2>
+<p>As I start to get more pieces onto the game I’m hitting the time that I need to start testing what I do, obviously with beta testers etc, but also I need to find a way to test it on my own in an effective way. For bugs, balance and well, fun factor.</p>
+<p>I recall for Quest of Dungeons I had several spreadsheets with the game combat formulas and it would show up curves of progression for each character stat as it levelled up, this helped me visualising pros and cons of each one of them. And even other stuff, like how many total XP points one could get by each floor, or gold, so even with the procedural nature, I knew lower and upper bounds.</p>
+<p>That meant that even if I never ended up getting a really good, or bad combination of items during my tests, I could see the best and worst case, and I would tweak monsters and boss fights accordingly.</p>
+<p>This leads me to this game, where given it’s nature of it’s progression, I’m still unsure of the best tools I can cook up to help me on this, before I place it on testers hands. It won’t be bullet proof but it would be best for me to get a general idea of what to expect.</p>
+<p>Automation is something I had for QoD and already have it to a certain degree here, an “auto playtester”, basically a script that just does some dumb decisions and plays the game on it’s own, this doesn’t give much info but at least I can quicky test over crashes over certain periods of time, I just let it playing on it’s own. It has limitations but it’s nice.</p>
+<h2 id="content">Content</h2>
+<p>As I’m making importers for content I’m now starting to replace some testing placeholders with what I think will be final, in terms of mechanics and items, which is why the Testing phase will start to be important as I tweak content and also gameplay values, the fun factor of the game in a way.</p>
+<p>This step is usually the one I get stuck the most, because as much as I can plan on paper, some things might not work at all when testing, also trying to keep the scope realistic for me, I’m just one person coding all this, got to be real here. I always think “oh 8 items might be too little content”, but then again sometimes less is more, as long as it’s well placed. Also being less we can always add more later if needed. Doing work unnecessarily hurts more, on Vizati and QoD locking down content amount like “7 floors max, 4 characters, 10 skills per character” really helped me early on, it was tangible and gives a sense of progression and motivation as we create each one. So that’s the sort of thing I’m trying to do here.</p>
+<p>So that’s one of the reasons I’m trying to decide this stuff right now, considering the very low time and budget I have available, I’m trying to realistically get a good scope for what I can do, even if it turns out a short game (and that’s ok), match everything as close as possible to what I think I’ll need in the end, so I can decide the stage of art, where to get it, or who to hire, or even if it’s something I could do on my own (some of it anyway). Yeah I know I just described that I’m lacking a proper <a href="https://en.wikipedia.org/wiki/Game_design_document">GDD</a> 🙂</p>
+<h5 id="mood">Mood</h5>
+<p>So all around I feel a bit more optimistic about game5 this week, but as any game developer will tell you, this feeling goes up and down every given week xD. Sometimes I feel like I might have something here, other times “this sucks”.<br>
+Until the next post!</p>
+<p>post feature image from deviantArt, Halloween month! 🎃 (<a href="https://www.deviantart.com/hoshi-pan/art/witch-tea-818804167">https://www.deviantart.com/hoshi-pan/art/witch-tea-818804167</a>)</p>
+]]></content:encoded>
     </item>
     <item>
       <title>game5 devlog #1</title>
@@ -29,6 +48,23 @@ Importers I managed to finish some of the importers (spreadsheets -&amp;gt; Scri
       <guid>https://www.david-amador.com/2023/10/game5-devlog-1/</guid>
       <description>Nothing announced, not even a name decided, but I want to vaguely blog about it as a means of brainstorming with myself. I’ll be vague as heck until I’m sure I have something worth “here’s a new game”, if that ever turns out to be the case.
 So this week’s it’s progress on my “on-going not yet announced game because not ready and might be bad” game, which I decided to for now on call Game5 here, so it’s easier to know what we are talking about.</description>
+      <content:encoded><![CDATA[<p>Nothing announced, not even a name decided, but I want to vaguely blog about it as a means of brainstorming with myself. I’ll be vague as heck until I’m sure I have something worth “here’s a new game”, if that ever turns out to be the case.</p>
+<p>So this week’s it’s progress on my “on-going not yet announced game because not ready and might be bad” game, which I decided to for now on call Game5 here, so it’s easier to know what we are talking about.</p>
+<h2 id="no-progress">No progress</h2>
+<p>I haven’t been able to do make progress during the day because of contract work, so it’s mostly nights and weekends when physically possible. And I’m actually feeling a bit bad about this, so this might take a while. There’s been weeks of good productivity followed by weeks/months of just “seems to be the same”. To be honest some design decisions were also blocking me, the initial plan was enough to start but there’s always some roadblocks ahead.</p>
+<h2 id="death-by-a-thousand-buttons">Death by a thousand buttons</h2>
+<p>After QoD I specifically remember saying “My next game needs to have as little UI as possible”, but here we are, this game will (probably) live or die depending on how bad it is to use it. I mean the “game” part has to be fun as well obviously, but there is a lot of interconnection between both. You’ll understand what I mean by that later. No it’s not an RTS etc.</p>
+<h2 id="slow-progress-is-better-than-none">Slow progress is better than none</h2>
+<p>But the past 2-3 weeks I got a little lightbulb that gave me a general direction of a way to solve some stuff and it’s on a good track again I feel. And while there’s no real need for the UI to look good at this point, I already have 2 iterations of it, mostly from a functional standpoint.</p>
+<p>I did a first prototype with the general idea, not all features, but turned out incredibly cumbersome to use from a UX standpoint. But this was good, I felt there was still something there in terms of “game”, just needs iteration.</p>
+<p>I “quickly” remade it into a different one recently, and now I feel it’s much better, there’s still a lot to do in terms of making it coherent. But this is also the part where I feel I have to focus on the “toy” part of the game itself.</p>
+<h3 id="planning">Planning</h3>
+<p>A lot of my problems sometimes come from lack of planning some details more carefully, in a way it’s good to just jump in and get it rolling, but other times it comes back to bite you. With that in mind, and since I now have a general idea of functionalities and a barebones UI, I hired someone to freelance work with me on their spare time on the UI. At this point it’s compartmentalized enough that if they need to leave to other things I can carry on, and also I can focus a bit more on the gameplay components.</p>
+<h3 id="iteration-and-automation">Iteration and Automation</h3>
+<p>I do a lot of notes and value on spreadsheets, that end up on the game, for testing, and especially during prototype phase I found myself copying pasting values around. So I took a couple hours to write some python scripts that grab cvs, parse them and export the proper ScriptableObjects for what I need. This speeds up quick testing and changing values. I was getting tired of changing them directly on Unity inspector.</p>
+<h2 id="next-steps">Next steps</h2>
+<p>My next move is balancing out a initial progress/difficulty ramp. Right now I have most stuff “just there”, in a sort of chaotic way, to test out the fun of it, but I need to make a proper vertical slice. At this point I do have several mechanics in place, but a lot buggy and a bit all over the place, so I have to streamline that to make it more cohesive. I don’t have any new mechanics still missing (so far), so just cooking up a small prototype that I could just hand over to someone and have them play, and see what happens.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Unity enshittification round 2, moving on to custom tech.</title>
@@ -36,6 +72,21 @@ So this week’s it’s progress on my “on-going not yet announced game becaus
       <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
       <guid>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
       <description>After mostly a week of anxiety, for thousands and thousands of developers, Unity changed the rules again, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service.</description>
+      <content:encoded><![CDATA[<p>After mostly a <a href="/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/" title="The Unity enshittification, proprietary tech dangers, and mostly not talking about what I’m doing.">week of anxiety,</a> for thousands and thousands of developers, Unity <a href="https://blog.unity.com/news/open-letter-on-runtime-fee">changed the rules again</a>, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service. This will be impossible on mobile and consoles in a short time frame due to SDKs, but for PC should be fine.</p>
+<p>So that’s good huh? Well not quite imo, because the rest pretty much maintains, more or less with some changes, Unity Plus still gone (although expected), but <a href="https://unity.com/pricing-updates">it’s a revenue/pay-per-install deal</a>, on top of the yearly license fees. I feel they fear they tainted their image so much they aren’t even forcing the Unity splash screen anymore, probably because players will now fear every Unity game will come with install tracking software.</p>
+<p>I think the subscription plan, especially for mobile/consoles is needed, it’s a company and needs to make money to maintain the software, fair. However for me it’s a lot of the break of trust they did, and trying for the SECOND time (that I recall) to change the Terms of Service retroactively and only after industry-wide outrage did they backtracked slightly. So for now the new-new rules only apply to a smaller %, which I guess they expect will calm down most of the community. In a couple years they’ll pull some other stunt and we’ll recall “oh right, they did this before”.</p>
+<p>Furthermore, they had deleted the transparency repo with the Terms of Service from GitHub, which raised many eyebrows, when enquired to why they deleted the answer was “low views so it was deleted”. The repo is back up meanwhile, I mean, what the heck?</p>
+<p><a href="https://twitter.com/unity/status/1705317639478751611"><img loading="lazy" src="/wp-content/uploads/2023/09/image-2.png" alt=""  />
+</a></p>
+<h2 id="moving-forward">Moving forward</h2>
+<p>So as I mentioned in last post I have been working on a prototype for what I hope I can turn into a new game, in Unity. I decided that I’ll continue working on the prototype in Unity (actually taking a break from work right now to write this), it would be slightly silly to change now. And when I feel most of the features are done, I’ll try to move to my own tech, yes again.</p>
+<p>I’ve been doing some research and tests and I’ll be dismantling <a href="/tags/quest-of-dungeons/" title="Quest of Dungeons development update">Quest of Dungeons</a> engine, which was all <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>, to adding <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a>, using <a href="https://github.com/SanderMertens/flecs/">Flecs</a>, this is a major thing I’m taking with me from my time using Unity, I like that it helps solving a lot of issues sometimes, even if full ECS is not the solution for me. But having that will be nice, I can see the benefit now. Another thing might also be trying to mimick Prefabs and/or ScriptableObjects, that would be nice, but that’s just in the back of my head at the moment. I already started the process of integrating Flecs, so slowly and gradually, and hopefully, when it’s time to switch engine it will be a suitable alternative. If not well, better not update to 2023LTS I guess.</p>
+<p>At least this is the plan right now, who knows, maybe I’ll reach a point where it feels too frustrating to rewrite it all in a different engine and language (c# to cpp), or ran out of budget to do so, plans do change. But at the moment at least it moves forward like this.</p>
+<h2 id="list-of-mostly-open-source-game-engines-and-frameworks">List of mostly open-source game engines and frameworks</h2>
+<p>Using suggestions I compiled a list of game engines and frameworks, mostly open-source and free, but there are a few with licenses, regardless, for anyone looking to test alternatives, there’s a bunch of stuff.</p>
+<p><a href="https://github.com/DJLink/list-of-game-engines-and-frameworks">https://github.com/DJLink/list-of-game-engines-and-frameworks</a></p>
+<p>My personal suggestion for anyone who wants to try the “make my own engine” approach, for 2D stuff (don’t get too deep the rabbit hole on 3D), will be to use SDL to bootstrap window creation, input etc. I’ve used that in a bunch of stuff in the past and can vouch for it.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>The Unity enshittification, proprietary tech dangers, and mostly not talking about what I&#39;m doing.</title>
@@ -43,6 +94,24 @@ So this week’s it’s progress on my “on-going not yet announced game becaus
       <pubDate>Sat, 16 Sep 2023 11:14:16 +0000</pubDate>
       <guid>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
       <description>So this was an “eventful” week in the game dev community. Unity, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. Unity announced that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</description>
+      <content:encoded><![CDATA[<p>So this was an “eventful” week in the game dev community. <a href="https://unity.com/">Unity</a>, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. <a href="https://blog.unity.com/news/plan-pricing-and-packaging-updates">Unity announced </a>that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</p>
+<p><a href="https://blog.unity.com/news/plan-pricing-and-packaging-updates"><img loading="lazy" src="/wp-content/uploads/2023/09/unity-new-runtime-free-pricing-image.png" alt=""  />
+</a></p>
+<p>Also they are removing the Plus subscription, which honestly this one I was kind of expecting for a while now. Which means a lot of people would have to jump to the nearly $2k yearly subscriptions. This on it’s own, while a big jump, at least is more understandable, building tech is expensive. The pay-per-install is crazy though.</p>
+<p><a href="https://twitter.com/DJ_Link/status/1666532480646627329"><img loading="lazy" src="/wp-content/uploads/2023/09/image-1.png" alt=""  />
+</a>On top of all, the thing that breaks trust the most, is the retroactive thing, games already released on older versions will be affected. The Terms of Service for those older versions, which developers agreed on installing X version, are no longer valid, they changed them, which means it’s no longer safe to trust the rules, Unity can just flip them. What’s for tomorrow?</p>
+<h2 id="proprietary-tech">Proprietary tech</h2>
+<p>This is, and always be one of the downsides of depending on other people technology, if the whole company depends on it, and there’s no easy replacement, a drastic change can hurt the whole business bad. This is not to say that we must avoid it 100% of the time, but it clearly shows that if a company amasses too much power, <a href="https://en.wikipedia.org/wiki/Murphy's_law">murphy’s law</a>!</p>
+<p>I usually like to discuss this subject, even before this whole thing, not because I think everyone should do custom engines (even if fun) but because we shouldn’t trick ourselves in believing “my choice of engine is forever!”, it won’t be, unless it’s our own tech that we spend tons of time supporting/improving it, everything else eventually mutates too much, fades or gets killed. So we should always try to at the very least, be mentally prepared.</p>
+<p>A very large amount of developers probably entered gamedev through Unity, it was mostly the goto suggestion everyone gave, and never tried anything else (and why would they, if it worked right?), but after years of learning that tool, it might be frustrating to change, but trust me, you got this. It will be hard, but if you ever change again it will be easier.</p>
+<h2 id="what-im-up-to">What I’m up to</h2>
+<p>Personally I’ve been using Unity for the ~5 years maybe, mostly for contract work and porting stuff. But recently, and after years of shipping stuff on <a href="/tags/basalt/">custom framework</a> I decided to work on my current game prototype in Unity, it made sense, my day work is 80% on that tech, built in Editor, multi-platform, so I would also be learning more and prototyping in Unity is generally quite fun. But these changes now mean I’ll be changing for something else, not because these rules will affect me, I don’t see ever reaching the $200k yearly, but because I don’t know what they’ll do next. I’d rather risk elsewhere.</p>
+<h4 id="what-next">What next?</h4>
+<p>For the past couple days I’ve trying to decide on exactly where, but haven’t made my mind yet. But I have decided that I’ll at least try to wrap up the prototype phase in Unity, makes sense, game is still a bit barebones (why I’m not talking about it yet) but there’s a lot done, so I’d rather pass the whole “toy prototyping messy code” in Unity, and when it feels time to move to production port the whole thing elsewhere and in the process hopefully have a cleaner code base.</p>
+<p>Custom or another engine I’m unsure, but atm I’m leaning more towards custom, but that would mean I’d probably either reshape my entire custom engine, or do from scratch, reason being, it’s 100% object oriented, and while working with Unity I discovered there’s tons of advantages to the Entity Component System, so I want that on my framework. Might be more initial setup, but after shipping a couple games on tons of platforms in OOP, I discovered that some of the issues would have been easier to solve with ECS, not all but several.</p>
+<p>Overall I’m excited about the possibility of working on my own tech, because well, it’s fun. As for my next game, progress has been slow, because I’m still taking the approach of contract work, and working on it on my spare time until it feels like a viable project and deciding full or part-time.</p>
+<p>After working on Quest of Dungeons for many years (which I’m grateful) I did several prototypes that were, to be honest, not good games, and I will never ship something that at the very least I don’t find fun, so yeah sorry it’s been a while. The hope is that if I find it fun, more people will, so until that time, work moves on, maybe I’ll have more news about something sooner than later.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Some things to consider in multi-platform gamedev</title>
@@ -50,6 +119,39 @@ So this week’s it’s progress on my “on-going not yet announced game becaus
       <pubDate>Mon, 04 Sep 2023 20:01:23 +0000</pubDate>
       <guid>https://www.david-amador.com/2023/09/some-things-to-consider-in-multi-platform-gamedev/</guid>
       <description>Decided to write a couple things I feel can help a game in the long run when it comes to porting it to other platforms. It’s always inevitable we have to change elements in a game when targeting a new console/device we never considered, but some considerations, if done from start can save a lot of time, headaches, porting budget, and equally important, avoiding introduction of new bugs due to code changing drastically.</description>
+      <content:encoded><![CDATA[<p>Decided to write a couple things I feel can help a game in the long run when it comes to porting it to other platforms. It’s always inevitable we have to change elements in a game when targeting a new console/device we never considered, but some considerations, if done from start can save a lot of time, headaches, porting budget, and equally important, avoiding introduction of new bugs due to code changing drastically. These are based on observations I made on a couple dozen projects that crossed my desk, I don’t expect this to be news for someone who’s been in the field for a while, and might even be “too basic” for many, but hopefully it can help someone, since I’ve seen these many times.</p>
+<p>Many of these are not specific to a certain game engine (unless noted), so they can be used anywhere, it’s just a collection of things I’ve encountered while porting games which can help.</p>
+<p><strong>Don’t hard-code strings in your code.</strong></p>
+<p>This is one of the most well know ones and it’s not specific to games either, any software, but there’s still a lot of games that have it. It’s not hard to happen either, a gamejam or prototype starts, even if just a couple some strings that we leave near a <em>//todo:</em>, but suddenly we’re months in development with strings all over the place. Now you need to add another language and it’s a problem. Write some get_localization(ID) function, read all text from a file as early as possible. Also never write them directly on images, even if it looks prettier, it’s going to be a problem trust me, you don’t want image variations of each language, I can tell you first hand that becomes big problem whenever small text changes are required.</p>
+<p><strong>Avoid string concatenation in localizable text as much as possible.</strong></p>
+<p>If we need to mix in dynamic content with text, very common but this examples poses an issue:</p>
+<p><em>string label = localize(“Our score is “) + to_string(int_value) + localize(“, which is very good!”);</em></p>
+<p>This is not very flexible when it comes to localization. It assumes 2 different strings being localized, and the phrase has to make sense in all languages in this order, and that’s not always the case, what if a certain language needs the value to be in a different place in the concat order? The person localising won’t have any way to do it.</p>
+<p>So let’s look at this example:</p>
+<p><em>string label = localize(“Our score is {0}, which is very good!”, int_value);</em></p>
+<p>Many languages have string utils to allow this, the {0} will be replaced with our variable, which means that the localisation team can put the {0} wherever they want, your code only assumes there’s a {0} somewhere, doesn’t matter where.</p>
+<p><strong>Separate Accept/Back button bindings in menus from other gameplay actions.</strong><br>
+Let’s say our game uses the A button on a controller to Fire a bullet, it’s also the most appropriate button for the “accept” action on a menu button. We might be tempted to only query for a “fire” action everywhere, but that’s not the best idea. First of all if you later need to change that “fire” to something else you break menus, and more, on some platforms you might need a different button, for example PS4 in Japan the X button might not be “Accept” but O instead, so you’d have to flip your mapping, having them separate prevents breaking the whole code. If you want to read more about the PS4 specific case here’s a good article about the subject <a href="https://www.theverge.com/2019/3/9/18255901/ps4-x-o-cross-circle-remap-firmware-6-50-dualshock-4">https://www.theverge.com/2019/3/9/18255901/ps4-x-o-cross-circle-remap-firmware-6-50-dualshock-4</a></p>
+<p><strong>Leaving unused assets/textures on scenes/projects</strong></p>
+<p>This is not necessarily a porting issue on it’s own, but can hurt performance on lower spec devices and it’s something I encountered more on Unity. I get it, it’s still development phase, something gets removed, but we leave it on the scene disabled, that on it’s own might not be a problem, but let’s say the object happens to be an entire older level that we remade better, and wanna keep the old one around “just in case”. It will be imported to the final build, all the meshes, textures etc, the level might be loaded, just not used. A variety of times I’ve seen build sizes reduce a lot just be removing unused things, but this is a more complicated process after the game is done, because they might be hard to spot, my example was an obvious one, but dozens of tiny things won’t, someone looking might just think disabled stuff will be activate later in script somewhere.</p>
+<p><strong>Gigantic non power of 2 textures</strong></p>
+<p>This is a recurring issue I see, a couple texture asset packs etc, really big textures, works on PC, even uncompressed. Many textures that are non power of two textures, you target another lower spec device and now there’s a problem, most engines will allow NPOT textures on their pipeline, but for example Unity won’t even allow compression, because it will only happen on POT textures, this is because, textures like 256×256, 512×512, 1024×1024, to keep it short and a bit more simplistic, is a form of optimisation for images feed in to the GPU pipeline. Many years ago most devices wouldn’t even allow something like 125×125, you’d need to find the next POT value, 128×128. A game with big textures in weird sizes will use immensely more disk space than if we use POT and some compression.</p>
+<p><strong>Particles</strong></p>
+<p>They look pretty, it’s easy to get distracted, don’t start by high particle count and go down until it looks good. Start by 1 and go up until it looks good. I’ve seen particle systems with 100 particles look nearly the same as a 5000 one, multiple that with a couple explosions on screen and you got yourself a problem.</p>
+<p><strong>Naming controller buttons in text</strong></p>
+<p>“Press A to jump”<br>
+But on PlayStation it might be “Press X to jump”<br>
+Inject a way in your code so that strings where you use buttons are parsed in runtime, and you can query the platform for the button itself. If it’s just a button sprite on a menu, it’s relatively easier, you just need a sprite and flip it accordingly. For written text like a tutorial or a message somewhere there are several ways to accomplish that, and one way might be to put the icons directly on a font.</p>
+<p>For example<br>
+“Press A to jump” becomes “Press [JUMP_BUTTON] to jump”, and then in code you can search and replace [JUMP_BUTTON] with a glyph in your font that corresponds to the right controller button. That way localization team can write it in any order, and the code simply replaces it. Another advantage of this is if instead of actual glyphs you want to write it, you can also localize it.</p>
+<p>Imagine “Move Left Thumbstick to walk”, in another language we might want to change the part “Left Thumbstick” to something else, probably by console certification requirements, so having “Move [Left_Thumbstick] to walk” can help here with the string find replace, you get the idea.</p>
+<p><strong>Avoid constant file saving</strong></p>
+<p>Disk access even if faster these days is a big bottleneck, that’s why loading something takes, well… time. A few times I saw cases where games would save something every time a certain action happened, and I’m not talking about game progress checkpoints, which is fine, but for example a game wants to save “steps taken” for some stats, and it would auto-save a certain file every time. Needless to say, while it might not be a problem on PC (SSDs etc) even if wrong, but on certain consoles that will not only be a problem, as well as a possible certification failure. So bulk up actions to save, and save them once in a while, the ones that don’t require the player to press “Save”, you can also enforce saving on application quit.</p>
+<p><strong>Framerate consideration</strong></p>
+<p>If you coded the game to consider 60FPS only, not considering that it might have to be locked at 30FPS due to lower hardware, using what we can call fixed delta (time since last update) this will be a big problem. If your character movement isn’t taking into account different framerate, for example Unity has FixedUpdate() and Update(), you’ll have problems later if you can’t reach the 60FPS for some reason, everything in-game will run much slower as we only get half the updates. And this is much harder to change later in development, most of the game feel &amp; calculations might be tied into those values. This is an article explaining it from a Unity perspective but you’ll get the idea. <a href="https://gamedevplanet.com/delta-time-vs-fixed-delta-time-differences-and-purposes/">https://gamedevplanet.com/delta-time-vs-fixed-delta-time-differences-and-purposes/</a></p>
+<p><strong>That’s it for now</strong></p>
+<p>I’ll probably update it if I think of something else, there are many other things specific for each engine but I just tried to focus mostly on engine-agnostic stuff. If all these are covered this already helps a lot most of the port work. Let me know if you find errors or have any other suggestions.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Vizati 10th anniversary and making if free.</title>
@@ -58,6 +160,16 @@ So this week’s it’s progress on my “on-going not yet announced game becaus
       <guid>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
       <description>&amp;gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but twitter kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.
 Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and Rita with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game.</description>
+      <content:encoded><![CDATA[<p><a href="https://dj_link.itch.io/vizati"><img loading="lazy" src="/wp-content/uploads/2011/03/vizati_letterbox.jpg" alt=""  />
+</a>&gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but <a href="https://www.twitter.com/DJ_Link">twitter</a> kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.</p>
+<p>Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and <a href="http://rita-silva.com/" title="rita-silva.com/">Rita</a> with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game. Things changed a lot over the years and the original team is no longer working together, also because of OS updates, like the iOS versions etc or hardware not being around anymore the game has mostly vanished from all stores. The other day I was thinking about game preservation and thought it would be a shame to leave this only in our computers, combined with the 10th anniversary we decided to make it free to everyone, the original game can now be downloaded and played even on the newest Windows versions (thank you XNA).</p>
+<p>Here’s the official <a href="https://dj_link.itch.io/vizati" title="https://dj_link.itch.io/vizati">itch.io</a> page, there you’ll find not only the original XNA version that was being sold, but also an unfinished version using a custom engine that I build when porting it to iOS, this framework ended up powering <a href="https://www.questofdungeons.com" title="https://www.questofdungeons.com">Quest of Dungeons</a>, a game I made a few years after. It’s not finished but should be mostly playable, although only works in window mode.</p>
+<p>I also created a GitHub repo, which has a couple more things, like the original website code, some screenshots, the code using for creating the XNA installer, PDF manual and a couple more things. This way those things will never get lost in case my computer + backups ever go bad.</p>
+<p>Download: <a href="https://dj_link.itch.io/vizati">https://dj_link.itch.io/vizati</a><br>
+GitHub: <a href="https://github.com/DJLink/Vizati">https://github.com/DJLink/Vizati</a></p>
+<p>Hope you have fun, either you are rediscovering the game or playing it for the first time, it’s a product of it’s time, from an inexperienced team trying to make their first indie game, but I’m proud of how it turned out.</p>
+<p>See you around!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Made a small game for Ludum Dare 42</title>
@@ -67,6 +179,17 @@ Second, but not least important, Vizati is turning 10 years old today (11 June 2
       <description>Hey,
 It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.
 But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.</description>
+      <content:encoded><![CDATA[<p>Hey,</p>
+<p>It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.</p>
+<p>But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.</p>
+<p>The game is a small top down shooting game, but when you miss an enemy you create a block instead, so the more you miss the less area to fly around. Here’s a gif illustrating.</p>
+<p><a href="https://dj_link.itch.io/dont-miss"><img loading="lazy" src="/wp-content/uploads/2018/08/Honeycam-2018-08-13-22-21-37.gif" alt=""  />
+</a></p>
+<p>Made code, art and sounds, cod is c# in Unity, art was made in photoshop, the sound effects I think you’ll notice right away how they were made, and finally used <a href="https://boscaceoil.net/">Bosca Ceoil</a> for music.</p>
+<p>There’s a webGl version so you an try it directly in your browser.</p>
+<p><a href="https://dj_link.itch.io/dont-miss">https://dj_link.itch.io/dont-miss</a></p>
+<p>Here’s the LD Jam entry: <a href="https://ldjam.com/events/ludum-dare/42/dont-miss-1">https://ldjam.com/events/ludum-dare/42/dont-miss-1</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Some thoughts about a 4 year game dev cycle</title>
@@ -76,6 +199,36 @@ But decided to take a break from my current project to participate in Ludum Dare
       <description>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.
 It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.
 For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was Quest of Dungeons, which started development in 2013.</description>
+      <content:encoded><![CDATA[<p>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.<br>
+It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.</p>
+<p>For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was <a href="http://www.questofdungeons.com">Quest of Dungeons</a>, which started development in 2013.</p>
+<p><strong>Right now</strong> I still have one more platform to release, on Playstation 4, 17 January 2017, it passed certification, ready to be released, so for the first time in years it feels that my QoD journey is finally completing. I still intend to patch the Android port with all last updates and sure, there will always be patches and things to take care of, but it will be in a whole different way now. Until now it always felt incomplete and a never ending task that extended for months, years.</p>
+<p><strong>Working for so much time</strong> on the same project can be incredibly frustrating, especially if working alone, so one thing that I’m proud of myself is that I actually finished it. You wouldn’t believe the amount of times that I said “F** it, is not worth it”. Things went good with the game, in a sense that I was able to put it on a lot of platforms and it was well received for the most part.<br>
+I think I was able to find a good “niche” of players that understood what QoD was all about, with all its flaws and good things.</p>
+<p>The game was never meant to be released outside of PC, heck, during the first month of development it was a Tablet only game. That led to decisions that I regretted later when porting to consoles, but also allowed me to cut corners and not caring about things that weren’t meant for a PC game early on, thus speeding up development time. I spent a lot of time just rethinking the whole interface for each new platform (except PS4 which is identical to Xbox One) and that is time consuming, not to mention specific console features, on the other hand players do feel like it was hand-crafted for their device, so there’s that. Each new platform was made possible with the previous one, so it’s not something that I can say it was a total mistake.</p>
+<p><strong>Technology wise</strong>, I’ve kept using my own tech for all releases, stubbornness perhaps? And that is not without it’s caveats. With engines like Unreal 4, Unity and Gamemaker these days if feels almost ridiculous to consider building your own tech for many, but not for me, not yet anyway. I used other engines in the past, I did release my first 2 games on XNA, and after that I decided that it was time to build my own tech, so I could be more flexible and not caring if an engine is discontinued or not, that was the goal. And on that part it succeeded, the same code runs on all platforms, except for specific render, input, etc. It took work, a lot, and after so many platforms I have a better idea of things that need better abstraction, in fact for the past week I’ve been just cleaning up code for future projects, feels more robust now. But I have a bit of regret of platforms that I ported the engine and possibly will never use it again, like Wii U, maybe even Nintendo 3DS. While the others, now that the work is done I can reuse for future games, it’s possible that I’ll never use for some again, so it was an effort for a one time only, and that is a problem, one that could have been prevented by using an existent engine.<br>
+I tried using Unity for 3 weeks, did some tests with GameMaker, and it was a cool experience, knowledge doesn’t hurt right? But haven’t made my mind yet about switching away from my own tech, mostly because I know it well, I can quickly changes things around for each project and mostly because I love working on that part as well, it’s fun, even if it’s just for me. I’ll revisit this if/when I need to switch to a “full 3d” game.</p>
+<p><strong>So many platforms!!</strong><br>
+It’s a game that’s on a lot of devices now, and there are several reasons to do so, more audience, chance to make more money, get the game more known, etc, brand recognition and proving the studio is capable of delivering. I also made it because I had the chance right now, I don’t know the future, may not be able to pull that again, also it was a chance to establish a relation with Steam, Xbox, Nintendo and Sony. My idea is to keep making games for platforms that each makes sense, but trying to cut down time between each release. It was too sparse now, because of the reasons mentioned above.</p>
+<p><strong>Marketing</strong> is still something I suck at, I do have a twitter account where I talk about my games, but also about tons of other stuff, mostly movies and general day things, is that even called marketing? Too late I decided to setup a newsletter list and put it on Upfall Studios website, should have done it earlier, I got 100 people to subscribe in the last year and half, I could have way more in these nearly 7 years as indie dev.<br>
+I also created a twitter account for <a href="http://www.twitter.com/UpfallStudios">Upfall Studios</a>, so it’s basically a cleaned up version of my own, just news about the games and launches, a more “professional” account I call it. Taking care of so many social stuff, twitter, facebook, etc is time consuming and doesn’t come to me as naturally as using my personal account, so that is still a problem probably. For the most part I follow devs and not “companies” even when they are indies, so that’s mostly what I like to do, chances are there are more people like me.</p>
+<p><strong>Community</strong> (love you guys)<br>
+I like responding to people, I don’t mind getting asked questions and I’ve answered to 100% of emails I got, either about the game or gamedev in general. I’ve taken time to meet other developers in person when they wanna ask me questions. Treat others the way you wanna be treated, easy right?<br>
+I’ve been extremely luck with the players and community surrounding QoD, they are nice, active in recommending the game to friends and I couldn’t have wished for a better community. Goal is to keep incrementing the amount of course =)<br>
+Never lie or go on radio silence regarding customers. There are tons of Early access games that suddenly stop and not even a goodbye post, that’s the worse part, the waiting for months to see if project is alive. They won’t trust you again, even if you switch to a different studio, they won’t forget. So if project fails explain it, if you are delayed on a patch say so. Almost all the time players will understand and be supportive. When I was making the Xbox One and Nintendo ports I had to delay the PC updates for a couple months and players were really supportive, as long as they know why you are late on some promise.</p>
+<p><strong>It’s never just “X more months of dev”</strong><br>
+NEVER, ever, if you think it’s just 2 more months, odds are that it’s 4 more. We suck at calculating time for the most part (or at least I do), because we conceive the game in your minds and you can see it, mostly complete, but making that happen takes much more time. PC version was delayed, both Xbox and Nintendo ports took much longer than I expected, the PS4 one was shorted, because I counted with worst case scenario but things went well at first try. In my experience completing the game 1-2 months before the release can have a positive effect, especially for a 1 man team. I finished the Xbox One version 2 months before, full approved on certification, and spent that time just trying to promote it, and was able to gather some awareness for the game. I finished the Nintendo versions just 10 days before, and even had to delay the game once, I regret now that I didn’t calculated/handled things better. Lesson learned, let’s see if I don’t make that mistake again.</p>
+<p><strong>Everything else</strong><br>
+I made that mistake in the past and I still do, I can’t separate well development time and actual life time, so I end up working too many hours, and it’s addicting.<br>
+QoD was made partially at night when I still had a day job, and the last 1 and a half year in full time, but that doesn’t mean I was able to do twice as much work unfortunately.<br>
+When you work for someone else you have a schedule, but if you work on your own time, it’s harder. Most people tell me it’s hard to stay focused working, and I have that problem too, but not in a way that I can’t work, but mostly because I blend in leisure time with work, and working from home doesn’t help. It’s easy to get distracted, then you feel guilty and spend a couple more hours working. And while I don’t think I’m super slow, I could be using my time better. That’s something I want to change, I don’t thing strict work schedules work well, but not having clear boundaries doesn’t either. If anyone is managing this well please let me know. Open to suggestions 🙂<br>
+It’s easy to find people saying this, but I’ve now experienced it myself, when you have a problem that you can’t solve don’t spend hours on the PC, take a walk, go do something else, the solution will come to mind, seriously, it works very often. You trick your mind into something else and the other problem keeps getting solved in the background.</p>
+<p><strong>What now?</strong><br>
+In approximately 3 weeks the PS4 version will be released, I don’t any plans for more ports so I intend to move to a new game, and honestly I’m scared, I don’t have a solid idea yet, been mostly sketching ideas or trying some prototypes, and the thought of deciding “let me spend 1-2 years” in this new game is a bit scary, “can I come up with all the money?”, “will it be good?”.<br>
+I wish I had a small cool idea to try for a couple months instead of a bigger one, but as I mentioned before, QoD was also supposed to be a 6 months project that turned out into 4 years so better not force anything. I’m trying not to think of “this is gonna be a cool idea that everyone will like” and instead trying to come up again with something that I would like to play, even if others don’t like it, development flows more naturally like that.<br>
+Oh and I want to take 2 weeks of proper vacations after the PS4 release, haven’t had vacations in over two years, thinking of backpacking a couple countries, it’s cheaper and it’s good “mind food”-</p>
+<p>Still there? thanks for reading – David</p>
+]]></content:encoded>
     </item>
     <item>
       <title>My first ever console game is out</title>
@@ -85,6 +238,20 @@ For those who follow my work a bit more closely you probably know that for almos
       <description>Hey, it’s been a while.
 For the past few months I’ve been working on porting Quest of Dungeons to Xbox One, and I’m super happy that it’s finally out. It was released around a week ago, on September 4.
 This took some time but I’m happy of the way the game is played with a gamepad, after a lot of changes to the UI I really feel like it was worth all the effort I put into it.</description>
+      <content:encoded><![CDATA[<p>Hey, it’s been a while.</p>
+<p>For the past few months I’ve been working on porting Quest of Dungeons to Xbox One, and I’m super happy that it’s finally out. It was released around a week ago, on <a href="http://www.upfallstudios.com/blog/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/">September 4</a>.</p>
+<p>This took some time but I’m happy of the way the game is played with a gamepad, after a lot of changes to the UI I really feel like it was worth all the effort I put into it. If you wanna read more about the new stuff on the XO version you can find the article <a href="http://www.upfallstudios.com/blog/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">here</a>.</p>
+<p>The players feedback and reviews were very positive as well. Here are some examples:</p>
+<p>8/10 – <a href="https://web.archive.org/web/20170611171806/http://www.icxm.net/x/quest-of-dungeon-review.html">http://www.icxm.net/x/quest-of-dungeon-review.html</a><br>
+8/10 – <a href="http://www.entertainment-focus.com/game-review/quest-of-dungeons-review/">http://www.entertainment-focus.com/game-review/quest-of-dungeons-review/</a><br>
+4/5 – <a href="http://wegotthiscovered.com/gaming/quest-dungeons-review/">http://wegotthiscovered.com/gaming/quest-dungeons-review/</a><br>
+9/10 – <a href="http://dkplaysgames.blogspot.co.uk/2015/09/quest-of-dungeons-xbox-one-review.html">http://dkplaysgames.blogspot.co.uk/2015/09/quest-of-dungeons-xbox-one-review.html</a></p>
+<p>I also want to thank everyone who emailed and tweeted me, watching everyone having fun with the game warms the hearth 🙂</p>
+<p><strong>So what is next?</strong></p>
+<p>I’ve been getting that question a lot. “Are you making more games?” “Are you working on something new already?”<br>
+QoD has kept me pretty busy until now, so while I have some ideas in my mind I haven’t really started anything new, my ideas may very well not be even good at all, I need to test and prototype to see what I wanna do next. I still need to do a patch to QoD to fix some stuff, that is the priority now, but that should only keep me busy until the end of the month. After that it’s time to jump into something new, which is kind of scary, but exciting at the same time. I have no idea if I can ever make a game that people will like, like they did with QoD, but I’ll do my best.</p>
+<p>As always, you can find me on <a href="https://www.twitter.com/DJ_Link">twitter</a>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Suggestion for where to store save games</title>
@@ -95,6 +262,51 @@ This took some time but I’m happy of the way the game is played with a gamepad
 There is one thing that is very common to see in the “game sphere”:
 Where are [X] save games located?
 There are a couple of common directories used but I think as game developers we could do a bit better and using a common location.</description>
+      <content:encoded><![CDATA[<p>Standards are a lovely thing, but hard to achieve, it depends on one thing, everyone actually using it, otherwise it’s just a rule no one cares about.</p>
+<p>There is one thing that is very common to see in the “game sphere”:<br>
+<strong>Where are [X] save games located?</strong></p>
+<p>There are a couple of common directories used but I think as game developers we could do a bit better and using a common location.</p>
+<p>Some games create a folder on My Documents:<br>
+<a href="/wp-content/uploads/2015/04/my_documents.png"><img loading="lazy" src="/wp-content/uploads/2015/04/my_documents.png" alt="my_documents"  />
+</a></p>
+<p>This is a bit messy, you have your games mixed with other software, if you have 5-10 games it’s hard to manage since it gets in the way of your work files.</p>
+<p>Other games save them on obscure locations like</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="p">[</span><span class="n">USER</span><span class="p">]</span><span class="err">\</span><span class="n">AppData</span><span class="err">\</span><span class="n">Game</span>
+</span></span></code></pre></div><p>that can lead to lost save files as some cleaning software might erase them, also it’s hard to find. And lately I’ve been noticing that some Steam games store them directly on the Game Directory itself, that’s not very intuitive as well.</p>
+<p>Windows introduced a system folder some time ago called “Saved Games”</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">David</span><span class="err">\</span><span class="n">Saved</span> <span class="n">Games</span>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2015/04/windows_save_games_folder.png" alt="windows_save_games_folder"  />
+</p>
+<p>But from my research it’s not very used, I think one of the reasons is that older Windows versions didn’t had them, like Windows XP and it wasn’t very adopted. I also noticed some games creating their own versions of “common” folders inside Documents, like “SaveGames” or “SavedGames”.</p>
+<p><strong>What can we do?</strong></p>
+<p>I did noticed that more devs are using a solution that I personally like, and I adopted it for my last game.</p>
+<p>So my suggestion for all game developers for a save game directory is</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="p">[</span><span class="n">User</span> <span class="n">Documents</span> <span class="n">Folder</span><span class="p">]</span><span class="err">\</span><span class="n">My</span> <span class="n">Games</span><span class="err">\</span><span class="p">[</span><span class="n">Game</span><span class="p">]</span>\
+</span></span></code></pre></div><p>For example</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">David</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">My</span> <span class="n">Games</span><span class="err">\</span><span class="n">AwesomeGame</span>\
+</span></span></code></pre></div><p>Here’s that folder on my computer right now<br>
+<img loading="lazy" src="/wp-content/uploads/2015/04/common_save_game_folder.png" alt="common_save_game_folder"  />
+</p>
+<p>As you can see some developers already use it, from indie developers to AAA studios.<br>
+This way, everything is inside your Documents, the user can easily access, backup, restore, everything is inside that folder.<br>
+Even if a studio were to create a folder for its own brand, that would be ok too.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">David</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">My</span> <span class="n">Games</span><span class="err">\</span><span class="n">CAPCOM</span>\
+</span></span><span class="line"><span class="cl"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">David</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">My</span> <span class="n">Games</span><span class="err">\</span><span class="n">CAPCOM</span><span class="err">\</span><span class="n">Resident</span> <span class="n">Evil</span>
+</span></span><span class="line"><span class="cl"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">David</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">My</span> <span class="n">Games</span><span class="err">\</span><span class="n">CAPCOM</span><span class="err">\</span><span class="n">Resident</span> <span class="n">Evil</span> <span class="mi">2</span>
+</span></span></code></pre></div><p>How can you get the current user documents location you ask?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">CHAR</span> <span class="n">my_documents</span><span class="p">[</span><span class="n">MAX_PATH</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">HRESULT</span> <span class="n">result</span> <span class="o">=</span> <span class="n">SHGetFolderPath</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="n">CSIDL_PERSONAL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">SHGFP_TYPE_CURRENT</span><span class="p">,</span> <span class="n">my_documents</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">!=</span> <span class="n">S_OK</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">//Handle no save permissions
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="c1">//Append \My Games\[Your Game] to my_documents and there&#39;s your final save location
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><p>So my vote is for this solution.<br>
+What do you think?</p>
+]]></content:encoded>
     </item>
     <item>
       <title>I&#39;m a Xbox One developer now, QoD getting a port</title>
@@ -103,6 +315,15 @@ There are a couple of common directories used but I think as game developers we 
       <guid>https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</guid>
       <description>So a lot has happened since my last post. Even before EGX I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.
 I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you.</description>
+      <content:encoded><![CDATA[<p>So a lot has happened since my last post. Even before <a href="/2014/10/egx-2014/" title="EGX 2014">EGX</a> I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.<br>
+I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you.</p>
+<p>Since pushing on making games with just displaying my name felt a bit weird I decided (a couple months ago) to give a brand to my indie games, called <a href="http://www.upfallstudios.com">Upfall Studios</a>. Looks a bit more professional and it’s easier to approach other people, because either we like it or not, this is a business and people always ask “what’s the studio name?”.</p>
+<p><del>I also created a blog (<a href="http://www.upfallstudios.com/">http://www.upfallstudios.com/</a>) where I’ll be talking about the games and development, which is something I usually don’t do here in much dept, is mostly “new game”, “game is out”, so if you want to keep track of that feel free.</del></p>
+<p>Edit 2024: I&rsquo;ve since <a href="/2022/11/merged-personal-and-studio-blogs-into-one/">merged the upfallstudios blog onto this one</a>.</p>
+<p>I’m forcing myself to do a year summary post soon so see you soon.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2014/12/xbox_one_console.jpg" alt="xbox_one_console"  />
+</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Indie Dev &amp; Day Job, Making it work / Building Quest of Dungeons</title>
@@ -111,6 +332,15 @@ I don’t think this would have been possible without all the gamers that have p
       <guid>https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/</guid>
       <description>During Gamedev Camp 2014 in Lisbon I got to talk a bit about the development of Quest of Dungeons, and some of the problems that I had making it while still having a day job.
 Most indie developers don’t have enough money to work on their game full-time so they have to keep a day job in order to support it, so this is a bit of my own personal experience doing it, some of the problems that came with it and mistakes I did during the development and launch of the game.</description>
+      <content:encoded><![CDATA[<p>During Gamedev Camp 2014 in Lisbon I got to talk a bit about the development of Quest of Dungeons, and some of the problems that I had making it while still having a day job.<br>
+Most indie developers don’t have enough money to work on their game full-time so they have to keep a day job in order to support it, so this is a bit of my own personal experience doing it, some of the problems that came with it and mistakes I did during the development and launch of the game.</p>
+<p>I decided to post it here because maybe someone finds it interesting, also, I’m sorry for the bad english but it’s not my mother language.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/M2EFJRviOpU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
     <item>
       <title>Native game on Android &amp; Porting Quest of Dungeons</title>
@@ -119,6 +349,110 @@ Most indie developers don’t have enough money to work on their game full-time 
       <guid>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</guid>
       <description>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.
 I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.</description>
+      <content:encoded><![CDATA[<p>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.</p>
+<p>I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.</p>
+<p>Back in 2010 I did some research and the NDK was pretty bad, I don’t think it even had stl at the time, but things have changed since then. I decided to jump in and try to port the whole thing. As a primary goal I want to keep as much native code as possible, because it’s already working, porting it to Java could only lead to further bugs in the process.</p>
+<p><strong>Tools</strong></p>
+<p>After some digging I found that you can use Visual Studio to code for Android (oh happy dayyy).</p>
+<p><em>Visual Studio 2010</em>: <a href="http://www.visualstudio.com/pt-br/visual-studio-homepage-vs.aspx">http://www.visualstudio.com/pt-br/visual-studio-homepage-vs.aspx</a><br>
+<em>VS-Android</em>: <a href="https://code.google.com/p/vs-android/">https://code.google.com/p/vs-android/</a><br>
+<em>Android NDK, Revision 10</em> : <a href="https://developer.android.com/tools/sdk/ndk/index.html">https://developer.android.com/tools/sdk/ndk/index.html</a><br>
+<em>Android SDK</em> : <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a><br>
+<em>ant-1.9.4</em>: <a href="http://ant.apache.org/bindownload.cgi">http://ant.apache.org/bindownload.cgi</a><br>
+<em>jdk 1.8.0</em>: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
+<p><strong>Dependencies</strong></p>
+<p>My next concern were some dependencies that I have on the other versions:</p>
+<p>OpenAL – for sound card access<br>
+Vorbis – for OGG load/parsing<br>
+FreeType 2 – for ttf loading<br>
+TinyXML – XML parser</p>
+<p>Fortunately all of these were possible to compile to Android.</p>
+<p><strong>Application</strong></p>
+<p>As an entry point I used android_native_app_glue which comes with the NDK, this way you can skip all Java (I have 0 lines of java code in the game)</p>
+<p>Another important thing is this line, telling our manifest file that we have no Java code</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;application</span> <span class="na">android:hascode=</span><span class="s">&#34;false&#34;</span> <span class="na">android:label=</span><span class="s">&#34;@string/app_name&#34;</span><span class="nt">&gt;</span>
+</span></span></code></pre></div><h3 id="resource-loading">Resource Loading</h3>
+<p>Usually you just need to do fopen(filename) to open a file. For each platform I would just have to concern with knowing the root folder of where the resources are. But Android works differently, all resources are compressed and you need to use AAssetManager to load them. This proceeds to unpack the file and retrieve a pointer to it. At least this is what I managed to understand from the process.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">AAsset</span><span class="o">*</span> <span class="n">asset</span> <span class="o">=</span> <span class="n">AAssetManager_open</span><span class="p">(</span><span class="n">android_asset_manager</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span></code></pre></div><p>But this caused a big problem, some of the dependencies, like TinyXML receive a string and proceeds to load file file using fopen(). This meant remaking all frameworks, which is not a very good perspective.</p>
+<p>I had some code using fopen and the fact that some external libs used it too posed a problem. I actually spent a couple of days contemplating what would be the best approach but after some research I found a very simple solution.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#define fopen(name, mode) android_file_open(name, mode)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="n">FILE</span><span class="o">*</span> <span class="nf">android_file_open</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">fname</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">);</span>
+</span></span></code></pre></div><p>Now every fopen will be replaced with android_file_open</p>
+<p>As for the function itself it will try to open the file with AssetManager and return a FILE*</p>
+<p>I also did a small hack that if you try to open the file with write permissions &lsquo;w&rsquo;, it will use the standard fopen, that way we can properly write files to the user documents, for save game data and other stuff.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">FILE</span><span class="o">*</span> <span class="nf">android_file_open</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">fname</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">mode</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">mode</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;w&#39;</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#undef  fopen
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>		<span class="k">return</span> <span class="n">fopen</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span><span class="n">mode</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#define fopen(name, mode) android_fopen(name, mode)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>        <span class="n">AAsset</span><span class="o">*</span> <span class="n">asset</span> <span class="o">=</span> <span class="n">AAssetManager_open</span><span class="p">(</span><span class="n">android_asset_manager</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">asset</span><span class="p">)</span> <span class="k">return</span> <span class="n">funopen</span><span class="p">(</span><span class="n">asset</span><span class="p">,</span> <span class="n">android_file_read</span><span class="p">,</span> <span class="n">android_file_write</span><span class="p">,</span> <span class="n">android_file_seek</span><span class="p">,</span> <span class="n">android_file_close</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="cp">#undef  fopen
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>	<span class="k">return</span> <span class="n">fopen</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span><span class="n">mode</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">int</span> <span class="nf">android_file_read</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">cookie</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">buf</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">AAsset_read</span><span class="p">((</span><span class="n">AAsset</span><span class="o">*</span><span class="p">)</span><span class="n">cookie</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">int</span> <span class="nf">android_file_write</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">cookie</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">buf</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="n">fpos_t</span> <span class="nf">android_file_seek</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">cookie</span><span class="p">,</span> <span class="n">fpos_t</span> <span class="n">offset</span><span class="p">,</span> <span class="kt">int</span> <span class="n">whence</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="n">AAsset_seek</span><span class="p">((</span><span class="n">AAsset</span><span class="o">*</span><span class="p">)</span><span class="n">cookie</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">whence</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">int</span> <span class="nf">android_file_close</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">cookie</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">AAsset_close</span><span class="p">((</span><span class="n">AAsset</span><span class="o">*</span><span class="p">)</span><span class="n">cookie</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Now just adding this line to the makefile to force the game/libraries to pre-include our file before everything else</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="nl">LOCAL_CFLAGS</span> <span class="p">:</span><span class="o">=</span> <span class="o">-</span><span class="n">g</span> <span class="o">-</span><span class="n">include</span> <span class="n">android_file_open</span><span class="p">.</span><span class="n">h</span>
+</span></span></code></pre></div><p>So now all my fopen code works perfectly without any change.</p>
+<h3 id="opengl">OpenGL</h3>
+<p>I was using GLES for the iOS version already so I had no problems with the code itself, I did however had some problems with performance on older devices, for example 2010 devices with version 2.3 (the game targets 2.3+)</p>
+<p>Especially on this function glCopyTexSubImage2D</p>
+<p><img loading="lazy" src="/wp-content/uploads/2014/08/soft_shadows.png" alt="soft shadows"  />
+</p>
+<p>The game uses some 2d soft shadows for giving a nice atmosphere, it&rsquo;s updated once in a while and I just used glCopyTexSubImage2D with a 256x256 texture instead of a VBO because it worked perfectly on everything else (including all iOS devices), but turns out this is very slow on older Android devices, so I ended up adding an option to the game to disable those effects. This way, newer devices can have all bells and whistles and older devices can still run the game fine. One of the testing devices was a Samsung Galaxy S1 and it went from 5 FPS to 30, which is more then acceptable to play. All 4.0+ devices should have no problem running this, and even if they have they can just disable the option.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2014/08/photo.png" alt="High Performance"  />
+</p>
+<h3 id="application-cycle">Application cycle</h3>
+<p>There is a strong possibility the GL view is trashed when the app goes to background, to save resources the view is recreated each time you go back from background to the app. This poses a problem since all gl objects, textures, shaders, VBOs are destroyed too. There is no secure way to ensure the view never gets destroyed while your app is running so I had to make sure each time the view is recreated I re-load all required assets once again. Really not happy with reloading everything again but its the only secure way, if you detect the view was destroyed and the app is still running you have no other choice. For this game it&rsquo;s not a big deal, I have few resources and they are fast to load so the user can&rsquo;t even tell. If I had a bigger game with lots of big textures I would probably had to show a loading screen again.</p>
+<h3 id="screen-size">Screen size</h3>
+<p>The different screen sizes for Android can pose a problem, but you can detect screen density and size and scale your game or take proper actions according to what you have.<!-- raw HTML omitted --><!-- raw HTML omitted -->
+Here&rsquo;s how you can detect it in C++</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">density</span> <span class="o">=</span> <span class="n">AConfiguration_getDensity</span><span class="p">(</span><span class="n">engine</span><span class="o">-&gt;</span><span class="n">app</span><span class="o">-&gt;</span><span class="n">config</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">screen_size</span> <span class="o">=</span> <span class="n">AConfiguration_getScreenSize</span><span class="p">(</span><span class="n">engine</span><span class="o">-&gt;</span><span class="n">app</span><span class="o">-&gt;</span><span class="n">config</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="n">density</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_DENSITY_DEFAULT</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_DENSITY_LOW</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_DENSITY_MEDIUM</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_DENSITY_HIGH</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="n">screen_size</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_SCREENSIZE_SMALL</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_SCREENSIZE_NORMAL</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_SCREENSIZE_LARGE</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="nl">ACONFIGURATION_SCREENSIZE_XLARGE</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>You can use screen size to detect if the current device is a tablet or a phone.</p>
+<h3 id="final">Final</h3>
+<p>Now that I finished the port it doesn&rsquo;t seem that I had to change that much, in fact the game code it self is nearly untouched, just the engine was altered to accommodate for Android. Porting took me ~ 2 months (I have a day job) and while working on a expansion for the game. It&rsquo;s not all chaos in the Android universe, although the hardware fragmentation poses some very serious problems, some devices may be too slow to run even the simpler games.</p>
+<p>If you have questions about anything else I didn&rsquo;t cover on this article, feel free to ask.</p>
+<p>In case you are interested in the game, it&rsquo;s out on <a href="http://store.steampowered.com/app/270050/">Steam</a>, <a href="https://itunes.apple.com/us/app/quest-of-dungeons/id698726956?mt=8">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.davidamador.quest_of_dungeons">Google Play</a>, feel free to check it out: <a href="http://www.questofdungeons.com">http://www.questofdungeons.com</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Quest of Dungeons is now available</title>
@@ -129,6 +463,23 @@ I never made anything for Android, in fact I never even used one before this, so
 I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.
 It was released on March 25th, for PC, Mac and iOS. You can get it on Steam, iOS App Store or directly from the site via Humble Store.
 I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought.</description>
+      <content:encoded><![CDATA[<p><a href="http://www.questofdungeons.com"><img loading="lazy" src="http://www.questofdungeons.com/imgs/icon.png" alt="Quest of Dungeons"  />
+  </a></p>
+<p>I’m pleased to announce that Quest of Dungeons is finally out.<br>
+I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.</p>
+<p>It was released on March 25th, for PC, Mac and iOS. You can get it on <a href="store.steampowered.com/app/270050">Steam</a>, <a href="http://itunes.apple.com/app/id698726956/">iOS App Store</a> or directly from the <a href="http://www.questofdungeons.com/">site</a> via Humble Store.</p>
+<p>I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought. As some of you know I have a day job so I had to take 2 vacation days to simple answer emails and do quick fixes, especially to the PC/Mac version. With each new software is natural to have problems at launch and Quest of Dungeons was no exception, and right now I’m still working on a daily basis in fixing some stuff and attending to some popular requests/changes from players to the game.</p>
+<p>It was an extremely complicated task to do on my own, managing marketing, answering emails and tweets, scouting Steam forums to see if players are reporting problems, oh and do some actual coding, because you know, bugs don’t fix themselves. But overall I’m happy with the results so far.</p>
+<p>The response to the game has been overall positive, and despite a few problems the game has gathered some good reviews.</p>
+<p>TouchArcade – 4/5 – <a href="http://toucharcade.com/2014/04/03/quest-of-dungeons-review/">Review</a><br>
+CriticalIndieGamer – 9/10 – <a href="http://criticalindiegamer.com/2014/04/quest-of-dungeons-review-pc/">Review</a><br>
+SoftPedia – 7/10 – <a href="softpedia.com/reviews/games/pc/Quest-of-Dungeons-Review-435164.shtml">Review</a><br>
+148Apps – 4/5 – <a href="http://www.148apps.com/reviews/quest-of-dungeons-review/">Review</a><br>
+PocketGamer – 6/10 – <a href="http://www.pocketgamer.co.uk/r/iPad/Quest+of+Dungeons/review.asp?c=58622&amp;srch=quest+of+dungeons">Review</a></p>
+<p>There are several <a href="https://www.youtube.com/results?search_query=%22quest+of+dungeons%22">youtube videos</a>, and I even caught a few people live streaming it on Twitch, it’s always awesome to see people playing your game, and having genuine reactions.</p>
+<p>This is one of my favourite moments (#spoilers)</p>
+<p>{&laquo; youtube ef9Z-Zs23GQ &gt;}}</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Quest of Dungeons approved on Steam</title>
@@ -139,6 +490,24 @@ I released all platforms on the same day, which was something I always wanted to
 I launched a GreenLight campaign for Quest of Dungeons on Jan 16 and it got greenlit on Jan 21, votes were coming in like crazy, I did not see that coming.
 Some sites posted about the game, like TouchArcade and PocketGamer, which was also very cool.
 So right now I’m working like crazy to implement everything from steam onto the game (Mac/PC) but I still don’t have an exact launch date, although the iOS version is 90% certain to come out this February.</description>
+      <content:encoded><![CDATA[<p>A lot of stuff happened since my last post.<br>
+I launched a <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=216200309">GreenLight campaign</a> for Quest of Dungeons on Jan 16 and it got greenlit on Jan 21, votes were coming in like crazy, I did not see that coming.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2014/02/quest-of-dungeons-steam-greenlight-approved.png" alt="QoD greenlight"  />
+</p>
+<p>Some sites posted about the game, like <a href="http://toucharcade.com/2014/01/17/upcoming-quest-of-dungeons/">TouchArcade</a> and <a href="http://www.pocketgamer.co.uk/r/iPad/Quest+of+Dungeons/news.asp?c=56736">PocketGamer</a>, which was also very cool.</p>
+<p>So right now I’m working like crazy to implement everything from steam onto the game (Mac/PC) but I still don’t have an exact launch date, although the iOS version is 90% certain to come out this February. I’m certain that testing only takes me so far and that most of the bugs will only get found after launch but I’m still trying to iron out as much as possible, I’ll try to update this more often, meanwhile here’s a video of the new trailer:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/2PSnXkMcnSA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>and of a visualisation of the git repository code, only shows aprox 6 months of work.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/497Q96lxAss" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
   </channel>
 </rss>

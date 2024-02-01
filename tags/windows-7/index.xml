@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>windows 7 on David Amador</title>
     <link>https://www.david-amador.com/tags/windows-7/</link>
@@ -20,6 +20,23 @@
       <guid>https://www.david-amador.com/2012/12/darys-legend-alpha-released/</guid>
       <description>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like Puwang and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.
 Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</description>
+      <content:encoded><![CDATA[<p><a href="http://www.daryslegend.com"><img loading="lazy" src="/wp-content/uploads/2012/12/header.jpg" alt=""  title="Dary&#39;s Legend"  />
+</a></p>
+<p>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like <a href="/2012/10/puwang-is-out-on-the-app-store/" title="Puwang is out on the App Store">Puwang</a> and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.</p>
+<p>Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</p>
+<p>So yesterday we released it, and you can buy the game right now, get an alpha build with a nice discount while it doesn’t reach the final build and help us funding the development along the way.</p>
+<p>The build is relatively stable, no major crashes crashes that we know and there’s a Windows and Mac build.</p>
+<p><a href="http://www.desura.com/games/darys-legend" title="Dary's Legend on Desura"><img loading="lazy" src="http://button.desura.com/play/outline/games/17158.png" alt="Desura Digital Distribution"  />
+</a></p>
+<p><em>Coder-Side-Notes</em></p>
+<p>Personally, and although I’m happy that I managed to get a Windows and Mac build released side-by-side I’m also a bit sad that I haven’t been able to release it simultaneously for Linux as well.</p>
+<p>Initially my thought was, “Windows only till the final release, I’ll deal with ports later”. But the market is harsh and getting into 2 different platforms can get you more chances of selling.</p>
+<p>There wasn’t a Mac build until a month ago, but I decided to take a couple of days, created a Xcode project and build the source.<br>
+After a few tweaks and hacks I had it running, why not release it? So right now, by using Git, since projects are already configured on Windows and Mac, I just need to commit changes, boot the other machine, build and that’s it.</p>
+<p>Linux is a little trickier, first I have little experience with that OS. Second I never had my engine running there, missing all kind of abstraction layers, directory access, mouse, keyboard, etc. And honestly right now I don’t have the time to be handling 3 versions at the same time. So Linux is probably going to be off the table until the final build is done.</p>
+<p>Oh, another thing is that, after getting it running on Mac, I tried building for iPad, the game runs almost perfectly at 60FPS @1024×768, apart from the interface not being prepared for Touch of course, it was designer for a 2 button mouse. So there might be an iPad eventually.</p>
+<p>This whole process has made me consider if I should’t find an “OK” (cause VS is the best) cross-platform IDE, like Eclipse or so. Configuring a project on Visual Studio, than on Xcode and another one on Linux (whatever I might end using) is an nightmare. On the other hand I could also take a plunge into makefiles with CMake…guess I’ll leave that to another project.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>How to Restore the Windows 7 MBR (Master Boot Record)</title>
@@ -31,6 +48,44 @@ Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of cours
 1 – Boot your computer to the Windows 7 DVD
 2 – Select your language and click next.
 3 – Click the button for “Use recovery tools”.</description>
+      <content:encoded><![CDATA[<p>So I had this crisis where the MBR got broken and Windows would not boot. This can happens for many reasons, maybe you tried to dual boot your PC and something went wrong.</p>
+<p>Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of course)!</p>
+<p>1 – Boot your computer to the Windows 7 DVD<br>
+2 – Select your language and click next.<br>
+3 – Click the button for “Use recovery tools”.<br>
+4 – Then select “Command Prompt”.</p>
+<p>Do this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Type: diskpart
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: <span class="k">select</span> disk <span class="m">0</span>
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">type: list volume
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a.png" alt=""  title="53599d1251414836-mbr-restore-windows-7-master-boot-record-mbr_17a"  />
+</p>
+<p>6 – Use your DVD drive letter so we can access the DVD</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Type: <span class="nb">exit</span>
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">to close Diskpart
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: G: <span class="o">(</span>DVD drive<span class="o">)</span>
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: <span class="nb">cd</span> boot
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">Type: dir
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/53600d1251414836-mbr-restore-windows-7-master-boot-record-mbr_18a.png" alt=""  title="53600d1251414836-mbr-restore-windows-7-master-boot-record-mbr_18a"  />
+</p>
+<p>7 – To restore the “bootsector code”:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">TYPE: bootsect /nt60 SYS /mbr
+</span></span><span class="line"><span class="cl">and press Enter
+</span></span></code></pre></div><p>You should be able to restart and boot you Windows now, if it fails, well, I’m out of ideas</p>
+]]></content:encoded>
     </item>
     <item>
       <title>What are your target platforms for games?</title>
@@ -39,6 +94,11 @@ Anyway where’s a quick tip on how to fix it (You need a Windows 7 DVD of cours
       <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
       <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
 The poll closes in about 6 days and you can select various options of course.</description>
+      <content:encoded><![CDATA[<p>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (<a href="http://twtpoll.com/dar51l">http://twtpoll.com/dar51l</a>) so that we can have more accurate results.</p>
+<p>The poll closes in about 6 days and you can select various options of course.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+]]></content:encoded>
     </item>
     <item>
       <title>How to Enable or Disable Quick Launch Bar Toolbar in Windows 7</title>
@@ -47,6 +107,18 @@ The poll closes in about 6 days and you can select various options of course.</d
       <guid>https://www.david-amador.com/2009/01/how-to-enable-or-disable-quick-launch-bar-toolbar-in-windows-7/</guid>
       <description>Quick Launch Bar is slowly being deprecated. It wasn’t enable by default on windows Vista and on the new Windows 7 (build 7000 for me) it isn’t even available on the toolbars list as the whole Taskbar been replaced with a new and enhanced one, which now allows shortcut icons to be placed on it directly.
 For users, like myself who miss Quick Launch bar here’s a how to enable it:</description>
+      <content:encoded><![CDATA[<p>Quick Launch Bar is slowly being deprecated. It wasn’t enable by default on windows Vista and on the new Windows 7 (build 7000 for me) it isn’t even available on the toolbars list as the whole Taskbar been replaced with a new and enhanced one, which now allows shortcut icons to be placed on it directly.</p>
+<p>For users, like myself who miss Quick Launch bar here’s a how to enable it:</p>
+<ol>
+<li>Right click on Windows 7 Taskbar, and point to <strong>Toolbars</strong> context menu item, and then select <strong>New Toolbar…</strong>.</li>
+<li>Browse to the following folder (easy way is to copy and paste to Address box to automatically navigate to):<strong>%SystemDrive%\Users\%username%\AppData\Roaming\Microsoft\Internet Explorer\</strong></li>
+<li>Locate and highlight the <strong>Quick Launch</strong> folder, and then click on <strong>Select Folder</strong> button.</li>
+<li>A Quick Launch Toolbar will be added to Windows Taskbar close to notification area. Unlock the Taskbar (right click on Taskbar and uncheck <strong>Lock the taskbar</strong>) to move the Quick Launch Toolbar.</li>
+<li>To move the Quick Launch Toolbar to the left of Taskbar next to Start button, unpin all application programs from the Superbar by right click on each and every icons, then select <strong>Unpin this program from taskbar</strong>.Move the both borders of Quick Launch Toolbar to the furthest left, and then re-pin the applications to Taskbar if you still require them.</li>
+<li>Optionally, right click on empty space inside Quick Launch Toolbar area, and unselect <strong>Show Title</strong> to remove the Quick Launch wording, or uncheck <strong>Show Text</strong> to remove the label next to the shortcuts and icons in Quick Launch bar.</li>
+<li>Add the icons and/or shortcuts to Quick Launch Bar by drag and drop to the Quick Launch Bar Toolbar or to %SystemDrive%\Users\%username%\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\ folder, while delete the icon as you would with any typical file (right click on it, and then select Delete).<strong>How to Disable and Remove Quick Launch Toolbar in Windows 7</strong>After added the Quick Launch bar in Windows 7, to remove the QuickLaunch Toolbar, just right click on Taskbar, and go to <strong>Toolbars</strong>, then uncheck <strong>Quick Launch</strong> menu item. The Quick Launch Toolbar will be removed from Taskbar and the toolbar item in Toolbars folder will also be deleted.</li>
+</ol>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

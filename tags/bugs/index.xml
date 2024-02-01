@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>bugs on David Amador</title>
     <link>https://www.david-amador.com/tags/bugs/</link>
@@ -20,6 +20,15 @@
       <guid>https://www.david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</guid>
       <description>I recently faced myself with a really annoying bug on Flex 3, the “Flex Modules” section of the properties dialog is blank.
 After some search on the internet some suggested that it might be a resolution problem. What the f**? So I have to switch resolution to use a program? Adobe Support turned out a dead end so still no permanent fix for this. There is however a small thing you can do, just adjust the divider between the list on the left hand side of the dialog and the right hand content area.</description>
+      <content:encoded><![CDATA[<p>I recently faced myself with a really annoying bug on Flex 3, the “Flex Modules” section of the properties dialog is blank.</p>
+<p><a href="/wp-content/uploads/2010/01/flex_missing_gui_bug.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/flex_missing_gui_bug-300x278.jpg" alt=""  title="flex_missing_gui_bug"  />
+</a></p>
+<p>After some search on the internet some suggested that it might be a resolution problem. What the f**? So I have to switch resolution to use a program? Adobe Support turned out a dead end so still no permanent fix for this. There is however a small thing you can do, just adjust the divider between the list on the left hand side of the dialog and the right hand content area. Just adjusting the divider a smidge will cause everything to magically appear.</p>
+<p><a href="/wp-content/uploads/2010/01/flex_missing_gui_fixed.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/flex_missing_gui_fixed-300x278.jpg" alt=""  title="flex_missing_gui_fixed"  />
+</a></p>
+<p>Even though It might seem obvious now it certainly gave me some headaches no being able to add source paths.</p>
+<p>Cheers</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CSS on David Amador</title>
     <link>https://www.david-amador.com/tags/css/</link>
@@ -20,6 +20,51 @@
       <guid>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</guid>
       <description>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&amp;rsquo;ve moved everything to static content, including this website.
 📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper.</description>
+      <content:encoded><![CDATA[<p>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&rsquo;ve moved everything to static content, including this website.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/shutting-down-server.gif" alt=""  />
+</p>
+<h1 id="-wordpress">📝 WordPress</h1>
+<p>Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.</p>
+<p>So for the past couple of years I&rsquo;ve been thinking in migrating it to something like Jekyll or Hugo, to serve it as static content. But the few times I looked into the process it seemed like a big task especially because I have 184 posts, I wasn&rsquo;t just starting from 0, I wanted to maintain the existing content, posts, images, URLs etc. So, a couple days ago I decided it was time.</p>
+<h1 id="-converting-and-moving-the-websites">📝 Converting and Moving the websites</h1>
+<h3 id="-questofdungeonscom">🔗 questofdungeons.com</h3>
+<p>This was the easier of them, it&rsquo;s just not working 100% as it was before (more on that in a bit). Site was just a couple of hand-made pages I hacked in HTML/CSS/JS years ago, so that was already done.</p>
+<p>The only problem was the <a href="https://www.questofdungeons.com/stats.html">stats page</a>  relied on a PHP script to pull the stats from Steam. PHP was out of the question since I wanted to host on GitHub, so I tried the full JavaScript approach, but that hits the <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> issue, and I would need a proxy for that, so for now I grabbed the last stats and it&rsquo;s serving it statically. I have to think of something else later since I don&rsquo;t have PHP anymore etc. But it&rsquo;s not important and the numbers aren&rsquo;t moving as much as they used to. I grabbed all files, pushed to a GitHub repo, activated pages, changed the nameservers, queued SSL cert, and voilá, the site is now live.</p>
+<h3 id="-upfallstudioscom">🔗 upfallStudios.com</h3>
+<p>The <a href="/2022/11/merged-personal-and-studio-blogs-into-one/">merging the Upfall Studios blog</a> a while ago was not an isolated act, I was thinking about this already. After the merge, <a href="https://www.upfallstudios.com">www.upfallstudios.com</a> was left with only the front page, which was static content already. I also had a doPresskit() <a href="https://www.upfallstudios.com/press/">page</a>, which was all PHP, and I need to keep it for games info etc. After a bit of search I found there is an <a href="https://github.com/Dvergar/dopresskit-static">alternative</a>, serving static content, so I converted and updated the site to use it, that way 100% of the site was ready. Easy and working as before.</p>
+<h3 id="-david-amadorcom">🔗 david-amador.com</h3>
+<p>And now I was free to focus on the one I knew would be a headache, this blog. Full wordpress site, no static content, everything dynamic using plugins, MySQL, PHP and custom .htaccess rules.</p>
+<ul>
+<li>❌ Jekyll</li>
+</ul>
+<p>From prior research, I was inclined to <a href="https://jekyllrb.com/">Jekyll</a> since all I read online was that it was good, also it&rsquo;s been around for 15 years, so it has proved it works and should be stable.
+But after a couple days of messing around with configs and pre-requisites, packages versions mismatches between Jekyll, ruby, wordpress exporters etc, I gave up. Booting up a new site can be achieved fast, but I needed to also be able to import all of my content, and that proved to be hard. Also I started thinking about the future of the blog, what if in a couple years the version breaks on modern OS version, and I can&rsquo;t run the latest one due to some incompatibility, even on a VM that would be a nightmare to keep around just for one site.</p>
+<ul>
+<li>✅ Hugo</li>
+</ul>
+<p>So I decided to go for <a href="https://gohugo.io/">Hugo</a>, single executable, it works, it&rsquo;s fast. Highly recommend it. The documentation does lacks sometimes, but between the forums, and looking at other people&rsquo;s pages on GitHub it&rsquo;s perfectly doable.</p>
+<p>I had to export the data, and there are a couple of Wordpress plugins for that, the problem was that my server was old, i386, outdated Ubuntu version, the PHP server version had no Zip support, which most of those plugins needed. After messing around a bit with the server trying to install the proper dependencies, which included actually breaking the entire thing and having to restore from backup, I decided a different approached. Created a Docker VM with wordpress, imported my existing WP files and database locally, installed the required plugins and was finally able to export all.</p>
+<p>📄 Now that I had all the files in markdown format, it was really more of a going through Hugo documentation, placing all freshly made files in place and cleaning up stuff. One neat thing is that you can run and edit an Hugo website live.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Hugo.exe server -D
+</span></span></code></pre></div><p>This will make the site run on localhost:1313/ , so while you edit the markdown files, it will keep refreshing, I didn&rsquo;t even had to press F5, I could have it side by side and Ctrl+S, super fast to iterate.</p>
+<p>🎥 There was a LOT of YouTube embed code, that I placed over the years, and was not ever working anymore on original website, some of it had Macromedia code, yeah, that old! So I tried to fix all that, then just regex replace some stuff like wrong image paths.</p>
+<p>🧑‍💻 I also had to fix some of the programming code block notation. I was using</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">pre</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;LANG&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>for code blocks, but the parser collapsed in a couple posts, leaving pre tags, which was helpful in searching for them actually. I fixed all I could find.</p>
+<p>🗣️ As for the comments, I had Disqus installed on Upfall Studios blog, but on this blog it was on WP system, so what I did was just import all the comments on Disqus and merged both. So the comment system should work on the bottom of all posts (say Hi if you want :)</p>
+<p>I&rsquo;m not sure if all the comments are there though, one particular post I had to go back and import it manually again, but it also had over 100 comments, so it might have failed the first time. I still have all the old data, so if needed (and I can spot it) I can always import it again on Disqus.</p>
+<p>📰 The RSS feed should theoretically still work for everyone who had from the old blog, but I&rsquo;m not 100% sure, once I put this post live I guess I&rsquo;ll know.</p>
+<p>💻 So my current workflow is: I have a git repo with all the markdown and website code and I have the live website as a submodule, so whenever I made a change, I export it with Hugo, git commit all changes and GitHub pages just deploys them, feels like magic :D</p>
+<h3 id="-speed">🚀 Speed</h3>
+<p>Oh its much faster, obviously, but look at the changes of before (left) and after (right) using PageSpeed Insights.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/david_amador_site_wordpress_vs_hugo_speed.png" alt=""  />
+</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Still there? Well so far I&rsquo;m happy with the move, I do miss the nice WordPress backend thing if I&rsquo;m being honest, but I can live without it. I feel like in the long run I won&rsquo;t miss having to maintain that server, also the costs. Right now I&rsquo;m editing this on Obsidian, about to commit and see if it goes live, RSS and all. If you find any broken stuff or have suggestions let me know, either mastodon, email or a comment here.</p>
+<p>Until the next time, where hopefully I&rsquo;ll talk about games! Thanks for reading.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>How to make a clickable div</title>
@@ -30,6 +75,30 @@
 The following code is for JQuery but switching it to your favorite JS framework should be very easy.
 First start by adding this to your div
 &amp;lt;div class=&amp;#34;clickable&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; Now a little css to simulate the pointer on that div</description>
+      <content:encoded><![CDATA[<p>Making a clickable text or image is easy, just add the &lt;a&gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.<br>
+The following code is for JQuery but switching it to your favorite JS framework should be very easy.</p>
+<p>First start by adding this to your div</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#34;clickable&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/div&gt;</span>
+</span></span></code></pre></div><p>Now a little css to simulate the pointer on that div</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">clickable</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span> <span class="k">cursor</span><span class="p">:</span><span class="kc">pointer</span><span class="p">;</span> <span class="p">}</span>
+</span></span></code></pre></div><p>Now onto the JavaScript part</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span><span class="o">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">$</span><span class="p">(</span><span class="s2">&#34;div.clickable&#34;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nb">window</span><span class="p">.</span><span class="nx">location</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&#34;url&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span></span></code></pre></div><p>You can use as many clickable divs as you want.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Test your website on multiple browsers</title>
@@ -37,6 +106,10 @@ First start by adding this to your div
       <pubDate>Wed, 21 Oct 2009 22:06:57 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
       <description>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</description>
+      <content:encoded><![CDATA[<p>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</p>
+<p>Adobe has launched a neat website for testing this, just go to <a href="https://browserlab.adobe.com/">https://browserlab.adobe.com/</a>, register an account and test it for yourself, it was a side by site view and even a <a href="http://en.wikipedia.org/wiki/Onion_skinning">Onion view</a></p>
+<!-- raw HTML omitted -->
+]]></content:encoded>
     </item>
     <item>
       <title>How to style a blockquote with CSS</title>
@@ -47,6 +120,25 @@ First start by adding this to your div
 You can do this by using
 &amp;lt;blockquote&amp;gt; Im quoting someone else&amp;lt;/blockquote&amp;gt; But it still needs a little touch, so on your css file add this.
 blockquote { background:transparent url(blockquote.gif) no-repeat scroll 0 0; font-family:Georgia,&amp;#34;Times New Roman&amp;#34;,Times,serif; font-size:1em; margin:15px 0; min-height:32px; padding:0 50px; } Save this image : and watch the result.</description>
+      <content:encoded><![CDATA[<p>Blockquotes are an easy way to make your website stand out, by indicating that you are quoting someone you give a more professional approach to you website.<br>
+You can do this by using</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;blockquote&gt;</span> Im quoting someone else<span class="nt">&lt;/blockquote&gt;</span>
+</span></span></code></pre></div><p>But it still needs a little touch, so on your css file add this.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">blockquote</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">background</span><span class="p">:</span><span class="kc">transparent</span> <span class="nb">url</span><span class="p">(</span><span class="sx">blockquote.gif</span><span class="p">)</span> <span class="kc">no-repeat</span> <span class="kc">scroll</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">font-family</span><span class="p">:</span><span class="n">Georgia</span><span class="p">,</span><span class="s2">&#34;Times New Roman&#34;</span><span class="p">,</span><span class="n">Times</span><span class="p">,</span><span class="kc">serif</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">font-size</span><span class="p">:</span><span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">margin</span><span class="p">:</span><span class="mi">15</span><span class="kt">px</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">min-height</span><span class="p">:</span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">padding</span><span class="p">:</span><span class="mi">0</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Save this image : <a href="/wp-content/uploads/2009/10/blockquote.gif"><img loading="lazy" src="/wp-content/uploads/2009/10/blockquote.gif" alt="blockquote"  title="blockquote"  />
+</a> and watch the result. It will turn out something like this:</p>
+<blockquote>
+<p>Im quoting someone else</p>
+</blockquote>
+]]></content:encoded>
     </item>
     <item>
       <title>-moz-opacity removed from Firefox 3.5</title>
@@ -55,6 +147,9 @@ blockquote { background:transparent url(blockquote.gif) no-repeat scroll 0 0; fo
       <guid>https://www.david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</guid>
       <description>Well i just found out that Mozzila removed -moz-opacity from Firefox 3.5. It’s been deprecated for a long time and you can how replace it for the standard css property opacity.
 So something like -moz-opacity: 0.4 is now opacity: 0.4;</description>
+      <content:encoded><![CDATA[<p>Well i just found out that Mozzila removed -moz-opacity from Firefox 3.5. It’s been deprecated for a long time and you can how replace it for the standard css property opacity.</p>
+<p>So something like -moz-opacity: 0.4 is now opacity: 0.4;</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

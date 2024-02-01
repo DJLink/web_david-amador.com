@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mac OSX on David Amador</title>
     <link>https://www.david-amador.com/tags/mac-osx/</link>
@@ -20,6 +20,21 @@
       <guid>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</guid>
       <description>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.
 I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too.</description>
+      <content:encoded><![CDATA[<p>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.<br>
+I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too. I’m just polishing the game and finishing some bugs, but I’m close, I can feel it =)<br>
+Right now I’m targeting for a late January release, but I’ll have a more precise date in the next few weeks.</p>
+<p>Meanwhile here are a couple of screenshots.</p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01-300x187.png" alt="quest_of_dungeons_mac_01"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02-300x187.png" alt="quest_of_dungeons_mac_02"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03-300x187.png" alt="quest_of_dungeons_mac_03"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04-300x187.png" alt="quest_of_dungeons_mac_04"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05-300x187.png" alt="quest_of_dungeons_mac_05"  />
+</a></p>
+]]></content:encoded>
     </item>
     <item>
       <title>First Macbook Pro</title>
@@ -28,6 +43,17 @@ I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps w
       <guid>https://www.david-amador.com/2013/12/first-macbook-pro/</guid>
       <description>I’ve been developing apps on Mac for almost 2 years now. But usually it’s pretty much just a develop on Windows, boot my 2009 Mini Mac, build on XCode and deploy.
 I always wanted to give it a try at using MacOSX as the main development environment, but the mini mac is too slow and well, Visual Studio. Also I don’t like that new Windows 8 that much. I hope Win9 gets back on track, in the line of Win 7.</description>
+      <content:encoded><![CDATA[<p>I’ve been developing apps on Mac for almost 2 years now. But usually it’s pretty much just a develop on Windows, boot my 2009 Mini Mac, build on XCode and deploy.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" alt="Mini Mac"  />
+</p>
+<p>I always wanted to give it a try at using MacOSX as the main development environment, but the mini mac is too slow and well, Visual Studio. Also I don’t like that new Windows 8 that much. I hope Win9 gets back on track, in the line of Win 7. I never owned a Mac other than the Mac Mini but since recently Apple released some new Macbook pro models, which have <a href="http://en.wikipedia.org/wiki/Haswell_(microarchitecture)">Haswell</a> processors and I decided to get one.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2013/11/first-macbook-pro-2013.jpg" alt="first-macbook-pro-2013"  />
+</p>
+<p>Since on my day job I work on Linux and I’m trying to use only Mac at home I haven’t used Windows for over two months.<br>
+Overall the experience has been great, mostly because it’s an extremely fast machine. A full build of Quest of Dungeons (game+engine) takes around 1m, on my old computer a full build would take between 4-5m. Oh and the retina screen, so gorgeous, everything else seems out of focus now, it’s really a huge difference, coding on that screen is a real treat.<br>
+The window management on OSX is really cool, it remembers the last positions of multiple displays, so if I unplug the laptop from my external monitor, even if I move around the windows and then reconnect the monitor it remembers the dual-monitor windows positions and puts them into place, time saver.</p>
+<p>There are a few issues/dislikes I have with OSX, but most of them are habits from windows.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Dary&#39;s Legend alpha released</title>
@@ -36,6 +62,23 @@ I always wanted to give it a try at using MacOSX as the main development environ
       <guid>https://www.david-amador.com/2012/12/darys-legend-alpha-released/</guid>
       <description>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like Puwang and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.
 Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</description>
+      <content:encoded><![CDATA[<p><a href="http://www.daryslegend.com"><img loading="lazy" src="/wp-content/uploads/2012/12/header.jpg" alt=""  title="Dary&#39;s Legend"  />
+</a></p>
+<p>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like <a href="/2012/10/puwang-is-out-on-the-app-store/" title="Puwang is out on the App Store">Puwang</a> and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.</p>
+<p>Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</p>
+<p>So yesterday we released it, and you can buy the game right now, get an alpha build with a nice discount while it doesn’t reach the final build and help us funding the development along the way.</p>
+<p>The build is relatively stable, no major crashes crashes that we know and there’s a Windows and Mac build.</p>
+<p><a href="http://www.desura.com/games/darys-legend" title="Dary's Legend on Desura"><img loading="lazy" src="http://button.desura.com/play/outline/games/17158.png" alt="Desura Digital Distribution"  />
+</a></p>
+<p><em>Coder-Side-Notes</em></p>
+<p>Personally, and although I’m happy that I managed to get a Windows and Mac build released side-by-side I’m also a bit sad that I haven’t been able to release it simultaneously for Linux as well.</p>
+<p>Initially my thought was, “Windows only till the final release, I’ll deal with ports later”. But the market is harsh and getting into 2 different platforms can get you more chances of selling.</p>
+<p>There wasn’t a Mac build until a month ago, but I decided to take a couple of days, created a Xcode project and build the source.<br>
+After a few tweaks and hacks I had it running, why not release it? So right now, by using Git, since projects are already configured on Windows and Mac, I just need to commit changes, boot the other machine, build and that’s it.</p>
+<p>Linux is a little trickier, first I have little experience with that OS. Second I never had my engine running there, missing all kind of abstraction layers, directory access, mouse, keyboard, etc. And honestly right now I don’t have the time to be handling 3 versions at the same time. So Linux is probably going to be off the table until the final build is done.</p>
+<p>Oh, another thing is that, after getting it running on Mac, I tried building for iPad, the game runs almost perfectly at 60FPS @1024×768, apart from the interface not being prepared for Touch of course, it was designer for a 2 button mouse. So there might be an iPad eventually.</p>
+<p>This whole process has made me consider if I should’t find an “OK” (cause VS is the best) cross-platform IDE, like Eclipse or so. Configuring a project on Visual Studio, than on Xcode and another one on Linux (whatever I might end using) is an nightmare. On the other hand I could also take a plunge into makefiles with CMake…guess I’ll leave that to another project.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>What are your target platforms for games?</title>
@@ -44,6 +87,11 @@ Around two months ago I coincidentally bumped into a conversation about funding 
       <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
       <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
 The poll closes in about 6 days and you can select various options of course.</description>
+      <content:encoded><![CDATA[<p>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (<a href="http://twtpoll.com/dar51l">http://twtpoll.com/dar51l</a>) so that we can have more accurate results.</p>
+<p>The poll closes in about 6 days and you can select various options of course.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+]]></content:encoded>
     </item>
     <item>
       <title>Developing on Mac and Basalt running on the iPhone</title>
@@ -53,6 +101,48 @@ The poll closes in about 6 days and you can select various options of course.</d
       <description>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.
 If you follow me on twitter you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.
 So it all started with my wish to port Vizati to the iPhone, since the game is already running on PC, Xbox360 and Windows Phone 7 one can only wish for an easy and quick port since pretty much all base code is done.</description>
+      <content:encoded><![CDATA[<p>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.<br>
+If you follow me on <a href="https://www.twitter.com/DJ_Link">twitter</a> you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.</p>
+<p>So it all started with my wish to port Vizati to the iPhone, since the game is already running on <a href="http://www.youtube.com/watch?v=F9vf17HSXcQ">PC</a>, Xbox360 and <a href="http://www.youtube.com/watch?v=hX18tuujAEY">Windows Phone 7</a> one can only wish for an easy and quick port since pretty much all base code is done.</p>
+<p>As you know for developing on the iPhone you require an actual Mac, I know there’s virtualization but my 5 year old PC can’t take it, believe me I tried. So I bought myself a mini mac which are much cheaper that IMac and macbooks, around $499 or so, and another extra $30 for a mini-Dvi to VGA adapter for my 1080p Samsung.</p>
+<p>Let me tell you, that bastard is silent, I mean I can’t listen to anything, powering off my desktop PC and I have this relaxing environment to work in, it’s great for coding during the night when everyone is asleep. I can only hear my keyboard strokes and my cat snoring.<br>
+Here’s a picture of it near the keyboard, it’s really small.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" alt=""  title="Mini Mac"  />
+</p>
+<p>Now, moving on to the development part, on MacOS your IDE is XCode.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/xcode.png" alt=""  title="xcode"  />
+</p>
+<p>It’s no Visual Studio but it gets the job done. Has some strange shortcuts but I’ve found a neat <a href="https://web.archive.org/web/20150413150630/http://www.1729.us/xcode/Xcode%20Shortcuts.pdf">shortcut pdf</a>.</p>
+<p>Next was my struggle for testing available engines and frameworks and learning how much of Objective-C do you have to know and can I run C++ on it?</p>
+<p>I tested some engines:<br>
+<a href="http://www.cocos2d-iphone.org/">Cocos2D</a> – 2D engine, Purely Objective-C, very consistent API, it’s was very close to my way of making things on Basalt actually, with scenes and layers.<br>
+<a href="https://web.archive.org/web/20100726050150/http://sio2interactive.com/SIO2_Free_Open_Source_3D_Game_Engine_for_iPad,_iPhone_and_iPod_Touch/SIO2_Free_Open_Source_3D_Game_Engine_for_iPad,_iPhone_and_iPod_Touch.html">SIO2</a> – Mainly 3D stuff, might be a good starting point, it’s mainly coded in C++, has built in physics, Lua, lightning and shadow<br>
+<a href="http://code.google.com/p/oolongengine/">OolongEngine</a> – 3D engine, imports .3dsmax and .blend, bullet physics<br>
+<a href="http://www.bork3d.com/">Bork3D</a> – C++ engine based on Rude Engine. Seems good but I could only find one game made with it from the author itself, lacks documentation but at least it works. Had major performance issues on the iPad sample that comes with the SDK.</p>
+<p>I research a little on those well know tools such as Unity3D, ITorque, etc but those kind of editor aren’t really my thing.</p>
+<p>At one point I convinced myself that the way to go would be learning Objective-C since most tutorials for iPhone are written using it, it’s Iphone OS native language and everyone recommends learning it, but after a few hours watching the amount of square brackets that things has on it I decided another way.</p>
+<p>I ported my C# engine Basalt to C++, literally making .h and .cpp files. I hooked up my main animation and draw pump to some Objective-C classes (don’t forget to use .mm if you are mixing Objective-C with C++) and everything started working.</p>
+<p>The next bit was implementing the SpriteBatch class and make it draw in OpenGL, took me around two days to have the Matrices working, correct texture mapping to quads, Alpha Blend and Additive. The idea is that by the time I port an XNA game to C++ I can still use SpriteBatches, Texture2D etc.</p>
+<p>After these two weeks of development here’s what’s working:</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/IPhone-Basalt-Particle-System-2D.png" alt=""  title="iPhone Basalt Particle System 2D"  />
+</p>
+<ul>
+<li>Draw Sprites – SpriteBatch is working, texture regions, SpriteBlendModes, Matrices etc</li>
+<li>Sprite Animations</li>
+<li>Particle System 2D – Although not a priority it allowed me to test Additive</li>
+<li>Independent Resolution Rendering – Wasn’t much of deal actually, it’s basically a matrix</li>
+<li>JPG/PNG load – I made this in Objective-C, 20 lines of code or so</li>
+</ul>
+<p>Here’s a video showing what I have so far:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ALzSzhvp2ns" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Next in my list is Input, Script, music and then porting the whole game to C++, which I think will work nicely once the whole engine base is done.<br>
+Oh, and probably try to get a real device for proper testing.</p>
+<p>PS: Monkey Island 2 Special Edition is awesome….</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Testing iPhone Sdk and MacOSX</title>
@@ -62,6 +152,12 @@ So it all started with my wish to port Vizati to the iPhone, since the game is a
       <description>So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.
 First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.
 I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen.</description>
+      <content:encoded><![CDATA[<p>So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.</p>
+<p>First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.</p>
+<p>I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen. Too bad I don’t have an actual Iphone to test it, so I just used the provided iphone simulator.</p>
+<p>The simulator is actually very neat but lacks the accelerometer functions. Just touch is available. Although this may seem logical an option to simulate the iphone rotation shouldn’t be that very hard, but then again they want to sell them like hot muffins.</p>
+<p>Next weekend I’ll try to make a basic and fully functional game.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

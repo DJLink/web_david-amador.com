@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>FxCop on David Amador</title>
     <link>https://www.david-amador.com/tags/fxcop/</link>
@@ -21,6 +21,15 @@
       <description>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.
 For those who don’t know you can download it here and read the MSDN documentation here.
 FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</description>
+      <content:encoded><![CDATA[<p>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.</p>
+<p>For those who don’t know you can download it <a href="http://www.microsoft.com/downloads/details.aspx?familyid=3389F7E4-0E55-4A4D-BC74-4AEABB17997B&amp;displaylang=en">here</a> and read the MSDN documentation <a href="http://msdn.microsoft.com/en-us/library/bb429476%28VS.80%29.aspx">here</a>.</p>
+<p>FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</p>
+<p>Basically it suggests you better name conventions, members that could be static, using arrays where you are using multidimensional ones, It even reported an incorrect way I used Garbage Collector.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/fxcop_01.png" alt=""  title="fxcop_01"  />
+</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/fxcop_02.png" alt=""  title="fxcop_02"  />
+</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

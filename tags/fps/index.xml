@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>fps on David Amador</title>
     <link>https://www.david-amador.com/tags/fps/</link>
@@ -21,6 +21,46 @@
       <description>So I’ve been working on my new game and I’m doing some tweaks here and there on the engine.
 Mainly with the rendering section, trying to squeeze as much as possible, thus maintaining an acceptable framerate. It’s not like I’m doing a heavily graphic game but I like to know that It can be used even on slower pcs and that I’m not using more cycles than necessary.
 This past week and after reading a bunch of stuff and keynotes from John Carmack about Rage (60FPS ftw) I decided to measure my own stuff.</description>
+      <content:encoded><![CDATA[<p>So I’ve been working on my new game and I’m doing some tweaks here and there on the engine.</p>
+<p>Mainly with the rendering section, trying to squeeze as much as possible, thus maintaining an acceptable framerate. It’s not like I’m doing a heavily graphic game but I like to know that It can be used even on slower pcs and that I’m not using more cycles than necessary.</p>
+<p>This past week and after reading a bunch of stuff and keynotes from John Carmack about Rage (60FPS ftw) I decided to measure my own stuff.</p>
+<p>So let’s break this down, your framerate or FPS is the number of images you draw per second, not just that, you have to animate stuff, play sound, collisions, etc.</p>
+<p>Most 3D games nowadays target 30 FPS, it’s the minimum acceptable before you start noticing slowdowns or not so smooth animations, for 2D games it’s a pretty realistic objective to target 60FPS.</p>
+<p>Let say you want to target 30 FPS,</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="mi">1</span> <span class="n">second</span> <span class="o">=</span> <span class="mi">1000</span> <span class="n">milliseconds</span>
+</span></span><span class="line"><span class="cl">  <span class="mi">1000</span><span class="o">/</span><span class="mi">30</span> <span class="o">=</span> <span class="o">~</span><span class="mf">33.3</span> <span class="n">milliseconds</span>
+</span></span></code></pre></div><p>That means that for 30 FPS you have to calculate, animate, do collision and draw the scene in under 33.3 milliseconds. And do it again 30 more times.<br>
+Sounds hard doesn’t it?</p>
+<p>At 60 FPS it’s even worse</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="mi">1000</span><span class="o">/</span><span class="mi">60</span> <span class="o">=</span> <span class="o">~</span><span class="mf">16.6</span> <span class="n">milliseconds</span>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2011/08/SonicRunMediumAni.gif" alt=""  title="SonicRunMediumAni"  />
+</p>
+<p>16.6 milliseconds to do a full loop on your engine. Actually with modern technology it’s not an impressive accomplishment depending on what you are doing but it’s a good practice to<br>
+look at these numbers, consider them while you code.</p>
+<p>Now I’ve been making some tests on my own engine and I placed 2000 sprites each with a sprite animation and an A* pathfinding (2000 paths can be cached at a time) rendering at 100 FPS.<br>
+It runs well and each loops takes 9ms.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   <span class="mi">1000</span><span class="o">/</span><span class="mi">100</span> <span class="o">=</span> <span class="mi">10</span><span class="n">ms</span>
+</span></span></code></pre></div><p>Each loop could take up to 10ms, so I’m wasting 1ms for each loop, bringing the sum up to 100ms per second.<br>
+When I say waste it doesn’t mean you could be doing something else but you could make you game a bit more CPU friendly make making it sleep that extra millisecond each cycle.<br>
+This will actually make you game use less of a processor and you can even check it on the Windows Task Manager.</p>
+<p>At just 60 FPS, let’s say I’m drawing everything at 9ms too, but I could take up to 16.6</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   <span class="mi">16</span> <span class="o">-</span> <span class="mi">9</span> <span class="o">=</span> <span class="mi">7</span><span class="n">ms</span>
+</span></span><span class="line"><span class="cl">   <span class="mi">7</span> <span class="o">*</span> <span class="mi">60</span> <span class="p">(</span><span class="n">FPS</span><span class="p">)</span> <span class="o">=</span> <span class="mi">420</span><span class="n">ms</span>
+</span></span></code></pre></div><p>You can make your application sleep for almost half of a second and the game would run exactly the same<br>
+Isn’t that something?</p>
+<p>I’ve made a change on my pump to accommodate this and tested on Vizati, now most of the time it uses 12% of the CPU with bursts of 32%.<br>
+Of course by measuring this you can also do cooler stuff like, let’s say you walk by a heavy area, or need to do some calculations, by lowering the intended FPS and drawing less times in that second you can get the other calculations done faster and return to a normal FPS much faster.</p>
+<p>Well I hope this wasn’t too boring =)</p>
+<blockquote>
+<p>EDIT:<br>
+After talking to some other devs there are mixed feelings about the benefits of putting your application to sleep those extra milliseconds. One thing that’s worth mentioning is that when you put your application to sleep you only guarantee that it will be idle for a minimum of let’s say 5ms, you may only regain control after 7ms, that’s really up to the OS.<br>
+So my suggestion is, leave it as an option in the game, CPU throttling or something. Each user may test and see if it benefits, and in a couple of years it may in fact make some difference with to futuristic 30 core cpu where you don’t need to be using 100% of it. Starcraft 1 got a patch to do just that some time ago.</p>
+</blockquote>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

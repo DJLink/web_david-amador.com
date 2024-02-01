@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>video on David Amador</title>
     <link>https://www.david-amador.com/tags/video/</link>
@@ -20,6 +20,27 @@
       <guid>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
       <description>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.
 I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry.</description>
+      <content:encoded><![CDATA[<p>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.</p>
+<p>I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry. It was funny, built a couple of games, made part of big projects, learned much, learned that even more is to be learned. One year after I started making small prototype games on my free times as a joke and websites now and then for a couple of extra bucks.</p>
+<p>Around August 2006 I approached <a href="http://www.twitter.com/_m0r3n4">Rita Silva</a> with an idea of building a small creative company. I knew her work, she’s very talented, check her <a href="http://www.rita-silva.com">blog</a> and a person like her creating all the looks and stuff for my projects would be a great help.</p>
+<p>After a few weeks we came up with the name Different Pixel and registered in on October 10th. Made our first layout and we started selling hosting packages, we didn’t get many clients but some of them are still with us and are pleased.</p>
+<p>Due to our full-time job things were always kind of slow on Different Pixel evolution, we couldn’t accept many jobs due to time restrictions.</p>
+<p>Now and without jobs we decided to try and take this small project to higher grounds, we are no longer inexperienced and without background. We currently are working on two small games, but our main focus is still web development, since we have to pay bills =P</p>
+<p>I’m not going to reveal much of the games now, this is just a small experience to see how the public reacts, if positive we can move to bigger projects.</p>
+<p><a href="/wp-content/uploads/2009/12/sapphire1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire1-300x193.jpg" alt=""  title="sapphire"  />
+</a></p>
+<p>Also I’ve been working like crazy on the past days on our internal xna map editor Sapphire. The idea is that you can use it with your own engine. Many features are done and much more are on the works.</p>
+<p>Here’s a video showing an alpha version. Keep in mind that this is a work in progress.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/GexS0y9Y2kM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>I’ll be posting an update soon and possibly a beta to the public, the idea is to sell at a low price.</p>
+<p>Stay tuned on our <a href="http://www.differentpixel.com">website</a>, <a href="http://www.twitter.com/DifferentPixel">Twitter </a>or <a href="http://www.facebook.com/DifferentPixel">Facebook </a>for updates, we promise lot’s of news soon.</p>
+<p>Wish us luck!!</p>
+<p>HAPPY NEW YEAR to everyone 😀</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Basalt and Sapphire Updates</title>
@@ -29,6 +50,29 @@ I worked there since 2006, almost 4 years, I joined the team back then in the ho
       <description>Lately all my free time has been spent adding new features to Basalt and developing Sapphire.
 Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.
 Here’s a screenshot of the previous alpha version:</description>
+      <content:encoded><![CDATA[<p>Lately all my free time has been spent adding new features to <a href="/tags/basalt/">Basalt</a> and developing <a href="/tags/sapphire/">Sapphire</a>.</p>
+<p>Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.</p>
+<p>Here’s a screenshot of the previous alpha version:</p>
+<p><a href="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Sapphire-Level-Editor-150x150.jpg" alt="Sapphire Level Editor"  title="Sapphire Level Editor"  />
+</a></p>
+<p>I kept working on the engine itself and just making small prototypes for testing it. Finally 2 weeks ago I decided to start from scratch and just use xna to build it. Not much is done but I have little time after work to develop. Anyway I’m happy since I already have textures import, basic object positioning, scaling and a Layer System.</p>
+<p><a href="/wp-content/uploads/2009/12/sapphire.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire-150x150.jpg" alt="sapphire"  title="sapphire"  />
+</a></p>
+<p>This is an early stage of the new editor, it’s from last week.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/D33185iWTQU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>When I have some cool stuff I’ll update a new video.</p>
+<p>On the engine side, today I decided to add a Console component to the engine, much like Source Engine and Quake consoles, to input commands, here’s the result:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ZYNBfdu5UqM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Hopefully by the beginning of next year I’ll have a beta version that I can release to the public for testing. I intend to launch a free and a payed version of the engine+ editor. My only dout is if I trim down some functions or just release it as free for non-commercial usage only.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Building an 2D Game Engine in XNA - Part 1</title>
@@ -40,6 +84,22 @@ Keep in mind that while the main focus is 2d nothing prevents us from adding the
 It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
 Requirements:
 You must have some Object Oriented Programming background to full understand what we will do here.</description>
+      <content:encoded><![CDATA[<p>I decided to starting writing a series of tutorials for building an 2d XNA game engine.</p>
+<p>Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.</p>
+<p>It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.</p>
+<p>Requirements:</p>
+<ul>
+<li>You must have some <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">Object Oriented Programming</a> background to full understand what we will do here.</li>
+<li><a href="http://creators.xna.com/">XNA 3.1</a></li>
+<li><a href="http://www.microsoft.com/express/">Visual C# Express or Professional 2008</a></li>
+</ul>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Nnu_9qk6Jfs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>XNA Camera 2d with zoom and rotation</title>
@@ -49,6 +109,92 @@ You must have some Object Oriented Programming background to full understand wha
       <description>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too
 One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
 Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself.</description>
+      <content:encoded><![CDATA[<p><strong>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too</strong></p>
+<p>One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.</p>
+<p>Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself. Although this work from my point of view it’s not elegant and you can’t have neat features like zooming and rotation. So for my tutorial I’ll do all transformations using a Matrix.<br>
+Start off by creating the basic class Camera2d</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Camera2d</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">protected</span> <span class="kt">float</span>          <span class="n">_zoom</span><span class="p">;</span> <span class="c1">// Camera Zoom</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">public</span> <span class="n">Matrix</span>             <span class="n">_transform</span><span class="p">;</span> <span class="c1">// Matrix Transform</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">public</span> <span class="n">Vector2</span>          <span class="n">_pos</span><span class="p">;</span> <span class="c1">// Camera Position</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">protected</span> <span class="kt">float</span>         <span class="n">_rotation</span><span class="p">;</span> <span class="c1">// Camera Rotation</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kd">public</span> <span class="n">Camera2d</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_zoom</span> <span class="p">=</span> <span class="m">1.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_rotation</span> <span class="p">=</span> <span class="m">0.0f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">_pos</span> <span class="p">=</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Now that we have the basic setup onto the variables it’s time to create a couple of functions to manipulate the variables</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Sets and gets zoom</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kt">float</span> <span class="n">Zoom</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_zoom</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">set</span> <span class="p">{</span> <span class="n">_zoom</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="k">if</span> <span class="p">(</span><span class="n">_zoom</span> <span class="p">&lt;</span> <span class="m">0.1f</span><span class="p">)</span> <span class="n">_zoom</span> <span class="p">=</span> <span class="m">0.1f</span><span class="p">;</span> <span class="p">}</span> <span class="c1">// Negative zoom will flip image</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="kd">public</span> <span class="kt">float</span> <span class="n">Rotation</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">get</span> <span class="p">{</span><span class="k">return</span> <span class="n">_rotation</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">set</span> <span class="p">{</span> <span class="n">_rotation</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">        <span class="c1">// Auxiliary function to move the camera</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="k">void</span> <span class="n">Move</span><span class="p">(</span><span class="n">Vector2</span> <span class="n">amount</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">           <span class="n">_pos</span> <span class="p">+=</span> <span class="n">amount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">// Get set position</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="n">Vector2</span> <span class="n">Pos</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">             <span class="k">get</span><span class="p">{</span> <span class="k">return</span>  <span class="n">_pos</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">             <span class="k">set</span><span class="p">{</span> <span class="n">_pos</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> 
+</span></span></code></pre></div><p>And now for the function that calculates all the transformations</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">Matrix</span> <span class="n">get_transformation</span><span class="p">(</span><span class="n">GraphicsDevice</span> <span class="n">graphicsDevice</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">_transform</span> <span class="p">=</span>       <span class="c1">// Thanks to o KB o for this solution</span>
+</span></span><span class="line"><span class="cl">	  <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateTranslation</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">(-</span><span class="n">_pos</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="p">-</span><span class="n">_pos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="m">0</span><span class="p">))</span> <span class="p">*</span>
+</span></span><span class="line"><span class="cl">								 <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateRotationZ</span><span class="p">(</span><span class="n">Rotation</span><span class="p">)</span> <span class="p">*</span>
+</span></span><span class="line"><span class="cl">								 <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateScale</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="n">Zoom</span><span class="p">,</span> <span class="n">Zoom</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span> <span class="p">*</span>
+</span></span><span class="line"><span class="cl">								 <span class="n">Matrix</span><span class="p">.</span><span class="n">CreateTranslation</span><span class="p">(</span><span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="n">ViewportWidth</span> <span class="p">*</span> <span class="m">0.5f</span><span class="p">,</span> <span class="n">ViewportHeight</span> <span class="p">*</span> <span class="m">0.5f</span><span class="p">,</span> <span class="m">0</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">_transform</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>So now how can we use it?</p>
+<p>Simple on your sprite batch begin you must add the camera transformation.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Camera2d</span> <span class="n">cam</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Camera2d</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">cam</span><span class="p">.</span><span class="n">Pos</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector2</span><span class="p">(</span><span class="m">500.0f</span><span class="p">,</span><span class="m">200.0f</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// cam.Zoom = 2.0f // Example of Zoom in</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// cam.Zoom = 0.5f // Example of Zoom out</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="cs">//// if using XNA 3.1</span>
+</span></span><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="n">SpriteBlendMode</span><span class="p">.</span><span class="n">AlphaBlend</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">SpriteSortMode</span><span class="p">.</span><span class="n">Immediate</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">SaveStateMode</span><span class="p">.</span><span class="n">SaveState</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">cam</span><span class="p">.</span><span class="n">get_transformation</span><span class="p">(</span><span class="n">device</span> <span class="cm">/*Send the variable that has your graphic device here*/</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="cs">//// if using XNA 4.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="n">SpriteSortMode</span><span class="p">.</span><span class="n">BackToFront</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">BlendState</span><span class="p">.</span><span class="n">AlphaBlend</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="kc">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">cam</span><span class="p">.</span><span class="n">get_transformation</span><span class="p">(</span><span class="n">device</span> <span class="cm">/*Send the variable that has your graphic device here*/</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="c1">// Draw Everything</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// You can draw everything in their positions since the cam matrix has already done the maths for you </span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">End</span><span class="p">();</span> <span class="c1">// Call Sprite Batch End</span>
+</span></span></code></pre></div><p>Found any errors? Please let me know.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/InRm4ClDneI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<pre tabindex="0"><code></code></pre>]]></content:encoded>
     </item>
     <item>
       <title>Basalt gains a media player</title>
@@ -57,6 +203,14 @@ Most of the time the solution given is to have a class camera with a Vector2 pos
       <guid>https://www.david-amador.com/2009/10/basalt-gains-a-media-player/</guid>
       <description>So I’ve been working on a sort of media player in order to play movies on my 2d engine Basalt made on top of XNA.
 By extending my class Object2d I manage to get this pretty cool result. You can even apply shaders to it. Since I extended the class from Object2d I can rotate, scale and set a position to the video besides regular options like play/pause, fullscreen etc. For those who don’t know the video playing is a chunk of the series Naruto Shippuuden</description>
+      <content:encoded><![CDATA[<p>So I’ve been working on a sort of media player in order to play movies on my 2d engine Basalt made on top of XNA.</p>
+<p>By extending my class Object2d I manage to get this pretty cool result. You can even apply shaders to it. Since I extended the class from Object2d I can rotate, scale and set a position to the video besides regular options like play/pause, fullscreen etc. For those who don’t know the video playing is a chunk of the series Naruto Shippuuden</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/cx-qo7MMyJs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
     <item>
       <title>XNA Sprite Sheet</title>
@@ -66,6 +220,15 @@ By extending my class Object2d I manage to get this pretty cool result. You can 
       <description>I decided to take the morning to make a small sprite sheet editor for our Xna engine. This way the artist can easily define the sprite areas and their origin saving in a file that can later on be loaded on the engine.
 Not very fancy yet but it gets the job done.
 Next step will be making an animator editor.</description>
+      <content:encoded><![CDATA[<p>I decided to take the morning to make a small sprite sheet editor for our Xna engine. This way the artist can easily define the sprite areas and their origin saving in a file that can later on be loaded on the engine.</p>
+<p>Not very fancy yet but it gets the job done.<br>
+Next step will be making an animator editor.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/vufDRq30kDo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
     <item>
       <title>Pugna prototype</title>
@@ -75,6 +238,23 @@ Next step will be making an animator editor.</description>
       <description>Hello there.
 Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.
 My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that Rita and I have for the game we should have submitted.</description>
+      <content:encoded><![CDATA[<p>Hello there.</p>
+<p>Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.</p>
+<p>My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that <a href="http://www.rita-silva.com">Rita</a> and I have for the game we should have submitted.</p>
+<p>One of my favorites games was Zelda The Fours Sword Adventures, the hole 4 players playing on one screen is cool. I picked the name Pugna, means fight. So the game allows up to 4 players on split screen.</p>
+<p><a href="/wp-content/uploads/2009/08/Screenshot002.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Screenshot002-300x168.jpg" alt="Screenshot002"  title="Screenshot002"  />
+</a></p>
+<p>I’ve quite proud of having made this in around 4-5 hours. Till now I have a scalable level that renders grass. Screen division is made automatically according to number of players. As you can see on the following image it has a 2 split.</p>
+<p><a href="/wp-content/uploads/2009/08/Screenshot001.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Screenshot001-300x168.jpg" alt="Screenshot001"  title="Screenshot001"  />
+</a></p>
+<p>I have basic movement and rotation and a title screen. I won’t be having a great game but I have a couple of nice ideas that can work out with time.</p>
+<p>Here’s a small video, the framerate is due to the sofware i use to record.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/w0bELIEC0Q8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
     <item>
       <title>Tech Talk: Linus Torvalds On Git</title>
@@ -83,6 +263,14 @@ My goal was to have a prototype by now to submit to DBP, but I ain’t got anyth
       <guid>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</guid>
       <description>I recently found that there is a subversion alternative surfacing that is in many ways much better that subversion, it name is Git and it’s a creation of Linus Torvalds.
 Here’s a video of him talking about it</description>
+      <content:encoded><![CDATA[<p>I recently found that there is a subversion alternative surfacing that is in <a href="http://git.or.cz/gitwiki/GitSvnComparsion">many ways much better that subversion</a>, it name is <a href="http://git-scm.com">Git</a> and it’s a creation of Linus Torvalds.</p>
+<p>Here’s a video of him talking about it<br>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/4XpnKHJAok8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

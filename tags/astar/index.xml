@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AStar on David Amador</title>
     <link>https://www.david-amador.com/tags/astar/</link>
@@ -22,6 +22,40 @@
 Basically it’s a way to get from point A to point B.
 This is used for AI in games mostly on tiled based games, It’s very simple to understand and implement.
 As A* traverses the graph, it follows a path of the lowest known cost, keeping a sorted priority queue of alternate path segments along the way. If, at any point, a segment of the path being traversed has a higher cost than another encountered path segment, it abandons the higher-cost path segment and traverses the lower-cost path segment instead.</description>
+      <content:encoded><![CDATA[<p>For my current project I’ve been working with A* as a <a href="http://en.wikipedia.org/wiki/Pathfinding#In_video_games">path-finding</a> solution.</p>
+<p>Basically it’s a way to get from point A to point B.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_.png" alt=""  />
+</p>
+<p>This is used for AI in games mostly on tiled based games, It’s very simple to understand and implement.</p>
+<p>As A* traverses the graph, it follows a path of the lowest known cost, keeping a sorted priority queue of alternate path segments along the way. If, at any point, a segment of the path being traversed has a higher cost than another encountered path segment, it abandons the higher-cost path segment and traverses the lower-cost path segment instead. This process continues until the goal is reached.</p>
+<p><img loading="lazy" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Pathfinding_A_Star.svg/500px-Pathfinding_A_Star.svg.png" alt=""  />
+</p>
+<p>The major choke point is the heuristic used to calculate which node to take next. I’ve started by using Manhattan Distance.<br>
+Its primary advantage is that it will generally get you to the target faster than most alternatives. Its primary drawback is that in a 8-way pathfinder so it is not guaranteed to give us the shortest possible path.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">cost</span> <span class="o">=</span> <span class="mi">10</span><span class="o">*</span><span class="p">(</span><span class="n">abs</span><span class="p">(</span><span class="n">currentX</span><span class="o">-</span><span class="n">targetX</span><span class="p">)</span> <span class="o">+</span> <span class="n">abs</span><span class="p">(</span><span class="n">currentY</span><span class="o">-</span><span class="n">targetY</span><span class="p">))</span>
+</span></span></code></pre></div><p>Although it works fast it’s not accurate and if I forced for finding the shortest possible it was rather slow for my 80×44 grid (3520 tiles), sometimes taking 3-4 seconds to find a path.</p>
+<p>I decided to take another approach and using Diagonal Shortcut, its primary advantage is that, because it is balanced, it is able to fully consider small modifiers like a turning penalty or influence map modifier like having a non walkable tile, a rock, a tree, whatever. It is a bit slower than the Manhattan method, though.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">cost</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">xDistance</span> <span class="o">=</span> <span class="n">abs</span><span class="p">(</span><span class="n">currentX</span><span class="o">-</span><span class="n">targetX</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">yDistance</span> <span class="o">=</span> <span class="n">abs</span><span class="p">(</span><span class="n">currentY</span><span class="o">-</span><span class="n">targetY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">xDistance</span> <span class="o">&gt;</span> <span class="n">yDistance</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">     <span class="n">cost</span> <span class="o">=</span> <span class="mi">14</span><span class="o">*</span><span class="n">yDistance</span> <span class="o">+</span> <span class="mi">10</span><span class="o">*</span><span class="p">(</span><span class="n">xDistance</span><span class="o">-</span><span class="n">yDistance</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">     <span class="n">cost</span> <span class="o">=</span> <span class="mi">14</span><span class="o">*</span><span class="n">xDistance</span> <span class="o">+</span> <span class="mi">10</span><span class="o">*</span><span class="p">(</span><span class="n">yDistance</span><span class="o">-</span><span class="n">xDistance</span><span class="p">)</span>
+</span></span></code></pre></div><p>In case you are wondering the 10 and the 14 are to define if it’s a diagonal or a horizontal/vertical movement since diagonals take longer to traverse than straight lines of course.<br>
+After I’m getting much faster movements.</p>
+<p>It’s not that Manhattan is worse and you shouldn’t use it, it all depends on the application your using.</p>
+<p>* On a square grid that allows 4 directions of movement, use Manhattan distance.<br>
+* On a square grid that allows 8 directions of movement, use Diagonal distance.</p>
+<p>This is a video I’ve done using Manhattan distance using tile grids generated from a black and white image.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/GwUNgHly39Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
     </item>
   </channel>
 </rss>
