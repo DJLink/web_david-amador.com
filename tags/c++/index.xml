@@ -122,7 +122,7 @@ As many know since then I moved to C++ and OpenGL, and ocasionally people ask me
 According to the website itself
 Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
 It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</description>
-      <content:encoded><![CDATA[<p>I made a small post about detecting C++ <a href="/2010/10/tracking-memory-leaks-in-visual-studio/" title="Tracking memory leaks in Visual Studio">memory leaks in Visual Studio</a> in 2010. At the time that seemed to suffice, but some months ago someone told me about <a href="http://vld.codeplex.com/">Visual Leak Detector</a> and boy does it work.</p>
+      <content:encoded><![CDATA[<p>I made a small post about detecting C++ <a href="/2010/10/tracking-memory-leaks-in-visual-studio/" title="Tracking memory leaks in Visual Studio">memory leaks in Visual Studio</a> in 2010. At the time that seemed to suffice, but some months ago someone told me about <a href="https://oneiric.github.io/vld/">Visual Leak Detector</a> and boy does it work.</p>
 <p>According to the website itself</p>
 <blockquote>
 <p>Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.</p>

@@ -161,7 +161,7 @@ Inject a way in your code so that strings where you use buttons are parsed in ru
       <description>&amp;gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but twitter kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.
 Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and Rita with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game.</description>
       <content:encoded><![CDATA[<p><a href="https://dj_link.itch.io/vizati"><img loading="lazy" src="/wp-content/uploads/2011/03/vizati_letterbox.jpg" alt=""  />
-</a>&gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but <a href="https://www.twitter.com/DJ_Link">twitter</a> kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.</p>
+</a>&gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but <a href="https://twitter.com/DJ_Link">twitter</a> kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.</p>
 <p>Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and <a href="http://rita-silva.com/" title="rita-silva.com/">Rita</a> with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game. Things changed a lot over the years and the original team is no longer working together, also because of OS updates, like the iOS versions etc or hardware not being around anymore the game has mostly vanished from all stores. The other day I was thinking about game preservation and thought it would be a shame to leave this only in our computers, combined with the 10th anniversary we decided to make it free to everyone, the original game can now be downloaded and played even on the newest Windows versions (thank you XNA).</p>
 <p>Here’s the official <a href="https://dj_link.itch.io/vizati" title="https://dj_link.itch.io/vizati">itch.io</a> page, there you’ll find not only the original XNA version that was being sold, but also an unfinished version using a custom engine that I build when porting it to iOS, this framework ended up powering <a href="https://www.questofdungeons.com" title="https://www.questofdungeons.com">Quest of Dungeons</a>, a game I made a few years after. It’s not finished but should be mostly playable, although only works in window mode.</p>
 <p>I also created a GitHub repo, which has a couple more things, like the original website code, some screenshots, the code using for creating the XNA installer, PDF manual and a couple more things. This way those things will never get lost in case my computer + backups ever go bad.</p>
@@ -239,8 +239,8 @@ Oh and I want to take 2 weeks of proper vacations after the PS4 release, haven�
 For the past few months I’ve been working on porting Quest of Dungeons to Xbox One, and I’m super happy that it’s finally out. It was released around a week ago, on September 4.
 This took some time but I’m happy of the way the game is played with a gamepad, after a lot of changes to the UI I really feel like it was worth all the effort I put into it.</description>
       <content:encoded><![CDATA[<p>Hey, it’s been a while.</p>
-<p>For the past few months I’ve been working on porting Quest of Dungeons to Xbox One, and I’m super happy that it’s finally out. It was released around a week ago, on <a href="http://www.upfallstudios.com/blog/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/">September 4</a>.</p>
-<p>This took some time but I’m happy of the way the game is played with a gamepad, after a lot of changes to the UI I really feel like it was worth all the effort I put into it. If you wanna read more about the new stuff on the XO version you can find the article <a href="http://www.upfallstudios.com/blog/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">here</a>.</p>
+<p>For the past few months I’ve been working on porting Quest of Dungeons to Xbox One, and I’m super happy that it’s finally out. It was released around a week ago, on <a href="/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/">September 4</a>.</p>
+<p>This took some time but I’m happy of the way the game is played with a gamepad, after a lot of changes to the UI I really feel like it was worth all the effort I put into it. If you wanna read more about the new stuff on the XO version you can find the article <a href="/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">here</a>.</p>
 <p>The players feedback and reviews were very positive as well. Here are some examples:</p>
 <p>8/10 – <a href="https://web.archive.org/web/20170611171806/http://www.icxm.net/x/quest-of-dungeon-review.html">http://www.icxm.net/x/quest-of-dungeon-review.html</a><br>
 8/10 – <a href="http://www.entertainment-focus.com/game-review/quest-of-dungeons-review/">http://www.entertainment-focus.com/game-review/quest-of-dungeons-review/</a><br>
@@ -250,7 +250,7 @@ This took some time but I’m happy of the way the game is played with a gamepad
 <p><strong>So what is next?</strong></p>
 <p>I’ve been getting that question a lot. “Are you making more games?” “Are you working on something new already?”<br>
 QoD has kept me pretty busy until now, so while I have some ideas in my mind I haven’t really started anything new, my ideas may very well not be even good at all, I need to test and prototype to see what I wanna do next. I still need to do a patch to QoD to fix some stuff, that is the priority now, but that should only keep me busy until the end of the month. After that it’s time to jump into something new, which is kind of scary, but exciting at the same time. I have no idea if I can ever make a game that people will like, like they did with QoD, but I’ll do my best.</p>
-<p>As always, you can find me on <a href="https://www.twitter.com/DJ_Link">twitter</a>.</p>
+<p>As always, you can find me on <a href="https://twitter.com/DJ_Link">twitter</a>.</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -451,7 +451,7 @@ Here&rsquo;s how you can detect it in C++</p>
 <h3 id="final">Final</h3>
 <p>Now that I finished the port it doesn&rsquo;t seem that I had to change that much, in fact the game code it self is nearly untouched, just the engine was altered to accommodate for Android. Porting took me ~ 2 months (I have a day job) and while working on a expansion for the game. It&rsquo;s not all chaos in the Android universe, although the hardware fragmentation poses some very serious problems, some devices may be too slow to run even the simpler games.</p>
 <p>If you have questions about anything else I didn&rsquo;t cover on this article, feel free to ask.</p>
-<p>In case you are interested in the game, it&rsquo;s out on <a href="http://store.steampowered.com/app/270050/">Steam</a>, <a href="https://itunes.apple.com/us/app/quest-of-dungeons/id698726956?mt=8">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.davidamador.quest_of_dungeons">Google Play</a>, feel free to check it out: <a href="http://www.questofdungeons.com">http://www.questofdungeons.com</a></p>
+<p>In case you are interested in the game, it&rsquo;s out on <a href="https://store.steampowered.com/app/270050/">Steam</a>, <a href="https://itunes.apple.com/us/app/quest-of-dungeons/id698726956?mt=8">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.davidamador.quest_of_dungeons">Google Play</a>, feel free to check it out: <a href="http://www.questofdungeons.com">http://www.questofdungeons.com</a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -463,19 +463,19 @@ Here&rsquo;s how you can detect it in C++</p>
 I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.
 It was released on March 25th, for PC, Mac and iOS. You can get it on Steam, iOS App Store or directly from the site via Humble Store.
 I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought.</description>
-      <content:encoded><![CDATA[<p><a href="http://www.questofdungeons.com"><img loading="lazy" src="http://www.questofdungeons.com/imgs/icon.png" alt="Quest of Dungeons"  />
+      <content:encoded><![CDATA[<p><a href="http://www.questofdungeons.com"><img loading="lazy" src="https://www.questofdungeons.com/imgs/icon.png" alt="Quest of Dungeons"  />
   </a></p>
 <p>I’m pleased to announce that Quest of Dungeons is finally out.<br>
 I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.</p>
-<p>It was released on March 25th, for PC, Mac and iOS. You can get it on <a href="store.steampowered.com/app/270050">Steam</a>, <a href="http://itunes.apple.com/app/id698726956/">iOS App Store</a> or directly from the <a href="http://www.questofdungeons.com/">site</a> via Humble Store.</p>
+<p>It was released on March 25th, for PC, Mac and iOS. You can get it on <a href="https://store.steampowered.com/app/270050">Steam</a>, <a href="https://itunes.apple.com/app/id698726956/">iOS App Store</a> or directly from the <a href="https://www.questofdungeons.com/">site</a> via Humble Store.</p>
 <p>I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought. As some of you know I have a day job so I had to take 2 vacation days to simple answer emails and do quick fixes, especially to the PC/Mac version. With each new software is natural to have problems at launch and Quest of Dungeons was no exception, and right now I’m still working on a daily basis in fixing some stuff and attending to some popular requests/changes from players to the game.</p>
 <p>It was an extremely complicated task to do on my own, managing marketing, answering emails and tweets, scouting Steam forums to see if players are reporting problems, oh and do some actual coding, because you know, bugs don’t fix themselves. But overall I’m happy with the results so far.</p>
 <p>The response to the game has been overall positive, and despite a few problems the game has gathered some good reviews.</p>
-<p>TouchArcade – 4/5 – <a href="http://toucharcade.com/2014/04/03/quest-of-dungeons-review/">Review</a><br>
-CriticalIndieGamer – 9/10 – <a href="http://criticalindiegamer.com/2014/04/quest-of-dungeons-review-pc/">Review</a><br>
-SoftPedia – 7/10 – <a href="softpedia.com/reviews/games/pc/Quest-of-Dungeons-Review-435164.shtml">Review</a><br>
-148Apps – 4/5 – <a href="http://www.148apps.com/reviews/quest-of-dungeons-review/">Review</a><br>
-PocketGamer – 6/10 – <a href="http://www.pocketgamer.co.uk/r/iPad/Quest+of+Dungeons/review.asp?c=58622&amp;srch=quest+of+dungeons">Review</a></p>
+<p>TouchArcade – 4/5 – <a href="https://toucharcade.com/2014/04/03/quest-of-dungeons-review/">Review</a><br>
+CriticalIndieGamer – 9/10 – <a href="https://criticalindiegamer.com/2014/04/quest-of-dungeons-review-pc/">Review</a><br>
+SoftPedia – 7/10 – <a href="www.softpedia.com/reviews/games/pc/Quest-of-Dungeons-Review-435164.shtml">Review</a><br>
+148Apps – 4/5 – <a href="https://www.148apps.com/reviews/quest-of-dungeons-review/">Review</a><br>
+PocketGamer – 6/10 – <a href="https://www.pocketgamer.co.uk/r/iPad/Quest+of+Dungeons/review.asp?c=58622&amp;srch=quest+of+dungeons">Review</a></p>
 <p>There are several <a href="https://www.youtube.com/results?search_query=%22quest+of+dungeons%22">youtube videos</a>, and I even caught a few people live streaming it on Twitch, it’s always awesome to see people playing your game, and having genuine reactions.</p>
 <p>This is one of my favourite moments (#spoilers)</p>
 <p>{&laquo; youtube ef9Z-Zs23GQ &gt;}}</p>

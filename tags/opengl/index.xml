@@ -141,7 +141,7 @@ Here&rsquo;s how you can detect it in C++</p>
 <h3 id="final">Final</h3>
 <p>Now that I finished the port it doesn&rsquo;t seem that I had to change that much, in fact the game code it self is nearly untouched, just the engine was altered to accommodate for Android. Porting took me ~ 2 months (I have a day job) and while working on a expansion for the game. It&rsquo;s not all chaos in the Android universe, although the hardware fragmentation poses some very serious problems, some devices may be too slow to run even the simpler games.</p>
 <p>If you have questions about anything else I didn&rsquo;t cover on this article, feel free to ask.</p>
-<p>In case you are interested in the game, it&rsquo;s out on <a href="http://store.steampowered.com/app/270050/">Steam</a>, <a href="https://itunes.apple.com/us/app/quest-of-dungeons/id698726956?mt=8">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.davidamador.quest_of_dungeons">Google Play</a>, feel free to check it out: <a href="http://www.questofdungeons.com">http://www.questofdungeons.com</a></p>
+<p>In case you are interested in the game, it&rsquo;s out on <a href="https://store.steampowered.com/app/270050/">Steam</a>, <a href="https://itunes.apple.com/us/app/quest-of-dungeons/id698726956?mt=8">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.davidamador.quest_of_dungeons">Google Play</a>, feel free to check it out: <a href="http://www.questofdungeons.com">http://www.questofdungeons.com</a></p>
 ]]></content:encoded>
     </item>
     <item>
