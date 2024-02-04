@@ -536,10 +536,10 @@ Here’s a screenshot of the previous alpha version:</description>
       <content:encoded><![CDATA[<p>Lately all my free time has been spent adding new features to <a href="/tags/basalt/">Basalt</a> and developing <a href="/tags/sapphire/">Sapphire</a>.</p>
 <p>Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.</p>
 <p>Here’s a screenshot of the previous alpha version:</p>
-<p><a href="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Sapphire-Level-Editor-150x150.jpg" alt="Sapphire Level Editor"  title="Sapphire Level Editor"  />
+<p><a href="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg" alt="Sapphire Level Editor"  title="Sapphire Level Editor"  />
 </a></p>
 <p>I kept working on the engine itself and just making small prototypes for testing it. Finally 2 weeks ago I decided to start from scratch and just use xna to build it. Not much is done but I have little time after work to develop. Anyway I’m happy since I already have textures import, basic object positioning, scaling and a Layer System.</p>
-<p><a href="/wp-content/uploads/2009/12/sapphire.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire-150x150.jpg" alt="sapphire"  title="sapphire"  />
+<p><a href="/wp-content/uploads/2009/12/sapphire.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire.jpg" alt="sapphire"  title="sapphire"  />
 </a></p>
 <p>This is an early stage of the new editor, it’s from last week.</p>
 
