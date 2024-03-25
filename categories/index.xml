@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 27 Jan 2024 17:20:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Mar 2024 11:39:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Game Development</title>
+      <link>https://www.david-amador.com/categories/game-development/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/categories/game-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Upfall Studios</title>
+      <link>https://www.david-amador.com/categories/upfall-studios/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/categories/upfall-studios/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Application &amp; Software</title>
       <link>https://www.david-amador.com/categories/application-software/</link>
@@ -25,20 +39,6 @@
       <link>https://www.david-amador.com/categories/daily-things/</link>
       <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
       <guid>https://www.david-amador.com/categories/daily-things/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Game Development</title>
-      <link>https://www.david-amador.com/categories/game-development/</link>
-      <pubDate>Sun, 15 Oct 2023 17:20:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/categories/game-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Upfall Studios</title>
-      <link>https://www.david-amador.com/categories/upfall-studios/</link>
-      <pubDate>Thu, 25 Mar 2021 14:04:50 +0000</pubDate>
-      <guid>https://www.david-amador.com/categories/upfall-studios/</guid>
       <description></description>
     </item>
     <item>

@@ -139,6 +139,21 @@ if (!doNotTrack) {
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to take screenshots in opengl
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.
+bool save_screenshot(string filename, int w, int h) {	//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let&#39;s create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let&#39;s fetch them from the backbuffer	// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename....</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-09-08 16:53:27 +0000 UTC'>September 8, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;199 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to How to take screenshots in opengl" href="https://www.david-amador.com/2012/09/how-to-take-screenshot-in-opengl/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2012/08/carmack-125x166.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -321,28 +336,12 @@ I decided to quit my current job, my last day is October 31st. I couldn’t glim
   <footer class="entry-footer"><span title='2011-10-27 10:06:14 +0000 UTC'>October 27, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;165 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to something new in the horizon..." href="https://www.david-amador.com/2011/10/something-new-in-the-horizon/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/08/fray.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Hurry you only have 16 ms to render everything
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>So I’ve been working on my new game and I’m doing some tweaks here and there on the engine.
-Mainly with the rendering section, trying to squeeze as much as possible, thus maintaining an acceptable framerate. It’s not like I’m doing a heavily graphic game but I like to know that It can be used even on slower pcs and that I’m not using more cycles than necessary.
-This past week and after reading a bunch of stuff and keynotes from John Carmack about Rage (60FPS ftw) I decided to measure my own stuff....</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-08-08 21:45:24 +0000 UTC'>August 8, 2011</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;654 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Hurry you only have 16 ms to render everything" href="https://www.david-amador.com/2011/08/hurry-you-only-have-16-ms-to-render-everything/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://www.david-amador.com/categories/game-development/page/2/">
-      «&nbsp;Prev&nbsp;2/8
+      «&nbsp;Prev&nbsp;2/9
     </a>
-    <a class="next" href="https://www.david-amador.com/categories/game-development/page/4/">Next&nbsp;4/8&nbsp;»
+    <a class="next" href="https://www.david-amador.com/categories/game-development/page/4/">Next&nbsp;4/9&nbsp;»
     </a>
   </nav>
 </footer>

@@ -140,6 +140,21 @@ if (!doNotTrack) {
 <main class="main"> 
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2013/11/first-macbook-pro-2013.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">First Macbook Pro
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve been developing apps on Mac for almost 2 years now. But usually it’s pretty much just a develop on Windows, boot my 2009 Mini Mac, build on XCode and deploy.
+I always wanted to give it a try at using MacOSX as the main development environment, but the mini mac is too slow and well, Visual Studio. Also I don’t like that new Windows 8 that much. I hope Win9 gets back on track, in the line of Win 7....</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-12-11 11:41:20 +0000 UTC'>December 11, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;267 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to First Macbook Pro" href="https://www.david-amador.com/2013/12/first-macbook-pro/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2013/10/shaman_01_small.png" alt="">
 </figure>
   <header class="entry-header">
@@ -313,21 +328,6 @@ Also my cat’s been quite sick, and between the Vet and taking care of him, wor
   </div>
   <footer class="entry-footer"><span title='2012-09-28 20:03:40 +0000 UTC'>September 28, 2012</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;369 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Puwang - a 5 day work" href="https://www.david-amador.com/2012/09/puwang-a-5-day-work/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to take screenshots in opengl
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.
-bool save_screenshot(string filename, int w, int h) {	//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let&#39;s create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let&#39;s fetch them from the backbuffer	// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename....</p>
-  </div>
-  <footer class="entry-footer"><span title='2012-09-08 16:53:27 +0000 UTC'>September 8, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;199 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to How to take screenshots in opengl" href="https://www.david-amador.com/2012/09/how-to-take-screenshot-in-opengl/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

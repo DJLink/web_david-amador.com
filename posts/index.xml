@@ -11,8 +11,128 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 27 Jan 2024 17:20:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Mar 2024 11:39:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quest of Dungeons turns 10 years old!</title>
+      <link>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</guid>
+      <description>📝 It&amp;rsquo;s been 10 years It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, Quest of Dungeons was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it was a few years in the making, mostly nights and weekends.</description>
+      <content:encoded><![CDATA[<h1 id="-its-been-10-years">📝 It&rsquo;s been 10 years</h1>
+<p>It&rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, <a href="https://www.questofdungeons.com">Quest of Dungeons</a> was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it was a few years in the making, <a href="/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/">mostly nights and weekends</a>. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hate it?</p>
+<p>What follows for the rest of the post, is a brain dump of the timeline of some of the most crucial events of this silly little project for anyone who is curious.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png" alt="Quest of Dungeons characters"  />
+</p>
+<h1 id="-2011-2013">🤯 2011-2013</h1>
+<p>✔️ Failing can help</p>
+<p>Before the game launched, I had a few years of terrible prototypes, cancelled projects, and other unexpected life events. One day, though, all those mistakes fell into place, and QoD was born—a flow of ideas came to my mind after seeing a bunch of stuff failed in front of me, but that I could maybe make them work. I knew what things I wanted to avoid now and what I would like to experiment with. In this time I also made a simple iOS game called <a href="/2012/09/puwang-a-5-day-work/">Puwang</a>, most of the goal was to make a quick game and hopefully make $100 that year to cover iOS developer account expenses, once that was covered, for QoD I wanted to make a small game that I could play on my phone during commute, and that&rsquo;s why it started as a mobile-only game.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png" alt="Quest of Dungeons characters"  />
+</p>
+<p>⌨️ Expanding</p>
+<p>During the time I was the only person to ever played it, I found myself liking to play it on a bigger screen/tablet, and after giving it a 2-3 friends to test and having confirmation, I thought to launch a desktop version along the iPhone/iPad versions.
+This added some development time, but also allowed me to expand the game a bit more, the mobile version was virtually identical to desktop, but desktop/tablet shared a bigger UI, more suited for Mouse.
+This turned out to be one of the best decisions, as the desktop version made the foundation for everything after. At this point I was already rolling my own engine for prior games on mobile and desktop, so most of the development was indeed for game stuff, and not engine.</p>
+<h1 id="20140325---steam-and-ios-launch">2014/03/25 - Steam and iOS launch</h1>
+<p>I had tried to bring games to Steam before but with no success. The focus was on Mobile, with Desktop in mind, but where to put it? I had higher hopes for a previous game <a href="/tags/vizati/">Vizati</a>, looked more polished, so QoD didn&rsquo;t seemed to have a chance</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png" alt=""  />
+</p>
+<p>But I decided to make a trailer and launch a GL page, and imagine my surprise when QoD was approved on Steam Greenlight within a week or so. Just look at my dumb face here that I just digged from some old Tweets.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg" alt="David celebrating QoD approval on Steam Greenlight"  />
+</p>
+<p>With the trailer out, people seemed to enjoyed what they were watching, and while I thought I was near finishing the game, there&rsquo;s always something right? So I pretty much crunched the entire rest of time between my day job and finishing the game.</p>
+<p>Finally on March 25th it was out, everyone could play it. Since the game was only releasing around 18h on Steam, I went to my day job that day, and only took the next day off for checking &amp; fixing bugs etc.</p>
+<p>Initially all I was getting was a flow of emails with some bugs and suggestions, but overall people seemed to like it, which was a relief. There was still tons of stuff to fix, but I slowly, and for the next few weeks went through the issues and suggestions. On the mobile side of things things were smoother, mostly because that version was the older one, had way more testing, also less hardware configurations. To my surprise, even being a paid game, not F2P, at $1.99, people were happy with what they were getting.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg" alt="Quest of Dungeons Android"  />
+</p>
+<h1 id="20140530---linux">2014/05/30 - Linux</h1>
+<p>This one was something that I had in the back on my mind for a while, theoretically my engine could be ported to Linux, but I was scared of having too many versions at launch, handing those 4 SKUs was already a handful, so this was left for a bit later. This actually ended up being a factor in Humble Bundle contacting me to participate in one of their bundles, back then having a game on all 3 platforms was a must.
+Technically speaking it wasn&rsquo;t too much complicated, but by this time the engine was already relatively split in ways that it was easy to integrate new OS, it was just a matter of implementation.
+Also, now that Steam Deck is a thing, it just worked out of the box.</p>
+<h1 id="20140826---android">2014/08/26 - Android</h1>
+<p>With Desktops and iOS versions being well received I started getting requests for an Android version, I had never worked on this platform, but with most of the know bugs fixed I moved into
+porting the game to Android, you can read more about that <a href="/2014/08/native-game-on-android-porting-quest-of-dungeons/">here</a>.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg" alt="Quest of Dungeons Android"  />
+</p>
+<h1 id="2014---ouya-cancelled">2014 - OUYA (cancelled)</h1>
+<p>After the Android version, the hot thing was OUYA, games like TowerFall were born there, so since I had an Android version I started to work on that, mostly because it would be the closest to a traditional console that I thought I could put this game on. I started some work on it, but once Microsoft accepted my pitch for the Xbox One (see below), I placed this in low priority. Between the time it took me to develop the Xbox One version, OUYA had it downfall, and
+by that time I just cancelled it.</p>
+<h1 id="201509---xbox-one">2015/09 - Xbox One</h1>
+<p>In the summer of 2014, after the launch of all those versions, relatively successfully, I started talking with ID@Xbox with the possibility of bringing QoD to Xbox One. There were a couple months of paperwork and mostly the conversation about &ldquo;this is a mouse game, how will it work on consoles?&rdquo;, which was when I started seeing that all the UI needed to be remade, and even some gameplay.
+There are several posts, <a href="/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">here</a>, <a href="/2015/04/necrodancer-is-joining/">here</a>, <a href="/2014/11/qod-xo-devlog-1/">here</a>, <a href="/2015/01/qod-xo-devlog-2/">here</a> and <a href="/2015/02/qod-xo-devlog-3/">here</a>  detailing what went into to that process, but after around 1 year the game was finally released, and all the work put into reworking the game to controller friendly interface and gameplay paid off, it was <a href="/2015/10/quest-of-dungeons-reviews-roundup/">positively received</a>. I also took the opportunity to double the content available, and also add an <a href="/2015/04/necrodancer-is-joining/">extra character</a>. I&rsquo;m sure it was this combination of an almost remade version with increased content that led to it&rsquo;s positive feedback. I&rsquo;m really happy I decided to take all those months to remake it, it was daunting at first, I&rsquo;ll tell you that, but I&rsquo;m glad I did it.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg" alt="Quest of Dungeons Xbox One launch"  />
+</p>
+<h1 id="2016---wii-u-and-nintendo-3ds">2016 - Wii U and Nintendo 3DS</h1>
+<p>Around 2015 summer, even before Xbox One release, if I recall correctly during Gamescom in Germany, I started talking with Nintendo about bringing the game to Nintendo 3DS and Wii U.
+This was when Nintendo was a bit more restrictive in terms of third party developers, and I was fully expecting, that me, a solo developer, would not make the cut, and it took a lot of months and patience to finally be able to show the game to someone and get accepted as an official Nintendo developer.</p>
+<p>At first my goal was to make Wii U first because it would be similar to Xbox One, with some additional features for the GamePad. Nintendo 3DS would come later, it would take more work due to it&rsquo;s specifics.</p>
+<p>Unfortunately, or fortunately (depending how you see it), I bricked my Wii U devKit after a couple months of work, so when the game was in a good state already but before 100% finished. During the I waited for repairs I started working on the Nintendo 3DS version.</p>
+<p>I knew would take a LOT more work, from performance, to completely different UI for dual screen, hybrid of touch + buttons. But when the Wii U devKit arrived, I decided to launch them side-by-side, I talked with Nintendo about a cross-buy possibility, and once they gave the ok that was the goal.</p>
+<p>The Nintendo 3DS version was one of the most complicated ones to pull off. This was also the first time that working on my own engine made it seem worth it. A lot of people were suggesting me to use Unity, and I had saved some time in porting, but Unity didn&rsquo;t supported 3DS, it would never have happened if not for my custom framework. Honestly this is my favourite versions, there is no other like it, mostly because of the nature of the device.</p>
+<p>It was so fun to work with that I found myself <a href="/qod-3dswii-u-port-devlog-1/">adding features</a> just because I wanted to test them, like the StreetPass, where you can get ghosts from other players you pass on the street. Nintendo had a really neat device here.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png" alt="Quest of Dungeons StreetPass"  />
+</p>
+<p>There was some trouble having both versions on the same day, because it&rsquo;s a lot of coordination required between me, Nintendo America and Europe teams, 4 different SKUs (3DS NA+EU, Wii U NA+EU), but in the end we made it.</p>
+<p>Like I suspected during my own tests, on the 3DS it was the ideal portable version, it&rsquo;s a game that suits shorts sessions on the go.</p>
+<p>This was also the first time I worked with a publisher for this game, for Japan, the game was published by Flyhigh Works, they took it to Tokyo Game Show, localized to JP, and were crucial in shaping up the 3DS version into what it is. I do recall many sessions where my stubbornness almost caused some bad decisions in the game, but they were really cool in guiding me to make the best of it.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg" alt="Quest of Dungeons on Wii U and Nintendo 3DS"  />
+</p>
+<h1 id="20170120---playstation-4-and-the-vita-version-that-never-was">2017/01/20 - PlayStation 4 and the Vita version that never was.</h1>
+<p>I love my PlayStation 4, in fact it&rsquo;s the console I have more physical games for.</p>
+<p>So it was with great excitement that after a Skype call with my PlayStation rep I had the greenlight to get the game there. This started around the time of Nintendo too, but sadly, and at first I wanted PS4 + Vita combo, like Wii U + 3DS, but for a variety of reasons the PlayStation Vita never happened.</p>
+<p>This was one of the reasons the PS4 versions was one of the latter ones, I kept hoping I could launch both simultaneously but never happened. Fun fact, this version almost had a physical edition that got cancelled by the publisher at last moment, eventually I even got someone, another publisher, to take care of the PS Vita version, but that also got cancelled later on. So a combination of things that happened that were no one&rsquo;s fault, but also made it a bit hard for me to explain why it wasn&rsquo;t happening. In certain moments it was almost, but it never did happened. It was a bit frustrating that I didn&rsquo;t had clear answers for the players regarding this, but I couldn&rsquo;t, and I tried but failed in the end. Well, that&rsquo;s game development.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png" alt="Quest of Dungeons on PlayStation 4"  />
+</p>
+<h1 id="20170914---nintendo-switch">2017/09/14 - Nintendo Switch</h1>
+<p>2-3 months after I released on Wii U and 3DS, Nintendo announced their new hybrid console, the Nintendo Switch. I immediately started getting questions from players about a port. This complicated promoting the new Nintendo versions while everyone was excited about the upcoming console, saving money for it and the games.</p>
+<p>I can&rsquo;t recall exactly when conversations started with Nintendo about this, it was in hot demand, in retail and developers, but eventually they shipped me a devKit and I started porting. It was released first in the Japanese regions, by Flyhigh Works. But a few weeks later again by me in the rest of the world. This version had the portability of 3DS, and graphics/resolution and UI of the home consoles. One of the most unique versions available.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg" alt="Quest of Dungeons on Nintendo Switch"  />
+</p>
+<h1 id="2019---dreamcast-just-having-fun-not-for-releasing">2019 - Dreamcast (just having fun, not for releasing)</h1>
+<p>In 2019 I got my hands on a Dreamcast I decided to &ldquo;wonder if I can port it there?&rdquo;, it was never really meant for a full release, that would take months of time that I don&rsquo;t have at the moment,
+I just posting it here for the record, this was under a week of work, it was fun. Maybe if I reach retirement I&rsquo;ll take some time to finish it. There&rsquo;s a lot of work left in there.</p>
+<p>After a while booting the game on an emulator,</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png" alt="Quest of Dungeons running on emulator 1"  />
+</p>
+<p>and then later when I got it booting on a real Dreamcast</p>
+ 
+
+<video width=100% controls>
+    <source src="/wp-content/uploads/2024/03/qod_running_on_dreamcast.mp4" type="video/webm">
+    Your browser does not support the video tag.  
+</video>
+
+
+<h1 id="20210413---switch-physical-edition">2021/04/13 - Switch Physical Edition</h1>
+<p>Like I mentioned before, I tried to get the game in physical format before, and I kept trying for years but it simply wasn&rsquo;t happening. Until 2021, when by random chance, someone recommended me Leoful, and they accepted right away, in fact, from initial contact to production, it was just a couple months, I&rsquo;m really happy I was able to finally get the game on an actual box, it hits differently, as I <a href="/2010/08/games-and-systems-from-childhood/">grew playing Nintendo games</a>,  and also feels like a closure to a project that started on a smaller device and made it&rsquo;s way to a real physical game.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png" alt="Quest of Dungeons Physical Edition for Nintendo Switch"  />
+</p>
+<h1 id="2022---">2022 - ??</h1>
+<p>Right now the game still exists in several stores (R.I.P. Nintendo 3DS and Wii U), the versions patched more regularly are the mobile ones, when Apple or Android come up with some new rules or it breaks on new devices. It&rsquo;s in maintenance mode only. Desktop doesn&rsquo;t give a lot of work, the last time I had to mess around with it, was the Linux version to patch stuff for Steam Deck, but it was relatively easy.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg" alt="Quest of Dungeons on Steam Deck"  />
+</p>
+<p>So in the end things worked out, and I want to say a big thank you to everyone who supported this project, I read all the emails, DMs, messages everyone sent over the years, even fanart, you rock.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif" alt=""  />
+</p>
+<h1 id="some-trivia">Some trivia</h1>
+<ul>
+<li>The game has 79k of code (all platforms)</li>
+<li>The game engine has 130k of code (all platforms)</li>
+<li>Over 63800 years of total play time on Steam alone</li>
+<li>The game allowing the player to drop items anywhere and being persistent was a side effect of saving the whole world to save instead of recreating it by seed. I just turned it into a feature.</li>
+<li>I was only able to finish the game in Hell mode AFTER releasing it, the math seemed to check out, but I wasn&rsquo;t good enough.</li>
+<li>The game was called Quest of Dungeons from day 1 of development, as a generic codename, I just grew too attached to it.</li>
+<li>There was a pet system that got dropped, taming enemies, but it was dropped in favour of Shaman unique skill of summons.</li>
+<li>There was a way for enemies to travel between floors, like Resident Evil added that later on, going between rooms, but it was too aggressive and made the game frustratingly hard.</li>
+<li>All the level and combat damage math falls apart around character level 40 or above, but the game was designed below that.</li>
+<li>The initial skull sign, which only exists at the very start, was a way to teach the player that death meant restarting, in 2013-14 roguelikes weren&rsquo;t as popular and it was seen as a shock for that to happen (play-testers would email me &ldquo;my save is lost&rdquo;). My goal was that by potentially learning that early on, the player would not get surprised.</li>
+</ul>
+<p>Thank you for reading all of this.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png" alt=""  />
+</p>
+<p>Here&rsquo;s a cool image made by <a href="https://twitter.com/LeonorParra08">Leonor</a>.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Converting the blog from WordPress to Hugo</title>
       <link>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</link>
@@ -437,45 +557,6 @@ Since I did this in the past, I decided to find a review video on Youtube that g
 
 <p>I want to thank everyone for all the support while this was being made, really appreciate that.<br>
 As always you can reach me anytime via twitter or email and I’ll get back asap.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Some thoughts about a 4 year game dev cycle</title>
-      <link>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</link>
-      <pubDate>Thu, 29 Dec 2016 12:35:49 +0000</pubDate>
-      <guid>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</guid>
-      <description>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.
-It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.
-For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was Quest of Dungeons, which started development in 2013.</description>
-      <content:encoded><![CDATA[<p>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.<br>
-It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.</p>
-<p>For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was <a href="http://www.questofdungeons.com">Quest of Dungeons</a>, which started development in 2013.</p>
-<p><strong>Right now</strong> I still have one more platform to release, on Playstation 4, 17 January 2017, it passed certification, ready to be released, so for the first time in years it feels that my QoD journey is finally completing. I still intend to patch the Android port with all last updates and sure, there will always be patches and things to take care of, but it will be in a whole different way now. Until now it always felt incomplete and a never ending task that extended for months, years.</p>
-<p><strong>Working for so much time</strong> on the same project can be incredibly frustrating, especially if working alone, so one thing that I’m proud of myself is that I actually finished it. You wouldn’t believe the amount of times that I said “F** it, is not worth it”. Things went good with the game, in a sense that I was able to put it on a lot of platforms and it was well received for the most part.<br>
-I think I was able to find a good “niche” of players that understood what QoD was all about, with all its flaws and good things.</p>
-<p>The game was never meant to be released outside of PC, heck, during the first month of development it was a Tablet only game. That led to decisions that I regretted later when porting to consoles, but also allowed me to cut corners and not caring about things that weren’t meant for a PC game early on, thus speeding up development time. I spent a lot of time just rethinking the whole interface for each new platform (except PS4 which is identical to Xbox One) and that is time consuming, not to mention specific console features, on the other hand players do feel like it was hand-crafted for their device, so there’s that. Each new platform was made possible with the previous one, so it’s not something that I can say it was a total mistake.</p>
-<p><strong>Technology wise</strong>, I’ve kept using my own tech for all releases, stubbornness perhaps? And that is not without it’s caveats. With engines like Unreal 4, Unity and Gamemaker these days if feels almost ridiculous to consider building your own tech for many, but not for me, not yet anyway. I used other engines in the past, I did release my first 2 games on XNA, and after that I decided that it was time to build my own tech, so I could be more flexible and not caring if an engine is discontinued or not, that was the goal. And on that part it succeeded, the same code runs on all platforms, except for specific render, input, etc. It took work, a lot, and after so many platforms I have a better idea of things that need better abstraction, in fact for the past week I’ve been just cleaning up code for future projects, feels more robust now. But I have a bit of regret of platforms that I ported the engine and possibly will never use it again, like Wii U, maybe even Nintendo 3DS. While the others, now that the work is done I can reuse for future games, it’s possible that I’ll never use for some again, so it was an effort for a one time only, and that is a problem, one that could have been prevented by using an existent engine.<br>
-I tried using Unity for 3 weeks, did some tests with GameMaker, and it was a cool experience, knowledge doesn’t hurt right? But haven’t made my mind yet about switching away from my own tech, mostly because I know it well, I can quickly changes things around for each project and mostly because I love working on that part as well, it’s fun, even if it’s just for me. I’ll revisit this if/when I need to switch to a “full 3d” game.</p>
-<p><strong>So many platforms!!</strong><br>
-It’s a game that’s on a lot of devices now, and there are several reasons to do so, more audience, chance to make more money, get the game more known, etc, brand recognition and proving the studio is capable of delivering. I also made it because I had the chance right now, I don’t know the future, may not be able to pull that again, also it was a chance to establish a relation with Steam, Xbox, Nintendo and Sony. My idea is to keep making games for platforms that each makes sense, but trying to cut down time between each release. It was too sparse now, because of the reasons mentioned above.</p>
-<p><strong>Marketing</strong> is still something I suck at, I do have a twitter account where I talk about my games, but also about tons of other stuff, mostly movies and general day things, is that even called marketing? Too late I decided to setup a newsletter list and put it on Upfall Studios website, should have done it earlier, I got 100 people to subscribe in the last year and half, I could have way more in these nearly 7 years as indie dev.<br>
-I also created a twitter account for <a href="http://www.twitter.com/UpfallStudios">Upfall Studios</a>, so it’s basically a cleaned up version of my own, just news about the games and launches, a more “professional” account I call it. Taking care of so many social stuff, twitter, facebook, etc is time consuming and doesn’t come to me as naturally as using my personal account, so that is still a problem probably. For the most part I follow devs and not “companies” even when they are indies, so that’s mostly what I like to do, chances are there are more people like me.</p>
-<p><strong>Community</strong> (love you guys)<br>
-I like responding to people, I don’t mind getting asked questions and I’ve answered to 100% of emails I got, either about the game or gamedev in general. I’ve taken time to meet other developers in person when they wanna ask me questions. Treat others the way you wanna be treated, easy right?<br>
-I’ve been extremely luck with the players and community surrounding QoD, they are nice, active in recommending the game to friends and I couldn’t have wished for a better community. Goal is to keep incrementing the amount of course =)<br>
-Never lie or go on radio silence regarding customers. There are tons of Early access games that suddenly stop and not even a goodbye post, that’s the worse part, the waiting for months to see if project is alive. They won’t trust you again, even if you switch to a different studio, they won’t forget. So if project fails explain it, if you are delayed on a patch say so. Almost all the time players will understand and be supportive. When I was making the Xbox One and Nintendo ports I had to delay the PC updates for a couple months and players were really supportive, as long as they know why you are late on some promise.</p>
-<p><strong>It’s never just “X more months of dev”</strong><br>
-NEVER, ever, if you think it’s just 2 more months, odds are that it’s 4 more. We suck at calculating time for the most part (or at least I do), because we conceive the game in your minds and you can see it, mostly complete, but making that happen takes much more time. PC version was delayed, both Xbox and Nintendo ports took much longer than I expected, the PS4 one was shorted, because I counted with worst case scenario but things went well at first try. In my experience completing the game 1-2 months before the release can have a positive effect, especially for a 1 man team. I finished the Xbox One version 2 months before, full approved on certification, and spent that time just trying to promote it, and was able to gather some awareness for the game. I finished the Nintendo versions just 10 days before, and even had to delay the game once, I regret now that I didn’t calculated/handled things better. Lesson learned, let’s see if I don’t make that mistake again.</p>
-<p><strong>Everything else</strong><br>
-I made that mistake in the past and I still do, I can’t separate well development time and actual life time, so I end up working too many hours, and it’s addicting.<br>
-QoD was made partially at night when I still had a day job, and the last 1 and a half year in full time, but that doesn’t mean I was able to do twice as much work unfortunately.<br>
-When you work for someone else you have a schedule, but if you work on your own time, it’s harder. Most people tell me it’s hard to stay focused working, and I have that problem too, but not in a way that I can’t work, but mostly because I blend in leisure time with work, and working from home doesn’t help. It’s easy to get distracted, then you feel guilty and spend a couple more hours working. And while I don’t think I’m super slow, I could be using my time better. That’s something I want to change, I don’t thing strict work schedules work well, but not having clear boundaries doesn’t either. If anyone is managing this well please let me know. Open to suggestions 🙂<br>
-It’s easy to find people saying this, but I’ve now experienced it myself, when you have a problem that you can’t solve don’t spend hours on the PC, take a walk, go do something else, the solution will come to mind, seriously, it works very often. You trick your mind into something else and the other problem keeps getting solved in the background.</p>
-<p><strong>What now?</strong><br>
-In approximately 3 weeks the PS4 version will be released, I don’t any plans for more ports so I intend to move to a new game, and honestly I’m scared, I don’t have a solid idea yet, been mostly sketching ideas or trying some prototypes, and the thought of deciding “let me spend 1-2 years” in this new game is a bit scary, “can I come up with all the money?”, “will it be good?”.<br>
-I wish I had a small cool idea to try for a couple months instead of a bigger one, but as I mentioned before, QoD was also supposed to be a 6 months project that turned out into 4 years so better not force anything. I’m trying not to think of “this is gonna be a cool idea that everyone will like” and instead trying to come up again with something that I would like to play, even if others don’t like it, development flows more naturally like that.<br>
-Oh and I want to take 2 weeks of proper vacations after the PS4 release, haven’t had vacations in over two years, thinking of backpacking a couple countries, it’s cheaper and it’s good “mind food”-</p>
-<p>Still there? thanks for reading – David</p>
 ]]></content:encoded>
     </item>
   </channel>

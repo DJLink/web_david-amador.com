@@ -11,8 +11,78 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 27 Jan 2024 17:20:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Mar 2024 11:39:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>android</title>
+      <link>https://www.david-amador.com/tags/android/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/android/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>iOS</title>
+      <link>https://www.david-amador.com/tags/ios/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/ios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mac OSX</title>
+      <link>https://www.david-amador.com/tags/mac-osx/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/mac-osx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nintendo 3DS</title>
+      <link>https://www.david-amador.com/tags/nintendo-3ds/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/nintendo-3ds/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nintendo Switch</title>
+      <link>https://www.david-amador.com/tags/nintendo-switch/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/nintendo-switch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PlayStation 4</title>
+      <link>https://www.david-amador.com/tags/playstation-4/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/playstation-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quest of Dungeons</title>
+      <link>https://www.david-amador.com/tags/quest-of-dungeons/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/quest-of-dungeons/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wii U</title>
+      <link>https://www.david-amador.com/tags/wii-u/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/wii-u/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>windows</title>
+      <link>https://www.david-amador.com/tags/windows/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xbox One</title>
+      <link>https://www.david-amador.com/tags/xbox-one/</link>
+      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/xbox-one/</guid>
+      <description></description>
+    </item>
     <item>
       <title>CSS</title>
       <link>https://www.david-amador.com/tags/css/</link>
@@ -46,76 +116,6 @@
       <link>https://www.david-amador.com/tags/php/</link>
       <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
       <guid>https://www.david-amador.com/tags/php/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>wordpress</title>
-      <link>https://www.david-amador.com/tags/wordpress/</link>
-      <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/wordpress/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>devlog</title>
-      <link>https://www.david-amador.com/tags/devlog/</link>
-      <pubDate>Sun, 15 Oct 2023 17:20:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/devlog/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Game5</title>
-      <link>https://www.david-amador.com/tags/game5/</link>
-      <pubDate>Sun, 15 Oct 2023 17:20:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/game5/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Basalt</title>
-      <link>https://www.david-amador.com/tags/basalt/</link>
-      <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/basalt/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>unity</title>
-      <link>https://www.david-amador.com/tags/unity/</link>
-      <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/unity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>mastodon</title>
-      <link>https://www.david-amador.com/tags/mastodon/</link>
-      <pubDate>Sun, 06 Nov 2022 16:14:06 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/mastodon/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>social networks</title>
-      <link>https://www.david-amador.com/tags/social-networks/</link>
-      <pubDate>Sun, 06 Nov 2022 16:14:06 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/social-networks/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>twitter</title>
-      <link>https://www.david-amador.com/tags/twitter/</link>
-      <pubDate>Sun, 06 Nov 2022 16:14:06 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/twitter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nintendo Switch</title>
-      <link>https://www.david-amador.com/tags/nintendo-switch/</link>
-      <pubDate>Thu, 25 Mar 2021 14:04:50 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/nintendo-switch/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Quest of Dungeons</title>
-      <link>https://www.david-amador.com/tags/quest-of-dungeons/</link>
-      <pubDate>Thu, 25 Mar 2021 14:04:50 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/quest-of-dungeons/</guid>
       <description></description>
     </item>
   </channel>
