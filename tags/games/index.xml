@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>games on David Amador</title>
+    <link>https://www.david-amador.com/tags/games/</link>
+    <description>Recent content in games on David Amador</description>
+    <image>
+      <title>David Amador</title>
+      <url>https://www.david-amador.com/david-amador-pixel.png</url>
+      <link>https://www.david-amador.com/david-amador-pixel.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Dec 2016 12:35:49 +0000</lastBuildDate>
+    <atom:link href="https://www.david-amador.com/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some thoughts about a 4 year game dev cycle</title>
+      <link>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</link>
+      <pubDate>Thu, 29 Dec 2016 12:35:49 +0000</pubDate>
+      <guid>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</guid>
+      <description>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.
+It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.
+For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was Quest of Dungeons, which started development in 2013.</description>
+      <content:encoded><![CDATA[<p>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.<br>
+It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.</p>
+<p>For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was <a href="http://www.questofdungeons.com">Quest of Dungeons</a>, which started development in 2013.</p>
+<p><strong>Right now</strong> I still have one more platform to release, on Playstation 4, 17 January 2017, it passed certification, ready to be released, so for the first time in years it feels that my QoD journey is finally completing. I still intend to patch the Android port with all last updates and sure, there will always be patches and things to take care of, but it will be in a whole different way now. Until now it always felt incomplete and a never ending task that extended for months, years.</p>
+<p><strong>Working for so much time</strong> on the same project can be incredibly frustrating, especially if working alone, so one thing that I’m proud of myself is that I actually finished it. You wouldn’t believe the amount of times that I said “F** it, is not worth it”. Things went good with the game, in a sense that I was able to put it on a lot of platforms and it was well received for the most part.<br>
+I think I was able to find a good “niche” of players that understood what QoD was all about, with all its flaws and good things.</p>
+<p>The game was never meant to be released outside of PC, heck, during the first month of development it was a Tablet only game. That led to decisions that I regretted later when porting to consoles, but also allowed me to cut corners and not caring about things that weren’t meant for a PC game early on, thus speeding up development time. I spent a lot of time just rethinking the whole interface for each new platform (except PS4 which is identical to Xbox One) and that is time consuming, not to mention specific console features, on the other hand players do feel like it was hand-crafted for their device, so there’s that. Each new platform was made possible with the previous one, so it’s not something that I can say it was a total mistake.</p>
+<p><strong>Technology wise</strong>, I’ve kept using my own tech for all releases, stubbornness perhaps? And that is not without it’s caveats. With engines like Unreal 4, Unity and Gamemaker these days if feels almost ridiculous to consider building your own tech for many, but not for me, not yet anyway. I used other engines in the past, I did release my first 2 games on XNA, and after that I decided that it was time to build my own tech, so I could be more flexible and not caring if an engine is discontinued or not, that was the goal. And on that part it succeeded, the same code runs on all platforms, except for specific render, input, etc. It took work, a lot, and after so many platforms I have a better idea of things that need better abstraction, in fact for the past week I’ve been just cleaning up code for future projects, feels more robust now. But I have a bit of regret of platforms that I ported the engine and possibly will never use it again, like Wii U, maybe even Nintendo 3DS. While the others, now that the work is done I can reuse for future games, it’s possible that I’ll never use for some again, so it was an effort for a one time only, and that is a problem, one that could have been prevented by using an existent engine.<br>
+I tried using Unity for 3 weeks, did some tests with GameMaker, and it was a cool experience, knowledge doesn’t hurt right? But haven’t made my mind yet about switching away from my own tech, mostly because I know it well, I can quickly changes things around for each project and mostly because I love working on that part as well, it’s fun, even if it’s just for me. I’ll revisit this if/when I need to switch to a “full 3d” game.</p>
+<p><strong>So many platforms!!</strong><br>
+It’s a game that’s on a lot of devices now, and there are several reasons to do so, more audience, chance to make more money, get the game more known, etc, brand recognition and proving the studio is capable of delivering. I also made it because I had the chance right now, I don’t know the future, may not be able to pull that again, also it was a chance to establish a relation with Steam, Xbox, Nintendo and Sony. My idea is to keep making games for platforms that each makes sense, but trying to cut down time between each release. It was too sparse now, because of the reasons mentioned above.</p>
+<p><strong>Marketing</strong> is still something I suck at, I do have a twitter account where I talk about my games, but also about tons of other stuff, mostly movies and general day things, is that even called marketing? Too late I decided to setup a newsletter list and put it on Upfall Studios website, should have done it earlier, I got 100 people to subscribe in the last year and half, I could have way more in these nearly 7 years as indie dev.<br>
+I also created a twitter account for <a href="http://www.twitter.com/UpfallStudios">Upfall Studios</a>, so it’s basically a cleaned up version of my own, just news about the games and launches, a more “professional” account I call it. Taking care of so many social stuff, twitter, facebook, etc is time consuming and doesn’t come to me as naturally as using my personal account, so that is still a problem probably. For the most part I follow devs and not “companies” even when they are indies, so that’s mostly what I like to do, chances are there are more people like me.</p>
+<p><strong>Community</strong> (love you guys)<br>
+I like responding to people, I don’t mind getting asked questions and I’ve answered to 100% of emails I got, either about the game or gamedev in general. I’ve taken time to meet other developers in person when they wanna ask me questions. Treat others the way you wanna be treated, easy right?<br>
+I’ve been extremely luck with the players and community surrounding QoD, they are nice, active in recommending the game to friends and I couldn’t have wished for a better community. Goal is to keep incrementing the amount of course =)<br>
+Never lie or go on radio silence regarding customers. There are tons of Early access games that suddenly stop and not even a goodbye post, that’s the worse part, the waiting for months to see if project is alive. They won’t trust you again, even if you switch to a different studio, they won’t forget. So if project fails explain it, if you are delayed on a patch say so. Almost all the time players will understand and be supportive. When I was making the Xbox One and Nintendo ports I had to delay the PC updates for a couple months and players were really supportive, as long as they know why you are late on some promise.</p>
+<p><strong>It’s never just “X more months of dev”</strong><br>
+NEVER, ever, if you think it’s just 2 more months, odds are that it’s 4 more. We suck at calculating time for the most part (or at least I do), because we conceive the game in your minds and you can see it, mostly complete, but making that happen takes much more time. PC version was delayed, both Xbox and Nintendo ports took much longer than I expected, the PS4 one was shorted, because I counted with worst case scenario but things went well at first try. In my experience completing the game 1-2 months before the release can have a positive effect, especially for a 1 man team. I finished the Xbox One version 2 months before, full approved on certification, and spent that time just trying to promote it, and was able to gather some awareness for the game. I finished the Nintendo versions just 10 days before, and even had to delay the game once, I regret now that I didn’t calculated/handled things better. Lesson learned, let’s see if I don’t make that mistake again.</p>
+<p><strong>Everything else</strong><br>
+I made that mistake in the past and I still do, I can’t separate well development time and actual life time, so I end up working too many hours, and it’s addicting.<br>
+QoD was made partially at night when I still had a day job, and the last 1 and a half year in full time, but that doesn’t mean I was able to do twice as much work unfortunately.<br>
+When you work for someone else you have a schedule, but if you work on your own time, it’s harder. Most people tell me it’s hard to stay focused working, and I have that problem too, but not in a way that I can’t work, but mostly because I blend in leisure time with work, and working from home doesn’t help. It’s easy to get distracted, then you feel guilty and spend a couple more hours working. And while I don’t think I’m super slow, I could be using my time better. That’s something I want to change, I don’t thing strict work schedules work well, but not having clear boundaries doesn’t either. If anyone is managing this well please let me know. Open to suggestions 🙂<br>
+It’s easy to find people saying this, but I’ve now experienced it myself, when you have a problem that you can’t solve don’t spend hours on the PC, take a walk, go do something else, the solution will come to mind, seriously, it works very often. You trick your mind into something else and the other problem keeps getting solved in the background.</p>
+<p><strong>What now?</strong><br>
+In approximately 3 weeks the PS4 version will be released, I don’t any plans for more ports so I intend to move to a new game, and honestly I’m scared, I don’t have a solid idea yet, been mostly sketching ideas or trying some prototypes, and the thought of deciding “let me spend 1-2 years” in this new game is a bit scary, “can I come up with all the money?”, “will it be good?”.<br>
+I wish I had a small cool idea to try for a couple months instead of a bigger one, but as I mentioned before, QoD was also supposed to be a 6 months project that turned out into 4 years so better not force anything. I’m trying not to think of “this is gonna be a cool idea that everyone will like” and instead trying to come up again with something that I would like to play, even if others don’t like it, development flows more naturally like that.<br>
+Oh and I want to take 2 weeks of proper vacations after the PS4 release, haven’t had vacations in over two years, thinking of backpacking a couple countries, it’s cheaper and it’s good “mind food”-</p>
+<p>Still there? thanks for reading – David</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Quest of Dungeons is now available</title>
+      <link>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</link>
+      <pubDate>Sun, 06 Apr 2014 11:39:36 +0000</pubDate>
+      <guid>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</guid>
+      <description>I’m pleased to announce that Quest of Dungeons is finally out.
+I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.
+It was released on March 25th, for PC, Mac and iOS. You can get it on Steam, iOS App Store or directly from the site via Humble Store.
+I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought.</description>
+      <content:encoded><![CDATA[<p><a href="http://www.questofdungeons.com"><img loading="lazy" src="https://www.questofdungeons.com/imgs/icon.png" alt="Quest of Dungeons"  />
+  </a></p>
+<p>I’m pleased to announce that Quest of Dungeons is finally out.<br>
+I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.</p>
+<p>It was released on March 25th, for PC, Mac and iOS. You can get it on <a href="https://store.steampowered.com/app/270050">Steam</a>, <a href="https://itunes.apple.com/app/id698726956/">iOS App Store</a> or directly from the <a href="https://www.questofdungeons.com/">site</a> via Humble Store.</p>
+<p>I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought. As some of you know I have a day job so I had to take 2 vacation days to simple answer emails and do quick fixes, especially to the PC/Mac version. With each new software is natural to have problems at launch and Quest of Dungeons was no exception, and right now I’m still working on a daily basis in fixing some stuff and attending to some popular requests/changes from players to the game.</p>
+<p>It was an extremely complicated task to do on my own, managing marketing, answering emails and tweets, scouting Steam forums to see if players are reporting problems, oh and do some actual coding, because you know, bugs don’t fix themselves. But overall I’m happy with the results so far.</p>
+<p>The response to the game has been overall positive, and despite a few problems the game has gathered some good reviews.</p>
+<p>TouchArcade – 4/5 – <a href="https://toucharcade.com/2014/04/03/quest-of-dungeons-review/">Review</a><br>
+CriticalIndieGamer – 9/10 – <a href="https://criticalindiegamer.com/2014/04/quest-of-dungeons-review-pc/">Review</a><br>
+SoftPedia – 7/10 – <a href="www.softpedia.com/reviews/games/pc/Quest-of-Dungeons-Review-435164.shtml">Review</a><br>
+148Apps – 4/5 – <a href="https://www.148apps.com/reviews/quest-of-dungeons-review/">Review</a><br>
+PocketGamer – 6/10 – <a href="https://www.pocketgamer.co.uk/r/iPad/Quest+of+Dungeons/review.asp?c=58622&amp;srch=quest+of+dungeons">Review</a></p>
+<p>There are several <a href="https://www.youtube.com/results?search_query=%22quest+of+dungeons%22">youtube videos</a>, and I even caught a few people live streaming it on Twitch, it’s always awesome to see people playing your game, and having genuine reactions.</p>
+<p>This is one of my favourite moments (#spoilers)</p>
+<p>{&laquo; youtube ef9Z-Zs23GQ &gt;}}</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Quest of Dungeons development update</title>
+      <link>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</link>
+      <pubDate>Wed, 11 Dec 2013 12:00:14 +0000</pubDate>
+      <guid>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</guid>
+      <description>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.
+I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too.</description>
+      <content:encoded><![CDATA[<p>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.<br>
+I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too. I’m just polishing the game and finishing some bugs, but I’m close, I can feel it =)<br>
+Right now I’m targeting for a late January release, but I’ll have a more precise date in the next few weeks.</p>
+<p>Meanwhile here are a couple of screenshots.</p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01-300x187.png" alt="quest_of_dungeons_mac_01"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02-300x187.png" alt="quest_of_dungeons_mac_02"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03-300x187.png" alt="quest_of_dungeons_mac_03"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04-300x187.png" alt="quest_of_dungeons_mac_04"  />
+</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05-300x187.png" alt="quest_of_dungeons_mac_05"  />
+</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Puwang is running on PC, releasing it for free</title>
+      <link>https://www.david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</link>
+      <pubDate>Wed, 24 Apr 2013 23:35:33 +0000</pubDate>
+      <guid>https://www.david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</guid>
+      <description>Hey guys,
+Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.
+I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</description>
+      <content:encoded><![CDATA[<p>Hey guys,</p>
+<p>Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.<a href="/wp-content/uploads/2013/04/puwang.jpg"><img loading="lazy" src="/wp-content/uploads/2013/04/puwang.jpg" alt="puwang"  />
+</a><br>
+Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.</p>
+<p>I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</p>
+<p>Here’s a video I just made of the PC version</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/1UkJHDLfI-A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<blockquote>
+<p>The Game requires some external frameworks to be installed, so in event it crashes at start please make sure all dependencies are correctly installed.<br>
+–<a href="http://www.microsoft.com/en-us/download/details.aspx?id=5555">Microsoft Visual C++ 2010 Redistributable Package (x86) </a><br>
+–<a href="http://connect.creativelabs.com/openal/Downloads/Forms/AllItems.aspx">OpenAL</a><br>
+–<a href="http://www.microsoft.com/en-us/download/details.aspx?id=35">DirectX9</a></p>
+</blockquote>
+<p>So I hope you have fun, let me know what you think.</p>
+<p>Don’t forget that you can still grab the original iOS (Universal) game <a href="https://web.archive.org/web/20151117181201/https://itunes.apple.com/us/app/puwang/id566365237?mt=8">here</a>.</p>
+<p>Download:<br>
+<a href="https://dj_link.itch.io/puwang-notepad-shump">Puwang – (Windows) – 16.1MB</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Rage</title>
+      <link>https://www.david-amador.com/2011/12/rage/</link>
+      <pubDate>Wed, 07 Dec 2011 16:47:43 +0000</pubDate>
+      <guid>https://www.david-amador.com/2011/12/rage/</guid>
+      <description>So being a big fan of Quake, Quake 3 Arena and Doom I was eager to get my hands on id Software latest game, Rage.
+Like most developers out there I’ve been impressed by John Carmack’s work and breakthroughs in gaming and computer graphics for years. When I first heard Rage was targeting 60FPS I got intrigued.
+Almost every game targets 30FPS and targeting twice as that leaves less time to render each frame, even more since they were promising vast wastelands, detailed characters, top notch animations and AI.</description>
+      <content:encoded><![CDATA[<p>So being a big fan of Quake, Quake 3 Arena and Doom I was eager to get my hands on id Software latest game, Rage.</p>
+<p>Like most developers out there I’ve been impressed by John Carmack’s work and breakthroughs in gaming and computer graphics for years. When I first heard Rage was targeting 60FPS I got intrigued.<br>
+Almost every game targets 30FPS and targeting twice as that leaves <a href="/2011/08/hurry-you-only-have-16-ms-to-render-everything/" title="Hurry you only have 16 ms to render everything">less time to render each frame</a>, even more since they were promising vast wastelands, detailed characters, top notch animations and AI.</p>
+<p>But enough of that. I got the PC version since I’m old fashioned and I think shooters are best played with Mouse/Kb. Besides that shooters are always a tad slower on consoles to compensate the lack of Mouse for aiming.</p>
+<p><a href="/wp-content/uploads/2011/10/WP_000105.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/WP_000105.jpg" alt=""  title="WP_000105"  />
+</a></p>
+<p>The game comes packed on 3 DVD summing a 23GB install.</p>
+<p>The story takes place after a meteor crashing into the earth, several arks where placed underground with people in order for mankind to survive. You are one of those survivors.<br>
+There isn’t much more into, after you wake up you discovered most of the planet is a wasteland ruled by bandits, mutants and others.</p>
+<p>From there you jump from mission to mission against the several factions.</p>
+<p>Apart from some technical issues I first encountered, after updating the drivers I managed to play it smoothly on my laptop, my desktop rig is quite old now (6+ years) so it doesn’t quite handle it at 1080p.</p>
+<p>I’m very impressed with the game’s smooth animations and enemy AI. The story itself is crap but the whole fun in this game is just playing it, the battles always feel fresh, holding the shotgun feels like an id gun indeed. You keep encountering new enemies with new tricks, near the end you are still trying to get the hang of that new enemy tactics.</p>
+<p>If you have the chance try it.</p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-22_00001.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00001-300x168.jpg" alt=""  />
+</a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-22_00007.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00007-300x168.jpg" alt=""  />
+</a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-22_00010.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00010-300x168.jpg" alt=""  />
+</a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-22_00012.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00012-300x168.jpg" alt=""  />
+</a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-23_00005.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00005-300x168.jpg" alt=""  />
+</a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-23_00008.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00008-300x168.jpg" alt=""  />
+</a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-23_00009.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00009-300x168.jpg" alt=""  />
+</a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-23_00010.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00010-300x168.jpg" alt=""  />
+</a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-22_00015.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00015-300x168.jpg" alt=""  />
+</a></p>
+<p><a href="/wp-content/uploads/2011/10/WP_000105.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/WP_000105.jpg" alt=""  />
+</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Super Meat Boy, meat dissection</title>
+      <link>https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/</link>
+      <pubDate>Sat, 23 Oct 2010 20:00:59 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/</guid>
+      <description>I don’t usually write reviews about games, maybe mostly because I don’t play as often as I used to. Most games today are just graphics graphics, I use super shader ray-traced lights but I forgot gameplay because I’m a tech demo.
+I grew up with a Super Nintendo playing Super Mario World and Zelda A Link to the Past, yeah shocker, no Spectrum to me :P, so I’m 2D gameplay type lover.</description>
+      <content:encoded><![CDATA[<p>I don’t usually write reviews about games, maybe mostly because I don’t play as often as I used to. Most games today are just graphics graphics, I use super shader ray-traced lights but I forgot gameplay because I’m a tech demo.<br>
+I <a href="/2010/08/games-and-systems-from-childhood/">grew up with a Super Nintendo</a> playing Super Mario World and Zelda A Link to the Past, yeah shocker, no Spectrum to me :P, so I’m 2D gameplay type lover.</p>
+<p>I always loved Mario games, the precision and the rush of making a level without stopping or speeding down was as good as it gets for platform games in my opinion. This is the key point in Mario games, not the story, why else would people still be playing those games? The princess keeps being kidnapped by the same dude, there’s basically no story so what keeps gamers coming around is gameplay and fun.</p>
+<p>This is what Super Meat Boy brings us, excellent gameplay with all the frustration and deaths that actually brings meaning to reaching the end of a level. I’ve been following Meat Boy development ever since it was announced, well in fact I’m an avid Edmund Mcmillen fan even since <a href="http://www.chroniclogic.com/gish.htm">Gish</a>, I even bought his “This is a cry for help” cd, comes packed with 18 games and great comics, you should get it if we is still selling them.</p>
+<p><a href="/wp-content/uploads/2010/10/edmund_mcmillen_this_is_a_cry_for_help_cd.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/edmund_mcmillen_this_is_a_cry_for_help_cd.jpg" alt=""  title="This is a cry for Help Edmund Mcmillen CD proof :P"  />
+</a></p>
+<p>Sorry Tommy Refenes but I don’t know any of your past works. Anyway, back on track…</p>
+<p><a href="/wp-content/uploads/2010/10/1269147417.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/1269147417.jpg" alt=""  title="1269147417"  />
+</a></p>
+<p>The game is a fast paced platform game with a block of meat which mission is to reach Bandage Girl (it’s Super Meat Boy “princess peach”) on every level, for that we must jump, jump, jump, avoid traps, jump, did I mention we has to jump?</p>
+<p><a href="/wp-content/uploads/2010/10/snessmb.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/snessmb.jpg" alt=""  title="snessmb"  />
+</a></p>
+<p>The entire game is about precision and button timing, you fail you die, too slow? goodbye.<br>
+This will put you swearing at the TV like you never did, believe me, and not because the buttons feel dumb or the game didn’t respond but because you sucked and died. The controls are so well responsive that it feels like they grabbed Super Mario controls code and improved it.<br>
+Plus the Xbox360 controller buttons colors are almost the same as the SNES controller, I felt like going back in time.</p>
+<p><a href="/wp-content/uploads/2010/10/xbox360controller1.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/xbox360controller1.jpg" alt=""  title="xbox360controller"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/10/Snes_control.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/Snes_control.jpg" alt=""  title="Snes_control"  />
+</a></p>
+<p>A curious thing is, there’s a run button, the X and another for jump, the A button. Most of the time you will be running so the run button feels almost useless. Well the obvious thing is, on tight platforms you won’t be running, the other thing is this was the first time since those early hardcore platform games which I felt that pressing that button all the time helped me grasping the controller better, and jump seem more timed because you are using the same finger to press them both. Just try it, you’ll see what I mean.</p>
+<p>Graphically the game is simple but pretty with small details that you’ll probably miss the first time you play each level. My only complaint is that the cutscenes don’t feel like they belong in the game, because the lack of detail in scenarios and characters, luckily most will put a smile on your face so no harm done.</p>
+<p>The game is packed with unlockable characters from other indie games like Beat Trip, Braid, Gish, you name it. For that you need to collect bandages all across the levels. The other things is that each level has a Light and Dark World, (Zelda Link to the Past memories for me) and you unlock the Dark World, which is even harder when you score an A in the Light World.</p>
+<p>So the game is a blast and I highly recommend it, even more because right now is at 800 MS Points.</p>
+<p>Here’s a video of me playing, be warned I’m not a very good player 😛</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/8gwh1O1OpyQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Games and systems from childhood</title>
+      <link>https://www.david-amador.com/2010/08/games-and-systems-from-childhood/</link>
+      <pubDate>Sun, 08 Aug 2010 12:36:43 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/08/games-and-systems-from-childhood/</guid>
+      <description>I think the first game I ever played was Tetris on a 286 if my memory isn’t failing me.
+My father worked at restaurant nearby a small apartment rental office, one of the dudes that worked there occasionally would let me play. I remember one day he had this new game, Prince of Persia, my chin just fell, awesome,
+I thought games couldn’t get any better. I remember always asking him to “type the code to play” as I called it, since it was DOS based.</description>
+      <content:encoded><![CDATA[<p>I think the first game I ever played was <strong>Tetris</strong> on a 286 if my memory isn’t failing me.</p>
+<p><a href="/wp-content/uploads/2010/08/Tetris_DOS_1986.png"><img loading="lazy" src="/wp-content/uploads/2010/08/Tetris_DOS_1986.png" alt=""  title="Tetris_DOS_1986"  />
+</a><br>
+My father worked at restaurant nearby a small apartment rental office, one of the dudes that worked there occasionally would let me play. I remember one day he had this new game, <strong>Prince of Persia</strong>, my chin just fell, awesome,</p>
+<p><a href="/wp-content/uploads/2010/08/prince-of-persia.gif"><img loading="lazy" src="/wp-content/uploads/2010/08/prince-of-persia.gif" alt=""  title="prince-of-persia"  />
+</a></p>
+<p>I thought games couldn’t get any better. I remember always asking him to “type the code to play” as I called it, since it was <a href="http://en.wikipedia.org/wiki/DOS">DOS</a> based. Probably something like “cd /games/prince~” =P<br>
+I spent hours playing that game, I do know I never managed to see the end thought.</p>
+<p>Next in line were <strong>Super Mario Bros</strong>. games. Some neighbors had a <a href="http://en.wikipedia.org/wiki/NES"><strong>NES</strong></a></p>
+<p><a href="/wp-content/uploads/2010/08/nes-console.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/nes-console.jpg" alt=""  title="nes-console"  />
+</a></p>
+<p>and when my parents were there that was to entertain the visitors kids, I didn’t even know there were any home consoles before seeing a NES before, I later discovered the Spectrum which was older but my first contact with a home console was with the NES and it’s gigantic cartridges.</p>
+<p><a href="/wp-content/uploads/2010/08/mario_bros_nes_cartridge.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/mario_bros_nes_cartridge.jpg" alt=""  title="mario_bros_nes_cartridge"  />
+</a></p>
+<p>I never got at PC or console until I turn 12 I think, when my mother brought back from one of her trips a what she called “expensive toy on promotion” which was basically a Super Nintendo Street Fighter 2 Turbo Edition, a Super Scope and another game <strong>Battletoads in BattleManiacs</strong></p>
+<p><a href="/wp-content/uploads/2010/08/snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/snes.jpg" alt=""  title="snes"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/SNES_Controller.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/SNES_Controller.jpg" alt=""  title="SNES_Controller"  />
+</a></p>
+<p>This is a picture of the box, containing the Super Nintendo and <strong>Street Fighter 2 Turbo</strong></p>
+<p><a href="/wp-content/uploads/2010/08/snes-street-fighter-2-turbo-edition.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/snes-street-fighter-2-turbo-edition.jpg" alt=""  title="snes street fighter 2 turbo edition"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/street_fighter_ii_snes_hadoken.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/street_fighter_ii_snes_hadoken.jpg" alt=""  title="street_fighter_ii_snes_hadoken"  />
+</a><br>
+Sure was a sweet game, probably one of the best fight games I ever played. Since most of my friends at the time didn’t had this game I had quite the advantage when borrowing games.</p>
+<p><a href="/wp-content/uploads/2010/08/Battletoads_in_battlemaniacs-snes-box.jpg"></a></p>
+<p><a href="/wp-content/uploads/2010/08/Battletoads_in_battlemaniacs-snes-box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/Battletoads_in_battlemaniacs-snes-box.jpg" alt=""  title="Battletoads_in_battlemaniacs snes box"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/Battletoads-in-Battlemaniacs-cartridge.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/Battletoads-in-Battlemaniacs-cartridge.jpg" alt=""  title="Battletoads in Battlemaniacs cartridge"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/BattletoadsInBattlemaniacs3.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/BattletoadsInBattlemaniacs3.jpg" alt=""  title="BattletoadsInBattlemaniacs3"  />
+</a></p>
+<p><strong>Battletoads in Battlemaniacs</strong> was a Beat ’em up game much like <strong>Street of Rage</strong> on the <strong>Mega Drive</strong> ( <strong>Genesis</strong> in US). This game had one of the hardest levels I ever played on a game, the “brain track race thingy”</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/IbMLdDDGmyc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>If people are complaining about <a href="http://www.limbogame.org/"><strong>Limbo</strong>‘</a>s deaths I imagine with this game. It took me ages to beat that level.</p>
+<p><a href="/wp-content/uploads/2010/08/super_scope.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super_scope" alt=""  title="super_scope"  />
+</a><a href="/wp-content/uploads/2010/08/nintendo-snes-scope.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/nintendo-snes-scope.jpg" alt=""  title="OLYMPUS DIGITAL CAMERA"  />
+</a><a href="/wp-content/uploads/2010/08/Super-NES-Super-Scope-6-2.gif"><img loading="lazy" src="/wp-content/uploads/2010/08/Super-NES-Super-Scope-6.gif" alt=""  title="Super NES Super Scope 6 (2)"  />
+</a></p>
+<p>The <strong>Super Scope</strong> was this huge bazooka, had 6 games in it but they all sucked. I don’t think Nintendo released much more games for this.</p>
+<p>Since most of my friends had the SNES + <strong>Super Mario World</strong> bundle I pretty much always had a copy at home. It is one of my favorite games ever. Even my sister loved to play it. Along side Battletoads this was another game that made me had rage attacks one a particular level, <a href="http://www.mariowiki.com/Tubular">Tubular</a>, it’s considered the hardest levels in the game because of the lack of ground to stand on and the large amount of enemies.</p>
+<p><a href="/wp-content/uploads/2010/08/super_mario_world_box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super_mario_world_box.jpg" alt=""  title="super_mario_world_box"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/Tubular_SMW.png"><img loading="lazy" src="/wp-content/uploads/2010/08/Tubular_SMW.png" alt=""  title="Tubular_SMW"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/super-mario-world-2.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-world-2.jpg" alt=""  title="super-mario-world-2"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/super-mario-world.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-world.jpg" alt=""  title="super mario world"  />
+</a></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/hSXSWqUirGA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><a href="/wp-content/uploads/2010/08/ZelaALttP.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/ZelaALttP.jpg" alt=""  title="ZelaALttP"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/a-link-to-the-past-cardridge.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/a-link-to-the-past-cardridge.jpg" alt=""  title="a link to the past cardridge"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/zelda-a-link-to-the-past.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/zelda-a-link-to-the-past.jpg" alt=""  title="zelda-a-link-to-the-past"  />
+</a></p>
+<p>Another one of my favorite SNES games is <strong>The Legend of Zelda A Link to the Past</strong>, for me it’s the best Zelda game. Sure <strong>Zelda Ocarina of Time</strong> was awesome but it didn’t brought anything new to the series, even more the removed what made Link to the Past so great, the Light and the Dark world. After exploring the all Light World and defeating Ganondorf you are transported to the Dark World</p>
+<p><a href="/wp-content/uploads/2010/08/LegendOfZelda_2D00_ALinkToThePast_2D00_LightWorld.png"><img loading="lazy" src="/wp-content/uploads/2010/08/LegendOfZelda_2D00_ALinkToThePast_2D00_LightWorld.png" alt=""  title="LegendOfZelda_2D00_ALinkToThePast_2D00_LightWorld"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/LegendOfZelda-ALinkToThePast-DarkWorld.png"><img loading="lazy" src="/wp-content/uploads/2010/08/LegendOfZelda-ALinkToThePast-DarkWorld.png" alt=""  title="LegendOfZelda-ALinkToThePast-DarkWorld"  />
+</a></p>
+<p>Wait wait… but you could also go back in forward from one world to another, most of the castle and secrets implied that you had to activate or move something in a world to affect the other one. How cool is that?</p>
+<p><a href="/wp-content/uploads/2010/08/240px-Light_World_-_Dark_World.png"><img loading="lazy" src="/wp-content/uploads/2010/08/240px-Light_World_-_Dark_World.png" alt=""  title="240px-Light_World_-_Dark_World"  />
+</a></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/GqZg1ikmKFw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>I don’t remember all the other games that I’ve played on the SNES but here are some box arts from some I do remember:</p>
+<p><a href="/wp-content/uploads/2010/08/axelay_box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/axelay_box.jpg" alt=""  title="axelay_box"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/supermariokart_box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/supermariokart_box.jpg" alt=""  title="supermariokart_box"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/super_nes-super_mario_world_2_yoshis_island.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super_nes-super_mario_world_2_yoshis_island.jpg" alt=""  title="super_nes-super_mario_world_2_yoshis_island"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/super-mario-rpg-box_front.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-rpg-box_front.jpg" alt=""  title="super mario rpg box_front"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/super-mario-all-stars-snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-all-stars-snes.jpg" alt=""  title="super mario all stars snes"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/super-castlevania-iv-snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-castlevania-iv-snes.jpg" alt=""  title="super castlevania iv snes"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/starfox-super-nintendo-box-art.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/starfox-super-nintendo-box-art.jpg" alt=""  title="starfox-super-nintendo-box-art"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/simcity_snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/simcity_snes.jpg" alt=""  title="simcity_snes"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/F-Zero_snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/F-Zero_snes.jpg" alt=""  title="F-Zero_snes"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/donkey-kong-country-snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/donkey-kong-country-snes.jpg" alt=""  title="donkey-kong-country snes"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/chrono_trigger_snes_box1.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/chrono_trigger_snes_box1.jpg" alt=""  title="chrono_trigger_snes_box1"  />
+</a></p>
+<p><a href="/wp-content/uploads/2010/08/FFviBoxArt.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/FFviBoxArt.jpg" alt=""  title="FFviBoxArt"  />
+</a></p>
+<p>Damn this post is getting way big, I think I’m going to split this into several parts, I’ll cover Mega Drive on the next run. What about you, what are your favorite SNES games?</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Make a Game Week</title>
+      <link>https://www.david-amador.com/2009/03/make-a-game-week/</link>
+      <pubDate>Fri, 13 Mar 2009 17:33:12 +0000</pubDate>
+      <guid>https://www.david-amador.com/2009/03/make-a-game-week/</guid>
+      <description>I work on a game creation company and this week the administration decided to give us a challenge, to make a game. Using whatever tools we want to whatever platform we like.
+After we got divided between 4 teams the challenge was to make every minute count. My team got composed by me (programmer), a designer and a person from man resources. Of course I was going to handle every bit of code, the designer the art and the third person the level design and documentation.</description>
+      <content:encoded><![CDATA[<p>I work on a game creation company and this week the administration decided to give us a challenge, to make a game. Using whatever tools we want to whatever platform we like.</p>
+<p>After we got divided between 4 teams the challenge was to make every minute count. My team got composed by me (programmer), a designer and a person from man resources. Of course I was going to handle every bit of code, the designer the art and the third person the level design and documentation.</p>
+<p>We came up with a platform game called Cloud9 in which you have to return a star to the moon. The star has magical properties and can use the 4 basic elements. <img loading="lazy" src="/wp-content/uploads/2009/03/cloud9.jpg" alt="cloud9"  title="cloud9"  />
+</p>
+<p>Meanwhile the week went by and this is the last day. I spent most of the day building the level editor.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

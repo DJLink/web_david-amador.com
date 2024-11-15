@@ -2,16 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.david-amador.com/tags/android/</loc>
-    <lastmod>2024-03-25T11:39:55+00:00</lastmod>
-  </url><url>
     <loc>https://www.david-amador.com/categories/</loc>
-    <lastmod>2024-03-25T11:39:55+00:00</lastmod>
+    <lastmod>2024-11-15T14:39:55+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/</loc>
-    <lastmod>2024-03-25T11:39:55+00:00</lastmod>
+    <lastmod>2024-11-15T14:39:55+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/categories/game-development/</loc>
+    <lastmod>2024-11-15T14:39:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/gamedev/</loc>
+    <lastmod>2024-11-15T14:39:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/</loc>
+    <lastmod>2024-11-15T14:39:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/categories/general-programming/</loc>
+    <lastmod>2024-11-15T14:39:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/posts/</loc>
+    <lastmod>2024-11-15T14:39:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/</loc>
+    <lastmod>2024-11-15T14:39:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/android/</loc>
     <lastmod>2024-03-25T11:39:55+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/ios/</loc>
@@ -29,16 +44,10 @@
     <loc>https://www.david-amador.com/tags/playstation-4/</loc>
     <lastmod>2024-03-25T11:39:55+00:00</lastmod>
   </url><url>
-    <loc>https://www.david-amador.com/posts/</loc>
-    <lastmod>2024-03-25T11:39:55+00:00</lastmod>
-  </url><url>
     <loc>https://www.david-amador.com/tags/quest-of-dungeons/</loc>
     <lastmod>2024-03-25T11:39:55+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</loc>
-    <lastmod>2024-03-25T11:39:55+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/tags/</loc>
     <lastmod>2024-03-25T11:39:55+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/categories/upfall-studios/</loc>
@@ -155,7 +164,7 @@
     <loc>https://www.david-amador.com/tags/development/</loc>
     <lastmod>2016-12-29T12:35:49+00:00</lastmod>
   </url><url>
-    <loc>https://www.david-amador.com/tags/game/</loc>
+    <loc>https://www.david-amador.com/tags/games/</loc>
     <lastmod>2016-12-29T12:35:49+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/nintendo/</loc>
@@ -326,7 +335,7 @@
     <loc>https://www.david-amador.com/2013/10/a-new-game-project-and-new-job/</loc>
     <lastmod>2013-10-04T16:10:05+00:00</lastmod>
   </url><url>
-    <loc>https://www.david-amador.com/tags/gamedev-book/</loc>
+    <loc>https://www.david-amador.com/tags/books/</loc>
     <lastmod>2013-07-17T12:47:13+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</loc>
@@ -443,9 +452,6 @@
     <loc>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</loc>
     <lastmod>2012-06-03T20:00:01+00:00</lastmod>
   </url><url>
-    <loc>https://www.david-amador.com/categories/general-programming/</loc>
-    <lastmod>2012-06-03T20:00:01+00:00</lastmod>
-  </url><url>
     <loc>https://www.david-amador.com/tags/memory-leaks/</loc>
     <lastmod>2012-06-03T20:00:01+00:00</lastmod>
   </url><url>
@@ -537,9 +543,6 @@
     <lastmod>2011-12-07T16:47:43+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/2011/12/rage/</loc>
-    <lastmod>2011-12-07T16:47:43+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/tags/review/</loc>
     <lastmod>2011-12-07T16:47:43+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/2011/10/something-new-in-the-horizon/</loc>
@@ -676,9 +679,6 @@
   </url><url>
     <loc>https://www.david-amador.com/tags/pathfinding/</loc>
     <lastmod>2010-10-27T10:48:46+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/tags/gaming/</loc>
-    <lastmod>2010-10-23T20:00:59+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/</loc>
     <lastmod>2010-10-23T20:00:59+00:00</lastmod>

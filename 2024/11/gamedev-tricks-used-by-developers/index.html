@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Gamedev tricks used by developers | David Amador</title>
+<meta name="keywords" content="gamedev">
+<meta name="description" content="🧵 origin thread In 2018 I started a thread on Twitter (later renamed X 🙄) where I shared some game development tricks devs used to get around get around bugs, software, hardware or time constraints. Over time I added more stuff to that thread, and there&rsquo;s some cool information there. Since I now replicated that thread on both Mastodon and Bluesky; it got me thinking I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever taken down.">
+<meta name="author" content="David Amador">
+<link rel="canonical" href="https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://www.david-amador.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
+<meta property="og:title" content="Gamedev tricks used by developers" />
+<meta property="og:description" content="🧵 origin thread In 2018 I started a thread on Twitter (later renamed X 🙄) where I shared some game development tricks devs used to get around get around bugs, software, hardware or time constraints. Over time I added more stuff to that thread, and there&rsquo;s some cool information there. Since I now replicated that thread on both Mastodon and Bluesky; it got me thinking I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever taken down." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/" />
+<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-11-15T14:39:55+00:00" />
+<meta property="article:modified_time" content="2024-11-15T14:39:55+00:00" /><meta property="og:site_name" content="David Amador" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg" />
+<meta name="twitter:title" content="Gamedev tricks used by developers"/>
+<meta name="twitter:description" content="🧵 origin thread In 2018 I started a thread on Twitter (later renamed X 🙄) where I shared some game development tricks devs used to get around get around bugs, software, hardware or time constraints. Over time I added more stuff to that thread, and there&rsquo;s some cool information there. Since I now replicated that thread on both Mastodon and Bluesky; it got me thinking I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever taken down."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://www.david-amador.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Gamedev tricks used by developers",
+      "item": "https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Gamedev tricks used by developers",
+  "name": "Gamedev tricks used by developers",
+  "description": "🧵 origin thread In 2018 I started a thread on Twitter (later renamed X 🙄) where I shared some game development tricks devs used to get around get around bugs, software, hardware or time constraints. Over time I added more stuff to that thread, and there\u0026rsquo;s some cool information there. Since I now replicated that thread on both Mastodon and Bluesky; it got me thinking I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever taken down.",
+  "keywords": [
+    "gamedev"
+  ],
+  "articleBody": "🧵 origin thread In 2018 I started a thread on Twitter (later renamed X 🙄) where I shared some game development tricks devs used to get around get around bugs, software, hardware or time constraints. Over time I added more stuff to that thread, and there’s some cool information there. Since I now replicated that thread on both Mastodon and Bluesky; it got me thinking I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever taken down. If I find more I’ll add them later. Also this page may take a bit to load due to images, gifs videos etc.\n👾 Skyrim shelves Skyrim small tables are actually shelves buried. If you can’t see it …\n👾 Jak and Daxter loading In Jak and Daxter if by any chance the Area/assets ahead aren’t fully loaded the game will make you trip to give it more time to load in background.\n👾 Super Mario 64 infinite stairs In Super Mario 64 this is how Nintendo got the infinite stairs effect working, teleport. Mario keeps getting teleported to a prior point on the stairs which makes it impossible to progress in a normal way. But this is also the reason why Speedrunners can glitch the effect and skip it using the backwards jump trick.\n👾 Wing Commander memory exception There was a memory exception in Wing Commander on exit, because of the deadline they left it but change the error message to “Thank you for playing Wing Commander!”\n👾 Undertale NPC pathfinding This one is from Undertale, to prevent NPCs to walk on pits, developer added Magic glass so that way “it works”.\n👾 Fallout 3 trains are hats In Fallout 3 all the trains are actually a character wearing a train model as a hat. Source.\n👾 Donkey Kong 64 memory crash (myth) This one was later proved as a myth by developers on my thread, but I’m leaving it here since you can still find it in tons of places, so this way here it has a correction that it was in fact a myth.\nInternet theories says that Donkey Kong 64 had a memory crash/limit bug on standard N64. Unable to identify the cause of the crash they decided to ship the game with the memory expansion bundled with game.\n👾 Super Mario Bros. reuse of grass/clouds In Super Mario Bros. because of memory limitations clouds and bushes are the same sprite but using a different color palette.\n👾 Kirby Dream Land memory saving In Kirby Dream Land for Gameboy, to save memory some enemies have the same “back” part of the sprite and only change the face.\n👾 Zelda A Link Between Worlds fake perspective This is one of my fav, in Zelda: A Link Between Worlds because a true top down view in 3D had some issues, they purposely tilt the objects so the perspective looks good to the player.\n👾 Duke Nukem mirrors Duke Nukem 3D mirrors reflection were achieved by duplicating the room on the other side. If you deactivate clipping you can go to the other side. True reflections are computational intensive even today.\n👾 NBA Jam: T.E. cartridge day one “patch” In NBA Jam: T.E. for Genesis/Mega Drive devs only found out after making the 250k cartridges there was a save bug. Playing game in a certain order fixed it so it got a day one patch in the manual saying how to initialize memory.\n👾 Mario Galaxy drown animation In Super Mario Galaxy when Mario drowns in a swap his hand reaches out, because of the size of the head they have to shrink it so only the hand is visible to the player.\n👾 World of Warcraft rest bonus World of Warcraft rest bonus was made to encourage breaks, half XP gained after a few hours. Players hated, so they made everything take 2x as much XP to achieve but you start at 200% XP and gradually back to 100%. Same thing \u0026 players are happy. source\n👾 Resident Evil 4 radio billboards This one is not as unknown or hard to imagine but in Resident Evil 4 during the radio chat cutscenes it’s actually a 2D panel with the 3D models behind. Many other games do this too.\n👾 Duck Hunt Zapper In Duck Hunt the NES Zapper worked by blacking out screen \u0026 drawing white blocks around targets when you fire, for a couple frames. The diode in the Zapper detects the change in light intensity and tells the computer if it’s pointed at a lit target.\n👾 Metal Gear Solid PS1 reflections In Metal Gear Solid 1, another reflection trick. Water puddle in 1st mission map is just a transparent texture with the geometry of ceiling and walls duplicated below the ground. That’s why you can’t see Snake reflection.\n👾 Prince of Persia animations In Prince of Persia (1989) animations looked fluid \u0026 realistic because Jordan Mechner used Rotoscope, he filmed his brother doing the stunts, took pictures with camera, had them developed at Fotomat and then traced them, frame by frame.\n👾 Tomb Raider Sega Saturn Sega Saturn used Quads instead of triangles (the industry norm) for rendering, which is good for 2D but not as practical for 3D, devs had to work around that, so games like Tomb Raider had to be built to support quads on Saturn and triangles on PlayStation.\n👾 Pong Original Pong had 0 lines of code.\n👾 Paper Mario shadows Paper Mario uses a transparent mesh to simulate door shadows.\nYour browser does not support the video tag.\r👾 Dead Space UI Dead Space UI is all made with particles so it can sort in render, glow and be more immersive. source\nYour browser does not support the video tag.\r👾 Katamari Damacy spawns Katamari Damacy only has support for closed, circular paths, so how they make boulders travel beneath the ground, back to the original place, so that it seems like they are spawning and despawning!\nsource\nYour browser does not support the video tag.\r👾 Elder’s Scroll Morrowind Xbox memory management This is easily one of the best, on OG Xbox, Elder Scrolls III would occasionally reboot the Xbox if they ran out of memory. The user would just see a longer then usual loading screen.\nYour browser does not support the video tag.\r👾 Grand Theft Auto tanks In GTA the tanks were made with pedestrians that were on top of a car to use the existing shooting mechanics and also the driving code.\n👾 Kirby and the Forgotten Land game feel Kirby and the Forgotten Land is a 3D game, but will fake the hit collisions for better game feel depending where the camera is, in certain angles as long as in camera it “looks” like it hits it will consider it a collision even if it’s not.\nYour browser does not support the video tag.\r👾 Skyrim NPCs inventory system Skyrim handles each NPCs inventory by having it on a unique chest hidden under the map. Most are impossible to get unless clipping is used, but sometimes you can find them.\n👾 Doom 3 volumetric glow Doom 3 fakes volumetric glow by folding vertexes with camera movement. source\n👾 Lord of the Rings engine reuse Lord of the Rings game was made by reusing Tiger Woods golf game because they needed large areas with a goal/castle at the end, a golf game is just that. I think it’s quite funny how far apart they are but it works.\nYour browser does not support the video tag.\r👾 Metroid Prime noise texture In order to save memory, Metroid Prime fullscreen static texture effect is generated using random live RAM data, which is just the game itself running, GameCube only had 24MB. source\n👾 Titan Quest action delays On Titan Quest, because there was no way to script timed delays actions, developers created ambient creatures like Squirrels and used their animations as a way to count time to trigger the events.\n👾 Journey shadows Journey doesn’t have a real-time shadow system so they are hand painted and baked later. The results are impressive but the amount of work involved wow. source\n👾 Silent Hill 2 mirror Another duplicate room mirror trick, this time Silent Hill 2, in the beginning of the game, the mirror reflection is just the entire bathroom duplicated.\n(to be continued …. maybe)\n",
+  "wordCount" : "1412",
+  "inLanguage": "en",
+  "image":"https://www.david-amador.com/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg","datePublished": "2024-11-15T14:39:55Z",
+  "dateModified": "2024-11-15T14:39:55Z",
+  "author":{
+    "@type": "Person",
+    "name": "David Amador"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "David Amador",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.david-amador.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+                <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
+                    height="35">David Amador</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://www.david-amador.com/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/games/" title="Games">
+                    <span>Games</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/portfolio/" title="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/about/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.david-amador.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Gamedev tricks used by developers
+    </h1>
+    <div class="post-meta"><span title='2024-11-15 14:39:55 +0000 UTC'>November 15, 2024</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;1412 words&nbsp;·&nbsp;David Amador
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="https://www.david-amador.com/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg" alt="">
+        
+</figure>
+  <div class="post-content"><h2 id="-origin-thread">🧵 origin thread<a hidden class="anchor" aria-hidden="true" href="#-origin-thread">#</a></h2>
+<blockquote>
+<p>In 2018 I started a thread on Twitter (later renamed X 🙄) where <a href="https://x.com/DJ_Link/status/964124424969637888">I shared some game development tricks</a> devs used to get around get around bugs, software, hardware or time constraints. Over time I added more stuff to that thread, and there&rsquo;s some cool information there. Since I now replicated that thread on both <a href="https://mastodon.gamedev.place/deck/@djlink/109313319839796759">Mastodon</a> and <a href="https://bsky.app/profile/djlink.bsky.social/post/3l6ubkivh5o2t">Bluesky</a>; it got me thinking I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever taken down. If I find more I&rsquo;ll add them later. Also this page may take a bit to load due to images, gifs videos etc.</p>
+</blockquote>
+<hr>
+<h3 id="-skyrim-shelves">👾 Skyrim shelves<a hidden class="anchor" aria-hidden="true" href="#-skyrim-shelves">#</a></h3>
+<p>Skyrim small tables are actually shelves buried. If you can&rsquo;t see it &hellip;</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg" alt="Skyrim buried shelves 1"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg" alt="Skyrim buried shelves 2"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-jak-and-daxter-loading">👾 Jak and Daxter loading<a hidden class="anchor" aria-hidden="true" href="#-jak-and-daxter-loading">#</a></h3>
+<p>In Jak and Daxter if by any chance the Area/assets ahead aren&rsquo;t fully loaded the game will make you trip to give it more time to load in background.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/jak_dexter_tripping_loading.gif" alt="Jak and Daxter tripping loading"  />
+</p>
+<hr>
+<h3 id="-super-mario-64-infinite-stairs">👾 Super Mario 64 infinite stairs<a hidden class="anchor" aria-hidden="true" href="#-super-mario-64-infinite-stairs">#</a></h3>
+<p>In Super Mario 64 this is how Nintendo got the infinite stairs effect working, teleport. Mario keeps getting teleported to a prior point on the stairs which makes it impossible to progress in a normal way. But this is also the reason why Speedrunners can glitch the effect and skip it using the backwards jump trick.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_64_infinite_stairs.gif" alt="Super Mario 64 infinite stairs"  />
+</p>
+<hr>
+<h3 id="-wing-commander-memory-exception">👾 Wing Commander memory exception<a hidden class="anchor" aria-hidden="true" href="#-wing-commander-memory-exception">#</a></h3>
+<p>There was a memory exception in Wing Commander on exit, because of the deadline they left it but change the error message to &ldquo;Thank you for playing Wing Commander!&rdquo;</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/wing_commander_exit_message.jpg" alt="Wing Commander exit message"  />
+</p>
+<hr>
+<h3 id="-undertale-npc-pathfinding">👾 Undertale NPC pathfinding<a hidden class="anchor" aria-hidden="true" href="#-undertale-npc-pathfinding">#</a></h3>
+<p>This one is from Undertale, to prevent NPCs to walk on pits, developer added Magic glass so that way &ldquo;it works&rdquo;.</p>
+<table>
+<thead>
+<tr>
+<th><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_1.jpg" alt="Undertale magic glass 1"  />
+</th>
+<th><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_2.jpg" alt="Undertale magic glass 2"  />
+</th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-fallout-3-trains-are-hats">👾 Fallout 3 trains are hats<a hidden class="anchor" aria-hidden="true" href="#-fallout-3-trains-are-hats">#</a></h3>
+<p>In Fallout 3 all the trains are actually a character wearing a train model as a hat. <a href="https://www.pcgamer.com/heres-whats-happening-inside-fallout-3s-metro-train/">Source</a>.</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg" alt="Fallout 3 Trains"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg" alt="Fallout 3 Trains"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-donkey-kong-64-memory-crash-myth">👾 Donkey Kong 64 memory crash (myth)<a hidden class="anchor" aria-hidden="true" href="#-donkey-kong-64-memory-crash-myth">#</a></h3>
+<p>This one was later proved as a myth by developers on my thread, but I&rsquo;m leaving it here since you can still find it in tons of places, so this way here it has a correction that it was in fact a myth.</p>
+<p>Internet theories says that Donkey Kong 64 had a memory crash/limit bug on standard N64. Unable to identify the cause of the crash they decided to ship the game with the memory expansion bundled with game.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/donkey_kong_64.jpg" alt="Donkey Kong 64"  />
+</p>
+<hr>
+<h3 id="-super-mario-bros-reuse-of-grassclouds">👾 Super Mario Bros. reuse of grass/clouds<a hidden class="anchor" aria-hidden="true" href="#-super-mario-bros-reuse-of-grassclouds">#</a></h3>
+<p>In Super Mario Bros. because of memory limitations clouds and bushes are the same sprite but using a different color palette.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_bros_grass_clouds.jpg" alt="Super Mario Bros. reuse of grass and clouds"  />
+</p>
+<hr>
+<h3 id="-kirby-dream-land-memory-saving">👾 Kirby Dream Land memory saving<a hidden class="anchor" aria-hidden="true" href="#-kirby-dream-land-memory-saving">#</a></h3>
+<p>In Kirby Dream Land for Gameboy, to save memory some enemies have the same &ldquo;back&rdquo; part of the sprite and only change the face.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/kirby_gameboy_reuse_assets.jpg" alt="Kirby Dream Land memory saving"  />
+</p>
+<hr>
+<h3 id="-zelda-a-link-between-worlds-fake-perspective">👾 Zelda A Link Between Worlds fake perspective<a hidden class="anchor" aria-hidden="true" href="#-zelda-a-link-between-worlds-fake-perspective">#</a></h3>
+<p>This is one of my fav, in Zelda: A Link Between Worlds because a true top down view in 3D had some issues, they purposely tilt the objects so the perspective looks good to the player.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/zelda_link_between_worlds_skewed_view.jpg" alt="Zelda A Link Between Worlds fake perspective"  />
+</p>
+<hr>
+<h3 id="-duke-nukem-mirrors">👾 Duke Nukem mirrors<a hidden class="anchor" aria-hidden="true" href="#-duke-nukem-mirrors">#</a></h3>
+<p>Duke Nukem 3D mirrors reflection were achieved by duplicating the room on the other side. If you deactivate clipping you can go to the other side. True reflections are computational intensive even today.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duke_nukem_mirrors.gif" alt="Duke Nukem mirrors"  />
+</p>
+<hr>
+<h3 id="-nba-jam-te-cartridge-day-one-patch">👾 NBA Jam: T.E. cartridge day one &ldquo;patch&rdquo;<a hidden class="anchor" aria-hidden="true" href="#-nba-jam-te-cartridge-day-one-patch">#</a></h3>
+<p>In NBA Jam: T.E. for Genesis/Mega Drive devs only found out after making the 250k cartridges there was a save bug. Playing game in a certain order fixed it so it got a day one patch in the manual saying how to initialize memory.</p>
+<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg" alt="NBA Jam T.E"  />
+</a></p>
+<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png" alt="NBA Jam T.E"  />
+</a></p>
+<hr>
+<h3 id="-mario-galaxy-drown-animation">👾 Mario Galaxy drown animation<a hidden class="anchor" aria-hidden="true" href="#-mario-galaxy-drown-animation">#</a></h3>
+<p>In Super Mario Galaxy when Mario drowns in a swap his hand reaches out, because of the size of the head they have to shrink it so only the hand is visible to the player.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/mario_galaxy_drown_animation.gif" alt="Mario Galaxy drown animation"  />
+</p>
+<hr>
+<h3 id="-world-of-warcraft-rest-bonus">👾 World of Warcraft rest bonus<a hidden class="anchor" aria-hidden="true" href="#-world-of-warcraft-rest-bonus">#</a></h3>
+<p>World of Warcraft rest bonus was made to encourage breaks, half XP gained after a few hours. Players hated, so they made everything take 2x as much XP to achieve but you start at 200% XP and gradually back to 100%. Same thing &amp; players are happy. <a href="https://www.psychologyofgames.com/2010/03/framing-and-world-of-warcrafts-rest-system/">source</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/world_of_warcraft_rest_bonus.jpg" alt="World of Warcraft rest bonus"  />
+</p>
+<hr>
+<h3 id="-resident-evil-4-radio-billboards">👾 Resident Evil 4 radio billboards<a hidden class="anchor" aria-hidden="true" href="#-resident-evil-4-radio-billboards">#</a></h3>
+<p>This one is not as unknown or hard to imagine but in Resident Evil 4 during the radio chat cutscenes it&rsquo;s actually a 2D panel with the 3D models behind. Many other games do this too.</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg" alt="Resident Evil 4"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg" alt="Fallout 3 Trains"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-duck-hunt-zapper">👾 Duck Hunt Zapper<a hidden class="anchor" aria-hidden="true" href="#-duck-hunt-zapper">#</a></h3>
+<p>In Duck Hunt the NES Zapper worked by blacking out screen &amp; drawing white blocks around targets when you fire, for a couple frames. The diode in the Zapper detects the change in light intensity and tells the computer if it’s pointed at a lit target.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duck_hunt_zapper.gif" alt="Duck Hunt Zapper"  />
+</p>
+<hr>
+<h3 id="-metal-gear-solid-ps1-reflections">👾 Metal Gear Solid PS1 reflections<a hidden class="anchor" aria-hidden="true" href="#-metal-gear-solid-ps1-reflections">#</a></h3>
+<p>In Metal Gear Solid 1, another reflection trick. Water puddle in 1st mission map is just a transparent texture with the geometry of ceiling and walls duplicated below the ground. That&rsquo;s why you can&rsquo;t see Snake reflection.</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg" alt="Metal Gear Solid"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg" alt="Metal Gear Solid"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-prince-of-persia-animations">👾 Prince of Persia animations<a hidden class="anchor" aria-hidden="true" href="#-prince-of-persia-animations">#</a></h3>
+<p>In Prince of Persia (1989) animations looked fluid &amp; realistic because Jordan Mechner used Rotoscope, he filmed his brother doing the stunts, took pictures with camera, had them developed at Fotomat and then traced them, frame by frame.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/prince_of_persia_rotoscope.gif" alt="Prince of Persia Rotoscope"  />
+</p>
+<hr>
+<h3 id="-tomb-raider-sega-saturn">👾 Tomb Raider Sega Saturn<a hidden class="anchor" aria-hidden="true" href="#-tomb-raider-sega-saturn">#</a></h3>
+<p>Sega Saturn used Quads instead of triangles (the industry norm) for rendering, which is good for 2D but not as practical for 3D, devs had to work around that, so games like Tomb Raider had to be built to support quads on Saturn and triangles on PlayStation.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/tomb_raider_saturn_quads.gif" alt="Tomb Raider Sega Saturn quads"  />
+</p>
+<hr>
+<h3 id="-pong">👾 Pong<a hidden class="anchor" aria-hidden="true" href="#-pong">#</a></h3>
+<p>Original Pong had 0 lines of code.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/pong_0_lines_code.jpg" alt="Pong"  />
+</p>
+<hr>
+<h3 id="-paper-mario-shadows">👾 Paper Mario shadows<a hidden class="anchor" aria-hidden="true" href="#-paper-mario-shadows">#</a></h3>
+<p>Paper Mario uses a transparent mesh to simulate door shadows.</p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/paper_mario_shadows.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-dead-space-ui">👾 Dead Space UI<a hidden class="anchor" aria-hidden="true" href="#-dead-space-ui">#</a></h3>
+<p>Dead Space UI is all made with particles so it can sort in render, glow and be more immersive. <a href="https://x.com/Worthless_Bums/status/1271139746551599112">source</a></p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/dead_space_particles_ui.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-katamari-damacy-spawns">👾 Katamari Damacy spawns<a hidden class="anchor" aria-hidden="true" href="#-katamari-damacy-spawns">#</a></h3>
+<p>Katamari Damacy only has support for closed, circular paths, so how they make boulders travel beneath the ground, back to the original place, so that it seems like they are spawning and despawning!</p>
+<p><a href="https://x.com/JasperRLZ/status/1289960052250435584">source</a></p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/katamari_spawns.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-elders-scroll-morrowind-xbox-memory-management">👾 Elder&rsquo;s Scroll Morrowind Xbox memory management<a hidden class="anchor" aria-hidden="true" href="#-elders-scroll-morrowind-xbox-memory-management">#</a></h3>
+<p>This is easily one of the best, on OG Xbox, Elder Scrolls III would occasionally reboot the Xbox if they ran out of memory. The user would just see a longer then usual loading screen.</p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/xbox_elders_scroll_reboot_when_low_memory.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-grand-theft-auto-tanks">👾 Grand Theft Auto tanks<a hidden class="anchor" aria-hidden="true" href="#-grand-theft-auto-tanks">#</a></h3>
+<p>In GTA the tanks were made with pedestrians that were on top of a car to use the existing shooting mechanics and also the driving code.</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png" alt="Grand Theft Auto Tanks"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png" alt="Grand Theft Auto Tanks"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-kirby-and-the-forgotten-land-game-feel">👾 Kirby and the Forgotten Land game feel<a hidden class="anchor" aria-hidden="true" href="#-kirby-and-the-forgotten-land-game-feel">#</a></h3>
+<p>Kirby and the Forgotten Land is a 3D game, but will fake the hit collisions for better game feel depending where the camera is, in certain angles as long as in camera it &ldquo;looks&rdquo; like it hits it will consider it a collision even if it&rsquo;s not.</p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/kirby_forgotten_land_game_feel.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-skyrim-npcs-inventory-system">👾 Skyrim NPCs inventory system<a hidden class="anchor" aria-hidden="true" href="#-skyrim-npcs-inventory-system">#</a></h3>
+<p>Skyrim handles each NPCs inventory by having it on a unique chest hidden under the map. Most are impossible to get unless clipping is used, but sometimes you can find them.</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg" alt="Skyrim NPC inventory"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg" alt="Skyrim NPC inventory"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-doom-3-volumetric-glow">👾 Doom 3 volumetric glow<a hidden class="anchor" aria-hidden="true" href="#-doom-3-volumetric-glow">#</a></h3>
+<p>Doom 3 fakes volumetric glow by folding vertexes with camera movement. <a href="https://simonschreibt.de/gat/doom-3-volumetric-glow/">source</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/doom3_volumetric_glow.gif" alt="Doom 3 volumetric glow"  />
+</p>
+<hr>
+<h3 id="-lord-of-the-rings-engine-reuse">👾 Lord of the Rings engine reuse<a hidden class="anchor" aria-hidden="true" href="#-lord-of-the-rings-engine-reuse">#</a></h3>
+<p>Lord of the Rings game was made by reusing Tiger Woods golf game because they needed large areas with a goal/castle at the end, a golf game is just that. I think it’s quite funny how far apart they are but it works.</p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/lord_of_the_rings_tiger_woods_engine.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-metroid-prime-noise-texture">👾 Metroid Prime noise texture<a hidden class="anchor" aria-hidden="true" href="#-metroid-prime-noise-texture">#</a></h3>
+<p>In order to save memory, Metroid Prime fullscreen static texture effect is generated using random live RAM data, which is just the game itself running, GameCube only had 24MB. <a href="https://x.com/ZoidCTF/status/1590012338421518337">source</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metroid_prime_noise_texture.jpg" alt="Metroid Prime"  />
+</p>
+<hr>
+<h3 id="-titan-quest-action-delays">👾 Titan Quest action delays<a hidden class="anchor" aria-hidden="true" href="#-titan-quest-action-delays">#</a></h3>
+<p>On Titan Quest, because there was no way to script timed delays actions, developers created ambient creatures like Squirrels and used their animations as a way to count time to trigger the events.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/titan_quest_timed_delays.png" alt="Titan Quest action delays"  />
+</p>
+<hr>
+<h3 id="-journey-shadows">👾 Journey shadows<a hidden class="anchor" aria-hidden="true" href="#-journey-shadows">#</a></h3>
+<p>Journey doesn&rsquo;t have a real-time shadow system so they are hand painted and baked later. The results are impressive but the amount of work involved wow. <a href="https://x.com/matt_nava/status/1503152810078052355">source</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_1.png" alt="Journey Shadows"  />
+</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png" alt="Journey Shadows"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png" alt="Journey Shadows"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-silent-hill-2-mirror">👾 Silent Hill 2 mirror<a hidden class="anchor" aria-hidden="true" href="#-silent-hill-2-mirror">#</a></h3>
+<p>Another duplicate room mirror trick, this time Silent Hill 2, in the beginning of the game, the mirror reflection is just the entire bathroom duplicated.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/silent_hill_2_mirror_duplicate_room.jpg" alt="Silent Hill 2 mirror"  />
+</p>
+<hr>
+<p>(to be continued &hellip;. maybe)</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://www.david-amador.com/tags/gamedev/">gamedev</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Quest of Dungeons turns 10 years old!</span>
+  </a>
+</nav>
+
+  </footer><div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "upfallstudios" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -11,8 +11,275 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Mar 2024 11:39:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2024 14:39:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/categories/game-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gamedev tricks used by developers</title>
+      <link>https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/</link>
+      <pubDate>Fri, 15 Nov 2024 14:39:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/</guid>
+      <description>🧵 origin thread In 2018 I started a thread on Twitter (later renamed X 🙄) where I shared some game development tricks devs used to get around get around bugs, software, hardware or time constraints. Over time I added more stuff to that thread, and there&amp;rsquo;s some cool information there. Since I now replicated that thread on both Mastodon and Bluesky; it got me thinking I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever taken down.</description>
+      <content:encoded><![CDATA[<h2 id="-origin-thread">🧵 origin thread</h2>
+<blockquote>
+<p>In 2018 I started a thread on Twitter (later renamed X 🙄) where <a href="https://x.com/DJ_Link/status/964124424969637888">I shared some game development tricks</a> devs used to get around get around bugs, software, hardware or time constraints. Over time I added more stuff to that thread, and there&rsquo;s some cool information there. Since I now replicated that thread on both <a href="https://mastodon.gamedev.place/deck/@djlink/109313319839796759">Mastodon</a> and <a href="https://bsky.app/profile/djlink.bsky.social/post/3l6ubkivh5o2t">Bluesky</a>; it got me thinking I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever taken down. If I find more I&rsquo;ll add them later. Also this page may take a bit to load due to images, gifs videos etc.</p>
+</blockquote>
+<hr>
+<h3 id="-skyrim-shelves">👾 Skyrim shelves</h3>
+<p>Skyrim small tables are actually shelves buried. If you can&rsquo;t see it &hellip;</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg" alt="Skyrim buried shelves 1"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg" alt="Skyrim buried shelves 2"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-jak-and-daxter-loading">👾 Jak and Daxter loading</h3>
+<p>In Jak and Daxter if by any chance the Area/assets ahead aren&rsquo;t fully loaded the game will make you trip to give it more time to load in background.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/jak_dexter_tripping_loading.gif" alt="Jak and Daxter tripping loading"  />
+</p>
+<hr>
+<h3 id="-super-mario-64-infinite-stairs">👾 Super Mario 64 infinite stairs</h3>
+<p>In Super Mario 64 this is how Nintendo got the infinite stairs effect working, teleport. Mario keeps getting teleported to a prior point on the stairs which makes it impossible to progress in a normal way. But this is also the reason why Speedrunners can glitch the effect and skip it using the backwards jump trick.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_64_infinite_stairs.gif" alt="Super Mario 64 infinite stairs"  />
+</p>
+<hr>
+<h3 id="-wing-commander-memory-exception">👾 Wing Commander memory exception</h3>
+<p>There was a memory exception in Wing Commander on exit, because of the deadline they left it but change the error message to &ldquo;Thank you for playing Wing Commander!&rdquo;</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/wing_commander_exit_message.jpg" alt="Wing Commander exit message"  />
+</p>
+<hr>
+<h3 id="-undertale-npc-pathfinding">👾 Undertale NPC pathfinding</h3>
+<p>This one is from Undertale, to prevent NPCs to walk on pits, developer added Magic glass so that way &ldquo;it works&rdquo;.</p>
+<table>
+<thead>
+<tr>
+<th><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_1.jpg" alt="Undertale magic glass 1"  />
+</th>
+<th><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_2.jpg" alt="Undertale magic glass 2"  />
+</th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-fallout-3-trains-are-hats">👾 Fallout 3 trains are hats</h3>
+<p>In Fallout 3 all the trains are actually a character wearing a train model as a hat. <a href="https://www.pcgamer.com/heres-whats-happening-inside-fallout-3s-metro-train/">Source</a>.</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg" alt="Fallout 3 Trains"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg" alt="Fallout 3 Trains"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-donkey-kong-64-memory-crash-myth">👾 Donkey Kong 64 memory crash (myth)</h3>
+<p>This one was later proved as a myth by developers on my thread, but I&rsquo;m leaving it here since you can still find it in tons of places, so this way here it has a correction that it was in fact a myth.</p>
+<p>Internet theories says that Donkey Kong 64 had a memory crash/limit bug on standard N64. Unable to identify the cause of the crash they decided to ship the game with the memory expansion bundled with game.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/donkey_kong_64.jpg" alt="Donkey Kong 64"  />
+</p>
+<hr>
+<h3 id="-super-mario-bros-reuse-of-grassclouds">👾 Super Mario Bros. reuse of grass/clouds</h3>
+<p>In Super Mario Bros. because of memory limitations clouds and bushes are the same sprite but using a different color palette.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_bros_grass_clouds.jpg" alt="Super Mario Bros. reuse of grass and clouds"  />
+</p>
+<hr>
+<h3 id="-kirby-dream-land-memory-saving">👾 Kirby Dream Land memory saving</h3>
+<p>In Kirby Dream Land for Gameboy, to save memory some enemies have the same &ldquo;back&rdquo; part of the sprite and only change the face.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/kirby_gameboy_reuse_assets.jpg" alt="Kirby Dream Land memory saving"  />
+</p>
+<hr>
+<h3 id="-zelda-a-link-between-worlds-fake-perspective">👾 Zelda A Link Between Worlds fake perspective</h3>
+<p>This is one of my fav, in Zelda: A Link Between Worlds because a true top down view in 3D had some issues, they purposely tilt the objects so the perspective looks good to the player.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/zelda_link_between_worlds_skewed_view.jpg" alt="Zelda A Link Between Worlds fake perspective"  />
+</p>
+<hr>
+<h3 id="-duke-nukem-mirrors">👾 Duke Nukem mirrors</h3>
+<p>Duke Nukem 3D mirrors reflection were achieved by duplicating the room on the other side. If you deactivate clipping you can go to the other side. True reflections are computational intensive even today.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duke_nukem_mirrors.gif" alt="Duke Nukem mirrors"  />
+</p>
+<hr>
+<h3 id="-nba-jam-te-cartridge-day-one-patch">👾 NBA Jam: T.E. cartridge day one &ldquo;patch&rdquo;</h3>
+<p>In NBA Jam: T.E. for Genesis/Mega Drive devs only found out after making the 250k cartridges there was a save bug. Playing game in a certain order fixed it so it got a day one patch in the manual saying how to initialize memory.</p>
+<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg" alt="NBA Jam T.E"  />
+</a></p>
+<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png" alt="NBA Jam T.E"  />
+</a></p>
+<hr>
+<h3 id="-mario-galaxy-drown-animation">👾 Mario Galaxy drown animation</h3>
+<p>In Super Mario Galaxy when Mario drowns in a swap his hand reaches out, because of the size of the head they have to shrink it so only the hand is visible to the player.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/mario_galaxy_drown_animation.gif" alt="Mario Galaxy drown animation"  />
+</p>
+<hr>
+<h3 id="-world-of-warcraft-rest-bonus">👾 World of Warcraft rest bonus</h3>
+<p>World of Warcraft rest bonus was made to encourage breaks, half XP gained after a few hours. Players hated, so they made everything take 2x as much XP to achieve but you start at 200% XP and gradually back to 100%. Same thing &amp; players are happy. <a href="https://www.psychologyofgames.com/2010/03/framing-and-world-of-warcrafts-rest-system/">source</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/world_of_warcraft_rest_bonus.jpg" alt="World of Warcraft rest bonus"  />
+</p>
+<hr>
+<h3 id="-resident-evil-4-radio-billboards">👾 Resident Evil 4 radio billboards</h3>
+<p>This one is not as unknown or hard to imagine but in Resident Evil 4 during the radio chat cutscenes it&rsquo;s actually a 2D panel with the 3D models behind. Many other games do this too.</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg" alt="Resident Evil 4"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg" alt="Fallout 3 Trains"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-duck-hunt-zapper">👾 Duck Hunt Zapper</h3>
+<p>In Duck Hunt the NES Zapper worked by blacking out screen &amp; drawing white blocks around targets when you fire, for a couple frames. The diode in the Zapper detects the change in light intensity and tells the computer if it’s pointed at a lit target.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duck_hunt_zapper.gif" alt="Duck Hunt Zapper"  />
+</p>
+<hr>
+<h3 id="-metal-gear-solid-ps1-reflections">👾 Metal Gear Solid PS1 reflections</h3>
+<p>In Metal Gear Solid 1, another reflection trick. Water puddle in 1st mission map is just a transparent texture with the geometry of ceiling and walls duplicated below the ground. That&rsquo;s why you can&rsquo;t see Snake reflection.</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg" alt="Metal Gear Solid"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg" alt="Metal Gear Solid"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-prince-of-persia-animations">👾 Prince of Persia animations</h3>
+<p>In Prince of Persia (1989) animations looked fluid &amp; realistic because Jordan Mechner used Rotoscope, he filmed his brother doing the stunts, took pictures with camera, had them developed at Fotomat and then traced them, frame by frame.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/prince_of_persia_rotoscope.gif" alt="Prince of Persia Rotoscope"  />
+</p>
+<hr>
+<h3 id="-tomb-raider-sega-saturn">👾 Tomb Raider Sega Saturn</h3>
+<p>Sega Saturn used Quads instead of triangles (the industry norm) for rendering, which is good for 2D but not as practical for 3D, devs had to work around that, so games like Tomb Raider had to be built to support quads on Saturn and triangles on PlayStation.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/tomb_raider_saturn_quads.gif" alt="Tomb Raider Sega Saturn quads"  />
+</p>
+<hr>
+<h3 id="-pong">👾 Pong</h3>
+<p>Original Pong had 0 lines of code.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/pong_0_lines_code.jpg" alt="Pong"  />
+</p>
+<hr>
+<h3 id="-paper-mario-shadows">👾 Paper Mario shadows</h3>
+<p>Paper Mario uses a transparent mesh to simulate door shadows.</p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/paper_mario_shadows.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-dead-space-ui">👾 Dead Space UI</h3>
+<p>Dead Space UI is all made with particles so it can sort in render, glow and be more immersive. <a href="https://x.com/Worthless_Bums/status/1271139746551599112">source</a></p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/dead_space_particles_ui.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-katamari-damacy-spawns">👾 Katamari Damacy spawns</h3>
+<p>Katamari Damacy only has support for closed, circular paths, so how they make boulders travel beneath the ground, back to the original place, so that it seems like they are spawning and despawning!</p>
+<p><a href="https://x.com/JasperRLZ/status/1289960052250435584">source</a></p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/katamari_spawns.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-elders-scroll-morrowind-xbox-memory-management">👾 Elder&rsquo;s Scroll Morrowind Xbox memory management</h3>
+<p>This is easily one of the best, on OG Xbox, Elder Scrolls III would occasionally reboot the Xbox if they ran out of memory. The user would just see a longer then usual loading screen.</p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/xbox_elders_scroll_reboot_when_low_memory.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-grand-theft-auto-tanks">👾 Grand Theft Auto tanks</h3>
+<p>In GTA the tanks were made with pedestrians that were on top of a car to use the existing shooting mechanics and also the driving code.</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png" alt="Grand Theft Auto Tanks"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png" alt="Grand Theft Auto Tanks"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-kirby-and-the-forgotten-land-game-feel">👾 Kirby and the Forgotten Land game feel</h3>
+<p>Kirby and the Forgotten Land is a 3D game, but will fake the hit collisions for better game feel depending where the camera is, in certain angles as long as in camera it &ldquo;looks&rdquo; like it hits it will consider it a collision even if it&rsquo;s not.</p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/kirby_forgotten_land_game_feel.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-skyrim-npcs-inventory-system">👾 Skyrim NPCs inventory system</h3>
+<p>Skyrim handles each NPCs inventory by having it on a unique chest hidden under the map. Most are impossible to get unless clipping is used, but sometimes you can find them.</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg" alt="Skyrim NPC inventory"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg" alt="Skyrim NPC inventory"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-doom-3-volumetric-glow">👾 Doom 3 volumetric glow</h3>
+<p>Doom 3 fakes volumetric glow by folding vertexes with camera movement. <a href="https://simonschreibt.de/gat/doom-3-volumetric-glow/">source</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/doom3_volumetric_glow.gif" alt="Doom 3 volumetric glow"  />
+</p>
+<hr>
+<h3 id="-lord-of-the-rings-engine-reuse">👾 Lord of the Rings engine reuse</h3>
+<p>Lord of the Rings game was made by reusing Tiger Woods golf game because they needed large areas with a goal/castle at the end, a golf game is just that. I think it’s quite funny how far apart they are but it works.</p>
+<video width="100%" controls>
+    <source src="/wp-content/uploads/2024/11/gamedev-tricks/lord_of_the_rings_tiger_woods_engine.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3 id="-metroid-prime-noise-texture">👾 Metroid Prime noise texture</h3>
+<p>In order to save memory, Metroid Prime fullscreen static texture effect is generated using random live RAM data, which is just the game itself running, GameCube only had 24MB. <a href="https://x.com/ZoidCTF/status/1590012338421518337">source</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metroid_prime_noise_texture.jpg" alt="Metroid Prime"  />
+</p>
+<hr>
+<h3 id="-titan-quest-action-delays">👾 Titan Quest action delays</h3>
+<p>On Titan Quest, because there was no way to script timed delays actions, developers created ambient creatures like Squirrels and used their animations as a way to count time to trigger the events.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/titan_quest_timed_delays.png" alt="Titan Quest action delays"  />
+</p>
+<hr>
+<h3 id="-journey-shadows">👾 Journey shadows</h3>
+<p>Journey doesn&rsquo;t have a real-time shadow system so they are hand painted and baked later. The results are impressive but the amount of work involved wow. <a href="https://x.com/matt_nava/status/1503152810078052355">source</a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_1.png" alt="Journey Shadows"  />
+</p>
+<table>
+<thead>
+<tr>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png" alt="Journey Shadows"  />
+</a></th>
+<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png" alt="Journey Shadows"  />
+</a></th>
+</tr>
+</thead>
+</table>
+<hr>
+<h3 id="-silent-hill-2-mirror">👾 Silent Hill 2 mirror</h3>
+<p>Another duplicate room mirror trick, this time Silent Hill 2, in the beginning of the game, the mirror reflection is just the entire bathroom duplicated.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/silent_hill_2_mirror_duplicate_room.jpg" alt="Silent Hill 2 mirror"  />
+</p>
+<hr>
+<p>(to be continued &hellip;. maybe)</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Quest of Dungeons turns 10 years old!</title>
       <link>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</link>
@@ -96,13 +363,10 @@ I just posting it here for the record, this was under a week of work, it was fun
 <p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png" alt="Quest of Dungeons running on emulator 1"  />
 </p>
 <p>and then later when I got it booting on a real Dreamcast</p>
- 
-
-<video width=100% controls>
+<video width="100%" controls>
     <source src="/wp-content/uploads/2024/03/qod_running_on_dreamcast.mp4" type="video/mp4">
-    Your browser does not support the video tag.  
+    Your browser does not support the video tag.
 </video>
-
 
 <h1 id="20210413---switch-physical-edition">2021/04/13 - Switch Physical Edition</h1>
 <p>Like I mentioned before, I tried to get the game in physical format before, and I kept trying for years but it simply wasn&rsquo;t happening. Until 2021, when by random chance, someone recommended me Leoful, and they accepted right away, in fact, from initial contact to production, it was just a couple months, I&rsquo;m really happy I was able to finally get the game on an actual box, it hits differently, as I <a href="/2010/08/games-and-systems-from-childhood/">grew playing Nintendo games</a>,  and also feels like a closure to a project that started on a smaller device and made it&rsquo;s way to a real physical game.</p>
@@ -573,33 +837,6 @@ Here&rsquo;s how you can detect it in C++</p>
 <p>Now that I finished the port it doesn&rsquo;t seem that I had to change that much, in fact the game code it self is nearly untouched, just the engine was altered to accommodate for Android. Porting took me ~ 2 months (I have a day job) and while working on a expansion for the game. It&rsquo;s not all chaos in the Android universe, although the hardware fragmentation poses some very serious problems, some devices may be too slow to run even the simpler games.</p>
 <p>If you have questions about anything else I didn&rsquo;t cover on this article, feel free to ask.</p>
 <p>In case you are interested in the game, it&rsquo;s out on <a href="https://store.steampowered.com/app/270050/">Steam</a>, <a href="https://itunes.apple.com/us/app/quest-of-dungeons/id698726956?mt=8">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.davidamador.quest_of_dungeons">Google Play</a>, feel free to check it out: <a href="http://www.questofdungeons.com">http://www.questofdungeons.com</a></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Quest of Dungeons is now available</title>
-      <link>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</link>
-      <pubDate>Sun, 06 Apr 2014 11:39:36 +0000</pubDate>
-      <guid>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</guid>
-      <description>I’m pleased to announce that Quest of Dungeons is finally out.
-I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.
-It was released on March 25th, for PC, Mac and iOS. You can get it on Steam, iOS App Store or directly from the site via Humble Store.
-I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought.</description>
-      <content:encoded><![CDATA[<p><a href="http://www.questofdungeons.com"><img loading="lazy" src="https://www.questofdungeons.com/imgs/icon.png" alt="Quest of Dungeons"  />
-  </a></p>
-<p>I’m pleased to announce that Quest of Dungeons is finally out.<br>
-I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.</p>
-<p>It was released on March 25th, for PC, Mac and iOS. You can get it on <a href="https://store.steampowered.com/app/270050">Steam</a>, <a href="https://itunes.apple.com/app/id698726956/">iOS App Store</a> or directly from the <a href="https://www.questofdungeons.com/">site</a> via Humble Store.</p>
-<p>I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought. As some of you know I have a day job so I had to take 2 vacation days to simple answer emails and do quick fixes, especially to the PC/Mac version. With each new software is natural to have problems at launch and Quest of Dungeons was no exception, and right now I’m still working on a daily basis in fixing some stuff and attending to some popular requests/changes from players to the game.</p>
-<p>It was an extremely complicated task to do on my own, managing marketing, answering emails and tweets, scouting Steam forums to see if players are reporting problems, oh and do some actual coding, because you know, bugs don’t fix themselves. But overall I’m happy with the results so far.</p>
-<p>The response to the game has been overall positive, and despite a few problems the game has gathered some good reviews.</p>
-<p>TouchArcade – 4/5 – <a href="https://toucharcade.com/2014/04/03/quest-of-dungeons-review/">Review</a><br>
-CriticalIndieGamer – 9/10 – <a href="https://criticalindiegamer.com/2014/04/quest-of-dungeons-review-pc/">Review</a><br>
-SoftPedia – 7/10 – <a href="www.softpedia.com/reviews/games/pc/Quest-of-Dungeons-Review-435164.shtml">Review</a><br>
-148Apps – 4/5 – <a href="https://www.148apps.com/reviews/quest-of-dungeons-review/">Review</a><br>
-PocketGamer – 6/10 – <a href="https://www.pocketgamer.co.uk/r/iPad/Quest+of+Dungeons/review.asp?c=58622&amp;srch=quest+of+dungeons">Review</a></p>
-<p>There are several <a href="https://www.youtube.com/results?search_query=%22quest+of+dungeons%22">youtube videos</a>, and I even caught a few people live streaming it on Twitch, it’s always awesome to see people playing your game, and having genuine reactions.</p>
-<p>This is one of my favourite moments (#spoilers)</p>
-<p>{&laquo; youtube ef9Z-Zs23GQ &gt;}}</p>
 ]]></content:encoded>
     </item>
   </channel>
