@@ -49,7 +49,7 @@
   "description": "David Amador Blog - Indie Game Developer",
   "thumbnailUrl": "https://www.david-amador.com/favicon.ico",
   "sameAs": [
-      "https://mastodon.gamedev.place/@djlink", "https://dj_link.itch.io/", "https://store.steampowered.com/developer/upfallstudios", "https://twitter.com/DJ_Link", "http://www.youtube.com/@DavidAmador", "https://github.com/DJLink", "/index.xml"
+      "https://mastodon.gamedev.place/@djlink", "https://dj_link.itch.io/", "https://store.steampowered.com/developer/upfallstudios", "https://bsky.app/profile/djlink.bsky.social", "http://www.youtube.com/@DavidAmador", "https://github.com/DJLink", "https://www.linkedin.com/in/davidamador/", "/index.xml"
   ]
 }
 </script>
@@ -109,8 +109,8 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.david-amador.com/about/" title="About Me">
-                    <span>About Me</span>
+                <a href="https://www.david-amador.com/about/" title="About">
+                    <span>About</span>
                 </a>
             </li>
             <li>
@@ -127,6 +127,21 @@
     </nav>
 </header>
 <main class="main"> 
+
+<article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/06/app_store-125x166.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">So what have I learned after eight months on the App Store
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>First of all I think this is my last idevblogaday post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn. Actually it’s just the 9th.
+I hope my words have somehow enriched your knowledge, in case you want to stick around just bookmark my feeds. I keep this fairly updated. Also since I’ve been working on a new game...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-06-24 21:14:07 +0000 UTC'>June 24, 2011</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;672 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to So what have I learned after eight months on the App Store" href="https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/"></a>
+</article>
 
 <article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/06/openal-125x166.gif" alt="">
@@ -308,23 +323,6 @@ class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m 
   </div>
   <footer class="entry-footer"><span title='2011-03-22 10:56:50 +0000 UTC'>March 22, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;249 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Blog new look" href="https://www.david-amador.com/2011/03/blog-new-look/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Loading images into OpenGL in iPhone
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>So you can’t make a game without images, right? Well, actually you can but that’s another story.
-But how can you load a jpg or a png and use then on OpenGLES?
-First let’s make a simple class Texture2D
-class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image...</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-03-18 10:06:24 +0000 UTC'>March 18, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;319 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Loading images into OpenGL in iPhone" href="https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

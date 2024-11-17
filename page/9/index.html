@@ -49,7 +49,7 @@
   "description": "David Amador Blog - Indie Game Developer",
   "thumbnailUrl": "https://www.david-amador.com/favicon.ico",
   "sameAs": [
-      "https://mastodon.gamedev.place/@djlink", "https://dj_link.itch.io/", "https://store.steampowered.com/developer/upfallstudios", "https://twitter.com/DJ_Link", "http://www.youtube.com/@DavidAmador", "https://github.com/DJLink", "/index.xml"
+      "https://mastodon.gamedev.place/@djlink", "https://dj_link.itch.io/", "https://store.steampowered.com/developer/upfallstudios", "https://bsky.app/profile/djlink.bsky.social", "http://www.youtube.com/@DavidAmador", "https://github.com/DJLink", "https://www.linkedin.com/in/davidamador/", "/index.xml"
   ]
 }
 </script>
@@ -109,8 +109,8 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.david-amador.com/about/" title="About Me">
-                    <span>About Me</span>
+                <a href="https://www.david-amador.com/about/" title="About">
+                    <span>About</span>
                 </a>
             </li>
             <li>
@@ -127,6 +127,23 @@
     </nav>
 </header>
 <main class="main"> 
+
+<article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Loading images into OpenGL in iPhone
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So you can’t make a game without images, right? Well, actually you can but that’s another story.
+But how can you load a jpg or a png and use then on OpenGLES?
+First let’s make a simple class Texture2D
+class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-03-18 10:06:24 +0000 UTC'>March 18, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;319 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Loading images into OpenGL in iPhone" href="https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/"></a>
+</article>
 
 <article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/la_lettre_de_motivation.gif" alt="">
@@ -305,21 +322,6 @@ As A* traverses the graph, it follows a path of the lowest known cost, keeping a
   </div>
   <footer class="entry-footer"><span title='2010-10-27 10:48:46 +0000 UTC'>October 27, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;395 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to A* Pathfinding" href="https://www.david-amador.com/2010/10/a-pathfinding/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/snessmb.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Super Meat Boy, meat dissection
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I don’t usually write reviews about games, maybe mostly because I don’t play as often as I used to. Most games today are just graphics graphics, I use super shader ray-traced lights but I forgot gameplay because I’m a tech demo.
-I grew up with a Super Nintendo playing Super Mario World and Zelda A Link to the Past, yeah shocker, no Spectrum to me :P, so I’m 2D gameplay type lover....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-10-23 20:00:59 +0000 UTC'>October 23, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;638 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Super Meat Boy, meat dissection" href="https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
