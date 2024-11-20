@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>port on David Amador</title>
+    <title>Port on David Amador</title>
     <link>https://www.david-amador.com/tags/port/</link>
-    <description>Recent content in port on David Amador</description>
+    <description>Recent content in Port on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 30 Aug 2014 13:42:52 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/port/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,8 @@
       <link>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</link>
       <pubDate>Sat, 30 Aug 2014 13:42:52 +0000</pubDate>
       <guid>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</guid>
-      <description>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.
-I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.</description>
+      <description>&lt;p&gt;Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.&lt;/p&gt;
+&lt;p&gt;I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.</p>
 <p>I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.</p>
 <p>Back in 2010 I did some research and the NDK was pretty bad, I don’t think it even had stl at the time, but things have changed since then. I decided to jump in and try to port the whole thing. As a primary goal I want to keep as much native code as possible, because it’s already working, porting it to Java could only lead to further bugs in the process.</p>
@@ -88,16 +88,14 @@ TinyXML – XML parser</p>
 <h3 id="opengl">OpenGL</h3>
 <p>I was using GLES for the iOS version already so I had no problems with the code itself, I did however had some problems with performance on older devices, for example 2010 devices with version 2.3 (the game targets 2.3+)</p>
 <p>Especially on this function glCopyTexSubImage2D</p>
-<p><img loading="lazy" src="/wp-content/uploads/2014/08/soft_shadows.png" alt="soft shadows"  />
-</p>
+<p><img alt="soft shadows" loading="lazy" src="/wp-content/uploads/2014/08/soft_shadows.png"></p>
 <p>The game uses some 2d soft shadows for giving a nice atmosphere, it&rsquo;s updated once in a while and I just used glCopyTexSubImage2D with a 256x256 texture instead of a VBO because it worked perfectly on everything else (including all iOS devices), but turns out this is very slow on older Android devices, so I ended up adding an option to the game to disable those effects. This way, newer devices can have all bells and whistles and older devices can still run the game fine. One of the testing devices was a Samsung Galaxy S1 and it went from 5 FPS to 30, which is more then acceptable to play. All 4.0+ devices should have no problem running this, and even if they have they can just disable the option.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2014/08/photo.png" alt="High Performance"  />
-</p>
+<p><img alt="High Performance" loading="lazy" src="/wp-content/uploads/2014/08/photo.png"></p>
 <h3 id="application-cycle">Application cycle</h3>
 <p>There is a strong possibility the GL view is trashed when the app goes to background, to save resources the view is recreated each time you go back from background to the app. This poses a problem since all gl objects, textures, shaders, VBOs are destroyed too. There is no secure way to ensure the view never gets destroyed while your app is running so I had to make sure each time the view is recreated I re-load all required assets once again. Really not happy with reloading everything again but its the only secure way, if you detect the view was destroyed and the app is still running you have no other choice. For this game it&rsquo;s not a big deal, I have few resources and they are fast to load so the user can&rsquo;t even tell. If I had a bigger game with lots of big textures I would probably had to show a loading screen again.</p>
 <h3 id="screen-size">Screen size</h3>
-<p>The different screen sizes for Android can pose a problem, but you can detect screen density and size and scale your game or take proper actions according to what you have.<!-- raw HTML omitted --><!-- raw HTML omitted -->
-Here&rsquo;s how you can detect it in C++</p>
+<p>The different screen sizes for Android can pose a problem, but you can detect screen density and size and scale your game or take proper actions according to what you have.</p>
+<p>Here&rsquo;s how you can detect it in C++</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">density</span> <span class="o">=</span> <span class="n">AConfiguration_getDensity</span><span class="p">(</span><span class="n">engine</span><span class="o">-&gt;</span><span class="n">app</span><span class="o">-&gt;</span><span class="n">config</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">screen_size</span> <span class="o">=</span> <span class="n">AConfiguration_getScreenSize</span><span class="p">(</span><span class="n">engine</span><span class="o">-&gt;</span><span class="n">app</span><span class="o">-&gt;</span><span class="n">config</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
@@ -130,20 +128,18 @@ Here&rsquo;s how you can detect it in C++</p>
       <link>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
       <pubDate>Fri, 09 Jul 2010 09:59:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
-      <description>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.
-If you follow me on twitter you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.
-So it all started with my wish to port Vizati to the iPhone, since the game is already running on PC, Xbox360 and Windows Phone 7 one can only wish for an easy and quick port since pretty much all base code is done.</description>
+      <description>&lt;p&gt;It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.&lt;br&gt;
+If you follow me on &lt;a href=&#34;https://twitter.com/DJ_Link&#34;&gt;twitter&lt;/a&gt; you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.&lt;/p&gt;
+&lt;p&gt;So it all started with my wish to port Vizati to the iPhone, since the game is already running on &lt;a href=&#34;http://www.youtube.com/watch?v=F9vf17HSXcQ&#34;&gt;PC&lt;/a&gt;, Xbox360 and &lt;a href=&#34;http://www.youtube.com/watch?v=hX18tuujAEY&#34;&gt;Windows Phone 7&lt;/a&gt; one can only wish for an easy and quick port since pretty much all base code is done.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.<br>
 If you follow me on <a href="https://twitter.com/DJ_Link">twitter</a> you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.</p>
 <p>So it all started with my wish to port Vizati to the iPhone, since the game is already running on <a href="http://www.youtube.com/watch?v=F9vf17HSXcQ">PC</a>, Xbox360 and <a href="http://www.youtube.com/watch?v=hX18tuujAEY">Windows Phone 7</a> one can only wish for an easy and quick port since pretty much all base code is done.</p>
 <p>As you know for developing on the iPhone you require an actual Mac, I know there’s virtualization but my 5 year old PC can’t take it, believe me I tried. So I bought myself a mini mac which are much cheaper that IMac and macbooks, around $499 or so, and another extra $30 for a mini-Dvi to VGA adapter for my 1080p Samsung.</p>
 <p>Let me tell you, that bastard is silent, I mean I can’t listen to anything, powering off my desktop PC and I have this relaxing environment to work in, it’s great for coding during the night when everyone is asleep. I can only hear my keyboard strokes and my cat snoring.<br>
 Here’s a picture of it near the keyboard, it’s really small.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" alt=""  title="Mini Mac"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" title="Mini Mac"></p>
 <p>Now, moving on to the development part, on MacOS your IDE is XCode.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/xcode.png" alt=""  title="xcode"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/xcode.png" title="xcode"></p>
 <p>It’s no Visual Studio but it gets the job done. Has some strange shortcuts but I’ve found a neat <a href="https://web.archive.org/web/20150413150630/http://www.1729.us/xcode/Xcode%20Shortcuts.pdf">shortcut pdf</a>.</p>
 <p>Next was my struggle for testing available engines and frameworks and learning how much of Objective-C do you have to know and can I run C++ on it?</p>
 <p>I tested some engines:<br>
@@ -156,8 +152,7 @@ Here’s a picture of it near the keyboard, it’s really small.</p>
 <p>I ported my C# engine Basalt to C++, literally making .h and .cpp files. I hooked up my main animation and draw pump to some Objective-C classes (don’t forget to use .mm if you are mixing Objective-C with C++) and everything started working.</p>
 <p>The next bit was implementing the SpriteBatch class and make it draw in OpenGL, took me around two days to have the Matrices working, correct texture mapping to quads, Alpha Blend and Additive. The idea is that by the time I port an XNA game to C++ I can still use SpriteBatches, Texture2D etc.</p>
 <p>After these two weeks of development here’s what’s working:</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/IPhone-Basalt-Particle-System-2D.png" alt=""  title="iPhone Basalt Particle System 2D"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/IPhone-Basalt-Particle-System-2D.png" title="iPhone Basalt Particle System 2D"></p>
 <ul>
 <li>Draw Sprites – SpriteBatch is working, texture regions, SpriteBlendModes, Matrices etc</li>
 <li>Sprite Animations</li>
@@ -167,9 +162,12 @@ Here’s a picture of it near the keyboard, it’s really small.</p>
 </ul>
 <p>Here’s a video showing what I have so far:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ALzSzhvp2ns" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ALzSzhvp2ns?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Next in my list is Input, Script, music and then porting the whole game to C++, which I think will work nicely once the whole engine base is done.<br>
 Oh, and probably try to get a real device for proper testing.</p>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>wp7dev on David Amador</title>
+    <title>Wp7dev on David Amador</title>
     <link>https://www.david-amador.com/tags/wp7dev/</link>
-    <description>Recent content in wp7dev on David Amador</description>
+    <description>Recent content in Wp7dev on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 17 Nov 2010 23:27:04 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/wp7dev/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +18,10 @@
       <link>https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</link>
       <pubDate>Wed, 17 Nov 2010 23:27:04 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</guid>
-      <description>Since I’m out of the countries where WP7 Marketplace is available it’s been a real pain to check out new games and most of all if Vizati was already available.
-Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂
-So searching some forums I found a neat code to check this on the simulator.
-Basically create a new WP7 Silverlight App and write this main page code</description>
+      <description>&lt;p&gt;Since I’m out of the countries where WP7 Marketplace is available it’s been a real pain to check out new games and most of all if Vizati was already available.&lt;br&gt;
+Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂&lt;/p&gt;
+&lt;p&gt;So searching some forums I found a neat code to check this on the simulator.&lt;/p&gt;
+&lt;p&gt;Basically create a new WP7 Silverlight App and write this main page code&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Since I’m out of the countries where WP7 Marketplace is available it’s been a real pain to check out new games and most of all if Vizati was already available.<br>
 Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂</p>
 <p>So searching some forums I found a neat code to check this on the simulator.</p>
@@ -42,8 +42,7 @@ Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span></code></pre></div><p>Run it and you’ll get this<br>
-<a href="/wp-content/uploads/2010/11/wp7_marketplace.jpg"><img loading="lazy" src="/wp-content/uploads/2010/11/wp7_marketplace.jpg" alt=""  title="wp7_marketplace"  />
-</a></p>
+<a href="/wp-content/uploads/2010/11/wp7_marketplace.jpg"><img loading="lazy" src="/wp-content/uploads/2010/11/wp7_marketplace.jpg" title="wp7_marketplace"></a></p>
 <p>Oh, the first time you launch the simulator you’ll get a connection error, usually if the simulator just booted. Just launch the app again</p>
 ]]></content:encoded>
     </item>
@@ -52,10 +51,20 @@ Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun
       <link>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</link>
       <pubDate>Sun, 10 Oct 2010 23:37:04 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</guid>
-      <description>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.
-You can use IsolatedStorage for that
-using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
-IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); // grab the storage FileStream stream = store.OpenFile(&amp;#34;test.txt&amp;#34;, FileMode.Create); // Open a file in Create mode BinaryWriter writer = new BinaryWriter(stream); float myvar = 5.</description>
+      <description>&lt;p&gt;I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.&lt;br&gt;
+You can use &lt;strong&gt;IsolatedStorage&lt;/strong&gt; for that&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;System.IO.IsolatedStorage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;IsolatedStorageFile&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;store&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;IsolatedStorageFile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GetUserStoreForApplication&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// grab the storage&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;FileStream&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;stream&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;store&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;OpenFile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;test.txt&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;FileMode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Create&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Open a file in Create mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;BinaryWriter&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BinaryWriter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;stream&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;float&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;myvar&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;5.0f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Write&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;something&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Write&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;myvar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For loading is pretty much the same thing:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.<br>
 You can use <strong>IsolatedStorage</strong> for that</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
@@ -90,24 +99,21 @@ You can use <strong>IsolatedStorage</strong> for that</p>
       <link>https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/</link>
       <pubDate>Mon, 20 Sep 2010 21:36:27 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/</guid>
-      <description>Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.
-It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.
-So depending on you app you might want to save the current state just in case the app really closes.</description>
+      <description>&lt;p&gt;Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.&lt;br&gt;
+It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.&lt;/p&gt;
+&lt;p&gt;So depending on you app you might want to save the current state just in case the app really closes.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.<br>
 It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.</p>
 <p>So depending on you app you might want to save the current state just in case the app really closes.</p>
 <p>Simulating this on the emulator took me awhile to get it right.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/09/wp7_start_button-300x206.jpg" alt=""  title="wp7_start_button"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/09/wp7_start_button-300x206.jpg" title="wp7_start_button"></p>
 <p>Press F5 on Visual Studio do start debugging your App.<br>
 Press the Start button and your app received a Deactivated event. Save what you need. Now, and here is the tricky part, the debugger also exited.<br>
 This took me awhile because pressing the back button wouldn’t do anything and pressing F5 again would just restart.</p>
 <p>So you have to Press F5 and keep an eye on the compiler. When you receive a “Deploy Success” message</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/09/vs_deploy_success-300x88.jpg" alt=""  title="vs_deploy_success"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/09/vs_deploy_success-300x88.jpg" title="vs_deploy_success"></p>
 <p>quickly press the Back button on the simulator</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/09/wp7_back_button-300x88.jpg" alt=""  title="wp7_back_button"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/09/wp7_back_button-300x88.jpg" title="wp7_back_button"></p>
 <p>You app should now start and receive the Activated event.<br>
 Basically the debugger has to start between you pressing the Back button and before the black screen disappears otherwise the emulator while assume the app is closed and get back to home.</p>
 ]]></content:encoded>
@@ -117,12 +123,10 @@ Basically the debugger has to start between you pressing the Back button and bef
       <link>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
       <pubDate>Mon, 26 Jul 2010 20:37:41 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
-      <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
-The poll closes in about 6 days and you can select various options of course.</description>
+      <description>&lt;p&gt;I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (&lt;a href=&#34;http://twtpoll.com/dar51l&#34;&gt;http://twtpoll.com/dar51l&lt;/a&gt;) so that we can have more accurate results.&lt;/p&gt;
+&lt;p&gt;The poll closes in about 6 days and you can select various options of course.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (<a href="http://twtpoll.com/dar51l">http://twtpoll.com/dar51l</a>) so that we can have more accurate results.</p>
 <p>The poll closes in about 6 days and you can select various options of course.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
 ]]></content:encoded>
     </item>
     <item>
@@ -130,20 +134,18 @@ The poll closes in about 6 days and you can select various options of course.</d
       <link>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
       <pubDate>Fri, 09 Jul 2010 09:59:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
-      <description>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.
-If you follow me on twitter you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.
-So it all started with my wish to port Vizati to the iPhone, since the game is already running on PC, Xbox360 and Windows Phone 7 one can only wish for an easy and quick port since pretty much all base code is done.</description>
+      <description>&lt;p&gt;It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.&lt;br&gt;
+If you follow me on &lt;a href=&#34;https://twitter.com/DJ_Link&#34;&gt;twitter&lt;/a&gt; you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.&lt;/p&gt;
+&lt;p&gt;So it all started with my wish to port Vizati to the iPhone, since the game is already running on &lt;a href=&#34;http://www.youtube.com/watch?v=F9vf17HSXcQ&#34;&gt;PC&lt;/a&gt;, Xbox360 and &lt;a href=&#34;http://www.youtube.com/watch?v=hX18tuujAEY&#34;&gt;Windows Phone 7&lt;/a&gt; one can only wish for an easy and quick port since pretty much all base code is done.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.<br>
 If you follow me on <a href="https://twitter.com/DJ_Link">twitter</a> you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.</p>
 <p>So it all started with my wish to port Vizati to the iPhone, since the game is already running on <a href="http://www.youtube.com/watch?v=F9vf17HSXcQ">PC</a>, Xbox360 and <a href="http://www.youtube.com/watch?v=hX18tuujAEY">Windows Phone 7</a> one can only wish for an easy and quick port since pretty much all base code is done.</p>
 <p>As you know for developing on the iPhone you require an actual Mac, I know there’s virtualization but my 5 year old PC can’t take it, believe me I tried. So I bought myself a mini mac which are much cheaper that IMac and macbooks, around $499 or so, and another extra $30 for a mini-Dvi to VGA adapter for my 1080p Samsung.</p>
 <p>Let me tell you, that bastard is silent, I mean I can’t listen to anything, powering off my desktop PC and I have this relaxing environment to work in, it’s great for coding during the night when everyone is asleep. I can only hear my keyboard strokes and my cat snoring.<br>
 Here’s a picture of it near the keyboard, it’s really small.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" alt=""  title="Mini Mac"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" title="Mini Mac"></p>
 <p>Now, moving on to the development part, on MacOS your IDE is XCode.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/xcode.png" alt=""  title="xcode"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/xcode.png" title="xcode"></p>
 <p>It’s no Visual Studio but it gets the job done. Has some strange shortcuts but I’ve found a neat <a href="https://web.archive.org/web/20150413150630/http://www.1729.us/xcode/Xcode%20Shortcuts.pdf">shortcut pdf</a>.</p>
 <p>Next was my struggle for testing available engines and frameworks and learning how much of Objective-C do you have to know and can I run C++ on it?</p>
 <p>I tested some engines:<br>
@@ -156,8 +158,7 @@ Here’s a picture of it near the keyboard, it’s really small.</p>
 <p>I ported my C# engine Basalt to C++, literally making .h and .cpp files. I hooked up my main animation and draw pump to some Objective-C classes (don’t forget to use .mm if you are mixing Objective-C with C++) and everything started working.</p>
 <p>The next bit was implementing the SpriteBatch class and make it draw in OpenGL, took me around two days to have the Matrices working, correct texture mapping to quads, Alpha Blend and Additive. The idea is that by the time I port an XNA game to C++ I can still use SpriteBatches, Texture2D etc.</p>
 <p>After these two weeks of development here’s what’s working:</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/IPhone-Basalt-Particle-System-2D.png" alt=""  title="iPhone Basalt Particle System 2D"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/IPhone-Basalt-Particle-System-2D.png" title="iPhone Basalt Particle System 2D"></p>
 <ul>
 <li>Draw Sprites – SpriteBatch is working, texture regions, SpriteBlendModes, Matrices etc</li>
 <li>Sprite Animations</li>
@@ -167,9 +168,12 @@ Here’s a picture of it near the keyboard, it’s really small.</p>
 </ul>
 <p>Here’s a video showing what I have so far:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ALzSzhvp2ns" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ALzSzhvp2ns?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Next in my list is Input, Script, music and then porting the whole game to C++, which I think will work nicely once the whole engine base is done.<br>
 Oh, and probably try to get a real device for proper testing.</p>
@@ -181,18 +185,22 @@ Oh, and probably try to get a real device for proper testing.</p>
       <link>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
       <pubDate>Fri, 07 May 2010 20:41:09 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
-      <description>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.
-This week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.
-I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.</description>
+      <description>&lt;p&gt;It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.&lt;br&gt;
+This week I got an invitation from &lt;a href=&#34;http://gozoomin.com/blogs/antao/&#34;&gt;João Antão&lt;/a&gt; to showcase &lt;a href=&#34;https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/&#34;&gt;Vizati&lt;/a&gt; as part of his XNA Framework presentation. This occurred during the &lt;a href=&#34;http://imaginecup.com/&#34;&gt;Imagine Cup final on Portugal&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.&lt;br&gt;
+The result was pretty good i think. It’s virtually identical.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.<br>
 This week I got an invitation from <a href="http://gozoomin.com/blogs/antao/">João Antão</a> to showcase <a href="https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/">Vizati</a> as part of his XNA Framework presentation. This occurred during the <a href="http://imaginecup.com/">Imagine Cup final on Portugal</a>.</p>
 <p>I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.<br>
 The result was pretty good i think. It’s virtually identical.</p>
 <p>You can see it for yourself, the speed on the video is not very good due to the screen capture software.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/hX18tuujAEY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hX18tuujAEY?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Now for the tech part. Grabbing my 3.1 solution what have I made to have this running? What have I changed?</p>
 <p>I had to create a XNA 4 empty project and add all code files and assets (no direct upgrade now)<br>

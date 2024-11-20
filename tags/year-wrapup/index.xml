@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>year wrapup on David Amador</title>
+    <title>Year Wrapup on David Amador</title>
     <link>https://www.david-amador.com/tags/year-wrapup/</link>
-    <description>Recent content in year wrapup on David Amador</description>
+    <description>Recent content in Year Wrapup on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 31 Dec 2015 12:14:54 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/year-wrapup/index.xml" rel="self" type="application/rss+xml" />
@@ -18,40 +18,31 @@
       <link>https://www.david-amador.com/2015/12/year-review-log-2015/</link>
       <pubDate>Thu, 31 Dec 2015 12:14:54 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/12/year-review-log-2015/</guid>
-      <description>Can’t believe it’s almost new year again.
-It became a habit of mine to to hit pause for a couple minutes, look back, write about it and think about what’s next, this helps me to sort things out.
-Thank you
-I have to start with something, a big Thank You for all the people who purchased QoD, everyone who helped spreading the word, the ones who wrote emails, tweeted and help my solo developer work became an even better thing to do.</description>
+      <description>&lt;p&gt;Can’t believe it’s almost new year again.&lt;br&gt;
+It became a habit of mine to to hit pause for a couple minutes, look back, write about it and think about what’s next, this helps me to sort things out.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Thank you&lt;/strong&gt;&lt;br&gt;
+I have to start with something, a big Thank You for all the people who purchased QoD, everyone who helped spreading the word, the ones who wrote emails, tweeted and help my solo developer work became an even better thing to do. This wouldn’t be possible without everyone who supported me, in one way or another, so even if I do work a lot to make the best possible I can, if no one cared, it wouldn’t be possible, so thank you.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Can’t believe it’s almost new year again.<br>
 It became a habit of mine to to hit pause for a couple minutes, look back, write about it and think about what’s next, this helps me to sort things out.</p>
 <p><strong>Thank you</strong><br>
 I have to start with something, a big Thank You for all the people who purchased QoD, everyone who helped spreading the word, the ones who wrote emails, tweeted and help my solo developer work became an even better thing to do. This wouldn’t be possible without everyone who supported me, in one way or another, so even if I do work a lot to make the best possible I can, if no one cared, it wouldn’t be possible, so thank you.</p>
 <p><strong>Indie life</strong><br>
 I took the jump to full time indie developer this year again, back in March, it wasn’t something I was planning, but was semi forced to do because of some internal restructuring the company was having, so I left. With the <a href="/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/">Xbox One port of Quest of Dungeons</a> in hands, and falling behind on my personal deadlines, I decided to risk take a couple months and finish it. One one hand I have more freedom, and can work on games, on the other hand there’s the constant fear of “this is the last month” if everything fails and games stop selling. I also decided to start taking care of myself health-wise, by exercising more regularly, and for the most part of the year I did almost everyday a 6-8 KM fast-paced walk right after waking up, overall I fell much better, which helps with the mood and work altogether. The weird thing is that I had to get a gadget in order to feel more motivated, got a fitbit that tracks daily activity, been wearing it for 10 months now, so gamificating health ftw. Personal note, take some proper vacations next year, and by proper I mean, in any place, but disconnected from emails/work and whatever.</p>
-<p><a href="/wp-content/uploads/2015/12/944873_10156260342525364_3728126092064434364_n.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/944873_10156260342525364_3728126092064434364_n-150x150.jpg" alt="i find your lack of faith distrurbing"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/12/944873_10156260342525364_3728126092064434364_n.jpg"><img alt="i find your lack of faith distrurbing" loading="lazy" src="/wp-content/uploads/2015/12/944873_10156260342525364_3728126092064434364_n-150x150.jpg"></a></p>
 <p><strong>QoD on Xbox One</strong><br>
 When I left in March, I was already way behind on my original launch plans, because developing for a console is a whole different thing and doing it during nights only was quickly draining my energies.<br>
 The following months were mainly devoted to finishing the game, I had to redo a lot of the UI and gameplay to <a href="/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">accommodate a game controller and other stuff</a>, but eventually on September 4 I <a href="/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/">finally released it</a> and I was genuinely surprised by the overwhelming <a href="/2015/10/quest-of-dungeons-reviews-roundup/">positive feedback</a>, since, at that point the game was out for some time in its PC and Mobile form, but the new additions/changes and the fact that you could play it with a controller for the first time made it more appealing for many people.</p>
 <p>Looking back, it took me a full year, from getting the game approved to the actual release. While it’s a lot of time, I also think it was worth it, a lot of the game was tweaked, also for some part I still had my day job, certifications take some time also. In fact the final build was finished around June, I just took those “extra” months to finding bugs/polishing and start to approach journalists/websites.</p>
-<p><a href="/wp-content/uploads/2015/07/branded_key_art_584x800_alt_version.png"><img loading="lazy" src="/wp-content/uploads/2015/07/branded_key_art_584x800_alt_version.png" alt="Quest of Dungeons Xbox One box art"  />
-</a></p>
-<p><a href="/wp-content/uploads/2015/12/11942205_310047909119021_6766836944566229236_o.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/11942205_310047909119021_6766836944566229236_o-150x150.jpg" alt="Quest of Dungeons Xbox One"  />
-</a></p>
-<p><a href="/wp-content/uploads/2015/12/XboxOne_Image_01.png"><img loading="lazy" src="/wp-content/uploads/2015/12/XboxOne_Image_01.png" alt="Quest of Dungeons Xbox One screenshot warrior"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/branded_key_art_584x800_alt_version.png"><img alt="Quest of Dungeons Xbox One box art" loading="lazy" src="/wp-content/uploads/2015/07/branded_key_art_584x800_alt_version.png"></a></p>
+<p><a href="/wp-content/uploads/2015/12/11942205_310047909119021_6766836944566229236_o.jpg"><img alt="Quest of Dungeons Xbox One" loading="lazy" src="/wp-content/uploads/2015/12/11942205_310047909119021_6766836944566229236_o-150x150.jpg"></a></p>
+<p><a href="/wp-content/uploads/2015/12/XboxOne_Image_01.png"><img alt="Quest of Dungeons Xbox One screenshot warrior" loading="lazy" src="/wp-content/uploads/2015/12/XboxOne_Image_01.png"></a></p>
 <p><strong>GDC/Gamescom</strong></p>
 <p>One of the things I’ve always wanted to attend, at least once, was GDC (Game Developers Conference), and this year I was finally able to, to the European one, which despite being expensive, is still less expensive then traveling to the US. And of course since it’s on the same week, I also went to Gamescom, and it was amazing, it’s much bigger then <a href="/2014/10/egx-2014/">EGX</a>, I had no idea. During GDC I was able to meet tons of cool developers, attend some parties (which is usually not my thing) and learn a lot overall.<br>
 I was also able to watch a Video Games Live concert for the first time, and I loved it, even got a photo with Tommy Tallarico.</p>
-<p><a href="/wp-content/uploads/2015/12/11800512_10155811214270364_267427683833702867_n.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/11800512_10155811214270364_267427683833702867_n-150x150.jpg" alt="Gamescom 2015"  />
-</a><a href="/wp-content/uploads/2015/12/11866409_10155826026945364_3741151929249482381_n.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/11866409_10155826026945364_3741151929249482381_n-150x150.jpg" alt="Video Games Live 2015 Koln"  />
-</a><a href="/wp-content/uploads/2015/12/11866259_10155826026335364_4527137215117046469_n.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/11866259_10155826026335364_4527137215117046469_n-150x150.jpg" alt="Video Games Live 2015 Koln"  />
-</a><a href="/wp-content/uploads/2015/12/11828828_10155803526680364_299957432295330404_n.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/11828828_10155803526680364_299957432295330404_n-150x150.jpg" alt="GDC Europe 2015"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/12/11800512_10155811214270364_267427683833702867_n.jpg"><img alt="Gamescom 2015" loading="lazy" src="/wp-content/uploads/2015/12/11800512_10155811214270364_267427683833702867_n-150x150.jpg"></a><a href="/wp-content/uploads/2015/12/11866409_10155826026945364_3741151929249482381_n.jpg"><img alt="Video Games Live 2015 Koln" loading="lazy" src="/wp-content/uploads/2015/12/11866409_10155826026945364_3741151929249482381_n-150x150.jpg"></a><a href="/wp-content/uploads/2015/12/11866259_10155826026335364_4527137215117046469_n.jpg"><img alt="Video Games Live 2015 Koln" loading="lazy" src="/wp-content/uploads/2015/12/11866259_10155826026335364_4527137215117046469_n-150x150.jpg"></a><a href="/wp-content/uploads/2015/12/11828828_10155803526680364_299957432295330404_n.jpg"><img alt="GDC Europe 2015" loading="lazy" src="/wp-content/uploads/2015/12/11828828_10155803526680364_299957432295330404_n-150x150.jpg"></a></p>
 <p><strong>Now &amp; Future(?)</strong></p>
 <p>With the release of the XO version, a lot of people are asking what am I doing right now, “Are you on vacation?”, “New game?”. I can definitely say that I’m not on vacation mode right now, I’m already working on something for next year, which is kind of a semi-secret right now, mostly because I’m still unsure if I can pull it off. I started working on a concept for a new game, but something unexpected came up and it’s possible that Quest of Dungeons will get a new port, but now is not the time to talk about it, because at this point is not 100% sure it will, but that’s what I’m working on now.</p>
-<p><a href="/wp-content/uploads/2015/12/Back_to_the_Future_time_travel_test_with_Michael_J._Fox_as_Marty_McFly.jpg"><img loading="lazy" src="/wp-content/uploads/2015/12/Back_to_the_Future_time_travel_test_with_Michael_J._Fox_as_Marty_McFly-150x150.jpg" alt="Back to the Future (1985) Directed by Robert Zemeckis Shown from left: Christopher Lloyd (as Dr. Emmett Brown), Michael J. Fox (as Marty McFly)"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/12/Back_to_the_Future_time_travel_test_with_Michael_J._Fox_as_Marty_McFly.jpg"><img alt="Back to the Future (1985) Directed by Robert Zemeckis Shown from left: Christopher Lloyd (as Dr. Emmett Brown), Michael J. Fox (as Marty McFly)" loading="lazy" src="/wp-content/uploads/2015/12/Back_to_the_Future_time_travel_test_with_Michael_J._Fox_as_Marty_McFly-150x150.jpg"></a></p>
 <p>On a final note, another thing that comes to mind is that I’ve been blogging way less, I used to post a lot more stuff, especially tutorials of some kind, and I haven’t, so one of the things I wanna change is to write at least one post a month next year. It happened very little this year because I’ve been mostly working with NDA stuff and it’s hard to “Here’s how I fixed this”.</p>
 <p>Happy New year!</p>
 ]]></content:encoded>
@@ -61,10 +52,9 @@ I was also able to watch a Video Games Live concert for the first time, and I lo
       <link>https://www.david-amador.com/2014/12/year-review-log-2014/</link>
       <pubDate>Wed, 31 Dec 2014 10:33:28 +0000</pubDate>
       <guid>https://www.david-amador.com/2014/12/year-review-log-2014/</guid>
-      <description>WOW, 2014 is already coming to an end. Can’t even believe the amount of things that happened to me this year, some bad, some good, I decided to make a wall of text.
-This was been a great year for my game dev objectives. In January I got Quest of Dungeons approved on Steam in only 6 days, which was mind blowing, on March 25th I finally got it released, and during the rest of the year several other platforms got a port, like Linux and Android, both platforms that I never had worked before, so I learned a lot.</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2014/10/BydRYlOIIAAOAkL-225x300.jpg" alt="BydRYlOIIAAOAkL"  />
- WOW, 2014 is already coming to an end. Can’t even believe the amount of things that happened to me this year, some bad, some good, I decided to make a wall of text.</p>
+      <description>&lt;p&gt;&lt;img alt=&#34;BydRYlOIIAAOAkL&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2014/10/BydRYlOIIAAOAkL-225x300.jpg&#34;&gt; WOW, 2014 is already coming to an end. Can’t even believe the amount of things that happened to me this year, some bad, some good, I decided to make a wall of text.&lt;/p&gt;
+&lt;p&gt;This was been a great year for my game dev objectives. In January I got &lt;a href=&#34;https://www.david-amador.com/2014/02/quest-of-dungeons-approved-on-steam/&#34; title=&#34;Quest of Dungeons approved on Steam&#34;&gt;Quest of Dungeons approved on Steam&lt;/a&gt; in only 6 days, which was mind blowing, on March 25th I finally got it released, and during the rest of the year several other platforms got a port, like Linux and &lt;a href=&#34;https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/&#34; title=&#34;Native game on Android – Porting Quest of Dungeons&#34;&gt;Android&lt;/a&gt;, both platforms that I never had worked before, so I learned a lot. Finally on October I got QoD &lt;a href=&#34;https://www.david-amador.com/2014/10/quest-of-dungeons-is-coming-to-xbox-one/&#34;&gt;approved for Xbox One&lt;/a&gt;.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><img alt="BydRYlOIIAAOAkL" loading="lazy" src="/wp-content/uploads/2014/10/BydRYlOIIAAOAkL-225x300.jpg"> WOW, 2014 is already coming to an end. Can’t even believe the amount of things that happened to me this year, some bad, some good, I decided to make a wall of text.</p>
 <p>This was been a great year for my game dev objectives. In January I got <a href="/2014/02/quest-of-dungeons-approved-on-steam/" title="Quest of Dungeons approved on Steam">Quest of Dungeons approved on Steam</a> in only 6 days, which was mind blowing, on March 25th I finally got it released, and during the rest of the year several other platforms got a port, like Linux and <a href="/2014/08/native-game-on-android-porting-quest-of-dungeons/" title="Native game on Android – Porting Quest of Dungeons">Android</a>, both platforms that I never had worked before, so I learned a lot. Finally on October I got QoD <a href="/2014/10/quest-of-dungeons-is-coming-to-xbox-one/">approved for Xbox One</a>.</p>
 <p>I was lucky enough to be at <a href="/2014/10/egx-2014/" title="EGX 2014">EGX 2014 in London</a>, I loved it, this was my first time on such an event and I was amazed by everything, even more because I got to meet so many cool people, and other developers who I’ve been following their work for years.</p>
 <p>Also I created a new brand for my indie games, called <a href="http://www.upfallstudios.com">Upfall Studios</a>, in order to give it a more professional look.</p>
@@ -94,9 +84,9 @@ True Detective</p>
       <link>https://www.david-amador.com/2012/01/post-mortem-of-another-year/</link>
       <pubDate>Sun, 01 Jan 2012 21:43:43 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/01/post-mortem-of-another-year/</guid>
-      <description>Another year has gone by, not quite what I was expecting developing wise, like putting another game out there, but things never turned out as planned.
-Still over the last year I’ve gradually saw out little Different Pixel brand reaching more and more places which can be very helpful in the future and sure hell is nice to see work recognized.
-From the top of my head I recall Kotaku article on the Xbox360 release, we finally managed to release the Xbox360 version, which was the first one we made.</description>
+      <description>&lt;p&gt;Another year has gone by, not quite what I was expecting developing wise, like putting another game out there, but things never turned out as planned.&lt;/p&gt;
+&lt;p&gt;Still over the last year I’ve gradually saw out little Different Pixel brand reaching more and more places which can be very helpful in the future and sure hell is nice to see work recognized.&lt;/p&gt;
+&lt;p&gt;From the top of my head I recall &lt;a href=&#34;http://kotaku.com/5820508/our-newest-xbox-live-indie-favorites-are-full-of-rainbows-and-death/gallery/5&#34;&gt;Kotaku article on the Xbox360 release&lt;/a&gt;, we finally managed to release the Xbox360 version, which was the first one we made. Being a &lt;a href=&#34;http://www.dreambuildplay.com/Main/SemiFinalists.aspx&#34;&gt;semi-finalist on Dream.Build.Play&lt;/a&gt; 2011 and the &lt;a href=&#34;http://www.destructoid.com/destructoid-show-mgs-menswear-gow-fitness-and-vizati-198288.phtml&#34;&gt;coverage on Destructoid&lt;/a&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Another year has gone by, not quite what I was expecting developing wise, like putting another game out there, but things never turned out as planned.</p>
 <p>Still over the last year I’ve gradually saw out little Different Pixel brand reaching more and more places which can be very helpful in the future and sure hell is nice to see work recognized.</p>
 <p>From the top of my head I recall <a href="http://kotaku.com/5820508/our-newest-xbox-live-indie-favorites-are-full-of-rainbows-and-death/gallery/5">Kotaku article on the Xbox360 release</a>, we finally managed to release the Xbox360 version, which was the first one we made. Being a <a href="http://www.dreambuildplay.com/Main/SemiFinalists.aspx">semi-finalist on Dream.Build.Play</a> 2011 and the <a href="http://www.destructoid.com/destructoid-show-mgs-menswear-gow-fitness-and-vizati-198288.phtml">coverage on Destructoid</a>.</p>
@@ -132,25 +122,24 @@ Chuck</p>
       <link>https://www.david-amador.com/2010/12/wrapping-up-year-2010/</link>
       <pubDate>Fri, 31 Dec 2010 15:06:46 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/12/wrapping-up-year-2010/</guid>
-      <description>So another year has come to an end, time to make plans for a new one and look back on what has been done.
-This was one crazy year, where I embraced indie development as my free time “hobby”.
-This picture illustrates my year very well, dark link is a bonus since my twitter handle is DJ_Link
-I’m tired, but happy and hoping that these were the first steps on something greater and bigger.</description>
+      <description>&lt;p&gt;So another year has come to an end, time to make plans for a new one and look back on what has been done.&lt;/p&gt;
+&lt;p&gt;This was one crazy year, where I embraced indie development as my free time “hobby”.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/12/chibi_dark_link_icon_by_creamy423-d2xgzv9.png&#34; title=&#34;coding....&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This picture illustrates my year very well, dark link is a bonus since my twitter handle is &lt;a href=&#34;https://twitter.com/DJ_Link&#34;&gt;DJ_Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I’m tired, but happy and hoping that these were the first steps on something greater and bigger.&lt;br&gt;
+Developing &lt;a href=&#34;https://dj_link.itch.io/vizati&#34;&gt;Vizati&lt;/a&gt; turned out a much more complex task that I imagined, making everything from the ground up, from engine to the actual game for 5 different platforms took me around 3x more time that I expected. Valuables lessons were learned so I’d be a fool to repeat those mistakes again.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So another year has come to an end, time to make plans for a new one and look back on what has been done.</p>
 <p>This was one crazy year, where I embraced indie development as my free time “hobby”.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/12/chibi_dark_link_icon_by_creamy423-d2xgzv9.png" alt=""  title="coding...."  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/12/chibi_dark_link_icon_by_creamy423-d2xgzv9.png" title="coding...."></p>
 <p>This picture illustrates my year very well, dark link is a bonus since my twitter handle is <a href="https://twitter.com/DJ_Link">DJ_Link</a></p>
 <p>I’m tired, but happy and hoping that these were the first steps on something greater and bigger.<br>
 Developing <a href="https://dj_link.itch.io/vizati">Vizati</a> turned out a much more complex task that I imagined, making everything from the ground up, from engine to the actual game for 5 different platforms took me around 3x more time that I expected. Valuables lessons were learned so I’d be a fool to repeat those mistakes again.</p>
-<p><a href="/wp-content/uploads/2010/12/E155.jpg"><img loading="lazy" src="/wp-content/uploads/2010/12/E155.jpg" alt=""  title="Being John Carmack"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/12/E155.jpg"><img loading="lazy" src="/wp-content/uploads/2010/12/E155.jpg" title="Being John Carmack"></a></p>
 <p>I don’t know what the future holds for me but I’m glad I took the chance to put something out there, gives me a sense of achievement and well, at least I tried, won’t carry this one to my grave 😛</p>
 <p>For future plans well, I have stuff going on but can’t really go into details. We (<a href="http://www.differentpixel.com">Different Pixel</a>) will keep trying to bring cool games for all of you.<br>
 Given the awful condition that Portugal is going though right now sometimes things seem hopeless, like rowing against the tide but I try to keep a general positive mind about it.</p>
 <p>Oh, just realized, I’m writing this post from my new laptop, I was finally able to buy one, it’s not a high-end machine but it’s going to be handy for developing outside home 🙂</p>
-<p><a href="/wp-content/uploads/2010/12/DSCF0002.jpg"><img loading="lazy" src="/wp-content/uploads/2010/12/DSCF0002.jpg" alt=""  title="DSCF0002"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/12/DSCF0002.jpg"><img loading="lazy" src="/wp-content/uploads/2010/12/DSCF0002.jpg" title="DSCF0002"></a></p>
 <p>I just want to say a big <strong>Thank You</strong> to everyone who bought Vizati, (btw, <a href="http://www.gamersgate.com/DD-VIZ/vizati">GamersGate is having a 65% off right now till Jan 2nd 2011, around €2.5</a>) everyone who sent us so many emails about it, feedback, comments, bugs etc.</p>
 <p>On a personal side I want to thank <a href="http://www.rita-silva.com">Rita</a> for jumping the indie bandwagon with me thus making Different Pixel possible without my stick-man figures, her art is awesome. Vizati was highly praised on it’s artistic look and that’s all on her, so I can’t wait to show you guys more stuff. Also a big thank you for every of my twitter followers, you have helped me more that once and made me company during those long coding nights.</p>
 <p><strong>Some of my favorite 2010 movies:</strong></p>

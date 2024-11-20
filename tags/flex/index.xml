@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>flex on David Amador</title>
+    <title>Flex on David Amador</title>
     <link>https://www.david-amador.com/tags/flex/</link>
-    <description>Recent content in flex on David Amador</description>
+    <description>Recent content in Flex on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 20 Jan 2010 00:55:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/flex/index.xml" rel="self" type="application/rss+xml" />
@@ -18,14 +18,13 @@
       <link>https://www.david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</link>
       <pubDate>Wed, 20 Jan 2010 00:55:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/01/flex-build-path-gui-bug-and-fix/</guid>
-      <description>I recently faced myself with a really annoying bug on Flex 3, the “Flex Modules” section of the properties dialog is blank.
-After some search on the internet some suggested that it might be a resolution problem. What the f**? So I have to switch resolution to use a program? Adobe Support turned out a dead end so still no permanent fix for this. There is however a small thing you can do, just adjust the divider between the list on the left hand side of the dialog and the right hand content area.</description>
+      <description>&lt;p&gt;I recently faced myself with a really annoying bug on Flex 3, the “Flex Modules” section of the properties dialog is blank.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2010/01/flex_missing_gui_bug.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/01/flex_missing_gui_bug-300x278.jpg&#34; title=&#34;flex_missing_gui_bug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After some search on the internet some suggested that it might be a resolution problem. What the f**? So I have to switch resolution to use a program? Adobe Support turned out a dead end so still no permanent fix for this. There is however a small thing you can do, just adjust the divider between the list on the left hand side of the dialog and the right hand content area. Just adjusting the divider a smidge will cause everything to magically appear.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I recently faced myself with a really annoying bug on Flex 3, the “Flex Modules” section of the properties dialog is blank.</p>
-<p><a href="/wp-content/uploads/2010/01/flex_missing_gui_bug.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/flex_missing_gui_bug-300x278.jpg" alt=""  title="flex_missing_gui_bug"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/01/flex_missing_gui_bug.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/flex_missing_gui_bug-300x278.jpg" title="flex_missing_gui_bug"></a></p>
 <p>After some search on the internet some suggested that it might be a resolution problem. What the f**? So I have to switch resolution to use a program? Adobe Support turned out a dead end so still no permanent fix for this. There is however a small thing you can do, just adjust the divider between the list on the left hand side of the dialog and the right hand content area. Just adjusting the divider a smidge will cause everything to magically appear.</p>
-<p><a href="/wp-content/uploads/2010/01/flex_missing_gui_fixed.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/flex_missing_gui_fixed-300x278.jpg" alt=""  title="flex_missing_gui_fixed"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/01/flex_missing_gui_fixed.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/flex_missing_gui_fixed-300x278.jpg" title="flex_missing_gui_fixed"></a></p>
 <p>Even though It might seem obvious now it certainly gave me some headaches no being able to add source paths.</p>
 <p>Cheers</p>
 ]]></content:encoded>

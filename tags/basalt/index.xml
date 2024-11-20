@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Sep 2023 09:57:43 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/basalt/index.xml" rel="self" type="application/rss+xml" />
@@ -18,13 +18,12 @@
       <link>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
       <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
       <guid>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
-      <description>After mostly a week of anxiety, for thousands and thousands of developers, Unity changed the rules again, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service.</description>
+      <description>&lt;p&gt;After mostly a &lt;a href=&#34;https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/&#34; title=&#34;The Unity enshittification, proprietary tech dangers, and mostly not talking about what I’m doing.&#34;&gt;week of anxiety,&lt;/a&gt; for thousands and thousands of developers, Unity &lt;a href=&#34;https://blog.unity.com/news/open-letter-on-runtime-fee&#34;&gt;changed the rules again&lt;/a&gt;, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service. This will be impossible on mobile and consoles in a short time frame due to SDKs, but for PC should be fine.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>After mostly a <a href="/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/" title="The Unity enshittification, proprietary tech dangers, and mostly not talking about what I’m doing.">week of anxiety,</a> for thousands and thousands of developers, Unity <a href="https://blog.unity.com/news/open-letter-on-runtime-fee">changed the rules again</a>, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service. This will be impossible on mobile and consoles in a short time frame due to SDKs, but for PC should be fine.</p>
 <p>So that’s good huh? Well not quite imo, because the rest pretty much maintains, more or less with some changes, Unity Plus still gone (although expected), but <a href="https://unity.com/pricing-updates">it’s a revenue/pay-per-install deal</a>, on top of the yearly license fees. I feel they fear they tainted their image so much they aren’t even forcing the Unity splash screen anymore, probably because players will now fear every Unity game will come with install tracking software.</p>
 <p>I think the subscription plan, especially for mobile/consoles is needed, it’s a company and needs to make money to maintain the software, fair. However for me it’s a lot of the break of trust they did, and trying for the SECOND time (that I recall) to change the Terms of Service retroactively and only after industry-wide outrage did they backtracked slightly. So for now the new-new rules only apply to a smaller %, which I guess they expect will calm down most of the community. In a couple years they’ll pull some other stunt and we’ll recall “oh right, they did this before”.</p>
 <p>Furthermore, they had deleted the transparency repo with the Terms of Service from GitHub, which raised many eyebrows, when enquired to why they deleted the answer was “low views so it was deleted”. The repo is back up meanwhile, I mean, what the heck?</p>
-<p><a href="https://twitter.com/unity/status/1705317639478751611"><img loading="lazy" src="/wp-content/uploads/2023/09/image-2.png" alt=""  />
-</a></p>
+<p><a href="https://twitter.com/unity/status/1705317639478751611"><img loading="lazy" src="/wp-content/uploads/2023/09/image-2.png"></a></p>
 <h2 id="moving-forward">Moving forward</h2>
 <p>So as I mentioned in last post I have been working on a prototype for what I hope I can turn into a new game, in Unity. I decided that I’ll continue working on the prototype in Unity (actually taking a break from work right now to write this), it would be slightly silly to change now. And when I feel most of the features are done, I’ll try to move to my own tech, yes again.</p>
 <p>I’ve been doing some research and tests and I’ll be dismantling <a href="/tags/quest-of-dungeons/" title="Quest of Dungeons development update">Quest of Dungeons</a> engine, which was all <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>, to adding <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a>, using <a href="https://github.com/SanderMertens/flecs/">Flecs</a>, this is a major thing I’m taking with me from my time using Unity, I like that it helps solving a lot of issues sometimes, even if full ECS is not the solution for me. But having that will be nice, I can see the benefit now. Another thing might also be trying to mimick Prefabs and/or ScriptableObjects, that would be nice, but that’s just in the back of my head at the moment. I already started the process of integrating Flecs, so slowly and gradually, and hopefully, when it’s time to switch engine it will be a suitable alternative. If not well, better not update to 2023LTS I guess.</p>
@@ -40,13 +39,11 @@
       <link>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</link>
       <pubDate>Sat, 16 Sep 2023 11:14:16 +0000</pubDate>
       <guid>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
-      <description>So this was an “eventful” week in the game dev community. Unity, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. Unity announced that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</description>
+      <description>&lt;p&gt;So this was an “eventful” week in the game dev community. &lt;a href=&#34;https://unity.com/&#34;&gt;Unity&lt;/a&gt;, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. &lt;a href=&#34;https://blog.unity.com/news/plan-pricing-and-packaging-updates&#34;&gt;Unity announced &lt;/a&gt;that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So this was an “eventful” week in the game dev community. <a href="https://unity.com/">Unity</a>, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. <a href="https://blog.unity.com/news/plan-pricing-and-packaging-updates">Unity announced </a>that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</p>
-<p><a href="https://blog.unity.com/news/plan-pricing-and-packaging-updates"><img loading="lazy" src="/wp-content/uploads/2023/09/unity-new-runtime-free-pricing-image.png" alt=""  />
-</a></p>
+<p><a href="https://blog.unity.com/news/plan-pricing-and-packaging-updates"><img loading="lazy" src="/wp-content/uploads/2023/09/unity-new-runtime-free-pricing-image.png"></a></p>
 <p>Also they are removing the Plus subscription, which honestly this one I was kind of expecting for a while now. Which means a lot of people would have to jump to the nearly $2k yearly subscriptions. This on it’s own, while a big jump, at least is more understandable, building tech is expensive. The pay-per-install is crazy though.</p>
-<p><a href="https://twitter.com/DJ_Link/status/1666532480646627329"><img loading="lazy" src="/wp-content/uploads/2023/09/image-1.png" alt=""  />
-</a>On top of all, the thing that breaks trust the most, is the retroactive thing, games already released on older versions will be affected. The Terms of Service for those older versions, which developers agreed on installing X version, are no longer valid, they changed them, which means it’s no longer safe to trust the rules, Unity can just flip them. What’s for tomorrow?</p>
+<p><a href="https://twitter.com/DJ_Link/status/1666532480646627329"><img loading="lazy" src="/wp-content/uploads/2023/09/image-1.png"></a>On top of all, the thing that breaks trust the most, is the retroactive thing, games already released on older versions will be affected. The Terms of Service for those older versions, which developers agreed on installing X version, are no longer valid, they changed them, which means it’s no longer safe to trust the rules, Unity can just flip them. What’s for tomorrow?</p>
 <h2 id="proprietary-tech">Proprietary tech</h2>
 <p>This is, and always be one of the downsides of depending on other people technology, if the whole company depends on it, and there’s no easy replacement, a drastic change can hurt the whole business bad. This is not to say that we must avoid it 100% of the time, but it clearly shows that if a company amasses too much power, <a href="https://en.wikipedia.org/wiki/Murphy's_law">murphy’s law</a>!</p>
 <p>I usually like to discuss this subject, even before this whole thing, not because I think everyone should do custom engines (even if fun) but because we shouldn’t trick ourselves in believing “my choice of engine is forever!”, it won’t be, unless it’s our own tech that we spend tons of time supporting/improving it, everything else eventually mutates too much, fades or gets killed. So we should always try to at the very least, be mentally prepared.</p>
@@ -65,22 +62,18 @@
       <link>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</link>
       <pubDate>Wed, 11 Dec 2013 12:00:14 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</guid>
-      <description>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.
-I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too.</description>
+      <description>&lt;p&gt;I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.&lt;br&gt;
+I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too. I’m just polishing the game and finishing some bugs, but I’m close, I can feel it =)&lt;br&gt;
+Right now I’m targeting for a late January release, but I’ll have a more precise date in the next few weeks.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.<br>
 I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too. I’m just polishing the game and finishing some bugs, but I’m close, I can feel it =)<br>
 Right now I’m targeting for a late January release, but I’ll have a more precise date in the next few weeks.</p>
 <p>Meanwhile here are a couple of screenshots.</p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01-300x187.png" alt="quest_of_dungeons_mac_01"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02-300x187.png" alt="quest_of_dungeons_mac_02"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03-300x187.png" alt="quest_of_dungeons_mac_03"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04-300x187.png" alt="quest_of_dungeons_mac_04"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05-300x187.png" alt="quest_of_dungeons_mac_05"  />
-</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01.png"><img alt="quest_of_dungeons_mac_01" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02.png"><img alt="quest_of_dungeons_mac_02" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03.png"><img alt="quest_of_dungeons_mac_03" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04.png"><img alt="quest_of_dungeons_mac_04" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png"><img alt="quest_of_dungeons_mac_05" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05-300x187.png"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -88,32 +81,28 @@ Right now I’m targeting for a late January release, but I’ll have a more pre
       <link>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</link>
       <pubDate>Sun, 29 Jan 2012 19:56:20 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</guid>
-      <description>So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.
-Taking a rest between some more complex game mechanisms I decided to start doing a video player.
-After a bit research I decided to choose theora, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&amp;gt;RGB(A) conversion and because of video/audio sync.</description>
+      <description>&lt;p&gt;So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.&lt;/p&gt;
+&lt;p&gt;Taking a rest between some more complex game mechanisms I decided to start doing a video player.&lt;/p&gt;
+&lt;p&gt;After a bit research I decided to choose &lt;a href=&#34;http://theora.org/&#34;&gt;theora&lt;/a&gt;, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&amp;gt;RGB(A) conversion and because of video/audio sync.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.</p>
 <p>Taking a rest between some more complex game mechanisms I decided to start doing a video player.</p>
 <p>After a bit research I decided to choose <a href="http://theora.org/">theora</a>, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&gt;RGB(A) conversion and because of video/audio sync.</p>
 <p>If I remember correctly we couldn’t play audio, we where using separated tracks and paying the audio via a normal music play and big resolution videos (&gt;500??) where a killer.</p>
 <p>Anyway, since I’m already using OpenAL for audio I decided to give it a try. Unfortunately I didn’t had that code we where using back then so I had to do some digging on the internet.</p>
 <p>So after a few days I had it working but bumped into the same problem, a bit slow. Not as slow as before cause computers have evolved. But after some reading I discovered that you can actually cache some YUV-&gt;RBG values and speed went up by like 10 fold.</p>
-<p><a href="/wp-content/uploads/2012/01/theora_player.png"><img loading="lazy" src="/wp-content/uploads/2012/01/theora_player.png" alt=""  title="theora_player"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/01/theora_player.png"><img loading="lazy" src="/wp-content/uploads/2012/01/theora_player.png" title="theora_player"></a></p>
 <p>I can decode 1080p videos with audio on my Core2Duo @ 2 GHz. And I mention the core since I have the decoding from the file on a separated thread so on a single core it’s probably a bit slower.<br>
 But we probably will be placing videos around 512px width so there’s no problem there. I wonder if we could do the YUV-&gt;RGBA on the GPU side via a shader?</p>
 <p>It’s also worth mentioning that I’m using OpenGL and “glTexSubImage2D” for updating the texture. I found out that it’s much faster than “glTexImage2D” because it respecifies the entire texture, changing its size, deleting the previous data, and so forth. “glTexSubImage2D” only modifies pixel data within the texture.</p>
 <p><strong>Tools</strong></p>
 <p>On the tools realm there was a need for a better Particle System Editor, the one we had has many things but adding stuff was turning into a nightmare, the old editor was build on XNA 3.1 which isn’t supported by VS2010.<br>
 Since the engine is already in C++ I started from scratch and built this handy tool in 3 days or so:</p>
-<p><a href="/wp-content/uploads/2012/01/screenshots2.png"><img loading="lazy" src="/wp-content/uploads/2012/01/screenshots2.png" alt=""  title="screenshots2"  />
-</a></p>
-<p><a href="/wp-content/uploads/2012/01/Screenshot1.png"><img loading="lazy" src="/wp-content/uploads/2012/01/Screenshot1.png" alt=""  title="Screenshot1"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/01/screenshots2.png"><img loading="lazy" src="/wp-content/uploads/2012/01/screenshots2.png" title="screenshots2"></a></p>
+<p><a href="/wp-content/uploads/2012/01/Screenshot1.png"><img loading="lazy" src="/wp-content/uploads/2012/01/Screenshot1.png" title="Screenshot1"></a></p>
 <p>Not vary fancy but it gets the job done.</p>
 <p>My next step was to fix most of the Sprite Sheet Editor bugs and issues my designer had been complaining about.</p>
 <p>I already have an offline tool that grabs a bunch of tiny images and place them in an Atlas but most of the time the designer has the pieces together already on Photoshop so I incorporated a snippet of code that on double clicking an area tries to automatically detect the region around it. Anything that fails can be manually defined, the old fashioned way.</p>
-<p><a href="/wp-content/uploads/2012/01/sprite_editor.png"><img loading="lazy" src="/wp-content/uploads/2012/01/sprite_editor.png" alt=""  title="sprite_editor"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/01/sprite_editor.png"><img loading="lazy" src="/wp-content/uploads/2012/01/sprite_editor.png" title="sprite_editor"></a></p>
 <p>So in the next few days I’m working on the Animation Editor so the artist can quickly create and preview the animations from the sprite sheets without the need for me to place them in the game before hand.</p>
 <p>I had most of these tools but they where awful. They did the trick for Vizati but now I’m trying to do things a bit better.</p>
 <p>See you soon…</p>
@@ -124,16 +113,26 @@ Since the engine is already in C++ I started from scratch and built this handy t
       <link>https://www.david-amador.com/2011/12/basalt-code-swarm/</link>
       <pubDate>Fri, 23 Dec 2011 16:48:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/12/basalt-code-swarm/</guid>
-      <description>I discovered code swarm a while ago and decided to test on my own repositories.
-This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.
-This is the result.</description>
+      <description>&lt;p&gt;I discovered &lt;a href=&#34;http://code.google.com/p/codeswarm/&#34;&gt;code swarm&lt;/a&gt; a while ago and decided to test on my own repositories.&lt;/p&gt;
+&lt;p&gt;This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.&lt;/p&gt;
+&lt;p&gt;This is the result.&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/sOpYY2PhIb4?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;</description>
       <content:encoded><![CDATA[<p>I discovered <a href="http://code.google.com/p/codeswarm/">code swarm</a> a while ago and decided to test on my own repositories.</p>
 <p>This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.</p>
 <p>This is the result.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/sOpYY2PhIb4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sOpYY2PhIb4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -142,13 +141,13 @@ This is the result.</description>
       <link>https://www.david-amador.com/2011/03/scripting-week/</link>
       <pubDate>Sat, 26 Mar 2011 11:36:37 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/03/scripting-week/</guid>
-      <description>This week I’ve been working on replacing my current scripting system. It worked great for Vizati but I need something with a little more flexibility.
-Instead of explaining what I’ve managed to get working I’ve made a screenshot with some notes.
-I think I’m going to make this my #ScreenshotSaturday</description>
+      <description>&lt;p&gt;This week I’ve been working on replacing my current &lt;a href=&#34;https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/&#34; title=&#34;I maed a Custom Script Language for my Xna Engine&#34;&gt;scripting system&lt;/a&gt;. It worked great for Vizati but I need something with a little more flexibility.&lt;/p&gt;
+&lt;p&gt;Instead of explaining what I’ve managed to get working I’ve made a screenshot with some notes.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2011/03/basalt_scripting_v2.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2011/03/basalt_scripting_v2.jpg&#34; title=&#34;basalt_scripting_v2&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I think I’m going to make this my #ScreenshotSaturday&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This week I’ve been working on replacing my current <a href="/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/" title="I maed a Custom Script Language for my Xna Engine">scripting system</a>. It worked great for Vizati but I need something with a little more flexibility.</p>
 <p>Instead of explaining what I’ve managed to get working I’ve made a screenshot with some notes.</p>
-<p><a href="/wp-content/uploads/2011/03/basalt_scripting_v2.jpg"><img loading="lazy" src="/wp-content/uploads/2011/03/basalt_scripting_v2.jpg" alt=""  title="basalt_scripting_v2"  />
-</a></p>
+<p><a href="/wp-content/uploads/2011/03/basalt_scripting_v2.jpg"><img loading="lazy" src="/wp-content/uploads/2011/03/basalt_scripting_v2.jpg" title="basalt_scripting_v2"></a></p>
 <p>I think I’m going to make this my #ScreenshotSaturday</p>
 ]]></content:encoded>
     </item>
@@ -157,16 +156,16 @@ I think I’m going to make this my #ScreenshotSaturday</description>
       <link>https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</link>
       <pubDate>Fri, 04 Mar 2011 11:05:11 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/</guid>
-      <description>This is my first post to http://idevblogaday.com/, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.
-I’ll start by talking a bit about how we made our PC game Vizati to iPhone.When we started, this represented our chance of making games and putting ourselves into test.</description>
+      <description>&lt;p&gt;This is my first post to &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;http://idevblogaday.com/&lt;/a&gt;, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.&lt;/p&gt;
+&lt;p&gt;I’ll start by talking a bit about how we made our PC game &lt;a href=&#34;https://dj_link.itch.io/vizati/&#34;&gt;Vizati&lt;/a&gt; to iPhone.&lt;a href=&#34;http://itunes.apple.com/app/vizati/id393099810?mt=8&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/05/box_vizati_11.jpg&#34; title=&#34;box_vizati_1&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When we started, this represented our chance of making games and putting ourselves into test. Without any pre determined rules and/or a major company dictating what to do we were able to have full creative control to try and do something a bit different.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This is my first post to <a href="http://idevblogaday.com/">http://idevblogaday.com/</a>, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.</p>
-<p>I’ll start by talking a bit about how we made our PC game <a href="https://dj_link.itch.io/vizati/">Vizati</a> to iPhone.<a href="http://itunes.apple.com/app/vizati/id393099810?mt=8"><img loading="lazy" src="/wp-content/uploads/2010/05/box_vizati_11.jpg" alt=""  title="box_vizati_1"  />
-</a></p>
+<p>I’ll start by talking a bit about how we made our PC game <a href="https://dj_link.itch.io/vizati/">Vizati</a> to iPhone.<a href="http://itunes.apple.com/app/vizati/id393099810?mt=8"><img loading="lazy" src="/wp-content/uploads/2010/05/box_vizati_11.jpg" title="box_vizati_1"></a></p>
 <p>When we started, this represented our chance of making games and putting ourselves into test. Without any pre determined rules and/or a major company dictating what to do we were able to have full creative control to try and do something a bit different.</p>
 <p><em>Vizati</em> is a casual puzzle game with a story as a background. The game is now available for Windows, Mac, iPhone, iPad and Windows Phone 7. Developed by only two people, it thankfully received several good reviews.</p>
 <p><strong>Launching for Windows</strong></p>
 <p>We started out building for Windows and Xbox360 because it was a very well known platform for us; we had tools and knowledge from other games so it felt right.</p>
-<p>We launched the game on June 6<!-- raw HTML omitted -->th; <!-- raw HTML omitted --> and got some very positive reviews, being its freshness, graphics and music the most acclaimed features.</p>
+<p>We launched the game on June 6th and got some very positive reviews, being its freshness, graphics and music the most acclaimed features.</p>
 <p>Right away we started making plans for bringing the game to iOS devices, iPhone, iPad etc. The mobile devices felt like a great platform for such a game.</p>
 <p><strong>First speed bump</strong></p>
 <p>For the PC we had built the game engine using XNA framework as a base, it is DirectX based but it uses .Net languages which are a no go for iOS devices of course. It was stable enough to ensure a high compatibility with all the different machines out there, and we never thought at start to make it for any other platforms. This was our first mistake.</p>
@@ -175,8 +174,7 @@ I’ll start by talking a bit about how we made our PC game Vizati to iPhone.Wh
 <p>At first we considered using the same images and using the same feature we used on PC to <a href="/2010/03/xna-2d-independent-resolution-rendering/" title="XNA 2D Independent Resolution Rendering">automatically scale the game</a> to the screen size. But doing that would be a tremendous effort to the device since the iPhone screen size was almost 3 times smaller; memory and CPU cycles are more limited in mobiles so we had to make a smarter approach.</p>
 <p>One of the problems was the game being extremely slow on older devices. The amount of particles and animations on some parts was a total killer. I eventually had to <a href="/2010/08/developers-log-stardate-26082010/" title="Developers log stardate 26082010">rewrite my primitive drawing code </a>to batch stuff as much as possible</p>
 <p>Another problem was the aspect ratio, which would lead to either stretching the game vertically thus distorting the images or making it letterboxed.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2011/03/vizati_letterbox.jpg" alt=""  title="vizati_letterbox"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2011/03/vizati_letterbox.jpg" title="vizati_letterbox"></p>
 <p>The screen is already small so it would be a mistake not to take advantage of all the area. Rita had to redo some of the art to fit a different aspect ratio.</p>
 <p>Fortunately touch felt a very natural way for controlling the game, even more than a keyboard. Using the fingers to rotate, shake and flip the cube feels right and natural.</p>
 <p>The iPad version was easy once we had the iPhone version made, basically we just had to bundle high-resolution images since its screen resolution is 1024×768. This version features the HD graphics that so many loved in the PC version.</p>
@@ -188,9 +186,9 @@ I’ll start by talking a bit about how we made our PC game Vizati to iPhone.Wh
       <link>https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</link>
       <pubDate>Tue, 11 Jan 2011 01:10:44 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/</guid>
-      <description>It’s little over a month since I said I wouldn’t do any more porting for Vizati. Lesson learned, don’t say never again…
-When I started making the engine in C++ with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.
-Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish.</description>
+      <description>&lt;p&gt;It’s little over a month since I said I wouldn’t do any more &lt;a href=&#34;https://www.david-amador.com/2010/12/no-more-porting-for-vizati-time-for-something-new/&#34;&gt;porting for Vizati&lt;/a&gt;. Lesson learned, don’t say never again…&lt;/p&gt;
+&lt;p&gt;When I started making the engine in C++ with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.&lt;br&gt;
+Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish. Anyway the engine already supports Windows, iPhone and iPad.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s little over a month since I said I wouldn’t do any more <a href="/2010/12/no-more-porting-for-vizati-time-for-something-new/">porting for Vizati</a>. Lesson learned, don’t say never again…</p>
 <p>When I started making the engine in C++ with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.<br>
 Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish. Anyway the engine already supports Windows, iPhone and iPad.</p>
@@ -198,8 +196,7 @@ Keeping rendering and OS specific calls abstract from the game itself and the en
 <p>I remember that immediately after that I went ahead and registered myself as a Mac Developer at Apple 😛</p>
 <p>I encounter this one crazy error where only by renaming my “Math.h” file to “Math.c” would make it work, which is weird since it works on Windows and iPhone with .h. Probably some crazy linkage error, XCode is weird.</p>
 <p>So that said it makes sense to release Vizati to MacOSX, it’s ready and working, we are just doing some testing. I’ve made a build for both Intel and PPC processors but this needs further testing.</p>
-<p><a href="/wp-content/uploads/2011/01/vizati_mac.png"><img loading="lazy" src="/wp-content/uploads/2011/01/vizati_mac.png" alt=""  title="Vizati MacOSX"  />
-</a></p>
+<p><a href="/wp-content/uploads/2011/01/vizati_mac.png"><img loading="lazy" src="/wp-content/uploads/2011/01/vizati_mac.png" title="Vizati MacOSX"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -207,22 +204,20 @@ Keeping rendering and OS specific calls abstract from the game itself and the en
       <link>https://www.david-amador.com/2010/10/cross-platform-engine-progress/</link>
       <pubDate>Mon, 11 Oct 2010 14:20:02 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/10/cross-platform-engine-progress/</guid>
-      <description>If you read my recent posts you know I’ve been bringing Basalt to C++.
-The plan is to support both DirectX and OpenGL render API’s and OpenGLES for iOS devices. I’m tired of porting stuff so I want to make a better framework for future projects and I’ll leave the XNA branch for Xbox360 and Windows Phone 7. I really wished I had this before.
-Since the iPhone branch is stable I move on to making it compatible with Win32 and MacOSX.</description>
+      <description>&lt;p&gt;If you read my recent posts you know I’ve been bringing Basalt to C++.&lt;br&gt;
+The plan is to support both DirectX and OpenGL render API’s and OpenGLES for iOS devices. I’m tired of porting stuff so I want to make a better framework for future projects and I’ll leave the XNA branch for Xbox360 and Windows Phone 7. I really wished I had this before.&lt;/p&gt;
+&lt;p&gt;Since the iPhone branch is stable I move on to making it compatible with Win32 and MacOSX.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>If you read my recent posts you know I’ve been bringing Basalt to C++.<br>
 The plan is to support both DirectX and OpenGL render API’s and OpenGLES for iOS devices. I’m tired of porting stuff so I want to make a better framework for future projects and I’ll leave the XNA branch for Xbox360 and Windows Phone 7. I really wished I had this before.</p>
 <p>Since the iPhone branch is stable I move on to making it compatible with Win32 and MacOSX.</p>
 <p>This past week I added OpenGL support, not very different from OpenGLES but I still don’t have any shader support, just basic stuff is working now. After that Vizati iPhone code worked like a charm on Windows, as intended the game itself didn’t depend on platform specifics and it’s abstracted from all that, which was one of the major mistakes I did when starting the framework back in February.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/10/vizati_iphone_win32.png" alt=""  title="vizati_iphone_win32"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/10/vizati_iphone_win32.png" title="vizati_iphone_win32"></p>
 <p>Sound is working too, using <a href="http://www.vorbis.com/">Vorbis OGG</a> which is cross-platform and open-source.</p>
 <p>I still have a lot of work to do but It’s on good track, I’ll leave DirectX 9 support for the end, I want to get everything else in place first.</p>
 <p>A little curiosity, between Vizati (.Net + XNA) and Vizati (Basalt C++/OpenGL), with the same assets, well on XNA it’s MP3 and C++ is OGG, I’m getting very different memory usage.<br>
 Around 165MB on XNA and around 20MB on C++/OpenGL. I’m probably doing something wrong on .Net side but since the difference is so big I can’t really understand what.</p>
 <p>Even if I use uncompressed music the memory only jumps to 70MB, still a long stretch to 165MB.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/10/basalt_xna_vs_basalt_cpp.png" alt=""  title="basalt_xna_vs_basalt_cpp"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/10/basalt_xna_vs_basalt_cpp.png" title="basalt_xna_vs_basalt_cpp"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -230,15 +225,14 @@ Around 165MB on XNA and around 20MB on C++/OpenGL. I’m probably doing somethin
       <link>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</link>
       <pubDate>Mon, 26 Jul 2010 12:47:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</guid>
-      <description>I ran into this issue a couple hours ago working on the iPhone sdk:
-See the darker borders around the image?
-It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
-Well that’s because that alpha isn’t 0 or 1 or 0 or 255.
-The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha.</description>
+      <description>&lt;p&gt;I ran into this issue a couple hours ago working on the iPhone sdk:&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders.png&#34; title=&#34;iphone_image_dark_borders&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png&#34; title=&#34;iphone_image_dark_borders_2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;See the darker borders around the image?&lt;/p&gt;
+&lt;p&gt;It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?&lt;br&gt;
+Well that’s because that alpha isn’t 0 or 1 or 0 or 255.&lt;/p&gt;
+&lt;p&gt;The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha. So you can understand now why only 0 or 1 works right? Everything in between get’s changed. This is why Apple recommends using PNG over JPGS, although they consume more space they are altered for speed.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I ran into this issue a couple hours ago working on the iPhone sdk:</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders.png" alt=""  title="iphone_image_dark_borders"  />
-<img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" alt=""  title="iphone_image_dark_borders_2"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders.png" title="iphone_image_dark_borders"><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" title="iphone_image_dark_borders_2"></p>
 <p>See the darker borders around the image?</p>
 <p>It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?<br>
 Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
@@ -261,10 +255,8 @@ Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	<span class="n">off</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_fixed_border.png" alt="image"  />
-</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_border_fixed2.png" alt="image"  />
-</p>
+</span></span></code></pre></div><p><img alt="image" loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_fixed_border.png"></p>
+<p><img alt="image" loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_border_fixed2.png"></p>
 <p>There may be other solutions but this won&rsquo;t have any impact on the game, just when loading images. Let me know if you find any other solution.</p>
 <p>EDIT: Quick note here: this is not the correct way to deal with pre-multiplied alpha but a patching. XNA recently embraced pre multiplied alpha to avoid this issues. More <a href="http://blogs.msdn.com/b/shawnhar/archive/2009/11/06/premultiplied-alpha.aspx">here</a>  (Thanks Elisée Maurer)</p>
 ]]></content:encoded>
@@ -274,20 +266,18 @@ Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
       <link>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
       <pubDate>Fri, 09 Jul 2010 09:59:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
-      <description>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.
-If you follow me on twitter you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.
-So it all started with my wish to port Vizati to the iPhone, since the game is already running on PC, Xbox360 and Windows Phone 7 one can only wish for an easy and quick port since pretty much all base code is done.</description>
+      <description>&lt;p&gt;It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.&lt;br&gt;
+If you follow me on &lt;a href=&#34;https://twitter.com/DJ_Link&#34;&gt;twitter&lt;/a&gt; you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.&lt;/p&gt;
+&lt;p&gt;So it all started with my wish to port Vizati to the iPhone, since the game is already running on &lt;a href=&#34;http://www.youtube.com/watch?v=F9vf17HSXcQ&#34;&gt;PC&lt;/a&gt;, Xbox360 and &lt;a href=&#34;http://www.youtube.com/watch?v=hX18tuujAEY&#34;&gt;Windows Phone 7&lt;/a&gt; one can only wish for an easy and quick port since pretty much all base code is done.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.<br>
 If you follow me on <a href="https://twitter.com/DJ_Link">twitter</a> you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.</p>
 <p>So it all started with my wish to port Vizati to the iPhone, since the game is already running on <a href="http://www.youtube.com/watch?v=F9vf17HSXcQ">PC</a>, Xbox360 and <a href="http://www.youtube.com/watch?v=hX18tuujAEY">Windows Phone 7</a> one can only wish for an easy and quick port since pretty much all base code is done.</p>
 <p>As you know for developing on the iPhone you require an actual Mac, I know there’s virtualization but my 5 year old PC can’t take it, believe me I tried. So I bought myself a mini mac which are much cheaper that IMac and macbooks, around $499 or so, and another extra $30 for a mini-Dvi to VGA adapter for my 1080p Samsung.</p>
 <p>Let me tell you, that bastard is silent, I mean I can’t listen to anything, powering off my desktop PC and I have this relaxing environment to work in, it’s great for coding during the night when everyone is asleep. I can only hear my keyboard strokes and my cat snoring.<br>
 Here’s a picture of it near the keyboard, it’s really small.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" alt=""  title="Mini Mac"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" title="Mini Mac"></p>
 <p>Now, moving on to the development part, on MacOS your IDE is XCode.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/xcode.png" alt=""  title="xcode"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/xcode.png" title="xcode"></p>
 <p>It’s no Visual Studio but it gets the job done. Has some strange shortcuts but I’ve found a neat <a href="https://web.archive.org/web/20150413150630/http://www.1729.us/xcode/Xcode%20Shortcuts.pdf">shortcut pdf</a>.</p>
 <p>Next was my struggle for testing available engines and frameworks and learning how much of Objective-C do you have to know and can I run C++ on it?</p>
 <p>I tested some engines:<br>
@@ -300,8 +290,7 @@ Here’s a picture of it near the keyboard, it’s really small.</p>
 <p>I ported my C# engine Basalt to C++, literally making .h and .cpp files. I hooked up my main animation and draw pump to some Objective-C classes (don’t forget to use .mm if you are mixing Objective-C with C++) and everything started working.</p>
 <p>The next bit was implementing the SpriteBatch class and make it draw in OpenGL, took me around two days to have the Matrices working, correct texture mapping to quads, Alpha Blend and Additive. The idea is that by the time I port an XNA game to C++ I can still use SpriteBatches, Texture2D etc.</p>
 <p>After these two weeks of development here’s what’s working:</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/IPhone-Basalt-Particle-System-2D.png" alt=""  title="iPhone Basalt Particle System 2D"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/IPhone-Basalt-Particle-System-2D.png" title="iPhone Basalt Particle System 2D"></p>
 <ul>
 <li>Draw Sprites – SpriteBatch is working, texture regions, SpriteBlendModes, Matrices etc</li>
 <li>Sprite Animations</li>
@@ -311,9 +300,12 @@ Here’s a picture of it near the keyboard, it’s really small.</p>
 </ul>
 <p>Here’s a video showing what I have so far:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ALzSzhvp2ns" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ALzSzhvp2ns?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Next in my list is Input, Script, music and then porting the whole game to C++, which I think will work nicely once the whole engine base is done.<br>
 Oh, and probably try to get a real device for proper testing.</p>
@@ -325,8 +317,8 @@ Oh, and probably try to get a real device for proper testing.</p>
       <link>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
       <pubDate>Wed, 30 Dec 2009 22:59:00 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
-      <description>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.
-I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry.</description>
+      <description>&lt;p&gt;Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.&lt;/p&gt;
+&lt;p&gt;I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry. It was funny, built a couple of games, made part of big projects, learned much, learned that even more is to be learned. One year after I started making small prototype games on my free times as a joke and websites now and then for a couple of extra bucks.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.</p>
 <p>I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry. It was funny, built a couple of games, made part of big projects, learned much, learned that even more is to be learned. One year after I started making small prototype games on my free times as a joke and websites now and then for a couple of extra bucks.</p>
 <p>Around August 2006 I approached <a href="http://www.twitter.com/_m0r3n4">Rita Silva</a> with an idea of building a small creative company. I knew her work, she’s very talented, check her <a href="http://www.rita-silva.com">blog</a> and a person like her creating all the looks and stuff for my projects would be a great help.</p>
@@ -334,14 +326,16 @@ I worked there since 2006, almost 4 years, I joined the team back then in the ho
 <p>Due to our full-time job things were always kind of slow on Different Pixel evolution, we couldn’t accept many jobs due to time restrictions.</p>
 <p>Now and without jobs we decided to try and take this small project to higher grounds, we are no longer inexperienced and without background. We currently are working on two small games, but our main focus is still web development, since we have to pay bills =P</p>
 <p>I’m not going to reveal much of the games now, this is just a small experience to see how the public reacts, if positive we can move to bigger projects.</p>
-<p><a href="/wp-content/uploads/2009/12/sapphire1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire1-300x193.jpg" alt=""  title="sapphire"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/12/sapphire1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire1-300x193.jpg" title="sapphire"></a></p>
 <p>Also I’ve been working like crazy on the past days on our internal xna map editor Sapphire. The idea is that you can use it with your own engine. Many features are done and much more are on the works.</p>
 <p>Here’s a video showing an alpha version. Keep in mind that this is a work in progress.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/GexS0y9Y2kM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GexS0y9Y2kM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>I’ll be posting an update soon and possibly a beta to the public, the idea is to sell at a low price.</p>
 <p>Stay tuned on our <a href="http://www.differentpixel.com">website</a>, <a href="http://www.twitter.com/DifferentPixel">Twitter </a>or <a href="http://www.facebook.com/DifferentPixel">Facebook </a>for updates, we promise lot’s of news soon.</p>
@@ -354,29 +348,33 @@ I worked there since 2006, almost 4 years, I joined the team back then in the ho
       <link>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
       <pubDate>Wed, 02 Dec 2009 21:38:11 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
-      <description>Lately all my free time has been spent adding new features to Basalt and developing Sapphire.
-Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.
-Here’s a screenshot of the previous alpha version:</description>
+      <description>&lt;p&gt;Lately all my free time has been spent adding new features to &lt;a href=&#34;https://www.david-amador.com/tags/basalt/&#34;&gt;Basalt&lt;/a&gt; and developing &lt;a href=&#34;https://www.david-amador.com/tags/sapphire/&#34;&gt;Sapphire&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.&lt;/p&gt;
+&lt;p&gt;Here’s a screenshot of the previous alpha version:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Lately all my free time has been spent adding new features to <a href="/tags/basalt/">Basalt</a> and developing <a href="/tags/sapphire/">Sapphire</a>.</p>
 <p>Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.</p>
 <p>Here’s a screenshot of the previous alpha version:</p>
-<p><a href="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg" alt="Sapphire Level Editor"  title="Sapphire Level Editor"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg"><img alt="Sapphire Level Editor" loading="lazy" src="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg" title="Sapphire Level Editor"></a></p>
 <p>I kept working on the engine itself and just making small prototypes for testing it. Finally 2 weeks ago I decided to start from scratch and just use xna to build it. Not much is done but I have little time after work to develop. Anyway I’m happy since I already have textures import, basic object positioning, scaling and a Layer System.</p>
-<p><a href="/wp-content/uploads/2009/12/sapphire.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire.jpg" alt="sapphire"  title="sapphire"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/12/sapphire.jpg"><img alt="sapphire" loading="lazy" src="/wp-content/uploads/2009/12/sapphire.jpg" title="sapphire"></a></p>
 <p>This is an early stage of the new editor, it’s from last week.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/D33185iWTQU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/D33185iWTQU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>When I have some cool stuff I’ll update a new video.</p>
 <p>On the engine side, today I decided to add a Console component to the engine, much like Source Engine and Quake consoles, to input commands, here’s the result:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ZYNBfdu5UqM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZYNBfdu5UqM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Hopefully by the beginning of next year I’ll have a beta version that I can release to the public for testing. I intend to launch a free and a payed version of the engine+ editor. My only dout is if I trim down some functions or just release it as free for non-commercial usage only.</p>
 ]]></content:encoded>
@@ -386,8 +384,8 @@ Here’s a screenshot of the previous alpha version:</description>
       <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</link>
       <pubDate>Fri, 20 Nov 2009 10:53:13 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
-      <description>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.
-Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</description>
+      <description>&lt;p&gt;Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.&lt;/p&gt;
+&lt;p&gt;Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.</p>
 <p>Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</p>
 <p>I’ve recently build one for my engine Basalt so I decided to share the result, start by creating log type:</p>
@@ -464,8 +462,7 @@ Many have asked me why take time to do a log file when you can throw exceptions 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Logger</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">Log_Type</span><span class="p">.</span><span class="n">INFO</span><span class="p">,</span><span class="s">&#34;Resolution Changed&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="n">Logger</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">Log_Type</span><span class="p">.</span><span class="n">ERROR</span><span class="p">,</span><span class="s">&#34;Unable to find texture XPTO&#34;</span><span class="p">);</span>
 </span></span></code></pre></div><p>This will output a log.html file that you can open with your favorite browser.</p>
-<p><a href="/wp-content/uploads/2009/11/basalt_log.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/basalt_log-300x189.jpg" alt="basalt_log"  title="basalt_log"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/11/basalt_log.jpg"><img alt="basalt_log" loading="lazy" src="/wp-content/uploads/2009/11/basalt_log-300x189.jpg" title="basalt_log"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -473,16 +470,15 @@ Many have asked me why take time to do a log file when you can throw exceptions 
       <link>https://www.david-amador.com/2009/10/prototype-for-xna7day-competition/</link>
       <pubDate>Thu, 29 Oct 2009 12:29:42 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/prototype-for-xna7day-competition/</guid>
-      <description>I decided to make a game for the xna7day competition, in which we have to make a game that only uses 2 keys, so absolutely no analog input and it has to be built on xna of course.
-This is a great opportunity to test my engine Basalt.
-I decided to make a puzzle game, basically the rules are the same of a 3 in line game.
-This is what I have so far.</description>
+      <description>&lt;p&gt;I decided to make a game for the &lt;a href=&#34;https://web.archive.org/web/20110208063911/http://xna7day.com/&#34;&gt;xna7day&lt;/a&gt; competition, in which we have to make a game that only uses 2 keys, so absolutely no analog input and it has to be built on xna of course.&lt;br&gt;
+This is a great opportunity to test my engine Basalt.&lt;/p&gt;
+&lt;p&gt;I decided to make a puzzle game, basically the rules are the same of a 3 in line game.&lt;br&gt;
+This is what I have so far.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to make a game for the <a href="https://web.archive.org/web/20110208063911/http://xna7day.com/">xna7day</a> competition, in which we have to make a game that only uses 2 keys, so absolutely no analog input and it has to be built on xna of course.<br>
 This is a great opportunity to test my engine Basalt.</p>
 <p>I decided to make a puzzle game, basically the rules are the same of a 3 in line game.<br>
 This is what I have so far.</p>
-<p><a href="/wp-content/uploads/2009/10/vizati_prototype.jpg"><img loading="lazy" src="/wp-content/uploads/2009/10/vizati_prototype.jpg" alt=""  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/10/vizati_prototype.jpg"><img loading="lazy" src="/wp-content/uploads/2009/10/vizati_prototype.jpg"></a></p>
 ]]></content:encoded>
     </item>
   </channel>

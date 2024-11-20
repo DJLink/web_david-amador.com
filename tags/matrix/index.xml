@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>matrix on David Amador</title>
+    <title>Matrix on David Amador</title>
     <link>https://www.david-amador.com/tags/matrix/</link>
-    <description>Recent content in matrix on David Amador</description>
+    <description>Recent content in Matrix on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 11 Jul 2013 12:09:48 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/matrix/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +18,11 @@
       <link>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</link>
       <pubDate>Thu, 11 Jul 2013 12:09:48 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</guid>
-      <description>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a XNA 2D Camera I wrote some time ago.
-Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</description>
+      <description>&lt;p&gt;I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a &lt;a href=&#34;https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/&#34; title=&#34;XNA Camera 2d with zoom and rotation&#34;&gt;XNA 2D Camera&lt;/a&gt; I wrote some time ago.&lt;br&gt;
+Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a <a href="/2009/10/xna-camera-2d-with-zoom-and-rotation/" title="XNA Camera 2d with zoom and rotation">XNA 2D Camera</a> I wrote some time ago.<br>
 Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</p>
-<p><a href="/wp-content/uploads/2013/07/camera2d.jpg"><img loading="lazy" src="/wp-content/uploads/2013/07/camera2d-300x234.jpg" alt="camera2d"  />
-</a></p>
+<p><a href="/wp-content/uploads/2013/07/camera2d.jpg"><img alt="camera2d" loading="lazy" src="/wp-content/uploads/2013/07/camera2d-300x234.jpg"></a></p>
 <p>The Camera2D class is simple enough:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Camera2d</span>

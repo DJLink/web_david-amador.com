@@ -5,12 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>iphonedev | David Amador</title>
+<title>Iphonedev | David Amador</title>
 <meta name="keywords" content="">
 <meta name="description" content="David Amador Blog - Indie Game Developer">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/tags/iphonedev/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -19,6 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://www.david-amador.com/tags/iphonedev/index.xml">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/tags/iphonedev/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,16 +29,17 @@
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="iphonedev" />
-<meta property="og:description" content="David Amador Blog - Indie Game Developer" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.david-amador.com/tags/iphonedev/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
-<meta name="twitter:title" content="iphonedev"/>
-<meta name="twitter:description" content="David Amador Blog - Indie Game Developer"/>
+<meta property="og:url" content="https://www.david-amador.com/tags/iphonedev/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="Iphonedev">
+  <meta property="og:description" content="David Amador Blog - Indie Game Developer">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:title" content="Iphonedev">
+<meta name="twitter:description" content="David Amador Blog - Indie Game Developer">
 
 </head>
 
@@ -52,7 +54,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -113,9 +115,9 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/tags/">Tags</a></div>
   <h1>
-    iphonedev
+    Iphonedev
     <a href="/tags/iphonedev/index.xml" title="RSS" aria-label="RSS">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" height="23">
@@ -138,7 +140,8 @@
     <p>So you can’t make a game without images, right? Well, actually you can but that’s another story.
 But how can you load a jpg or a png and use then on OpenGLES?
 First let’s make a simple class Texture2D
-class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image...</p>
+class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image
+...</p>
   </div>
   <footer class="entry-footer"><span title='2011-03-18 10:06:24 +0000 UTC'>March 18, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;319 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Loading images into OpenGL in iPhone" href="https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/"></a>
@@ -152,7 +155,8 @@ class Texture2D { public: Texture2D(int id, int width, int height) { _textureId 
     </h2>
   </header>
   <div class="entry-content">
-    <p>People who follow me on twitter are probably aware, or maybe not:
+    <p>
+People who follow me on twitter are probably aware, or maybe not:
 After 3 months tacking an iPhone port it was finally approved by Apple to the App store and it’s on sale today!!!
 Hypnotizing start…
 Buy buy buy….
@@ -161,7 +165,9 @@ On the count of 3 you will feel refreshed and happy for buying this awesome game
 2
 3
 Oh right, here’s the trailer:
-I’ve searched some forums and found some talking about it and that they liked, general feedback looks positive....</p>
+I’ve searched some forums and found some talking about it and that they liked, general feedback looks positive. It’s great that people have fun with out little game.
+If everything goes as planned a version 1.1 with retina support a few other improvements.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2010-10-06 17:33:43 +0000 UTC'>October 6, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;163 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Vizati for iPhone is now available at App Store" href="https://www.david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/"></a>
@@ -178,7 +184,8 @@ I’ve searched some forums and found some talking about it and that they liked,
     <p>This had me scratching my head for awhile.
 At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.
 A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.
-To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical....</p>
+To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2010-09-10 09:24:23 +0000 UTC'>September 10, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;256 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Setting OpenGL view for iPhone 4 retina hi resolution" href="https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/"></a>
@@ -198,7 +205,10 @@ iPhone/iPhone 3G – 412 MHz / 128MB / 320×480
 iPhone 3GS – 600 MHz / 256MB / 320×480
 iPhone 4 -~800MHz / 512MB / 640×960
 iPod Touch 1G – 412 MHz / 128MB / 320×480
-iPod Touch 2G – 532 MHz / 128MB / 320×480...</p>
+iPod Touch 2G – 532 MHz / 128MB / 320×480
+iPod Touch 3G – 600 MHz / 256MB / 320×480
+iPod Touch 4G – 800 MHz / 256MB / 640×960
+...</p>
   </div>
   <footer class="entry-footer"><span title='2010-09-08 12:01:37 +0000 UTC'>September 8, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;156 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Targetting iOS devices hardware" href="https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/"></a>
@@ -214,7 +224,8 @@ iPod Touch 2G – 532 MHz / 128MB / 320×480...</p>
   <div class="entry-content">
     <p>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.
 Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.
-I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this....</p>
+I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2010-08-27 14:49:39 +0000 UTC'>August 27, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;500 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to iPhone OpenGL screen orientation using the accelerometer" href="https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/"></a>
@@ -230,7 +241,8 @@ I’ve been using OpenGL to support the device orientation, most people on forum
   <div class="entry-content">
     <p>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.
 Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.
-Here’s a picture she took after a few adjustments....</p>
+Here’s a picture she took after a few adjustments.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2010-08-26 19:05:55 +0000 UTC'>August 26, 2010</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;760 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Developers log stardate 26082010" href="https://www.david-amador.com/2010/08/developers-log-stardate-26082010/"></a>
@@ -238,7 +250,8 @@ Here’s a picture she took after a few adjustments....</p>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

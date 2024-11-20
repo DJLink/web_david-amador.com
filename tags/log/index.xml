@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>log on David Amador</title>
+    <title>Log on David Amador</title>
     <link>https://www.david-amador.com/tags/log/</link>
-    <description>Recent content in log on David Amador</description>
+    <description>Recent content in Log on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Nov 2009 10:53:13 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/log/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,8 @@
       <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</link>
       <pubDate>Fri, 20 Nov 2009 10:53:13 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
-      <description>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.
-Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</description>
+      <description>&lt;p&gt;Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.&lt;/p&gt;
+&lt;p&gt;Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.</p>
 <p>Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</p>
 <p>I’ve recently build one for my engine Basalt so I decided to share the result, start by creating log type:</p>
@@ -96,8 +96,7 @@ Many have asked me why take time to do a log file when you can throw exceptions 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Logger</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">Log_Type</span><span class="p">.</span><span class="n">INFO</span><span class="p">,</span><span class="s">&#34;Resolution Changed&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="n">Logger</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">Log_Type</span><span class="p">.</span><span class="n">ERROR</span><span class="p">,</span><span class="s">&#34;Unable to find texture XPTO&#34;</span><span class="p">);</span>
 </span></span></code></pre></div><p>This will output a log.html file that you can open with your favorite browser.</p>
-<p><a href="/wp-content/uploads/2009/11/basalt_log.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/basalt_log-300x189.jpg" alt="basalt_log"  title="basalt_log"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/11/basalt_log.jpg"><img alt="basalt_log" loading="lazy" src="/wp-content/uploads/2009/11/basalt_log-300x189.jpg" title="basalt_log"></a></p>
 ]]></content:encoded>
     </item>
   </channel>

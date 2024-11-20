@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>independent on David Amador</title>
+    <title>Independent on David Amador</title>
     <link>https://www.david-amador.com/tags/independent/</link>
-    <description>Recent content in independent on David Amador</description>
+    <description>Recent content in Independent on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 Apr 2013 11:22:22 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/independent/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,8 @@
       <link>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</link>
       <pubDate>Mon, 22 Apr 2013 11:22:22 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
-      <description>Around two years ago I made a tutorial for XNA in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.
-As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</description>
+      <description>&lt;p&gt;Around two years ago I made a &lt;a href=&#34;https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/&#34; title=&#34;XNA 2D Independent Resolution Rendering&#34;&gt;tutorial for XNA&lt;/a&gt; in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.&lt;/p&gt;
+&lt;p&gt;As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Around two years ago I made a <a href="/2010/03/xna-2d-independent-resolution-rendering/" title="XNA 2D Independent Resolution Rendering">tutorial for XNA</a> in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.</p>
 <p>As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</p>
 <p>The code is quite straight forward actually. In case you are not familiar with what we are trying to achieve here I recommend my other tutorial first, where I explain this is more detail.</p>
@@ -105,12 +105,7 @@ As many know since then I moved to C++ and OpenGL, and ocasionally people ask me
 </span></span><span class="line"><span class="cl"><span class="n">glPopMatrix</span><span class="p">();</span>	
 </span></span></code></pre></div><p>And that’s pretty much it. I have this code on my games and it works fine, at least for what I usually need. Feel free to tweak it around for your needs. Hope this helps to get a picture on how to achieve this effect. Let me know if you find any bug.</p>
 <p>Here’s an example of what you might achieve with this</p>
-<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg" alt="Base_1280x720_Res_1280x800"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg" alt="Base_1280x720_Res_800x600"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg" alt="Base_1024x768_Res_800x600"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg" alt="Base_1280x720_Res_480x640"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg" alt="Base_1024x768_Res_1280x720"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img alt="Base_1280x720_Res_1280x800" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img alt="Base_1280x720_Res_800x600" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img alt="Base_1024x768_Res_800x600" loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img alt="Base_1280x720_Res_480x640" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img alt="Base_1024x768_Res_1280x720" loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg"></a></p>
 ]]></content:encoded>
     </item>
   </channel>

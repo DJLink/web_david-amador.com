@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>wordpress on David Amador</title>
+    <title>Wordpress on David Amador</title>
     <link>https://www.david-amador.com/tags/wordpress/</link>
-    <description>Recent content in wordpress on David Amador</description>
+    <description>Recent content in Wordpress on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 27 Jan 2024 17:20:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
@@ -18,11 +18,12 @@
       <link>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</link>
       <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</guid>
-      <description>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&amp;rsquo;ve moved everything to static content, including this website.
-📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper.</description>
+      <description>&lt;p&gt;Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&amp;rsquo;ve moved everything to static content, including this website.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2024/01/shutting-down-server.gif&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;-wordpress&#34;&gt;📝 WordPress&lt;/h1&gt;
+&lt;p&gt;Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&rsquo;ve moved everything to static content, including this website.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/01/shutting-down-server.gif" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/shutting-down-server.gif"></p>
 <h1 id="-wordpress">📝 WordPress</h1>
 <p>Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.</p>
 <p>So for the past couple of years I&rsquo;ve been thinking in migrating it to something like Jekyll or Hugo, to serve it as static content. But the few times I looked into the process it seemed like a big task especially because I have 184 posts, I wasn&rsquo;t just starting from 0, I wanted to maintain the existing content, posts, images, URLs etc. So, a couple days ago I decided it was time.</p>
@@ -59,8 +60,7 @@ But after a couple days of messing around with configs and pre-requisites, packa
 <p>💻 So my current workflow is: I have a git repo with all the markdown and website code and I have the live website as a submodule, so whenever I made a change, I export it with Hugo, git commit all changes and GitHub pages just deploys them, feels like magic :D</p>
 <h3 id="-speed">🚀 Speed</h3>
 <p>Oh its much faster, obviously, but look at the changes of before (left) and after (right) using PageSpeed Insights.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/01/david_amador_site_wordpress_vs_hugo_speed.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/david_amador_site_wordpress_vs_hugo_speed.png"></p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Still there? Well so far I&rsquo;m happy with the move, I do miss the nice WordPress backend thing if I&rsquo;m being honest, but I can live without it. I feel like in the long run I won&rsquo;t miss having to maintain that server, also the costs. Right now I&rsquo;m editing this on Obsidian, about to commit and see if it goes live, RSS and all. If you find any broken stuff or have suggestions let me know, either mastodon, email or a comment here.</p>
 <p>Until the next time, where hopefully I&rsquo;ll talk about games! Thanks for reading.</p>
@@ -71,17 +71,16 @@ But after a couple days of messing around with configs and pre-requisites, packa
       <link>https://www.david-amador.com/2009/10/search-and-replace-in-mysql/</link>
       <pubDate>Thu, 22 Oct 2009 11:27:10 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/search-and-replace-in-mysql/</guid>
-      <description>I found something very handy today, search and replace on Mysql databases. You can do it on phpmyadmin or make a php script with this.
-After moving a wordpress site from server I discovered that all image links were broken because they are placed directly inside each post. They were still linking to the old server. Changing it manually would be a nightmare.
-Luckily MySql is your friend. To search and replace a text string, start up phpMyAdmin, and click on your database name that you want to run the search and replace through.</description>
+      <description>&lt;p&gt;I found something very handy today, search and replace on Mysql databases. You can do it on phpmyadmin or make a php script with this.&lt;br&gt;
+After moving a wordpress site from server I discovered that all image links were broken because they are placed directly inside each post. They were still linking to the old server. Changing it manually would be a nightmare.&lt;/p&gt;
+&lt;p&gt;Luckily MySql is your friend. To search and replace a text string, start up phpMyAdmin, and click on your database name that you want to run the search and replace through. At the top of the window, click on the “SQL” tab.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I found something very handy today, search and replace on Mysql databases. You can do it on phpmyadmin or make a php script with this.<br>
 After moving a wordpress site from server I discovered that all image links were broken because they are placed directly inside each post. They were still linking to the old server. Changing it manually would be a nightmare.</p>
 <p>Luckily MySql is your friend. To search and replace a text string, start up phpMyAdmin, and click on your database name that you want to run the search and replace through. At the top of the window, click on the “SQL” tab.</p>
 <p>In the text box, enter the following code.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="w">	</span><span class="k">UPDATE</span><span class="w"> </span><span class="n">tablename</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">field</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">replace</span><span class="p">(</span><span class="n">field</span><span class="p">,</span><span class="s2">&#34;findstring&#34;</span><span class="p">,</span><span class="s2">&#34;replacestring&#34;</span><span class="p">)</span><span class="w">
 </span></span></span></code></pre></div><p>Works like a charm.<br>
-<img loading="lazy" src="/wp-content/uploads/2009/10/search_replace_mysql1.jpg" alt="Search Replace Mysql"  title="Search Replace Mysql"  />
-</p>
+<img alt="Search Replace Mysql" loading="lazy" src="/wp-content/uploads/2009/10/search_replace_mysql1.jpg" title="Search Replace Mysql"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -89,16 +88,15 @@ After moving a wordpress site from server I discovered that all image links were
       <link>https://www.david-amador.com/2009/04/wordpress-gallery/</link>
       <pubDate>Wed, 22 Apr 2009 10:43:35 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/04/wordpress-gallery/</guid>
-      <description>During my efforts to combine Rita’s website to wordpress and with a cool gallery I came up with a few problems.
-Mainly because the top navigation bar was built using J-Query, which I’ve already made quite some time ago, and even after switching to mootools I didn’t want to be rebuilding it again.
-So yesterday after a few searches I managed to install NextGen gallery plugin for wordpress and using LightBox for popups.</description>
+      <description>&lt;p&gt;During my efforts to combine &lt;a href=&#34;http://www.rita-silva.com&#34;&gt;Rita’s website&lt;/a&gt; to wordpress and with a cool gallery I came up with a few problems.&lt;/p&gt;
+&lt;p&gt;Mainly because the top navigation bar was built using &lt;a href=&#34;http://www.jquery.com&#34;&gt;J-Query&lt;/a&gt;, which I’ve already made quite some time ago, and even after switching to mootools I didn’t want to be rebuilding it again.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2009/04/rita_top_menu.jpg&#34;&gt;&lt;img alt=&#34;rita_top_menu&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2009/04/rita_top_menu.jpg&#34; title=&#34;rita_top_menu&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So yesterday after a few searches I managed to install &lt;a href=&#34;http://alexrabe.boelinger.com/wordpress-plugins/nextgen-gallery/&#34;&gt;NextGen&lt;/a&gt; gallery plugin for wordpress and using LightBox for popups. It even has a watermark option. I recommend anyone having a gallery on their website to give it a try. It’s really cool and free for use.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>During my efforts to combine <a href="http://www.rita-silva.com">Rita’s website</a> to wordpress and with a cool gallery I came up with a few problems.</p>
 <p>Mainly because the top navigation bar was built using <a href="http://www.jquery.com">J-Query</a>, which I’ve already made quite some time ago, and even after switching to mootools I didn’t want to be rebuilding it again.</p>
-<p><a href="/wp-content/uploads/2009/04/rita_top_menu.jpg"><img loading="lazy" src="/wp-content/uploads/2009/04/rita_top_menu.jpg" alt="rita_top_menu"  title="rita_top_menu"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/04/rita_top_menu.jpg"><img alt="rita_top_menu" loading="lazy" src="/wp-content/uploads/2009/04/rita_top_menu.jpg" title="rita_top_menu"></a></p>
 <p>So yesterday after a few searches I managed to install <a href="http://alexrabe.boelinger.com/wordpress-plugins/nextgen-gallery/">NextGen</a> gallery plugin for wordpress and using LightBox for popups. It even has a watermark option. I recommend anyone having a gallery on their website to give it a try. It’s really cool and free for use.</p>
-<p><a href="/wp-content/uploads/2009/04/nextgen_gallery.jpg"><img loading="lazy" src="/wp-content/uploads/2009/04/nextgen_gallery.jpg" alt="nextgen_gallery"  title="nextgen_gallery"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/04/nextgen_gallery.jpg"><img alt="nextgen_gallery" loading="lazy" src="/wp-content/uploads/2009/04/nextgen_gallery.jpg" title="nextgen_gallery"></a></p>
 ]]></content:encoded>
     </item>
   </channel>

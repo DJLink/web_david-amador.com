@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 25 Mar 2024 11:39:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/nintendo-switch/index.xml" rel="self" type="application/rss+xml" />
@@ -18,83 +18,71 @@
       <link>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</link>
       <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</guid>
-      <description>📝 It&amp;rsquo;s been 10 years It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, Quest of Dungeons was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, mostly nights and weekends.</description>
+      <description>&lt;h1 id=&#34;-its-been-10-years&#34;&gt;📝 It&amp;rsquo;s been 10 years&lt;/h1&gt;
+&lt;p&gt;It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, &lt;a href=&#34;https://www.questofdungeons.com&#34;&gt;Quest of Dungeons&lt;/a&gt; was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, &lt;a href=&#34;https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/&#34;&gt;mostly nights and weekends&lt;/a&gt;. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h1 id="-its-been-10-years">📝 It&rsquo;s been 10 years</h1>
 <p>It&rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, <a href="https://www.questofdungeons.com">Quest of Dungeons</a> was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, <a href="/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/">mostly nights and weekends</a>. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?</p>
 <p>What follows for the rest of the post, is a brain dump of the timeline of some of the most crucial events of this silly little project for anyone who is curious.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png"></p>
 <h1 id="-2011-2013">🤯 2011-2013</h1>
 <p>✔️ Failing can help</p>
 <p>Before the game launched, I had a few years of terrible prototypes, cancelled projects, and other unexpected life events. One day, though, all those mistakes fell into place, and QoD was born—a flow of ideas came to my mind, after seeing a bunch of stuff failed in front of me, but that maybe I could make them work. I knew what I wanted to avoid now and what I things I would like to experiment with. Within this time I also made a simple iOS game called <a href="/2012/09/puwang-a-5-day-work/">Puwang</a>, a gamejam compo, where most of the goal was to make a quick game and hopefully make $100 that year to cover the iOS developer account expenses. For QoD I wanted to make a small game that I could play on my phone during commute, and that&rsquo;s why it started as a mobile-only game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png"></p>
 <p>⌨️ Expanding</p>
 <p>During the time I was the only person to ever played it, I found myself enjoying it on a bigger screen/tablet, and after giving it a 2-3 friends to test and having confirmation, I thought it would be good to launch a desktop version along the iPhone/iPad versions, Windows and Mac.
 This added some development time, but also allowed me to expand the game a bit more, the mobile version was virtually identical to desktop/tabled, but they shared a bigger UI, more suited for Mouse and the higher resolutions.
 This turned out to be one of the best decisions, as the desktop version is foundation for everything after. At this point I was already <a href="/tags/basalt/">rolling my own engine</a> for prior games on mobile and desktop, so most of the development was indeed for game stuff, and not engine. While I&rsquo;ve made the mistake often of &ldquo;build the engine instead of game&rdquo;, here the engine was built around the game, that&rsquo;s how it should be.</p>
 <h1 id="20140325---steam-and-ios-launch">2014/03/25 - Steam and iOS launch</h1>
 <p>I had tried to bring games to Steam before but with no success. The focus was on Mobile, with Desktop in mind, but where to sell it? Before Steam I was able to get confirmation for the new Humble Store, but Steam was still on my mind. In the past I had higher hopes for my first game <a href="/tags/vizati/">Vizati</a>, looked more polished, so QoD didn&rsquo;t seemed to have a chance.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png"></p>
 <p>But I decided to make a trailer and launch a GL page, and imagine my surprise when QoD was approved on Steam Greenlight within a week or so. Just look at my dumb face here that I just digged from some old Tweets.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg" alt="David celebrating QoD approval on Steam Greenlight"  />
-</p>
+<p><img alt="David celebrating QoD approval on Steam Greenlight" loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg"></p>
 <p>With the trailer out, people seemed to enjoyed what they saw, I also thought I was near completing the game, there&rsquo;s always something right? So I pretty much crunched the entire rest of time between my day job and finishing the game.</p>
 <p>Finally on March 25th it was out, everyone could play it. Since the game was only releasing around 18h on Steam, I went to my day job that day, and only took the next day off for checking &amp; fixing bugs etc.</p>
 <p>Initially all I was getting was a flow of emails with some bugs and suggestions, but overall people seemed to like it, which was a relief. There was still tons of stuff to fix, but slowly, and for the next few weeks went through issues and suggestions. On the mobile side of things things were smoother, that version was the older one, had more testing, also less hardware configurations. I recall before launch, a conversation with some coworkers, that making it paid on mobile was probably a mistake, but I don&rsquo;t know how to design games around F2P/Ads, so I made it paid.  But, thankfully, even being a paid game, at $1.99, people were happy with what they were getting.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg"></p>
 <h1 id="20140530---linux">2014/05/30 - Linux</h1>
 <p>This one was something that I had in the back on my mind for a while, theoretically my engine could be ported to Linux, but I was scared of having too many versions at launch, handing those 4 SKUs was already a handful, so this was left for later. This actually ended up being a factor in Humble Bundle contacting me to participate in one of their bundles, back then having a game on all 3 platforms was a must.
 Technically speaking it wasn&rsquo;t extremely complicated, by this time the engine was already relatively split in ways that it was easy to integrate new OS, it was just a matter of implementation.
 Also, now that Steam Deck is a thing, it just worked out of the box.</p>
 <h1 id="20140826---android">2014/08/26 - Android</h1>
 <p>With Desktops and iOS versions being well received I started getting requests for an Android version, I had never worked on this platform, but with most of the know bugs fixed, I bought a cheap Android phone and I moved into porting the game to this platform, you can read more about that <a href="/2014/08/native-game-on-android-porting-quest-of-dungeons/">here</a>.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg"></p>
 <h1 id="2014---ouya-cancelled">2014 - OUYA (cancelled)</h1>
 <p>The hot thing around the time was OUYA, games like TowerFall were born there, so since I had an Android version I started to work on that, because it would be the closest to a traditional console that I thought I could put this game on. I started working on it, but once Microsoft accepted my pitch for the Xbox One (see below), I placed this in low priority. Between the time it took me to develop the Xbox One version, OUYA had it downfall, and by that time I just cancelled it.</p>
 <h1 id="201509---xbox-one">2015/09 - Xbox One</h1>
 <p>In the summer of 2014, after the launch of all those versions, relatively successfully, I started talking with ID@Xbox with the possibility of bringing QoD to Xbox One. There were a couple months of paperwork and mostly the conversation about &ldquo;this is a mouse game, how will it work on consoles?&rdquo;, which was when I started seeing that all the UI needed to be remade, and even some gameplay.</p>
 <p>There are several posts, <a href="/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">here</a>, <a href="/2015/04/necrodancer-is-joining/">here</a>, <a href="/2014/11/qod-xo-devlog-1/">here</a>, <a href="/2015/01/qod-xo-devlog-2/">here</a> and <a href="/2015/02/qod-xo-devlog-3/">here</a>  detailing what went into to that process, but after around 1 year the game was finally released, and all the work put into reworking the game to controller friendly interface and gameplay paid off, it was <a href="/2015/10/quest-of-dungeons-reviews-roundup/">positively received</a>. I also took the opportunity to double the content available, and also add an <a href="/2015/04/necrodancer-is-joining/">extra character</a>. I&rsquo;m sure it was this combination of an almost remade version with increased content that led to it&rsquo;s positive feedback. I&rsquo;m really happy I decided to take all those months to remake it, it was daunting at first, I&rsquo;ll tell you that, but I&rsquo;m glad I did it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg" alt="Quest of Dungeons Xbox One launch"  />
-</p>
+<p><img alt="Quest of Dungeons Xbox One launch" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg"></p>
 <h1 id="20160929---wii-u-and-nintendo-3ds">2016/09/29 - Wii U and Nintendo 3DS</h1>
 <p>Around 2015 summer, before Xbox One release, and if I recall correctly, during Gamescom in Germany, I started talking with Nintendo about bringing the game to Nintendo 3DS and Wii U.</p>
 <p>This was when Nintendo was a bit more restrictive in terms of third party developers, and I was fully expecting, that me, a solo developer, would not make the cut, and it took a lot of months and patience to finally be able to show the game to someone and get accepted as an official Nintendo developer.</p>
 <p>At first my goal was to make Wii U port first because it would be similar to Xbox One, with some additional features for the GamePad. Nintendo 3DS would come later, it would take more work due to it&rsquo;s specifics.</p>
 <p>Unfortunately, or fortunately (depending how you see it), I bricked my Wii U devKit after a couple months of work, when the game was in a good state already but before 100% finished. During the time I waited for repairs I started the Nintendo 3DS version.</p>
 <p>I knew would take a LOT more work, from performance, to completely different UI for dual screen, hybrid of touch + buttons. But when the Wii U devKit arrived, I decided to launch them side-by-side, I talked with Nintendo about a cross-buy possibility, and once they gave the ok that was the goal.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png"></p>
 <p>The Nintendo 3DS version was one of the most complicated ones to pull off. This was also the first time that working on my own engine was the only thing making it possible. A lot of people were suggesting me to use Unity, and I had would have saved time in porting, which can be true, but Unity didn&rsquo;t supported 3DS, so it would never have happened if not for my custom framework.</p>
 <p>This is hands down my favourite version, there is no other like it, mostly because of the nature of the device.</p>
 <p>It was so fun to work with that I found myself <a href="/2016/05/qod-3dswii-u-port-devlog-1/">adding features</a> just because I wanted to test them, like the StreetPass, where you can get ghosts from other players you pass on the street. Nintendo had a really neat device here.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"></p>
 <p>There was some trouble having both versions on the same day, it&rsquo;s a lot of coordination required between me, Nintendo America and Europe teams, 4 different SKUs (3DS NA+EU, Wii U NA+EU), but in the end we made it.</p>
 <p>Like I suspected during my own tests, on the 3DS it was the ideal portable version, it&rsquo;s a game that suits shorts sessions on the go.</p>
 <p>This was also the first time I worked with a publisher for this game, for Japan, the game was published by Flyhigh Works, they took it to Tokyo Game Show, localized to JP, and were crucial in shaping up the 3DS version into what it is. I do recall many sessions where my stubbornness almost caused some bad decisions in the game, but they were really cool in guiding me to make the best of it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg" alt="Quest of Dungeons on Wii U and Nintendo 3DS"  />
-</p>
+<p><img alt="Quest of Dungeons on Wii U and Nintendo 3DS" loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg"></p>
 <h1 id="20170120---playstation-4-and-the-vita-version-that-never-was">2017/01/20 - PlayStation 4 and the Vita version that never was.</h1>
 <p>I love my PlayStation 4, in fact it&rsquo;s the console I have more physical games for.</p>
 <p>So it was with great excitement that after a Skype call with my PlayStation rep I had the greenlight to get the game there. This started around the time of Nintendo too, but sadly, and at first I wanted PS4 + Vita combo, like Wii U + 3DS, but for a variety of reasons the PlayStation Vita never happened.</p>
 <p>This was one of the reasons the PS4 versions was one of the latter ones, I kept hoping I could launch both simultaneously but never happened. Fun fact, this version almost had a physical edition that got cancelled by the publisher at last moment, eventually I even got someone, another publisher, to take care of the PS Vita version, but that also got cancelled later on. So a combination of things that happened that were no one&rsquo;s fault, but also made it a bit hard for me to explain why it wasn&rsquo;t happening. In certain moments it was almost, but it never did happened. It was a bit frustrating that I didn&rsquo;t had clear answers for the players regarding this, but I couldn&rsquo;t, and I tried but failed in the end. Well, that&rsquo;s game development.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png" alt="Quest of Dungeons on PlayStation 4"  />
-</p>
+<p><img alt="Quest of Dungeons on PlayStation 4" loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png"></p>
 <h1 id="20170810---nintendo-switch">2017/08/10 - Nintendo Switch</h1>
 <p>Around 1 month after I released on Wii U and 3DS, Nintendo announced their new hybrid console, the Nintendo Switch. I immediately started getting questions from players about a port. This complicated promoting the new Nintendo versions while everyone was excited about the upcoming console, saving money for it and the games. By coincidence I had launched both versions right at the end.</p>
 <p>I can&rsquo;t recall exactly when conversations started with Nintendo about this, since it was in hot demand, both for retail and developers, but eventually Nintendo shipped me a devKit and I started porting. It was released first in the Japanese regions, again by Flyhigh Works. But a few weeks later again by me in the rest of the world. This version had the portability of 3DS, and graphics/resolution and UI of the home consoles. This was also the first time I made a demo for the game, which still exists on the eShop.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg" alt="Quest of Dungeons on Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons on Nintendo Switch" loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg"></p>
 <h1 id="2019---dreamcast-just-having-fun">2019 - Dreamcast (just having fun)</h1>
 <p>In 2019 I got my hands on a Dreamcast I decided to &ldquo;wonder if I can port it there?&rdquo;, it was never really meant for a full release, that would take months of time that I don&rsquo;t have at the moment,
 I just posting it here for the record, this was under a week of work, it was fun. Maybe if I reach retirement I&rsquo;ll take some time to finish it. There&rsquo;s a lot of work left in there.</p>
 <p>After a while booting the game on an emulator,</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png" alt="Quest of Dungeons running on emulator 1"  />
-</p>
+<p><img alt="Quest of Dungeons running on emulator 1" loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png"></p>
 <p>and then later when I got it booting on a real Dreamcast</p>
 <video width="100%" controls>
     <source src="/wp-content/uploads/2024/03/qod_running_on_dreamcast.mp4" type="video/mp4">
@@ -103,15 +91,12 @@ I just posting it here for the record, this was under a week of work, it was fun
 
 <h1 id="20210413---switch-physical-edition">2021/04/13 - Switch Physical Edition</h1>
 <p>Like I mentioned before, I tried to get the game in physical format before, and I kept trying for years but it simply wasn&rsquo;t happening. Until 2021, when by random chance, someone recommended me Leoful, and they accepted right away, in fact, from initial contact to production, it was just a couple months, I&rsquo;m really happy I was able to finally get the game on an actual box, it hits differently, as I <a href="/2010/08/games-and-systems-from-childhood/">grew playing Nintendo games</a>,  and also feels like a closure to a project that started on a smaller device and made it&rsquo;s way to a real physical game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png" alt="Quest of Dungeons Physical Edition for Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons Physical Edition for Nintendo Switch" loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png"></p>
 <h1 id="2022---">2022 - ??</h1>
 <p>Right now the game still exists in several stores (R.I.P. Nintendo 3DS and Wii U), and it&rsquo;s in maintenance mode only. The platforms patched more regularly are the mobile ones, whenever Apple or Android come up with new rules or it breaks on new devices. Windows gives nearly no problems, MacOS breaks things more often, but overall it doesn&rsquo;t give a lot of work, the last time I had to mess with it, was the Linux version to patch stuff for Steam Deck, but it was relatively easy.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg" alt="Quest of Dungeons on Steam Deck"  />
-</p>
+<p><img alt="Quest of Dungeons on Steam Deck" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg"></p>
 <p>So in the end things worked out, and I want to say a big thank you to everyone who supported this project, I read all the emails, DMs, messages everyone sent over the years, even fanart, you rock.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif"></p>
 <h1 id="some-trivia">Some trivia</h1>
 <ul>
 <li>The game has 79k of code (all platforms)</li>
@@ -126,8 +111,7 @@ I just posting it here for the record, this was under a week of work, it was fun
 <li>The initial skull sign, which only exists at the very start, was a way to teach the player that death meant restarting, in 2013-14 roguelikes weren&rsquo;t as popular and it was seen as a shock for that to happen (play-testers would email me &ldquo;my save is lost&rdquo;). My goal was that by potentially learning that early on, the player would not get surprised.</li>
 </ul>
 <p>Thank you for reading all of this.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png"></p>
 <p>Here&rsquo;s a cool image made by <a href="https://twitter.com/LeonorParra08">Leonor</a>.</p>
 ]]></content:encoded>
     </item>
@@ -136,21 +120,22 @@ I just posting it here for the record, this was under a week of work, it was fun
       <link>https://www.david-amador.com/2021/03/quest-of-dungeons-switch-physical-release/</link>
       <pubDate>Thu, 25 Mar 2021 14:04:50 +0000</pubDate>
       <guid>https://www.david-amador.com/2021/03/quest-of-dungeons-switch-physical-release/</guid>
-      <description>First of all, Happy Birthday to Quest of Dungeons 7th anniversary, initially released on March 25th 2014 for PC and iOS. QoD eventually got several other versions and big content updates over time, and that’s all thanks to the support of the fans, making it possible for me to continue working on it, so thank you.
-One thing I got asked frequently was about a physical release, and it took a bit of time but I’m happy to announce that, in cooperation with Leoful, it’s finally happening, and soon too, release date is April 13 and pre-orders are live (begin tomorrow, March 26).</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2021/03/Leoful-QuestofDungeons-HeroImage-Physical-Switch.png"><img loading="lazy" src="/wp-content/uploads/2021/03/Leoful-QuestofDungeons-HeroImage-Physical-Switch-1024x576.png" alt="Quest of Dungeons Nintendo Switch Physical"  />
-</a>First of all, Happy Birthday to Quest of Dungeons 7th anniversary, initially released on March 25th 2014 for PC and iOS. QoD eventually got <a href="/2015/07/quest-of-dungeons-coming-to-xbox-one-on-september-4/">several</a> <a href="/2016/09/qod-is-now-available-on-eshop-for-nintendo-3ds-and-wii-u/">other</a> <a href="/2017/01/quest-of-dungeons-is-out-now-on-playstation-4/">versions</a> and big content updates over time, and that’s all thanks to the support of the fans, making it possible for me to continue working on it, so thank you.</p>
-<p>One thing I got asked frequently was about a physical release, and it took a bit of time but I’m happy to announce that, in cooperation with <a href="https://leoful.com/quest-of-dungeons-celebrates-7th-anniversary-with-a-nintendo-switch-physical-release/">Leoful</a>, it’s finally happening, and soon too, <strong>release date is April 13 and pre-orders are live (<!-- raw HTML omitted -->begin tomorrow, March 26<!-- raw HTML omitted -->).</strong></p>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2021/03/Leoful-QuestofDungeons-HeroImage-Physical-Switch.png&#34;&gt;&lt;img alt=&#34;Quest of Dungeons Nintendo Switch Physical&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2021/03/Leoful-QuestofDungeons-HeroImage-Physical-Switch-1024x576.png&#34;&gt;&lt;/a&gt;First of all, Happy Birthday to Quest of Dungeons 7th anniversary, initially released on March 25th 2014 for PC and iOS. QoD eventually got &lt;a href=&#34;https://www.david-amador.com/2015/07/quest-of-dungeons-coming-to-xbox-one-on-september-4/&#34;&gt;several&lt;/a&gt; &lt;a href=&#34;https://www.david-amador.com/2016/09/qod-is-now-available-on-eshop-for-nintendo-3ds-and-wii-u/&#34;&gt;other&lt;/a&gt; &lt;a href=&#34;https://www.david-amador.com/2017/01/quest-of-dungeons-is-out-now-on-playstation-4/&#34;&gt;versions&lt;/a&gt; and big content updates over time, and that’s all thanks to the support of the fans, making it possible for me to continue working on it, so thank you.&lt;/p&gt;
+&lt;p&gt;One thing I got asked frequently was about a physical release, and it took a bit of time but I’m happy to announce that, in cooperation with &lt;a href=&#34;https://leoful.com/quest-of-dungeons-celebrates-7th-anniversary-with-a-nintendo-switch-physical-release/&#34;&gt;Leoful&lt;/a&gt;, it’s finally happening, and soon too, &lt;strong&gt;release date is April 13 and pre-orders are live (begin tomorrow, March 26).&lt;/strong&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2021/03/Leoful-QuestofDungeons-HeroImage-Physical-Switch.png"><img alt="Quest of Dungeons Nintendo Switch Physical" loading="lazy" src="/wp-content/uploads/2021/03/Leoful-QuestofDungeons-HeroImage-Physical-Switch-1024x576.png"></a>First of all, Happy Birthday to Quest of Dungeons 7th anniversary, initially released on March 25th 2014 for PC and iOS. QoD eventually got <a href="/2015/07/quest-of-dungeons-coming-to-xbox-one-on-september-4/">several</a> <a href="/2016/09/qod-is-now-available-on-eshop-for-nintendo-3ds-and-wii-u/">other</a> <a href="/2017/01/quest-of-dungeons-is-out-now-on-playstation-4/">versions</a> and big content updates over time, and that’s all thanks to the support of the fans, making it possible for me to continue working on it, so thank you.</p>
+<p>One thing I got asked frequently was about a physical release, and it took a bit of time but I’m happy to announce that, in cooperation with <a href="https://leoful.com/quest-of-dungeons-celebrates-7th-anniversary-with-a-nintendo-switch-physical-release/">Leoful</a>, it’s finally happening, and soon too, <strong>release date is April 13 and pre-orders are live (begin tomorrow, March 26).</strong></p>
 <p>This is a limited release, and for this special occasion we have a reversible cover, with the front art made by <a href="https://www.spacecoyote.com/">Nina Matsumoto</a>, and the reversible side by <a href="https://www.artstation.com/vascomarianoart">Vasco Mariano</a>, think it looks great and can’t wait for everyone to start receiving it.</p>
-<p><a href="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png"><img loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png" alt=""  />
-</a><!-- raw HTML omitted -->Reversible and front cover<!-- raw HTML omitted --><strong><!-- raw HTML omitted -->-F.A.Q.-<!-- raw HTML omitted --></strong></p>
+<p><a href="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png"><img loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png"></a></p>
+<p>Reversible and front cover</p>
+<hr>
+<p>** F.A.Q. **</p>
 <p><strong>Where can I buy it?</strong><br>
-[<em>PLEASE STAND BY FOR LINKS, I’LL LINK AS I HAVE THEM, UPDATE IN PROGRESS</em>]<br>
-<!-- raw HTML omitted -->Play Asia:<!-- raw HTML omitted --> <a href="https://www.play-asia.com/quest-of-dungeons-english/13/70eaxt">https://www.play-asia.com/quest-of-dungeons-english/13/70eaxt</a><br>
-<!-- raw HTML omitted -->NintendoSoup:<!-- raw HTML omitted --> <a href="https://nintendosoup.com/product/quest-of-dungeons-physical-edition-nintendo-switch/">https://nintendosoup.com/product/quest-of-dungeons-physical-edition-nintendo-switch/</a><br>
-<!-- raw HTML omitted -->Bazaar-Bazaar:<!-- raw HTML omitted --> <a href="https://www.bazaar-bazaar.com/products/quest-of-dungeons">https://www.bazaar-bazaar.com/products/quest-of-dungeons</a><br>
-<!-- raw HTML omitted -->XtraLife:<!-- raw HTML omitted --> <a href="https://www.xtralife.com/producto/quest-of-dungeons-switch-estandar-asia/66724">https://www.xtralife.com/producto/quest-of-dungeons-switch-estandar-asia/66724</a><br>
-<!-- raw HTML omitted -->Agugames:<!-- raw HTML omitted --> <a href="https://www.agugames.net/products/quest-of-dungeons">https://www.agugames.net/products/quest-of-dungeons</a></p>
+[<em>PLEASE STAND BY FOR LINKS, I’LL LINK AS I HAVE THEM, UPDATE IN PROGRESS</em>]</p>
+<p>Play Asia: <a href="https://www.play-asia.com/quest-of-dungeons-english/13/70eaxt">https://www.play-asia.com/quest-of-dungeons-english/13/70eaxt</a><br>
+NintendoSoup: <a href="https://nintendosoup.com/product/quest-of-dungeons-physical-edition-nintendo-switch">https://nintendosoup.com/product/quest-of-dungeons-physical-edition-nintendo-switch</a><br>
+Bazaar-Bazaar: <a href="https://www.bazaar-bazaar.com/products/quest-of-dungeons">https://www.bazaar-bazaar.com/products/quest-of-dungeons</a><br>
+XtraLife: <a href="https://www.xtralife.com/producto/quest-of-dungeons-switch-estandar-asia/66724">https://www.xtralife.com/producto/quest-of-dungeons-switch-estandar-asia/66724</a><br>
+Agugames: <a href="https://www.agugames.net/products/quest-of-dungeons">https://www.agugames.net/products/quest-of-dungeons</a></p>
 <p><em>*Note: not in affiliation with any of the store links listed here, the order they are is random and not an indication of preference of any kind. Make sure to check where it ships from, for shipping costs &amp; possible import taxes etc.</em></p>
 <p><strong>Is it region free?</strong><br>
 Yes.</p>
@@ -160,8 +145,7 @@ A cartridge, also has a reversible cover.</p>
 Suggested Retail Price: USD24.99 / HKD195 / NTD710 / SGD34 (all prices exclude sales tax)</p>
 <p><strong>Any differences between with the digital version?</strong><br>
 Both versions contain the same content, if you already own the digital it’s the same game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2021/03/shaman_assassin_conversation_switch_cartridge.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2021/03/shaman_assassin_conversation_switch_cartridge.png"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -169,11 +153,13 @@ Both versions contain the same content, if you already own the digital it’s th
       <link>https://www.david-amador.com/2017/08/quest-of-dungeons-is-coming-to-switch-releasing-in-japan-august-10/</link>
       <pubDate>Wed, 02 Aug 2017 17:41:04 +0000</pubDate>
       <guid>https://www.david-amador.com/2017/08/quest-of-dungeons-is-coming-to-switch-releasing-in-japan-august-10/</guid>
-      <description>EDIT (09/09/2017):
-Europe and America are now scheduled for a September 14 release date.
-Hey,
-So this will be a quick post, as news started appearing on twitter a couple moments ago and I wanted to answer some questions.
-Super happy to say that Quest of Dungeons is coming to Nintendo Switch. Every since Nintendo announced the console that I’ve been getting questions so this will make a lot of people happy, and the best thing is that it’s not far away.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;EDIT (09/09/2017):&lt;br&gt;
+Europe and America are now scheduled for a September 14 release date.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Hey,&lt;/p&gt;
+&lt;p&gt;So this will be a quick post, as news started appearing on twitter a couple moments ago and I wanted to answer some questions.&lt;/p&gt;
+&lt;p&gt;Super happy to say that &lt;strong&gt;Quest of Dungeons is coming to Nintendo Switch&lt;/strong&gt;. Every since Nintendo announced the console that I’ve been getting questions so this will make a lot of people happy, and the best thing is that it’s not far away. In &lt;strong&gt;Japan is already releasing next week, August 10&lt;/strong&gt;, &lt;a href=&#34;http://flyhighworks.heteml.jp/games/&#34;&gt;Flyhigh Works&lt;/a&gt; is handing publishing in the Japanese territory.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<blockquote>
 <p>EDIT (09/09/2017):<br>
 Europe and America are now scheduled for a September 14 release date.</p>
@@ -183,14 +169,12 @@ Europe and America are now scheduled for a September 14 release date.</p>
 <p>Super happy to say that <strong>Quest of Dungeons is coming to Nintendo Switch</strong>. Every since Nintendo announced the console that I’ve been getting questions so this will make a lot of people happy, and the best thing is that it’s not far away. In <strong>Japan is already releasing next week, August 10</strong>, <a href="http://flyhighworks.heteml.jp/games/">Flyhigh Works</a> is handing publishing in the Japanese territory.</p>
 <p>I’ll be taking care of the rest of the world, but for <strong>Europe and America I’m still working on it</strong>, but hopefully it won’t take much more time.</p>
 <p>Meanwhile a sneak peek at the new logo and the new main animation made by <a href="https://twitter.com/rephildesign">@rephildesign</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/08/pixel_logo_v1_4x.png" alt=""  />
-</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/08/character_animations_1x.gif" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/08/pixel_logo_v1_4x.png"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/08/character_animations_1x.gif"></p>
 <p>I already got a couple questions asked via twitter so I’ll try to put here the most frequent ones.</p>
 <p>F.A.Q. / tl;dr</p>
 <p><strong>-Release date?</strong><br>
-In Japan the game will be releasing in August 10. <!-- raw HTML omitted -->NA/EU dev still under way, I’ll update this when there are changes.<!-- raw HTML omitted --> It will be released on September 14 in Europe, America and Australia.</p>
+In Japan the game will be releasing in August 10. <del>NA/EU dev still under way, I’ll update this when there are changes.</del> It will be released on September 14 in Europe, America and Australia.</p>
 <p><strong>-How much?</strong><br>
 Same as the Wii U/Nintendo 3DS, $8.99</p>
 <p><strong>-New features?</strong><br>
@@ -209,19 +193,18 @@ There is one here with screenshots, videos and some info <a href="http://www.upf
       <link>https://www.david-amador.com/2017/03/quest-of-dungeons-turns-3-years-old-a-small-message-for-the-community/</link>
       <pubDate>Sat, 25 Mar 2017 11:18:28 +0000</pubDate>
       <guid>https://www.david-amador.com/2017/03/quest-of-dungeons-turns-3-years-old-a-small-message-for-the-community/</guid>
-      <description>Exactly 3 years ago today, March 25th, Quest of Dungeons was released on Steam and iOS.
-Feels unreal thinking what happened in these past three years, for those who remember I wasn’t even sure the game could make it to Steam, let alone end up being accepted by PlayStation, Nintendo and Xbox for their consoles.
-A couple of days ago I was thinking I should do something special for today, but instead of discounts or promotions I decided to write a couple of words to you, the community.</description>
+      <description>&lt;p&gt;Exactly 3 years ago today, March 25th, Quest of Dungeons was released on Steam and iOS.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.questofdungeons.com&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2017/03/quest_of_dungeons_steam_page_header.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Feels unreal thinking what happened in these past three years, for those who remember I wasn’t even sure the game could make it to Steam, let alone end up being accepted by PlayStation, Nintendo and Xbox for their consoles.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/DJ_Link/status/419147399375118336&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A couple of days ago I was thinking I should do something special for today, but instead of discounts or promotions I decided to write a couple of words to you, the community.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Exactly 3 years ago today, March 25th, Quest of Dungeons was released on Steam and iOS.</p>
-<p><a href="https://www.questofdungeons.com"><img loading="lazy" src="/wp-content/uploads/2017/03/quest_of_dungeons_steam_page_header.png" alt=""  />
-</a></p>
+<p><a href="https://www.questofdungeons.com"><img loading="lazy" src="/wp-content/uploads/2017/03/quest_of_dungeons_steam_page_header.png"></a></p>
 <p>Feels unreal thinking what happened in these past three years, for those who remember I wasn’t even sure the game could make it to Steam, let alone end up being accepted by PlayStation, Nintendo and Xbox for their consoles.</p>
-<p><a href="https://twitter.com/DJ_Link/status/419147399375118336"><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png" alt=""  />
-</a></p>
+<p><a href="https://twitter.com/DJ_Link/status/419147399375118336"><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png"></a></p>
 <p>A couple of days ago I was thinking I should do something special for today, but instead of discounts or promotions I decided to write a couple of words to you, the community.</p>
 <p>I wanted to take this chance to say thank you to everyone who purchased the game, who helped by making Youtube videos, streaming, recommending to friends, and all the support. If I was able to convince anyone to accept the game on their console/platform it was because the players were talking about it, purchasing and saying they cared. So while I may have built the game, without the community this wouldn’t have happen, I couldn’t have done this without you.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif" alt="Hugs"  />
-</p>
+<p><img alt="Hugs" loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif"></p>
 <p><strong>What now?</strong><br>
 Many of you have been asking if I’m working on something new, and the answer is yes, but it’s still a bit soon to discuss what it is, I’ll share more details at a later time. But I’m excited (although a bit nervous) to start working on something new after 4 years of dev in the same project.</p>
 <p><strong>What about QoD now?</strong><br>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>timelapse on David Amador</title>
+    <title>Timelapse on David Amador</title>
     <link>https://www.david-amador.com/tags/timelapse/</link>
-    <description>Recent content in timelapse on David Amador</description>
+    <description>Recent content in Timelapse on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Jul 2012 21:32:14 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/timelapse/index.xml" rel="self" type="application/rss+xml" />
@@ -18,16 +18,19 @@
       <link>https://www.david-amador.com/2012/07/darys-legend-development-timelapse-sample/</link>
       <pubDate>Sun, 01 Jul 2012 21:32:14 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/07/darys-legend-development-timelapse-sample/</guid>
-      <description>Working on Dary’s Legend has been my daily routine so I decided to make a time lapse.
-So this is a video compiled using Chronolapse, by taking a screenshot every 60s during a couple of days while I’m working on Dary’s Legend, the new game from Different Pixel. The video is being played back at 10 real minutes per second.
-This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)</description>
+      <description>&lt;p&gt;Working on Dary’s Legend has been my daily routine so I decided to make a time lapse.&lt;/p&gt;
+&lt;p&gt;So this is a video compiled using Chronolapse, by taking a screenshot every 60s during a couple of days while I’m working on Dary’s Legend, the new game from Different Pixel. The video is being played back at 10 real minutes per second.&lt;/p&gt;
+&lt;p&gt;This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Working on Dary’s Legend has been my daily routine so I decided to make a time lapse.</p>
 <p>So this is a video compiled using Chronolapse, by taking a screenshot every 60s during a couple of days while I’m working on Dary’s Legend, the new game from Different Pixel. The video is being played back at 10 real minutes per second.</p>
 <p>This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/STazyKAMBsE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/STazyKAMBsE?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>

@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 16 Oct 2009 18:10:09 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/building-an-2d-game-engine-in-xna/index.xml" rel="self" type="application/rss+xml" />
@@ -18,11 +18,24 @@
       <link>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</link>
       <pubDate>Fri, 16 Oct 2009 18:10:09 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</guid>
-      <description>I decided to starting writing a series of tutorials for building an 2d XNA game engine.
-Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.
-It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
-Requirements:
-You must have some Object Oriented Programming background to full understand what we will do here.</description>
+      <description>&lt;p&gt;I decided to starting writing a series of tutorials for building an 2d XNA game engine.&lt;/p&gt;
+&lt;p&gt;Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.&lt;/p&gt;
+&lt;p&gt;It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.&lt;/p&gt;
+&lt;p&gt;Requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You must have some &lt;a href=&#34;http://en.wikipedia.org/wiki/Object-oriented_programming&#34;&gt;Object Oriented Programming&lt;/a&gt; background to full understand what we will do here.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://creators.xna.com/&#34;&gt;XNA 3.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.microsoft.com/express/&#34;&gt;Visual C# Express or Professional 2008&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Nnu_9qk6Jfs?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to starting writing a series of tutorials for building an 2d XNA game engine.</p>
 <p>Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.</p>
 <p>It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.</p>
@@ -33,9 +46,12 @@ You must have some Object Oriented Programming background to full understand wha
 <li><a href="http://www.microsoft.com/express/">Visual C# Express or Professional 2008</a></li>
 </ul>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Nnu_9qk6Jfs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Nnu_9qk6Jfs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.</p>
 ]]></content:encoded>

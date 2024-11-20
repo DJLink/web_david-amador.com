@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>c&#43;&#43; on David Amador</title>
+    <title>C&#43;&#43; on David Amador</title>
     <link>https://www.david-amador.com/tags/c&#43;&#43;/</link>
-    <description>Recent content in c&#43;&#43; on David Amador</description>
+    <description>Recent content in C&#43;&#43; on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 22 Apr 2013 11:22:22 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,8 @@
       <link>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</link>
       <pubDate>Mon, 22 Apr 2013 11:22:22 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
-      <description>Around two years ago I made a tutorial for XNA in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.
-As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</description>
+      <description>&lt;p&gt;Around two years ago I made a &lt;a href=&#34;https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/&#34; title=&#34;XNA 2D Independent Resolution Rendering&#34;&gt;tutorial for XNA&lt;/a&gt; in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.&lt;/p&gt;
+&lt;p&gt;As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Around two years ago I made a <a href="/2010/03/xna-2d-independent-resolution-rendering/" title="XNA 2D Independent Resolution Rendering">tutorial for XNA</a> in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.</p>
 <p>As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</p>
 <p>The code is quite straight forward actually. In case you are not familiar with what we are trying to achieve here I recommend my other tutorial first, where I explain this is more detail.</p>
@@ -105,12 +105,7 @@ As many know since then I moved to C++ and OpenGL, and ocasionally people ask me
 </span></span><span class="line"><span class="cl"><span class="n">glPopMatrix</span><span class="p">();</span>	
 </span></span></code></pre></div><p>And that’s pretty much it. I have this code on my games and it works fine, at least for what I usually need. Feel free to tweak it around for your needs. Hope this helps to get a picture on how to achieve this effect. Let me know if you find any bug.</p>
 <p>Here’s an example of what you might achieve with this</p>
-<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg" alt="Base_1280x720_Res_1280x800"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg" alt="Base_1280x720_Res_800x600"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg" alt="Base_1024x768_Res_800x600"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg" alt="Base_1280x720_Res_480x640"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg" alt="Base_1024x768_Res_1280x720"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img alt="Base_1280x720_Res_1280x800" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img alt="Base_1280x720_Res_800x600" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img alt="Base_1024x768_Res_800x600" loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img alt="Base_1280x720_Res_480x640" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img alt="Base_1024x768_Res_1280x720" loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -118,10 +113,11 @@ As many know since then I moved to C++ and OpenGL, and ocasionally people ask me
       <link>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</link>
       <pubDate>Sun, 03 Jun 2012 20:00:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</guid>
-      <description>I made a small post about detecting C++ memory leaks in Visual Studio in 2010. At the time that seemed to suffice, but some months ago someone told me about Visual Leak Detector and boy does it work.
-According to the website itself
-Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
-It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</description>
+      <description>&lt;p&gt;I made a small post about detecting C++ &lt;a href=&#34;https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/&#34; title=&#34;Tracking memory leaks in Visual Studio&#34;&gt;memory leaks in Visual Studio&lt;/a&gt; in 2010. At the time that seemed to suffice, but some months ago someone told me about &lt;a href=&#34;https://oneiric.github.io/vld/&#34;&gt;Visual Leak Detector&lt;/a&gt; and boy does it work.&lt;/p&gt;
+&lt;p&gt;According to the website itself&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.&lt;/p&gt;
+&lt;p&gt;It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I made a small post about detecting C++ <a href="/2010/10/tracking-memory-leaks-in-visual-studio/" title="Tracking memory leaks in Visual Studio">memory leaks in Visual Studio</a> in 2010. At the time that seemed to suffice, but some months ago someone told me about <a href="https://oneiric.github.io/vld/">Visual Leak Detector</a> and boy does it work.</p>
 <p>According to the website itself</p>
 <blockquote>
@@ -132,8 +128,7 @@ It’s pretty easy to use. After installing it, you just need to tell Visual C++
 </code></pre></blockquote>
 <p>It’s very easy to use and I tracked down a bunch of memory leaks hidden inside my code since the time I released Vizati.</p>
 <p>As expected this is a heavy beast and debbuding while using VLD required much more memory, but totally worth it. You can even output to a file</p>
-<p><a href="/wp-content/uploads/2012/06/vld.png"><img loading="lazy" src="/wp-content/uploads/2012/06/vld.png" alt=""  title="vld"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/06/vld.png"><img loading="lazy" src="/wp-content/uploads/2012/06/vld.png" title="vld"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -141,11 +136,16 @@ It’s pretty easy to use. After installing it, you just need to tell Visual C++
       <link>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</link>
       <pubDate>Sun, 15 Apr 2012 11:41:27 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</guid>
-      <description>So you have that Xbox360 controller laying around and want to connect it to your game?
-On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.
-First of all, you will need the DirecX 9.0+ sdk.
-The includes.
-#define WIN32_LEAN_AND_MEAN // We don&amp;#39;t want the extra stuff like MFC and such #include &amp;lt;windows&amp;gt; #include &amp;lt;XInput.h&amp;gt; // XInput API #pragma comment(lib, &amp;#34;XInput.</description>
+      <description>&lt;p&gt;So you have that Xbox360 controller laying around and want to connect it to your game?&lt;/p&gt;
+&lt;p&gt;On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.&lt;/p&gt;
+&lt;p&gt;First of all, you will need the DirecX 9.0+ sdk.&lt;/p&gt;
+&lt;p&gt;The includes.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#define WIN32_LEAN_AND_MEAN &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// We don&amp;#39;t want the extra stuff like MFC and such
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;windows&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;XInput.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;     &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// XInput API
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#pragma comment(lib, &amp;#34;XInput.lib&amp;#34;)   &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// Library. If your compiler doesn&amp;#39;t support this type of lib include change to the corresponding one
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let’s define the buttons&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So you have that Xbox360 controller laying around and want to connect it to your game?</p>
 <p>On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.</p>
 <p>First of all, you will need the DirecX 9.0+ sdk.</p>
@@ -175,8 +175,7 @@ The includes.
 </span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_Y</span>                <span class="o">=</span> <span class="mi">13</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">	<span class="n">GamePadButton_Max</span> <span class="o">=</span>             <span class="mi">14</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span><span class="n">GamePadButton</span><span class="p">;</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/04/450px-360_controller.svg_.jpg" alt=""  title="450px-360_controller.svg"  />
-</p>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/04/450px-360_controller.svg_.jpg" title="450px-360_controller.svg"></p>
 <p>After some digging I don’t think Microsoft exposes access to the Guide button, let me know if you find anything. Anyway it’s not something we need on Windows.</p>
 <p>Now the GamePadIndexes</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
@@ -357,22 +356,20 @@ The includes.
       <link>https://www.david-amador.com/2010/10/cross-platform-engine-progress/</link>
       <pubDate>Mon, 11 Oct 2010 14:20:02 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/10/cross-platform-engine-progress/</guid>
-      <description>If you read my recent posts you know I’ve been bringing Basalt to C++.
-The plan is to support both DirectX and OpenGL render API’s and OpenGLES for iOS devices. I’m tired of porting stuff so I want to make a better framework for future projects and I’ll leave the XNA branch for Xbox360 and Windows Phone 7. I really wished I had this before.
-Since the iPhone branch is stable I move on to making it compatible with Win32 and MacOSX.</description>
+      <description>&lt;p&gt;If you read my recent posts you know I’ve been bringing Basalt to C++.&lt;br&gt;
+The plan is to support both DirectX and OpenGL render API’s and OpenGLES for iOS devices. I’m tired of porting stuff so I want to make a better framework for future projects and I’ll leave the XNA branch for Xbox360 and Windows Phone 7. I really wished I had this before.&lt;/p&gt;
+&lt;p&gt;Since the iPhone branch is stable I move on to making it compatible with Win32 and MacOSX.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>If you read my recent posts you know I’ve been bringing Basalt to C++.<br>
 The plan is to support both DirectX and OpenGL render API’s and OpenGLES for iOS devices. I’m tired of porting stuff so I want to make a better framework for future projects and I’ll leave the XNA branch for Xbox360 and Windows Phone 7. I really wished I had this before.</p>
 <p>Since the iPhone branch is stable I move on to making it compatible with Win32 and MacOSX.</p>
 <p>This past week I added OpenGL support, not very different from OpenGLES but I still don’t have any shader support, just basic stuff is working now. After that Vizati iPhone code worked like a charm on Windows, as intended the game itself didn’t depend on platform specifics and it’s abstracted from all that, which was one of the major mistakes I did when starting the framework back in February.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/10/vizati_iphone_win32.png" alt=""  title="vizati_iphone_win32"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/10/vizati_iphone_win32.png" title="vizati_iphone_win32"></p>
 <p>Sound is working too, using <a href="http://www.vorbis.com/">Vorbis OGG</a> which is cross-platform and open-source.</p>
 <p>I still have a lot of work to do but It’s on good track, I’ll leave DirectX 9 support for the end, I want to get everything else in place first.</p>
 <p>A little curiosity, between Vizati (.Net + XNA) and Vizati (Basalt C++/OpenGL), with the same assets, well on XNA it’s MP3 and C++ is OGG, I’m getting very different memory usage.<br>
 Around 165MB on XNA and around 20MB on C++/OpenGL. I’m probably doing something wrong on .Net side but since the difference is so big I can’t really understand what.</p>
 <p>Even if I use uncompressed music the memory only jumps to 70MB, still a long stretch to 165MB.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/10/basalt_xna_vs_basalt_cpp.png" alt=""  title="basalt_xna_vs_basalt_cpp"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/10/basalt_xna_vs_basalt_cpp.png" title="basalt_xna_vs_basalt_cpp"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -380,14 +377,13 @@ Around 165MB on XNA and around 20MB on C++/OpenGL. I’m probably doing somethin
       <link>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</link>
       <pubDate>Thu, 26 Aug 2010 19:05:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</guid>
-      <description>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.
-Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.
-Here’s a picture she took after a few adjustments.</description>
+      <description>&lt;p&gt;It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.&lt;/p&gt;
+&lt;p&gt;Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.&lt;/p&gt;
+&lt;p&gt;Here’s a picture she took after a few adjustments.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.</p>
 <p>Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.</p>
 <p>Here’s a picture she took after a few adjustments.</p>
-<p><a href="http://www.indiedb.com/games/vizati/images/vizati-iphone" title="Vizati iPhone - Indie DB"><img loading="lazy" src="http://media.indiedb.com/cache/images/games/1/13/12804/thumb_620x2000/vizati_iphone.jpg" alt="Vizati iPhone"  />
-</a></p>
+<p><a href="http://www.indiedb.com/games/vizati/images/vizati-iphone" title="Vizati iPhone - Indie DB"><img alt="Vizati iPhone" loading="lazy" src="http://media.indiedb.com/cache/images/games/1/13/12804/thumb_620x2000/vizati_iphone.jpg"></a></p>
 <p><strong>Initial testing</strong></p>
 <p>First thing I notice when testing on the device were slowdowns when the cube is fading, it had a lot of particles filling the screen and the framerate dropped down, although this only happens when each level loads and doesn’t interfere with gameplay itself I got a little frustrated.<br>
 On the simulator It slowed down a little but only on Debug and even more OpenGL on the emulator is by software.<br>
@@ -398,9 +394,12 @@ I increased the buffers size and numbers, so now I have 5 buffers with 65536 byt
 Solved the problem immediately. Yesterday while playing the game (after 10-20m) the sound started having hiccups again, although the game was fine, so I may still have some flaw in there, must research it more.</p>
 <p>Here’s a video where of me playing with some particles:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ch3QvoBd1_c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ch3QvoBd1_c?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p><strong>Primitives</strong><br>
 I can get much more particles on screen now because my first attempt to draw primitives in OpenGLES was drawing Quads with an mapped texture. When I got that working I would just send vertex points and texture coordinates and iterate all objects I wanted to draw.<br>
@@ -436,9 +435,9 @@ Although I’m still kind of new at this all iPhone things I can give you a few 
       <link>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</link>
       <pubDate>Wed, 14 Jul 2010 15:18:21 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</guid>
-      <description>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.
-When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.
-On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button.</description>
+      <description>&lt;p&gt;One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.&lt;br&gt;
+When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.&lt;/p&gt;
+&lt;p&gt;On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button. Sure you can point it to the same one and make a bunch of if’s and then point to a Global var which does the correct action, but this is not elegant and sure as hell not easy to add/modify stuff.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.<br>
 When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.</p>
 <p>On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button. Sure you can point it to the same one and make a bunch of if’s and then point to a Global var which does the correct action, but this is not elegant and sure as hell not easy to add/modify stuff.</p>
@@ -446,8 +445,7 @@ When I moved to C# I was really happy with the way delegates work, it’s simple
 1- Do your own – I’ve made one that worked but couldn’t get around to add parameters. I think we might skip this one since you are probably looking for a quick solution.<br>
 2 – Use <a href="http://www.boost.org/">boost</a> – If you don’t know this have a look, even for other stuff, Boost has tons of awesome apis for helping C++ development. Including smart pointers that basically delete themselves automatically.<br>
 3 – Use <a href="http://codeplea.com/pluscallback/">PlusCallback</a> – I decided to use this one.</p>
-<p><a href="/wp-content/uploads/2010/07/cpp_callback_benchmark.png"><img loading="lazy" src="/wp-content/uploads/2010/07/cpp_callback_benchmark.png" alt=""  title="cpp_callback_benchmark"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/07/cpp_callback_benchmark.png"><img loading="lazy" src="/wp-content/uploads/2010/07/cpp_callback_benchmark.png" title="cpp_callback_benchmark"></a></p>
 <p>And it’s simple to use</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// Callback without parameters
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span> 
@@ -477,8 +475,8 @@ When I moved to C# I was really happy with the way delegates work, it’s simple
       <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</link>
       <pubDate>Fri, 20 Nov 2009 10:53:13 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
-      <description>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.
-Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</description>
+      <description>&lt;p&gt;Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.&lt;/p&gt;
+&lt;p&gt;Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.</p>
 <p>Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</p>
 <p>I’ve recently build one for my engine Basalt so I decided to share the result, start by creating log type:</p>
@@ -555,8 +553,7 @@ Many have asked me why take time to do a log file when you can throw exceptions 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Logger</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">Log_Type</span><span class="p">.</span><span class="n">INFO</span><span class="p">,</span><span class="s">&#34;Resolution Changed&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="n">Logger</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">Log_Type</span><span class="p">.</span><span class="n">ERROR</span><span class="p">,</span><span class="s">&#34;Unable to find texture XPTO&#34;</span><span class="p">);</span>
 </span></span></code></pre></div><p>This will output a log.html file that you can open with your favorite browser.</p>
-<p><a href="/wp-content/uploads/2009/11/basalt_log.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/basalt_log-300x189.jpg" alt="basalt_log"  title="basalt_log"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/11/basalt_log.jpg"><img alt="basalt_log" loading="lazy" src="/wp-content/uploads/2009/11/basalt_log-300x189.jpg" title="basalt_log"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -564,11 +561,24 @@ Many have asked me why take time to do a log file when you can throw exceptions 
       <link>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</link>
       <pubDate>Fri, 16 Oct 2009 18:10:09 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</guid>
-      <description>I decided to starting writing a series of tutorials for building an 2d XNA game engine.
-Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.
-It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
-Requirements:
-You must have some Object Oriented Programming background to full understand what we will do here.</description>
+      <description>&lt;p&gt;I decided to starting writing a series of tutorials for building an 2d XNA game engine.&lt;/p&gt;
+&lt;p&gt;Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.&lt;/p&gt;
+&lt;p&gt;It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.&lt;/p&gt;
+&lt;p&gt;Requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You must have some &lt;a href=&#34;http://en.wikipedia.org/wiki/Object-oriented_programming&#34;&gt;Object Oriented Programming&lt;/a&gt; background to full understand what we will do here.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://creators.xna.com/&#34;&gt;XNA 3.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.microsoft.com/express/&#34;&gt;Visual C# Express or Professional 2008&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Nnu_9qk6Jfs?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to starting writing a series of tutorials for building an 2d XNA game engine.</p>
 <p>Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.</p>
 <p>It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.</p>
@@ -579,9 +589,12 @@ You must have some Object Oriented Programming background to full understand wha
 <li><a href="http://www.microsoft.com/express/">Visual C# Express or Professional 2008</a></li>
 </ul>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Nnu_9qk6Jfs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Nnu_9qk6Jfs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.</p>
 ]]></content:encoded>
@@ -591,8 +604,38 @@ You must have some Object Oriented Programming background to full understand wha
       <link>https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/</link>
       <pubDate>Mon, 12 Oct 2009 20:21:49 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/</guid>
-      <description>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:
-using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).</description>
+      <description>&lt;p&gt;After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;System.Reflection&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;MyClass&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;float&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;MyClass&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;c1&#34;&gt;// default constructor&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;MyClass&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MyClass&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;my&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;n&#34;&gt;FieldInfo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fields&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;typeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MyClass&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GetFields&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;BindingFlags&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Public&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BindingFlags&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NonPublic&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BindingFlags&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Instance&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;foreach&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;FieldInfo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fields&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SetValue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GetValue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;oth&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;MyClass&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;obj1&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;MyClass&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;obj1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;obj1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;2.0f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;MyClass&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;obj2&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;MyClass&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;obj1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;c1&#34;&gt;// Obj2 will have same values as obj1 and you &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// can now use them independently.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I hope this is helpful. Let me know if you know a better way&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Reflection</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
@@ -632,10 +675,10 @@ using System.Reflection; class MyClass { public int a; public float x; MyClass()
       <link>https://www.david-amador.com/2009/10/the-amazing-lands-of-cpp/</link>
       <pubDate>Mon, 05 Oct 2009 16:16:56 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/the-amazing-lands-of-cpp/</guid>
-      <description>I’m sure every programmer will like this</description>
+      <description>&lt;p&gt;I’m sure every programmer will like this&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2009/10/cpplands.png&#34;&gt;&lt;img alt=&#34;cpplands&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2009/10/cpplands-1024x714.png&#34; title=&#34;cpplands&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’m sure every programmer will like this</p>
-<p><a href="/wp-content/uploads/2009/10/cpplands.png"><img loading="lazy" src="/wp-content/uploads/2009/10/cpplands-1024x714.png" alt="cpplands"  title="cpplands"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/10/cpplands.png"><img alt="cpplands" loading="lazy" src="/wp-content/uploads/2009/10/cpplands-1024x714.png" title="cpplands"></a></p>
 ]]></content:encoded>
     </item>
   </channel>

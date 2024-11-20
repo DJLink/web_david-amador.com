@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 25 Mar 2024 11:39:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/nintendo-3ds/index.xml" rel="self" type="application/rss+xml" />
@@ -18,83 +18,71 @@
       <link>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</link>
       <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</guid>
-      <description>📝 It&amp;rsquo;s been 10 years It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, Quest of Dungeons was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, mostly nights and weekends.</description>
+      <description>&lt;h1 id=&#34;-its-been-10-years&#34;&gt;📝 It&amp;rsquo;s been 10 years&lt;/h1&gt;
+&lt;p&gt;It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, &lt;a href=&#34;https://www.questofdungeons.com&#34;&gt;Quest of Dungeons&lt;/a&gt; was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, &lt;a href=&#34;https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/&#34;&gt;mostly nights and weekends&lt;/a&gt;. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h1 id="-its-been-10-years">📝 It&rsquo;s been 10 years</h1>
 <p>It&rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, <a href="https://www.questofdungeons.com">Quest of Dungeons</a> was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, <a href="/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/">mostly nights and weekends</a>. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?</p>
 <p>What follows for the rest of the post, is a brain dump of the timeline of some of the most crucial events of this silly little project for anyone who is curious.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png"></p>
 <h1 id="-2011-2013">🤯 2011-2013</h1>
 <p>✔️ Failing can help</p>
 <p>Before the game launched, I had a few years of terrible prototypes, cancelled projects, and other unexpected life events. One day, though, all those mistakes fell into place, and QoD was born—a flow of ideas came to my mind, after seeing a bunch of stuff failed in front of me, but that maybe I could make them work. I knew what I wanted to avoid now and what I things I would like to experiment with. Within this time I also made a simple iOS game called <a href="/2012/09/puwang-a-5-day-work/">Puwang</a>, a gamejam compo, where most of the goal was to make a quick game and hopefully make $100 that year to cover the iOS developer account expenses. For QoD I wanted to make a small game that I could play on my phone during commute, and that&rsquo;s why it started as a mobile-only game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png"></p>
 <p>⌨️ Expanding</p>
 <p>During the time I was the only person to ever played it, I found myself enjoying it on a bigger screen/tablet, and after giving it a 2-3 friends to test and having confirmation, I thought it would be good to launch a desktop version along the iPhone/iPad versions, Windows and Mac.
 This added some development time, but also allowed me to expand the game a bit more, the mobile version was virtually identical to desktop/tabled, but they shared a bigger UI, more suited for Mouse and the higher resolutions.
 This turned out to be one of the best decisions, as the desktop version is foundation for everything after. At this point I was already <a href="/tags/basalt/">rolling my own engine</a> for prior games on mobile and desktop, so most of the development was indeed for game stuff, and not engine. While I&rsquo;ve made the mistake often of &ldquo;build the engine instead of game&rdquo;, here the engine was built around the game, that&rsquo;s how it should be.</p>
 <h1 id="20140325---steam-and-ios-launch">2014/03/25 - Steam and iOS launch</h1>
 <p>I had tried to bring games to Steam before but with no success. The focus was on Mobile, with Desktop in mind, but where to sell it? Before Steam I was able to get confirmation for the new Humble Store, but Steam was still on my mind. In the past I had higher hopes for my first game <a href="/tags/vizati/">Vizati</a>, looked more polished, so QoD didn&rsquo;t seemed to have a chance.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png"></p>
 <p>But I decided to make a trailer and launch a GL page, and imagine my surprise when QoD was approved on Steam Greenlight within a week or so. Just look at my dumb face here that I just digged from some old Tweets.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg" alt="David celebrating QoD approval on Steam Greenlight"  />
-</p>
+<p><img alt="David celebrating QoD approval on Steam Greenlight" loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg"></p>
 <p>With the trailer out, people seemed to enjoyed what they saw, I also thought I was near completing the game, there&rsquo;s always something right? So I pretty much crunched the entire rest of time between my day job and finishing the game.</p>
 <p>Finally on March 25th it was out, everyone could play it. Since the game was only releasing around 18h on Steam, I went to my day job that day, and only took the next day off for checking &amp; fixing bugs etc.</p>
 <p>Initially all I was getting was a flow of emails with some bugs and suggestions, but overall people seemed to like it, which was a relief. There was still tons of stuff to fix, but slowly, and for the next few weeks went through issues and suggestions. On the mobile side of things things were smoother, that version was the older one, had more testing, also less hardware configurations. I recall before launch, a conversation with some coworkers, that making it paid on mobile was probably a mistake, but I don&rsquo;t know how to design games around F2P/Ads, so I made it paid.  But, thankfully, even being a paid game, at $1.99, people were happy with what they were getting.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg"></p>
 <h1 id="20140530---linux">2014/05/30 - Linux</h1>
 <p>This one was something that I had in the back on my mind for a while, theoretically my engine could be ported to Linux, but I was scared of having too many versions at launch, handing those 4 SKUs was already a handful, so this was left for later. This actually ended up being a factor in Humble Bundle contacting me to participate in one of their bundles, back then having a game on all 3 platforms was a must.
 Technically speaking it wasn&rsquo;t extremely complicated, by this time the engine was already relatively split in ways that it was easy to integrate new OS, it was just a matter of implementation.
 Also, now that Steam Deck is a thing, it just worked out of the box.</p>
 <h1 id="20140826---android">2014/08/26 - Android</h1>
 <p>With Desktops and iOS versions being well received I started getting requests for an Android version, I had never worked on this platform, but with most of the know bugs fixed, I bought a cheap Android phone and I moved into porting the game to this platform, you can read more about that <a href="/2014/08/native-game-on-android-porting-quest-of-dungeons/">here</a>.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg"></p>
 <h1 id="2014---ouya-cancelled">2014 - OUYA (cancelled)</h1>
 <p>The hot thing around the time was OUYA, games like TowerFall were born there, so since I had an Android version I started to work on that, because it would be the closest to a traditional console that I thought I could put this game on. I started working on it, but once Microsoft accepted my pitch for the Xbox One (see below), I placed this in low priority. Between the time it took me to develop the Xbox One version, OUYA had it downfall, and by that time I just cancelled it.</p>
 <h1 id="201509---xbox-one">2015/09 - Xbox One</h1>
 <p>In the summer of 2014, after the launch of all those versions, relatively successfully, I started talking with ID@Xbox with the possibility of bringing QoD to Xbox One. There were a couple months of paperwork and mostly the conversation about &ldquo;this is a mouse game, how will it work on consoles?&rdquo;, which was when I started seeing that all the UI needed to be remade, and even some gameplay.</p>
 <p>There are several posts, <a href="/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">here</a>, <a href="/2015/04/necrodancer-is-joining/">here</a>, <a href="/2014/11/qod-xo-devlog-1/">here</a>, <a href="/2015/01/qod-xo-devlog-2/">here</a> and <a href="/2015/02/qod-xo-devlog-3/">here</a>  detailing what went into to that process, but after around 1 year the game was finally released, and all the work put into reworking the game to controller friendly interface and gameplay paid off, it was <a href="/2015/10/quest-of-dungeons-reviews-roundup/">positively received</a>. I also took the opportunity to double the content available, and also add an <a href="/2015/04/necrodancer-is-joining/">extra character</a>. I&rsquo;m sure it was this combination of an almost remade version with increased content that led to it&rsquo;s positive feedback. I&rsquo;m really happy I decided to take all those months to remake it, it was daunting at first, I&rsquo;ll tell you that, but I&rsquo;m glad I did it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg" alt="Quest of Dungeons Xbox One launch"  />
-</p>
+<p><img alt="Quest of Dungeons Xbox One launch" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg"></p>
 <h1 id="20160929---wii-u-and-nintendo-3ds">2016/09/29 - Wii U and Nintendo 3DS</h1>
 <p>Around 2015 summer, before Xbox One release, and if I recall correctly, during Gamescom in Germany, I started talking with Nintendo about bringing the game to Nintendo 3DS and Wii U.</p>
 <p>This was when Nintendo was a bit more restrictive in terms of third party developers, and I was fully expecting, that me, a solo developer, would not make the cut, and it took a lot of months and patience to finally be able to show the game to someone and get accepted as an official Nintendo developer.</p>
 <p>At first my goal was to make Wii U port first because it would be similar to Xbox One, with some additional features for the GamePad. Nintendo 3DS would come later, it would take more work due to it&rsquo;s specifics.</p>
 <p>Unfortunately, or fortunately (depending how you see it), I bricked my Wii U devKit after a couple months of work, when the game was in a good state already but before 100% finished. During the time I waited for repairs I started the Nintendo 3DS version.</p>
 <p>I knew would take a LOT more work, from performance, to completely different UI for dual screen, hybrid of touch + buttons. But when the Wii U devKit arrived, I decided to launch them side-by-side, I talked with Nintendo about a cross-buy possibility, and once they gave the ok that was the goal.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png"></p>
 <p>The Nintendo 3DS version was one of the most complicated ones to pull off. This was also the first time that working on my own engine was the only thing making it possible. A lot of people were suggesting me to use Unity, and I had would have saved time in porting, which can be true, but Unity didn&rsquo;t supported 3DS, so it would never have happened if not for my custom framework.</p>
 <p>This is hands down my favourite version, there is no other like it, mostly because of the nature of the device.</p>
 <p>It was so fun to work with that I found myself <a href="/2016/05/qod-3dswii-u-port-devlog-1/">adding features</a> just because I wanted to test them, like the StreetPass, where you can get ghosts from other players you pass on the street. Nintendo had a really neat device here.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"></p>
 <p>There was some trouble having both versions on the same day, it&rsquo;s a lot of coordination required between me, Nintendo America and Europe teams, 4 different SKUs (3DS NA+EU, Wii U NA+EU), but in the end we made it.</p>
 <p>Like I suspected during my own tests, on the 3DS it was the ideal portable version, it&rsquo;s a game that suits shorts sessions on the go.</p>
 <p>This was also the first time I worked with a publisher for this game, for Japan, the game was published by Flyhigh Works, they took it to Tokyo Game Show, localized to JP, and were crucial in shaping up the 3DS version into what it is. I do recall many sessions where my stubbornness almost caused some bad decisions in the game, but they were really cool in guiding me to make the best of it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg" alt="Quest of Dungeons on Wii U and Nintendo 3DS"  />
-</p>
+<p><img alt="Quest of Dungeons on Wii U and Nintendo 3DS" loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg"></p>
 <h1 id="20170120---playstation-4-and-the-vita-version-that-never-was">2017/01/20 - PlayStation 4 and the Vita version that never was.</h1>
 <p>I love my PlayStation 4, in fact it&rsquo;s the console I have more physical games for.</p>
 <p>So it was with great excitement that after a Skype call with my PlayStation rep I had the greenlight to get the game there. This started around the time of Nintendo too, but sadly, and at first I wanted PS4 + Vita combo, like Wii U + 3DS, but for a variety of reasons the PlayStation Vita never happened.</p>
 <p>This was one of the reasons the PS4 versions was one of the latter ones, I kept hoping I could launch both simultaneously but never happened. Fun fact, this version almost had a physical edition that got cancelled by the publisher at last moment, eventually I even got someone, another publisher, to take care of the PS Vita version, but that also got cancelled later on. So a combination of things that happened that were no one&rsquo;s fault, but also made it a bit hard for me to explain why it wasn&rsquo;t happening. In certain moments it was almost, but it never did happened. It was a bit frustrating that I didn&rsquo;t had clear answers for the players regarding this, but I couldn&rsquo;t, and I tried but failed in the end. Well, that&rsquo;s game development.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png" alt="Quest of Dungeons on PlayStation 4"  />
-</p>
+<p><img alt="Quest of Dungeons on PlayStation 4" loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png"></p>
 <h1 id="20170810---nintendo-switch">2017/08/10 - Nintendo Switch</h1>
 <p>Around 1 month after I released on Wii U and 3DS, Nintendo announced their new hybrid console, the Nintendo Switch. I immediately started getting questions from players about a port. This complicated promoting the new Nintendo versions while everyone was excited about the upcoming console, saving money for it and the games. By coincidence I had launched both versions right at the end.</p>
 <p>I can&rsquo;t recall exactly when conversations started with Nintendo about this, since it was in hot demand, both for retail and developers, but eventually Nintendo shipped me a devKit and I started porting. It was released first in the Japanese regions, again by Flyhigh Works. But a few weeks later again by me in the rest of the world. This version had the portability of 3DS, and graphics/resolution and UI of the home consoles. This was also the first time I made a demo for the game, which still exists on the eShop.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg" alt="Quest of Dungeons on Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons on Nintendo Switch" loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg"></p>
 <h1 id="2019---dreamcast-just-having-fun">2019 - Dreamcast (just having fun)</h1>
 <p>In 2019 I got my hands on a Dreamcast I decided to &ldquo;wonder if I can port it there?&rdquo;, it was never really meant for a full release, that would take months of time that I don&rsquo;t have at the moment,
 I just posting it here for the record, this was under a week of work, it was fun. Maybe if I reach retirement I&rsquo;ll take some time to finish it. There&rsquo;s a lot of work left in there.</p>
 <p>After a while booting the game on an emulator,</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png" alt="Quest of Dungeons running on emulator 1"  />
-</p>
+<p><img alt="Quest of Dungeons running on emulator 1" loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png"></p>
 <p>and then later when I got it booting on a real Dreamcast</p>
 <video width="100%" controls>
     <source src="/wp-content/uploads/2024/03/qod_running_on_dreamcast.mp4" type="video/mp4">
@@ -103,15 +91,12 @@ I just posting it here for the record, this was under a week of work, it was fun
 
 <h1 id="20210413---switch-physical-edition">2021/04/13 - Switch Physical Edition</h1>
 <p>Like I mentioned before, I tried to get the game in physical format before, and I kept trying for years but it simply wasn&rsquo;t happening. Until 2021, when by random chance, someone recommended me Leoful, and they accepted right away, in fact, from initial contact to production, it was just a couple months, I&rsquo;m really happy I was able to finally get the game on an actual box, it hits differently, as I <a href="/2010/08/games-and-systems-from-childhood/">grew playing Nintendo games</a>,  and also feels like a closure to a project that started on a smaller device and made it&rsquo;s way to a real physical game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png" alt="Quest of Dungeons Physical Edition for Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons Physical Edition for Nintendo Switch" loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png"></p>
 <h1 id="2022---">2022 - ??</h1>
 <p>Right now the game still exists in several stores (R.I.P. Nintendo 3DS and Wii U), and it&rsquo;s in maintenance mode only. The platforms patched more regularly are the mobile ones, whenever Apple or Android come up with new rules or it breaks on new devices. Windows gives nearly no problems, MacOS breaks things more often, but overall it doesn&rsquo;t give a lot of work, the last time I had to mess with it, was the Linux version to patch stuff for Steam Deck, but it was relatively easy.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg" alt="Quest of Dungeons on Steam Deck"  />
-</p>
+<p><img alt="Quest of Dungeons on Steam Deck" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg"></p>
 <p>So in the end things worked out, and I want to say a big thank you to everyone who supported this project, I read all the emails, DMs, messages everyone sent over the years, even fanart, you rock.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif"></p>
 <h1 id="some-trivia">Some trivia</h1>
 <ul>
 <li>The game has 79k of code (all platforms)</li>
@@ -126,8 +111,7 @@ I just posting it here for the record, this was under a week of work, it was fun
 <li>The initial skull sign, which only exists at the very start, was a way to teach the player that death meant restarting, in 2013-14 roguelikes weren&rsquo;t as popular and it was seen as a shock for that to happen (play-testers would email me &ldquo;my save is lost&rdquo;). My goal was that by potentially learning that early on, the player would not get surprised.</li>
 </ul>
 <p>Thank you for reading all of this.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png"></p>
 <p>Here&rsquo;s a cool image made by <a href="https://twitter.com/LeonorParra08">Leonor</a>.</p>
 ]]></content:encoded>
     </item>
@@ -136,13 +120,15 @@ I just posting it here for the record, this was under a week of work, it was fun
       <link>https://www.david-amador.com/2016/09/qod-is-now-available-on-eshop-for-nintendo-3ds-and-wii-u/</link>
       <pubDate>Fri, 30 Sep 2016 07:34:46 +0000</pubDate>
       <guid>https://www.david-amador.com/2016/09/qod-is-now-available-on-eshop-for-nintendo-3ds-and-wii-u/</guid>
-      <description>The day has finally arrived!!
-Quest of Dungeons is now available in EU and US for your Wii U and/or Nintendo 3DS. If you search for the name on eShop in our device it should appear.
-Game costs $8.99/€8.99 and allows for cross buy, so if you buy the game for Wii U you’ll get the Nintendo 3DS version for free (and vice-versa).
-US Links
-Wii U
-Nintendo 3DS
-EU Links</description>
+      <description>&lt;p&gt;The day has finally arrived!!&lt;/p&gt;
+&lt;p&gt;Quest of Dungeons is now available in EU and US for your Wii U and/or Nintendo 3DS. If you search for the name on eShop in our device it should appear.&lt;/p&gt;
+&lt;p&gt;Game costs $8.99/€8.99 and allows for cross buy, so if you buy the game for Wii U you’ll get the Nintendo 3DS version for free (and vice-versa).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;US Links&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.nintendo.com/games/detail/quest-of-dungeons-wii-u&#34;&gt;Wii U&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.nintendo.com/games/detail/quest-of-dungeons-3ds&#34;&gt;Nintendo 3DS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EU Links&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.nintendo.co.uk/Games/Wii-U-download-software/Quest-of-Dungeons-1142251.html&#34;&gt;Wii U&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.nintendo.co.uk/Games/Nintendo-3DS-download-software/Quest-of-Dungeons-1142275.html&#34;&gt;Nintendo 3DS&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>The day has finally arrived!!</p>
 <p>Quest of Dungeons is now available in EU and US for your Wii U and/or Nintendo 3DS. If you search for the name on eShop in our device it should appear.</p>
 <p>Game costs $8.99/€8.99 and allows for cross buy, so if you buy the game for Wii U you’ll get the Nintendo 3DS version for free (and vice-versa).</p>
@@ -152,25 +138,27 @@ EU Links</description>
 <p><strong>EU Links</strong><br>
 <a href="http://www.nintendo.co.uk/Games/Wii-U-download-software/Quest-of-Dungeons-1142251.html">Wii U</a><br>
 <a href="http://www.nintendo.co.uk/Games/Nintendo-3DS-download-software/Quest-of-Dungeons-1142275.html">Nintendo 3DS</a></p>
-<p><a href="/wp-content/uploads/2016/08/WiiU_Image_13.png"><img loading="lazy" src="/wp-content/uploads/2016/08/WiiU_Image_13.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/07/screen_04.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_04.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/07/screen_02.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_02.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/08/WiiU_Image_09.png"><img loading="lazy" src="/wp-content/uploads/2016/08/WiiU_Image_09.png" alt=""  />
-</a></p>
+<p><a href="/wp-content/uploads/2016/08/WiiU_Image_13.png"><img loading="lazy" src="/wp-content/uploads/2016/08/WiiU_Image_13.png"></a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_04.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_04.png"></a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_02.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_02.png"></a></p>
+<p><a href="/wp-content/uploads/2016/08/WiiU_Image_09.png"><img loading="lazy" src="/wp-content/uploads/2016/08/WiiU_Image_09.png"></a></p>
 <p>Here’s the Wii U trailer:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/l0HGrk1b_UE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/l0HGrk1b_UE?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>And for Nintendo 3DS gameplay footage that I think covers well how the game works on that system:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/DD3Jql3tsOw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/DD3Jql3tsOw?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Once again thank you for your support and patience while I finished the game and I hope you like it. Looking forward to those <a href="https://miiverse.nintendo.net/titles/6437256809098983304/6437256809098983323">Miiverse drawings</a>!</p>
 ]]></content:encoded>
@@ -180,29 +168,25 @@ EU Links</description>
       <link>https://www.david-amador.com/2016/09/quest-of-dungeons-coming-to-nintendo-3ds-on-september-29/</link>
       <pubDate>Tue, 27 Sep 2016 09:20:51 +0000</pubDate>
       <guid>https://www.david-amador.com/2016/09/quest-of-dungeons-coming-to-nintendo-3ds-on-september-29/</guid>
-      <description>I have great news.
-Quest of Dungeons is coming to Nintendo 3DS on September 29.
-A couple weeks ago I announced that QoD was being released for Wii U on September 29 but I didn’t had a specific release date for the Nintendo 3DS version.
-I spent the last few weeks trying to sort all know issues on the Nintendo 3DS version and I’ve been working with Nintendo to see if it can be released at the same time as the Wii U version.</description>
+      <description>&lt;p&gt;I have great news.&lt;/p&gt;
+&lt;p&gt;Quest of Dungeons is coming to &lt;strong&gt;Nintendo 3DS&lt;/strong&gt; on &lt;strong&gt;September 29&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A couple weeks ago I announced that QoD was being released for &lt;a href=&#34;https://www.david-amador.com/2016/08/quest-of-dungeons-coming-to-wii-u-on-september-29/&#34;&gt;Wii U on September 29&lt;/a&gt; but I didn’t had a specific release date for the Nintendo 3DS version.&lt;/p&gt;
+&lt;p&gt;I spent the last few weeks trying to sort all know issues on the Nintendo 3DS version and I’ve been working with Nintendo to see if it can be released at the same time as the Wii U version. So everyone gets it on the same day \o/&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I have great news.</p>
 <p>Quest of Dungeons is coming to <strong>Nintendo 3DS</strong> on <strong>September 29</strong>.</p>
 <p>A couple weeks ago I announced that QoD was being released for <a href="/2016/08/quest-of-dungeons-coming-to-wii-u-on-september-29/">Wii U on September 29</a> but I didn’t had a specific release date for the Nintendo 3DS version.</p>
 <p>I spent the last few weeks trying to sort all know issues on the Nintendo 3DS version and I’ve been working with Nintendo to see if it can be released at the same time as the Wii U version. So everyone gets it on the same day \o/</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/07/screen_03.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2016/07/screen_03.png"></p>
 <p>Here are some screenshots</p>
-<p><a href="/wp-content/uploads/2016/07/screen_07.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_07.png" alt=""  />
-</a>  <a href="/wp-content/uploads/2016/07/screen_06.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_06.png" alt=""  />
-</a>  <a href="/wp-content/uploads/2016/07/screen_05.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_05.png" alt=""  />
-</a>  <a href="/wp-content/uploads/2016/07/screen_04.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_04.png" alt=""  />
-</a>  <a href="/wp-content/uploads/2016/07/screen_03.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_03.png" alt=""  />
-</a>  <a href="/wp-content/uploads/2016/07/screen_02.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_02.png" alt=""  />
-</a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_07.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_07.png"></a>  <a href="/wp-content/uploads/2016/07/screen_06.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_06.png"></a>  <a href="/wp-content/uploads/2016/07/screen_05.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_05.png"></a>  <a href="/wp-content/uploads/2016/07/screen_04.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_04.png"></a>  <a href="/wp-content/uploads/2016/07/screen_03.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_03.png"></a>  <a href="/wp-content/uploads/2016/07/screen_02.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_02.png"></a></p>
 <p>And a trailer:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ZjCf5Qsvh1c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZjCf5Qsvh1c?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <h2 id="faq">F.A.Q.</h2>
 <p><em><strong>-Does it support the “older” Nintendo 3DS model?</strong></em><br>
@@ -223,23 +207,23 @@ Approximately 306 blocks (~39MB). <a href="https://twitter.com/UpfallStudios/sta
       <link>https://www.david-amador.com/2016/07/quest-of-dungeons-for-nintendo-3ds-screenshots/</link>
       <pubDate>Mon, 04 Jul 2016 14:02:02 +0000</pubDate>
       <guid>https://www.david-amador.com/2016/07/quest-of-dungeons-for-nintendo-3ds-screenshots/</guid>
-      <description>Hey guys, here are some screenshots of Quests of Dungeons for Nintendo 3DS. Hope you like it. Stay tuned for some news soon.
-Nintendo 3DS is a trademark of Nintendo. © 2011 Nintendo.</description>
+      <description>&lt;p&gt;Hey guys, here are some screenshots of Quests of Dungeons for Nintendo 3DS. Hope you like it. Stay tuned for some news soon.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_01.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_01.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_02.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_02.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_03.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_03.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_04.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_04.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_05.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_05.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_06.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_06.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_07.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2016/07/screen_07.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nintendo 3DS is a trademark of Nintendo. © 2011 Nintendo.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Hey guys, here are some screenshots of Quests of Dungeons for Nintendo 3DS. Hope you like it. Stay tuned for some news soon.</p>
-<p><a href="/wp-content/uploads/2016/07/screen_01.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_01.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/07/screen_02.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_02.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/07/screen_03.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_03.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/07/screen_04.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_04.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/07/screen_05.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_05.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/07/screen_06.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_06.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/07/screen_07.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_07.png" alt=""  />
-</a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_01.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_01.png"></a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_02.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_02.png"></a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_03.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_03.png"></a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_04.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_04.png"></a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_05.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_05.png"></a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_06.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_06.png"></a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_07.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_07.png"></a></p>
 <p>Nintendo 3DS is a trademark of Nintendo. © 2011 Nintendo.</p>
 ]]></content:encoded>
     </item>
@@ -248,9 +232,12 @@ Nintendo 3DS is a trademark of Nintendo. © 2011 Nintendo.</description>
       <link>https://www.david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</link>
       <pubDate>Fri, 20 May 2016 08:49:05 +0000</pubDate>
       <guid>https://www.david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</guid>
-      <description>So how are the Nintendo ports coming along?
-It’s been sometime since I announced Quest of Dungeons for 3DS and Wii U, so it’s time to talk about what’s been happening in the “backstage”.
-I’m working on both versions at the same time, potentially for a simultaneous release. But this adds some extra challenges since both are very different and well, I’m juggling between two ports on my own.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;So how are the Nintendo ports coming along?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It’s been sometime since I announced Quest of Dungeons &lt;a href=&#34;https://www.david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/&#34;&gt; for 3DS and Wii U&lt;/a&gt;, so it’s time to talk about what’s been happening in the “backstage”.&lt;/p&gt;
+&lt;p&gt;I’m working on both versions at the same time, potentially for a simultaneous release. But this adds some extra challenges since both are very different and well, I’m juggling between two ports on my own.&lt;/p&gt;
+&lt;p&gt;From a technical point of view, both are already up and running, graphics, sound, input, all of that is working (as far as I tested anyway. bugs yikes).&lt;/p&gt;</description>
       <content:encoded><![CDATA[<blockquote>
 <p>So how are the Nintendo ports coming along?</p>
 </blockquote>
@@ -265,8 +252,7 @@ I’m working on both versions at the same time, potentially for a simultaneous 
 <p>I’m doing specific features for both versions, and that takes time. Both consoles have a second touch screen for example, so I had to come up with a feasible way to use them.</p>
 <p><strong>Wii U</strong></p>
 <p>On Wii U you can play the traditional way, TV, but I also added off-tv support, so you can play just on the GamePad screen. I have Pro Controller support and another way you can play is a mix between TV and gamepad screen, where you can use a touch based inventory, map, etc to manage things.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>** I had some videos that were on Vine, but that platform is sadly gone, sorry. **</p>
 <p>You can even play with the Pro Controller, and watch the game on the gamepad screen, as a tiny TV. I spent the last few weeks adding these changes which I hope will prove useful for players.</p>
 <p><strong>Bottom line is:</strong> Yes, you can play only with buttons, like a “regular” game, but if you want, there is some gamepad use, but it’s optional.</p>
 <p><strong>Nintendo 3DS</strong></p>
@@ -274,18 +260,15 @@ I’m working on both versions at the same time, potentially for a simultaneous 
 <p><em>UI/Dual Screen</em></p>
 <p>I started by doing a 2 screen split-inventory, imagine the Xbox One but kind of split between 2 screens. So the list was on the top screen, and the item description on the bottom one. And that worked.</p>
 <p><em>OLD</em></p>
-<p><a href="/wp-content/uploads/2016/05/3ds_old_inventory.png"><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_old_inventory.png" alt="qod_3ds_old_inventory"  />
-</a></p>
+<p><a href="/wp-content/uploads/2016/05/3ds_old_inventory.png"><img alt="qod_3ds_old_inventory" loading="lazy" src="/wp-content/uploads/2016/05/3ds_old_inventory.png"></a></p>
 <p>However I was never 100% happy with it, and I was barely using touch, which despite not being a personal favorite, I know I lot of people like, so I decided to throw all away and redo it differently. In a way that players could either touch items to open description (the second screen on the previous version) and then Eat/Equip/etc, but also that with a button press you can use it too, via dpad and a/b/x/y.</p>
 <p>This is posing some challenges since I’m now trying to put everything that was on 2 screens into a single one, but I’ll get there.<br>
 This is still WIP but I feel I’m getting near something a bit better.</p>
 <p><em>NEW (WIP)</em></p>
-<p><a href="/wp-content/uploads/2016/05/3ds_new_inventory.png"><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png" alt="qod_3ds_new_inventory"  />
-</a></p>
+<p><a href="/wp-content/uploads/2016/05/3ds_new_inventory.png"><img alt="qod_3ds_new_inventory" loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png"></a></p>
 <p><em>StreetPass</em></p>
 <p>I never considered using StreetPass, but the other day I woke up with a cool idea. When you StreetPass someone you send and receive ghosts from previous runs to the other user. Here’s how it works, when you die, the game saves your character as it is, stats, equipment, etc. There is later a chance, that in a new game you might encounter yourself, but now you will also send those ghosts to the other players. So when you find ghosts from other users (they will have a icon in-game to make it different) if you defeat them, you’ll get all the loot. Cool right?</p>
-<p><a href="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png" alt="3ds_qod_streetpass"  />
-</a></p>
+<p><a href="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"><img alt="3ds_qod_streetpass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"></a></p>
 <p>Final reminder, everything discussed here is WIP so it can change.<br>
 So still no ETA, but I’m getting closer. And that is it for now. I’ll let you guys know when I have more news.</p>
 ]]></content:encoded>
@@ -295,18 +278,16 @@ So still no ETA, but I’m getting closer. And that is it for now. I’ll let yo
       <link>https://www.david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</link>
       <pubDate>Mon, 22 Feb 2016 17:28:59 +0000</pubDate>
       <guid>https://www.david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</guid>
-      <description>Nintendo fans rejoice!!!
-It’s time to reveal what I’ve been up to lately, I’ve been very cryptic on Twitter about what I was actually doing but it was for a good cause, because Quest of Dungeons is making it’s way on to Nintendo 3DS and Wii U.
-Development started a couple months ago, so I still don’t have an ETA, but from now on I can be less vague to what I’m really doing.</description>
+      <description>&lt;p&gt;Nintendo fans rejoice!!!&lt;/p&gt;
+&lt;p&gt;It’s time to reveal what I’ve been up to lately, I’ve been very cryptic on Twitter about what I was actually doing but it was for a good cause, because Quest of Dungeons is making it’s way on to Nintendo 3DS and Wii U.&lt;br&gt;
+Development started a couple months ago, so I still don’t have an ETA, but from now on I can be less vague to what I’m really doing.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Nintendo fans rejoice!!!</p>
 <p>It’s time to reveal what I’ve been up to lately, I’ve been very cryptic on Twitter about what I was actually doing but it was for a good cause, because Quest of Dungeons is making it’s way on to Nintendo 3DS and Wii U.<br>
 Development started a couple months ago, so I still don’t have an ETA, but from now on I can be less vague to what I’m really doing.</p>
 <p>I’ll leave you with 2 images of the game/devices. Take all of that as W.I.P. There is much to be done so everything is still subject to change.</p>
-<p><a href="/wp-content/uploads/2016/02/quest_of_dungeons_3ds-1.png"><img loading="lazy" src="/wp-content/uploads/2016/02/quest_of_dungeons_3ds.png" alt=""  />
-</a><!-- raw HTML omitted -->Quest of Dungeons Nintendo 3DS<!-- raw HTML omitted --></p>
-<p><a href="/wp-content/uploads/2016/02/quest_of_dungeons_wiiu.png"><img loading="lazy" src="/wp-content/uploads/2016/02/quest_of_dungeons_wiiu.png" alt=""  />
-</a><!-- raw HTML omitted -->Quest of Dungeons Wii U<!-- raw HTML omitted --></p>
-<p>Don’t forget to share the news with your frinds, and for more up-to date info twitter is the place to <a href="https://twitter.com/DJ_Link">follow me</a>.</p>
+<p><a href="/wp-content/uploads/2016/02/quest_of_dungeons_3ds.png"><img loading="lazy" src="/wp-content/uploads/2016/02/quest_of_dungeons_3ds.png"></a></p>
+<p><a href="/wp-content/uploads/2016/02/quest_of_dungeons_wiiu.png"><img loading="lazy" src="/wp-content/uploads/2016/02/quest_of_dungeons_wiiu.png"></a></p>
+<p>Don’t forget to share the news with your friends, and for more up-to date info twitter is the place to <a href="https://twitter.com/DJ_Link">follow me</a>.</p>
 <p>Nintendo 3DS and Wii U are trademarks of Nintendo. © 2012 Nintendo.</p>
 ]]></content:encoded>
     </item>

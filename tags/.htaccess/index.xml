@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>.htaccess on David Amador</title>
+    <title>.Htaccess on David Amador</title>
     <link>https://www.david-amador.com/tags/.htaccess/</link>
-    <description>Recent content in .htaccess on David Amador</description>
+    <description>Recent content in .Htaccess on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 30 Oct 2009 11:09:38 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/.htaccess/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,8 @@
       <link>https://www.david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</link>
       <pubDate>Fri, 30 Oct 2009 11:09:38 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</guid>
-      <description>I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.
-So just place this on your .htaccess on the root of your website.</description>
+      <description>&lt;p&gt;I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.&lt;/p&gt;
+&lt;p&gt;So just place this on your .htaccess on the root of your website.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.</p>
 <p>So just place this on your .htaccess on the root of your website.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-apache" data-lang="apache"><span class="line"><span class="cl">      <span class="nt">&lt;filesmatch&gt;</span>

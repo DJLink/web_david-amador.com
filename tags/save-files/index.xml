@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>save files on David Amador</title>
+    <title>Save Files on David Amador</title>
     <link>https://www.david-amador.com/tags/save-files/</link>
-    <description>Recent content in save files on David Amador</description>
+    <description>Recent content in Save Files on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 09 Apr 2015 09:27:58 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/save-files/index.xml" rel="self" type="application/rss+xml" />
@@ -18,25 +18,23 @@
       <link>https://www.david-amador.com/2015/04/suggestion-for-where-to-store-save-games/</link>
       <pubDate>Thu, 09 Apr 2015 09:27:58 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/04/suggestion-for-where-to-store-save-games/</guid>
-      <description>Standards are a lovely thing, but hard to achieve, it depends on one thing, everyone actually using it, otherwise it’s just a rule no one cares about.
-There is one thing that is very common to see in the “game sphere”:
-Where are [X] save games located?
-There are a couple of common directories used but I think as game developers we could do a bit better and using a common location.</description>
+      <description>&lt;p&gt;Standards are a lovely thing, but hard to achieve, it depends on one thing, everyone actually using it, otherwise it’s just a rule no one cares about.&lt;/p&gt;
+&lt;p&gt;There is one thing that is very common to see in the “game sphere”:&lt;br&gt;
+&lt;strong&gt;Where are [X] save games located?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are a couple of common directories used but I think as game developers we could do a bit better and using a common location.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Standards are a lovely thing, but hard to achieve, it depends on one thing, everyone actually using it, otherwise it’s just a rule no one cares about.</p>
 <p>There is one thing that is very common to see in the “game sphere”:<br>
 <strong>Where are [X] save games located?</strong></p>
 <p>There are a couple of common directories used but I think as game developers we could do a bit better and using a common location.</p>
 <p>Some games create a folder on My Documents:<br>
-<a href="/wp-content/uploads/2015/04/my_documents.png"><img loading="lazy" src="/wp-content/uploads/2015/04/my_documents.png" alt="my_documents"  />
-</a></p>
+<a href="/wp-content/uploads/2015/04/my_documents.png"><img alt="my_documents" loading="lazy" src="/wp-content/uploads/2015/04/my_documents.png"></a></p>
 <p>This is a bit messy, you have your games mixed with other software, if you have 5-10 games it’s hard to manage since it gets in the way of your work files.</p>
 <p>Other games save them on obscure locations like</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="p">[</span><span class="n">USER</span><span class="p">]</span><span class="err">\</span><span class="n">AppData</span><span class="err">\</span><span class="n">Game</span>
 </span></span></code></pre></div><p>that can lead to lost save files as some cleaning software might erase them, also it’s hard to find. And lately I’ve been noticing that some Steam games store them directly on the Game Directory itself, that’s not very intuitive as well.</p>
 <p>Windows introduced a system folder some time ago called “Saved Games”</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">David</span><span class="err">\</span><span class="n">Saved</span> <span class="n">Games</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2015/04/windows_save_games_folder.png" alt="windows_save_games_folder"  />
-</p>
+</span></span></code></pre></div><p><img alt="windows_save_games_folder" loading="lazy" src="/wp-content/uploads/2015/04/windows_save_games_folder.png"></p>
 <p>But from my research it’s not very used, I think one of the reasons is that older Windows versions didn’t had them, like Windows XP and it wasn’t very adopted. I also noticed some games creating their own versions of “common” folders inside Documents, like “SaveGames” or “SavedGames”.</p>
 <p><strong>What can we do?</strong></p>
 <p>I did noticed that more devs are using a solution that I personally like, and I adopted it for my last game.</p>
@@ -45,8 +43,7 @@ There are a couple of common directories used but I think as game developers we 
 </span></span></code></pre></div><p>For example</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">David</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">My</span> <span class="n">Games</span><span class="err">\</span><span class="n">AwesomeGame</span>\
 </span></span></code></pre></div><p>Here’s that folder on my computer right now<br>
-<img loading="lazy" src="/wp-content/uploads/2015/04/common_save_game_folder.png" alt="common_save_game_folder"  />
-</p>
+<img alt="common_save_game_folder" loading="lazy" src="/wp-content/uploads/2015/04/common_save_game_folder.png"></p>
 <p>As you can see some developers already use it, from indie developers to AAA studios.<br>
 This way, everything is inside your Documents, the user can easily access, backup, restore, everything is inside that folder.<br>
 Even if a studio were to create a folder for its own brand, that would be ok too.</p>
@@ -73,28 +70,26 @@ What do you think?</p>
       <link>https://www.david-amador.com/2012/03/where-do-you-like-games-to-store-their-save-data/</link>
       <pubDate>Sat, 03 Mar 2012 12:57:47 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/03/where-do-you-like-games-to-store-their-save-data/</guid>
-      <description>Quick question.
-I’m trying to decide where my next game should store their save files so I decided to make a poll.
-Personally I think that
-C:/Users/$USER$/AppData/Local/ is a total idiotic thing.
-Starting on Windows Vista there’s a pre-created “Saved Games” folder but most people seem to miss it since it’s not on the “My Documents” folder.
-There’s also other possibilities which many games I own use like
-My Documents\My Games\Game\ Others just create a folder directly on “My Documents” which some users find a bit obstructive.</description>
+      <description>&lt;p&gt;Quick question.&lt;/p&gt;
+&lt;p&gt;I’m trying to decide where my next game should store their save files so I decided to make a poll.&lt;/p&gt;
+&lt;p&gt;Personally I think that&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nl&#34;&gt;C&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Users&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;USER&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;AppData&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Local&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;is a total idiotic thing.&lt;/p&gt;
+&lt;p&gt;Starting on Windows Vista there’s a pre-created “Saved Games” folder but most people seem to miss it since it’s not on the “My Documents” folder.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2012/03/saved-games_folder.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2012/03/saved-games_folder.jpg&#34; title=&#34;saved games_folder&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There’s also other possibilities which many games I own use like&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Quick question.</p>
 <p>I’m trying to decide where my next game should store their save files so I decided to make a poll.</p>
 <p>Personally I think that</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="nl">C</span><span class="p">:</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="err">$</span><span class="n">USER</span><span class="err">$</span><span class="o">/</span><span class="n">AppData</span><span class="o">/</span><span class="n">Local</span><span class="o">/</span>
 </span></span></code></pre></div><p>is a total idiotic thing.</p>
 <p>Starting on Windows Vista there’s a pre-created “Saved Games” folder but most people seem to miss it since it’s not on the “My Documents” folder.</p>
-<p><a href="/wp-content/uploads/2012/03/saved-games_folder.jpg"><img loading="lazy" src="/wp-content/uploads/2012/03/saved-games_folder.jpg" alt=""  title="saved games_folder"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/03/saved-games_folder.jpg"><img loading="lazy" src="/wp-content/uploads/2012/03/saved-games_folder.jpg" title="saved games_folder"></a></p>
 <p>There’s also other possibilities which many games I own use like</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">My</span> <span class="n">Documents</span><span class="err">\</span><span class="n">My</span> <span class="n">Games</span><span class="err">\</span><span class="n">Game</span>\
 </span></span></code></pre></div><p>Others just create a folder directly on “My Documents” which some users find a bit obstructive.</p>
 <p>I’ve been considering giving a read at Dropbox API (if any) too, It would be a nice touch to allow direct integration. But that’s just an idea that’s probably tricky to integrate.</p>
 <p>So tell me what you think or suggest another one.</p>
-<!-- raw HTML omitted -->
-<p><!-- raw HTML omitted --><a href="http://polldaddy.com/poll/6001864/">Where do you like that games store their save files?</a><!-- raw HTML omitted --></p>
 ]]></content:encoded>
     </item>
   </channel>

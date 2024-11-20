@@ -8,13 +8,14 @@
 <title>Fixing dark borders sprites on iPhone | David Amador</title>
 <meta name="keywords" content="Basalt, iPad, Iphone, XCode">
 <meta name="description" content="I ran into this issue a couple hours ago working on the iPhone sdk:
+
 See the darker borders around the image?
 It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
 Well that’s because that alpha isn’t 0 or 1 or 0 or 255.
-The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha.">
+The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha. So you can understand now why only 0 or 1 works right? Everything in between get’s changed. This is why Apple recommends using PNG over JPGS, although they consume more space they are altered for speed.">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -22,6 +23,7 @@ The first thing I found out is that XCode grabs the png images and multiplies th
 <link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/">
 <noscript>
     <style>
         #theme-toggle,
@@ -31,26 +33,33 @@ The first thing I found out is that XCode grabs the png images and multiplies th
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="Fixing dark borders sprites on iPhone" />
-<meta property="og:description" content="I ran into this issue a couple hours ago working on the iPhone sdk:
+<meta property="og:url" content="https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="Fixing dark borders sprites on iPhone">
+  <meta property="og:description" content="I ran into this issue a couple hours ago working on the iPhone sdk:
 See the darker borders around the image?
 It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
 Well that’s because that alpha isn’t 0 or 1 or 0 or 255.
-The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2010-07-26T12:47:01+00:00" />
-<meta property="article:modified_time" content="2010-07-26T12:47:01+00:00" /><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" />
-<meta name="twitter:title" content="Fixing dark borders sprites on iPhone"/>
+The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha. So you can understand now why only 0 or 1 works right? Everything in between get’s changed. This is why Apple recommends using PNG over JPGS, although they consume more space they are altered for speed.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-07-26T12:47:01+00:00">
+    <meta property="article:modified_time" content="2010-07-26T12:47:01+00:00">
+    <meta property="article:tag" content="Basalt">
+    <meta property="article:tag" content="IPad">
+    <meta property="article:tag" content="Iphone">
+    <meta property="article:tag" content="XCode">
+    <meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png">
+<meta name="twitter:title" content="Fixing dark borders sprites on iPhone">
 <meta name="twitter:description" content="I ran into this issue a couple hours ago working on the iPhone sdk:
+
 See the darker borders around the image?
 It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
 Well that’s because that alpha isn’t 0 or 1 or 0 or 255.
-The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha."/>
+The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha. So you can understand now why only 0 or 1 works right? Everything in between get’s changed. This is why Apple recommends using PNG over JPGS, although they consume more space they are altered for speed.">
 
 
 <script type="application/ld+json">
@@ -79,7 +88,7 @@ The first thing I found out is that XCode grabs the png images and multiplies th
   "@type": "BlogPosting",
   "headline": "Fixing dark borders sprites on iPhone",
   "name": "Fixing dark borders sprites on iPhone",
-  "description": "I ran into this issue a couple hours ago working on the iPhone sdk:\nSee the darker borders around the image?\nIt’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?\nWell that’s because that alpha isn’t 0 or 1 or 0 or 255.\nThe first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha.",
+  "description": "I ran into this issue a couple hours ago working on the iPhone sdk:\nSee the darker borders around the image?\nIt’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?\nWell that’s because that alpha isn’t 0 or 1 or 0 or 255.\nThe first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha. So you can understand now why only 0 or 1 works right? Everything in between get’s changed. This is why Apple recommends using PNG over JPGS, although they consume more space they are altered for speed.\n",
   "keywords": [
     "Basalt", "iPad", "Iphone", "XCode"
   ],
@@ -119,7 +128,7 @@ The first thing I found out is that XCode grabs the png images and multiplies th
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -183,7 +192,7 @@ The first thing I found out is that XCode grabs the png images and multiplies th
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Fixing dark borders sprites on iPhone
     </h1>
@@ -195,9 +204,7 @@ The first thing I found out is that XCode grabs the png images and multiplies th
         
 </figure>
   <div class="post-content"><p>I ran into this issue a couple hours ago working on the iPhone sdk:</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders.png" alt=""  title="iphone_image_dark_borders"  />
-<img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" alt=""  title="iphone_image_dark_borders_2"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders.png" title="iphone_image_dark_borders"><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" title="iphone_image_dark_borders_2"></p>
 <p>See the darker borders around the image?</p>
 <p>It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?<br>
 Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
@@ -220,10 +227,8 @@ Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	<span class="n">off</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_fixed_border.png" alt="image"  />
-</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_border_fixed2.png" alt="image"  />
-</p>
+</span></span></code></pre></div><p><img alt="image" loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_fixed_border.png"></p>
+<p><img alt="image" loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_border_fixed2.png"></p>
 <p>There may be other solutions but this won&rsquo;t have any impact on the game, just when loading images. Let me know if you find any other solution.</p>
 <p>EDIT: Quick note here: this is not the correct way to deal with pre-multiplied alpha but a patching. XNA recently embraced pre multiplied alpha to avoid this issues. More <a href="http://blogs.msdn.com/b/shawnhar/archive/2009/11/06/premultiplied-alpha.aspx">here</a>  (Thanks Elisée Maurer)</p>
 
@@ -233,7 +238,7 @@ Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://www.david-amador.com/tags/basalt/">Basalt</a></li>
-      <li><a href="https://www.david-amador.com/tags/ipad/">iPad</a></li>
+      <li><a href="https://www.david-amador.com/tags/ipad/">IPad</a></li>
       <li><a href="https://www.david-amador.com/tags/iphone/">Iphone</a></li>
       <li><a href="https://www.david-amador.com/tags/xcode/">XCode</a></li>
     </ul>
@@ -274,7 +279,8 @@ Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

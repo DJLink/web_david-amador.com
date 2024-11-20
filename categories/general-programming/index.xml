@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 15 Nov 2024 14:39:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/categories/general-programming/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,9 @@
       <link>https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/</link>
       <pubDate>Fri, 15 Nov 2024 14:39:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/</guid>
-      <description>🧵 origin thread In 2018 I started a thread on Twitter (later renamed X 🙄) where I shared some game development tricks devs used to get around bugs, software, hardware and/or time constraints. Later I kept adding more posts to that thread, and there&amp;rsquo;s some cool information there. But because I now went through the process of replicating that thread on both Mastodon and Bluesky; it got me thinking, I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever gone.</description>
+      <description>&lt;h2 id=&#34;-origin-thread&#34;&gt;🧵 origin thread&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In 2018 I started a thread on Twitter (later renamed X 🙄) where &lt;a href=&#34;https://x.com/DJ_Link/status/964124424969637888&#34;&gt;I shared some game development tricks&lt;/a&gt; devs used to get around bugs, software, hardware and/or time constraints. Later I kept adding more posts to that thread, and there&amp;rsquo;s some cool information there. But because I now went through the process of replicating that thread on both &lt;a href=&#34;https://mastodon.gamedev.place/deck/@djlink/109313319839796759&#34;&gt;Mastodon&lt;/a&gt; and &lt;a href=&#34;https://bsky.app/profile/djlink.bsky.social/post/3l6ubkivh5o2t&#34;&gt;Bluesky&lt;/a&gt;; it got me thinking, I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever gone. If I find more I&amp;rsquo;ll add them later. This page may take a bit to load due to images, gifs videos etc.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="-origin-thread">🧵 origin thread</h2>
 <blockquote>
 <p>In 2018 I started a thread on Twitter (later renamed X 🙄) where <a href="https://x.com/DJ_Link/status/964124424969637888">I shared some game development tricks</a> devs used to get around bugs, software, hardware and/or time constraints. Later I kept adding more posts to that thread, and there&rsquo;s some cool information there. But because I now went through the process of replicating that thread on both <a href="https://mastodon.gamedev.place/deck/@djlink/109313319839796759">Mastodon</a> and <a href="https://bsky.app/profile/djlink.bsky.social/post/3l6ubkivh5o2t">Bluesky</a>; it got me thinking, I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever gone. If I find more I&rsquo;ll add them later. This page may take a bit to load due to images, gifs videos etc.</p>
@@ -27,145 +29,129 @@
 <h3 id="-skyrim-shelves">👾 Skyrim shelves</h3>
 <p>Skyrim small tables are actually shelves buried. If you can&rsquo;t see it &hellip;</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg" alt="Skyrim buried shelves 1"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg" alt="Skyrim buried shelves 2"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg"><img alt="Skyrim buried shelves 1" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg"><img alt="Skyrim buried shelves 2" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-jak-and-daxter-loading">👾 Jak and Daxter loading</h3>
 <p>In Jak and Daxter if by any chance the Area/assets ahead aren&rsquo;t fully loaded the game will make you trip to give it more time to load in background.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/jak_dexter_tripping_loading.gif" alt="Jak and Daxter tripping loading"  />
-</p>
+<p><img alt="Jak and Daxter tripping loading" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/jak_dexter_tripping_loading.gif"></p>
 <hr>
 <h3 id="-super-mario-64-infinite-stairs">👾 Super Mario 64 infinite stairs</h3>
 <p>In Super Mario 64 this is how Nintendo got the infinite stairs effect working, teleport. Mario keeps getting teleported to a prior point on the stairs which makes it impossible to progress in a normal way. But this is also the reason why Speedrunners can glitch the effect and skip it using the backwards jump trick.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_64_infinite_stairs.gif" alt="Super Mario 64 infinite stairs"  />
-</p>
+<p><img alt="Super Mario 64 infinite stairs" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_64_infinite_stairs.gif"></p>
 <hr>
 <h3 id="-wing-commander-memory-exception">👾 Wing Commander memory exception</h3>
 <p>There was a memory exception in Wing Commander on exit, because of the deadline they left it but change the error message to &ldquo;Thank you for playing Wing Commander!&rdquo;</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/wing_commander_exit_message.jpg" alt="Wing Commander exit message"  />
-</p>
+<p><img alt="Wing Commander exit message" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/wing_commander_exit_message.jpg"></p>
 <hr>
 <h3 id="-undertale-npc-pathfinding">👾 Undertale NPC pathfinding</h3>
 <p>This one is from Undertale, to prevent NPCs to walk on pits, developer added Magic glass so that way &ldquo;it works&rdquo;.</p>
 <table>
-<thead>
-<tr>
-<th><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_1.jpg" alt="Undertale magic glass 1"  />
-</th>
-<th><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_2.jpg" alt="Undertale magic glass 2"  />
-</th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><img alt="Undertale magic glass 1" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_1.jpg"></th>
+          <th><img alt="Undertale magic glass 2" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_2.jpg"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-fallout-3-trains-are-hats">👾 Fallout 3 trains are hats</h3>
 <p>In Fallout 3 all the trains are actually a character wearing a train model as a hat. <a href="https://www.pcgamer.com/heres-whats-happening-inside-fallout-3s-metro-train/">Source</a>.</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg" alt="Fallout 3 Trains"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg" alt="Fallout 3 Trains"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg"><img alt="Fallout 3 Trains" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg"><img alt="Fallout 3 Trains" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-donkey-kong-64-memory-crash-myth">👾 Donkey Kong 64 memory crash (myth)</h3>
 <p>This one was later proved as a myth by developers on my thread, but I&rsquo;m leaving it here since you can still find it in tons of places, so this way here it has a correction that it was in fact a myth.</p>
 <p>Internet theories says that Donkey Kong 64 had a memory crash/limit bug on standard N64. Unable to identify the cause of the crash they decided to ship the game with the memory expansion bundled with game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/donkey_kong_64.jpg" alt="Donkey Kong 64"  />
-</p>
+<p><img alt="Donkey Kong 64" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/donkey_kong_64.jpg"></p>
 <hr>
 <h3 id="-super-mario-bros-reuse-of-grassclouds">👾 Super Mario Bros. reuse of grass/clouds</h3>
 <p>In Super Mario Bros. because of memory limitations clouds and bushes are the same sprite but using a different color palette.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_bros_grass_clouds.jpg" alt="Super Mario Bros. reuse of grass and clouds"  />
-</p>
+<p><img alt="Super Mario Bros. reuse of grass and clouds" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_bros_grass_clouds.jpg"></p>
 <hr>
 <h3 id="-kirby-dream-land-memory-saving">👾 Kirby Dream Land memory saving</h3>
 <p>In Kirby Dream Land for Gameboy, to save memory some enemies have the same &ldquo;back&rdquo; part of the sprite and only change the face.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/kirby_gameboy_reuse_assets.jpg" alt="Kirby Dream Land memory saving"  />
-</p>
+<p><img alt="Kirby Dream Land memory saving" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/kirby_gameboy_reuse_assets.jpg"></p>
 <hr>
 <h3 id="-zelda-a-link-between-worlds-fake-perspective">👾 Zelda A Link Between Worlds fake perspective</h3>
 <p>This is one of my fav, in Zelda: A Link Between Worlds because a true top down view in 3D had some issues, they purposely tilt the objects so the perspective looks good to the player.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/zelda_link_between_worlds_skewed_view.jpg" alt="Zelda A Link Between Worlds fake perspective"  />
-</p>
+<p><img alt="Zelda A Link Between Worlds fake perspective" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/zelda_link_between_worlds_skewed_view.jpg"></p>
 <hr>
 <h3 id="-duke-nukem-mirrors">👾 Duke Nukem mirrors</h3>
 <p>Duke Nukem 3D mirrors reflection were achieved by duplicating the room on the other side. If you deactivate clipping you can go to the other side. True reflections are computational intensive even today.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duke_nukem_mirrors.gif" alt="Duke Nukem mirrors"  />
-</p>
+<p><img alt="Duke Nukem mirrors" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duke_nukem_mirrors.gif"></p>
 <hr>
 <h3 id="-nba-jam-te-cartridge-day-one-patch">👾 NBA Jam: T.E. cartridge day one &ldquo;patch&rdquo;</h3>
 <p>In NBA Jam: T.E. for Genesis/Mega Drive devs only found out after making the 250k cartridges there was a save bug. Playing game in a certain order fixed it so it got a day one patch in the manual saying how to initialize memory.</p>
-<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg" alt="NBA Jam T.E"  />
-</a></p>
-<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png" alt="NBA Jam T.E"  />
-</a></p>
+<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg"><img alt="NBA Jam T.E" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg"></a></p>
+<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png"><img alt="NBA Jam T.E" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png"></a></p>
 <hr>
 <h3 id="-mario-galaxy-drown-animation">👾 Mario Galaxy drown animation</h3>
 <p>In Super Mario Galaxy when Mario drowns in a swap his hand reaches out, because of the size of the head they have to shrink it so only the hand is visible to the player.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/mario_galaxy_drown_animation.gif" alt="Mario Galaxy drown animation"  />
-</p>
+<p><img alt="Mario Galaxy drown animation" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/mario_galaxy_drown_animation.gif"></p>
 <hr>
 <h3 id="-world-of-warcraft-rest-bonus">👾 World of Warcraft rest bonus</h3>
 <p>World of Warcraft rest bonus was made to encourage breaks, half XP gained after a few hours. Players hated, so they made everything take 2x as much XP to achieve but you start at 200% XP and gradually back to 100%. Same thing &amp; players are happy. <a href="https://www.psychologyofgames.com/2010/03/framing-and-world-of-warcrafts-rest-system/">source</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/world_of_warcraft_rest_bonus.jpg" alt="World of Warcraft rest bonus"  />
-</p>
+<p><img alt="World of Warcraft rest bonus" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/world_of_warcraft_rest_bonus.jpg"></p>
 <hr>
 <h3 id="-resident-evil-4-radio-billboards">👾 Resident Evil 4 radio billboards</h3>
 <p>This one is not as unknown or hard to imagine but in Resident Evil 4 during the radio chat cutscenes it&rsquo;s actually a 2D panel with the 3D models behind. Many other games do this too.</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg" alt="Resident Evil 4"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg" alt="Fallout 3 Trains"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg"><img alt="Resident Evil 4" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg"><img alt="Fallout 3 Trains" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-duck-hunt-zapper">👾 Duck Hunt Zapper</h3>
 <p>In Duck Hunt the NES Zapper worked by blacking out screen &amp; drawing white blocks around targets when you fire, for a couple frames. The diode in the Zapper detects the change in light intensity and tells the computer if it’s pointed at a lit target.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duck_hunt_zapper.gif" alt="Duck Hunt Zapper"  />
-</p>
+<p><img alt="Duck Hunt Zapper" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duck_hunt_zapper.gif"></p>
 <hr>
 <h3 id="-metal-gear-solid-ps1-reflections">👾 Metal Gear Solid PS1 reflections</h3>
 <p>In Metal Gear Solid 1, another reflection trick. Water puddle in 1st mission map is just a transparent texture with the geometry of ceiling and walls duplicated below the ground. That&rsquo;s why you can&rsquo;t see Snake reflection.</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg" alt="Metal Gear Solid"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg" alt="Metal Gear Solid"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg"><img alt="Metal Gear Solid" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg"><img alt="Metal Gear Solid" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-prince-of-persia-animations">👾 Prince of Persia animations</h3>
 <p>In Prince of Persia (1989) animations looked fluid &amp; realistic because Jordan Mechner used Rotoscope, he filmed his brother doing the stunts, took pictures with camera, had them developed at Fotomat and then traced them, frame by frame.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/prince_of_persia_rotoscope.gif" alt="Prince of Persia Rotoscope"  />
-</p>
+<p><img alt="Prince of Persia Rotoscope" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/prince_of_persia_rotoscope.gif"></p>
 <hr>
 <h3 id="-tomb-raider-sega-saturn">👾 Tomb Raider Sega Saturn</h3>
 <p>Sega Saturn used Quads instead of triangles (the industry norm) for rendering, which is good for 2D but not as practical for 3D, devs had to work around that, so games like Tomb Raider had to be built to support quads on Saturn and triangles on PlayStation.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/tomb_raider_saturn_quads.gif" alt="Tomb Raider Sega Saturn quads"  />
-</p>
+<p><img alt="Tomb Raider Sega Saturn quads" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/tomb_raider_saturn_quads.gif"></p>
 <hr>
 <h3 id="-pong">👾 Pong</h3>
 <p>Original Pong had 0 lines of code.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/pong_0_lines_code.jpg" alt="Pong"  />
-</p>
+<p><img alt="Pong" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/pong_0_lines_code.jpg"></p>
 <hr>
 <h3 id="-paper-mario-shadows">👾 Paper Mario shadows</h3>
 <p>Paper Mario uses a transparent mesh to simulate door shadows.</p>
@@ -203,14 +189,14 @@
 <h3 id="-grand-theft-auto-tanks">👾 Grand Theft Auto tanks</h3>
 <p>In GTA the tanks were made with pedestrians that were on top of a car to use the existing shooting mechanics and also the driving code.</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png" alt="Grand Theft Auto Tanks"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png" alt="Grand Theft Auto Tanks"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png"><img alt="Grand Theft Auto Tanks" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png"><img alt="Grand Theft Auto Tanks" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-kirby-and-the-forgotten-land-game-feel">👾 Kirby and the Forgotten Land game feel</h3>
@@ -224,20 +210,19 @@
 <h3 id="-skyrim-npcs-inventory-system">👾 Skyrim NPCs inventory system</h3>
 <p>Skyrim handles each NPCs inventory by having it on a unique chest hidden under the map. Most are impossible to get unless clipping is used, but sometimes you can find them.</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg" alt="Skyrim NPC inventory"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg" alt="Skyrim NPC inventory"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg"><img alt="Skyrim NPC inventory" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg"><img alt="Skyrim NPC inventory" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-doom-3-volumetric-glow">👾 Doom 3 volumetric glow</h3>
 <p>Doom 3 fakes volumetric glow by folding vertexes with camera movement. <a href="https://simonschreibt.de/gat/doom-3-volumetric-glow/">source</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/doom3_volumetric_glow.gif" alt="Doom 3 volumetric glow"  />
-</p>
+<p><img alt="Doom 3 volumetric glow" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/doom3_volumetric_glow.gif"></p>
 <hr>
 <h3 id="-lord-of-the-rings-engine-reuse">👾 Lord of the Rings engine reuse</h3>
 <p>Lord of the Rings game was made by reusing Tiger Woods golf game because they needed large areas with a goal/castle at the end, a golf game is just that. I think it’s quite funny how far apart they are but it works.</p>
@@ -249,33 +234,29 @@
 <hr>
 <h3 id="-metroid-prime-noise-texture">👾 Metroid Prime noise texture</h3>
 <p>In order to save memory, Metroid Prime fullscreen static texture effect is generated using random live RAM data, which is just the game itself running, GameCube only had 24MB. <a href="https://x.com/ZoidCTF/status/1590012338421518337">source</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metroid_prime_noise_texture.jpg" alt="Metroid Prime"  />
-</p>
+<p><img alt="Metroid Prime" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metroid_prime_noise_texture.jpg"></p>
 <hr>
 <h3 id="-titan-quest-action-delays">👾 Titan Quest action delays</h3>
 <p>On Titan Quest, because there was no way to script timed delays actions, developers created ambient creatures like Squirrels and used their animations as a way to count time to trigger the events.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/titan_quest_timed_delays.png" alt="Titan Quest action delays"  />
-</p>
+<p><img alt="Titan Quest action delays" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/titan_quest_timed_delays.png"></p>
 <hr>
 <h3 id="-journey-shadows">👾 Journey shadows</h3>
 <p>Journey doesn&rsquo;t have a real-time shadow system so they are hand painted and baked later. The results are impressive but the amount of work involved wow. <a href="https://x.com/matt_nava/status/1503152810078052355">source</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_1.png" alt="Journey Shadows"  />
-</p>
+<p><img alt="Journey Shadows" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_1.png"></p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png" alt="Journey Shadows"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png" alt="Journey Shadows"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png"><img alt="Journey Shadows" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png"><img alt="Journey Shadows" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-silent-hill-2-mirror">👾 Silent Hill 2 mirror</h3>
 <p>Another duplicate room mirror trick, this time Silent Hill 2, in the beginning of the game, the mirror reflection is just the entire bathroom duplicated.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/silent_hill_2_mirror_duplicate_room.jpg" alt="Silent Hill 2 mirror"  />
-</p>
+<p><img alt="Silent Hill 2 mirror" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/silent_hill_2_mirror_duplicate_room.jpg"></p>
 <hr>
 <p>(to be continued &hellip;. maybe)</p>
 ]]></content:encoded>
@@ -285,10 +266,11 @@
       <link>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</link>
       <pubDate>Sun, 03 Jun 2012 20:00:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</guid>
-      <description>I made a small post about detecting C++ memory leaks in Visual Studio in 2010. At the time that seemed to suffice, but some months ago someone told me about Visual Leak Detector and boy does it work.
-According to the website itself
-Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
-It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</description>
+      <description>&lt;p&gt;I made a small post about detecting C++ &lt;a href=&#34;https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/&#34; title=&#34;Tracking memory leaks in Visual Studio&#34;&gt;memory leaks in Visual Studio&lt;/a&gt; in 2010. At the time that seemed to suffice, but some months ago someone told me about &lt;a href=&#34;https://oneiric.github.io/vld/&#34;&gt;Visual Leak Detector&lt;/a&gt; and boy does it work.&lt;/p&gt;
+&lt;p&gt;According to the website itself&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.&lt;/p&gt;
+&lt;p&gt;It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I made a small post about detecting C++ <a href="/2010/10/tracking-memory-leaks-in-visual-studio/" title="Tracking memory leaks in Visual Studio">memory leaks in Visual Studio</a> in 2010. At the time that seemed to suffice, but some months ago someone told me about <a href="https://oneiric.github.io/vld/">Visual Leak Detector</a> and boy does it work.</p>
 <p>According to the website itself</p>
 <blockquote>
@@ -299,8 +281,7 @@ It’s pretty easy to use. After installing it, you just need to tell Visual C++
 </code></pre></blockquote>
 <p>It’s very easy to use and I tracked down a bunch of memory leaks hidden inside my code since the time I released Vizati.</p>
 <p>As expected this is a heavy beast and debbuding while using VLD required much more memory, but totally worth it. You can even output to a file</p>
-<p><a href="/wp-content/uploads/2012/06/vld.png"><img loading="lazy" src="/wp-content/uploads/2012/06/vld.png" alt=""  title="vld"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/06/vld.png"><img loading="lazy" src="/wp-content/uploads/2012/06/vld.png" title="vld"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -308,11 +289,13 @@ It’s pretty easy to use. After installing it, you just need to tell Visual C++
       <link>https://www.david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</link>
       <pubDate>Sat, 14 Jan 2012 21:27:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</guid>
-      <description>Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.
-But today I had this function I wanted to get rid of and simple change it with a public variable.
-So I had something like this.
-object-&amp;gt;setLayer(/*BLABAL BLA CODE, */); I want to replace it with something more simple
-object-&amp;gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in regular expressions mode I used this as a search string</description>
+      <description>&lt;p&gt;Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.&lt;/p&gt;
+&lt;p&gt;But today I had this function I wanted to get rid of and simple change it with a public variable.&lt;/p&gt;
+&lt;p&gt;So I had something like this.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;object&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;setLayer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;cm&#34;&gt;/*BLABAL BLA CODE, */&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I want to replace it with something more simple&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;object&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Z&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;cm&#34;&gt;/*BLABAL BLA CODE, */&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;So using Visual Studio Find/Replace in regular expressions mode I used this as a search string&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.</p>
 <p>But today I had this function I wanted to get rid of and simple change it with a public variable.</p>
 <p>So I had something like this.</p>
@@ -323,8 +306,7 @@ object-&amp;gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">setLayer</span><span class="err">\</span><span class="p">({.</span><span class="o">+</span><span class="p">}</span><span class="err">\</span><span class="p">);</span>
 </span></span></code></pre></div><p>And this as a Replace with string</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">Z</span><span class="o">=</span><span class="err">\</span><span class="mi">1</span><span class="p">;</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/regular-expression.jpg" alt=""  title="regular expression"  />
-</p>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/regular-expression.jpg" title="regular expression"></p>
 <p>Now, notice the first one, it’s actually simple, you have “setLayer”, followed by “\(” to tell the expression we really need to be that character, after than we have “.+”, which means match any single character except a line break and at least one occurrence. Followed by “\);”</p>
 <p>Now if you notice we have curly brackets around the inside of what the function receives as parameter, that’s because we are tagging that string to use it later.</p>
 <p>This way on the replace we simply need “Z=” followed by the first tagged string we have “\1”. if we have more curly brackets it would be “\2”, “\3” etc.</p>
@@ -336,16 +318,26 @@ object-&amp;gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in
       <link>https://www.david-amador.com/2011/12/basalt-code-swarm/</link>
       <pubDate>Fri, 23 Dec 2011 16:48:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/12/basalt-code-swarm/</guid>
-      <description>I discovered code swarm a while ago and decided to test on my own repositories.
-This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.
-This is the result.</description>
+      <description>&lt;p&gt;I discovered &lt;a href=&#34;http://code.google.com/p/codeswarm/&#34;&gt;code swarm&lt;/a&gt; a while ago and decided to test on my own repositories.&lt;/p&gt;
+&lt;p&gt;This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.&lt;/p&gt;
+&lt;p&gt;This is the result.&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/sOpYY2PhIb4?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;</description>
       <content:encoded><![CDATA[<p>I discovered <a href="http://code.google.com/p/codeswarm/">code swarm</a> a while ago and decided to test on my own repositories.</p>
 <p>This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.</p>
 <p>This is the result.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/sOpYY2PhIb4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sOpYY2PhIb4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -354,9 +346,14 @@ This is the result.</description>
       <link>https://www.david-amador.com/2011/03/blog-new-look/</link>
       <pubDate>Tue, 22 Mar 2011 10:56:50 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/03/blog-new-look/</guid>
-      <description>Spent a little time giving my blog a new look. It’s not that I didn’t like the old one but sometimes it was a bit of a mess, I’ve been getting many new readers so it was time for a cleaner look.
-My main concern was getting all code posts to be readable but I think they are
-class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P</description>
+      <description>&lt;p&gt;Spent a little time giving my blog a new look. It’s not that I didn’t like the old one but sometimes it was a bit of a mess, I’ve been getting many new readers so it was time for a cleaner look.&lt;/p&gt;
+&lt;p&gt;My main concern was getting all code posts to be readable but I think they are&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;XPTO&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;XPTO&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P&lt;br&gt;
+Also feedback on the new layout is most appreciated.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Spent a little time giving my blog a new look. It’s not that I didn’t like the old one but sometimes it was a bit of a mess, I’ve been getting many new readers so it was time for a cleaner look.</p>
 <p>My main concern was getting all code posts to be readable but I think they are</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">XPTO</span>
@@ -366,8 +363,7 @@ class XPTO { public: XPTO(); }; Let me know if you find any errors, since I’m 
 </span></span></code></pre></div><p>Let me know if you find any errors, since I’m not going to dig up the whole blog finding errors =P<br>
 Also feedback on the new layout is most appreciated.</p>
 <p>Here’s how it looked before</p>
-<p><a href="/wp-content/uploads/2011/03/david_amador_old_layout.jpg"><img loading="lazy" src="/wp-content/uploads/2011/03/david_amador_old_layout.jpg" alt=""  title="david_amador_old_layout"  />
-</a></p>
+<p><a href="/wp-content/uploads/2011/03/david_amador_old_layout.jpg"><img loading="lazy" src="/wp-content/uploads/2011/03/david_amador_old_layout.jpg" title="david_amador_old_layout"></a></p>
 <p>Another thing that’s been bothering me, which you may have noticed is that on the sidebar I have a small ad. It’s Google AdSense. I’ve been keeping it for almost 2 years now and I’m getting tired of it.<br>
 Why don’t I remove it? Well because I managed to sum up $84 in these last 2 years. And google only pays when we reach $100. It’s a small amount but well it’s mine, so I can either forget it or keep with it.<br>
 If I ever reach $100 and get paid I’m obviously removing it. I was hoping to use that money to pay for this blog hosting for another 1-2 years.</p>
@@ -380,10 +376,14 @@ So until I reach those $100 I’m keeping it around.</p>
       <link>https://www.david-amador.com/2011/03/so-where-is-that-motivation/</link>
       <pubDate>Wed, 09 Mar 2011 22:27:26 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/03/so-where-is-that-motivation/</guid>
-      <description>I follow a couple of dev blogs, some are game developers, others make websites or software.
-In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.
-Happens to me too, heck it happens to everyone once in a while…
-It’s something that happens usually half way though or after you get the initial prototype running.</description>
+      <description>&lt;p&gt;I follow a couple of dev blogs, some are game developers, others make websites or software.&lt;br&gt;
+In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Happens to me too, heck it happens to everyone once in a while…&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It’s something that happens usually half way though or after you get the initial prototype running.&lt;br&gt;
+Around one year ago (Feb 2010) when I started developing our first game it was all great, new stuff every day, things starting to work, replacing my crappy programmer art by Rita’s drawings.&lt;br&gt;
+The real endurance was after we had a working demo, and the decision of actually finishing the game.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I follow a couple of dev blogs, some are game developers, others make websites or software.<br>
 In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.</p>
 <blockquote>
@@ -425,10 +425,10 @@ But it happens, the other night I woke up at 6AM, had an idea for something so i
       <link>https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</link>
       <pubDate>Wed, 17 Nov 2010 23:27:04 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</guid>
-      <description>Since I’m out of the countries where WP7 Marketplace is available it’s been a real pain to check out new games and most of all if Vizati was already available.
-Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂
-So searching some forums I found a neat code to check this on the simulator.
-Basically create a new WP7 Silverlight App and write this main page code</description>
+      <description>&lt;p&gt;Since I’m out of the countries where WP7 Marketplace is available it’s been a real pain to check out new games and most of all if Vizati was already available.&lt;br&gt;
+Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂&lt;/p&gt;
+&lt;p&gt;So searching some forums I found a neat code to check this on the simulator.&lt;/p&gt;
+&lt;p&gt;Basically create a new WP7 Silverlight App and write this main page code&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Since I’m out of the countries where WP7 Marketplace is available it’s been a real pain to check out new games and most of all if Vizati was already available.<br>
 Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂</p>
 <p>So searching some forums I found a neat code to check this on the simulator.</p>
@@ -449,8 +449,7 @@ Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span></code></pre></div><p>Run it and you’ll get this<br>
-<a href="/wp-content/uploads/2010/11/wp7_marketplace.jpg"><img loading="lazy" src="/wp-content/uploads/2010/11/wp7_marketplace.jpg" alt=""  title="wp7_marketplace"  />
-</a></p>
+<a href="/wp-content/uploads/2010/11/wp7_marketplace.jpg"><img loading="lazy" src="/wp-content/uploads/2010/11/wp7_marketplace.jpg" title="wp7_marketplace"></a></p>
 <p>Oh, the first time you launch the simulator you’ll get a connection error, usually if the simulator just booted. Just launch the app again</p>
 ]]></content:encoded>
     </item>
@@ -459,10 +458,16 @@ Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun
       <link>https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</link>
       <pubDate>Tue, 19 Oct 2010 14:09:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/</guid>
-      <description>I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.
-I know there are other and better solution but this can be handy for quick findings without much hassle.
-First place this code in your entry point file, generally main.cpp inside your main() function
-#ifdef _DEBUG int flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG); flag |= _CRTDBG_LEAK_CHECK_DF; // Turn on leak-checking bit _CrtSetDbgFlag(flag); #endif Now just run you game/program as you would normally, in debug mode of course.</description>
+      <description>&lt;p&gt;I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.&lt;br&gt;
+I know there are other and better solution but this can be handy for quick findings without much hassle.&lt;/p&gt;
+&lt;p&gt;First place this code in your entry point file, generally main.cpp inside your main() function&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#ifdef _DEBUG
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;flag&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_CrtSetDbgFlag&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_CRTDBG_REPORT_FLAG&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;n&#34;&gt;flag&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_CRTDBG_LEAK_CHECK_DF&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Turn on leak-checking bit
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;	&lt;span class=&#34;n&#34;&gt;_CrtSetDbgFlag&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;flag&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#endif
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now just run you game/program as you would normally, in debug mode of course.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.<br>
 I know there are other and better solution but this can be handy for quick findings without much hassle.</p>
 <p>First place this code in your entry point file, generally main.cpp inside your main() function</p>
@@ -474,8 +479,7 @@ I know there are other and better solution but this can be handy for quick findi
 </span></span><span class="line"><span class="cl"><span class="cp">#endif
 </span></span></span></code></pre></div><p>Now just run you game/program as you would normally, in debug mode of course.</p>
 <p>After you close it you’ll get a nice log in the output window like this one:</p>
-<p><a href="/wp-content/uploads/2010/10/memory_leaks_output.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/memory_leaks_output.jpg" alt=""  title="memory_leaks_output"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/10/memory_leaks_output.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/memory_leaks_output.jpg" title="memory_leaks_output"></a></p>
 <p>See those numbers before each memory leak between brackets? Grab one of those and add this line right before the #endif</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">...</span>
@@ -491,10 +495,20 @@ I know there are other and better solution but this can be handy for quick findi
       <link>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</link>
       <pubDate>Sun, 10 Oct 2010 23:37:04 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/</guid>
-      <description>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.
-You can use IsolatedStorage for that
-using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
-IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); // grab the storage FileStream stream = store.OpenFile(&amp;#34;test.txt&amp;#34;, FileMode.Create); // Open a file in Create mode BinaryWriter writer = new BinaryWriter(stream); float myvar = 5.</description>
+      <description>&lt;p&gt;I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.&lt;br&gt;
+You can use &lt;strong&gt;IsolatedStorage&lt;/strong&gt; for that&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;System.IO.IsolatedStorage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;IsolatedStorageFile&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;store&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;IsolatedStorageFile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GetUserStoreForApplication&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// grab the storage&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;FileStream&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;stream&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;store&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;OpenFile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;test.txt&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;FileMode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Create&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Open a file in Create mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;BinaryWriter&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BinaryWriter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;stream&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;float&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;myvar&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;5.0f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Write&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;something&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Write&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;myvar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;writer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For loading is pretty much the same thing:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.<br>
 You can use <strong>IsolatedStorage</strong> for that</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">
@@ -529,9 +543,9 @@ You can use <strong>IsolatedStorage</strong> for that</p>
       <link>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</link>
       <pubDate>Wed, 14 Jul 2010 15:18:21 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</guid>
-      <description>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.
-When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.
-On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button.</description>
+      <description>&lt;p&gt;One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.&lt;br&gt;
+When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.&lt;/p&gt;
+&lt;p&gt;On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button. Sure you can point it to the same one and make a bunch of if’s and then point to a Global var which does the correct action, but this is not elegant and sure as hell not easy to add/modify stuff.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.<br>
 When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.</p>
 <p>On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button. Sure you can point it to the same one and make a bunch of if’s and then point to a Global var which does the correct action, but this is not elegant and sure as hell not easy to add/modify stuff.</p>
@@ -539,8 +553,7 @@ When I moved to C# I was really happy with the way delegates work, it’s simple
 1- Do your own – I’ve made one that worked but couldn’t get around to add parameters. I think we might skip this one since you are probably looking for a quick solution.<br>
 2 – Use <a href="http://www.boost.org/">boost</a> – If you don’t know this have a look, even for other stuff, Boost has tons of awesome apis for helping C++ development. Including smart pointers that basically delete themselves automatically.<br>
 3 – Use <a href="http://codeplea.com/pluscallback/">PlusCallback</a> – I decided to use this one.</p>
-<p><a href="/wp-content/uploads/2010/07/cpp_callback_benchmark.png"><img loading="lazy" src="/wp-content/uploads/2010/07/cpp_callback_benchmark.png" alt=""  title="cpp_callback_benchmark"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/07/cpp_callback_benchmark.png"><img loading="lazy" src="/wp-content/uploads/2010/07/cpp_callback_benchmark.png" title="cpp_callback_benchmark"></a></p>
 <p>And it’s simple to use</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// Callback without parameters
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span> 
@@ -570,36 +583,30 @@ When I moved to C# I was really happy with the way delegates work, it’s simple
       <link>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</link>
       <pubDate>Tue, 13 Apr 2010 16:30:15 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</guid>
-      <description>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.
-First time I installed VS2010 was in the RC form mainly because of WP7 Developer’s Tools and XNA4.0 but haven’t made many investment in searching for new features.
-But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.</description>
+      <description>&lt;p&gt;Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.&lt;/p&gt;
+&lt;p&gt;First time I installed VS2010 was in the RC form mainly because of &lt;a href=&#34;https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/&#34;&gt;WP7 Developer’s Tools and XNA4.0&lt;/a&gt; but haven’t made many investment in searching for new features.&lt;/p&gt;
+&lt;p&gt;But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.&lt;/p&gt;
+&lt;p&gt;On a side note to WP7 developers, if you are using VS RC to develop application to the phone don’t install the &lt;a href=&#34;https://web.archive.org/web/20100623130306/http://klucher.com:80/blog/visual-studio-2010-and-windows-phone-developer-toolsxna-game-studio-4-0/&#34;&gt;RTM version of VS2010 since it’s not compatible with WP7 developer tools&lt;/a&gt; yet. You have to stick with the RC for now.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.</p>
 <p>First time I installed VS2010 was in the RC form mainly because of <a href="/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/">WP7 Developer’s Tools and XNA4.0</a> but haven’t made many investment in searching for new features.</p>
 <p>But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.</p>
 <p>On a side note to WP7 developers, if you are using VS RC to develop application to the phone don’t install the <a href="https://web.archive.org/web/20100623130306/http://klucher.com:80/blog/visual-studio-2010-and-windows-phone-developer-toolsxna-game-studio-4-0/">RTM version of VS2010 since it’s not compatible with WP7 developer tools</a> yet. You have to stick with the RC for now.</p>
 <p>Booting the new VS we get a nice splash screen</p>
-<p><a href="/wp-content/uploads/2010/04/vs_splash_logo.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_splash_logo-300x210.jpg" alt=""  title="vs_splash_logo"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/04/vs_splash_logo.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_splash_logo-300x210.jpg" title="vs_splash_logo"></a></p>
 <p>The new UI looks really clean and pretty.</p>
-<p><a href="/wp-content/uploads/2010/04/vs_entry.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_entry-300x162.jpg" alt=""  title="vs_entry"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/04/vs_entry.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_entry-300x162.jpg" title="vs_entry"></a></p>
 <p>The new Code Editor allows zooming in and out of code. For those days were your eyes are already red from trying to read so much tiny code. Sure you can always change the font size but doing this on the fly is way better.</p>
-<p><a href="/wp-content/uploads/2010/04/vs_zoom_feature.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_zoom_feature-300x178.jpg" alt=""  title="vs_zoom_feature"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/04/vs_zoom_feature.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_zoom_feature-300x178.jpg" title="vs_zoom_feature"></a></p>
 <p>One feature that I would never remember on asking but it’s really handy is Code Selection Block, basically by pressing the Alt Key and making a selection around a block of code, like this:</p>
-<p><a href="/wp-content/uploads/2010/04/vs_code_block_selection_01.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_code_block_selection_01-300x144.jpg" alt=""  title="vs_code_block_selection_01"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/04/vs_code_block_selection_01.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_code_block_selection_01-300x144.jpg" title="vs_code_block_selection_01"></a></p>
 <p>See how just Vector3 is selected?</p>
 <p>Now start changing that block to something else</p>
-<p><a href="/wp-content/uploads/2010/04/vs_code_block_selection_02.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_code_block_selection_02-300x144.jpg" alt=""  title="vs_code_block_selection_02"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/04/vs_code_block_selection_02.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_code_block_selection_02-300x144.jpg" title="vs_code_block_selection_02"></a></p>
 <p>And voila, you are changing that block of code on the fly 😀 This works for copy paste as well. I’m pretty convinced this allows other stuff too but can’t figure out more usages.</p>
 <p>Now, for the new intellisense. It’s not just plain dumb anymore, It won’t search just Classes/Members starting with the letters you typed, it will actively search patterns as well.</p>
-<p><a href="/wp-content/uploads/2010/04/vs_intelissense.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_intelissense-300x144.jpg" alt=""  title="vs_intelissense"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/04/vs_intelissense.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_intelissense-300x144.jpg" title="vs_intelissense"></a></p>
 <p>Multi Monitor FTW</p>
-<p><a href="/wp-content/uploads/2010/04/vs_dual_monitor.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_dual_monitor-300x101.jpg" alt=""  title="vs_dual_monitor"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/04/vs_dual_monitor.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_dual_monitor-300x101.jpg" title="vs_dual_monitor"></a></p>
 <p>Just drag and drop your files to another screen and there you go, multi monitor support. No more opening another instance of Visual Studio to do this 😀</p>
 <p>I know there’s tons of other stuff but that’s what I uncovered so far. Know any more stuff? Please do tell.</p>
 ]]></content:encoded>
@@ -609,17 +616,15 @@ But being available at Dreamspark I downloaded the Professional version and deci
       <link>https://www.david-amador.com/2010/03/write-better-code-using-fxcop/</link>
       <pubDate>Thu, 18 Mar 2010 10:32:52 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/03/write-better-code-using-fxcop/</guid>
-      <description>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.
-For those who don’t know you can download it here and read the MSDN documentation here.
-FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</description>
+      <description>&lt;p&gt;Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.&lt;/p&gt;
+&lt;p&gt;For those who don’t know you can download it &lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?familyid=3389F7E4-0E55-4A4D-BC74-4AEABB17997B&amp;amp;displaylang=en&#34;&gt;here&lt;/a&gt; and read the MSDN documentation &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb429476%28VS.80%29.aspx&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Microsoft FxCop, know what this is all about? Good for you, keep using it, It’s a valuable tool.</p>
 <p>For those who don’t know you can download it <a href="http://www.microsoft.com/downloads/details.aspx?familyid=3389F7E4-0E55-4A4D-BC74-4AEABB17997B&amp;displaylang=en">here</a> and read the MSDN documentation <a href="http://msdn.microsoft.com/en-us/library/bb429476%28VS.80%29.aspx">here</a>.</p>
 <p>FxCop is a is an application that analyzes managed code assemblies and reports information about the assemblies, such as possible design, localization, performance, and security improvements. I decided to make a profile of my current working project and it reported tons of stuff.</p>
 <p>Basically it suggests you better name conventions, members that could be static, using arrays where you are using multidimensional ones, It even reported an incorrect way I used Garbage Collector.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/03/fxcop_01.png" alt=""  title="fxcop_01"  />
-</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/03/fxcop_02.png" alt=""  title="fxcop_02"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/fxcop_01.png" title="fxcop_01"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/fxcop_02.png" title="fxcop_02"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -627,10 +632,16 @@ FxCop is a is an application that analyzes managed code assemblies and reports i
       <link>https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/</link>
       <pubDate>Sat, 12 Dec 2009 18:38:33 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/</guid>
-      <description>When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.
-Today I decided to see the differences between them:
-FOR
-int[] values = new int[1]; int total = 0; for(int i = 0; i &amp;lt; values.</description>
+      <description>&lt;p&gt;When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.&lt;/p&gt;
+&lt;p&gt;Today I decided to see the differences between them:&lt;/p&gt;
+&lt;p&gt;FOR&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;values&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;total&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Length&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;++)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;total&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;values&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;FOREACH&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.</p>
 <p>Today I decided to see the differences between them:</p>
 <p>FOR</p>
@@ -673,35 +684,35 @@ int[] values = new int[1]; int total = 0; for(int i = 0; i &amp;lt; values.</des
 </span></span></code></pre></div><p>As you can see we end up with much more instructions.<br>
 Some simple tests gives these results:</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th style="text-align:center">Using Objects</th>
-<th style="text-align:center">Using Integers</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td style="text-align:center">FOR</td>
-<td style="text-align:center">FOREACH</td>
-</tr>
-<tr>
-<td>ArrayList – 2147483 items</td>
-<td style="text-align:center">88.6</td>
-<td style="text-align:center">115.9</td>
-</tr>
-<tr>
-<td>generic collection – 2147483 items</td>
-<td style="text-align:center">84.4</td>
-<td style="text-align:center">87.1</td>
-</tr>
-<tr>
-<td>Array – 2147483 items</td>
-<td style="text-align:center">48.1</td>
-<td style="text-align:center">49.8</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th style="text-align: center">Using Objects</th>
+          <th style="text-align: center">Using Integers</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td style="text-align: center">FOR</td>
+          <td style="text-align: center">FOREACH</td>
+      </tr>
+      <tr>
+          <td>ArrayList – 2147483 items</td>
+          <td style="text-align: center">88.6</td>
+          <td style="text-align: center">115.9</td>
+      </tr>
+      <tr>
+          <td>generic collection – 2147483 items</td>
+          <td style="text-align: center">84.4</td>
+          <td style="text-align: center">87.1</td>
+      </tr>
+      <tr>
+          <td>Array – 2147483 items</td>
+          <td style="text-align: center">48.1</td>
+          <td style="text-align: center">49.8</td>
+      </tr>
+  </tbody>
 </table>
 <p>*Time is in milliseconds.</p>
 <p>So what I’ve done after this was to replace some heavy foreach code on my engine by for loops. I guess small things can be neglected but it’s always nice to know where bottlenecks may happen.</p>
@@ -712,8 +723,8 @@ Some simple tests gives these results:</p>
       <link>https://www.david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</link>
       <pubDate>Fri, 30 Oct 2009 11:09:38 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/force-a-wmv-to-download-instead-of-opening-in-browser/</guid>
-      <description>I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.
-So just place this on your .htaccess on the root of your website.</description>
+      <description>&lt;p&gt;I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.&lt;/p&gt;
+&lt;p&gt;So just place this on your .htaccess on the root of your website.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I recently needed to force a WMV to download using Apache. The default behaviour for most browsers is to try to open the movie inside the browser itself. This works fine if the person has the plugin otherwise we just gonna have a blank page. Also for huge WMV is easier to download the file for later viewing.</p>
 <p>So just place this on your .htaccess on the root of your website.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-apache" data-lang="apache"><span class="line"><span class="cl">      <span class="nt">&lt;filesmatch&gt;</span>
@@ -728,10 +739,13 @@ So just place this on your .htaccess on the root of your website.</description>
       <link>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</link>
       <pubDate>Sun, 25 Oct 2009 19:16:12 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</guid>
-      <description>Making a clickable text or image is easy, just add the &amp;lt;a&amp;gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.
-The following code is for JQuery but switching it to your favorite JS framework should be very easy.
-First start by adding this to your div
-&amp;lt;div class=&amp;#34;clickable&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; Now a little css to simulate the pointer on that div</description>
+      <description>&lt;p&gt;Making a clickable text or image is easy, just add the &amp;lt;a&amp;gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.&lt;br&gt;
+The following code is for JQuery but switching it to your favorite JS framework should be very easy.&lt;/p&gt;
+&lt;p&gt;First start by adding this to your div&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;clickable&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now a little css to simulate the pointer on that div&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Making a clickable text or image is easy, just add the &lt;a&gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.<br>
 The following code is for JQuery but switching it to your favorite JS framework should be very easy.</p>
 <p>First start by adding this to your div</p>

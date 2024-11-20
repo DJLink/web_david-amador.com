@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 21 Oct 2009 22:06:57 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/internet-explorer/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +18,12 @@
       <link>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</link>
       <pubDate>Wed, 21 Oct 2009 22:06:57 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
-      <description>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</description>
+      <description>&lt;p&gt;One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</p>
 <p>Adobe has launched a neat website for testing this, just go to <a href="https://browserlab.adobe.com/">https://browserlab.adobe.com/</a>, register an account and test it for yourself, it was a side by site view and even a <a href="http://en.wikipedia.org/wiki/Onion_skinning">Onion view</a></p>
-<!-- raw HTML omitted -->
+<p><a href=""><img loading="lazy" src="/wp-content/uploads/2009/10/adobe_browserlab_david_amador.jpg"></a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2009/10/adobe_browserlab_different_pixel.jpg"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2009/10/adobe_browserlab_rita_silva.jpg"></p>
 ]]></content:encoded>
     </item>
   </channel>

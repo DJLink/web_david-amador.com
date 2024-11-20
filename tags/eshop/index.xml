@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>eshop on David Amador</title>
+    <title>Eshop on David Amador</title>
     <link>https://www.david-amador.com/tags/eshop/</link>
-    <description>Recent content in eshop on David Amador</description>
+    <description>Recent content in Eshop on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 30 Sep 2016 07:34:46 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/eshop/index.xml" rel="self" type="application/rss+xml" />
@@ -18,13 +18,15 @@
       <link>https://www.david-amador.com/2016/09/qod-is-now-available-on-eshop-for-nintendo-3ds-and-wii-u/</link>
       <pubDate>Fri, 30 Sep 2016 07:34:46 +0000</pubDate>
       <guid>https://www.david-amador.com/2016/09/qod-is-now-available-on-eshop-for-nintendo-3ds-and-wii-u/</guid>
-      <description>The day has finally arrived!!
-Quest of Dungeons is now available in EU and US for your Wii U and/or Nintendo 3DS. If you search for the name on eShop in our device it should appear.
-Game costs $8.99/€8.99 and allows for cross buy, so if you buy the game for Wii U you’ll get the Nintendo 3DS version for free (and vice-versa).
-US Links
-Wii U
-Nintendo 3DS
-EU Links</description>
+      <description>&lt;p&gt;The day has finally arrived!!&lt;/p&gt;
+&lt;p&gt;Quest of Dungeons is now available in EU and US for your Wii U and/or Nintendo 3DS. If you search for the name on eShop in our device it should appear.&lt;/p&gt;
+&lt;p&gt;Game costs $8.99/€8.99 and allows for cross buy, so if you buy the game for Wii U you’ll get the Nintendo 3DS version for free (and vice-versa).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;US Links&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.nintendo.com/games/detail/quest-of-dungeons-wii-u&#34;&gt;Wii U&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.nintendo.com/games/detail/quest-of-dungeons-3ds&#34;&gt;Nintendo 3DS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EU Links&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.nintendo.co.uk/Games/Wii-U-download-software/Quest-of-Dungeons-1142251.html&#34;&gt;Wii U&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://www.nintendo.co.uk/Games/Nintendo-3DS-download-software/Quest-of-Dungeons-1142275.html&#34;&gt;Nintendo 3DS&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>The day has finally arrived!!</p>
 <p>Quest of Dungeons is now available in EU and US for your Wii U and/or Nintendo 3DS. If you search for the name on eShop in our device it should appear.</p>
 <p>Game costs $8.99/€8.99 and allows for cross buy, so if you buy the game for Wii U you’ll get the Nintendo 3DS version for free (and vice-versa).</p>
@@ -34,25 +36,27 @@ EU Links</description>
 <p><strong>EU Links</strong><br>
 <a href="http://www.nintendo.co.uk/Games/Wii-U-download-software/Quest-of-Dungeons-1142251.html">Wii U</a><br>
 <a href="http://www.nintendo.co.uk/Games/Nintendo-3DS-download-software/Quest-of-Dungeons-1142275.html">Nintendo 3DS</a></p>
-<p><a href="/wp-content/uploads/2016/08/WiiU_Image_13.png"><img loading="lazy" src="/wp-content/uploads/2016/08/WiiU_Image_13.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/07/screen_04.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_04.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/07/screen_02.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_02.png" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2016/08/WiiU_Image_09.png"><img loading="lazy" src="/wp-content/uploads/2016/08/WiiU_Image_09.png" alt=""  />
-</a></p>
+<p><a href="/wp-content/uploads/2016/08/WiiU_Image_13.png"><img loading="lazy" src="/wp-content/uploads/2016/08/WiiU_Image_13.png"></a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_04.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_04.png"></a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_02.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_02.png"></a></p>
+<p><a href="/wp-content/uploads/2016/08/WiiU_Image_09.png"><img loading="lazy" src="/wp-content/uploads/2016/08/WiiU_Image_09.png"></a></p>
 <p>Here’s the Wii U trailer:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/l0HGrk1b_UE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/l0HGrk1b_UE?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>And for Nintendo 3DS gameplay footage that I think covers well how the game works on that system:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/DD3Jql3tsOw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/DD3Jql3tsOw?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Once again thank you for your support and patience while I finished the game and I hope you like it. Looking forward to those <a href="https://miiverse.nintendo.net/titles/6437256809098983304/6437256809098983323">Miiverse drawings</a>!</p>
 ]]></content:encoded>
@@ -62,29 +66,25 @@ EU Links</description>
       <link>https://www.david-amador.com/2016/09/quest-of-dungeons-coming-to-nintendo-3ds-on-september-29/</link>
       <pubDate>Tue, 27 Sep 2016 09:20:51 +0000</pubDate>
       <guid>https://www.david-amador.com/2016/09/quest-of-dungeons-coming-to-nintendo-3ds-on-september-29/</guid>
-      <description>I have great news.
-Quest of Dungeons is coming to Nintendo 3DS on September 29.
-A couple weeks ago I announced that QoD was being released for Wii U on September 29 but I didn’t had a specific release date for the Nintendo 3DS version.
-I spent the last few weeks trying to sort all know issues on the Nintendo 3DS version and I’ve been working with Nintendo to see if it can be released at the same time as the Wii U version.</description>
+      <description>&lt;p&gt;I have great news.&lt;/p&gt;
+&lt;p&gt;Quest of Dungeons is coming to &lt;strong&gt;Nintendo 3DS&lt;/strong&gt; on &lt;strong&gt;September 29&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A couple weeks ago I announced that QoD was being released for &lt;a href=&#34;https://www.david-amador.com/2016/08/quest-of-dungeons-coming-to-wii-u-on-september-29/&#34;&gt;Wii U on September 29&lt;/a&gt; but I didn’t had a specific release date for the Nintendo 3DS version.&lt;/p&gt;
+&lt;p&gt;I spent the last few weeks trying to sort all know issues on the Nintendo 3DS version and I’ve been working with Nintendo to see if it can be released at the same time as the Wii U version. So everyone gets it on the same day \o/&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I have great news.</p>
 <p>Quest of Dungeons is coming to <strong>Nintendo 3DS</strong> on <strong>September 29</strong>.</p>
 <p>A couple weeks ago I announced that QoD was being released for <a href="/2016/08/quest-of-dungeons-coming-to-wii-u-on-september-29/">Wii U on September 29</a> but I didn’t had a specific release date for the Nintendo 3DS version.</p>
 <p>I spent the last few weeks trying to sort all know issues on the Nintendo 3DS version and I’ve been working with Nintendo to see if it can be released at the same time as the Wii U version. So everyone gets it on the same day \o/</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/07/screen_03.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2016/07/screen_03.png"></p>
 <p>Here are some screenshots</p>
-<p><a href="/wp-content/uploads/2016/07/screen_07.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_07.png" alt=""  />
-</a>  <a href="/wp-content/uploads/2016/07/screen_06.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_06.png" alt=""  />
-</a>  <a href="/wp-content/uploads/2016/07/screen_05.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_05.png" alt=""  />
-</a>  <a href="/wp-content/uploads/2016/07/screen_04.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_04.png" alt=""  />
-</a>  <a href="/wp-content/uploads/2016/07/screen_03.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_03.png" alt=""  />
-</a>  <a href="/wp-content/uploads/2016/07/screen_02.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_02.png" alt=""  />
-</a></p>
+<p><a href="/wp-content/uploads/2016/07/screen_07.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_07.png"></a>  <a href="/wp-content/uploads/2016/07/screen_06.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_06.png"></a>  <a href="/wp-content/uploads/2016/07/screen_05.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_05.png"></a>  <a href="/wp-content/uploads/2016/07/screen_04.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_04.png"></a>  <a href="/wp-content/uploads/2016/07/screen_03.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_03.png"></a>  <a href="/wp-content/uploads/2016/07/screen_02.png"><img loading="lazy" src="/wp-content/uploads/2016/07/screen_02.png"></a></p>
 <p>And a trailer:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ZjCf5Qsvh1c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZjCf5Qsvh1c?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <h2 id="faq">F.A.Q.</h2>
 <p><em><strong>-Does it support the “older” Nintendo 3DS model?</strong></em><br>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>iphonedev on David Amador</title>
+    <title>Iphonedev on David Amador</title>
     <link>https://www.david-amador.com/tags/iphonedev/</link>
-    <description>Recent content in iphonedev on David Amador</description>
+    <description>Recent content in Iphonedev on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 18 Mar 2011 10:06:24 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/iphonedev/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +18,30 @@
       <link>https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</link>
       <pubDate>Fri, 18 Mar 2011 10:06:24 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</guid>
-      <description>So you can’t make a game without images, right? Well, actually you can but that’s another story.
-But how can you load a jpg or a png and use then on OpenGLES?
-First let’s make a simple class Texture2D
-class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image</description>
+      <description>&lt;p&gt;So you can’t make a game without images, right? Well, actually &lt;a href=&#34;http://en.wikipedia.org/wiki/List_of_text-based_computer_games&#34;&gt;you can&lt;/a&gt; but that’s another story.&lt;/p&gt;
+&lt;p&gt;But how can you load a jpg or a png and use then on OpenGLES?&lt;/p&gt;
+&lt;p&gt;First let’s make a simple class Texture2D&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Texture2D&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;n&#34;&gt;Texture2D&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;n&#34;&gt;_textureId&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_width&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_height&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;virtual&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Texture2D&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             &lt;span class=&#34;c1&#34;&gt;// Delete Texture from HGL Memory
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;             &lt;span class=&#34;n&#34;&gt;glDeleteTextures&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GLuint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_textureId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;  &lt;span class=&#34;nf&#34;&gt;getTextureId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_textureId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;protected&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_textureId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;   &lt;span class=&#34;c1&#34;&gt;// The reference ID of the texture in OpenGL memory
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now for the code to actually load the image&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So you can’t make a game without images, right? Well, actually <a href="http://en.wikipedia.org/wiki/List_of_text-based_computer_games">you can</a> but that’s another story.</p>
 <p>But how can you load a jpg or a png and use then on OpenGLES?</p>
 <p>First let’s make a simple class Texture2D</p>
@@ -106,33 +126,45 @@ class Texture2D { public: Texture2D(int id, int width, int height) { _textureId 
       <link>https://www.david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/</link>
       <pubDate>Wed, 06 Oct 2010 17:33:43 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/</guid>
-      <description>People who follow me on twitter are probably aware, or maybe not:
-After 3 months tacking an iPhone port it was finally approved by Apple to the App store and it’s on sale today!!!
-Hypnotizing start…
-Buy buy buy….
-On the count of 3 you will feel refreshed and happy for buying this awesome game…
-1
-2
-3
-Oh right, here’s the trailer:
-I’ve searched some forums and found some talking about it and that they liked, general feedback looks positive.</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2010/10/vizati-iphone-icon.png" alt=""  title="vizati-iphone-icon"  />
-<br>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/10/vizati-iphone-icon.png&#34; title=&#34;vizati-iphone-icon&#34;&gt;&lt;br&gt;
+People who follow me on twitter are probably aware, or maybe not:&lt;/p&gt;
+&lt;p&gt;After 3 months tacking an iPhone port it was finally approved by Apple to the App store and it’s on sale today!!!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hypnotizing start…&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Buy buy buy….&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://itunes.apple.com/us/app/vizati/id393099810?mt=8&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/10/iphone_buy_btn.png&#34; title=&#34;Buy Vizati&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On the count of 3 you will feel refreshed and happy for buying this awesome game…&lt;/p&gt;
+&lt;p&gt;1&lt;br&gt;
+2&lt;br&gt;
+3&lt;/p&gt;
+&lt;p&gt;Oh right, here’s the trailer:&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/XxwNDTA1SmI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;I’ve searched some forums and found some talking about it and that they liked, general feedback looks positive. It’s great that people have fun with out little game.&lt;br&gt;
+If everything goes as planned a version 1.1 with &lt;a href=&#34;http://www.differentpixel.com/2010/09/vizati-iphone-small-faq/&#34;&gt;retina support a few other improvements&lt;/a&gt;.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2010/10/vizati-iphone-icon.png" title="vizati-iphone-icon"><br>
 People who follow me on twitter are probably aware, or maybe not:</p>
 <p>After 3 months tacking an iPhone port it was finally approved by Apple to the App store and it’s on sale today!!!</p>
 <p><strong>Hypnotizing start…</strong></p>
 <p><strong>Buy buy buy….</strong></p>
-<p><a href="http://itunes.apple.com/us/app/vizati/id393099810?mt=8"><img loading="lazy" src="/wp-content/uploads/2010/10/iphone_buy_btn.png" alt=""  title="Buy Vizati"  />
-</a></p>
+<p><a href="http://itunes.apple.com/us/app/vizati/id393099810?mt=8"><img loading="lazy" src="/wp-content/uploads/2010/10/iphone_buy_btn.png" title="Buy Vizati"></a></p>
 <p>On the count of 3 you will feel refreshed and happy for buying this awesome game…</p>
 <p>1<br>
 2<br>
 3</p>
 <p>Oh right, here’s the trailer:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/XxwNDTA1SmI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/XxwNDTA1SmI?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>I’ve searched some forums and found some talking about it and that they liked, general feedback looks positive. It’s great that people have fun with out little game.<br>
 If everything goes as planned a version 1.1 with <a href="http://www.differentpixel.com/2010/09/vizati-iphone-small-faq/">retina support a few other improvements</a>.</p>
@@ -145,16 +177,15 @@ If everything goes as planned a version 1.1 with <a href="http://www.differentpi
       <link>https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</link>
       <pubDate>Fri, 10 Sep 2010 09:24:23 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</guid>
-      <description>This had me scratching my head for awhile.
-At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.
-A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.
-To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.</description>
+      <description>&lt;p&gt;This had me scratching my head for awhile.&lt;br&gt;
+At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.&lt;/p&gt;
+&lt;p&gt;A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.&lt;br&gt;
+To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This had me scratching my head for awhile.<br>
 At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.</p>
 <p>A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.<br>
 To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/09/retina_pixels.jpg" alt=""  title="retina_pixels"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/09/retina_pixels.jpg" title="retina_pixels"></p>
 <p>So the API handles this differently. If you developed for iPad you notice that glGetRenderbufferParameterivOES return 1024×768 but not retina displays. Instead you have to check it yourself:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">w</span> <span class="o">=</span> <span class="mi">320</span><span class="p">;</span>
@@ -187,13 +218,15 @@ For touch positions just multiply each position by the scale factor.</p>
       <link>https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/</link>
       <pubDate>Wed, 08 Sep 2010 12:01:37 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/</guid>
-      <description>I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.
-This covers iPhones, iPod Touches and iPad.
-iPhone/iPhone 3G – 412 MHz / 128MB / 320×480
-iPhone 3GS – 600 MHz / 256MB / 320×480
-iPhone 4 -~800MHz / 512MB / 640×960
-iPod Touch 1G – 412 MHz / 128MB / 320×480
-iPod Touch 2G – 532 MHz / 128MB / 320×480</description>
+      <description>&lt;p&gt;I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.&lt;/p&gt;
+&lt;p&gt;This covers iPhones, iPod Touches and iPad.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;iPhone/iPhone 3G&lt;/strong&gt; – 412 MHz / 128MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPhone 3GS&lt;/strong&gt; – 600 MHz / 256MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPhone 4&lt;/strong&gt; -~800MHz / 512MB / 640×960&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;iPod Touch 1G&lt;/strong&gt; – 412 MHz / 128MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPod Touch 2G&lt;/strong&gt; – 532 MHz / 128MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPod Touch 3G&lt;/strong&gt; – 600 MHz / 256MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPod Touch 4G&lt;/strong&gt; – 800 MHz / 256MB / 640×960&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.</p>
 <p>This covers iPhones, iPod Touches and iPad.</p>
 <p><strong>iPhone/iPhone 3G</strong> – 412 MHz / 128MB / 320×480<br>
@@ -213,15 +246,14 @@ iPod Touch 2G – 532 MHz / 128MB / 320×480</description>
       <link>https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</link>
       <pubDate>Fri, 27 Aug 2010 14:49:39 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</guid>
-      <description>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.
-Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.
-I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.</description>
+      <description>&lt;p&gt;Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.&lt;/p&gt;
+&lt;p&gt;Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.&lt;/p&gt;
+&lt;p&gt;I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.</p>
 <p>Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.</p>
 <p>I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.</p>
 <p>So for Landscape with Home button on the right</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_portrait_homebutton_right.png" alt=""  title="iphone_portrait_homebutton_right"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_portrait_homebutton_right.png" title="iphone_portrait_homebutton_right"></p>
 <p>It’s something like:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"> <span class="n">glPushMatrix</span><span class="p">();</span>   <span class="c1">// Push a matrix to the stack
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span> <span class="n">glRotatef</span><span class="p">(</span><span class="mf">90.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">1.0f</span><span class="p">);</span> <span class="c1">// Rotate 90 degrees
@@ -232,8 +264,7 @@ I’ve been using OpenGL to support the device orientation, most people on forum
 </span></span><span class="line"><span class="cl"> <span class="n">glPopMatrix</span><span class="p">();</span>
 </span></span></code></pre></div><p>So basically we are drawing all in a regular direction but rotating everything 90 degrees and translating to fit the screen properly.</p>
 <p>For the home button on the left</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_portrait_homebutton_left.png" alt=""  title="iphone_portrait_homebutton_left"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_portrait_homebutton_left.png" title="iphone_portrait_homebutton_left"></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">glPushMatrix</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl"><span class="n">glRotatef</span><span class="p">(</span><span class="o">-</span><span class="mf">90.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">1.0f</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="n">glTranslatef</span><span class="p">(</span><span class="o">-</span><span class="mi">480</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">);</span> <span class="c1">// Move horizontally the screen Height
@@ -245,8 +276,7 @@ I’ve been using OpenGL to support the device orientation, most people on forum
 Oh, I’ve hard-coded the values (480 and 320) but you should make this a variable to support higher resolutions, iPhone 4 and iPad for instance.</p>
 <p>Although you could use iOS api to auto rotate this automatically I’ve read on numerous places that it’s slows down everything a bit and doing this on OpenGL is pretty quick and clean and if you ever port your game to another device (Android, etc) you don’t have to care about this again.</p>
 <p>So now for the tricky part, to detect the device current orientation, the accelerometer can help out pretty good. We can check for the current angle to calculate where the device is pointing.</p>
-<p><a href="/wp-content/uploads/2010/08/iphone_angles_orientation.png"><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_angles_orientation.png" alt=""  title="iphone_angles_orientation"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/iphone_angles_orientation.png"><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_angles_orientation.png" title="iphone_angles_orientation"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">accelerometer</span><span class="p">:(</span><span class="n">UIAccelerometer</span> <span class="o">*</span><span class="p">)</span><span class="n">accelerometer</span> <span class="nl">didAccelerate</span><span class="p">:(</span><span class="n">UIAcceleration</span> <span class="o">*</span><span class="p">)</span><span class="n">acceleration</span>
 </span></span><span class="line"><span class="cl"> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="c1">// Get the current device angle
@@ -276,9 +306,12 @@ Oh, I’ve hard-coded the values (480 and 320) but you should make this a variab
 <p>Some cool things you can do it when switching to iterate the rotation angle, that way you can simulate the screen rotation same way iOS does. Also you may want to put some sort of delay when switching.</p>
 <p>Here’s the result</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/OfETeCcpM7U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OfETeCcpM7U?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -287,14 +320,13 @@ Oh, I’ve hard-coded the values (480 and 320) but you should make this a variab
       <link>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</link>
       <pubDate>Thu, 26 Aug 2010 19:05:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</guid>
-      <description>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.
-Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.
-Here’s a picture she took after a few adjustments.</description>
+      <description>&lt;p&gt;It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.&lt;/p&gt;
+&lt;p&gt;Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.&lt;/p&gt;
+&lt;p&gt;Here’s a picture she took after a few adjustments.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.</p>
 <p>Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.</p>
 <p>Here’s a picture she took after a few adjustments.</p>
-<p><a href="http://www.indiedb.com/games/vizati/images/vizati-iphone" title="Vizati iPhone - Indie DB"><img loading="lazy" src="http://media.indiedb.com/cache/images/games/1/13/12804/thumb_620x2000/vizati_iphone.jpg" alt="Vizati iPhone"  />
-</a></p>
+<p><a href="http://www.indiedb.com/games/vizati/images/vizati-iphone" title="Vizati iPhone - Indie DB"><img alt="Vizati iPhone" loading="lazy" src="http://media.indiedb.com/cache/images/games/1/13/12804/thumb_620x2000/vizati_iphone.jpg"></a></p>
 <p><strong>Initial testing</strong></p>
 <p>First thing I notice when testing on the device were slowdowns when the cube is fading, it had a lot of particles filling the screen and the framerate dropped down, although this only happens when each level loads and doesn’t interfere with gameplay itself I got a little frustrated.<br>
 On the simulator It slowed down a little but only on Debug and even more OpenGL on the emulator is by software.<br>
@@ -305,9 +337,12 @@ I increased the buffers size and numbers, so now I have 5 buffers with 65536 byt
 Solved the problem immediately. Yesterday while playing the game (after 10-20m) the sound started having hiccups again, although the game was fine, so I may still have some flaw in there, must research it more.</p>
 <p>Here’s a video where of me playing with some particles:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ch3QvoBd1_c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ch3QvoBd1_c?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p><strong>Primitives</strong><br>
 I can get much more particles on screen now because my first attempt to draw primitives in OpenGLES was drawing Quads with an mapped texture. When I got that working I would just send vertex points and texture coordinates and iterate all objects I wanted to draw.<br>

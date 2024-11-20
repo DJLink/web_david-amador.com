@@ -10,7 +10,7 @@
 <meta name="description" content="David Amador Blog - Indie Game Developer">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/categories/game-development/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -19,6 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://www.david-amador.com/categories/game-development/index.xml">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/categories/game-development/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,16 +29,17 @@
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="Game Development" />
-<meta property="og:description" content="David Amador Blog - Indie Game Developer" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.david-amador.com/categories/game-development/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
-<meta name="twitter:title" content="Game Development"/>
-<meta name="twitter:description" content="David Amador Blog - Indie Game Developer"/>
+<meta property="og:url" content="https://www.david-amador.com/categories/game-development/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="Game Development">
+  <meta property="og:description" content="David Amador Blog - Indie Game Developer">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:title" content="Game Development">
+<meta name="twitter:description" content="David Amador Blog - Indie Game Developer">
 
 </head>
 
@@ -52,7 +54,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -113,7 +115,7 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/categories/">Categories</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/categories/">Categories</a></div>
   <h1>
     Game Development
     <a href="/categories/game-development/index.xml" title="RSS" aria-label="RSS">
@@ -128,6 +130,148 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/06/openal-125x166.gif" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Playing sound using OpenAL
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>For sound I use OpenAL, it’s free, cross-platform, I’ve managed to get it working on iPhone, Windows and Mac.
+Setting up OpenAL to play a sound is pretty straight forward, a bit like OpenGL.
+First you need to create a context.
+ALCcontext *context; ALCdevice *device; device = alcOpenDevice(NULL, ALC_DEFAULT_DEVICE_SPECIFIER); if (device == NULL) { // Handle Exception } //Create a context context=alcCreateContext(device,NULL); //Set active context alcMakeContextCurrent(context); // Clear Error Code alGetError(); Now for the second part, loading a wav file. You have to open a file, fill buffers with data and then attach it to a source.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-06-10 09:22:26 +0000 UTC'>June 10, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;269 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Playing sound using OpenAL" href="https://www.david-amador.com/2011/06/playing-sound-using-openal/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2009/12/sapphire1.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Time for some new tools and editor
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Holy cow, this is my 100th post. “Insert epic sentence”
+Depending on how much time you follow my blog or Different Pixel activity you may know that we have an internal Editor called Sapphire
+Past
+It was developed over a year ago with the intent of being a “All in one” 2D game editor for our games, built on XNA. It started out pretty well and I’m very happy with the outcome. It served it’s purpose. The problem now is, most of the stuff we need, apart from the generic sprites positioning, rotation etc, are very specific stuff to the game/project in hands.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-05-27 12:40:29 +0000 UTC'>May 27, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;321 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Time for some new tools and editor" href="https://www.david-amador.com/2011/05/time-for-some-new-tools-and-editor/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/05/6a0111683c7a25970c0133f561afa7970b-200wi.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Indie and day job, making it work
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A large percentage of the indie developers have to work on their project at night and/or weekends.
+In order to pay the bills they have to maintain a day job. There’s no shame in that, many do it, I do it, not everyone can make a mega jump right into fame and fortune with a single project.
+The rest of us mere mortals have to gradually build a fan base, learn from past mistakes, do better PR, etc.
+Looking at successes like World of Goo, Braid, Trainyard, it all sounds so easy, everyone quickly makes such huge hype that it seems like they only have to finish the game and they are instantly rich.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-05-13 13:10:49 +0000 UTC'>May 13, 2011</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;781 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Indie and day job, making it work" href="https://www.david-amador.com/2011/05/indie-and-day-job-making-it-work/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/04/gl_fbo02.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">OpenGL Render to Texture
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Render to texture is a very handy functionality.
+Imagine your game allows for some character customization. You have the body, some different hats, different clothes and other small stuff. Now the easiest way to render this is to just draw it piece by piece every frame. With the proper Z coordinates everything falls in place.
+But you now have like 4-5 draw calls for one single object. Worse, you might have different textures and swamping textures is expensive.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-04-29 09:25:33 +0000 UTC'>April 29, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;238 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to OpenGL Render to Texture" href="https://www.david-amador.com/2011/04/opengl-render-to-texture/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/04/minority-report-touch-screen.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Tracking/Identifying individual touches on iPhone
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I got this question the other day, how to track individual touches if you are using a couple of fingers for a game?
+Actually it’s pretty easy if you can access the touch previous position and it’s current position.
+Let’s start with a small class to store the information
+class Touch { public: Touch(); ~Touch(); void update_position(float x, float y){ _current_position.x = x; _current_position.x = y; } bool is_same_touch(float x, float y) { if(_current_position.x == x &amp;&amp; _current_position.y == y) return true; return false; } protected: CGPoint _current_position; }; Let’s a assume the “move” movement
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-04-15 12:01:37 +0000 UTC'>April 15, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;185 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Tracking/Identifying individual touches on iPhone" href="https://www.david-amador.com/2011/04/tracking-identifying-individual-touches-on-iphone/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/04/game-center-icon.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A little on how to initialize and use GameCenter
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Small side-note first, Vizati is now available for the Super Nintendo, more info.
+For my third idevblogaday post I’m going to talk about Game Center.
+Game Center was released only a couple months ago (September or so) but already tons of applications are using it and even more, players ask for it.
+It’s a way to track achievements, leader boards etc. Unfortunately It’s only available from iOS 4.1&#43;, so some compatibility check has to be done.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-04-01 10:53:01 +0000 UTC'>April 1, 2011</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;445 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to A little on how to initialize and use GameCenter" href="https://www.david-amador.com/2011/04/a-little-on-how-to-initialize-and-use-gamecenter/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/basalt_scripting_v2.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Scripting week
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This week I’ve been working on replacing my current scripting system. It worked great for Vizati but I need something with a little more flexibility.
+Instead of explaining what I’ve managed to get working I’ve made a screenshot with some notes.
+I think I’m going to make this my #ScreenshotSaturday
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-03-26 11:36:37 +0000 UTC'>March 26, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;50 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Scripting week" href="https://www.david-amador.com/2011/03/scripting-week/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Loading images into OpenGL in iPhone
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So you can’t make a game without images, right? Well, actually you can but that’s another story.
+But how can you load a jpg or a png and use then on OpenGLES?
+First let’s make a simple class Texture2D
+class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-03-18 10:06:24 +0000 UTC'>March 18, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;319 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Loading images into OpenGL in iPhone" href="https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/07/DSCF0003.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -136,7 +280,9 @@
   </header>
   <div class="entry-content">
     <p>This is my first post to http://idevblogaday.com/, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.
-I’ll start by talking a bit about how we made our PC game Vizati to iPhone.When we started, this represented our chance of making games and putting ourselves into test....</p>
+I’ll start by talking a bit about how we made our PC game Vizati to iPhone.
+When we started, this represented our chance of making games and putting ourselves into test. Without any pre determined rules and/or a major company dictating what to do we were able to have full creative control to try and do something a bit different.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2011-03-04 11:05:11 +0000 UTC'>March 4, 2011</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;627 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Bringing a game from PC to iOS" href="https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/"></a>
@@ -152,192 +298,26 @@ I’ll start by talking a bit about how we made our PC game Vizati to iPhone.Wh
   <div class="entry-content">
     <p>Something that has always been scary (well, it’ still is) before launching Vizati is tech support.
 No matter how much you tested your game, it’s bound to have bugs. Also what I’ve realized is that I don’t spend enough time testing the game, oh and you too, yes YOU (I’m assuming you’re a developer of course).
-The past year I gather around a few friends who never played it to test the game for 2 days....</p>
+The past year I gather around a few friends who never played it to test the game for 2 days. 6 people played it the first day, 4 played it on the second day. We gathered around all complaints and issues and addressed them. After that there was more play-testing but not as aggressive. There were 3 or 4 persons testing it regularly.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2011-02-18 12:26:28 +0000 UTC'>February 18, 2011</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;989 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Playtesting and Tech support, the other side of the coin" href="https://www.david-amador.com/2011/02/playtesting-and-tech-support-the-other-side-of-the-coin/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/01/vizati_mac.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">officially a Mac developer too, wait, what?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>It’s little over a month since I said I wouldn’t do any more porting for Vizati. Lesson learned, don’t say never again…
-When I started making the engine in C&#43;&#43; with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.
-Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish....</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-01-11 01:10:44 +0000 UTC'>January 11, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;271 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to officially a Mac developer too, wait, what?" href="https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/vizati-iphone-icon.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">No more porting for Vizati, time for something new
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>It’s been awhile since my last post.
-Regular visitors know that for the last months I’ve been working mainly on Vizati, bringing it first from the Xbox360 (never released, no xblig here) to a PC digital release, followed by a complete rewrite of the engine to C&#43;&#43;/OpenGL for a iPhone port, next there was the Windows Phone 7 version. I had the iPad on a backburner since I don’t own a device and optimizing code without seeing the result is crappy but about 2 weeks ago it went gold and it’s finished....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-12-04 10:53:14 +0000 UTC'>December 4, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;289 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to No more porting for Vizati, time for something new" href="https://www.david-amador.com/2010/12/no-more-porting-for-vizati-time-for-something-new/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/11/5polygons.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Testing if a point is inside a Polygon
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I’ve been playing with polygons and collisions lately so I decided to share some stuff.
-Using rectangles to detect if the mouse is inside is handy for Buttons and rectangular shaped objects, but what about other irregular shaped objects?
-Taking this into account I decided to create a Polygon class that basically has a List of Vector3 points. Although I’m just covering 2D collision you should use Vector3 for a more generic class....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-11-19 15:35:25 +0000 UTC'>November 19, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;288 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Testing if a point is inside a Polygon" href="https://www.david-amador.com/2010/11/testing-if-a-point-is-inside-a-polygon/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">A* Pathfinding
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>For my current project I’ve been working with A* as a path-finding solution.
-Basically it’s a way to get from point A to point B.
-This is used for AI in games mostly on tiled based games, It’s very simple to understand and implement.
-As A* traverses the graph, it follows a path of the lowest known cost, keeping a sorted priority queue of alternate path segments along the way. If, at any point, a segment of the path being traversed has a higher cost than another encountered path segment, it abandons the higher-cost path segment and traverses the lower-cost path segment instead....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-10-27 10:48:46 +0000 UTC'>October 27, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;395 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to A* Pathfinding" href="https://www.david-amador.com/2010/10/a-pathfinding/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/basalt_xna_vs_basalt_cpp.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Cross-Platform engine progress
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>If you read my recent posts you know I’ve been bringing Basalt to C&#43;&#43;.
-The plan is to support both DirectX and OpenGL render API’s and OpenGLES for iOS devices. I’m tired of porting stuff so I want to make a better framework for future projects and I’ll leave the XNA branch for Xbox360 and Windows Phone 7. I really wished I had this before.
-Since the iPhone branch is stable I move on to making it compatible with Win32 and MacOSX....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-10-11 14:20:02 +0000 UTC'>October 11, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;272 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Cross-Platform engine progress" href="https://www.david-amador.com/2010/10/cross-platform-engine-progress/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/Vizati-iPhone.avi_snapshot_00.29_2010.09.27_14.03.17.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Vizati for iPhone is now available at App Store
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>People who follow me on twitter are probably aware, or maybe not:
-After 3 months tacking an iPhone port it was finally approved by Apple to the App store and it’s on sale today!!!
-Hypnotizing start…
-Buy buy buy….
-On the count of 3 you will feel refreshed and happy for buying this awesome game…
-1
-2
-3
-Oh right, here’s the trailer:
-I’ve searched some forums and found some talking about it and that they liked, general feedback looks positive....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-10-06 17:33:43 +0000 UTC'>October 6, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;163 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Vizati for iPhone is now available at App Store" href="https://www.david-amador.com/2010/10/vizati-for-iphone-is-now-available-at-app-store/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Simulating tombstone (suspended state) on Windows Phone 7 emulator
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.
-It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.
-So depending on you app you might want to save the current state just in case the app really closes....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-09-20 21:36:27 +0000 UTC'>September 20, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;218 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Simulating tombstone (suspended state) on Windows Phone 7 emulator" href="https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/09/Leafy_Milestone_by_mydeepdark.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Another milestone reached, first App sent to Apple Store
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Finally and after several weeks locked inside Different Pixel “dungeon” making my engine compatible with iOS, namely with iPhone/iPod touch I submitted today my first App to the Apple Store.
-The binary didn’t reported any issues so as of 15 September 2010 it’s “Waiting For Review”
-I have mixed feelings about either it’s going to be approved or rejected. On one hand we tested as much as we could, handed to some testers using iPhone 3, iPhone 4 and iPod touches....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-09-15 16:58:38 +0000 UTC'>September 15, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;383 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Another milestone reached, first App sent to Apple Store" href="https://www.david-amador.com/2010/09/another-milestone-reached-first-app-sent-to-apple-store/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/09/apple-ipad-front.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">iPad launch images support for all orientations
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>When loading an application on an iPhone or iPad, a launch image can be shown to provide feedback to the user that the application is loading.
-On the iPhone a Default.png was used, with the iPad we need to anticipate the device being started in any orientation.
-Filename Dimensions Default-Portrait.png * 768w x 1024h Default-PortraitUpsideDown.png 768w x 1024h Default-Landscape.png ** 1024w x 768h Default-LandscapeLeft.png 1024w x 768h Default-LandscapeRight.png 1024w x 768h Default....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-09-10 23:23:49 +0000 UTC'>September 10, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;105 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to iPad launch images support for all orientations" href="https://www.david-amador.com/2010/09/ipad-launch-images-support-for-all-orientations/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/09/retina_pixels.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Setting OpenGL view for iPhone 4 retina hi resolution
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This had me scratching my head for awhile.
-At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.
-A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.
-To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-09-10 09:24:23 +0000 UTC'>September 10, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;256 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Setting OpenGL view for iPhone 4 retina hi resolution" href="https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://www.david-amador.com/categories/game-development/page/4/">
-      «&nbsp;Prev&nbsp;4/9
+      «&nbsp;Prev&nbsp;4/10
     </a>
-    <a class="next" href="https://www.david-amador.com/categories/game-development/page/6/">Next&nbsp;6/9&nbsp;»
+    <a class="next" href="https://www.david-amador.com/categories/game-development/page/6/">Next&nbsp;6/10&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

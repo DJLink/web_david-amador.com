@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 08 Mar 2010 10:14:08 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/dream-build-play/index.xml" rel="self" type="application/rss+xml" />
@@ -18,23 +18,25 @@
       <link>https://www.david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</link>
       <pubDate>Mon, 08 Mar 2010 10:14:08 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/03/vizati-wins-xna-pizza-night-2010/</guid>
-      <description>Damn you should see my face when they told me we won the competition XNA Pizza Night 2010 at Microsoft.
-Originally we developed Vizati to enter Dream Build Play 2010. We started developing the game on the beginning of February and during that month we discovered another competition would be held near Dream Build Play deadline.
-We went there with the same demo we sent to DBP. The audience really liked the game and we got very positive feedback.</description>
+      <description>&lt;p&gt;Damn you should see my face when they told me we won the competition XNA Pizza Night 2010 at Microsoft.&lt;/p&gt;
+&lt;p&gt;Originally we developed Vizati to enter Dream Build Play 2010. We started developing the game on the beginning of February and during that month we discovered another competition would be held near Dream Build Play deadline.&lt;/p&gt;
+&lt;p&gt;We went there with the same demo we sent to DBP. The audience really liked the game and we got very positive feedback. I remember during the first minutes someone in the audience asking if the game was already on sale and where could they buy it.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Damn you should see my face when they told me we won the competition XNA Pizza Night 2010 at Microsoft.</p>
 <p>Originally we developed Vizati to enter Dream Build Play 2010. We started developing the game on the beginning of February and during that month we discovered another competition would be held near Dream Build Play deadline.</p>
 <p>We went there with the same demo we sent to DBP. The audience really liked the game and we got very positive feedback. I remember during the first minutes someone in the audience asking if the game was already on sale and where could they buy it.</p>
 <p>There were some pretty cool games there and I got know many other people that develop games as a hobby or as a Indie Developer wannabe. Oh and there was free Pizza and drinks, just in case you were wondering about the name.</p>
-<p><a href="/wp-content/uploads/2010/03/pn-1.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-1.jpg" alt=""  />
-</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> The 360 to run the games <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-2.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-2.jpg" alt=""  />
-</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> The auditorium <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-7.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-7.jpg" alt=""  />
-</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Audience and other participants <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-9.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-9.jpg" alt=""  />
-</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> It’s free pizza time <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-12.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-12.jpg" alt=""  />
-</a> <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-14.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-14.jpg" alt=""  />
-</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> We called someone to test the game <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-20.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-20.jpg" alt=""  />
-</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Different Pixel team presenting Vizati <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-21.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-21.jpg" alt=""  />
-</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Rita and I with the event organizers <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="/wp-content/uploads/2010/03/pn-22.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/pn-22.jpg" alt=""  />
-</a> <!-- raw HTML omitted --> <!-- raw HTML omitted --> Another picture with the event organizers <!-- raw HTML omitted --></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/pn-1.jpg">
+The 360 to run the games</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/pn-2.jpg">
+The auditorium</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/pn-7.jpg">
+Audience and other participants</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/pn-9.jpg">  It’s free pizza time</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/pn-12.jpg"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/pn-14.jpg">  We called someone to test the game</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/pn-20.jpg">  Different Pixel team presenting Vizati</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/pn-21.jpg">  Rita and I with the event organizers</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/pn-22.jpg">  Another picture with the event organizers</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -42,22 +44,29 @@ We went there with the same demo we sent to DBP. The audience really liked the g
       <link>https://www.david-amador.com/2010/02/vizati-teaser/</link>
       <pubDate>Sun, 28 Feb 2010 23:50:15 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/02/vizati-teaser/</guid>
-      <description>Rita and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.
-Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.rita-silva.com&#34;&gt;Rita&lt;/a&gt; and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color. There’s 2 different modes of playing it. One of them is story mode where the stone Vizati is discovered by some people and they try to find out what it is and uncover it’s secrets. The other one, Arcade mode is a more traditional way to play it but with special vizati stones and power-ups&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="http://www.rita-silva.com">Rita</a> and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.</p>
 <blockquote>
 <p>Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color. There’s 2 different modes of playing it. One of them is story mode where the stone Vizati is discovered by some people and they try to find out what it is and uncover it’s secrets. The other one, Arcade mode is a more traditional way to play it but with special vizati stones and power-ups</p>
 </blockquote>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/CzZipbjCvNs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/CzZipbjCvNs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Also for anyone who has interest in these sort of things here’s my first successful test on the 360 of Vizati</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/uyn8OpPJ40A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/uyn8OpPJ40A?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -66,13 +75,13 @@ Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in whi
       <link>https://www.david-amador.com/2010/02/xna-particle-system-2d/</link>
       <pubDate>Fri, 19 Feb 2010 11:46:26 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/02/xna-particle-system-2d/</guid>
-      <description>It’s been a long week.
-Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.</description>
+      <description>&lt;p&gt;It’s been a long week.&lt;br&gt;
+Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.&lt;br&gt;
+Then it began, the one task that all programmers should ask someone else to do, because once you get the first one working you are gonna keep adding features because is so FUC**** pretty 😀&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been a long week.<br>
 Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.<br>
 Then it began, the one task that all programmers should ask someone else to do, because once you get the first one working you are gonna keep adding features because is so FUC**** pretty 😀</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg" alt="ParticleSystem_Radial_Gravity.jpg"  />
-</p>
+<p><img alt="ParticleSystem_Radial_Gravity.jpg" loading="lazy" src="/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg"></p>
 <p>I decided the best way was to quick implement it on our editor Sapphire, it now features:<br>
 – Color Interpolation<br>
 – Alpha Interpolation<br>
@@ -81,9 +90,12 @@ Then it began, the one task that all programmers should ask someone else to do, 
 – Radial Gravity (This is more of a gravity Well, everything gets sucked in Geometry Wars style)</p>
 <p>Here’s the video</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/SLd4PxJlVlE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/SLd4PxJlVlE?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Also I’ve found out that this March 5th near where I live Microsoft is doing a XNA Pizza Night, it’s a contest with prizes to the best games, and best of all, free Pizza and Drinks for everyone. I’m gonna enter with the same game of course so wish me luck.</p>
 ]]></content:encoded>
@@ -93,8 +105,8 @@ Then it began, the one task that all programmers should ask someone else to do, 
       <link>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</link>
       <pubDate>Mon, 15 Feb 2010 00:29:42 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</guid>
-      <description>Well the title is an Homage to James Silva‘s I MAED A GAM3 W1TH Z0MB1ES!!!1
-I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.</description>
+      <description>&lt;p&gt;Well the title is an Homage to &lt;a href=&#34;http://www.ska-studios.com/&#34;&gt;James Silva&lt;/a&gt;‘s I MAED A GAM3 W1TH Z0MB1ES!!!1&lt;/p&gt;
+&lt;p&gt;I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Well the title is an Homage to <a href="http://www.ska-studios.com/">James Silva</a>‘s I MAED A GAM3 W1TH Z0MB1ES!!!1</p>
 <p>I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.</p>
 <p>Back to the development part yesterday I panicked when she asked me if it was possible to make some some small cutscenes on each level which could include moving images, changing an animation, trigger a sound, trigger another movement after another has finished etc.</p>
@@ -124,9 +136,12 @@ end
 This may not seem much but after a few more tweaks I can make simple scripts pretty easy, not powerful as lua, not even close but it will work great for my Dream Build Play game.<br>
 Watch the video below:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/czJSQcE0kOo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/czJSQcE0kOo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -135,9 +150,9 @@ Watch the video below:</p>
       <link>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
       <pubDate>Thu, 06 Aug 2009 15:29:10 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
-      <description>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.
-Meanwhile I’ve been busy making the arrangements for The Indie Bay 48 hour game development competition.
-The idea is for every entrant to make a game in 48 hours using a given theme or topic.</description>
+      <description>&lt;p&gt;Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.&lt;/p&gt;
+&lt;p&gt;Meanwhile I’ve been busy making the arrangements for &lt;a href=&#34;http://www.theindiebay.com&#34;&gt;The Indie Bay&lt;/a&gt; 48 hour &lt;a href=&#34;http://www.theindiebay.com/competition&#34;&gt;game development competition&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The idea is for every entrant to make a game in 48 hours using a given theme or topic. Some cool prototypes may show up, games like Braid or World of Goo have been created in competitions like this one.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.</p>
 <p>Meanwhile I’ve been busy making the arrangements for <a href="http://www.theindiebay.com">The Indie Bay</a> 48 hour <a href="http://www.theindiebay.com/competition">game development competition</a>.</p>
 <p>The idea is for every entrant to make a game in 48 hours using a given theme or topic. Some cool prototypes may show up, games like Braid or World of Goo have been created in competitions like this one.</p>
@@ -149,24 +164,25 @@ The idea is for every entrant to make a game in 48 hours using a given theme or 
       <link>https://www.david-amador.com/2009/08/pugna-prototype/</link>
       <pubDate>Sat, 01 Aug 2009 22:03:00 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/08/pugna-prototype/</guid>
-      <description>Hello there.
-Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.
-My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that Rita and I have for the game we should have submitted.</description>
+      <description>&lt;p&gt;Hello there.&lt;/p&gt;
+&lt;p&gt;Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.&lt;/p&gt;
+&lt;p&gt;My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that &lt;a href=&#34;http://www.rita-silva.com&#34;&gt;Rita&lt;/a&gt; and I have for the game we should have submitted.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Hello there.</p>
 <p>Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.</p>
 <p>My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that <a href="http://www.rita-silva.com">Rita</a> and I have for the game we should have submitted.</p>
 <p>One of my favorites games was Zelda The Fours Sword Adventures, the hole 4 players playing on one screen is cool. I picked the name Pugna, means fight. So the game allows up to 4 players on split screen.</p>
-<p><a href="/wp-content/uploads/2009/08/Screenshot002.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Screenshot002-300x168.jpg" alt="Screenshot002"  title="Screenshot002"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/08/Screenshot002.jpg"><img alt="Screenshot002" loading="lazy" src="/wp-content/uploads/2009/08/Screenshot002-300x168.jpg" title="Screenshot002"></a></p>
 <p>I’ve quite proud of having made this in around 4-5 hours. Till now I have a scalable level that renders grass. Screen division is made automatically according to number of players. As you can see on the following image it has a 2 split.</p>
-<p><a href="/wp-content/uploads/2009/08/Screenshot001.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Screenshot001-300x168.jpg" alt="Screenshot001"  title="Screenshot001"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/08/Screenshot001.jpg"><img alt="Screenshot001" loading="lazy" src="/wp-content/uploads/2009/08/Screenshot001-300x168.jpg" title="Screenshot001"></a></p>
 <p>I have basic movement and rotation and a title screen. I won’t be having a great game but I have a couple of nice ideas that can work out with time.</p>
 <p>Here’s a small video, the framerate is due to the sofware i use to record.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/w0bELIEC0Q8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/w0bELIEC0Q8?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>

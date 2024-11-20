@@ -11,10 +11,22 @@
 Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.
 It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
 Requirements:
-You must have some Object Oriented Programming background to full understand what we will do here.">
+
+You must have some Object Oriented Programming background to full understand what we will do here.
+XNA 3.1
+Visual C# Express or Professional 2008
+
+
+
+    
+    
+      
+    
+
+This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -22,6 +34,7 @@ You must have some Object Oriented Programming background to full understand wha
 <link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/">
 <noscript>
     <style>
         #theme-toggle,
@@ -31,26 +44,44 @@ You must have some Object Oriented Programming background to full understand wha
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="Building an 2D Game Engine in XNA - Part 1" />
-<meta property="og:description" content="I decided to starting writing a series of tutorials for building an 2d XNA game engine.
+<meta property="og:url" content="https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="Building an 2D Game Engine in XNA - Part 1">
+  <meta property="og:description" content="I decided to starting writing a series of tutorials for building an 2d XNA game engine.
 Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.
 It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
 Requirements:
-You must have some Object Oriented Programming background to full understand what we will do here." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2009-10-16T18:10:09+00:00" />
-<meta property="article:modified_time" content="2009-10-16T18:10:09+00:00" /><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
-<meta name="twitter:title" content="Building an 2D Game Engine in XNA - Part 1"/>
+You must have some Object Oriented Programming background to full understand what we will do here. XNA 3.1 Visual C# Express or Professional 2008 This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2009-10-16T18:10:09+00:00">
+    <meta property="article:modified_time" content="2009-10-16T18:10:09+00:00">
+    <meta property="article:tag" content="Building an 2D Game Engine in XNA">
+    <meta property="article:tag" content="C&#43;&#43;">
+    <meta property="article:tag" content="Video">
+    <meta property="article:tag" content="XNA">
+      <meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:title" content="Building an 2D Game Engine in XNA - Part 1">
 <meta name="twitter:description" content="I decided to starting writing a series of tutorials for building an 2d XNA game engine.
 Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.
 It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
 Requirements:
-You must have some Object Oriented Programming background to full understand what we will do here."/>
+
+You must have some Object Oriented Programming background to full understand what we will do here.
+XNA 3.1
+Visual C# Express or Professional 2008
+
+
+
+    
+    
+      
+    
+
+This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.">
 
 
 <script type="application/ld+json">
@@ -79,14 +110,14 @@ You must have some Object Oriented Programming background to full understand wha
   "@type": "BlogPosting",
   "headline": "Building an 2D Game Engine in XNA - Part 1",
   "name": "Building an 2D Game Engine in XNA - Part 1",
-  "description": "I decided to starting writing a series of tutorials for building an 2d XNA game engine.\nKeep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.\nIt’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.\nRequirements:\nYou must have some Object Oriented Programming background to full understand what we will do here.",
+  "description": "I decided to starting writing a series of tutorials for building an 2d XNA game engine.\nKeep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.\nIt’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.\nRequirements:\nYou must have some Object Oriented Programming background to full understand what we will do here. XNA 3.1 Visual C# Express or Professional 2008 This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.\n",
   "keywords": [
     "Building an 2D Game Engine in XNA", "c++", "video", "XNA"
   ],
   "articleBody": "I decided to starting writing a series of tutorials for building an 2d XNA game engine.\nKeep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.\nIt’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.\nRequirements:\nYou must have some Object Oriented Programming background to full understand what we will do here. XNA 3.1 Visual C# Express or Professional 2008 This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.\n",
   "wordCount" : "112",
   "inLanguage": "en",
-  "datePublished": "2009-10-16T18:10:09Z",
+  "image": "https://www.david-amador.com/david-amador-pixel.png","datePublished": "2009-10-16T18:10:09Z",
   "dateModified": "2009-10-16T18:10:09Z",
   "author":{
     "@type": "Person",
@@ -119,7 +150,7 @@ You must have some Object Oriented Programming background to full understand wha
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -183,7 +214,7 @@ You must have some Object Oriented Programming background to full understand wha
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Building an 2D Game Engine in XNA - Part 1
     </h1>
@@ -201,9 +232,12 @@ You must have some Object Oriented Programming background to full understand wha
 <li><a href="http://www.microsoft.com/express/">Visual C# Express or Professional 2008</a></li>
 </ul>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Nnu_9qk6Jfs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Nnu_9qk6Jfs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.</p>
 
@@ -213,8 +247,8 @@ You must have some Object Oriented Programming background to full understand wha
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://www.david-amador.com/tags/building-an-2d-game-engine-in-xna/">Building an 2D Game Engine in XNA</a></li>
-      <li><a href="https://www.david-amador.com/tags/c&#43;&#43;/">c&#43;&#43;</a></li>
-      <li><a href="https://www.david-amador.com/tags/video/">video</a></li>
+      <li><a href="https://www.david-amador.com/tags/c&#43;&#43;/">C&#43;&#43;</a></li>
+      <li><a href="https://www.david-amador.com/tags/video/">Video</a></li>
       <li><a href="https://www.david-amador.com/tags/xna/">XNA</a></li>
     </ul>
 <nav class="paginav">
@@ -254,7 +288,8 @@ You must have some Object Oriented Programming background to full understand wha
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

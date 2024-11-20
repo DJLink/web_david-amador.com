@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>wp7 on David Amador</title>
+    <title>Wp7 on David Amador</title>
     <link>https://www.david-amador.com/tags/wp7/</link>
-    <description>Recent content in wp7 on David Amador</description>
+    <description>Recent content in Wp7 on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 07 May 2010 20:41:09 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/wp7/index.xml" rel="self" type="application/rss+xml" />
@@ -18,18 +18,22 @@
       <link>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
       <pubDate>Fri, 07 May 2010 20:41:09 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
-      <description>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.
-This week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.
-I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.</description>
+      <description>&lt;p&gt;It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.&lt;br&gt;
+This week I got an invitation from &lt;a href=&#34;http://gozoomin.com/blogs/antao/&#34;&gt;João Antão&lt;/a&gt; to showcase &lt;a href=&#34;https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/&#34;&gt;Vizati&lt;/a&gt; as part of his XNA Framework presentation. This occurred during the &lt;a href=&#34;http://imaginecup.com/&#34;&gt;Imagine Cup final on Portugal&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.&lt;br&gt;
+The result was pretty good i think. It’s virtually identical.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.<br>
 This week I got an invitation from <a href="http://gozoomin.com/blogs/antao/">João Antão</a> to showcase <a href="https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/">Vizati</a> as part of his XNA Framework presentation. This occurred during the <a href="http://imaginecup.com/">Imagine Cup final on Portugal</a>.</p>
 <p>I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.<br>
 The result was pretty good i think. It’s virtually identical.</p>
 <p>You can see it for yourself, the speed on the video is not very good due to the screen capture software.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/hX18tuujAEY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hX18tuujAEY?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Now for the tech part. Grabbing my 3.1 solution what have I made to have this running? What have I changed?</p>
 <p>I had to create a XNA 4 empty project and add all code files and assets (no direct upgrade now)<br>

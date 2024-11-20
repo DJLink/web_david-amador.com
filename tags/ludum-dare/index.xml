@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ludum dare on David Amador</title>
+    <title>Ludum Dare on David Amador</title>
     <link>https://www.david-amador.com/tags/ludum-dare/</link>
-    <description>Recent content in ludum dare on David Amador</description>
+    <description>Recent content in Ludum Dare on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 14 Aug 2018 15:02:38 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/ludum-dare/index.xml" rel="self" type="application/rss+xml" />
@@ -18,15 +18,14 @@
       <link>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</link>
       <pubDate>Tue, 14 Aug 2018 15:02:38 +0000</pubDate>
       <guid>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</guid>
-      <description>Hey,
-It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.
-But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.</description>
+      <description>&lt;p&gt;Hey,&lt;/p&gt;
+&lt;p&gt;It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.&lt;/p&gt;
+&lt;p&gt;But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Hey,</p>
 <p>It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.</p>
 <p>But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.</p>
 <p>The game is a small top down shooting game, but when you miss an enemy you create a block instead, so the more you miss the less area to fly around. Here’s a gif illustrating.</p>
-<p><a href="https://dj_link.itch.io/dont-miss"><img loading="lazy" src="/wp-content/uploads/2018/08/Honeycam-2018-08-13-22-21-37.gif" alt=""  />
-</a></p>
+<p><a href="https://dj_link.itch.io/dont-miss"><img loading="lazy" src="/wp-content/uploads/2018/08/Honeycam-2018-08-13-22-21-37.gif"></a></p>
 <p>Made code, art and sounds, cod is c# in Unity, art was made in photoshop, the sound effects I think you’ll notice right away how they were made, and finally used <a href="https://boscaceoil.net/">Bosca Ceoil</a> for music.</p>
 <p>There’s a webGl version so you an try it directly in your browser.</p>
 <p><a href="https://dj_link.itch.io/dont-miss">https://dj_link.itch.io/dont-miss</a></p>

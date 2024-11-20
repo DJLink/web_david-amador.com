@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>iOS on David Amador</title>
+    <title>IOS on David Amador</title>
     <link>https://www.david-amador.com/tags/ios/</link>
-    <description>Recent content in iOS on David Amador</description>
+    <description>Recent content in IOS on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 25 Mar 2024 11:39:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/ios/index.xml" rel="self" type="application/rss+xml" />
@@ -18,83 +18,71 @@
       <link>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</link>
       <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</guid>
-      <description>📝 It&amp;rsquo;s been 10 years It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, Quest of Dungeons was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, mostly nights and weekends.</description>
+      <description>&lt;h1 id=&#34;-its-been-10-years&#34;&gt;📝 It&amp;rsquo;s been 10 years&lt;/h1&gt;
+&lt;p&gt;It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, &lt;a href=&#34;https://www.questofdungeons.com&#34;&gt;Quest of Dungeons&lt;/a&gt; was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, &lt;a href=&#34;https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/&#34;&gt;mostly nights and weekends&lt;/a&gt;. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h1 id="-its-been-10-years">📝 It&rsquo;s been 10 years</h1>
 <p>It&rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, <a href="https://www.questofdungeons.com">Quest of Dungeons</a> was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, <a href="/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/">mostly nights and weekends</a>. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?</p>
 <p>What follows for the rest of the post, is a brain dump of the timeline of some of the most crucial events of this silly little project for anyone who is curious.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png"></p>
 <h1 id="-2011-2013">🤯 2011-2013</h1>
 <p>✔️ Failing can help</p>
 <p>Before the game launched, I had a few years of terrible prototypes, cancelled projects, and other unexpected life events. One day, though, all those mistakes fell into place, and QoD was born—a flow of ideas came to my mind, after seeing a bunch of stuff failed in front of me, but that maybe I could make them work. I knew what I wanted to avoid now and what I things I would like to experiment with. Within this time I also made a simple iOS game called <a href="/2012/09/puwang-a-5-day-work/">Puwang</a>, a gamejam compo, where most of the goal was to make a quick game and hopefully make $100 that year to cover the iOS developer account expenses. For QoD I wanted to make a small game that I could play on my phone during commute, and that&rsquo;s why it started as a mobile-only game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png"></p>
 <p>⌨️ Expanding</p>
 <p>During the time I was the only person to ever played it, I found myself enjoying it on a bigger screen/tablet, and after giving it a 2-3 friends to test and having confirmation, I thought it would be good to launch a desktop version along the iPhone/iPad versions, Windows and Mac.
 This added some development time, but also allowed me to expand the game a bit more, the mobile version was virtually identical to desktop/tabled, but they shared a bigger UI, more suited for Mouse and the higher resolutions.
 This turned out to be one of the best decisions, as the desktop version is foundation for everything after. At this point I was already <a href="/tags/basalt/">rolling my own engine</a> for prior games on mobile and desktop, so most of the development was indeed for game stuff, and not engine. While I&rsquo;ve made the mistake often of &ldquo;build the engine instead of game&rdquo;, here the engine was built around the game, that&rsquo;s how it should be.</p>
 <h1 id="20140325---steam-and-ios-launch">2014/03/25 - Steam and iOS launch</h1>
 <p>I had tried to bring games to Steam before but with no success. The focus was on Mobile, with Desktop in mind, but where to sell it? Before Steam I was able to get confirmation for the new Humble Store, but Steam was still on my mind. In the past I had higher hopes for my first game <a href="/tags/vizati/">Vizati</a>, looked more polished, so QoD didn&rsquo;t seemed to have a chance.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png"></p>
 <p>But I decided to make a trailer and launch a GL page, and imagine my surprise when QoD was approved on Steam Greenlight within a week or so. Just look at my dumb face here that I just digged from some old Tweets.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg" alt="David celebrating QoD approval on Steam Greenlight"  />
-</p>
+<p><img alt="David celebrating QoD approval on Steam Greenlight" loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg"></p>
 <p>With the trailer out, people seemed to enjoyed what they saw, I also thought I was near completing the game, there&rsquo;s always something right? So I pretty much crunched the entire rest of time between my day job and finishing the game.</p>
 <p>Finally on March 25th it was out, everyone could play it. Since the game was only releasing around 18h on Steam, I went to my day job that day, and only took the next day off for checking &amp; fixing bugs etc.</p>
 <p>Initially all I was getting was a flow of emails with some bugs and suggestions, but overall people seemed to like it, which was a relief. There was still tons of stuff to fix, but slowly, and for the next few weeks went through issues and suggestions. On the mobile side of things things were smoother, that version was the older one, had more testing, also less hardware configurations. I recall before launch, a conversation with some coworkers, that making it paid on mobile was probably a mistake, but I don&rsquo;t know how to design games around F2P/Ads, so I made it paid.  But, thankfully, even being a paid game, at $1.99, people were happy with what they were getting.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg"></p>
 <h1 id="20140530---linux">2014/05/30 - Linux</h1>
 <p>This one was something that I had in the back on my mind for a while, theoretically my engine could be ported to Linux, but I was scared of having too many versions at launch, handing those 4 SKUs was already a handful, so this was left for later. This actually ended up being a factor in Humble Bundle contacting me to participate in one of their bundles, back then having a game on all 3 platforms was a must.
 Technically speaking it wasn&rsquo;t extremely complicated, by this time the engine was already relatively split in ways that it was easy to integrate new OS, it was just a matter of implementation.
 Also, now that Steam Deck is a thing, it just worked out of the box.</p>
 <h1 id="20140826---android">2014/08/26 - Android</h1>
 <p>With Desktops and iOS versions being well received I started getting requests for an Android version, I had never worked on this platform, but with most of the know bugs fixed, I bought a cheap Android phone and I moved into porting the game to this platform, you can read more about that <a href="/2014/08/native-game-on-android-porting-quest-of-dungeons/">here</a>.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg"></p>
 <h1 id="2014---ouya-cancelled">2014 - OUYA (cancelled)</h1>
 <p>The hot thing around the time was OUYA, games like TowerFall were born there, so since I had an Android version I started to work on that, because it would be the closest to a traditional console that I thought I could put this game on. I started working on it, but once Microsoft accepted my pitch for the Xbox One (see below), I placed this in low priority. Between the time it took me to develop the Xbox One version, OUYA had it downfall, and by that time I just cancelled it.</p>
 <h1 id="201509---xbox-one">2015/09 - Xbox One</h1>
 <p>In the summer of 2014, after the launch of all those versions, relatively successfully, I started talking with ID@Xbox with the possibility of bringing QoD to Xbox One. There were a couple months of paperwork and mostly the conversation about &ldquo;this is a mouse game, how will it work on consoles?&rdquo;, which was when I started seeing that all the UI needed to be remade, and even some gameplay.</p>
 <p>There are several posts, <a href="/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">here</a>, <a href="/2015/04/necrodancer-is-joining/">here</a>, <a href="/2014/11/qod-xo-devlog-1/">here</a>, <a href="/2015/01/qod-xo-devlog-2/">here</a> and <a href="/2015/02/qod-xo-devlog-3/">here</a>  detailing what went into to that process, but after around 1 year the game was finally released, and all the work put into reworking the game to controller friendly interface and gameplay paid off, it was <a href="/2015/10/quest-of-dungeons-reviews-roundup/">positively received</a>. I also took the opportunity to double the content available, and also add an <a href="/2015/04/necrodancer-is-joining/">extra character</a>. I&rsquo;m sure it was this combination of an almost remade version with increased content that led to it&rsquo;s positive feedback. I&rsquo;m really happy I decided to take all those months to remake it, it was daunting at first, I&rsquo;ll tell you that, but I&rsquo;m glad I did it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg" alt="Quest of Dungeons Xbox One launch"  />
-</p>
+<p><img alt="Quest of Dungeons Xbox One launch" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg"></p>
 <h1 id="20160929---wii-u-and-nintendo-3ds">2016/09/29 - Wii U and Nintendo 3DS</h1>
 <p>Around 2015 summer, before Xbox One release, and if I recall correctly, during Gamescom in Germany, I started talking with Nintendo about bringing the game to Nintendo 3DS and Wii U.</p>
 <p>This was when Nintendo was a bit more restrictive in terms of third party developers, and I was fully expecting, that me, a solo developer, would not make the cut, and it took a lot of months and patience to finally be able to show the game to someone and get accepted as an official Nintendo developer.</p>
 <p>At first my goal was to make Wii U port first because it would be similar to Xbox One, with some additional features for the GamePad. Nintendo 3DS would come later, it would take more work due to it&rsquo;s specifics.</p>
 <p>Unfortunately, or fortunately (depending how you see it), I bricked my Wii U devKit after a couple months of work, when the game was in a good state already but before 100% finished. During the time I waited for repairs I started the Nintendo 3DS version.</p>
 <p>I knew would take a LOT more work, from performance, to completely different UI for dual screen, hybrid of touch + buttons. But when the Wii U devKit arrived, I decided to launch them side-by-side, I talked with Nintendo about a cross-buy possibility, and once they gave the ok that was the goal.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png"></p>
 <p>The Nintendo 3DS version was one of the most complicated ones to pull off. This was also the first time that working on my own engine was the only thing making it possible. A lot of people were suggesting me to use Unity, and I had would have saved time in porting, which can be true, but Unity didn&rsquo;t supported 3DS, so it would never have happened if not for my custom framework.</p>
 <p>This is hands down my favourite version, there is no other like it, mostly because of the nature of the device.</p>
 <p>It was so fun to work with that I found myself <a href="/2016/05/qod-3dswii-u-port-devlog-1/">adding features</a> just because I wanted to test them, like the StreetPass, where you can get ghosts from other players you pass on the street. Nintendo had a really neat device here.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"></p>
 <p>There was some trouble having both versions on the same day, it&rsquo;s a lot of coordination required between me, Nintendo America and Europe teams, 4 different SKUs (3DS NA+EU, Wii U NA+EU), but in the end we made it.</p>
 <p>Like I suspected during my own tests, on the 3DS it was the ideal portable version, it&rsquo;s a game that suits shorts sessions on the go.</p>
 <p>This was also the first time I worked with a publisher for this game, for Japan, the game was published by Flyhigh Works, they took it to Tokyo Game Show, localized to JP, and were crucial in shaping up the 3DS version into what it is. I do recall many sessions where my stubbornness almost caused some bad decisions in the game, but they were really cool in guiding me to make the best of it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg" alt="Quest of Dungeons on Wii U and Nintendo 3DS"  />
-</p>
+<p><img alt="Quest of Dungeons on Wii U and Nintendo 3DS" loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg"></p>
 <h1 id="20170120---playstation-4-and-the-vita-version-that-never-was">2017/01/20 - PlayStation 4 and the Vita version that never was.</h1>
 <p>I love my PlayStation 4, in fact it&rsquo;s the console I have more physical games for.</p>
 <p>So it was with great excitement that after a Skype call with my PlayStation rep I had the greenlight to get the game there. This started around the time of Nintendo too, but sadly, and at first I wanted PS4 + Vita combo, like Wii U + 3DS, but for a variety of reasons the PlayStation Vita never happened.</p>
 <p>This was one of the reasons the PS4 versions was one of the latter ones, I kept hoping I could launch both simultaneously but never happened. Fun fact, this version almost had a physical edition that got cancelled by the publisher at last moment, eventually I even got someone, another publisher, to take care of the PS Vita version, but that also got cancelled later on. So a combination of things that happened that were no one&rsquo;s fault, but also made it a bit hard for me to explain why it wasn&rsquo;t happening. In certain moments it was almost, but it never did happened. It was a bit frustrating that I didn&rsquo;t had clear answers for the players regarding this, but I couldn&rsquo;t, and I tried but failed in the end. Well, that&rsquo;s game development.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png" alt="Quest of Dungeons on PlayStation 4"  />
-</p>
+<p><img alt="Quest of Dungeons on PlayStation 4" loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png"></p>
 <h1 id="20170810---nintendo-switch">2017/08/10 - Nintendo Switch</h1>
 <p>Around 1 month after I released on Wii U and 3DS, Nintendo announced their new hybrid console, the Nintendo Switch. I immediately started getting questions from players about a port. This complicated promoting the new Nintendo versions while everyone was excited about the upcoming console, saving money for it and the games. By coincidence I had launched both versions right at the end.</p>
 <p>I can&rsquo;t recall exactly when conversations started with Nintendo about this, since it was in hot demand, both for retail and developers, but eventually Nintendo shipped me a devKit and I started porting. It was released first in the Japanese regions, again by Flyhigh Works. But a few weeks later again by me in the rest of the world. This version had the portability of 3DS, and graphics/resolution and UI of the home consoles. This was also the first time I made a demo for the game, which still exists on the eShop.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg" alt="Quest of Dungeons on Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons on Nintendo Switch" loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg"></p>
 <h1 id="2019---dreamcast-just-having-fun">2019 - Dreamcast (just having fun)</h1>
 <p>In 2019 I got my hands on a Dreamcast I decided to &ldquo;wonder if I can port it there?&rdquo;, it was never really meant for a full release, that would take months of time that I don&rsquo;t have at the moment,
 I just posting it here for the record, this was under a week of work, it was fun. Maybe if I reach retirement I&rsquo;ll take some time to finish it. There&rsquo;s a lot of work left in there.</p>
 <p>After a while booting the game on an emulator,</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png" alt="Quest of Dungeons running on emulator 1"  />
-</p>
+<p><img alt="Quest of Dungeons running on emulator 1" loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png"></p>
 <p>and then later when I got it booting on a real Dreamcast</p>
 <video width="100%" controls>
     <source src="/wp-content/uploads/2024/03/qod_running_on_dreamcast.mp4" type="video/mp4">
@@ -103,15 +91,12 @@ I just posting it here for the record, this was under a week of work, it was fun
 
 <h1 id="20210413---switch-physical-edition">2021/04/13 - Switch Physical Edition</h1>
 <p>Like I mentioned before, I tried to get the game in physical format before, and I kept trying for years but it simply wasn&rsquo;t happening. Until 2021, when by random chance, someone recommended me Leoful, and they accepted right away, in fact, from initial contact to production, it was just a couple months, I&rsquo;m really happy I was able to finally get the game on an actual box, it hits differently, as I <a href="/2010/08/games-and-systems-from-childhood/">grew playing Nintendo games</a>,  and also feels like a closure to a project that started on a smaller device and made it&rsquo;s way to a real physical game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png" alt="Quest of Dungeons Physical Edition for Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons Physical Edition for Nintendo Switch" loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png"></p>
 <h1 id="2022---">2022 - ??</h1>
 <p>Right now the game still exists in several stores (R.I.P. Nintendo 3DS and Wii U), and it&rsquo;s in maintenance mode only. The platforms patched more regularly are the mobile ones, whenever Apple or Android come up with new rules or it breaks on new devices. Windows gives nearly no problems, MacOS breaks things more often, but overall it doesn&rsquo;t give a lot of work, the last time I had to mess with it, was the Linux version to patch stuff for Steam Deck, but it was relatively easy.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg" alt="Quest of Dungeons on Steam Deck"  />
-</p>
+<p><img alt="Quest of Dungeons on Steam Deck" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg"></p>
 <p>So in the end things worked out, and I want to say a big thank you to everyone who supported this project, I read all the emails, DMs, messages everyone sent over the years, even fanart, you rock.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif"></p>
 <h1 id="some-trivia">Some trivia</h1>
 <ul>
 <li>The game has 79k of code (all platforms)</li>
@@ -126,8 +111,7 @@ I just posting it here for the record, this was under a week of work, it was fun
 <li>The initial skull sign, which only exists at the very start, was a way to teach the player that death meant restarting, in 2013-14 roguelikes weren&rsquo;t as popular and it was seen as a shock for that to happen (play-testers would email me &ldquo;my save is lost&rdquo;). My goal was that by potentially learning that early on, the player would not get surprised.</li>
 </ul>
 <p>Thank you for reading all of this.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png"></p>
 <p>Here&rsquo;s a cool image made by <a href="https://twitter.com/LeonorParra08">Leonor</a>.</p>
 ]]></content:encoded>
     </item>
@@ -136,13 +120,13 @@ I just posting it here for the record, this was under a week of work, it was fun
       <link>https://www.david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</link>
       <pubDate>Mon, 08 Dec 2014 11:40:29 +0000</pubDate>
       <guid>https://www.david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</guid>
-      <description>A new patch for iOS and Android went live, v1.1.1
-There are some differences in what’s new for each one of the platforms, the biggest change being support for iPhone 6 and 6 Plus on iOS and x86 architecture support on Android.
-The reason why there are more tweaks on the iOS is because the Android version was updated more recently. After this update they are on par on features and fixes.</description>
+      <description>&lt;p&gt;A new patch for iOS and Android went live, v1.1.1&lt;/p&gt;
+&lt;p&gt;There are some differences in what’s new for each one of the platforms, the biggest change being support for iPhone 6 and 6 Plus on iOS and x86 architecture support on Android.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png&#34;&gt;&lt;img alt=&#34;quest_of_dungeons_iphone6_plus_vs_iphone_5&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The reason why there are more tweaks on the iOS is because the Android version was updated more recently. After this update they are on par on features and fixes.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>A new patch for iOS and Android went live, v1.1.1</p>
 <p>There are some differences in what’s new for each one of the platforms, the biggest change being support for iPhone 6 and 6 Plus on iOS and x86 architecture support on Android.</p>
-<p><a href="/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png"><img loading="lazy" src="/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png" alt="quest_of_dungeons_iphone6_plus_vs_iphone_5"  />
-</a></p>
+<p><a href="/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png"><img alt="quest_of_dungeons_iphone6_plus_vs_iphone_5" loading="lazy" src="/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png"></a></p>
 <p>The reason why there are more tweaks on the iOS is because the Android version was updated more recently. After this update they are on par on features and fixes.</p>
 <p>-General-</p>
 <ul>
@@ -174,12 +158,12 @@ The reason why there are more tweaks on the iOS is because the Android version w
       <link>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</link>
       <pubDate>Sun, 06 Apr 2014 11:39:36 +0000</pubDate>
       <guid>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</guid>
-      <description>I’m pleased to announce that Quest of Dungeons is finally out.
-I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.
-It was released on March 25th, for PC, Mac and iOS. You can get it on Steam, iOS App Store or directly from the site via Humble Store.
-I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought.</description>
-      <content:encoded><![CDATA[<p><a href="http://www.questofdungeons.com"><img loading="lazy" src="https://www.questofdungeons.com/imgs/icon.png" alt="Quest of Dungeons"  />
-  </a></p>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.questofdungeons.com&#34;&gt;&lt;img alt=&#34;Quest of Dungeons&#34; loading=&#34;lazy&#34; src=&#34;https://www.questofdungeons.com/imgs/icon.png&#34;&gt;  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I’m pleased to announce that Quest of Dungeons is finally out.&lt;br&gt;
+I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.&lt;/p&gt;
+&lt;p&gt;It was released on March 25th, for PC, Mac and iOS. You can get it on &lt;a href=&#34;https://store.steampowered.com/app/270050&#34;&gt;Steam&lt;/a&gt;, &lt;a href=&#34;https://itunes.apple.com/app/id698726956/&#34;&gt;iOS App Store&lt;/a&gt; or directly from the &lt;a href=&#34;https://www.questofdungeons.com/&#34;&gt;site&lt;/a&gt; via Humble Store.&lt;/p&gt;
+&lt;p&gt;I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought. As some of you know I have a day job so I had to take 2 vacation days to simple answer emails and do quick fixes, especially to the PC/Mac version. With each new software is natural to have problems at launch and Quest of Dungeons was no exception, and right now I’m still working on a daily basis in fixing some stuff and attending to some popular requests/changes from players to the game.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><a href="http://www.questofdungeons.com"><img alt="Quest of Dungeons" loading="lazy" src="https://www.questofdungeons.com/imgs/icon.png">  </a></p>
 <p>I’m pleased to announce that Quest of Dungeons is finally out.<br>
 I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.</p>
 <p>It was released on March 25th, for PC, Mac and iOS. You can get it on <a href="https://store.steampowered.com/app/270050">Steam</a>, <a href="https://itunes.apple.com/app/id698726956/">iOS App Store</a> or directly from the <a href="https://www.questofdungeons.com/">site</a> via Humble Store.</p>
@@ -201,22 +185,18 @@ PocketGamer – 6/10 – <a href="https://www.pocketgamer.co.uk/r/iPad/Quest+of+
       <link>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</link>
       <pubDate>Wed, 11 Dec 2013 12:00:14 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</guid>
-      <description>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.
-I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too.</description>
+      <description>&lt;p&gt;I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.&lt;br&gt;
+I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too. I’m just polishing the game and finishing some bugs, but I’m close, I can feel it =)&lt;br&gt;
+Right now I’m targeting for a late January release, but I’ll have a more precise date in the next few weeks.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.<br>
 I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too. I’m just polishing the game and finishing some bugs, but I’m close, I can feel it =)<br>
 Right now I’m targeting for a late January release, but I’ll have a more precise date in the next few weeks.</p>
 <p>Meanwhile here are a couple of screenshots.</p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01-300x187.png" alt="quest_of_dungeons_mac_01"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02-300x187.png" alt="quest_of_dungeons_mac_02"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03-300x187.png" alt="quest_of_dungeons_mac_03"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04-300x187.png" alt="quest_of_dungeons_mac_04"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05-300x187.png" alt="quest_of_dungeons_mac_05"  />
-</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01.png"><img alt="quest_of_dungeons_mac_01" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02.png"><img alt="quest_of_dungeons_mac_02" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03.png"><img alt="quest_of_dungeons_mac_03" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04.png"><img alt="quest_of_dungeons_mac_04" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png"><img alt="quest_of_dungeons_mac_05" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05-300x187.png"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -224,9 +204,9 @@ Right now I’m targeting for a late January release, but I’ll have a more pre
       <link>https://www.david-amador.com/2012/09/puwang-a-5-day-work/</link>
       <pubDate>Fri, 28 Sep 2012 20:03:40 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/09/puwang-a-5-day-work/</guid>
-      <description>Hi, how’s everyone doing?
-So this was a different week for me. It’s been a long time that I had the chance to work on a small prototype or a 48H competition because of my work on Dary’s Legend so I decided to stop for a couple of days and do something else.
-Also my cat’s been quite sick, and between the Vet and taking care of him, working on a fun project gave me more time do everything.</description>
+      <description>&lt;p&gt;Hi, how’s everyone doing?&lt;/p&gt;
+&lt;p&gt;So this was a different week for me. It’s been a long time that I had the chance to work on a small prototype or a 48H competition because of my work on Dary’s Legend so I decided to stop for a couple of days and do something else.&lt;/p&gt;
+&lt;p&gt;Also my cat’s been quite sick, and between the Vet and taking care of him, working on a fun project gave me more time do everything.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Hi, how’s everyone doing?</p>
 <p>So this was a different week for me. It’s been a long time that I had the chance to work on a small prototype or a 48H competition because of my work on Dary’s Legend so I decided to stop for a couple of days and do something else.</p>
 <p>Also my cat’s been quite sick, and between the Vet and taking care of him, working on a fun project gave me more time do everything.</p>
@@ -235,29 +215,32 @@ Also my cat’s been quite sick, and between the Vet and taking care of him, wor
 <p>I decided to make the game for iOS because it’s easier to make prototypes there and I can carry them around everywhere, playing them, to see if they are any good.</p>
 <p>Actually the first 8 hours where quite productive and this is what I had after that time:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/sfxpNnfoZQI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sfxpNnfoZQI?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>So during these past 5 days I polished it a little, grabbed myself a notepad and hand-drawn everything. It’s not much artistic, but I’m not a designer.<br>
 Had a few problems with iOS 6 due to some deprecated stuff but in the end it all fall into place.<br>
 Also some tweaks performance-wise on the Engine where made since with a lot of stuff on screen things can get out of control pretty easily specially on these portable devices.</p>
 <p>iPhone 5 just came out and I even took the time to add support for those extra pixels, actually I just increased the viewport, no scaling.</p>
 <p>I probably named it poorly but it’s <strong>Puwang</strong>.</p>
-<p><a href="/wp-content/uploads/2012/09/puwang2.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang2.png" alt=""  title="puwang2"  />
-</a><br>
-<a href="/wp-content/uploads/2012/09/puwang.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang.png" alt=""  title="puwang"  />
-</a><br>
-<a href="/wp-content/uploads/2012/09/puwang_icon_screen.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang_icon_screen-200x300.png" alt=""  title="puwang_icon_screen"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/09/puwang2.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang2.png" title="puwang2"></a><br>
+<a href="/wp-content/uploads/2012/09/puwang.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang.png" title="puwang"></a><br>
+<a href="/wp-content/uploads/2012/09/puwang_icon_screen.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang_icon_screen-200x300.png" title="puwang_icon_screen"></a></p>
 <p>Also added some Leaderboards via Gamecenter and as I write this I’m starting to receive some feedback of the early beta builds I sent to a couple of testers. If people like it I might release it on the App Store.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/AIiKBVTiEhM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/AIiKBVTiEhM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p><del>If you want to participate in the beta test use this link: <a href="http://tflig.ht/SRB5aP">http://tflig.ht/SRB5aP</a></del></p>
-<p><!-- raw HTML omitted -->[Edit 10-10-2012]<!-- raw HTML omitted --> Puwang is now out on the app store, you can get it <a href="http://itunes.apple.com/us/app/puwang/id566365237?ls=1&amp;mt=8">here</a></p>
+<p><strong>Edit 10-10-2012</strong> Puwang is now out on the app store, you can get it <a href="http://itunes.apple.com/us/app/puwang/id566365237?ls=1&amp;mt=8">here</a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -265,9 +248,10 @@ Also some tweaks performance-wise on the Engine where made since with a lot of s
       <link>https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</link>
       <pubDate>Fri, 24 Jun 2011 21:14:07 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</guid>
-      <description>First of all I think this is my last idevblogaday post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn. Actually it’s just the 9th.
-I hope my words have somehow enriched your knowledge, in case you want to stick around just bookmark my feeds. I keep this fairly updated. Also since I’ve been working on a new game</description>
-      <content:encoded><![CDATA[<p><!-- raw HTML omitted -->First of all I think this is my last <a href="http://idevblogaday.com/">idevblogaday</a> post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn.<!-- raw HTML omitted --> Actually it’s just the 9th.<br>
+      <description>&lt;p&gt;&lt;del&gt;First of all I think this is my last &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;idevblogaday&lt;/a&gt; post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn.&lt;/del&gt; Actually it’s just the 9th.&lt;br&gt;
+I hope my words have somehow enriched your knowledge, in case you want to stick around just bookmark my feeds. I keep this fairly updated. Also since I’ve been working on a new game&lt;br&gt;
+there’s probably news to share in the next 2-3 months.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><del>First of all I think this is my last <a href="http://idevblogaday.com/">idevblogaday</a> post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn.</del> Actually it’s just the 9th.<br>
 I hope my words have somehow enriched your knowledge, in case you want to stick around just bookmark my feeds. I keep this fairly updated. Also since I’ve been working on a new game<br>
 there’s probably news to share in the next 2-3 months.</p>
 <p>Around 11 months ago I registered my App Store developer account. The idea…put Vizati on the iPhone.<br>
@@ -296,10 +280,12 @@ Selling at a low price will also bring all kinds of customers, they will give yo
       <link>https://www.david-amador.com/2011/04/a-little-on-how-to-initialize-and-use-gamecenter/</link>
       <pubDate>Fri, 01 Apr 2011 10:53:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/04/a-little-on-how-to-initialize-and-use-gamecenter/</guid>
-      <description>Small side-note first, Vizati is now available for the Super Nintendo, more info.
-For my third idevblogaday post I’m going to talk about Game Center.
-Game Center was released only a couple months ago (September or so) but already tons of applications are using it and even more, players ask for it.
-It’s a way to track achievements, leader boards etc. Unfortunately It’s only available from iOS 4.1+, so some compatibility check has to be done.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Small side-note first, Vizati is now available for the Super Nintendo, &lt;a href=&#34;http://www.differentpixel.com/2011/04/vizati-now-available-for-the-super-nintendo/&#34;&gt;more info&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For my third &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;idevblogaday&lt;/a&gt; post I’m going to talk about &lt;a href=&#34;http://en.wikipedia.org/wiki/Game_Center&#34;&gt;Game Center&lt;/a&gt;.&lt;br&gt;
+Game Center was released only a couple months ago (September or so) but already tons of applications are using it and even more, players ask for it.&lt;/p&gt;
+&lt;p&gt;It’s a way to track achievements, leader boards etc. Unfortunately It’s only available from iOS 4.1+, so some compatibility check has to be done.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<blockquote>
 <p><em>Small side-note first, Vizati is now available for the Super Nintendo, <a href="http://www.differentpixel.com/2011/04/vizati-now-available-for-the-super-nintendo/">more info</a>.</em></p>
 </blockquote>
@@ -386,44 +372,78 @@ Game Center was released only a couple months ago (September or so) but already 
       <link>https://www.david-amador.com/2010/09/ipad-launch-images-support-for-all-orientations/</link>
       <pubDate>Fri, 10 Sep 2010 23:23:49 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/09/ipad-launch-images-support-for-all-orientations/</guid>
-      <description>When loading an application on an iPhone or iPad, a launch image can be shown to provide feedback to the user that the application is loading.
-On the iPhone a Default.png was used, with the iPad we need to anticipate the device being started in any orientation.
-Filename Dimensions Default-Portrait.png * 768w x 1024h Default-PortraitUpsideDown.png 768w x 1024h Default-Landscape.png ** 1024w x 768h Default-LandscapeLeft.png 1024w x 768h Default-LandscapeRight.png 1024w x 768h Default.</description>
+      <description>&lt;p&gt;When loading an application on an iPhone or iPad, a launch image can be shown to provide feedback to the user that the application is loading.&lt;br&gt;
+On the iPhone a Default.png was used, with the iPad we need to anticipate the device being started in any orientation.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Filename&lt;/th&gt;
+          &lt;th&gt;Dimensions&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default-Portrait.png *&lt;/td&gt;
+          &lt;td&gt;768w x 1024h&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default-PortraitUpsideDown.png&lt;/td&gt;
+          &lt;td&gt;768w x 1024h&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default-Landscape.png **&lt;/td&gt;
+          &lt;td&gt;1024w x 768h&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default-LandscapeLeft.png&lt;/td&gt;
+          &lt;td&gt;1024w x 768h&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default-LandscapeRight.png&lt;/td&gt;
+          &lt;td&gt;1024w x 768h&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default.png&lt;/td&gt;
+          &lt;td&gt;Not recommended&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;* If you have not specified a Default-PortraitUpsideDown.png file, this file will take precedence.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>When loading an application on an iPhone or iPad, a launch image can be shown to provide feedback to the user that the application is loading.<br>
 On the iPhone a Default.png was used, with the iPad we need to anticipate the device being started in any orientation.</p>
 <table>
-<thead>
-<tr>
-<th>Filename</th>
-<th>Dimensions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Default-Portrait.png *</td>
-<td>768w x 1024h</td>
-</tr>
-<tr>
-<td>Default-PortraitUpsideDown.png</td>
-<td>768w x 1024h</td>
-</tr>
-<tr>
-<td>Default-Landscape.png **</td>
-<td>1024w x 768h</td>
-</tr>
-<tr>
-<td>Default-LandscapeLeft.png</td>
-<td>1024w x 768h</td>
-</tr>
-<tr>
-<td>Default-LandscapeRight.png</td>
-<td>1024w x 768h</td>
-</tr>
-<tr>
-<td>Default.png</td>
-<td>Not recommended</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Filename</th>
+          <th>Dimensions</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Default-Portrait.png *</td>
+          <td>768w x 1024h</td>
+      </tr>
+      <tr>
+          <td>Default-PortraitUpsideDown.png</td>
+          <td>768w x 1024h</td>
+      </tr>
+      <tr>
+          <td>Default-Landscape.png **</td>
+          <td>1024w x 768h</td>
+      </tr>
+      <tr>
+          <td>Default-LandscapeLeft.png</td>
+          <td>1024w x 768h</td>
+      </tr>
+      <tr>
+          <td>Default-LandscapeRight.png</td>
+          <td>1024w x 768h</td>
+      </tr>
+      <tr>
+          <td>Default.png</td>
+          <td>Not recommended</td>
+      </tr>
+  </tbody>
 </table>
 <p>* If you have not specified a Default-PortraitUpsideDown.png file, this file will take precedence.</p>
 <p>** If you have not specified a Default-LandscapeLet.png or Default-LandscapeRight.png image file, this file will take precedence.</p>
@@ -434,16 +454,15 @@ On the iPhone a Default.png was used, with the iPad we need to anticipate the de
       <link>https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</link>
       <pubDate>Fri, 10 Sep 2010 09:24:23 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</guid>
-      <description>This had me scratching my head for awhile.
-At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.
-A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.
-To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.</description>
+      <description>&lt;p&gt;This had me scratching my head for awhile.&lt;br&gt;
+At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.&lt;/p&gt;
+&lt;p&gt;A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.&lt;br&gt;
+To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This had me scratching my head for awhile.<br>
 At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.</p>
 <p>A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.<br>
 To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/09/retina_pixels.jpg" alt=""  title="retina_pixels"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/09/retina_pixels.jpg" title="retina_pixels"></p>
 <p>So the API handles this differently. If you developed for iPad you notice that glGetRenderbufferParameterivOES return 1024×768 but not retina displays. Instead you have to check it yourself:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">w</span> <span class="o">=</span> <span class="mi">320</span><span class="p">;</span>
@@ -476,13 +495,15 @@ For touch positions just multiply each position by the scale factor.</p>
       <link>https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/</link>
       <pubDate>Wed, 08 Sep 2010 12:01:37 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/</guid>
-      <description>I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.
-This covers iPhones, iPod Touches and iPad.
-iPhone/iPhone 3G – 412 MHz / 128MB / 320×480
-iPhone 3GS – 600 MHz / 256MB / 320×480
-iPhone 4 -~800MHz / 512MB / 640×960
-iPod Touch 1G – 412 MHz / 128MB / 320×480
-iPod Touch 2G – 532 MHz / 128MB / 320×480</description>
+      <description>&lt;p&gt;I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.&lt;/p&gt;
+&lt;p&gt;This covers iPhones, iPod Touches and iPad.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;iPhone/iPhone 3G&lt;/strong&gt; – 412 MHz / 128MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPhone 3GS&lt;/strong&gt; – 600 MHz / 256MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPhone 4&lt;/strong&gt; -~800MHz / 512MB / 640×960&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;iPod Touch 1G&lt;/strong&gt; – 412 MHz / 128MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPod Touch 2G&lt;/strong&gt; – 532 MHz / 128MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPod Touch 3G&lt;/strong&gt; – 600 MHz / 256MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPod Touch 4G&lt;/strong&gt; – 800 MHz / 256MB / 640×960&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.</p>
 <p>This covers iPhones, iPod Touches and iPad.</p>
 <p><strong>iPhone/iPhone 3G</strong> – 412 MHz / 128MB / 320×480<br>

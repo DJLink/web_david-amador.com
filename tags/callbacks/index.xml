@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>callbacks on David Amador</title>
+    <title>Callbacks on David Amador</title>
     <link>https://www.david-amador.com/tags/callbacks/</link>
-    <description>Recent content in callbacks on David Amador</description>
+    <description>Recent content in Callbacks on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 14 Jul 2010 15:18:21 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/callbacks/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,9 @@
       <link>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</link>
       <pubDate>Wed, 14 Jul 2010 15:18:21 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/</guid>
-      <description>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.
-When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.
-On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button.</description>
+      <description>&lt;p&gt;One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.&lt;br&gt;
+When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.&lt;/p&gt;
+&lt;p&gt;On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button. Sure you can point it to the same one and make a bunch of if’s and then point to a Global var which does the correct action, but this is not elegant and sure as hell not easy to add/modify stuff.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>One of the things that was probably forgotten but the dudes who made C++ standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.<br>
 When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.</p>
 <p>On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button. Sure you can point it to the same one and make a bunch of if’s and then point to a Global var which does the correct action, but this is not elegant and sure as hell not easy to add/modify stuff.</p>
@@ -28,8 +28,7 @@ When I moved to C# I was really happy with the way delegates work, it’s simple
 1- Do your own – I’ve made one that worked but couldn’t get around to add parameters. I think we might skip this one since you are probably looking for a quick solution.<br>
 2 – Use <a href="http://www.boost.org/">boost</a> – If you don’t know this have a look, even for other stuff, Boost has tons of awesome apis for helping C++ development. Including smart pointers that basically delete themselves automatically.<br>
 3 – Use <a href="http://codeplea.com/pluscallback/">PlusCallback</a> – I decided to use this one.</p>
-<p><a href="/wp-content/uploads/2010/07/cpp_callback_benchmark.png"><img loading="lazy" src="/wp-content/uploads/2010/07/cpp_callback_benchmark.png" alt=""  title="cpp_callback_benchmark"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/07/cpp_callback_benchmark.png"><img loading="lazy" src="/wp-content/uploads/2010/07/cpp_callback_benchmark.png" title="cpp_callback_benchmark"></a></p>
 <p>And it’s simple to use</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// Callback without parameters
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span> 

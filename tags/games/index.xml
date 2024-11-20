@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>games on David Amador</title>
+    <title>Games on David Amador</title>
     <link>https://www.david-amador.com/tags/games/</link>
-    <description>Recent content in games on David Amador</description>
+    <description>Recent content in Games on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 29 Dec 2016 12:35:49 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/games/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,9 @@
       <link>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</link>
       <pubDate>Thu, 29 Dec 2016 12:35:49 +0000</pubDate>
       <guid>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</guid>
-      <description>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.
-It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.
-For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was Quest of Dungeons, which started development in 2013.</description>
+      <description>&lt;p&gt;As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.&lt;br&gt;
+It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.&lt;/p&gt;
+&lt;p&gt;For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was &lt;a href=&#34;http://www.questofdungeons.com&#34;&gt;Quest of Dungeons&lt;/a&gt;, which started development in 2013.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.<br>
 It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.</p>
 <p>For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was <a href="http://www.questofdungeons.com">Quest of Dungeons</a>, which started development in 2013.</p>
@@ -57,12 +57,12 @@ Oh and I want to take 2 weeks of proper vacations after the PS4 release, haven�
       <link>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</link>
       <pubDate>Sun, 06 Apr 2014 11:39:36 +0000</pubDate>
       <guid>https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/</guid>
-      <description>I’m pleased to announce that Quest of Dungeons is finally out.
-I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.
-It was released on March 25th, for PC, Mac and iOS. You can get it on Steam, iOS App Store or directly from the site via Humble Store.
-I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought.</description>
-      <content:encoded><![CDATA[<p><a href="http://www.questofdungeons.com"><img loading="lazy" src="https://www.questofdungeons.com/imgs/icon.png" alt="Quest of Dungeons"  />
-  </a></p>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.questofdungeons.com&#34;&gt;&lt;img alt=&#34;Quest of Dungeons&#34; loading=&#34;lazy&#34; src=&#34;https://www.questofdungeons.com/imgs/icon.png&#34;&gt;  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I’m pleased to announce that Quest of Dungeons is finally out.&lt;br&gt;
+I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.&lt;/p&gt;
+&lt;p&gt;It was released on March 25th, for PC, Mac and iOS. You can get it on &lt;a href=&#34;https://store.steampowered.com/app/270050&#34;&gt;Steam&lt;/a&gt;, &lt;a href=&#34;https://itunes.apple.com/app/id698726956/&#34;&gt;iOS App Store&lt;/a&gt; or directly from the &lt;a href=&#34;https://www.questofdungeons.com/&#34;&gt;site&lt;/a&gt; via Humble Store.&lt;/p&gt;
+&lt;p&gt;I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought. As some of you know I have a day job so I had to take 2 vacation days to simple answer emails and do quick fixes, especially to the PC/Mac version. With each new software is natural to have problems at launch and Quest of Dungeons was no exception, and right now I’m still working on a daily basis in fixing some stuff and attending to some popular requests/changes from players to the game.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><a href="http://www.questofdungeons.com"><img alt="Quest of Dungeons" loading="lazy" src="https://www.questofdungeons.com/imgs/icon.png">  </a></p>
 <p>I’m pleased to announce that Quest of Dungeons is finally out.<br>
 I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.</p>
 <p>It was released on March 25th, for PC, Mac and iOS. You can get it on <a href="https://store.steampowered.com/app/270050">Steam</a>, <a href="https://itunes.apple.com/app/id698726956/">iOS App Store</a> or directly from the <a href="https://www.questofdungeons.com/">site</a> via Humble Store.</p>
@@ -84,22 +84,18 @@ PocketGamer – 6/10 – <a href="https://www.pocketgamer.co.uk/r/iPad/Quest+of+
       <link>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</link>
       <pubDate>Wed, 11 Dec 2013 12:00:14 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</guid>
-      <description>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.
-I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too.</description>
+      <description>&lt;p&gt;I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.&lt;br&gt;
+I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too. I’m just polishing the game and finishing some bugs, but I’m close, I can feel it =)&lt;br&gt;
+Right now I’m targeting for a late January release, but I’ll have a more precise date in the next few weeks.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.<br>
 I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too. I’m just polishing the game and finishing some bugs, but I’m close, I can feel it =)<br>
 Right now I’m targeting for a late January release, but I’ll have a more precise date in the next few weeks.</p>
 <p>Meanwhile here are a couple of screenshots.</p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01-300x187.png" alt="quest_of_dungeons_mac_01"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02-300x187.png" alt="quest_of_dungeons_mac_02"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03-300x187.png" alt="quest_of_dungeons_mac_03"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04-300x187.png" alt="quest_of_dungeons_mac_04"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05-300x187.png" alt="quest_of_dungeons_mac_05"  />
-</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01.png"><img alt="quest_of_dungeons_mac_01" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02.png"><img alt="quest_of_dungeons_mac_02" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03.png"><img alt="quest_of_dungeons_mac_03" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04.png"><img alt="quest_of_dungeons_mac_04" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png"><img alt="quest_of_dungeons_mac_05" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05-300x187.png"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -107,19 +103,22 @@ Right now I’m targeting for a late January release, but I’ll have a more pre
       <link>https://www.david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</link>
       <pubDate>Wed, 24 Apr 2013 23:35:33 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/04/puwang-is-running-on-pc-releasing-it-for-free/</guid>
-      <description>Hey guys,
-Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.
-I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</description>
+      <description>&lt;p&gt;Hey guys,&lt;/p&gt;
+&lt;p&gt;Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2013/04/puwang.jpg&#34;&gt;&lt;img alt=&#34;puwang&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2013/04/puwang.jpg&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.&lt;/p&gt;
+&lt;p&gt;I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Hey guys,</p>
-<p>Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.<a href="/wp-content/uploads/2013/04/puwang.jpg"><img loading="lazy" src="/wp-content/uploads/2013/04/puwang.jpg" alt="puwang"  />
-</a><br>
+<p>Decided to spend the afternoon making Puwang run on Windows, really don’t know why but I did it.<a href="/wp-content/uploads/2013/04/puwang.jpg"><img alt="puwang" loading="lazy" src="/wp-content/uploads/2013/04/puwang.jpg"></a><br>
 Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls. I also added support for an Xbox360 controller to control the game, it’s very cool. You can’t use the gamepad to control menus though, sorry.</p>
 <p>I decided to release it for Windows for free, because the game isn’t exactly designed for PC’s, has a smaller resolution, runs on window mode only and doesn’t have Leaderboards.</p>
 <p>Here’s a video I just made of the PC version</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/1UkJHDLfI-A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1UkJHDLfI-A?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <blockquote>
 <p>The Game requires some external frameworks to be installed, so in event it crashes at start please make sure all dependencies are correctly installed.<br>
@@ -138,15 +137,14 @@ Took me around 3 hours, mostly because I had to add Mouse and Keyboard controls.
       <link>https://www.david-amador.com/2011/12/rage/</link>
       <pubDate>Wed, 07 Dec 2011 16:47:43 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/12/rage/</guid>
-      <description>So being a big fan of Quake, Quake 3 Arena and Doom I was eager to get my hands on id Software latest game, Rage.
-Like most developers out there I’ve been impressed by John Carmack’s work and breakthroughs in gaming and computer graphics for years. When I first heard Rage was targeting 60FPS I got intrigued.
-Almost every game targets 30FPS and targeting twice as that leaves less time to render each frame, even more since they were promising vast wastelands, detailed characters, top notch animations and AI.</description>
+      <description>&lt;p&gt;So being a big fan of Quake, Quake 3 Arena and Doom I was eager to get my hands on id Software latest game, Rage.&lt;/p&gt;
+&lt;p&gt;Like most developers out there I’ve been impressed by John Carmack’s work and breakthroughs in gaming and computer graphics for years. When I first heard Rage was targeting 60FPS I got intrigued.&lt;br&gt;
+Almost every game targets 30FPS and targeting twice as that leaves &lt;a href=&#34;https://www.david-amador.com/2011/08/hurry-you-only-have-16-ms-to-render-everything/&#34; title=&#34;Hurry you only have 16 ms to render everything&#34;&gt;less time to render each frame&lt;/a&gt;, even more since they were promising vast wastelands, detailed characters, top notch animations and AI.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So being a big fan of Quake, Quake 3 Arena and Doom I was eager to get my hands on id Software latest game, Rage.</p>
 <p>Like most developers out there I’ve been impressed by John Carmack’s work and breakthroughs in gaming and computer graphics for years. When I first heard Rage was targeting 60FPS I got intrigued.<br>
 Almost every game targets 30FPS and targeting twice as that leaves <a href="/2011/08/hurry-you-only-have-16-ms-to-render-everything/" title="Hurry you only have 16 ms to render everything">less time to render each frame</a>, even more since they were promising vast wastelands, detailed characters, top notch animations and AI.</p>
 <p>But enough of that. I got the PC version since I’m old fashioned and I think shooters are best played with Mouse/Kb. Besides that shooters are always a tad slower on consoles to compensate the lack of Mouse for aiming.</p>
-<p><a href="/wp-content/uploads/2011/10/WP_000105.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/WP_000105.jpg" alt=""  title="WP_000105"  />
-</a></p>
+<p><a href="/wp-content/uploads/2011/10/WP_000105.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/WP_000105.jpg" title="WP_000105"></a></p>
 <p>The game comes packed on 3 DVD summing a 23GB install.</p>
 <p>The story takes place after a meteor crashing into the earth, several arks where placed underground with people in order for mankind to survive. You are one of those survivors.<br>
 There isn’t much more into, after you wake up you discovered most of the planet is a wasteland ruled by bandits, mutants and others.</p>
@@ -154,26 +152,16 @@ There isn’t much more into, after you wake up you discovered most of the plane
 <p>Apart from some technical issues I first encountered, after updating the drivers I managed to play it smoothly on my laptop, my desktop rig is quite old now (6+ years) so it doesn’t quite handle it at 1080p.</p>
 <p>I’m very impressed with the game’s smooth animations and enemy AI. The story itself is crap but the whole fun in this game is just playing it, the battles always feel fresh, holding the shotgun feels like an id gun indeed. You keep encountering new enemies with new tricks, near the end you are still trying to get the hang of that new enemy tactics.</p>
 <p>If you have the chance try it.</p>
-<p><a href="/wp-content/uploads/2011/10/2011-10-22_00001.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00001-300x168.jpg" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2011/10/2011-10-22_00007.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00007-300x168.jpg" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2011/10/2011-10-22_00010.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00010-300x168.jpg" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2011/10/2011-10-22_00012.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00012-300x168.jpg" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2011/10/2011-10-23_00005.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00005-300x168.jpg" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2011/10/2011-10-23_00008.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00008-300x168.jpg" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2011/10/2011-10-23_00009.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00009-300x168.jpg" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2011/10/2011-10-23_00010.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00010-300x168.jpg" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2011/10/2011-10-22_00015.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00015-300x168.jpg" alt=""  />
-</a></p>
-<p><a href="/wp-content/uploads/2011/10/WP_000105.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/WP_000105.jpg" alt=""  />
-</a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-22_00001.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00001-300x168.jpg"></a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-22_00007.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00007-300x168.jpg"></a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-22_00010.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00010-300x168.jpg"></a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-22_00012.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00012-300x168.jpg"></a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-23_00005.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00005-300x168.jpg"></a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-23_00008.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00008-300x168.jpg"></a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-23_00009.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00009-300x168.jpg"></a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-23_00010.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-23_00010-300x168.jpg"></a></p>
+<p><a href="/wp-content/uploads/2011/10/2011-10-22_00015.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/2011-10-22_00015-300x168.jpg"></a></p>
+<p><a href="/wp-content/uploads/2011/10/WP_000105.jpg"><img loading="lazy" src="/wp-content/uploads/2011/10/WP_000105.jpg"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -181,36 +169,34 @@ There isn’t much more into, after you wake up you discovered most of the plane
       <link>https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/</link>
       <pubDate>Sat, 23 Oct 2010 20:00:59 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/10/super-meat-boy-meat-dissection/</guid>
-      <description>I don’t usually write reviews about games, maybe mostly because I don’t play as often as I used to. Most games today are just graphics graphics, I use super shader ray-traced lights but I forgot gameplay because I’m a tech demo.
-I grew up with a Super Nintendo playing Super Mario World and Zelda A Link to the Past, yeah shocker, no Spectrum to me :P, so I’m 2D gameplay type lover.</description>
+      <description>&lt;p&gt;I don’t usually write reviews about games, maybe mostly because I don’t play as often as I used to. Most games today are just graphics graphics, I use super shader ray-traced lights but I forgot gameplay because I’m a tech demo.&lt;br&gt;
+I &lt;a href=&#34;https://www.david-amador.com/2010/08/games-and-systems-from-childhood/&#34;&gt;grew up with a Super Nintendo&lt;/a&gt; playing Super Mario World and Zelda A Link to the Past, yeah shocker, no Spectrum to me :P, so I’m 2D gameplay type lover.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I don’t usually write reviews about games, maybe mostly because I don’t play as often as I used to. Most games today are just graphics graphics, I use super shader ray-traced lights but I forgot gameplay because I’m a tech demo.<br>
 I <a href="/2010/08/games-and-systems-from-childhood/">grew up with a Super Nintendo</a> playing Super Mario World and Zelda A Link to the Past, yeah shocker, no Spectrum to me :P, so I’m 2D gameplay type lover.</p>
 <p>I always loved Mario games, the precision and the rush of making a level without stopping or speeding down was as good as it gets for platform games in my opinion. This is the key point in Mario games, not the story, why else would people still be playing those games? The princess keeps being kidnapped by the same dude, there’s basically no story so what keeps gamers coming around is gameplay and fun.</p>
 <p>This is what Super Meat Boy brings us, excellent gameplay with all the frustration and deaths that actually brings meaning to reaching the end of a level. I’ve been following Meat Boy development ever since it was announced, well in fact I’m an avid Edmund Mcmillen fan even since <a href="http://www.chroniclogic.com/gish.htm">Gish</a>, I even bought his “This is a cry for help” cd, comes packed with 18 games and great comics, you should get it if we is still selling them.</p>
-<p><a href="/wp-content/uploads/2010/10/edmund_mcmillen_this_is_a_cry_for_help_cd.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/edmund_mcmillen_this_is_a_cry_for_help_cd.jpg" alt=""  title="This is a cry for Help Edmund Mcmillen CD proof :P"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/10/edmund_mcmillen_this_is_a_cry_for_help_cd.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/edmund_mcmillen_this_is_a_cry_for_help_cd.jpg" title="This is a cry for Help Edmund Mcmillen CD proof :P"></a></p>
 <p>Sorry Tommy Refenes but I don’t know any of your past works. Anyway, back on track…</p>
-<p><a href="/wp-content/uploads/2010/10/1269147417.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/1269147417.jpg" alt=""  title="1269147417"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/10/1269147417.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/1269147417.jpg" title="1269147417"></a></p>
 <p>The game is a fast paced platform game with a block of meat which mission is to reach Bandage Girl (it’s Super Meat Boy “princess peach”) on every level, for that we must jump, jump, jump, avoid traps, jump, did I mention we has to jump?</p>
-<p><a href="/wp-content/uploads/2010/10/snessmb.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/snessmb.jpg" alt=""  title="snessmb"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/10/snessmb.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/snessmb.jpg" title="snessmb"></a></p>
 <p>The entire game is about precision and button timing, you fail you die, too slow? goodbye.<br>
 This will put you swearing at the TV like you never did, believe me, and not because the buttons feel dumb or the game didn’t respond but because you sucked and died. The controls are so well responsive that it feels like they grabbed Super Mario controls code and improved it.<br>
 Plus the Xbox360 controller buttons colors are almost the same as the SNES controller, I felt like going back in time.</p>
-<p><a href="/wp-content/uploads/2010/10/xbox360controller1.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/xbox360controller1.jpg" alt=""  title="xbox360controller"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/10/Snes_control.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/Snes_control.jpg" alt=""  title="Snes_control"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/10/xbox360controller1.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/xbox360controller1.jpg" title="xbox360controller"></a></p>
+<p><a href="/wp-content/uploads/2010/10/Snes_control.jpg"><img loading="lazy" src="/wp-content/uploads/2010/10/Snes_control.jpg" title="Snes_control"></a></p>
 <p>A curious thing is, there’s a run button, the X and another for jump, the A button. Most of the time you will be running so the run button feels almost useless. Well the obvious thing is, on tight platforms you won’t be running, the other thing is this was the first time since those early hardcore platform games which I felt that pressing that button all the time helped me grasping the controller better, and jump seem more timed because you are using the same finger to press them both. Just try it, you’ll see what I mean.</p>
 <p>Graphically the game is simple but pretty with small details that you’ll probably miss the first time you play each level. My only complaint is that the cutscenes don’t feel like they belong in the game, because the lack of detail in scenarios and characters, luckily most will put a smile on your face so no harm done.</p>
 <p>The game is packed with unlockable characters from other indie games like Beat Trip, Braid, Gish, you name it. For that you need to collect bandages all across the levels. The other things is that each level has a Light and Dark World, (Zelda Link to the Past memories for me) and you unlock the Dark World, which is even harder when you score an A in the Light World.</p>
 <p>So the game is a blast and I highly recommend it, even more because right now is at 800 MS Points.</p>
 <p>Here’s a video of me playing, be warned I’m not a very good player 😛</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/8gwh1O1OpyQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8gwh1O1OpyQ?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -219,111 +205,87 @@ Plus the Xbox360 controller buttons colors are almost the same as the SNES contr
       <link>https://www.david-amador.com/2010/08/games-and-systems-from-childhood/</link>
       <pubDate>Sun, 08 Aug 2010 12:36:43 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/08/games-and-systems-from-childhood/</guid>
-      <description>I think the first game I ever played was Tetris on a 286 if my memory isn’t failing me.
-My father worked at restaurant nearby a small apartment rental office, one of the dudes that worked there occasionally would let me play. I remember one day he had this new game, Prince of Persia, my chin just fell, awesome,
-I thought games couldn’t get any better. I remember always asking him to “type the code to play” as I called it, since it was DOS based.</description>
+      <description>&lt;p&gt;I think the first game I ever played was &lt;strong&gt;Tetris&lt;/strong&gt; on a 286 if my memory isn’t failing me.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2010/08/Tetris_DOS_1986.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/08/Tetris_DOS_1986.png&#34; title=&#34;Tetris_DOS_1986&#34;&gt;&lt;/a&gt;&lt;br&gt;
+My father worked at restaurant nearby a small apartment rental office, one of the dudes that worked there occasionally would let me play. I remember one day he had this new game, &lt;strong&gt;Prince of Persia&lt;/strong&gt;, my chin just fell, awesome,&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2010/08/prince-of-persia.gif&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/08/prince-of-persia.gif&#34; title=&#34;prince-of-persia&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I thought games couldn’t get any better. I remember always asking him to “type the code to play” as I called it, since it was &lt;a href=&#34;http://en.wikipedia.org/wiki/DOS&#34;&gt;DOS&lt;/a&gt; based. Probably something like “cd /games/prince~” =P&lt;br&gt;
+I spent hours playing that game, I do know I never managed to see the end thought.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I think the first game I ever played was <strong>Tetris</strong> on a 286 if my memory isn’t failing me.</p>
-<p><a href="/wp-content/uploads/2010/08/Tetris_DOS_1986.png"><img loading="lazy" src="/wp-content/uploads/2010/08/Tetris_DOS_1986.png" alt=""  title="Tetris_DOS_1986"  />
-</a><br>
+<p><a href="/wp-content/uploads/2010/08/Tetris_DOS_1986.png"><img loading="lazy" src="/wp-content/uploads/2010/08/Tetris_DOS_1986.png" title="Tetris_DOS_1986"></a><br>
 My father worked at restaurant nearby a small apartment rental office, one of the dudes that worked there occasionally would let me play. I remember one day he had this new game, <strong>Prince of Persia</strong>, my chin just fell, awesome,</p>
-<p><a href="/wp-content/uploads/2010/08/prince-of-persia.gif"><img loading="lazy" src="/wp-content/uploads/2010/08/prince-of-persia.gif" alt=""  title="prince-of-persia"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/prince-of-persia.gif"><img loading="lazy" src="/wp-content/uploads/2010/08/prince-of-persia.gif" title="prince-of-persia"></a></p>
 <p>I thought games couldn’t get any better. I remember always asking him to “type the code to play” as I called it, since it was <a href="http://en.wikipedia.org/wiki/DOS">DOS</a> based. Probably something like “cd /games/prince~” =P<br>
 I spent hours playing that game, I do know I never managed to see the end thought.</p>
 <p>Next in line were <strong>Super Mario Bros</strong>. games. Some neighbors had a <a href="http://en.wikipedia.org/wiki/NES"><strong>NES</strong></a></p>
-<p><a href="/wp-content/uploads/2010/08/nes-console.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/nes-console.jpg" alt=""  title="nes-console"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/nes-console.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/nes-console.jpg" title="nes-console"></a></p>
 <p>and when my parents were there that was to entertain the visitors kids, I didn’t even know there were any home consoles before seeing a NES before, I later discovered the Spectrum which was older but my first contact with a home console was with the NES and it’s gigantic cartridges.</p>
-<p><a href="/wp-content/uploads/2010/08/mario_bros_nes_cartridge.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/mario_bros_nes_cartridge.jpg" alt=""  title="mario_bros_nes_cartridge"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/mario_bros_nes_cartridge.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/mario_bros_nes_cartridge.jpg" title="mario_bros_nes_cartridge"></a></p>
 <p>I never got at PC or console until I turn 12 I think, when my mother brought back from one of her trips a what she called “expensive toy on promotion” which was basically a Super Nintendo Street Fighter 2 Turbo Edition, a Super Scope and another game <strong>Battletoads in BattleManiacs</strong></p>
-<p><a href="/wp-content/uploads/2010/08/snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/snes.jpg" alt=""  title="snes"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/SNES_Controller.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/SNES_Controller.jpg" alt=""  title="SNES_Controller"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/snes.jpg" title="snes"></a></p>
+<p><a href="/wp-content/uploads/2010/08/SNES_Controller.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/SNES_Controller.jpg" title="SNES_Controller"></a></p>
 <p>This is a picture of the box, containing the Super Nintendo and <strong>Street Fighter 2 Turbo</strong></p>
-<p><a href="/wp-content/uploads/2010/08/snes-street-fighter-2-turbo-edition.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/snes-street-fighter-2-turbo-edition.jpg" alt=""  title="snes street fighter 2 turbo edition"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/street_fighter_ii_snes_hadoken.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/street_fighter_ii_snes_hadoken.jpg" alt=""  title="street_fighter_ii_snes_hadoken"  />
-</a><br>
+<p><a href="/wp-content/uploads/2010/08/snes-street-fighter-2-turbo-edition.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/snes-street-fighter-2-turbo-edition.jpg" title="snes street fighter 2 turbo edition"></a></p>
+<p><a href="/wp-content/uploads/2010/08/street_fighter_ii_snes_hadoken.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/street_fighter_ii_snes_hadoken.jpg" title="street_fighter_ii_snes_hadoken"></a><br>
 Sure was a sweet game, probably one of the best fight games I ever played. Since most of my friends at the time didn’t had this game I had quite the advantage when borrowing games.</p>
 <p><a href="/wp-content/uploads/2010/08/Battletoads_in_battlemaniacs-snes-box.jpg"></a></p>
-<p><a href="/wp-content/uploads/2010/08/Battletoads_in_battlemaniacs-snes-box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/Battletoads_in_battlemaniacs-snes-box.jpg" alt=""  title="Battletoads_in_battlemaniacs snes box"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/Battletoads-in-Battlemaniacs-cartridge.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/Battletoads-in-Battlemaniacs-cartridge.jpg" alt=""  title="Battletoads in Battlemaniacs cartridge"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/BattletoadsInBattlemaniacs3.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/BattletoadsInBattlemaniacs3.jpg" alt=""  title="BattletoadsInBattlemaniacs3"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/Battletoads_in_battlemaniacs-snes-box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/Battletoads_in_battlemaniacs-snes-box.jpg" title="Battletoads_in_battlemaniacs snes box"></a></p>
+<p><a href="/wp-content/uploads/2010/08/Battletoads-in-Battlemaniacs-cartridge.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/Battletoads-in-Battlemaniacs-cartridge.jpg" title="Battletoads in Battlemaniacs cartridge"></a></p>
+<p><a href="/wp-content/uploads/2010/08/BattletoadsInBattlemaniacs3.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/BattletoadsInBattlemaniacs3.jpg" title="BattletoadsInBattlemaniacs3"></a></p>
 <p><strong>Battletoads in Battlemaniacs</strong> was a Beat ’em up game much like <strong>Street of Rage</strong> on the <strong>Mega Drive</strong> ( <strong>Genesis</strong> in US). This game had one of the hardest levels I ever played on a game, the “brain track race thingy”</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/IbMLdDDGmyc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IbMLdDDGmyc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>If people are complaining about <a href="http://www.limbogame.org/"><strong>Limbo</strong>‘</a>s deaths I imagine with this game. It took me ages to beat that level.</p>
-<p><a href="/wp-content/uploads/2010/08/super_scope.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super_scope" alt=""  title="super_scope"  />
-</a><a href="/wp-content/uploads/2010/08/nintendo-snes-scope.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/nintendo-snes-scope.jpg" alt=""  title="OLYMPUS DIGITAL CAMERA"  />
-</a><a href="/wp-content/uploads/2010/08/Super-NES-Super-Scope-6-2.gif"><img loading="lazy" src="/wp-content/uploads/2010/08/Super-NES-Super-Scope-6.gif" alt=""  title="Super NES Super Scope 6 (2)"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/super_scope.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super_scope" title="super_scope"></a><a href="/wp-content/uploads/2010/08/nintendo-snes-scope.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/nintendo-snes-scope.jpg" title="OLYMPUS DIGITAL CAMERA"></a><a href="/wp-content/uploads/2010/08/Super-NES-Super-Scope-6-2.gif"><img loading="lazy" src="/wp-content/uploads/2010/08/Super-NES-Super-Scope-6.gif" title="Super NES Super Scope 6 (2)"></a></p>
 <p>The <strong>Super Scope</strong> was this huge bazooka, had 6 games in it but they all sucked. I don’t think Nintendo released much more games for this.</p>
 <p>Since most of my friends had the SNES + <strong>Super Mario World</strong> bundle I pretty much always had a copy at home. It is one of my favorite games ever. Even my sister loved to play it. Along side Battletoads this was another game that made me had rage attacks one a particular level, <a href="http://www.mariowiki.com/Tubular">Tubular</a>, it’s considered the hardest levels in the game because of the lack of ground to stand on and the large amount of enemies.</p>
-<p><a href="/wp-content/uploads/2010/08/super_mario_world_box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super_mario_world_box.jpg" alt=""  title="super_mario_world_box"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/Tubular_SMW.png"><img loading="lazy" src="/wp-content/uploads/2010/08/Tubular_SMW.png" alt=""  title="Tubular_SMW"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/super-mario-world-2.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-world-2.jpg" alt=""  title="super-mario-world-2"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/super-mario-world.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-world.jpg" alt=""  title="super mario world"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/super_mario_world_box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super_mario_world_box.jpg" title="super_mario_world_box"></a></p>
+<p><a href="/wp-content/uploads/2010/08/Tubular_SMW.png"><img loading="lazy" src="/wp-content/uploads/2010/08/Tubular_SMW.png" title="Tubular_SMW"></a></p>
+<p><a href="/wp-content/uploads/2010/08/super-mario-world-2.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-world-2.jpg" title="super-mario-world-2"></a></p>
+<p><a href="/wp-content/uploads/2010/08/super-mario-world.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-world.jpg" title="super mario world"></a></p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/hSXSWqUirGA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
 
-<p><a href="/wp-content/uploads/2010/08/ZelaALttP.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/ZelaALttP.jpg" alt=""  title="ZelaALttP"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/a-link-to-the-past-cardridge.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/a-link-to-the-past-cardridge.jpg" alt=""  title="a link to the past cardridge"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/zelda-a-link-to-the-past.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/zelda-a-link-to-the-past.jpg" alt=""  title="zelda-a-link-to-the-past"  />
-</a></p>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hSXSWqUirGA?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p><a href="/wp-content/uploads/2010/08/ZelaALttP.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/ZelaALttP.jpg" title="ZelaALttP"></a></p>
+<p><a href="/wp-content/uploads/2010/08/a-link-to-the-past-cardridge.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/a-link-to-the-past-cardridge.jpg" title="a link to the past cardridge"></a></p>
+<p><a href="/wp-content/uploads/2010/08/zelda-a-link-to-the-past.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/zelda-a-link-to-the-past.jpg" title="zelda-a-link-to-the-past"></a></p>
 <p>Another one of my favorite SNES games is <strong>The Legend of Zelda A Link to the Past</strong>, for me it’s the best Zelda game. Sure <strong>Zelda Ocarina of Time</strong> was awesome but it didn’t brought anything new to the series, even more the removed what made Link to the Past so great, the Light and the Dark world. After exploring the all Light World and defeating Ganondorf you are transported to the Dark World</p>
-<p><a href="/wp-content/uploads/2010/08/LegendOfZelda_2D00_ALinkToThePast_2D00_LightWorld.png"><img loading="lazy" src="/wp-content/uploads/2010/08/LegendOfZelda_2D00_ALinkToThePast_2D00_LightWorld.png" alt=""  title="LegendOfZelda_2D00_ALinkToThePast_2D00_LightWorld"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/LegendOfZelda-ALinkToThePast-DarkWorld.png"><img loading="lazy" src="/wp-content/uploads/2010/08/LegendOfZelda-ALinkToThePast-DarkWorld.png" alt=""  title="LegendOfZelda-ALinkToThePast-DarkWorld"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/LegendOfZelda_2D00_ALinkToThePast_2D00_LightWorld.png"><img loading="lazy" src="/wp-content/uploads/2010/08/LegendOfZelda_2D00_ALinkToThePast_2D00_LightWorld.png" title="LegendOfZelda_2D00_ALinkToThePast_2D00_LightWorld"></a></p>
+<p><a href="/wp-content/uploads/2010/08/LegendOfZelda-ALinkToThePast-DarkWorld.png"><img loading="lazy" src="/wp-content/uploads/2010/08/LegendOfZelda-ALinkToThePast-DarkWorld.png" title="LegendOfZelda-ALinkToThePast-DarkWorld"></a></p>
 <p>Wait wait… but you could also go back in forward from one world to another, most of the castle and secrets implied that you had to activate or move something in a world to affect the other one. How cool is that?</p>
-<p><a href="/wp-content/uploads/2010/08/240px-Light_World_-_Dark_World.png"><img loading="lazy" src="/wp-content/uploads/2010/08/240px-Light_World_-_Dark_World.png" alt=""  title="240px-Light_World_-_Dark_World"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/240px-Light_World_-_Dark_World.png"><img loading="lazy" src="/wp-content/uploads/2010/08/240px-Light_World_-_Dark_World.png" title="240px-Light_World_-_Dark_World"></a></p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/GqZg1ikmKFw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GqZg1ikmKFw?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>I don’t remember all the other games that I’ve played on the SNES but here are some box arts from some I do remember:</p>
-<p><a href="/wp-content/uploads/2010/08/axelay_box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/axelay_box.jpg" alt=""  title="axelay_box"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/supermariokart_box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/supermariokart_box.jpg" alt=""  title="supermariokart_box"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/super_nes-super_mario_world_2_yoshis_island.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super_nes-super_mario_world_2_yoshis_island.jpg" alt=""  title="super_nes-super_mario_world_2_yoshis_island"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/super-mario-rpg-box_front.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-rpg-box_front.jpg" alt=""  title="super mario rpg box_front"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/super-mario-all-stars-snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-all-stars-snes.jpg" alt=""  title="super mario all stars snes"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/super-castlevania-iv-snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-castlevania-iv-snes.jpg" alt=""  title="super castlevania iv snes"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/starfox-super-nintendo-box-art.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/starfox-super-nintendo-box-art.jpg" alt=""  title="starfox-super-nintendo-box-art"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/simcity_snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/simcity_snes.jpg" alt=""  title="simcity_snes"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/F-Zero_snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/F-Zero_snes.jpg" alt=""  title="F-Zero_snes"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/donkey-kong-country-snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/donkey-kong-country-snes.jpg" alt=""  title="donkey-kong-country snes"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/chrono_trigger_snes_box1.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/chrono_trigger_snes_box1.jpg" alt=""  title="chrono_trigger_snes_box1"  />
-</a></p>
-<p><a href="/wp-content/uploads/2010/08/FFviBoxArt.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/FFviBoxArt.jpg" alt=""  title="FFviBoxArt"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/axelay_box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/axelay_box.jpg" title="axelay_box"></a></p>
+<p><a href="/wp-content/uploads/2010/08/supermariokart_box.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/supermariokart_box.jpg" title="supermariokart_box"></a></p>
+<p><a href="/wp-content/uploads/2010/08/super_nes-super_mario_world_2_yoshis_island.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super_nes-super_mario_world_2_yoshis_island.jpg" title="super_nes-super_mario_world_2_yoshis_island"></a></p>
+<p><a href="/wp-content/uploads/2010/08/super-mario-rpg-box_front.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-rpg-box_front.jpg" title="super mario rpg box_front"></a></p>
+<p><a href="/wp-content/uploads/2010/08/super-mario-all-stars-snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-mario-all-stars-snes.jpg" title="super mario all stars snes"></a></p>
+<p><a href="/wp-content/uploads/2010/08/super-castlevania-iv-snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/super-castlevania-iv-snes.jpg" title="super castlevania iv snes"></a></p>
+<p><a href="/wp-content/uploads/2010/08/starfox-super-nintendo-box-art.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/starfox-super-nintendo-box-art.jpg" title="starfox-super-nintendo-box-art"></a></p>
+<p><a href="/wp-content/uploads/2010/08/simcity_snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/simcity_snes.jpg" title="simcity_snes"></a></p>
+<p><a href="/wp-content/uploads/2010/08/F-Zero_snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/F-Zero_snes.jpg" title="F-Zero_snes"></a></p>
+<p><a href="/wp-content/uploads/2010/08/donkey-kong-country-snes.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/donkey-kong-country-snes.jpg" title="donkey-kong-country snes"></a></p>
+<p><a href="/wp-content/uploads/2010/08/chrono_trigger_snes_box1.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/chrono_trigger_snes_box1.jpg" title="chrono_trigger_snes_box1"></a></p>
+<p><a href="/wp-content/uploads/2010/08/FFviBoxArt.jpg"><img loading="lazy" src="/wp-content/uploads/2010/08/FFviBoxArt.jpg" title="FFviBoxArt"></a></p>
 <p>Damn this post is getting way big, I think I’m going to split this into several parts, I’ll cover Mega Drive on the next run. What about you, what are your favorite SNES games?</p>
 ]]></content:encoded>
     </item>
@@ -332,12 +294,11 @@ Sure was a sweet game, probably one of the best fight games I ever played. Since
       <link>https://www.david-amador.com/2009/03/make-a-game-week/</link>
       <pubDate>Fri, 13 Mar 2009 17:33:12 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/03/make-a-game-week/</guid>
-      <description>I work on a game creation company and this week the administration decided to give us a challenge, to make a game. Using whatever tools we want to whatever platform we like.
-After we got divided between 4 teams the challenge was to make every minute count. My team got composed by me (programmer), a designer and a person from man resources. Of course I was going to handle every bit of code, the designer the art and the third person the level design and documentation.</description>
+      <description>&lt;p&gt;I work on a game creation company and this week the administration decided to give us a challenge, to make a game. Using whatever tools we want to whatever platform we like.&lt;/p&gt;
+&lt;p&gt;After we got divided between 4 teams the challenge was to make every minute count. My team got composed by me (programmer), a designer and a person from man resources. Of course I was going to handle every bit of code, the designer the art and the third person the level design and documentation.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I work on a game creation company and this week the administration decided to give us a challenge, to make a game. Using whatever tools we want to whatever platform we like.</p>
 <p>After we got divided between 4 teams the challenge was to make every minute count. My team got composed by me (programmer), a designer and a person from man resources. Of course I was going to handle every bit of code, the designer the art and the third person the level design and documentation.</p>
-<p>We came up with a platform game called Cloud9 in which you have to return a star to the moon. The star has magical properties and can use the 4 basic elements. <img loading="lazy" src="/wp-content/uploads/2009/03/cloud9.jpg" alt="cloud9"  title="cloud9"  />
-</p>
+<p>We came up with a platform game called Cloud9 in which you have to return a star to the moon. The star has magical properties and can use the 4 basic elements. <img alt="cloud9" loading="lazy" src="/wp-content/uploads/2009/03/cloud9.jpg" title="cloud9"></p>
 <p>Meanwhile the week went by and this is the last day. I spent most of the day building the level editor.</p>
 ]]></content:encoded>
     </item>

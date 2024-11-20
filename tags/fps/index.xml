@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>fps on David Amador</title>
+    <title>Fps on David Amador</title>
     <link>https://www.david-amador.com/tags/fps/</link>
-    <description>Recent content in fps on David Amador</description>
+    <description>Recent content in Fps on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 08 Aug 2011 21:45:24 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/fps/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,9 @@
       <link>https://www.david-amador.com/2011/08/hurry-you-only-have-16-ms-to-render-everything/</link>
       <pubDate>Mon, 08 Aug 2011 21:45:24 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/08/hurry-you-only-have-16-ms-to-render-everything/</guid>
-      <description>So I’ve been working on my new game and I’m doing some tweaks here and there on the engine.
-Mainly with the rendering section, trying to squeeze as much as possible, thus maintaining an acceptable framerate. It’s not like I’m doing a heavily graphic game but I like to know that It can be used even on slower pcs and that I’m not using more cycles than necessary.
-This past week and after reading a bunch of stuff and keynotes from John Carmack about Rage (60FPS ftw) I decided to measure my own stuff.</description>
+      <description>&lt;p&gt;So I’ve been working on my new game and I’m doing some tweaks here and there on the engine.&lt;/p&gt;
+&lt;p&gt;Mainly with the rendering section, trying to squeeze as much as possible, thus maintaining an acceptable framerate. It’s not like I’m doing a heavily graphic game but I like to know that It can be used even on slower pcs and that I’m not using more cycles than necessary.&lt;/p&gt;
+&lt;p&gt;This past week and after reading a bunch of stuff and keynotes from John Carmack about Rage (60FPS ftw) I decided to measure my own stuff.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So I’ve been working on my new game and I’m doing some tweaks here and there on the engine.</p>
 <p>Mainly with the rendering section, trying to squeeze as much as possible, thus maintaining an acceptable framerate. It’s not like I’m doing a heavily graphic game but I like to know that It can be used even on slower pcs and that I’m not using more cycles than necessary.</p>
 <p>This past week and after reading a bunch of stuff and keynotes from John Carmack about Rage (60FPS ftw) I decided to measure my own stuff.</p>
@@ -35,8 +35,7 @@ Sounds hard doesn’t it?</p>
 <p>At 60 FPS it’s even worse</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="mi">1000</span><span class="o">/</span><span class="mi">60</span> <span class="o">=</span> <span class="o">~</span><span class="mf">16.6</span> <span class="n">milliseconds</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2011/08/SonicRunMediumAni.gif" alt=""  title="SonicRunMediumAni"  />
-</p>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2011/08/SonicRunMediumAni.gif" title="SonicRunMediumAni"></p>
 <p>16.6 milliseconds to do a full loop on your engine. Actually with modern technology it’s not an impressive accomplishment depending on what you are doing but it’s a good practice to<br>
 look at these numbers, consider them while you code.</p>
 <p>Now I’ve been making some tests on my own engine and I placed 2000 sprites each with a sprite animation and an A* pathfinding (2000 paths can be cached at a time) rendering at 100 FPS.<br>

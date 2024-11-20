@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 29 May 2009 13:59:35 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/web-hosting/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,9 @@
       <link>https://www.david-amador.com/2009/05/server-move/</link>
       <pubDate>Fri, 29 May 2009 13:59:35 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/05/server-move/</guid>
-      <description>It’s been awhile since I last posted something here. Mostly because since my laptop fried I’ve been on a slower pace. I still couldn’t find any compatible hdd with my acer 2001 and Acer Portugal wasn’t been very helpfull.
-So last week I began migrating our server to another host provider, I got tired of down times and processes eating up all cpu, and finally about two months ago the server crashed and all information got lost.</description>
+      <description>&lt;p&gt;It’s been awhile since I last posted something here. Mostly because since my laptop fried I’ve been on a slower pace. I still couldn’t find any compatible hdd with my acer 2001 and Acer Portugal wasn’t been very helpfull.&lt;/p&gt;
+&lt;p&gt;So last week I began migrating our server to another host provider, I got tired of down times and processes eating up all cpu, and finally about two months ago the server crashed and all information got lost. Yeah of course one has to be responsible with backups and all, but come on, who can trust a hosting that succumbs to a hdd crash with techology such as RAID and all?&lt;br&gt;
+So I moved all to another one and the downtime was around 1 or 2 hours, so no big losses here. All is running smothly now and I finnaly have unlimited bandwith 😀&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been awhile since I last posted something here. Mostly because since my laptop fried I’ve been on a slower pace. I still couldn’t find any compatible hdd with my acer 2001 and Acer Portugal wasn’t been very helpfull.</p>
 <p>So last week I began migrating our server to another host provider, I got tired of down times and processes eating up all cpu, and finally about two months ago the server crashed and all information got lost. Yeah of course one has to be responsible with backups and all, but come on, who can trust a hosting that succumbs to a hdd crash with techology such as RAID and all?<br>
 So I moved all to another one and the downtime was around 1 or 2 hours, so no big losses here. All is running smothly now and I finnaly have unlimited bandwith 😀</p>

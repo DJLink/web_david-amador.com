@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>patch on David Amador</title>
+    <title>Patch on David Amador</title>
     <link>https://www.david-amador.com/tags/patch/</link>
-    <description>Recent content in patch on David Amador</description>
+    <description>Recent content in Patch on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 08 Dec 2014 11:40:29 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/patch/index.xml" rel="self" type="application/rss+xml" />
@@ -18,13 +18,13 @@
       <link>https://www.david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</link>
       <pubDate>Mon, 08 Dec 2014 11:40:29 +0000</pubDate>
       <guid>https://www.david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/</guid>
-      <description>A new patch for iOS and Android went live, v1.1.1
-There are some differences in what’s new for each one of the platforms, the biggest change being support for iPhone 6 and 6 Plus on iOS and x86 architecture support on Android.
-The reason why there are more tweaks on the iOS is because the Android version was updated more recently. After this update they are on par on features and fixes.</description>
+      <description>&lt;p&gt;A new patch for iOS and Android went live, v1.1.1&lt;/p&gt;
+&lt;p&gt;There are some differences in what’s new for each one of the platforms, the biggest change being support for iPhone 6 and 6 Plus on iOS and x86 architecture support on Android.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png&#34;&gt;&lt;img alt=&#34;quest_of_dungeons_iphone6_plus_vs_iphone_5&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The reason why there are more tweaks on the iOS is because the Android version was updated more recently. After this update they are on par on features and fixes.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>A new patch for iOS and Android went live, v1.1.1</p>
 <p>There are some differences in what’s new for each one of the platforms, the biggest change being support for iPhone 6 and 6 Plus on iOS and x86 architecture support on Android.</p>
-<p><a href="/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png"><img loading="lazy" src="/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png" alt="quest_of_dungeons_iphone6_plus_vs_iphone_5"  />
-</a></p>
+<p><a href="/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png"><img alt="quest_of_dungeons_iphone6_plus_vs_iphone_5" loading="lazy" src="/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png"></a></p>
 <p>The reason why there are more tweaks on the iOS is because the Android version was updated more recently. After this update they are on par on features and fixes.</p>
 <p>-General-</p>
 <ul>

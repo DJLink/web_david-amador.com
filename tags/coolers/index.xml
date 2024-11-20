@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>coolers on David Amador</title>
+    <title>Coolers on David Amador</title>
     <link>https://www.david-amador.com/tags/coolers/</link>
-    <description>Recent content in coolers on David Amador</description>
+    <description>Recent content in Coolers on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 24 Oct 2009 21:47:35 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/coolers/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +18,11 @@
       <link>https://www.david-amador.com/2009/10/accelero-twin-turbo/</link>
       <pubDate>Sat, 24 Oct 2009 21:47:35 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/accelero-twin-turbo/</guid>
-      <description>Because my Ati Radeon 4890 fan fried I had to buy another cooler. After a little research I discovered Artic Accelero Twin Turbo. Today I decided to finally try it. The assembly is rather easy, the package comes with several heatsinks for memories, and of course the fans themselves. There are three ways to connect the fans, either directly to the VGA card itself, directly to the PSU with 7V or 12V.</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2009/10/twinturbo_02l.jpg"><img loading="lazy" src="/wp-content/uploads/2009/10/twinturbo_02l-150x150.jpg" alt="twinturbo_02l"  title="twinturbo_02l"  />
-</a>Because my Ati Radeon 4890 fan fried I had to buy another cooler. After a little research I discovered <a href="https://web.archive.org/web/20101017105319/http://www.arctic-cooling.com:80/catalog/product_info.php?cPath=2_&amp;mID=101&amp;language=en">Artic Accelero Twin Turbo</a>. Today I decided to finally try it. The assembly is rather easy, the package comes with several heatsinks for memories, and of course the fans themselves. There are three ways to connect the fans, either directly to the VGA card itself, directly to the PSU with 7V or 12V.<br>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2009/10/twinturbo_02l.jpg&#34;&gt;&lt;img alt=&#34;twinturbo_02l&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2009/10/twinturbo_02l-150x150.jpg&#34; title=&#34;twinturbo_02l&#34;&gt;&lt;/a&gt;Because my Ati Radeon 4890 fan fried I had to buy another cooler. After a little research I discovered &lt;a href=&#34;https://web.archive.org/web/20101017105319/http://www.arctic-cooling.com:80/catalog/product_info.php?cPath=2_&amp;amp;mID=101&amp;amp;language=en&#34;&gt;Artic Accelero Twin Turbo&lt;/a&gt;. Today I decided to finally try it. The assembly is rather easy, the package comes with several heatsinks for memories, and of course the fans themselves. There are three ways to connect the fans, either directly to the VGA card itself, directly to the PSU with 7V or 12V.&lt;br&gt;
+My stock cooler was connected to the vga card so I left it the same. Bad choice, with the card idle I was getting around 70º, way hot. I switched the fans to the PSU with 12V and voila, the Artic promissed values, around 50º, a decrease of around 20º, which is great. As for the noise I can barely hear it. So if you buy one connect it to the board.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2009/10/twinturbo_02l.jpg"><img alt="twinturbo_02l" loading="lazy" src="/wp-content/uploads/2009/10/twinturbo_02l-150x150.jpg" title="twinturbo_02l"></a>Because my Ati Radeon 4890 fan fried I had to buy another cooler. After a little research I discovered <a href="https://web.archive.org/web/20101017105319/http://www.arctic-cooling.com:80/catalog/product_info.php?cPath=2_&amp;mID=101&amp;language=en">Artic Accelero Twin Turbo</a>. Today I decided to finally try it. The assembly is rather easy, the package comes with several heatsinks for memories, and of course the fans themselves. There are three ways to connect the fans, either directly to the VGA card itself, directly to the PSU with 7V or 12V.<br>
 My stock cooler was connected to the vga card so I left it the same. Bad choice, with the card idle I was getting around 70º, way hot. I switched the fans to the PSU with 12V and voila, the Artic promissed values, around 50º, a decrease of around 20º, which is great. As for the noise I can barely hear it. So if you buy one connect it to the board.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2009/10/AtiOverdrive.jpg" alt="AtiOverdrive"  title="AtiOverdrive"  />
-</p>
+<p><img alt="AtiOverdrive" loading="lazy" src="/wp-content/uploads/2009/10/AtiOverdrive.jpg" title="AtiOverdrive"></p>
 ]]></content:encoded>
     </item>
   </channel>

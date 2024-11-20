@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 11 Jun 2020 11:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/xna/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +18,9 @@
       <link>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</link>
       <pubDate>Thu, 11 Jun 2020 11:00:00 +0000</pubDate>
       <guid>https://www.david-amador.com/2020/06/vizati-10th-anniversary-and-making-if-free/</guid>
-      <description>&amp;gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but twitter kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.
-Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and Rita with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game.</description>
-      <content:encoded><![CDATA[<p><a href="https://dj_link.itch.io/vizati"><img loading="lazy" src="/wp-content/uploads/2011/03/vizati_letterbox.jpg" alt=""  />
-</a>&gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but <a href="https://twitter.com/DJ_Link">twitter</a> kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.</p>
+      <description>&lt;p&gt;&lt;a href=&#34;https://dj_link.itch.io/vizati&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2011/03/vizati_letterbox.jpg&#34;&gt;&lt;/a&gt;&amp;gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but &lt;a href=&#34;https://twitter.com/DJ_Link&#34;&gt;twitter&lt;/a&gt; kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.&lt;/p&gt;
+&lt;p&gt;Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and &lt;a href=&#34;http://rita-silva.com/&#34; title=&#34;rita-silva.com/&#34;&gt;Rita&lt;/a&gt; with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game. Things changed a lot over the years and the original team is no longer working together, also because of OS updates, like the iOS versions etc or hardware not being around anymore the game has mostly vanished from all stores. The other day I was thinking about game preservation and thought it would be a shame to leave this only in our computers, combined with the 10th anniversary we decided to make it free to everyone, the original game can now be downloaded and played even on the newest Windows versions (thank you XNA).&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><a href="https://dj_link.itch.io/vizati"><img loading="lazy" src="/wp-content/uploads/2011/03/vizati_letterbox.jpg"></a>&gt; Hey everyone, wow ok so first of all it’s been a long time since my last post, I keep telling myself I need to return to do more regular posts, but <a href="https://twitter.com/DJ_Link">twitter</a> kinda replaced it in many ways for my daily-rambles. However I’ve been trying to work on something new and gotta get back to more regular blogging, but more on that later.</p>
 <p>Second, but not least important, Vizati is turning 10 years old today (11 June 2010), feels only yesterday we (me coding and <a href="http://rita-silva.com/" title="rita-silva.com/">Rita</a> with the art) were doing the first puzzles and trying to figure out the best way for making this a fun game. Things changed a lot over the years and the original team is no longer working together, also because of OS updates, like the iOS versions etc or hardware not being around anymore the game has mostly vanished from all stores. The other day I was thinking about game preservation and thought it would be a shame to leave this only in our computers, combined with the 10th anniversary we decided to make it free to everyone, the original game can now be downloaded and played even on the newest Windows versions (thank you XNA).</p>
 <p>Here’s the official <a href="https://dj_link.itch.io/vizati" title="https://dj_link.itch.io/vizati">itch.io</a> page, there you’ll find not only the original XNA version that was being sold, but also an unfinished version using a custom engine that I build when porting it to iOS, this framework ended up powering <a href="https://www.questofdungeons.com" title="https://www.questofdungeons.com">Quest of Dungeons</a>, a game I made a few years after. It’s not finished but should be mostly playable, although only works in window mode.</p>
 <p>I also created a GitHub repo, which has a couple more things, like the original website code, some screenshots, the code using for creating the XNA installer, PDF manual and a couple more things. This way those things will never get lost in case my computer + backups ever go bad.</p>
@@ -36,12 +35,10 @@ GitHub: <a href="https://github.com/DJLink/Vizati">https://github.com/DJLink/Viz
       <link>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
       <pubDate>Mon, 26 Jul 2010 20:37:41 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
-      <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
-The poll closes in about 6 days and you can select various options of course.</description>
+      <description>&lt;p&gt;I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (&lt;a href=&#34;http://twtpoll.com/dar51l&#34;&gt;http://twtpoll.com/dar51l&lt;/a&gt;) so that we can have more accurate results.&lt;/p&gt;
+&lt;p&gt;The poll closes in about 6 days and you can select various options of course.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (<a href="http://twtpoll.com/dar51l">http://twtpoll.com/dar51l</a>) so that we can have more accurate results.</p>
 <p>The poll closes in about 6 days and you can select various options of course.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
 ]]></content:encoded>
     </item>
     <item>
@@ -49,9 +46,9 @@ The poll closes in about 6 days and you can select various options of course.</d
       <link>https://www.david-amador.com/2010/06/making-a-xna-game-installer/</link>
       <pubDate>Wed, 09 Jun 2010 22:28:16 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/06/making-a-xna-game-installer/</guid>
-      <description>I am going to start with a little rant about Visual Studio default Installer, you know, the one you can make for yout XNA games inside VS. Ugly and not very handy, sure it installs every dependency but doesn’t leave many options like….hum…I don’t know choosing the location where you want to install?
-Moving along…I discovered this little cool installer called InnoSetup, and best of all it’s free.
-InnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control.</description>
+      <description>&lt;p&gt;I am going to start with a little rant about Visual Studio default Installer, you know, the one you can make for yout XNA games inside VS. Ugly and not very handy, sure it installs every dependency but doesn’t leave many options like….hum…I don’t know choosing the location where you want to install?&lt;/p&gt;
+&lt;p&gt;Moving along…I discovered this little cool installer called &lt;a href=&#34;http://www.jrsoftware.org/isinfo.php&#34;&gt;InnoSetup&lt;/a&gt;, and best of all it’s free.&lt;/p&gt;
+&lt;p&gt;InnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I am going to start with a little rant about Visual Studio default Installer, you know, the one you can make for yout XNA games inside VS. Ugly and not very handy, sure it installs every dependency but doesn’t leave many options like….hum…I don’t know choosing the location where you want to install?</p>
 <p>Moving along…I discovered this little cool installer called <a href="http://www.jrsoftware.org/isinfo.php">InnoSetup</a>, and best of all it’s free.</p>
 <p>InnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control.</p>
@@ -187,18 +184,22 @@ end;
       <link>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</link>
       <pubDate>Fri, 07 May 2010 20:41:09 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/05/vizati-in-windows-phone-7/</guid>
-      <description>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.
-This week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.
-I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.</description>
+      <description>&lt;p&gt;It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.&lt;br&gt;
+This week I got an invitation from &lt;a href=&#34;http://gozoomin.com/blogs/antao/&#34;&gt;João Antão&lt;/a&gt; to showcase &lt;a href=&#34;https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/&#34;&gt;Vizati&lt;/a&gt; as part of his XNA Framework presentation. This occurred during the &lt;a href=&#34;http://imaginecup.com/&#34;&gt;Imagine Cup final on Portugal&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.&lt;br&gt;
+The result was pretty good i think. It’s virtually identical.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.<br>
 This week I got an invitation from <a href="http://gozoomin.com/blogs/antao/">João Antão</a> to showcase <a href="https://web.archive.org/web/20150105005354/http://www.differentpixel.com/games/vizati/">Vizati</a> as part of his XNA Framework presentation. This occurred during the <a href="http://imaginecup.com/">Imagine Cup final on Portugal</a>.</p>
 <p>I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.<br>
 The result was pretty good i think. It’s virtually identical.</p>
 <p>You can see it for yourself, the speed on the video is not very good due to the screen capture software.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/hX18tuujAEY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hX18tuujAEY?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Now for the tech part. Grabbing my 3.1 solution what have I made to have this running? What have I changed?</p>
 <p>I had to create a XNA 4 empty project and add all code files and assets (no direct upgrade now)<br>
@@ -217,9 +218,11 @@ Notice the particle effects, there are around 2500 particles over there. And it�
       <link>https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/</link>
       <pubDate>Mon, 19 Apr 2010 21:57:12 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/</guid>
-      <description>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:
-I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?
-My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.</description>
+      <description>&lt;p&gt;I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:</p>
 <blockquote>
 <p>I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?</p>
@@ -235,11 +238,9 @@ My answer is neither of them. The big image has a huge impact on every Draw and 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">     <span class="n">Rectangle</span> <span class="n">source</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">400</span><span class="p">,</span> <span class="m">200</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">     <span class="n">spriteBatch</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">texture</span><span class="p">,</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">Color</span><span class="p">.</span><span class="n">White</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="m">1.0f</span><span class="p">,</span> <span class="n">SpriteEffects</span><span class="p">.</span><span class="n">None</span><span class="p">,</span> <span class="m">0.5f</span><span class="p">);</span>
 </span></span></code></pre></div><p>So instead of this:</p>
-<p><a href="/wp-content/uploads/2010/04/tiling_01.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_01-300x234.jpg" alt=""  title="tiling_01"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/04/tiling_01.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_01-300x234.jpg" title="tiling_01"></a></p>
 <p>You end up with this:</p>
-<p><a href="/wp-content/uploads/2010/04/tiling_02.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_02-300x234.jpg" alt=""  title="tiling_02"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/04/tiling_02.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_02-300x234.jpg" title="tiling_02"></a></p>
 <p>On a small test I made, using a 30000×30000 Rectangle I got a frame drop to 35 FPS by doing tons of regular Draws, when switching to Wrap mode a solid 60 FPS.</p>
 <p>As I told you it’s very easy. I’ll write more advance tutorial one of this days on how to achieve cool effect like mixing two textures with a noise/normal map.</p>
 <p>You can play with this sample by downloading it <a href="/xna_code/TilingSprites.zip">here</a>.</p>
@@ -250,10 +251,12 @@ My answer is neither of them. The big image has a huge impact on every Draw and 
       <link>https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</link>
       <pubDate>Fri, 26 Mar 2010 22:03:31 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</guid>
-      <description>Note: 22/04/2013 – Due to popular request I made an article about achieving this effect in OpenGL
-Independent Resolution Rendering?? What’s this all about?
-Basically a way of not caring what you resolution is. Ever had Gui elements misplaced because you changed the resolution? Or getting out of the screen?
-If you are doing a game on Xna just for Xbox360 you can basically use a 1280×720 base resolution and the Xbox will scale the game for you making the proper Letterbox.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Note: 22/04/2013 – Due to popular request I made an &lt;a href=&#34;https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/&#34; title=&#34;OpenGL 2D Independent Resolution Rendering&#34;&gt;article&lt;/a&gt; about achieving this effect in OpenGL&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Independent Resolution Rendering?? What’s this all about?&lt;/p&gt;
+&lt;p&gt;Basically a way of not caring what you resolution is. Ever had Gui elements misplaced because you changed the resolution? Or getting out of the screen?&lt;/p&gt;
+&lt;p&gt;If you are doing a game on Xna just for Xbox360 you can basically use a 1280×720 base resolution and the Xbox will scale the game for you making the proper Letterbox.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<blockquote>
 <p>Note: 22/04/2013 – Due to popular request I made an <a href="/2013/04/opengl-2d-independent-resolution-rendering/" title="OpenGL 2D Independent Resolution Rendering">article</a> about achieving this effect in OpenGL</p>
 </blockquote>
@@ -278,17 +281,9 @@ The third flag is fullscreen or windowed.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">_texture</span><span class="p">,</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="n">Color</span><span class="p">.</span><span class="n">White</span><span class="p">);</span>
 </span></span></code></pre></div><p>This said you can now change to different Resolutions keeping the same base and the same code and this will scale everything for you, neat right?</p>
 <p>Here are a few screenshots of an application (using Machinarium) with a Virtual resolution of 1024×768 on different real resolutions</p>
-<p><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x800-300x193.jpg" alt=""  title="Base_1024x768_Res_1280x800"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg" alt=""  title="Base_1024x768_Res_1280x720"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1024x768.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1024x768-300x232.jpg" alt=""  title="Base_1024x768_Res_1024x768"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg" alt=""  title="Base_1024x768_Res_800x600"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x800-300x193.jpg" title="Base_1024x768_Res_1280x800"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg" title="Base_1024x768_Res_1280x720"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1024x768.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1024x768-300x232.jpg" title="Base_1024x768_Res_1024x768"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg" title="Base_1024x768_Res_800x600"></a></p>
 <p>An another example (using Braid) with a Virtual Resolution of 1280×720</p>
-<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x720-300x175.jpg" alt=""  title="Base_1280x720_Res_1280x720"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg" alt=""  title="Base_1280x720_Res_1280x800"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg" alt=""  title="Base_1280x720_Res_800x600"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg" alt=""  title="Base_1280x720_Res_480x640"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x720-300x175.jpg" title="Base_1280x720_Res_1280x720"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg" title="Base_1280x720_Res_1280x800"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg" title="Base_1280x720_Res_800x600"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg" title="Base_1280x720_Res_480x640"></a></p>
 <p>You can download the project with the source <a href="/xna_code/IndependentResolutionRendering.zip">here</a>. Once again if you run into any mistakes (most probably 😛 ) let me know.</p>
 ]]></content:encoded>
     </item>
@@ -297,9 +292,16 @@ The third flag is fullscreen or windowed.</p>
       <link>https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</link>
       <pubDate>Mon, 15 Mar 2010 23:42:34 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</guid>
-      <description>So I was watching Microsoft Mix10 and while talking about the new Windows Phone 7 Series, Scott Guthrie announced the availability of the Windows Phone Developer Tools CTP. What? But like now now?
-I went to http://developer.windowsphone.com/ and XNA Creator’s Club and there it was. The packages contains:
-A CTP of the new Visual Studio 2010 Express for Windows Phone Tools and framework to develop Windows Phone applications and games with Silverlight A CTP of XNA Game Studio 4.</description>
+      <description>&lt;p&gt;So I was watching Microsoft &lt;a href=&#34;http://live.visitmix.com/&#34;&gt;Mix10&lt;/a&gt; and while talking about the new Windows Phone 7 Series, Scott Guthrie announced the availability of the Windows Phone Developer Tools CTP. What? But like now now?&lt;/p&gt;
+&lt;p&gt;I went to &lt;a href=&#34;http://developer.windowsphone.com/&#34;&gt;http://developer.windowsphone.com/&lt;/a&gt; and XNA Creator’s Club and there it was. The packages contains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A CTP of the new Visual Studio 2010 Express for Windows Phone&lt;/li&gt;
+&lt;li&gt;Tools and framework to develop Windows Phone applications and games with Silverlight&lt;/li&gt;
+&lt;li&gt;A CTP of XNA Game Studio 4.0 that allows you to develop Windows Phone games with the XNA Framework&lt;/li&gt;
+&lt;li&gt;A Windows Phone 7 Series emulator that can be used to deploy and debug Windows Phone applications and games&lt;/li&gt;
+&lt;li&gt;Add-on to allow you to use the Visual Studio 2010 Ultimate Release Candidate to develop Windows Phone applications and games if you have it installed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pretty good right? For those who have been living under a rock the XNA 4.0 brings another development platform, Windows Phone 7 series, which leaves us with XBOX360, PC and the new mobile.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So I was watching Microsoft <a href="http://live.visitmix.com/">Mix10</a> and while talking about the new Windows Phone 7 Series, Scott Guthrie announced the availability of the Windows Phone Developer Tools CTP. What? But like now now?</p>
 <p>I went to <a href="http://developer.windowsphone.com/">http://developer.windowsphone.com/</a> and XNA Creator’s Club and there it was. The packages contains:</p>
 <ul>
@@ -310,27 +312,24 @@ A CTP of the new Visual Studio 2010 Express for Windows Phone Tools and framewor
 <li>Add-on to allow you to use the Visual Studio 2010 Ultimate Release Candidate to develop Windows Phone applications and games if you have it installed</li>
 </ul>
 <p>Pretty good right? For those who have been living under a rock the XNA 4.0 brings another development platform, Windows Phone 7 series, which leaves us with XBOX360, PC and the new mobile.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_7.jpg" alt=""  title="windows_phone_7"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_7.jpg" title="windows_phone_7"></p>
 <p>XNA 4.0 CTP requires Visual Studio 2010, <a href="http://msdn.microsoft.com/en-us/vstudio/dd582936.aspx">download RC here</a>, and for now it only allows debugging on PC and Windows Phone by means of an emulator. No Xbox360 deployment for now so don’t go converting your games and engines for now.</p>
 <p>Still this is a great way to test the new 4.0 features and Visual Studio which I honestly haven’t tried yet.</p>
 <p>I started a new Windows Phone 4.0 project and decided to test the emulator, on the above video you can see the touch feature working, took me 4minutes to get that working. Very easy, can’t wait for XNA final version.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/jWf_Z4W9rsg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/jWf_Z4W9rsg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p><strong>Some Images</strong></p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/03/visual_studio_2010.png" alt=""  />
-</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_emulator.png" alt=""  />
-</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_game_project.png" alt=""  />
-</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/03/xna4.0_new_project.png" alt=""  />
-</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_7.jpg" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/visual_studio_2010.png"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_emulator.png"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_game_project.png"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/xna4.0_new_project.png"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_7.jpg"></p>
 <p>Notes for Game Studio developers (<a href="https://web.archive.org/web/20100305042530/http://blogs.msdn.com:80/shawnhar/">Shawn Hargreaves</a>):</p>
 <ul>
 <li>Although this CTP includes Game Studio 4.0 assemblies for Windows as well as Windows Phone, it only supports the Reach profile. If you try to create a HiDef game, you will get an error saying your hardware does not support HiDef capabilities. Don’t worry, this doesn’t mean your GPU sucks, just that we don’t support HiDef in the CTP.</li>
@@ -344,22 +343,29 @@ A CTP of the new Visual Studio 2010 Express for Windows Phone Tools and framewor
       <link>https://www.david-amador.com/2010/02/vizati-teaser/</link>
       <pubDate>Sun, 28 Feb 2010 23:50:15 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/02/vizati-teaser/</guid>
-      <description>Rita and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.
-Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.rita-silva.com&#34;&gt;Rita&lt;/a&gt; and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color. There’s 2 different modes of playing it. One of them is story mode where the stone Vizati is discovered by some people and they try to find out what it is and uncover it’s secrets. The other one, Arcade mode is a more traditional way to play it but with special vizati stones and power-ups&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="http://www.rita-silva.com">Rita</a> and I have been working on a demo for entering Dream Build Play competition and today she has finally finished the teaser for Vizati. It’s our game for entering the Dream Build Play 2010 competition and XNA Pizza Night. We started working on this around 3 weeks ago so it’s still an early draft from our vision of the game.</p>
 <blockquote>
 <p>Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in which you need to connect the little vizati stones by color. There’s 2 different modes of playing it. One of them is story mode where the stone Vizati is discovered by some people and they try to find out what it is and uncover it’s secrets. The other one, Arcade mode is a more traditional way to play it but with special vizati stones and power-ups</p>
 </blockquote>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/CzZipbjCvNs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/CzZipbjCvNs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Also for anyone who has interest in these sort of things here’s my first successful test on the 360 of Vizati</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/uyn8OpPJ40A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/uyn8OpPJ40A?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -368,13 +374,13 @@ Vizati is a puzzle game made by Different Pixel for Dream Build Play 2010 in whi
       <link>https://www.david-amador.com/2010/02/xna-particle-system-2d/</link>
       <pubDate>Fri, 19 Feb 2010 11:46:26 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/02/xna-particle-system-2d/</guid>
-      <description>It’s been a long week.
-Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.</description>
+      <description>&lt;p&gt;It’s been a long week.&lt;br&gt;
+Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.&lt;br&gt;
+Then it began, the one task that all programmers should ask someone else to do, because once you get the first one working you are gonna keep adding features because is so FUC**** pretty 😀&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been a long week.<br>
 Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.<br>
 Then it began, the one task that all programmers should ask someone else to do, because once you get the first one working you are gonna keep adding features because is so FUC**** pretty 😀</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg" alt="ParticleSystem_Radial_Gravity.jpg"  />
-</p>
+<p><img alt="ParticleSystem_Radial_Gravity.jpg" loading="lazy" src="/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg"></p>
 <p>I decided the best way was to quick implement it on our editor Sapphire, it now features:<br>
 – Color Interpolation<br>
 – Alpha Interpolation<br>
@@ -383,9 +389,12 @@ Then it began, the one task that all programmers should ask someone else to do, 
 – Radial Gravity (This is more of a gravity Well, everything gets sucked in Geometry Wars style)</p>
 <p>Here’s the video</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/SLd4PxJlVlE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/SLd4PxJlVlE?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Also I’ve found out that this March 5th near where I live Microsoft is doing a XNA Pizza Night, it’s a contest with prizes to the best games, and best of all, free Pizza and Drinks for everyone. I’m gonna enter with the same game of course so wish me luck.</p>
 ]]></content:encoded>
@@ -395,8 +404,8 @@ Then it began, the one task that all programmers should ask someone else to do, 
       <link>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</link>
       <pubDate>Mon, 15 Feb 2010 00:29:42 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/</guid>
-      <description>Well the title is an Homage to James Silva‘s I MAED A GAM3 W1TH Z0MB1ES!!!1
-I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.</description>
+      <description>&lt;p&gt;Well the title is an Homage to &lt;a href=&#34;http://www.ska-studios.com/&#34;&gt;James Silva&lt;/a&gt;‘s I MAED A GAM3 W1TH Z0MB1ES!!!1&lt;/p&gt;
+&lt;p&gt;I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Well the title is an Homage to <a href="http://www.ska-studios.com/">James Silva</a>‘s I MAED A GAM3 W1TH Z0MB1ES!!!1</p>
 <p>I’ve been really busy with my Dream Build Play game lately. Although being a simple game somethings always turn out to be harder that we initial think. I’ve been debating myself with some bugs on my engine, had to redo tons of code yesterday due to XBOX360 compatibilities (should have tested earlier :P). Two days ago Rita started doing the assets and it’s looking really good.</p>
 <p>Back to the development part yesterday I panicked when she asked me if it was possible to make some some small cutscenes on each level which could include moving images, changing an animation, trigger a sound, trigger another movement after another has finished etc.</p>
@@ -426,9 +435,12 @@ end
 This may not seem much but after a few more tweaks I can make simple scripts pretty easy, not powerful as lua, not even close but it will work great for my Dream Build Play game.<br>
 Watch the video below:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/czJSQcE0kOo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/czJSQcE0kOo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -437,9 +449,9 @@ Watch the video below:</p>
       <link>https://www.david-amador.com/2010/01/drawing-lines-in-xna/</link>
       <pubDate>Tue, 26 Jan 2010 00:40:48 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/01/drawing-lines-in-xna/</guid>
-      <description>One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.
-Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.
-You can give it 2 points ( start and end point of course) and a color.</description>
+      <description>&lt;p&gt;One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.&lt;br&gt;
+Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.&lt;br&gt;
+You can give it 2 points ( start and end point of course) and a color. There’s an overload function that receives the Layer parameter.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.<br>
 Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.<br>
 You can give it 2 points ( start and end point of course) and a color. There’s an overload function that receives the Layer parameter.</p>
@@ -452,13 +464,15 @@ Then use you can use like this:</p>
 </span></span><span class="line"><span class="cl">                          <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                          <span class="k">new</span> <span class="n">Vector2</span><span class="p">(</span><span class="m">100</span><span class="p">,</span><span class="m">300</span><span class="p">));</span>
 </span></span></code></pre></div><p>I’ve made a small unit test that you can <a href="/xna_code/LineBatch.rar">download here</a>. Try clicking the screen to set a start and end point.</p>
-<p><a href="/wp-content/uploads/2010/01/xna_linebatch.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/xna_linebatch-300x234.jpg" alt=""  title="xna_linebatch"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/01/xna_linebatch.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/xna_linebatch-300x234.jpg" title="xna_linebatch"></a></p>
 <p>Here’s a video showing the result:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/GiKPSF_e880" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GiKPSF_e880?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -467,9 +481,9 @@ Then use you can use like this:</p>
       <link>https://www.david-amador.com/2010/01/xna-screen-manager/</link>
       <pubDate>Sun, 24 Jan 2010 18:47:17 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/01/xna-screen-manager/</guid>
-      <description>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.
-A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.
-I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</description>
+      <description>&lt;p&gt;I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.&lt;/p&gt;
+&lt;p&gt;A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.&lt;/p&gt;
+&lt;p&gt;I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.</p>
 <p>A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.</p>
 <p>I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</p>
@@ -521,8 +535,8 @@ I’ve made a small project with a Screen Manager. The ScreenManager is static a
 </span></span></code></pre></div><p>Screen Manager then calls the virtual function shutdown() of the current screen and then the init() of the requested Screen, so you might want to always override them for your purposes.</p>
 <p>You’ll understand better by viewing the code itself. Use it in any way you want. I now this example may not be the best solution but it gives a good start to those wanting to implement their own.</p>
 <p><a href="/xna_code/ScreenManager.rar">Download the source</a>.</p>
-<p><!-- raw HTML omitted -->EDIT: <!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted -->(04-02-2010) Removed unused member _current; (Thanks Jason)<!-- raw HTML omitted --></p>
+<p>** EDIT: **</p>
+<p>(04-02-2010) Removed unused member _current; (Thanks Jason)</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -530,29 +544,33 @@ I’ve made a small project with a Screen Manager. The ScreenManager is static a
       <link>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
       <pubDate>Wed, 02 Dec 2009 21:38:11 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
-      <description>Lately all my free time has been spent adding new features to Basalt and developing Sapphire.
-Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.
-Here’s a screenshot of the previous alpha version:</description>
+      <description>&lt;p&gt;Lately all my free time has been spent adding new features to &lt;a href=&#34;https://www.david-amador.com/tags/basalt/&#34;&gt;Basalt&lt;/a&gt; and developing &lt;a href=&#34;https://www.david-amador.com/tags/sapphire/&#34;&gt;Sapphire&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.&lt;/p&gt;
+&lt;p&gt;Here’s a screenshot of the previous alpha version:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Lately all my free time has been spent adding new features to <a href="/tags/basalt/">Basalt</a> and developing <a href="/tags/sapphire/">Sapphire</a>.</p>
 <p>Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.</p>
 <p>Here’s a screenshot of the previous alpha version:</p>
-<p><a href="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg" alt="Sapphire Level Editor"  title="Sapphire Level Editor"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg"><img alt="Sapphire Level Editor" loading="lazy" src="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg" title="Sapphire Level Editor"></a></p>
 <p>I kept working on the engine itself and just making small prototypes for testing it. Finally 2 weeks ago I decided to start from scratch and just use xna to build it. Not much is done but I have little time after work to develop. Anyway I’m happy since I already have textures import, basic object positioning, scaling and a Layer System.</p>
-<p><a href="/wp-content/uploads/2009/12/sapphire.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire.jpg" alt="sapphire"  title="sapphire"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/12/sapphire.jpg"><img alt="sapphire" loading="lazy" src="/wp-content/uploads/2009/12/sapphire.jpg" title="sapphire"></a></p>
 <p>This is an early stage of the new editor, it’s from last week.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/D33185iWTQU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/D33185iWTQU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>When I have some cool stuff I’ll update a new video.</p>
 <p>On the engine side, today I decided to add a Console component to the engine, much like Source Engine and Quake consoles, to input commands, here’s the result:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ZYNBfdu5UqM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZYNBfdu5UqM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Hopefully by the beginning of next year I’ll have a beta version that I can release to the public for testing. I intend to launch a free and a payed version of the engine+ editor. My only dout is if I trim down some functions or just release it as free for non-commercial usage only.</p>
 ]]></content:encoded>
@@ -562,10 +580,17 @@ Here’s a screenshot of the previous alpha version:</description>
       <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</link>
       <pubDate>Mon, 23 Nov 2009 17:49:38 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</guid>
-      <description>Frame rate or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.
-So how can you measure your frame rate in XNA?
-Inside your game1 class declare these vars:
-SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fps = 0; On function LoadContent() do</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Frame_rate&#34;&gt;Frame rate&lt;/a&gt; or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.&lt;/p&gt;
+&lt;p&gt;So how can you measure your frame rate in XNA?&lt;/p&gt;
+&lt;p&gt;Inside your game1 class declare these vars:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;SpriteFont&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;_spr_font&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_total_frames&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;float&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_elapsed_time&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0.0f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_fps&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On function LoadContent() do&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Put the name of the font&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;_spr_font&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Content&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Load&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;kootenay&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;you&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;have&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;on&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;your&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;project&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On the update pump do:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="http://en.wikipedia.org/wiki/Frame_rate">Frame rate</a> or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.</p>
 <p>So how can you measure your frame rate in XNA?</p>
 <p>Inside your game1 class declare these vars:</p>
@@ -611,8 +636,7 @@ SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fp
 </span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span></code></pre></div><p>If everything went alright you should have a white counter on the upper left screen. You probably want to turn this into a drawable component or adjusting it to be an independent component on your engine.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2009/11/xna_fps_counter.png" alt="xna_fps_counter"  />
-</p>
+<p><img alt="xna_fps_counter" loading="lazy" src="/wp-content/uploads/2009/11/xna_fps_counter.png"></p>
 <p><strong>Here’s the project for VC# Express : <a href="/wp-content/uploads/2009/11/FpsCounter.zip">download</a></strong></p>
 <blockquote>
 <p>note: For those who have asked me why do I use a prefix _ on some variables. I use this to help me know which vars are members of the class and which aren’t. I don’t like using mPosition, instead I use _Position.</p>
@@ -624,13 +648,15 @@ SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fp
       <link>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</link>
       <pubDate>Wed, 18 Nov 2009 15:16:54 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</guid>
-      <description>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.</description>
+      <description>&lt;p&gt;I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.&lt;br&gt;
+Anyway for those who have one and are developing for XNA you may have noticed that it doesn’t run PerfHUD out of the box.&lt;br&gt;
+You will get an error, something like:&lt;br&gt;
+&lt;strong&gt;“This applications is not configured for using PerfHUD. Consult the User’s Guide for more information”&lt;/strong&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.<br>
 Anyway for those who have one and are developing for XNA you may have noticed that it doesn’t run PerfHUD out of the box.<br>
 You will get an error, something like:<br>
 <strong>“This applications is not configured for using PerfHUD. Consult the User’s Guide for more information”</strong></p>
-<p><img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_Error.jpg" alt="perfHUD_Error"  title="perfHUD_Error"  />
-]</p>
+<p><img alt="perfHUD_Error" loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_Error.jpg" title="perfHUD_Error">]</p>
 <p>Luckily there’s a little trick we can use to fix this, first we create a new class:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// class that inherits from GraphicsDeviceManager</span>
 </span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">PerfHUDGraphicDeviceManager</span> <span class="p">:</span> <span class="n">GraphicsDeviceManager</span>
@@ -678,10 +704,8 @@ You will get an error, something like:<br>
 </span></span><span class="line"><span class="cl">                    <span class="k">new</span> <span class="n">PerfHUDGraphicDeviceManager</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">                <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_run.png" alt="perfHUD_run"  title="perfHUD_run"  />
-]
-<img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_working_xna.jpg" alt="perfHUD_working_xna"  title="perfHUD_working_xna"  />
-]</p>
+</span></span></code></pre></div><p><img alt="perfHUD_run" loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_run.png" title="perfHUD_run">]
+<img alt="perfHUD_working_xna" loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_working_xna.jpg" title="perfHUD_working_xna">]</p>
 <p>I hope this helps.</p>
 ]]></content:encoded>
     </item>

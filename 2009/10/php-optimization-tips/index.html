@@ -8,10 +8,11 @@
 <title>PHP Optimization Tips | David Amador</title>
 <meta name="keywords" content="PHP">
 <meta name="description" content="As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.
-Loop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times.">
+Loop
+At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times. There are many ways we can define a loop in PHP. But how do you know which one is the best way to loop your data? Apparently, using a for loop is better than foreach and while loop if the maximum loop is pre-calculated outside the for loop!">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/2009/10/php-optimization-tips/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -19,6 +20,7 @@ Loop At some point your program will require a loop. And loop is considered as e
 <link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/2009/10/php-optimization-tips/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,20 +30,24 @@ Loop At some point your program will require a loop. And loop is considered as e
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="PHP Optimization Tips" />
-<meta property="og:description" content="As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.
-Loop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2009/10/php-optimization-tips/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2009-10-22T16:38:09+00:00" />
-<meta property="article:modified_time" content="2009-10-22T16:38:09+00:00" /><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
-<meta name="twitter:title" content="PHP Optimization Tips"/>
+<meta property="og:url" content="https://www.david-amador.com/2009/10/php-optimization-tips/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="PHP Optimization Tips">
+  <meta property="og:description" content="As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.
+Loop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times. There are many ways we can define a loop in PHP. But how do you know which one is the best way to loop your data? Apparently, using a for loop is better than foreach and while loop if the maximum loop is pre-calculated outside the for loop!">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2009-10-22T16:38:09+00:00">
+    <meta property="article:modified_time" content="2009-10-22T16:38:09+00:00">
+    <meta property="article:tag" content="PHP">
+      <meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:title" content="PHP Optimization Tips">
 <meta name="twitter:description" content="As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.
-Loop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times."/>
+Loop
+At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times. There are many ways we can define a loop in PHP. But how do you know which one is the best way to loop your data? Apparently, using a for loop is better than foreach and while loop if the maximum loop is pre-calculated outside the for loop!">
 
 
 <script type="application/ld+json">
@@ -70,14 +76,14 @@ Loop At some point your program will require a loop. And loop is considered as e
   "@type": "BlogPosting",
   "headline": "PHP Optimization Tips",
   "name": "PHP Optimization Tips",
-  "description": "As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.\nLoop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times.",
+  "description": "As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.\nLoop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times. There are many ways we can define a loop in PHP. But how do you know which one is the best way to loop your data? Apparently, using a for loop is better than foreach and while loop if the maximum loop is pre-calculated outside the for loop!\n",
   "keywords": [
     "PHP"
   ],
   "articleBody": "As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.\nLoop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times. There are many ways we can define a loop in PHP. But how do you know which one is the best way to loop your data? Apparently, using a for loop is better than foreach and while loop if the maximum loop is pre-calculated outside the for loop!\n// For each loop the count function is being called. for($i =0; $i \u003c count($array);$i++){ echo 'This is bad'; } #Better than foreach and while loop $total = (int)count($array); for($i =0; $i \u003c $total;$i++){ echo 'This better, max loop was pre-calculated'; } Single Vs Double Quotes single(’) quote is faster than double(”) quote. Why? Because PHP will scan through double quote strings for any PHP variables (additional operation). So unless you have a $var inside the string use single quotes.\n$var = 'I have some text'; $var2 = \"I have some text\"; // We dont have vars so single would be good; $var3 = \"I have some $var\"; // In this case the double quotes is necessary Pre increment vs Post increment In PHP, it seems like pre increment is better than the other ways of performing an increment. Its around 10% better than post increment? The reason? Some said that post increment made certain copy unlike pre increment.\n$i++; $++i $i+=1; $i = $i + 1; Echo Vs Print echo is better. But how much better? Its around 12%-20% faster using echo compare to print when there is no $ symbol in the printing string. And around 40-80% faster if there is an $ symbol used in a printing string!\nDot Vs Commas Concatenation I use dot to concatenate my stuff. Such as the one shown below:\n$a = 'PHP '; $b = 'Tips'; echo $a.$b; The other way is:\n$a = 'PHP '; $b = 'Tips'; echo $a,$b; Tests show that dot is more preferable if there are no variables or $ symbol involved which is around 200% faster. On the other hand, commas will help to increase around 20%-35% efficiency when dealing with $ symbols.\nexplode Vs preg_split To split a string the usual way is to use explode because it support even on PHP4.0 and that’s also what i was taught on school. The answer in term of efficiency is explode. Split supports regular express and this makes it quite the same comparison between str_replace and preg_replace, anything that have regular expression support will usually be a bit more slower than those that doesn’t support it. It took around 20.563% faster using explode in PHP.\nThese benchmarks and others can be found here: http://net-beta.net/ubench/\n",
   "wordCount" : "506",
   "inLanguage": "en",
-  "datePublished": "2009-10-22T16:38:09Z",
+  "image": "https://www.david-amador.com/david-amador-pixel.png","datePublished": "2009-10-22T16:38:09Z",
   "dateModified": "2009-10-22T16:38:09Z",
   "author":{
     "@type": "Person",
@@ -110,7 +116,7 @@ Loop At some point your program will require a loop. And loop is considered as e
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -174,7 +180,7 @@ Loop At some point your program will require a loop. And loop is considered as e
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       PHP Optimization Tips
     </h1>
@@ -267,7 +273,8 @@ Loop At some point your program will require a loop. And loop is considered as e
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>nintendo on David Amador</title>
+    <title>Nintendo on David Amador</title>
     <link>https://www.david-amador.com/tags/nintendo/</link>
-    <description>Recent content in nintendo on David Amador</description>
+    <description>Recent content in Nintendo on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 29 Dec 2016 12:35:49 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/nintendo/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,9 @@
       <link>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</link>
       <pubDate>Thu, 29 Dec 2016 12:35:49 +0000</pubDate>
       <guid>https://www.david-amador.com/2016/12/some-thoughts-about-a-4-year-game-dev-cycle/</guid>
-      <description>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.
-It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.
-For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was Quest of Dungeons, which started development in 2013.</description>
+      <description>&lt;p&gt;As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.&lt;br&gt;
+It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.&lt;/p&gt;
+&lt;p&gt;For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was &lt;a href=&#34;http://www.questofdungeons.com&#34;&gt;Quest of Dungeons&lt;/a&gt;, which started development in 2013.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>As I’m starting to write this post I’m on my way to my home town for the holidays, so I may not post it in a couple days.<br>
 It’s been a crazy year(s)(?) and I’m taking these near 4h of travel to write down some things. I’m sorry if it’s incoherent, this is mostly a dump of thoughts.</p>
 <p>For those who follow my work a bit more closely you probably know that for almost 4 years the project I dedicated more time was <a href="http://www.questofdungeons.com">Quest of Dungeons</a>, which started development in 2013.</p>

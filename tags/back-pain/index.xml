@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>back pain on David Amador</title>
+    <title>Back Pain on David Amador</title>
     <link>https://www.david-amador.com/tags/back-pain/</link>
-    <description>Recent content in back pain on David Amador</description>
+    <description>Recent content in Back Pain on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 20 Apr 2013 12:01:44 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/back-pain/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,10 @@
       <link>https://www.david-amador.com/2013/04/updates-development-and-new-feed-url/</link>
       <pubDate>Sat, 20 Apr 2013 12:01:44 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/04/updates-development-and-new-feed-url/</guid>
-      <description>Almost 4 months without a post, this is the first time it happened.
-It was nothing in particular that held me back, I just kept postponing and, to be honest, I only write posts when I have something I really want to write about.
-Before going into the rest of the post, I would like to ask people to update my feed url on your RSS readers. I always used Feedburner to redirect feeds, and with Google Reader going down I decided to start switching, so in your new FeedsReader use this address: (&amp;lt;/feed/&amp;gt;).</description>
+      <description>&lt;p&gt;Almost 4 months without a post, this is the first time it happened.&lt;br&gt;
+It was nothing in particular that held me back, I just kept postponing and, to be honest, I only write posts when I have something I really want to write about.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before going into the rest of the post, I would like to ask people to update my feed url on your RSS readers. I always used Feedburner to redirect feeds, and with Google Reader going down I decided to start switching, so in your new FeedsReader use this address: (&amp;lt;/feed/&amp;gt;). I didn’t deactivated the old one, so they will work both for now (if I didn’t broke anything). Also, give Feedly a try in case you haven’t found a replacement for Reader.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Almost 4 months without a post, this is the first time it happened.<br>
 It was nothing in particular that held me back, I just kept postponing and, to be honest, I only write posts when I have something I really want to write about.</p>
 <blockquote>
@@ -28,8 +29,7 @@ It was nothing in particular that held me back, I just kept postponing and, to b
 </blockquote>
 <p>So what’s been happening? I’ll try to compress here a bunch of things that I’ve been doing, if you want to know.</p>
 <p><strong>Puwang new update</strong></p>
-<p><a href="/wp-content/uploads/2013/04/puwang_screen.jpg"><img loading="lazy" src="/wp-content/uploads/2013/04/puwang_screen.jpg" alt="puwang_screen"  />
-</a></p>
+<p><a href="/wp-content/uploads/2013/04/puwang_screen.jpg"><img alt="puwang_screen" loading="lazy" src="/wp-content/uploads/2013/04/puwang_screen.jpg"></a></p>
 <p>If you follow my twitter you may already know this, but I released a new update with two new game modes (yes, free, no IAP’s). A Hard and Survivor mode, which is pretty much self-explanatory, the Hard mode has more enemies and they spawn anywhere on the screen. Survivor mode is the same as normal but your ship won’t evolve, making it harder to survive.</p>
 <p>I did these two modes mainly because while it can can be fun to pick up the game once in a while, once you get used to the controls anytime I played it I was like “God, I wish the faster action started faster”, because the game gets incrementally harder to play, but it starts out pretty easy. This was also something many told me personally or via twitter, so I decided to make it.<br>
 New modes have their own separate Leaderboards too.</p>
@@ -40,8 +40,7 @@ New modes have their own separate Leaderboards too.</p>
 <p>This has been my main project for a long time now, I’ve been making posts about it on the game page itself, felt a bit weird to replicated them here, because I assume if anyone is interesting in knowing about the game they will probably check the official places anyway.</p>
 <p>But related to development I might say I made some considerable improvements on the rendering pipeline, gained 10FPS in debug mode, while the game runs at 60FPS in release I always had low FPS in debug, since my pc is old, around 20-25FPS. After the changes I get 30-35FPS).</p>
 <p>I achieved this tweaking two sections. First I cached a bunch of calculations on my Sprite class, most of they where done in each draw, which was stupid since most of the time I only needed them to be done when an image change occurs or a scale.</p>
-<p><a href="/wp-content/uploads/2013/04/triangles.jpg"><img loading="lazy" src="/wp-content/uploads/2013/04/triangles.jpg" alt="triangles"  />
-</a></p>
+<p><a href="/wp-content/uploads/2013/04/triangles.jpg"><img alt="triangles" loading="lazy" src="/wp-content/uploads/2013/04/triangles.jpg"></a></p>
 <p>The other tweak was using glDrawElements instead of glDrawArrays and sending vertex data with indices. I’m not entirely sure this will lead to immediate FPS improvement but at least less data is send to GPU.</p>
 <p>So for a quad I use GL_TRIANGLES with 4 points. Now has you know GL_TRIANGLES required 3 points per triangle, so since a Quad is two triangle this would required 6 points. So I send the 4 points with 6 indices instead. This proved particularly good for iOS devices. Much less GPU usage, which leads to a smoother game and less battery usage.</p>
 <p>I pushed both this improvements to Puwang too.</p>

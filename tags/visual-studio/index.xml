@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 03 Jun 2012 20:00:01 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/visual-studio/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +18,11 @@
       <link>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</link>
       <pubDate>Sun, 03 Jun 2012 20:00:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/06/detecting-c-memory-leaks-in-visual-studio-again/</guid>
-      <description>I made a small post about detecting C++ memory leaks in Visual Studio in 2010. At the time that seemed to suffice, but some months ago someone told me about Visual Leak Detector and boy does it work.
-According to the website itself
-Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.
-It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.</description>
+      <description>&lt;p&gt;I made a small post about detecting C++ &lt;a href=&#34;https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/&#34; title=&#34;Tracking memory leaks in Visual Studio&#34;&gt;memory leaks in Visual Studio&lt;/a&gt; in 2010. At the time that seemed to suffice, but some months ago someone told me about &lt;a href=&#34;https://oneiric.github.io/vld/&#34;&gt;Visual Leak Detector&lt;/a&gt; and boy does it work.&lt;/p&gt;
+&lt;p&gt;According to the website itself&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Visual Leak Detector is a free, robust, open-source memory leak detection system for Visual C++.&lt;/p&gt;
+&lt;p&gt;It’s pretty easy to use. After installing it, you just need to tell Visual C++ where to find the included header and library file.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I made a small post about detecting C++ <a href="/2010/10/tracking-memory-leaks-in-visual-studio/" title="Tracking memory leaks in Visual Studio">memory leaks in Visual Studio</a> in 2010. At the time that seemed to suffice, but some months ago someone told me about <a href="https://oneiric.github.io/vld/">Visual Leak Detector</a> and boy does it work.</p>
 <p>According to the website itself</p>
 <blockquote>
@@ -32,8 +33,7 @@ It’s pretty easy to use. After installing it, you just need to tell Visual C++
 </code></pre></blockquote>
 <p>It’s very easy to use and I tracked down a bunch of memory leaks hidden inside my code since the time I released Vizati.</p>
 <p>As expected this is a heavy beast and debbuding while using VLD required much more memory, but totally worth it. You can even output to a file</p>
-<p><a href="/wp-content/uploads/2012/06/vld.png"><img loading="lazy" src="/wp-content/uploads/2012/06/vld.png" alt=""  title="vld"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/06/vld.png"><img loading="lazy" src="/wp-content/uploads/2012/06/vld.png" title="vld"></a></p>
 ]]></content:encoded>
     </item>
   </channel>

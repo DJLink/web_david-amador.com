@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ports on David Amador</title>
+    <title>Ports on David Amador</title>
     <link>https://www.david-amador.com/tags/ports/</link>
-    <description>Recent content in ports on David Amador</description>
+    <description>Recent content in Ports on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 May 2016 08:49:05 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/ports/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,12 @@
       <link>https://www.david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</link>
       <pubDate>Fri, 20 May 2016 08:49:05 +0000</pubDate>
       <guid>https://www.david-amador.com/2016/05/qod-3dswii-u-port-devlog-1/</guid>
-      <description>So how are the Nintendo ports coming along?
-It’s been sometime since I announced Quest of Dungeons for 3DS and Wii U, so it’s time to talk about what’s been happening in the “backstage”.
-I’m working on both versions at the same time, potentially for a simultaneous release. But this adds some extra challenges since both are very different and well, I’m juggling between two ports on my own.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;So how are the Nintendo ports coming along?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It’s been sometime since I announced Quest of Dungeons &lt;a href=&#34;https://www.david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/&#34;&gt; for 3DS and Wii U&lt;/a&gt;, so it’s time to talk about what’s been happening in the “backstage”.&lt;/p&gt;
+&lt;p&gt;I’m working on both versions at the same time, potentially for a simultaneous release. But this adds some extra challenges since both are very different and well, I’m juggling between two ports on my own.&lt;/p&gt;
+&lt;p&gt;From a technical point of view, both are already up and running, graphics, sound, input, all of that is working (as far as I tested anyway. bugs yikes).&lt;/p&gt;</description>
       <content:encoded><![CDATA[<blockquote>
 <p>So how are the Nintendo ports coming along?</p>
 </blockquote>
@@ -35,8 +38,7 @@ I’m working on both versions at the same time, potentially for a simultaneous 
 <p>I’m doing specific features for both versions, and that takes time. Both consoles have a second touch screen for example, so I had to come up with a feasible way to use them.</p>
 <p><strong>Wii U</strong></p>
 <p>On Wii U you can play the traditional way, TV, but I also added off-tv support, so you can play just on the GamePad screen. I have Pro Controller support and another way you can play is a mix between TV and gamepad screen, where you can use a touch based inventory, map, etc to manage things.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>** I had some videos that were on Vine, but that platform is sadly gone, sorry. **</p>
 <p>You can even play with the Pro Controller, and watch the game on the gamepad screen, as a tiny TV. I spent the last few weeks adding these changes which I hope will prove useful for players.</p>
 <p><strong>Bottom line is:</strong> Yes, you can play only with buttons, like a “regular” game, but if you want, there is some gamepad use, but it’s optional.</p>
 <p><strong>Nintendo 3DS</strong></p>
@@ -44,18 +46,15 @@ I’m working on both versions at the same time, potentially for a simultaneous 
 <p><em>UI/Dual Screen</em></p>
 <p>I started by doing a 2 screen split-inventory, imagine the Xbox One but kind of split between 2 screens. So the list was on the top screen, and the item description on the bottom one. And that worked.</p>
 <p><em>OLD</em></p>
-<p><a href="/wp-content/uploads/2016/05/3ds_old_inventory.png"><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_old_inventory.png" alt="qod_3ds_old_inventory"  />
-</a></p>
+<p><a href="/wp-content/uploads/2016/05/3ds_old_inventory.png"><img alt="qod_3ds_old_inventory" loading="lazy" src="/wp-content/uploads/2016/05/3ds_old_inventory.png"></a></p>
 <p>However I was never 100% happy with it, and I was barely using touch, which despite not being a personal favorite, I know I lot of people like, so I decided to throw all away and redo it differently. In a way that players could either touch items to open description (the second screen on the previous version) and then Eat/Equip/etc, but also that with a button press you can use it too, via dpad and a/b/x/y.</p>
 <p>This is posing some challenges since I’m now trying to put everything that was on 2 screens into a single one, but I’ll get there.<br>
 This is still WIP but I feel I’m getting near something a bit better.</p>
 <p><em>NEW (WIP)</em></p>
-<p><a href="/wp-content/uploads/2016/05/3ds_new_inventory.png"><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png" alt="qod_3ds_new_inventory"  />
-</a></p>
+<p><a href="/wp-content/uploads/2016/05/3ds_new_inventory.png"><img alt="qod_3ds_new_inventory" loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png"></a></p>
 <p><em>StreetPass</em></p>
 <p>I never considered using StreetPass, but the other day I woke up with a cool idea. When you StreetPass someone you send and receive ghosts from previous runs to the other user. Here’s how it works, when you die, the game saves your character as it is, stats, equipment, etc. There is later a chance, that in a new game you might encounter yourself, but now you will also send those ghosts to the other players. So when you find ghosts from other users (they will have a icon in-game to make it different) if you defeat them, you’ll get all the loot. Cool right?</p>
-<p><a href="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png" alt="3ds_qod_streetpass"  />
-</a></p>
+<p><a href="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"><img alt="3ds_qod_streetpass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"></a></p>
 <p>Final reminder, everything discussed here is WIP so it can change.<br>
 So still no ETA, but I’m getting closer. And that is it for now. I’ll let you guys know when I have more news.</p>
 ]]></content:encoded>
@@ -65,18 +64,16 @@ So still no ETA, but I’m getting closer. And that is it for now. I’ll let yo
       <link>https://www.david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</link>
       <pubDate>Mon, 22 Feb 2016 17:28:59 +0000</pubDate>
       <guid>https://www.david-amador.com/2016/02/quest-of-dungeons-is-coming-to-nintendo-3ds-and-wii-u/</guid>
-      <description>Nintendo fans rejoice!!!
-It’s time to reveal what I’ve been up to lately, I’ve been very cryptic on Twitter about what I was actually doing but it was for a good cause, because Quest of Dungeons is making it’s way on to Nintendo 3DS and Wii U.
-Development started a couple months ago, so I still don’t have an ETA, but from now on I can be less vague to what I’m really doing.</description>
+      <description>&lt;p&gt;Nintendo fans rejoice!!!&lt;/p&gt;
+&lt;p&gt;It’s time to reveal what I’ve been up to lately, I’ve been very cryptic on Twitter about what I was actually doing but it was for a good cause, because Quest of Dungeons is making it’s way on to Nintendo 3DS and Wii U.&lt;br&gt;
+Development started a couple months ago, so I still don’t have an ETA, but from now on I can be less vague to what I’m really doing.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Nintendo fans rejoice!!!</p>
 <p>It’s time to reveal what I’ve been up to lately, I’ve been very cryptic on Twitter about what I was actually doing but it was for a good cause, because Quest of Dungeons is making it’s way on to Nintendo 3DS and Wii U.<br>
 Development started a couple months ago, so I still don’t have an ETA, but from now on I can be less vague to what I’m really doing.</p>
 <p>I’ll leave you with 2 images of the game/devices. Take all of that as W.I.P. There is much to be done so everything is still subject to change.</p>
-<p><a href="/wp-content/uploads/2016/02/quest_of_dungeons_3ds-1.png"><img loading="lazy" src="/wp-content/uploads/2016/02/quest_of_dungeons_3ds.png" alt=""  />
-</a><!-- raw HTML omitted -->Quest of Dungeons Nintendo 3DS<!-- raw HTML omitted --></p>
-<p><a href="/wp-content/uploads/2016/02/quest_of_dungeons_wiiu.png"><img loading="lazy" src="/wp-content/uploads/2016/02/quest_of_dungeons_wiiu.png" alt=""  />
-</a><!-- raw HTML omitted -->Quest of Dungeons Wii U<!-- raw HTML omitted --></p>
-<p>Don’t forget to share the news with your frinds, and for more up-to date info twitter is the place to <a href="https://twitter.com/DJ_Link">follow me</a>.</p>
+<p><a href="/wp-content/uploads/2016/02/quest_of_dungeons_3ds.png"><img loading="lazy" src="/wp-content/uploads/2016/02/quest_of_dungeons_3ds.png"></a></p>
+<p><a href="/wp-content/uploads/2016/02/quest_of_dungeons_wiiu.png"><img loading="lazy" src="/wp-content/uploads/2016/02/quest_of_dungeons_wiiu.png"></a></p>
+<p>Don’t forget to share the news with your friends, and for more up-to date info twitter is the place to <a href="https://twitter.com/DJ_Link">follow me</a>.</p>
 <p>Nintendo 3DS and Wii U are trademarks of Nintendo. © 2012 Nintendo.</p>
 ]]></content:encoded>
     </item>

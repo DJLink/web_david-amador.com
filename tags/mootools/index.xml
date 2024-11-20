@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>mootools on David Amador</title>
+    <title>Mootools on David Amador</title>
     <link>https://www.david-amador.com/tags/mootools/</link>
-    <description>Recent content in mootools on David Amador</description>
+    <description>Recent content in Mootools on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 22 Apr 2009 10:43:35 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/mootools/index.xml" rel="self" type="application/rss+xml" />
@@ -18,16 +18,15 @@
       <link>https://www.david-amador.com/2009/04/wordpress-gallery/</link>
       <pubDate>Wed, 22 Apr 2009 10:43:35 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/04/wordpress-gallery/</guid>
-      <description>During my efforts to combine Rita’s website to wordpress and with a cool gallery I came up with a few problems.
-Mainly because the top navigation bar was built using J-Query, which I’ve already made quite some time ago, and even after switching to mootools I didn’t want to be rebuilding it again.
-So yesterday after a few searches I managed to install NextGen gallery plugin for wordpress and using LightBox for popups.</description>
+      <description>&lt;p&gt;During my efforts to combine &lt;a href=&#34;http://www.rita-silva.com&#34;&gt;Rita’s website&lt;/a&gt; to wordpress and with a cool gallery I came up with a few problems.&lt;/p&gt;
+&lt;p&gt;Mainly because the top navigation bar was built using &lt;a href=&#34;http://www.jquery.com&#34;&gt;J-Query&lt;/a&gt;, which I’ve already made quite some time ago, and even after switching to mootools I didn’t want to be rebuilding it again.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2009/04/rita_top_menu.jpg&#34;&gt;&lt;img alt=&#34;rita_top_menu&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2009/04/rita_top_menu.jpg&#34; title=&#34;rita_top_menu&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So yesterday after a few searches I managed to install &lt;a href=&#34;http://alexrabe.boelinger.com/wordpress-plugins/nextgen-gallery/&#34;&gt;NextGen&lt;/a&gt; gallery plugin for wordpress and using LightBox for popups. It even has a watermark option. I recommend anyone having a gallery on their website to give it a try. It’s really cool and free for use.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>During my efforts to combine <a href="http://www.rita-silva.com">Rita’s website</a> to wordpress and with a cool gallery I came up with a few problems.</p>
 <p>Mainly because the top navigation bar was built using <a href="http://www.jquery.com">J-Query</a>, which I’ve already made quite some time ago, and even after switching to mootools I didn’t want to be rebuilding it again.</p>
-<p><a href="/wp-content/uploads/2009/04/rita_top_menu.jpg"><img loading="lazy" src="/wp-content/uploads/2009/04/rita_top_menu.jpg" alt="rita_top_menu"  title="rita_top_menu"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/04/rita_top_menu.jpg"><img alt="rita_top_menu" loading="lazy" src="/wp-content/uploads/2009/04/rita_top_menu.jpg" title="rita_top_menu"></a></p>
 <p>So yesterday after a few searches I managed to install <a href="http://alexrabe.boelinger.com/wordpress-plugins/nextgen-gallery/">NextGen</a> gallery plugin for wordpress and using LightBox for popups. It even has a watermark option. I recommend anyone having a gallery on their website to give it a try. It’s really cool and free for use.</p>
-<p><a href="/wp-content/uploads/2009/04/nextgen_gallery.jpg"><img loading="lazy" src="/wp-content/uploads/2009/04/nextgen_gallery.jpg" alt="nextgen_gallery"  title="nextgen_gallery"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/04/nextgen_gallery.jpg"><img alt="nextgen_gallery" loading="lazy" src="/wp-content/uploads/2009/04/nextgen_gallery.jpg" title="nextgen_gallery"></a></p>
 ]]></content:encoded>
     </item>
   </channel>

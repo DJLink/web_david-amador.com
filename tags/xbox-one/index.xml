@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 25 Mar 2024 11:39:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/xbox-one/index.xml" rel="self" type="application/rss+xml" />
@@ -18,83 +18,71 @@
       <link>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</link>
       <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</guid>
-      <description>📝 It&amp;rsquo;s been 10 years It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, Quest of Dungeons was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, mostly nights and weekends.</description>
+      <description>&lt;h1 id=&#34;-its-been-10-years&#34;&gt;📝 It&amp;rsquo;s been 10 years&lt;/h1&gt;
+&lt;p&gt;It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, &lt;a href=&#34;https://www.questofdungeons.com&#34;&gt;Quest of Dungeons&lt;/a&gt; was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, &lt;a href=&#34;https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/&#34;&gt;mostly nights and weekends&lt;/a&gt;. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h1 id="-its-been-10-years">📝 It&rsquo;s been 10 years</h1>
 <p>It&rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, <a href="https://www.questofdungeons.com">Quest of Dungeons</a> was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, <a href="/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/">mostly nights and weekends</a>. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?</p>
 <p>What follows for the rest of the post, is a brain dump of the timeline of some of the most crucial events of this silly little project for anyone who is curious.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png"></p>
 <h1 id="-2011-2013">🤯 2011-2013</h1>
 <p>✔️ Failing can help</p>
 <p>Before the game launched, I had a few years of terrible prototypes, cancelled projects, and other unexpected life events. One day, though, all those mistakes fell into place, and QoD was born—a flow of ideas came to my mind, after seeing a bunch of stuff failed in front of me, but that maybe I could make them work. I knew what I wanted to avoid now and what I things I would like to experiment with. Within this time I also made a simple iOS game called <a href="/2012/09/puwang-a-5-day-work/">Puwang</a>, a gamejam compo, where most of the goal was to make a quick game and hopefully make $100 that year to cover the iOS developer account expenses. For QoD I wanted to make a small game that I could play on my phone during commute, and that&rsquo;s why it started as a mobile-only game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png"></p>
 <p>⌨️ Expanding</p>
 <p>During the time I was the only person to ever played it, I found myself enjoying it on a bigger screen/tablet, and after giving it a 2-3 friends to test and having confirmation, I thought it would be good to launch a desktop version along the iPhone/iPad versions, Windows and Mac.
 This added some development time, but also allowed me to expand the game a bit more, the mobile version was virtually identical to desktop/tabled, but they shared a bigger UI, more suited for Mouse and the higher resolutions.
 This turned out to be one of the best decisions, as the desktop version is foundation for everything after. At this point I was already <a href="/tags/basalt/">rolling my own engine</a> for prior games on mobile and desktop, so most of the development was indeed for game stuff, and not engine. While I&rsquo;ve made the mistake often of &ldquo;build the engine instead of game&rdquo;, here the engine was built around the game, that&rsquo;s how it should be.</p>
 <h1 id="20140325---steam-and-ios-launch">2014/03/25 - Steam and iOS launch</h1>
 <p>I had tried to bring games to Steam before but with no success. The focus was on Mobile, with Desktop in mind, but where to sell it? Before Steam I was able to get confirmation for the new Humble Store, but Steam was still on my mind. In the past I had higher hopes for my first game <a href="/tags/vizati/">Vizati</a>, looked more polished, so QoD didn&rsquo;t seemed to have a chance.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png"></p>
 <p>But I decided to make a trailer and launch a GL page, and imagine my surprise when QoD was approved on Steam Greenlight within a week or so. Just look at my dumb face here that I just digged from some old Tweets.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg" alt="David celebrating QoD approval on Steam Greenlight"  />
-</p>
+<p><img alt="David celebrating QoD approval on Steam Greenlight" loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg"></p>
 <p>With the trailer out, people seemed to enjoyed what they saw, I also thought I was near completing the game, there&rsquo;s always something right? So I pretty much crunched the entire rest of time between my day job and finishing the game.</p>
 <p>Finally on March 25th it was out, everyone could play it. Since the game was only releasing around 18h on Steam, I went to my day job that day, and only took the next day off for checking &amp; fixing bugs etc.</p>
 <p>Initially all I was getting was a flow of emails with some bugs and suggestions, but overall people seemed to like it, which was a relief. There was still tons of stuff to fix, but slowly, and for the next few weeks went through issues and suggestions. On the mobile side of things things were smoother, that version was the older one, had more testing, also less hardware configurations. I recall before launch, a conversation with some coworkers, that making it paid on mobile was probably a mistake, but I don&rsquo;t know how to design games around F2P/Ads, so I made it paid.  But, thankfully, even being a paid game, at $1.99, people were happy with what they were getting.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg"></p>
 <h1 id="20140530---linux">2014/05/30 - Linux</h1>
 <p>This one was something that I had in the back on my mind for a while, theoretically my engine could be ported to Linux, but I was scared of having too many versions at launch, handing those 4 SKUs was already a handful, so this was left for later. This actually ended up being a factor in Humble Bundle contacting me to participate in one of their bundles, back then having a game on all 3 platforms was a must.
 Technically speaking it wasn&rsquo;t extremely complicated, by this time the engine was already relatively split in ways that it was easy to integrate new OS, it was just a matter of implementation.
 Also, now that Steam Deck is a thing, it just worked out of the box.</p>
 <h1 id="20140826---android">2014/08/26 - Android</h1>
 <p>With Desktops and iOS versions being well received I started getting requests for an Android version, I had never worked on this platform, but with most of the know bugs fixed, I bought a cheap Android phone and I moved into porting the game to this platform, you can read more about that <a href="/2014/08/native-game-on-android-porting-quest-of-dungeons/">here</a>.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg"></p>
 <h1 id="2014---ouya-cancelled">2014 - OUYA (cancelled)</h1>
 <p>The hot thing around the time was OUYA, games like TowerFall were born there, so since I had an Android version I started to work on that, because it would be the closest to a traditional console that I thought I could put this game on. I started working on it, but once Microsoft accepted my pitch for the Xbox One (see below), I placed this in low priority. Between the time it took me to develop the Xbox One version, OUYA had it downfall, and by that time I just cancelled it.</p>
 <h1 id="201509---xbox-one">2015/09 - Xbox One</h1>
 <p>In the summer of 2014, after the launch of all those versions, relatively successfully, I started talking with ID@Xbox with the possibility of bringing QoD to Xbox One. There were a couple months of paperwork and mostly the conversation about &ldquo;this is a mouse game, how will it work on consoles?&rdquo;, which was when I started seeing that all the UI needed to be remade, and even some gameplay.</p>
 <p>There are several posts, <a href="/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">here</a>, <a href="/2015/04/necrodancer-is-joining/">here</a>, <a href="/2014/11/qod-xo-devlog-1/">here</a>, <a href="/2015/01/qod-xo-devlog-2/">here</a> and <a href="/2015/02/qod-xo-devlog-3/">here</a>  detailing what went into to that process, but after around 1 year the game was finally released, and all the work put into reworking the game to controller friendly interface and gameplay paid off, it was <a href="/2015/10/quest-of-dungeons-reviews-roundup/">positively received</a>. I also took the opportunity to double the content available, and also add an <a href="/2015/04/necrodancer-is-joining/">extra character</a>. I&rsquo;m sure it was this combination of an almost remade version with increased content that led to it&rsquo;s positive feedback. I&rsquo;m really happy I decided to take all those months to remake it, it was daunting at first, I&rsquo;ll tell you that, but I&rsquo;m glad I did it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg" alt="Quest of Dungeons Xbox One launch"  />
-</p>
+<p><img alt="Quest of Dungeons Xbox One launch" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg"></p>
 <h1 id="20160929---wii-u-and-nintendo-3ds">2016/09/29 - Wii U and Nintendo 3DS</h1>
 <p>Around 2015 summer, before Xbox One release, and if I recall correctly, during Gamescom in Germany, I started talking with Nintendo about bringing the game to Nintendo 3DS and Wii U.</p>
 <p>This was when Nintendo was a bit more restrictive in terms of third party developers, and I was fully expecting, that me, a solo developer, would not make the cut, and it took a lot of months and patience to finally be able to show the game to someone and get accepted as an official Nintendo developer.</p>
 <p>At first my goal was to make Wii U port first because it would be similar to Xbox One, with some additional features for the GamePad. Nintendo 3DS would come later, it would take more work due to it&rsquo;s specifics.</p>
 <p>Unfortunately, or fortunately (depending how you see it), I bricked my Wii U devKit after a couple months of work, when the game was in a good state already but before 100% finished. During the time I waited for repairs I started the Nintendo 3DS version.</p>
 <p>I knew would take a LOT more work, from performance, to completely different UI for dual screen, hybrid of touch + buttons. But when the Wii U devKit arrived, I decided to launch them side-by-side, I talked with Nintendo about a cross-buy possibility, and once they gave the ok that was the goal.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png"></p>
 <p>The Nintendo 3DS version was one of the most complicated ones to pull off. This was also the first time that working on my own engine was the only thing making it possible. A lot of people were suggesting me to use Unity, and I had would have saved time in porting, which can be true, but Unity didn&rsquo;t supported 3DS, so it would never have happened if not for my custom framework.</p>
 <p>This is hands down my favourite version, there is no other like it, mostly because of the nature of the device.</p>
 <p>It was so fun to work with that I found myself <a href="/2016/05/qod-3dswii-u-port-devlog-1/">adding features</a> just because I wanted to test them, like the StreetPass, where you can get ghosts from other players you pass on the street. Nintendo had a really neat device here.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"></p>
 <p>There was some trouble having both versions on the same day, it&rsquo;s a lot of coordination required between me, Nintendo America and Europe teams, 4 different SKUs (3DS NA+EU, Wii U NA+EU), but in the end we made it.</p>
 <p>Like I suspected during my own tests, on the 3DS it was the ideal portable version, it&rsquo;s a game that suits shorts sessions on the go.</p>
 <p>This was also the first time I worked with a publisher for this game, for Japan, the game was published by Flyhigh Works, they took it to Tokyo Game Show, localized to JP, and were crucial in shaping up the 3DS version into what it is. I do recall many sessions where my stubbornness almost caused some bad decisions in the game, but they were really cool in guiding me to make the best of it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg" alt="Quest of Dungeons on Wii U and Nintendo 3DS"  />
-</p>
+<p><img alt="Quest of Dungeons on Wii U and Nintendo 3DS" loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg"></p>
 <h1 id="20170120---playstation-4-and-the-vita-version-that-never-was">2017/01/20 - PlayStation 4 and the Vita version that never was.</h1>
 <p>I love my PlayStation 4, in fact it&rsquo;s the console I have more physical games for.</p>
 <p>So it was with great excitement that after a Skype call with my PlayStation rep I had the greenlight to get the game there. This started around the time of Nintendo too, but sadly, and at first I wanted PS4 + Vita combo, like Wii U + 3DS, but for a variety of reasons the PlayStation Vita never happened.</p>
 <p>This was one of the reasons the PS4 versions was one of the latter ones, I kept hoping I could launch both simultaneously but never happened. Fun fact, this version almost had a physical edition that got cancelled by the publisher at last moment, eventually I even got someone, another publisher, to take care of the PS Vita version, but that also got cancelled later on. So a combination of things that happened that were no one&rsquo;s fault, but also made it a bit hard for me to explain why it wasn&rsquo;t happening. In certain moments it was almost, but it never did happened. It was a bit frustrating that I didn&rsquo;t had clear answers for the players regarding this, but I couldn&rsquo;t, and I tried but failed in the end. Well, that&rsquo;s game development.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png" alt="Quest of Dungeons on PlayStation 4"  />
-</p>
+<p><img alt="Quest of Dungeons on PlayStation 4" loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png"></p>
 <h1 id="20170810---nintendo-switch">2017/08/10 - Nintendo Switch</h1>
 <p>Around 1 month after I released on Wii U and 3DS, Nintendo announced their new hybrid console, the Nintendo Switch. I immediately started getting questions from players about a port. This complicated promoting the new Nintendo versions while everyone was excited about the upcoming console, saving money for it and the games. By coincidence I had launched both versions right at the end.</p>
 <p>I can&rsquo;t recall exactly when conversations started with Nintendo about this, since it was in hot demand, both for retail and developers, but eventually Nintendo shipped me a devKit and I started porting. It was released first in the Japanese regions, again by Flyhigh Works. But a few weeks later again by me in the rest of the world. This version had the portability of 3DS, and graphics/resolution and UI of the home consoles. This was also the first time I made a demo for the game, which still exists on the eShop.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg" alt="Quest of Dungeons on Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons on Nintendo Switch" loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg"></p>
 <h1 id="2019---dreamcast-just-having-fun">2019 - Dreamcast (just having fun)</h1>
 <p>In 2019 I got my hands on a Dreamcast I decided to &ldquo;wonder if I can port it there?&rdquo;, it was never really meant for a full release, that would take months of time that I don&rsquo;t have at the moment,
 I just posting it here for the record, this was under a week of work, it was fun. Maybe if I reach retirement I&rsquo;ll take some time to finish it. There&rsquo;s a lot of work left in there.</p>
 <p>After a while booting the game on an emulator,</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png" alt="Quest of Dungeons running on emulator 1"  />
-</p>
+<p><img alt="Quest of Dungeons running on emulator 1" loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png"></p>
 <p>and then later when I got it booting on a real Dreamcast</p>
 <video width="100%" controls>
     <source src="/wp-content/uploads/2024/03/qod_running_on_dreamcast.mp4" type="video/mp4">
@@ -103,15 +91,12 @@ I just posting it here for the record, this was under a week of work, it was fun
 
 <h1 id="20210413---switch-physical-edition">2021/04/13 - Switch Physical Edition</h1>
 <p>Like I mentioned before, I tried to get the game in physical format before, and I kept trying for years but it simply wasn&rsquo;t happening. Until 2021, when by random chance, someone recommended me Leoful, and they accepted right away, in fact, from initial contact to production, it was just a couple months, I&rsquo;m really happy I was able to finally get the game on an actual box, it hits differently, as I <a href="/2010/08/games-and-systems-from-childhood/">grew playing Nintendo games</a>,  and also feels like a closure to a project that started on a smaller device and made it&rsquo;s way to a real physical game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png" alt="Quest of Dungeons Physical Edition for Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons Physical Edition for Nintendo Switch" loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png"></p>
 <h1 id="2022---">2022 - ??</h1>
 <p>Right now the game still exists in several stores (R.I.P. Nintendo 3DS and Wii U), and it&rsquo;s in maintenance mode only. The platforms patched more regularly are the mobile ones, whenever Apple or Android come up with new rules or it breaks on new devices. Windows gives nearly no problems, MacOS breaks things more often, but overall it doesn&rsquo;t give a lot of work, the last time I had to mess with it, was the Linux version to patch stuff for Steam Deck, but it was relatively easy.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg" alt="Quest of Dungeons on Steam Deck"  />
-</p>
+<p><img alt="Quest of Dungeons on Steam Deck" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg"></p>
 <p>So in the end things worked out, and I want to say a big thank you to everyone who supported this project, I read all the emails, DMs, messages everyone sent over the years, even fanart, you rock.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif"></p>
 <h1 id="some-trivia">Some trivia</h1>
 <ul>
 <li>The game has 79k of code (all platforms)</li>
@@ -126,8 +111,7 @@ I just posting it here for the record, this was under a week of work, it was fun
 <li>The initial skull sign, which only exists at the very start, was a way to teach the player that death meant restarting, in 2013-14 roguelikes weren&rsquo;t as popular and it was seen as a shock for that to happen (play-testers would email me &ldquo;my save is lost&rdquo;). My goal was that by potentially learning that early on, the player would not get surprised.</li>
 </ul>
 <p>Thank you for reading all of this.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png"></p>
 <p>Here&rsquo;s a cool image made by <a href="https://twitter.com/LeonorParra08">Leonor</a>.</p>
 ]]></content:encoded>
     </item>
@@ -136,28 +120,25 @@ I just posting it here for the record, this was under a week of work, it was fun
       <link>https://www.david-amador.com/2015/09/make-your-own-qod-xbox-one-controller/</link>
       <pubDate>Fri, 04 Sep 2015 14:29:51 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/09/make-your-own-qod-xbox-one-controller/</guid>
-      <description>A lot of you asked me how they could have their Xbox One controller to look like this
-So today I’m sharing the template that you can use to print your own controller 😀
-Start by downloading this image: (Right click, open in new tab, Hi-res download)
-For my own controller I used a website called decalGirl, but use whatever similar service you prefer or a local store if you have it.</description>
+      <description>&lt;p&gt;A lot of you asked me how they could have their Xbox One controller to look like this&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2015/07/quest-of-dungeons-custom-xbox-one-controller.jpg&#34;&gt;&lt;img alt=&#34;quest of dungeons custom xbox one controller&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2015/07/quest-of-dungeons-custom-xbox-one-controller.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So today I’m sharing the template that you can use to print your own controller 😀&lt;/p&gt;
+&lt;p&gt;Start by downloading this image: &lt;a href=&#34;https://www.dropbox.com/s/00iukgunjge3u1o/quest_of_dungeons_skin_controller.png?dl=1&#34;&gt;(Right click, open in new tab, Hi-res download)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2015/09/quest_of_dungeons_skin_controller-1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For my own controller I used a website called decalGirl, but use whatever similar service you prefer or a local store if you have it. I found that one, there are several others. Link to online template builder =&amp;gt; &lt;a href=&#34;https://www.decalgirl.com/make/app/?t=1230&#34;&gt;https://www.decalgirl.com/make/app/?t=1230&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>A lot of you asked me how they could have their Xbox One controller to look like this</p>
-<p><a href="/wp-content/uploads/2015/07/quest-of-dungeons-custom-xbox-one-controller.jpg"><img loading="lazy" src="/wp-content/uploads/2015/07/quest-of-dungeons-custom-xbox-one-controller.jpg" alt="quest of dungeons custom xbox one controller"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/quest-of-dungeons-custom-xbox-one-controller.jpg"><img alt="quest of dungeons custom xbox one controller" loading="lazy" src="/wp-content/uploads/2015/07/quest-of-dungeons-custom-xbox-one-controller.jpg"></a></p>
 <p>So today I’m sharing the template that you can use to print your own controller 😀</p>
 <p>Start by downloading this image: <a href="https://www.dropbox.com/s/00iukgunjge3u1o/quest_of_dungeons_skin_controller.png?dl=1">(Right click, open in new tab, Hi-res download)</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2015/09/quest_of_dungeons_skin_controller-1.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/09/quest_of_dungeons_skin_controller-1.png"></p>
 <p>For my own controller I used a website called decalGirl, but use whatever similar service you prefer or a local store if you have it. I found that one, there are several others. Link to online template builder =&gt; <a href="https://www.decalgirl.com/make/app/?t=1230">https://www.decalgirl.com/make/app/?t=1230</a></p>
 <p>Upload the image, use the online too to make is look a bit like this, if you used a different website adjust accordingly.<br>
-<img loading="lazy" src="/wp-content/uploads/2015/09/Screen-Shot-2015-09-04-at-14.55.21-1.png" alt=""  />
-</p>
+<img loading="lazy" src="/wp-content/uploads/2015/09/Screen-Shot-2015-09-04-at-14.55.21-1.png"></p>
 <p>Preview applied:<br>
-<img loading="lazy" src="/wp-content/uploads/2015/09/Screen-Shot-2015-09-04-at-14.55.46-1.png" alt=""  />
-</p>
+<img loading="lazy" src="/wp-content/uploads/2015/09/Screen-Shot-2015-09-04-at-14.55.46-1.png"></p>
 <p>and voila, a brand new Quest of Dungeons theme for your Xbox controller.</p>
 <p>Here’s how it looks next to the Xbox</p>
-<p><a href="/wp-content/uploads/2015/09/11942205_310047909119021_6766836944566229236_o-1.jpg"><img loading="lazy" src="/wp-content/uploads/2015/09/11942205_310047909119021_6766836944566229236_o-1-1024x768.jpg" alt="11942205_310047909119021_6766836944566229236_o"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/09/11942205_310047909119021_6766836944566229236_o-1.jpg"><img alt="11942205_310047909119021_6766836944566229236_o" loading="lazy" src="/wp-content/uploads/2015/09/11942205_310047909119021_6766836944566229236_o-1-1024x768.jpg"></a></p>
 <p>Tweet me pictures of your own to <a href="https://twitter.com/DJ_Link">@DJ_Link</a></p>
 <p>Also don’t forget, the <a href="/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/">game is already out on Xbox One</a></p>
 ]]></content:encoded>
@@ -167,13 +148,13 @@ For my own controller I used a website called decalGirl, but use whatever simila
       <link>https://www.david-amador.com/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/</link>
       <pubDate>Fri, 04 Sep 2015 14:27:30 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/09/quest-of-dungeons-is-now-available-on-xbox-one/</guid>
-      <description>It’s alive!!!!
-Quest of Dungeons finally landed on the Xbox One, and it’s available to buy right NOW!!
-Xbox Store link: https://store.xbox.com/en-US/Xbox-One/Games/Quest-of-Dungeons/c5fc3166-ea13-4a23-becb-9e52ed638652</description>
+      <description>&lt;p&gt;It’s alive!!!!&lt;br&gt;
+Quest of Dungeons finally landed on the Xbox One, and it’s available to buy right NOW!!&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2015/07/branded_key_art_584x800_alt_version.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Xbox Store link: &lt;a href=&#34;https://store.xbox.com/en-US/Xbox-One/Games/Quest-of-Dungeons/c5fc3166-ea13-4a23-becb-9e52ed638652&#34;&gt;https://store.xbox.com/en-US/Xbox-One/Games/Quest-of-Dungeons/c5fc3166-ea13-4a23-becb-9e52ed638652&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s alive!!!!<br>
 Quest of Dungeons finally landed on the Xbox One, and it’s available to buy right NOW!!</p>
-<p><img loading="lazy" src="/wp-content/uploads/2015/07/branded_key_art_584x800_alt_version.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/07/branded_key_art_584x800_alt_version.png"></p>
 <p>Xbox Store link: <a href="https://store.xbox.com/en-US/Xbox-One/Games/Quest-of-Dungeons/c5fc3166-ea13-4a23-becb-9e52ed638652">https://store.xbox.com/en-US/Xbox-One/Games/Quest-of-Dungeons/c5fc3166-ea13-4a23-becb-9e52ed638652</a></p>
 ]]></content:encoded>
     </item>
@@ -182,11 +163,13 @@ Quest of Dungeons finally landed on the Xbox One, and it’s available to buy ri
       <link>https://www.david-amador.com/2015/07/quest-of-dungeons-coming-to-xbox-one-on-september-4/</link>
       <pubDate>Wed, 15 Jul 2015 18:33:15 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/07/quest-of-dungeons-coming-to-xbox-one-on-september-4/</guid>
-      <description>Hey everyone!
-You know that thing you’ve been asking me these past few weeks? I finally have a release day.
-I’m very pleased to announce that Quest of Dungeons is coming to Xbox One on September 4th via the ID@Xbox self-publishing program.
-After months of development I’m very excited to finally be able say that it will be available on your console on that day.
-Quest of Dungeons is a turn based roguelike game, featuring that good old 16-bit art style we grew up with.</description>
+      <description>&lt;p&gt;Hey everyone!&lt;/p&gt;
+&lt;p&gt;You know that thing you’ve been asking me these past few weeks? I finally have a release day.&lt;/p&gt;
+&lt;p&gt;I’m very pleased to announce that Quest of Dungeons is &lt;strong&gt;coming to Xbox One on&lt;/strong&gt; &lt;strong&gt;September 4th&lt;/strong&gt; via the ID@Xbox self-publishing program.&lt;/p&gt;
+&lt;p&gt;After months of development I’m very excited to finally be able say that it will be available on your console on that day.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Quest of Dungeons is a turn based roguelike game, featuring that good old 16-bit art style we grew up with.&lt;br&gt;
+An evil Dark Lord has stolen all the light, so your mission is to enter his lair and defeat him. The dungeons layout is procedural so you won’t find items/enemies in the same place each time you play.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Hey everyone!</p>
 <p>You know that thing you’ve been asking me these past few weeks? I finally have a release day.</p>
 <p>I’m very pleased to announce that Quest of Dungeons is <strong>coming to Xbox One on</strong> <strong>September 4th</strong> via the ID@Xbox self-publishing program.</p>
@@ -196,15 +179,16 @@ Quest of Dungeons is a turn based roguelike game, featuring that good old 16-bit
 An evil Dark Lord has stolen all the light, so your mission is to enter his lair and defeat him. The dungeons layout is procedural so you won’t find items/enemies in the same place each time you play.</p>
 </blockquote>
 <p>In my <a href="/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">last post</a> I’ve detailed some of the new features and options so take a look for further detail.</p>
-<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_01.png"><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_01.png" alt="Quest of Dungeons Xbox One screenshot 1"  />
-</a></p>
-<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_09.png"><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_09.png" alt="Quest of Dungeons Xbox One screenshot 2"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_01.png"><img alt="Quest of Dungeons Xbox One screenshot 1" loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_01.png"></a></p>
+<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_09.png"><img alt="Quest of Dungeons Xbox One screenshot 2" loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_09.png"></a></p>
 <p>I’ll leave you with a trailer featuring Xbox One gameplay footage, in case you haven’t see it.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/leD7XnqZqec" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/leD7XnqZqec?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>As always feel free to spread the word around, and if you need to contact me don’t hesitate to send an email or a tweet (<a href="https://twitter.com/DJ_Link">https://www.twitter.com/DJ_Link</a>)</p>
 <p>Press Kit: I updated the official <a href="https://www.upfallstudios.com/press/sheet.php?p=quest_of_dungeons">presskit site</a> with Xbox One Screenshots. There is a download with all Xbox One related images you can use. For anything else for further information you can email me at <a href="mailto:david@upfallstudios.com">david@upfallstudios.com</a></p>
@@ -215,61 +199,46 @@ An evil Dark Lord has stolen all the light, so your mission is to enter his lair
       <link>https://www.david-amador.com/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/</link>
       <pubDate>Tue, 14 Jul 2015 14:49:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/</guid>
-      <description>I’ve been talking about some of the new stuff here and then, but it’s time to show the Xbox version in more detail. A lot of the UI was remade to allow proper gamepad support, several bugs and tweaks were made, and even new features. Lets take a closer look.
-In game First of all, here’s how it looks in game, a very minimalist UI if I might say so.</description>
+      <description>&lt;p&gt;I’ve been talking about some of the new stuff here and then, but it’s time to show the Xbox version in more detail. A lot of the UI was remade to allow proper gamepad support, several bugs and tweaks were made, and even new features. Lets take a closer look.&lt;/p&gt;
+&lt;h2 id=&#34;in-game&#34;&gt;In game&lt;/h2&gt;
+&lt;p&gt;First of all, here’s how it looks in game, a very minimalist UI if I might say so.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been talking about some of the new stuff here and then, but it’s time to show the Xbox version in more detail. A lot of the UI was remade to allow proper gamepad support, several bugs and tweaks were made, and even new features. Lets take a closer look.</p>
 <h2 id="in-game">In game</h2>
 <p>First of all, here’s how it looks in game, a very minimalist UI if I might say so.</p>
-<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_31.png"><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_31.png" alt="Quest of Dungeons Xbox One in game"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_31.png"><img alt="Quest of Dungeons Xbox One in game" loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_31.png"></a></p>
 <p>Next the new Inventory system, instead of several menus (that you could use the mouse with ease to navigate) everything was transformed to fit into a single big integrated menu to use with the Xbox one controller.</p>
-<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_32.png"><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_32.png" alt="Quest of Dungeons Xbox One inventory"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_32.png"><img alt="Quest of Dungeons Xbox One inventory" loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_32.png"></a></p>
 <p>I also added a quick navigation menu to switch between skills, and while you can still use the above Inventory to access skills, this one proved quicker and less intrusive to switch during combat (even if the game is turn-based). You just press a key and voilá!</p>
-<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_33.png"><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_33.png" alt="Quest of Dungeons Xbox One quick Skills access"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_33.png"><img alt="Quest of Dungeons Xbox One quick Skills access" loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_33.png"></a></p>
 <h2 id="some-of-the-new-features">Some of the new features</h2>
 <p><strong>New mansion and custom mode</strong><br>
 After you finish Omphar you will have access to another new mansion called Rackan, and a custom game mode, where you can choose amount of floors (within a certain range), dungeon size and difficulty. Also in custom the floors themes are mixed in so you usually get a different “flavor” each time.</p>
-<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_29.png"><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_29.png" alt="Quest of Dungeons mansions list"  />
-</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_34.png" alt=""  />
-</p>
-<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_30.png"><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_30.png" alt="Quest of Dungeons custom mode"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_29.png"><img alt="Quest of Dungeons mansions list" loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_29.png"></a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_34.png"></p>
+<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_30.png"><img alt="Quest of Dungeons custom mode" loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_30.png"></a></p>
 <p><strong>New class</strong><br>
 Also after finishing the game you have access to the <a href="/2015/04/necrodancer-is-joining/">Necrodancer</a>, which is a bonus character that mixes in several of the other classes, It’s very cool to play with especially if you played the original game.</p>
-<p><a href="/wp-content/uploads/2015/04/necrodancer_using_bomb_spell.png"><img loading="lazy" src="/wp-content/uploads/2015/04/necrodancer_using_bomb_spell.png" alt="necrodancer_using_bomb_spell"  />
-</a></p>
-<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_28.png"><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_28.png" alt="Quest of Dungeons class list"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/04/necrodancer_using_bomb_spell.png"><img alt="necrodancer_using_bomb_spell" loading="lazy" src="/wp-content/uploads/2015/04/necrodancer_using_bomb_spell.png"></a></p>
+<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_28.png"><img alt="Quest of Dungeons class list" loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_28.png"></a></p>
 <p><strong>Ghost Hero</strong> Another cool thing is that you can now find yourself in ghost from a previous run. When you die, your character goes into limbo, when you create a new dungeon there’s a chance you might encounter yourself. If you defeat your ghost you get everything he still has.</p>
-<p><a href="/wp-content/uploads/2015/07/qod_kill_ghost_feature.png"><img loading="lazy" src="/wp-content/uploads/2015/07/qod_kill_ghost_feature.png" alt="Quest of Dungeons ghost hero"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/qod_kill_ghost_feature.png"><img alt="Quest of Dungeons ghost hero" loading="lazy" src="/wp-content/uploads/2015/07/qod_kill_ghost_feature.png"></a></p>
 <h2 id="settings">Settings</h2>
 <p><strong>Main screen</strong> The main screen has a different image.</p>
-<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_24.png"><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_24.png" alt="Quest of Dungeons Xbox main screen"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_24.png"><img alt="Quest of Dungeons Xbox main screen" loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_24.png"></a></p>
 <p><strong>UI size</strong><br>
 Because most people play far from the television all UI is scaled at 2x. However, if you connect your Xbox One to a monitor and play close, you can set to 1x (which I personally think it’s better for viewing up close). You can also scale the game itself to 2x if you prefer, again it’s a matter of personal preference, depending on your setup.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2015/07/quest_of_dungeons_ui_2x_compare.jpg" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/07/quest_of_dungeons_ui_2x_compare.jpg"></p>
 <p><strong>Screen area</strong> Since the Xbox version will be mostly to run on Television screens there are a couple of specific options, like a screen area, because some <a href="/2015/02/qod-xo-devlog-3/">television cut a percentage of the screen</a>, you have an option to put the UI on a smaller area.</p>
-<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_26.png"><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_26.png" alt="Quest of Dungeons Xbox screen area"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_26.png"><img alt="Quest of Dungeons Xbox screen area" loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_26.png"></a></p>
 <p><strong>Key Binding</strong><br>
 There is a settings screen for rebinding some of the game controller buttons.</p>
-<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_25.png"><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_25.png" alt="Quest of Dungeons Xbox One bindable keys"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/XboxOne_Image_25.png"><img alt="Quest of Dungeons Xbox One bindable keys" loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_25.png"></a></p>
 <p><strong>Language</strong> It’s possible to choose different languages (other than English)</p>
-<p><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_27.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/07/XboxOne_Image_27.png"></p>
 <p>Oh and last but not least, here’s the game cover for Xbox One 🙂</p>
-<p><img loading="lazy" src="/wp-content/uploads/2015/07/branded_key_art_584x800_alt_version.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/07/branded_key_art_584x800_alt_version.png"></p>
 <p>Also I want to show you what I’ve done to my own controller.</p>
-<p><a href="/wp-content/uploads/2015/07/quest-of-dungeons-custom-xbox-one-controller.jpg"><img loading="lazy" src="/wp-content/uploads/2015/07/quest-of-dungeons-custom-xbox-one-controller.jpg" alt="quest of dungeons custom xbox one controller"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/07/quest-of-dungeons-custom-xbox-one-controller.jpg"><img alt="quest of dungeons custom xbox one controller" loading="lazy" src="/wp-content/uploads/2015/07/quest-of-dungeons-custom-xbox-one-controller.jpg"></a></p>
 <p>Awesome right?</p>
 <p>And that’s it for now, there are several other tweaks and improvements, but I won’t get into detail. I hope this helps getting a better view of everything that I tried to bring to the XO version, to make it feel “at home”.</p>
 <p>I’ll have more news soon.</p>
@@ -280,10 +249,11 @@ There is a settings screen for rebinding some of the game controller buttons.</p
       <link>https://www.david-amador.com/2015/04/necrodancer-is-joining/</link>
       <pubDate>Tue, 07 Apr 2015 11:28:34 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/04/necrodancer-is-joining/</guid>
-      <description>Hi!
-I’ve been keeping this one a secret, but there’s going to a be a new class, a Necrodancer.
-Yes you guessed it, it’s an homage to Cadence from the awesome game Crypt of the Necrodancer, you should buy it btw!
-I’ve been thinking about adding a new class for some time but never quite found anything interesting, each character, in my mind has it’s own personality and charisma and I was having a hard time finding any other interesting class.</description>
+      <description>&lt;p&gt;Hi!&lt;/p&gt;
+&lt;p&gt;I’ve been keeping this one a secret, but there’s going to a be a new class, a Necrodancer.&lt;br&gt;
+Yes you guessed it, it’s an homage to Cadence from the awesome game Crypt of the Necrodancer, you should buy it btw!&lt;br&gt;
+I’ve been thinking about adding a new class for some time but never quite found anything interesting, each character, in my mind has it’s own personality and charisma and I was having a hard time finding any other interesting class. I had the crazy idea of bringing Cadence to the game as an unlock-able and not one of the main starting characters, talked to the devs of CotN and the liked the idea (thank you again), so it’s happening.&lt;br&gt;
+So among the things that you unlock when you finish the game, you also unlock the Necrodancer, she’s going to be a mix of several things, close combat, magic and debuffs.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Hi!</p>
 <p>I’ve been keeping this one a secret, but there’s going to a be a new class, a Necrodancer.<br>
 Yes you guessed it, it’s an homage to Cadence from the awesome game Crypt of the Necrodancer, you should buy it btw!<br>
@@ -292,12 +262,9 @@ So among the things that you unlock when you finish the game, you also unlock th
 <p>On the development side of things, it’s been progressing, I’m now putting together the code that handles achievements, stats, save games and all that stuff for the Xbox One, I expect to enter beta testing soon, it’s in alpha right now since I’m still finishing features. I’m probably expanding the testing to more people (PC with game controller) since some stuff is radically different (UI, controls) and I need more feedback/testing for that.</p>
 <p>But for now I’ll leave you with some images and a video.</p>
 <p><em><strong>(EDIT 2022: Unfortunately the video attached was from Vine which is long gone)</strong></em></p>
-<p><a href="/wp-content/uploads/2015/04/cadence_02.png"><img loading="lazy" src="/wp-content/uploads/2015/04/cadence_02.png" alt="cadence_02"  />
-</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2015/04/necro_1.jpeg" alt="necro_1"  />
-</p>
-<p><a href="/wp-content/uploads/2015/04/necrodancer_using_bomb_spell.png"><img loading="lazy" src="/wp-content/uploads/2015/04/necrodancer_using_bomb_spell.png" alt="necrodancer_using_bomb_spell"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/04/cadence_02.png"><img alt="cadence_02" loading="lazy" src="/wp-content/uploads/2015/04/cadence_02.png"></a></p>
+<p><img alt="necro_1" loading="lazy" src="/wp-content/uploads/2015/04/necro_1.jpeg"></p>
+<p><a href="/wp-content/uploads/2015/04/necrodancer_using_bomb_spell.png"><img alt="necrodancer_using_bomb_spell" loading="lazy" src="/wp-content/uploads/2015/04/necrodancer_using_bomb_spell.png"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -305,14 +272,24 @@ So among the things that you unlock when you finish the game, you also unlock th
       <link>https://www.david-amador.com/2015/03/quest-of-dungeons-gdc-2015-trailer-for-the-xbox-one/</link>
       <pubDate>Wed, 04 Mar 2015 10:10:24 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/03/quest-of-dungeons-gdc-2015-trailer-for-the-xbox-one/</guid>
-      <description>Hey everyone, just a small update. GDC 2015 is happening right now and last night a trailer was released for Quest of Dungeons running on the Xbox One.
-I made all new footage, running at 1080p in 60FPS for this new trailer, but kept more or less the structure of the original one since I think it reflects well what the game is all about.</description>
+      <description>&lt;p&gt;Hey everyone, just a small update. &lt;a href=&#34;http://gdconf.com/&#34;&gt;GDC 2015&lt;/a&gt; is happening right now and last night a trailer was released for Quest of Dungeons running on the Xbox One.&lt;br&gt;
+I made all new footage, running at 1080p in 60FPS for this new trailer, but kept more or less the structure of the original one since I think it reflects well what the game is all about.&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/leD7XnqZqec?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;</description>
       <content:encoded><![CDATA[<p>Hey everyone, just a small update. <a href="http://gdconf.com/">GDC 2015</a> is happening right now and last night a trailer was released for Quest of Dungeons running on the Xbox One.<br>
 I made all new footage, running at 1080p in 60FPS for this new trailer, but kept more or less the structure of the original one since I think it reflects well what the game is all about.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/leD7XnqZqec" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/leD7XnqZqec?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -321,14 +298,12 @@ I made all new footage, running at 1080p in 60FPS for this new trailer, but kept
       <link>https://www.david-amador.com/2015/02/qod-xo-devlog-3/</link>
       <pubDate>Tue, 24 Feb 2015 18:47:08 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/02/qod-xo-devlog-3/</guid>
-      <description>Last time we talked I was porting the engine to run on the actual Xbox One hardware, since them I managed to port the whole engine, it’s now running (not 100% stable), sound, rending, and input, all working. Since that part is a bit better now I decided to focus some time on new content, such as localization, the new dungeons and stuff that still doesn’t properly work with a controller.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/2015/01/qod-xo-devlog-2/&#34; title=&#34;QoD XO devlog 2&#34;&gt;Last time&lt;/a&gt; we talked I was porting the engine to run on the actual Xbox One hardware, since them I managed to port the whole engine, it’s now running (not 100% stable), sound, rending, and input, all working. Since that part is a bit better now I decided to focus some time on new content, such as localization, the new dungeons and stuff that still doesn’t properly work with a controller.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/2015/01/qod-xo-devlog-2/" title="QoD XO devlog 2">Last time</a> we talked I was porting the engine to run on the actual Xbox One hardware, since them I managed to port the whole engine, it’s now running (not 100% stable), sound, rending, and input, all working. Since that part is a bit better now I decided to focus some time on new content, such as localization, the new dungeons and stuff that still doesn’t properly work with a controller.</p>
 <p>Almost the entire game is now fully playable with the Xbox One controller but there are still a couple of things that I’m not happy, such a way to check the active buffs/debuffs and properly using ranged skills that don’t use enemy targets, like Teleport or Summon. I need to find a way to make this coherent with the rest of the game.</p>
-<p><a href="/wp-content/uploads/2015/02/qod_active_buffs.png"><img loading="lazy" src="/wp-content/uploads/2015/02/qod_active_buffs.png" alt="qod_active_buffs"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/02/qod_active_buffs.png"><img alt="qod_active_buffs" loading="lazy" src="/wp-content/uploads/2015/02/qod_active_buffs.png"></a></p>
 <p>Another thing that I’m concerned with, is the font size on TV’s, some parts of the game are heavily text based, such as items descriptions etc, on smaller TV’s it may be hard to read, finding the right size is not easy. I’ve been considering having an option for scaling the text, but this would break all the UI, so I need to think of a way to solve this. I also need to rework some parts of the game to accommodate for TV safe areas, some televisions can hide up to 10% of the screen area, and I need to make sure no crucial UI is there, which is pretty much where the UI is on the PC version.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2015/02/dt_safe_viewing_area9.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/02/dt_safe_viewing_area9.png"></p>
 <p>That’s it for now, as always thanks for taking the time reading. See you on the next post.</p>
 ]]></content:encoded>
     </item>
@@ -337,18 +312,16 @@ I made all new footage, running at 1080p in 60FPS for this new trailer, but kept
       <link>https://www.david-amador.com/2015/01/qod-xo-devlog-2/</link>
       <pubDate>Sun, 11 Jan 2015 15:20:42 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/01/qod-xo-devlog-2/</guid>
-      <description>I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.
-Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere.</description>
+      <description>&lt;p&gt;I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.&lt;/p&gt;
+&lt;p&gt;Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere. But I’m slowly making some progress, got some of the rendering code working, as you can see on the images below, still no blend functions, no camera transforms but I’m getting there.&lt;br&gt;
+Still no input, sound of even proper font load/render, and I couple more things I can’t remember, but I’m happy with the progress I managed to accomplish in a couple of days.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.</p>
 <p>Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere. But I’m slowly making some progress, got some of the rendering code working, as you can see on the images below, still no blend functions, no camera transforms but I’m getting there.<br>
 Still no input, sound of even proper font load/render, and I couple more things I can’t remember, but I’m happy with the progress I managed to accomplish in a couple of days.</p>
 <p>That’s it for now, see you on the next update.</p>
-<p><a href="/wp-content/uploads/2015/01/qod_dx_1.png"><img loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_1.png" alt="qod_dx_1"  />
-</a></p>
-<p><a href="/wp-content/uploads/2015/01/qod_dx_2.png"><img loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_2.png" alt="qod_dx_2"  />
-</a></p>
-<p><a href="/wp-content/uploads/2015/01/qod_dx_3.png"><img loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_3.png" alt="qod_dx_3"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/01/qod_dx_1.png"><img alt="qod_dx_1" loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_1.png"></a></p>
+<p><a href="/wp-content/uploads/2015/01/qod_dx_2.png"><img alt="qod_dx_2" loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_2.png"></a></p>
+<p><a href="/wp-content/uploads/2015/01/qod_dx_3.png"><img alt="qod_dx_3" loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_3.png"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -356,9 +329,10 @@ Still no input, sound of even proper font load/render, and I couple more things 
       <link>https://www.david-amador.com/2014/11/qod-xo-devlog-1/</link>
       <pubDate>Sun, 16 Nov 2014 18:05:33 +0000</pubDate>
       <guid>https://www.david-amador.com/2014/11/qod-xo-devlog-1/</guid>
-      <description>I’ve been doing a lot of menus and gamepad specifics related work lately.
-My first step has been to make sure all menus are easy to use with a Xbox One controller, and while most of the menus in the main screen are usable, inside the game they are not.
-Everything was made with mouse in mind at first so I decided to remake all of them again in a different way.</description>
+      <description>&lt;p&gt;I’ve been doing a lot of menus and gamepad specifics related work lately.&lt;br&gt;
+My first step has been to make sure all menus are easy to use with a Xbox One controller, and while most of the menus in the main screen are usable, inside the game they are not.&lt;br&gt;
+Everything was made with mouse in mind at first so I decided to remake all of them again in a different way.&lt;br&gt;
+The idea is that you press a button, popup a full blown menu and can use the shoulder buttons to switch tabs, DPAD to navigate items and ABXY for actions.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been doing a lot of menus and gamepad specifics related work lately.<br>
 My first step has been to make sure all menus are easy to use with a Xbox One controller, and while most of the menus in the main screen are usable, inside the game they are not.<br>
 Everything was made with mouse in mind at first so I decided to remake all of them again in a different way.<br>
@@ -373,12 +347,11 @@ As always thank you for such a great support, I’ll keep you posted.</p>
       <link>https://www.david-amador.com/2014/10/quest-of-dungeons-is-coming-to-xbox-one/</link>
       <pubDate>Wed, 22 Oct 2014 10:53:05 +0000</pubDate>
       <guid>https://www.david-amador.com/2014/10/quest-of-dungeons-is-coming-to-xbox-one/</guid>
-      <description>I’m very happy to announce that Quest of Dungeons is coming to Xbox One.
-The game was released for the first time on Steam in March 25th and the response has been super positive so I’m excited to bring QoD to new players in a “home console”. I’ll be handling the port myself, because that’s what a one man team means 🙂 I will keep you in the loop to what’s happening in the backstage so keep tuned…</description>
+      <description>&lt;p&gt;I’m very happy to announce that Quest of Dungeons is coming to Xbox One.&lt;/p&gt;
+&lt;p&gt;The game was released for the first time on Steam in March 25th and the response has been super positive so I’m excited to bring QoD to new players in a “home console”. I’ll be handling the port myself, because that’s what a one man team means 🙂 I will keep you in the loop to what’s happening in the backstage so keep tuned…&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’m very happy to announce that Quest of Dungeons is coming to Xbox One.</p>
 <p>The game was released for the first time on Steam in March 25th and the response has been super positive so I’m excited to bring QoD to new players in a “home console”. I’ll be handling the port myself, because that’s what a one man team means 🙂 I will keep you in the loop to what’s happening in the backstage so keep tuned…</p>
-<p><img loading="lazy" src="/wp-content/uploads/2014/10/xbox-one-controller.jpg" alt="xbox one controller"  />
-</p>
+<p><img alt="xbox one controller" loading="lazy" src="/wp-content/uploads/2014/10/xbox-one-controller.jpg"></p>
 ]]></content:encoded>
     </item>
   </channel>

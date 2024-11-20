@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 05 Nov 2009 15:09:53 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/unreal-development-kit/index.xml" rel="self" type="application/rss+xml" />
@@ -18,27 +18,21 @@
       <link>https://www.david-amador.com/2009/11/unreal-engine-3-is-now-free/</link>
       <pubDate>Thu, 05 Nov 2009 15:09:53 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/unreal-engine-3-is-now-free/</guid>
-      <description>Epic decided to offer Unreal Engine 3 for free to non-commercial applications. Sounds kind of weird considering it’s one of the best and most licensed engine out there, but maybe the recent release of Unity 3d free for all uses made them consider this option.
-Named UDK (Unreal Development Kit) you can download it here and have access to all tools and features that the full commercial Engine contains, well, except for the source code of course.</description>
+      <description>&lt;p&gt;Epic decided to offer Unreal Engine 3 for free to non-commercial applications. Sounds kind of weird considering it’s one of the best and most licensed engine out there, but maybe the recent release of Unity 3d free for all uses made them consider this option.&lt;br&gt;
+Named UDK (Unreal Development Kit) you can download it &lt;a href=&#34;https://web.archive.org/web/20120627195552/http://www.udk.com:80/&#34;&gt;here&lt;/a&gt; and have access to all tools and features that the full commercial Engine contains, well, except for the source code of course.&lt;br&gt;
+This opens a lot of doors to students and indie hobbyists as me. I just can’t wait to have the time to get my hands on this.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Epic decided to offer Unreal Engine 3 for free to non-commercial applications. Sounds kind of weird considering it’s one of the best and most licensed engine out there, but maybe the recent release of Unity 3d free for all uses made them consider this option.<br>
 Named UDK (Unreal Development Kit) you can download it <a href="https://web.archive.org/web/20120627195552/http://www.udk.com:80/">here</a> and have access to all tools and features that the full commercial Engine contains, well, except for the source code of course.<br>
 This opens a lot of doors to students and indie hobbyists as me. I just can’t wait to have the time to get my hands on this.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/YNNhZrE1KN8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
 
-<p><a href="/wp-content/uploads/2009/11/features-hero.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/features-hero-300x168.jpg" alt=""  />
-</a> <a href="/wp-content/uploads/2009/11/showcase-the-ball-1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-the-ball-1-300x240.jpg" alt=""  />
-</a> <a href="/wp-content/uploads/2009/11/showcase-the-ball-2.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-the-ball-2-300x240.jpg" alt=""  />
-</a> <a href="/wp-content/uploads/2009/11/showcase-the-ball-3.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-the-ball-3-300x240.jpg" alt=""  />
-</a> <a href="/wp-content/uploads/2009/11/showcase-ut-game-1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-ut-game-1-300x225.jpg" alt=""  />
-</a> <a href="/wp-content/uploads/2009/11/showcase-ut-game-2.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-ut-game-2-300x225.jpg" alt=""  />
-</a> <a href="/wp-content/uploads/2009/11/showcase-ut-game-3a.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-ut-game-3a-300x240.jpg" alt=""  />
-</a> <a href="/wp-content/uploads/2009/11/showcase-whizzle-1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-whizzle-1-300x187.jpg" alt=""  />
-</a> <a href="/wp-content/uploads/2009/11/showcase-whizzle-2.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-whizzle-2-300x187.jpg" alt=""  />
-</a> <a href="/wp-content/uploads/2009/11/showcase-whizzle-3.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-whizzle-3-300x187.jpg" alt=""  />
-</a></p>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YNNhZrE1KN8?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p><a href="/wp-content/uploads/2009/11/features-hero.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/features-hero-300x168.jpg"></a> <a href="/wp-content/uploads/2009/11/showcase-the-ball-1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-the-ball-1-300x240.jpg"></a> <a href="/wp-content/uploads/2009/11/showcase-the-ball-2.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-the-ball-2-300x240.jpg"></a> <a href="/wp-content/uploads/2009/11/showcase-the-ball-3.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-the-ball-3-300x240.jpg"></a> <a href="/wp-content/uploads/2009/11/showcase-ut-game-1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-ut-game-1-300x225.jpg"></a> <a href="/wp-content/uploads/2009/11/showcase-ut-game-2.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-ut-game-2-300x225.jpg"></a> <a href="/wp-content/uploads/2009/11/showcase-ut-game-3a.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-ut-game-3a-300x240.jpg"></a> <a href="/wp-content/uploads/2009/11/showcase-whizzle-1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-whizzle-1-300x187.jpg"></a> <a href="/wp-content/uploads/2009/11/showcase-whizzle-2.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-whizzle-2-300x187.jpg"></a> <a href="/wp-content/uploads/2009/11/showcase-whizzle-3.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/showcase-whizzle-3-300x187.jpg"></a></p>
 ]]></content:encoded>
     </item>
   </channel>

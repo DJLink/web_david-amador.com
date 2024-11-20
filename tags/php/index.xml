@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 27 Jan 2024 17:20:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
@@ -18,11 +18,12 @@
       <link>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</link>
       <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</guid>
-      <description>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&amp;rsquo;ve moved everything to static content, including this website.
-📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper.</description>
+      <description>&lt;p&gt;Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&amp;rsquo;ve moved everything to static content, including this website.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2024/01/shutting-down-server.gif&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;-wordpress&#34;&gt;📝 WordPress&lt;/h1&gt;
+&lt;p&gt;Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&rsquo;ve moved everything to static content, including this website.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/01/shutting-down-server.gif" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/shutting-down-server.gif"></p>
 <h1 id="-wordpress">📝 WordPress</h1>
 <p>Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.</p>
 <p>So for the past couple of years I&rsquo;ve been thinking in migrating it to something like Jekyll or Hugo, to serve it as static content. But the few times I looked into the process it seemed like a big task especially because I have 184 posts, I wasn&rsquo;t just starting from 0, I wanted to maintain the existing content, posts, images, URLs etc. So, a couple days ago I decided it was time.</p>
@@ -59,8 +60,7 @@ But after a couple days of messing around with configs and pre-requisites, packa
 <p>💻 So my current workflow is: I have a git repo with all the markdown and website code and I have the live website as a submodule, so whenever I made a change, I export it with Hugo, git commit all changes and GitHub pages just deploys them, feels like magic :D</p>
 <h3 id="-speed">🚀 Speed</h3>
 <p>Oh its much faster, obviously, but look at the changes of before (left) and after (right) using PageSpeed Insights.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/01/david_amador_site_wordpress_vs_hugo_speed.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/david_amador_site_wordpress_vs_hugo_speed.png"></p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Still there? Well so far I&rsquo;m happy with the move, I do miss the nice WordPress backend thing if I&rsquo;m being honest, but I can live without it. I feel like in the long run I won&rsquo;t miss having to maintain that server, also the costs. Right now I&rsquo;m editing this on Obsidian, about to commit and see if it goes live, RSS and all. If you find any broken stuff or have suggestions let me know, either mastodon, email or a comment here.</p>
 <p>Until the next time, where hopefully I&rsquo;ll talk about games! Thanks for reading.</p>
@@ -71,8 +71,9 @@ But after a couple days of messing around with configs and pre-requisites, packa
       <link>https://www.david-amador.com/2009/10/php-optimization-tips/</link>
       <pubDate>Thu, 22 Oct 2009 16:38:09 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/php-optimization-tips/</guid>
-      <description>As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.
-Loop At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times.</description>
+      <description>&lt;p&gt;As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.&lt;/p&gt;
+&lt;h2 id=&#34;loop&#34;&gt;Loop&lt;/h2&gt;
+&lt;p&gt;At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times. There are many ways we can define a loop in PHP. But how do you know which one is the best way to loop your data? Apparently, using a for loop is better than foreach and while loop if the maximum loop is pre-calculated outside the for loop!&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>As most languages PHP allows many ways to solve a problem. Some are faster then others. Here are a few ways to improve your PHP code.</p>
 <h2 id="loop">Loop</h2>
 <p>At some point your program will require a loop. And loop is considered as efficiency killer if you have many nested loop (means loop in a loop) as one loop will required to run ‘n’ times and if you have 1 nested loop, this means your program will have to run n2 times. There are many ways we can define a loop in PHP. But how do you know which one is the best way to loop your data? Apparently, using a for loop is better than foreach and while loop if the maximum loop is pre-calculated outside the for loop!</p>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>opengl on David Amador</title>
+    <title>Opengl on David Amador</title>
     <link>https://www.david-amador.com/tags/opengl/</link>
-    <description>Recent content in opengl on David Amador</description>
+    <description>Recent content in Opengl on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 11 Jan 2015 15:20:42 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/opengl/index.xml" rel="self" type="application/rss+xml" />
@@ -18,18 +18,16 @@
       <link>https://www.david-amador.com/2015/01/qod-xo-devlog-2/</link>
       <pubDate>Sun, 11 Jan 2015 15:20:42 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/01/qod-xo-devlog-2/</guid>
-      <description>I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.
-Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere.</description>
+      <description>&lt;p&gt;I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.&lt;/p&gt;
+&lt;p&gt;Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere. But I’m slowly making some progress, got some of the rendering code working, as you can see on the images below, still no blend functions, no camera transforms but I’m getting there.&lt;br&gt;
+Still no input, sound of even proper font load/render, and I couple more things I can’t remember, but I’m happy with the progress I managed to accomplish in a couple of days.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.</p>
 <p>Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere. But I’m slowly making some progress, got some of the rendering code working, as you can see on the images below, still no blend functions, no camera transforms but I’m getting there.<br>
 Still no input, sound of even proper font load/render, and I couple more things I can’t remember, but I’m happy with the progress I managed to accomplish in a couple of days.</p>
 <p>That’s it for now, see you on the next update.</p>
-<p><a href="/wp-content/uploads/2015/01/qod_dx_1.png"><img loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_1.png" alt="qod_dx_1"  />
-</a></p>
-<p><a href="/wp-content/uploads/2015/01/qod_dx_2.png"><img loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_2.png" alt="qod_dx_2"  />
-</a></p>
-<p><a href="/wp-content/uploads/2015/01/qod_dx_3.png"><img loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_3.png" alt="qod_dx_3"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/01/qod_dx_1.png"><img alt="qod_dx_1" loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_1.png"></a></p>
+<p><a href="/wp-content/uploads/2015/01/qod_dx_2.png"><img alt="qod_dx_2" loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_2.png"></a></p>
+<p><a href="/wp-content/uploads/2015/01/qod_dx_3.png"><img alt="qod_dx_3" loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_3.png"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -37,8 +35,8 @@ Still no input, sound of even proper font load/render, and I couple more things 
       <link>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</link>
       <pubDate>Sat, 30 Aug 2014 13:42:52 +0000</pubDate>
       <guid>https://www.david-amador.com/2014/08/native-game-on-android-porting-quest-of-dungeons/</guid>
-      <description>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.
-I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.</description>
+      <description>&lt;p&gt;Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.&lt;/p&gt;
+&lt;p&gt;I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Quest of Dungeons was made in C++ and OpenGL, it runs on Windows, Mac and Linux in native code. iOS is not a problem either since I just have a thin layer of Objective-C to access some functionality like touch, accelerometer, etc and the rest of the code just runs.</p>
 <p>I never made anything for Android, in fact I never even used one before this, so when I decided to port QoD to it, I had no idea of what to expect.</p>
 <p>Back in 2010 I did some research and the NDK was pretty bad, I don’t think it even had stl at the time, but things have changed since then. I decided to jump in and try to port the whole thing. As a primary goal I want to keep as much native code as possible, because it’s already working, porting it to Java could only lead to further bugs in the process.</p>
@@ -107,16 +105,14 @@ TinyXML – XML parser</p>
 <h3 id="opengl">OpenGL</h3>
 <p>I was using GLES for the iOS version already so I had no problems with the code itself, I did however had some problems with performance on older devices, for example 2010 devices with version 2.3 (the game targets 2.3+)</p>
 <p>Especially on this function glCopyTexSubImage2D</p>
-<p><img loading="lazy" src="/wp-content/uploads/2014/08/soft_shadows.png" alt="soft shadows"  />
-</p>
+<p><img alt="soft shadows" loading="lazy" src="/wp-content/uploads/2014/08/soft_shadows.png"></p>
 <p>The game uses some 2d soft shadows for giving a nice atmosphere, it&rsquo;s updated once in a while and I just used glCopyTexSubImage2D with a 256x256 texture instead of a VBO because it worked perfectly on everything else (including all iOS devices), but turns out this is very slow on older Android devices, so I ended up adding an option to the game to disable those effects. This way, newer devices can have all bells and whistles and older devices can still run the game fine. One of the testing devices was a Samsung Galaxy S1 and it went from 5 FPS to 30, which is more then acceptable to play. All 4.0+ devices should have no problem running this, and even if they have they can just disable the option.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2014/08/photo.png" alt="High Performance"  />
-</p>
+<p><img alt="High Performance" loading="lazy" src="/wp-content/uploads/2014/08/photo.png"></p>
 <h3 id="application-cycle">Application cycle</h3>
 <p>There is a strong possibility the GL view is trashed when the app goes to background, to save resources the view is recreated each time you go back from background to the app. This poses a problem since all gl objects, textures, shaders, VBOs are destroyed too. There is no secure way to ensure the view never gets destroyed while your app is running so I had to make sure each time the view is recreated I re-load all required assets once again. Really not happy with reloading everything again but its the only secure way, if you detect the view was destroyed and the app is still running you have no other choice. For this game it&rsquo;s not a big deal, I have few resources and they are fast to load so the user can&rsquo;t even tell. If I had a bigger game with lots of big textures I would probably had to show a loading screen again.</p>
 <h3 id="screen-size">Screen size</h3>
-<p>The different screen sizes for Android can pose a problem, but you can detect screen density and size and scale your game or take proper actions according to what you have.<!-- raw HTML omitted --><!-- raw HTML omitted -->
-Here&rsquo;s how you can detect it in C++</p>
+<p>The different screen sizes for Android can pose a problem, but you can detect screen density and size and scale your game or take proper actions according to what you have.</p>
+<p>Here&rsquo;s how you can detect it in C++</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">density</span> <span class="o">=</span> <span class="n">AConfiguration_getDensity</span><span class="p">(</span><span class="n">engine</span><span class="o">-&gt;</span><span class="n">app</span><span class="o">-&gt;</span><span class="n">config</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">screen_size</span> <span class="o">=</span> <span class="n">AConfiguration_getScreenSize</span><span class="p">(</span><span class="n">engine</span><span class="o">-&gt;</span><span class="n">app</span><span class="o">-&gt;</span><span class="n">config</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
@@ -149,12 +145,11 @@ Here&rsquo;s how you can detect it in C++</p>
       <link>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</link>
       <pubDate>Thu, 11 Jul 2013 12:09:48 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</guid>
-      <description>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a XNA 2D Camera I wrote some time ago.
-Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</description>
+      <description>&lt;p&gt;I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a &lt;a href=&#34;https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/&#34; title=&#34;XNA Camera 2d with zoom and rotation&#34;&gt;XNA 2D Camera&lt;/a&gt; I wrote some time ago.&lt;br&gt;
+Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a <a href="/2009/10/xna-camera-2d-with-zoom-and-rotation/" title="XNA Camera 2d with zoom and rotation">XNA 2D Camera</a> I wrote some time ago.<br>
 Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</p>
-<p><a href="/wp-content/uploads/2013/07/camera2d.jpg"><img loading="lazy" src="/wp-content/uploads/2013/07/camera2d-300x234.jpg" alt="camera2d"  />
-</a></p>
+<p><a href="/wp-content/uploads/2013/07/camera2d.jpg"><img alt="camera2d" loading="lazy" src="/wp-content/uploads/2013/07/camera2d-300x234.jpg"></a></p>
 <p>The Camera2D class is simple enough:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Camera2d</span>
@@ -247,8 +242,8 @@ Home/End – Camera zoom</p>
       <link>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</link>
       <pubDate>Mon, 22 Apr 2013 11:22:22 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
-      <description>Around two years ago I made a tutorial for XNA in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.
-As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</description>
+      <description>&lt;p&gt;Around two years ago I made a &lt;a href=&#34;https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/&#34; title=&#34;XNA 2D Independent Resolution Rendering&#34;&gt;tutorial for XNA&lt;/a&gt; in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.&lt;/p&gt;
+&lt;p&gt;As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Around two years ago I made a <a href="/2010/03/xna-2d-independent-resolution-rendering/" title="XNA 2D Independent Resolution Rendering">tutorial for XNA</a> in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.</p>
 <p>As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</p>
 <p>The code is quite straight forward actually. In case you are not familiar with what we are trying to achieve here I recommend my other tutorial first, where I explain this is more detail.</p>
@@ -334,12 +329,7 @@ As many know since then I moved to C++ and OpenGL, and ocasionally people ask me
 </span></span><span class="line"><span class="cl"><span class="n">glPopMatrix</span><span class="p">();</span>	
 </span></span></code></pre></div><p>And that’s pretty much it. I have this code on my games and it works fine, at least for what I usually need. Feel free to tweak it around for your needs. Hope this helps to get a picture on how to achieve this effect. Let me know if you find any bug.</p>
 <p>Here’s an example of what you might achieve with this</p>
-<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg" alt="Base_1280x720_Res_1280x800"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg" alt="Base_1280x720_Res_800x600"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg" alt="Base_1024x768_Res_800x600"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg" alt="Base_1280x720_Res_480x640"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg" alt="Base_1024x768_Res_1280x720"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img alt="Base_1280x720_Res_1280x800" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img alt="Base_1280x720_Res_800x600" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img alt="Base_1024x768_Res_800x600" loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img alt="Base_1280x720_Res_480x640" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img alt="Base_1024x768_Res_1280x720" loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -347,8 +337,48 @@ As many know since then I moved to C++ and OpenGL, and ocasionally people ask me
       <link>https://www.david-amador.com/2012/09/how-to-take-screenshot-in-opengl/</link>
       <pubDate>Sat, 08 Sep 2012 16:53:27 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/09/how-to-take-screenshot-in-opengl/</guid>
-      <description>So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.
-bool save_screenshot(string filename, int w, int h) {	//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let&amp;#39;s create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let&amp;#39;s fetch them from the backbuffer	// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename.</description>
+      <description>&lt;p&gt;So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;save_screenshot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;string&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;filename&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;c1&#34;&gt;//This prevents the images getting padded 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// when the width multiplied by 3 is not a multiple of 4
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;glPixelStorei&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GL_PACK_ALIGNMENT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nSize&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;c1&#34;&gt;// First let&amp;#39;s create our buffer, 3 channels per Pixel
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dataBuffer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;malloc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nSize&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dataBuffer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;c1&#34;&gt;// Let&amp;#39;s fetch them from the backbuffer	
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;   &lt;span class=&#34;c1&#34;&gt;// We request the pixels in GL_BGR format, thanks to Berzeger for the tip
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;   &lt;span class=&#34;n&#34;&gt;glReadPixels&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GLint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GLint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GLint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GLint&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		 &lt;span class=&#34;n&#34;&gt;GL_BGR&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GL_UNSIGNED_BYTE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dataBuffer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;c1&#34;&gt;//Now the file creation
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;   &lt;span class=&#34;n&#34;&gt;FILE&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;filePtr&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fopen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;filename&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c_str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(),&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;wb&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;filePtr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;kt&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TGAheader&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;kt&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;256&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;w&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;256&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			       &lt;span class=&#34;n&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;256&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;256&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			       &lt;span class=&#34;mi&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;c1&#34;&gt;// We write the headers
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;   &lt;span class=&#34;n&#34;&gt;fwrite&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;TGAheader&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;	&lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;	&lt;span class=&#34;mi&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;	&lt;span class=&#34;n&#34;&gt;filePtr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;n&#34;&gt;fwrite&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;	&lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;	&lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;	&lt;span class=&#34;n&#34;&gt;filePtr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;c1&#34;&gt;// And finally our image data
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;   &lt;span class=&#34;n&#34;&gt;fwrite&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dataBuffer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;	&lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GLubyte&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;	&lt;span class=&#34;n&#34;&gt;nSize&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;	&lt;span class=&#34;n&#34;&gt;filePtr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;n&#34;&gt;fclose&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;filePtr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;n&#34;&gt;free&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dataBuffer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I’ve been using this on my projects and it works, although I read a couple of times it’s better to use p-buffer or FBO, but I leave that for you to research.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
@@ -399,32 +429,28 @@ bool save_screenshot(string filename, int w, int h) {	//This prevents the images
       <link>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</link>
       <pubDate>Sun, 29 Jan 2012 19:56:20 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</guid>
-      <description>So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.
-Taking a rest between some more complex game mechanisms I decided to start doing a video player.
-After a bit research I decided to choose theora, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&amp;gt;RGB(A) conversion and because of video/audio sync.</description>
+      <description>&lt;p&gt;So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.&lt;/p&gt;
+&lt;p&gt;Taking a rest between some more complex game mechanisms I decided to start doing a video player.&lt;/p&gt;
+&lt;p&gt;After a bit research I decided to choose &lt;a href=&#34;http://theora.org/&#34;&gt;theora&lt;/a&gt;, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&amp;gt;RGB(A) conversion and because of video/audio sync.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.</p>
 <p>Taking a rest between some more complex game mechanisms I decided to start doing a video player.</p>
 <p>After a bit research I decided to choose <a href="http://theora.org/">theora</a>, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&gt;RGB(A) conversion and because of video/audio sync.</p>
 <p>If I remember correctly we couldn’t play audio, we where using separated tracks and paying the audio via a normal music play and big resolution videos (&gt;500??) where a killer.</p>
 <p>Anyway, since I’m already using OpenAL for audio I decided to give it a try. Unfortunately I didn’t had that code we where using back then so I had to do some digging on the internet.</p>
 <p>So after a few days I had it working but bumped into the same problem, a bit slow. Not as slow as before cause computers have evolved. But after some reading I discovered that you can actually cache some YUV-&gt;RBG values and speed went up by like 10 fold.</p>
-<p><a href="/wp-content/uploads/2012/01/theora_player.png"><img loading="lazy" src="/wp-content/uploads/2012/01/theora_player.png" alt=""  title="theora_player"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/01/theora_player.png"><img loading="lazy" src="/wp-content/uploads/2012/01/theora_player.png" title="theora_player"></a></p>
 <p>I can decode 1080p videos with audio on my Core2Duo @ 2 GHz. And I mention the core since I have the decoding from the file on a separated thread so on a single core it’s probably a bit slower.<br>
 But we probably will be placing videos around 512px width so there’s no problem there. I wonder if we could do the YUV-&gt;RGBA on the GPU side via a shader?</p>
 <p>It’s also worth mentioning that I’m using OpenGL and “glTexSubImage2D” for updating the texture. I found out that it’s much faster than “glTexImage2D” because it respecifies the entire texture, changing its size, deleting the previous data, and so forth. “glTexSubImage2D” only modifies pixel data within the texture.</p>
 <p><strong>Tools</strong></p>
 <p>On the tools realm there was a need for a better Particle System Editor, the one we had has many things but adding stuff was turning into a nightmare, the old editor was build on XNA 3.1 which isn’t supported by VS2010.<br>
 Since the engine is already in C++ I started from scratch and built this handy tool in 3 days or so:</p>
-<p><a href="/wp-content/uploads/2012/01/screenshots2.png"><img loading="lazy" src="/wp-content/uploads/2012/01/screenshots2.png" alt=""  title="screenshots2"  />
-</a></p>
-<p><a href="/wp-content/uploads/2012/01/Screenshot1.png"><img loading="lazy" src="/wp-content/uploads/2012/01/Screenshot1.png" alt=""  title="Screenshot1"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/01/screenshots2.png"><img loading="lazy" src="/wp-content/uploads/2012/01/screenshots2.png" title="screenshots2"></a></p>
+<p><a href="/wp-content/uploads/2012/01/Screenshot1.png"><img loading="lazy" src="/wp-content/uploads/2012/01/Screenshot1.png" title="Screenshot1"></a></p>
 <p>Not vary fancy but it gets the job done.</p>
 <p>My next step was to fix most of the Sprite Sheet Editor bugs and issues my designer had been complaining about.</p>
 <p>I already have an offline tool that grabs a bunch of tiny images and place them in an Atlas but most of the time the designer has the pieces together already on Photoshop so I incorporated a snippet of code that on double clicking an area tries to automatically detect the region around it. Anything that fails can be manually defined, the old fashioned way.</p>
-<p><a href="/wp-content/uploads/2012/01/sprite_editor.png"><img loading="lazy" src="/wp-content/uploads/2012/01/sprite_editor.png" alt=""  title="sprite_editor"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/01/sprite_editor.png"><img loading="lazy" src="/wp-content/uploads/2012/01/sprite_editor.png" title="sprite_editor"></a></p>
 <p>So in the next few days I’m working on the Animation Editor so the artist can quickly create and preview the animations from the sprite sheets without the need for me to place them in the game before hand.</p>
 <p>I had most of these tools but they where awful. They did the trick for Vizati but now I’m trying to do things a bit better.</p>
 <p>See you soon…</p>
@@ -435,16 +461,15 @@ Since the engine is already in C++ I started from scratch and built this handy t
       <link>https://www.david-amador.com/2011/04/opengl-render-to-texture/</link>
       <pubDate>Fri, 29 Apr 2011 09:25:33 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/04/opengl-render-to-texture/</guid>
-      <description>Render to texture is a very handy functionality.
-Imagine your game allows for some character customization. You have the body, some different hats, different clothes and other small stuff. Now the easiest way to render this is to just draw it piece by piece every frame. With the proper Z coordinates everything falls in place.
-But you now have like 4-5 draw calls for one single object. Worse, you might have different textures and swamping textures is expensive.</description>
+      <description>&lt;p&gt;Render to texture is a very handy functionality.&lt;br&gt;
+Imagine your game allows for some character customization. You have the body, some different hats, different clothes and other small stuff. Now the easiest way to render this is to just draw it piece by piece every frame. With the proper Z coordinates everything falls in place.&lt;/p&gt;
+&lt;p&gt;But you now have like 4-5 draw calls for one single object. Worse, you might have different textures and swamping textures is expensive.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Render to texture is a very handy functionality.<br>
 Imagine your game allows for some character customization. You have the body, some different hats, different clothes and other small stuff. Now the easiest way to render this is to just draw it piece by piece every frame. With the proper Z coordinates everything falls in place.</p>
 <p>But you now have like 4-5 draw calls for one single object. Worse, you might have different textures and swamping textures is expensive.</p>
 <p>What Render to Texture allows is to render those pieces into another texture that you might use later. So you need to draw all pieces once into a new texture, save it and use that from now on.</p>
 <p>Of course this is a simple example, there are way cooler ways to use RTT’s.</p>
-<p><a href="/wp-content/uploads/2011/04/gl_fbo02.png"><img loading="lazy" src="/wp-content/uploads/2011/04/gl_fbo02.png" alt=""  title="gl_fbo02"  />
-</a></p>
+<p><a href="/wp-content/uploads/2011/04/gl_fbo02.png"><img loading="lazy" src="/wp-content/uploads/2011/04/gl_fbo02.png" title="gl_fbo02"></a></p>
 <p>OpenGL supports fast crossplatform offscreen rendering through the GL_EXT_framebuffer_object extension.</p>
 <p>To render to a texture using the framebuffer object you must</p>
 <p>Create a framebuffer object</p>
@@ -472,10 +497,30 @@ Imagine your game allows for some character customization. You have the body, so
       <link>https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</link>
       <pubDate>Fri, 18 Mar 2011 10:06:24 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</guid>
-      <description>So you can’t make a game without images, right? Well, actually you can but that’s another story.
-But how can you load a jpg or a png and use then on OpenGLES?
-First let’s make a simple class Texture2D
-class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image</description>
+      <description>&lt;p&gt;So you can’t make a game without images, right? Well, actually &lt;a href=&#34;http://en.wikipedia.org/wiki/List_of_text-based_computer_games&#34;&gt;you can&lt;/a&gt; but that’s another story.&lt;/p&gt;
+&lt;p&gt;But how can you load a jpg or a png and use then on OpenGLES?&lt;/p&gt;
+&lt;p&gt;First let’s make a simple class Texture2D&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Texture2D&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;n&#34;&gt;Texture2D&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;n&#34;&gt;_textureId&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_width&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_height&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;virtual&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Texture2D&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             &lt;span class=&#34;c1&#34;&gt;// Delete Texture from HGL Memory
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;             &lt;span class=&#34;n&#34;&gt;glDeleteTextures&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GLuint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_textureId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;  &lt;span class=&#34;nf&#34;&gt;getTextureId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_textureId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;protected&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_textureId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;   &lt;span class=&#34;c1&#34;&gt;// The reference ID of the texture in OpenGL memory
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now for the code to actually load the image&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So you can’t make a game without images, right? Well, actually <a href="http://en.wikipedia.org/wiki/List_of_text-based_computer_games">you can</a> but that’s another story.</p>
 <p>But how can you load a jpg or a png and use then on OpenGLES?</p>
 <p>First let’s make a simple class Texture2D</p>
@@ -560,16 +605,15 @@ class Texture2D { public: Texture2D(int id, int width, int height) { _textureId 
       <link>https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</link>
       <pubDate>Fri, 10 Sep 2010 09:24:23 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/</guid>
-      <description>This had me scratching my head for awhile.
-At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.
-A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.
-To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.</description>
+      <description>&lt;p&gt;This had me scratching my head for awhile.&lt;br&gt;
+At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.&lt;/p&gt;
+&lt;p&gt;A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.&lt;br&gt;
+To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This had me scratching my head for awhile.<br>
 At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.</p>
 <p>A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.<br>
 To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/09/retina_pixels.jpg" alt=""  title="retina_pixels"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/09/retina_pixels.jpg" title="retina_pixels"></p>
 <p>So the API handles this differently. If you developed for iPad you notice that glGetRenderbufferParameterivOES return 1024×768 but not retina displays. Instead you have to check it yourself:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">w</span> <span class="o">=</span> <span class="mi">320</span><span class="p">;</span>
@@ -602,15 +646,14 @@ For touch positions just multiply each position by the scale factor.</p>
       <link>https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</link>
       <pubDate>Fri, 27 Aug 2010 14:49:39 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/</guid>
-      <description>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.
-Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.
-I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.</description>
+      <description>&lt;p&gt;Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.&lt;/p&gt;
+&lt;p&gt;Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.&lt;/p&gt;
+&lt;p&gt;I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.</p>
 <p>Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.</p>
 <p>I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.</p>
 <p>So for Landscape with Home button on the right</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_portrait_homebutton_right.png" alt=""  title="iphone_portrait_homebutton_right"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_portrait_homebutton_right.png" title="iphone_portrait_homebutton_right"></p>
 <p>It’s something like:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"> <span class="n">glPushMatrix</span><span class="p">();</span>   <span class="c1">// Push a matrix to the stack
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span> <span class="n">glRotatef</span><span class="p">(</span><span class="mf">90.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">1.0f</span><span class="p">);</span> <span class="c1">// Rotate 90 degrees
@@ -621,8 +664,7 @@ I’ve been using OpenGL to support the device orientation, most people on forum
 </span></span><span class="line"><span class="cl"> <span class="n">glPopMatrix</span><span class="p">();</span>
 </span></span></code></pre></div><p>So basically we are drawing all in a regular direction but rotating everything 90 degrees and translating to fit the screen properly.</p>
 <p>For the home button on the left</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_portrait_homebutton_left.png" alt=""  title="iphone_portrait_homebutton_left"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_portrait_homebutton_left.png" title="iphone_portrait_homebutton_left"></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">glPushMatrix</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl"><span class="n">glRotatef</span><span class="p">(</span><span class="o">-</span><span class="mf">90.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">1.0f</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="n">glTranslatef</span><span class="p">(</span><span class="o">-</span><span class="mi">480</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">,</span> <span class="mf">0.0f</span><span class="p">);</span> <span class="c1">// Move horizontally the screen Height
@@ -634,8 +676,7 @@ I’ve been using OpenGL to support the device orientation, most people on forum
 Oh, I’ve hard-coded the values (480 and 320) but you should make this a variable to support higher resolutions, iPhone 4 and iPad for instance.</p>
 <p>Although you could use iOS api to auto rotate this automatically I’ve read on numerous places that it’s slows down everything a bit and doing this on OpenGL is pretty quick and clean and if you ever port your game to another device (Android, etc) you don’t have to care about this again.</p>
 <p>So now for the tricky part, to detect the device current orientation, the accelerometer can help out pretty good. We can check for the current angle to calculate where the device is pointing.</p>
-<p><a href="/wp-content/uploads/2010/08/iphone_angles_orientation.png"><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_angles_orientation.png" alt=""  title="iphone_angles_orientation"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/08/iphone_angles_orientation.png"><img loading="lazy" src="/wp-content/uploads/2010/08/iphone_angles_orientation.png" title="iphone_angles_orientation"></a></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">accelerometer</span><span class="p">:(</span><span class="n">UIAccelerometer</span> <span class="o">*</span><span class="p">)</span><span class="n">accelerometer</span> <span class="nl">didAccelerate</span><span class="p">:(</span><span class="n">UIAcceleration</span> <span class="o">*</span><span class="p">)</span><span class="n">acceleration</span>
 </span></span><span class="line"><span class="cl"> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="c1">// Get the current device angle
@@ -665,9 +706,12 @@ Oh, I’ve hard-coded the values (480 and 320) but you should make this a variab
 <p>Some cool things you can do it when switching to iterate the rotation angle, that way you can simulate the screen rotation same way iOS does. Also you may want to put some sort of delay when switching.</p>
 <p>Here’s the result</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/OfETeCcpM7U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OfETeCcpM7U?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -676,14 +720,13 @@ Oh, I’ve hard-coded the values (480 and 320) but you should make this a variab
       <link>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</link>
       <pubDate>Thu, 26 Aug 2010 19:05:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/08/developers-log-stardate-26082010/</guid>
-      <description>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.
-Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.
-Here’s a picture she took after a few adjustments.</description>
+      <description>&lt;p&gt;It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.&lt;/p&gt;
+&lt;p&gt;Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.&lt;/p&gt;
+&lt;p&gt;Here’s a picture she took after a few adjustments.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been awhile since I last updated this, I’ve have my hands full with Vizati iPhone.</p>
 <p>Ever since I got an IPod Touch 2G it was easier for Rita to get a sense of the screen size (although we knew to be 320×480) it’s different when you are testing on the real thing, text looks smaller, other stuff looks way too big.</p>
 <p>Here’s a picture she took after a few adjustments.</p>
-<p><a href="http://www.indiedb.com/games/vizati/images/vizati-iphone" title="Vizati iPhone - Indie DB"><img loading="lazy" src="http://media.indiedb.com/cache/images/games/1/13/12804/thumb_620x2000/vizati_iphone.jpg" alt="Vizati iPhone"  />
-</a></p>
+<p><a href="http://www.indiedb.com/games/vizati/images/vizati-iphone" title="Vizati iPhone - Indie DB"><img alt="Vizati iPhone" loading="lazy" src="http://media.indiedb.com/cache/images/games/1/13/12804/thumb_620x2000/vizati_iphone.jpg"></a></p>
 <p><strong>Initial testing</strong></p>
 <p>First thing I notice when testing on the device were slowdowns when the cube is fading, it had a lot of particles filling the screen and the framerate dropped down, although this only happens when each level loads and doesn’t interfere with gameplay itself I got a little frustrated.<br>
 On the simulator It slowed down a little but only on Debug and even more OpenGL on the emulator is by software.<br>
@@ -694,9 +737,12 @@ I increased the buffers size and numbers, so now I have 5 buffers with 65536 byt
 Solved the problem immediately. Yesterday while playing the game (after 10-20m) the sound started having hiccups again, although the game was fine, so I may still have some flaw in there, must research it more.</p>
 <p>Here’s a video where of me playing with some particles:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ch3QvoBd1_c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ch3QvoBd1_c?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p><strong>Primitives</strong><br>
 I can get much more particles on screen now because my first attempt to draw primitives in OpenGLES was drawing Quads with an mapped texture. When I got that working I would just send vertex points and texture coordinates and iterate all objects I wanted to draw.<br>

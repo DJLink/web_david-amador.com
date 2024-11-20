@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 15 Oct 2023 17:20:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/game5/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,10 @@
       <link>https://www.david-amador.com/2023/10/game5-devlog-2/</link>
       <pubDate>Sun, 15 Oct 2023 17:20:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2023/10/game5-devlog-2/</guid>
-      <description>I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.
-But onto game5 progress.
-Importers I managed to finish some of the importers (spreadsheets -&amp;gt; ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them.</description>
+      <description>&lt;p&gt;I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.&lt;/p&gt;
+&lt;p&gt;But onto &lt;a href=&#34;https://www.david-amador.com/2023/10/game5-devlog-1/&#34; title=&#34;game5 devlog #1&#34;&gt;game5&lt;/a&gt; progress.&lt;/p&gt;
+&lt;h2 id=&#34;importers&#34;&gt;Importers&lt;/h2&gt;
+&lt;p&gt;I managed to finish some of the importers (spreadsheets -&amp;gt; ScriptableObjects + prefabs) that I was working on, right now I can just glance over values on a spreadsheet, tweak, and have it export all the Scriptable Objects, generating the prefabs with corresponding data and images and test them. I could have made the game parse the spreadsheet at boot time and create them, but I decided against it, I want to generate this process offline. One of the reasons is because I have more control over not replacing existing items GUIDs (to keep and existing links), and also I can tweak any individually generated files manually, if I need to.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I missed last week devlog, mostly because I did almost no progress but also because it was a bad week overall, personally and in terms of work, nothing too bad but you know that feeling when you barely made any progress, despite tons of work hours? So one of those weeks.</p>
 <p>But onto <a href="/2023/10/game5-devlog-1/" title="game5 devlog #1">game5</a> progress.</p>
 <h2 id="importers">Importers</h2>
@@ -46,8 +47,8 @@ Until the next post!</p>
       <link>https://www.david-amador.com/2023/10/game5-devlog-1/</link>
       <pubDate>Mon, 02 Oct 2023 20:40:47 +0000</pubDate>
       <guid>https://www.david-amador.com/2023/10/game5-devlog-1/</guid>
-      <description>Nothing announced, not even a name decided, but I want to vaguely blog about it as a means of brainstorming with myself. I’ll be vague as heck until I’m sure I have something worth “here’s a new game”, if that ever turns out to be the case.
-So this week’s it’s progress on my “on-going not yet announced game because not ready and might be bad” game, which I decided to for now on call Game5 here, so it’s easier to know what we are talking about.</description>
+      <description>&lt;p&gt;Nothing announced, not even a name decided, but I want to vaguely blog about it as a means of brainstorming with myself. I’ll be vague as heck until I’m sure I have something worth “here’s a new game”, if that ever turns out to be the case.&lt;/p&gt;
+&lt;p&gt;So this week’s it’s progress on my “on-going not yet announced game because not ready and might be bad” game, which I decided to for now on call Game5 here, so it’s easier to know what we are talking about.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Nothing announced, not even a name decided, but I want to vaguely blog about it as a means of brainstorming with myself. I’ll be vague as heck until I’m sure I have something worth “here’s a new game”, if that ever turns out to be the case.</p>
 <p>So this week’s it’s progress on my “on-going not yet announced game because not ready and might be bad” game, which I decided to for now on call Game5 here, so it’s easier to know what we are talking about.</p>
 <h2 id="no-progress">No progress</h2>

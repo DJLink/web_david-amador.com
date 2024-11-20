@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 14 Aug 2018 15:02:38 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/game-competition/index.xml" rel="self" type="application/rss+xml" />
@@ -18,15 +18,14 @@
       <link>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</link>
       <pubDate>Tue, 14 Aug 2018 15:02:38 +0000</pubDate>
       <guid>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</guid>
-      <description>Hey,
-It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.
-But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.</description>
+      <description>&lt;p&gt;Hey,&lt;/p&gt;
+&lt;p&gt;It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.&lt;/p&gt;
+&lt;p&gt;But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Hey,</p>
 <p>It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.</p>
 <p>But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.</p>
 <p>The game is a small top down shooting game, but when you miss an enemy you create a block instead, so the more you miss the less area to fly around. Here’s a gif illustrating.</p>
-<p><a href="https://dj_link.itch.io/dont-miss"><img loading="lazy" src="/wp-content/uploads/2018/08/Honeycam-2018-08-13-22-21-37.gif" alt=""  />
-</a></p>
+<p><a href="https://dj_link.itch.io/dont-miss"><img loading="lazy" src="/wp-content/uploads/2018/08/Honeycam-2018-08-13-22-21-37.gif"></a></p>
 <p>Made code, art and sounds, cod is c# in Unity, art was made in photoshop, the sound effects I think you’ll notice right away how they were made, and finally used <a href="https://boscaceoil.net/">Bosca Ceoil</a> for music.</p>
 <p>There’s a webGl version so you an try it directly in your browser.</p>
 <p><a href="https://dj_link.itch.io/dont-miss">https://dj_link.itch.io/dont-miss</a></p>
@@ -38,17 +37,16 @@ But decided to take a break from my current project to participate in Ludum Dare
       <link>https://www.david-amador.com/2009/09/game-competition/</link>
       <pubDate>Thu, 17 Sep 2009 11:24:14 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/09/game-competition/</guid>
-      <description>Some time ago I decided to launch a new website with a 48h Game Competition.
-We are now 2 days away from the Compo#1. This is for every indie game developer wannabe =)
-[Edit]
-The first competition is now over. Check the results here
-One of the games made in the competition</description>
+      <description>&lt;p&gt;Some time ago I decided to launch a new website with a 48h Game Competition.&lt;br&gt;
+We are now &lt;a href=&#34;http://theindiebay.com/competition/2009/09/17/2-days-left/&#34;&gt;2 days away from the Compo#1&lt;/a&gt;. This is for every indie game developer wannabe =)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[Edit]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The first competition is now over. Check the results &lt;a href=&#34;https://web.archive.org/web/20091127212514/http://theindiebay.com:80/competition/2009/09/21/compo1-voting/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://web.archive.org/web/20091127212514/http://theindiebay.com:80/competition/2009/09/21/compo1-voting/&#34;&gt;&lt;img alt=&#34;GameTitual&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2009/09/GameTitual-150x150.jpg&#34; title=&#34;GameTitual&#34;&gt;&lt;/a&gt; One of the games made in the competition.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Some time ago I decided to launch a new website with a 48h Game Competition.<br>
 We are now <a href="http://theindiebay.com/competition/2009/09/17/2-days-left/">2 days away from the Compo#1</a>. This is for every indie game developer wannabe =)</p>
 <p><strong>[Edit]</strong></p>
 <p>The first competition is now over. Check the results <a href="https://web.archive.org/web/20091127212514/http://theindiebay.com:80/competition/2009/09/21/compo1-voting/">here</a></p>
-<p><a href="https://web.archive.org/web/20091127212514/http://theindiebay.com:80/competition/2009/09/21/compo1-voting/"><img loading="lazy" src="/wp-content/uploads/2009/09/GameTitual-150x150.jpg" alt="GameTitual"  title="GameTitual"  />
-</a><!-- raw HTML omitted -->One of the games made in the competition<!-- raw HTML omitted --></p>
+<p><a href="https://web.archive.org/web/20091127212514/http://theindiebay.com:80/competition/2009/09/21/compo1-voting/"><img alt="GameTitual" loading="lazy" src="/wp-content/uploads/2009/09/GameTitual-150x150.jpg" title="GameTitual"></a> One of the games made in the competition.</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -56,9 +54,9 @@ We are now <a href="http://theindiebay.com/competition/2009/09/17/2-days-left/">
       <link>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
       <pubDate>Thu, 06 Aug 2009 15:29:10 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
-      <description>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.
-Meanwhile I’ve been busy making the arrangements for The Indie Bay 48 hour game development competition.
-The idea is for every entrant to make a game in 48 hours using a given theme or topic.</description>
+      <description>&lt;p&gt;Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.&lt;/p&gt;
+&lt;p&gt;Meanwhile I’ve been busy making the arrangements for &lt;a href=&#34;http://www.theindiebay.com&#34;&gt;The Indie Bay&lt;/a&gt; 48 hour &lt;a href=&#34;http://www.theindiebay.com/competition&#34;&gt;game development competition&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The idea is for every entrant to make a game in 48 hours using a given theme or topic. Some cool prototypes may show up, games like Braid or World of Goo have been created in competitions like this one.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.</p>
 <p>Meanwhile I’ve been busy making the arrangements for <a href="http://www.theindiebay.com">The Indie Bay</a> 48 hour <a href="http://www.theindiebay.com/competition">game development competition</a>.</p>
 <p>The idea is for every entrant to make a game in 48 hours using a given theme or topic. Some cool prototypes may show up, games like Braid or World of Goo have been created in competitions like this one.</p>

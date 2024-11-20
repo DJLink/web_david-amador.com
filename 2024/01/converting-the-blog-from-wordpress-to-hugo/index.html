@@ -8,10 +8,12 @@
 <title>Converting the blog from WordPress to Hugo | David Amador</title>
 <meta name="keywords" content="wordpress, PHP, git, javascript, CSS, hugo">
 <meta name="description" content="Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&rsquo;ve moved everything to static content, including this website.
-📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper.">
+
+📝 WordPress
+Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -19,6 +21,7 @@
 <link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,20 +31,30 @@
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="Converting the blog from WordPress to Hugo" />
-<meta property="og:description" content="Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&rsquo;ve moved everything to static content, including this website.
-📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2024/01/hugo-logo-wide.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-01-27T17:20:55+00:00" />
-<meta property="article:modified_time" content="2024-01-27T17:20:55+00:00" /><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2024/01/hugo-logo-wide.png" />
-<meta name="twitter:title" content="Converting the blog from WordPress to Hugo"/>
+<meta property="og:url" content="https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="Converting the blog from WordPress to Hugo">
+  <meta property="og:description" content="Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I’ve moved everything to static content, including this website.
+📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-01-27T17:20:55+00:00">
+    <meta property="article:modified_time" content="2024-01-27T17:20:55+00:00">
+    <meta property="article:tag" content="Wordpress">
+    <meta property="article:tag" content="PHP">
+    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="CSS">
+    <meta property="article:tag" content="Hugo">
+    <meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2024/01/hugo-logo-wide.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2024/01/hugo-logo-wide.png">
+<meta name="twitter:title" content="Converting the blog from WordPress to Hugo">
 <meta name="twitter:description" content="Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&rsquo;ve moved everything to static content, including this website.
-📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper."/>
+
+📝 WordPress
+Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.">
 
 
 <script type="application/ld+json">
@@ -70,7 +83,7 @@
   "@type": "BlogPosting",
   "headline": "Converting the blog from WordPress to Hugo",
   "name": "Converting the blog from WordPress to Hugo",
-  "description": "Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I\u0026rsquo;ve moved everything to static content, including this website.\n📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper.",
+  "description": "Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I\u0026rsquo;ve moved everything to static content, including this website.\n📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.\n",
   "keywords": [
     "wordpress", "PHP", "git", "javascript", "CSS", "hugo"
   ],
@@ -110,7 +123,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -174,7 +187,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Converting the blog from WordPress to Hugo
     </h1>
@@ -186,8 +199,7 @@
         
 </figure>
   <div class="post-content"><p>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&rsquo;ve moved everything to static content, including this website.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/01/shutting-down-server.gif" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/shutting-down-server.gif"></p>
 <h1 id="-wordpress">📝 WordPress<a hidden class="anchor" aria-hidden="true" href="#-wordpress">#</a></h1>
 <p>Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.</p>
 <p>So for the past couple of years I&rsquo;ve been thinking in migrating it to something like Jekyll or Hugo, to serve it as static content. But the few times I looked into the process it seemed like a big task especially because I have 184 posts, I wasn&rsquo;t just starting from 0, I wanted to maintain the existing content, posts, images, URLs etc. So, a couple days ago I decided it was time.</p>
@@ -224,8 +236,7 @@ But after a couple days of messing around with configs and pre-requisites, packa
 <p>💻 So my current workflow is: I have a git repo with all the markdown and website code and I have the live website as a submodule, so whenever I made a change, I export it with Hugo, git commit all changes and GitHub pages just deploys them, feels like magic :D</p>
 <h3 id="-speed">🚀 Speed<a hidden class="anchor" aria-hidden="true" href="#-speed">#</a></h3>
 <p>Oh its much faster, obviously, but look at the changes of before (left) and after (right) using PageSpeed Insights.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/01/david_amador_site_wordpress_vs_hugo_speed.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/david_amador_site_wordpress_vs_hugo_speed.png"></p>
 <h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
 <p>Still there? Well so far I&rsquo;m happy with the move, I do miss the nice WordPress backend thing if I&rsquo;m being honest, but I can live without it. I feel like in the long run I won&rsquo;t miss having to maintain that server, also the costs. Right now I&rsquo;m editing this on Obsidian, about to commit and see if it goes live, RSS and all. If you find any broken stuff or have suggestions let me know, either mastodon, email or a comment here.</p>
 <p>Until the next time, where hopefully I&rsquo;ll talk about games! Thanks for reading.</p>
@@ -235,12 +246,12 @@ But after a couple days of messing around with configs and pre-requisites, packa
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://www.david-amador.com/tags/wordpress/">wordpress</a></li>
+      <li><a href="https://www.david-amador.com/tags/wordpress/">Wordpress</a></li>
       <li><a href="https://www.david-amador.com/tags/php/">PHP</a></li>
-      <li><a href="https://www.david-amador.com/tags/git/">git</a></li>
-      <li><a href="https://www.david-amador.com/tags/javascript/">javascript</a></li>
+      <li><a href="https://www.david-amador.com/tags/git/">Git</a></li>
+      <li><a href="https://www.david-amador.com/tags/javascript/">Javascript</a></li>
       <li><a href="https://www.david-amador.com/tags/css/">CSS</a></li>
-      <li><a href="https://www.david-amador.com/tags/hugo/">hugo</a></li>
+      <li><a href="https://www.david-amador.com/tags/hugo/">Hugo</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/">
@@ -279,7 +290,8 @@ But after a couple days of messing around with configs and pre-requisites, packa
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>screen manager on David Amador</title>
+    <title>Screen Manager on David Amador</title>
     <link>https://www.david-amador.com/tags/screen-manager/</link>
-    <description>Recent content in screen manager on David Amador</description>
+    <description>Recent content in Screen Manager on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Jan 2010 18:47:17 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/screen-manager/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,9 @@
       <link>https://www.david-amador.com/2010/01/xna-screen-manager/</link>
       <pubDate>Sun, 24 Jan 2010 18:47:17 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/01/xna-screen-manager/</guid>
-      <description>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.
-A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.
-I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</description>
+      <description>&lt;p&gt;I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.&lt;/p&gt;
+&lt;p&gt;A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.&lt;/p&gt;
+&lt;p&gt;I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.</p>
 <p>A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.</p>
 <p>I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</p>
@@ -72,8 +72,8 @@ I’ve made a small project with a Screen Manager. The ScreenManager is static a
 </span></span></code></pre></div><p>Screen Manager then calls the virtual function shutdown() of the current screen and then the init() of the requested Screen, so you might want to always override them for your purposes.</p>
 <p>You’ll understand better by viewing the code itself. Use it in any way you want. I now this example may not be the best solution but it gives a good start to those wanting to implement their own.</p>
 <p><a href="/xna_code/ScreenManager.rar">Download the source</a>.</p>
-<p><!-- raw HTML omitted -->EDIT: <!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted -->(04-02-2010) Removed unused member _current; (Thanks Jason)<!-- raw HTML omitted --></p>
+<p>** EDIT: **</p>
+<p>(04-02-2010) Removed unused member _current; (Thanks Jason)</p>
 ]]></content:encoded>
     </item>
   </channel>

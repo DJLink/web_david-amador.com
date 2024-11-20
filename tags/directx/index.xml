@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>directX on David Amador</title>
+    <title>DirectX on David Amador</title>
     <link>https://www.david-amador.com/tags/directx/</link>
-    <description>Recent content in directX on David Amador</description>
+    <description>Recent content in DirectX on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 11 Jan 2015 15:20:42 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/directx/index.xml" rel="self" type="application/rss+xml" />
@@ -18,18 +18,16 @@
       <link>https://www.david-amador.com/2015/01/qod-xo-devlog-2/</link>
       <pubDate>Sun, 11 Jan 2015 15:20:42 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/01/qod-xo-devlog-2/</guid>
-      <description>I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.
-Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere.</description>
+      <description>&lt;p&gt;I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.&lt;/p&gt;
+&lt;p&gt;Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere. But I’m slowly making some progress, got some of the rendering code working, as you can see on the images below, still no blend functions, no camera transforms but I’m getting there.&lt;br&gt;
+Still no input, sound of even proper font load/render, and I couple more things I can’t remember, but I’m happy with the progress I managed to accomplish in a couple of days.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.</p>
 <p>Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere. But I’m slowly making some progress, got some of the rendering code working, as you can see on the images below, still no blend functions, no camera transforms but I’m getting there.<br>
 Still no input, sound of even proper font load/render, and I couple more things I can’t remember, but I’m happy with the progress I managed to accomplish in a couple of days.</p>
 <p>That’s it for now, see you on the next update.</p>
-<p><a href="/wp-content/uploads/2015/01/qod_dx_1.png"><img loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_1.png" alt="qod_dx_1"  />
-</a></p>
-<p><a href="/wp-content/uploads/2015/01/qod_dx_2.png"><img loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_2.png" alt="qod_dx_2"  />
-</a></p>
-<p><a href="/wp-content/uploads/2015/01/qod_dx_3.png"><img loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_3.png" alt="qod_dx_3"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/01/qod_dx_1.png"><img alt="qod_dx_1" loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_1.png"></a></p>
+<p><a href="/wp-content/uploads/2015/01/qod_dx_2.png"><img alt="qod_dx_2" loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_2.png"></a></p>
+<p><a href="/wp-content/uploads/2015/01/qod_dx_3.png"><img alt="qod_dx_3" loading="lazy" src="/wp-content/uploads/2015/01/qod_dx_3.png"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -37,11 +35,16 @@ Still no input, sound of even proper font load/render, and I couple more things 
       <link>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</link>
       <pubDate>Sun, 15 Apr 2012 11:41:27 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</guid>
-      <description>So you have that Xbox360 controller laying around and want to connect it to your game?
-On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.
-First of all, you will need the DirecX 9.0+ sdk.
-The includes.
-#define WIN32_LEAN_AND_MEAN // We don&amp;#39;t want the extra stuff like MFC and such #include &amp;lt;windows&amp;gt; #include &amp;lt;XInput.h&amp;gt; // XInput API #pragma comment(lib, &amp;#34;XInput.</description>
+      <description>&lt;p&gt;So you have that Xbox360 controller laying around and want to connect it to your game?&lt;/p&gt;
+&lt;p&gt;On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.&lt;/p&gt;
+&lt;p&gt;First of all, you will need the DirecX 9.0+ sdk.&lt;/p&gt;
+&lt;p&gt;The includes.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#define WIN32_LEAN_AND_MEAN &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// We don&amp;#39;t want the extra stuff like MFC and such
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;windows&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;XInput.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;     &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// XInput API
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#pragma comment(lib, &amp;#34;XInput.lib&amp;#34;)   &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// Library. If your compiler doesn&amp;#39;t support this type of lib include change to the corresponding one
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let’s define the buttons&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So you have that Xbox360 controller laying around and want to connect it to your game?</p>
 <p>On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.</p>
 <p>First of all, you will need the DirecX 9.0+ sdk.</p>
@@ -71,8 +74,7 @@ The includes.
 </span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_Y</span>                <span class="o">=</span> <span class="mi">13</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">	<span class="n">GamePadButton_Max</span> <span class="o">=</span>             <span class="mi">14</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span><span class="n">GamePadButton</span><span class="p">;</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/04/450px-360_controller.svg_.jpg" alt=""  title="450px-360_controller.svg"  />
-</p>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/04/450px-360_controller.svg_.jpg" title="450px-360_controller.svg"></p>
 <p>After some digging I don’t think Microsoft exposes access to the Guide button, let me know if you find anything. Anyway it’s not something we need on Windows.</p>
 <p>Now the GamePadIndexes</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">

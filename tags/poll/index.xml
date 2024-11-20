@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>poll on David Amador</title>
+    <title>Poll on David Amador</title>
     <link>https://www.david-amador.com/tags/poll/</link>
-    <description>Recent content in poll on David Amador</description>
+    <description>Recent content in Poll on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 26 Jul 2010 20:37:41 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/poll/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +18,10 @@
       <link>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
       <pubDate>Mon, 26 Jul 2010 20:37:41 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
-      <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
-The poll closes in about 6 days and you can select various options of course.</description>
+      <description>&lt;p&gt;I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (&lt;a href=&#34;http://twtpoll.com/dar51l&#34;&gt;http://twtpoll.com/dar51l&lt;/a&gt;) so that we can have more accurate results.&lt;/p&gt;
+&lt;p&gt;The poll closes in about 6 days and you can select various options of course.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (<a href="http://twtpoll.com/dar51l">http://twtpoll.com/dar51l</a>) so that we can have more accurate results.</p>
 <p>The poll closes in about 6 days and you can select various options of course.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
 ]]></content:encoded>
     </item>
   </channel>

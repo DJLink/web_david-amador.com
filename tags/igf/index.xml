@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 06 Aug 2009 15:29:10 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/igf/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,9 @@
       <link>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</link>
       <pubDate>Thu, 06 Aug 2009 15:29:10 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/</guid>
-      <description>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.
-Meanwhile I’ve been busy making the arrangements for The Indie Bay 48 hour game development competition.
-The idea is for every entrant to make a game in 48 hours using a given theme or topic.</description>
+      <description>&lt;p&gt;Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.&lt;/p&gt;
+&lt;p&gt;Meanwhile I’ve been busy making the arrangements for &lt;a href=&#34;http://www.theindiebay.com&#34;&gt;The Indie Bay&lt;/a&gt; 48 hour &lt;a href=&#34;http://www.theindiebay.com/competition&#34;&gt;game development competition&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The idea is for every entrant to make a game in 48 hours using a given theme or topic. Some cool prototypes may show up, games like Braid or World of Goo have been created in competitions like this one.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.</p>
 <p>Meanwhile I’ve been busy making the arrangements for <a href="http://www.theindiebay.com">The Indie Bay</a> 48 hour <a href="http://www.theindiebay.com/competition">game development competition</a>.</p>
 <p>The idea is for every entrant to make a game in 48 hours using a given theme or topic. Some cool prototypes may show up, games like Braid or World of Goo have been created in competitions like this one.</p>
@@ -32,12 +32,11 @@ The idea is for every entrant to make a game in 48 hours using a given theme or 
       <link>https://www.david-amador.com/2009/05/game-contests/</link>
       <pubDate>Fri, 29 May 2009 14:07:40 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/05/game-contests/</guid>
-      <description>I finally decided to compete on IGF. It’s been for a long time I wanted to make a game but time is always short and It’s been postponed like forever, but this time I’m really going to do it.
-I haven’t started the development itself but the ideas and what we want to do as a game is decided. I won’t reveal anything by now, just that I’ll be working with Rita, because the idea is to launch this as a Different Pixel game and that the target platform is PC/Xbox360.</description>
+      <description>&lt;p&gt;I finally decided to compete on &lt;a href=&#34;http://www.igf.com/&#34;&gt;IGF&lt;/a&gt;. It’s been for a long time I wanted to make a game but time is always short and It’s been postponed like forever, but this time I’m really going to do it.&lt;/p&gt;
+&lt;p&gt;I haven’t started the development itself but the ideas and what we want to do as a game is decided. I won’t reveal anything by now, just that I’ll be working with &lt;a href=&#34;http://www.rita-silva.com&#34;&gt;Rita,&lt;/a&gt; because the idea is to launch this as a&lt;a href=&#34;http://www.differentpixel.com&#34;&gt; Different Pixel&lt;/a&gt; game and that the target platform is PC/Xbox360. So if I have a playable demo by the time &lt;a href=&#34;https://web.archive.org/web/20161001023043/http://www.dreambuildplay.com/&#34;&gt;DreamBuildPlay&lt;/a&gt; deadline finishes it’s a go to for that contest too.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I finally decided to compete on <a href="http://www.igf.com/">IGF</a>. It’s been for a long time I wanted to make a game but time is always short and It’s been postponed like forever, but this time I’m really going to do it.</p>
 <p>I haven’t started the development itself but the ideas and what we want to do as a game is decided. I won’t reveal anything by now, just that I’ll be working with <a href="http://www.rita-silva.com">Rita,</a> because the idea is to launch this as a<a href="http://www.differentpixel.com"> Different Pixel</a> game and that the target platform is PC/Xbox360. So if I have a playable demo by the time <a href="https://web.archive.org/web/20161001023043/http://www.dreambuildplay.com/">DreamBuildPlay</a> deadline finishes it’s a go to for that contest too.</p>
-<p>Also, <a href="https://web.archive.org/web/20090531081018/http://2dboy.com/2009/05/27/rapid-prototyping-framework/">2dBoy has released a rapid prototype framework</a> for those who want to start 2d games the quicker the possible. I haven’t had the time to explore it but I’m sure i’ll find some usefull code to integrate my engine 🙂<a href="/wp-content/uploads/2009/05/igf-logo.jpg"><img loading="lazy" src="/wp-content/uploads/2009/05/igf-logo.jpg" alt="igf-logo"  title="igf-logo"  />
-</a></p>
+<p>Also, <a href="https://web.archive.org/web/20090531081018/http://2dboy.com/2009/05/27/rapid-prototyping-framework/">2dBoy has released a rapid prototype framework</a> for those who want to start 2d games the quicker the possible. I haven’t had the time to explore it but I’m sure i’ll find some usefull code to integrate my engine 🙂<a href="/wp-content/uploads/2009/05/igf-logo.jpg"><img alt="igf-logo" loading="lazy" src="/wp-content/uploads/2009/05/igf-logo.jpg" title="igf-logo"></a></p>
 ]]></content:encoded>
     </item>
   </channel>

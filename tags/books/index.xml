@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>books on David Amador</title>
+    <title>Books on David Amador</title>
     <link>https://www.david-amador.com/tags/books/</link>
-    <description>Recent content in books on David Amador</description>
+    <description>Recent content in Books on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 17 Jul 2013 12:47:13 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/books/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +18,11 @@
       <link>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</link>
       <pubDate>Wed, 17 Jul 2013 12:47:13 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</guid>
-      <description>I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.
-These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of SDL Game Development written by Shaun Mitchell that covers that new version.</description>
+      <description>&lt;p&gt;I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.&lt;/p&gt;
+&lt;p&gt;These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of &lt;a href=&#34;http://www.packtpub.com/simple-directmedia-layer-game-development/book&#34;&gt;SDL Game Development&lt;/a&gt; written by Shaun Mitchell that covers that new version.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.</p>
 <p>These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of <a href="http://www.packtpub.com/simple-directmedia-layer-game-development/book">SDL Game Development</a> written by Shaun Mitchell that covers that new version.</p>
-<p><a href="http://www.packtpub.com/simple-directmedia-layer-game-development/book"><img loading="lazy" src="/wp-content/uploads/2013/07/6821OT_cov-243x300.jpg" alt="6821OT_cov"  />
-</a></p>
+<p><a href="http://www.packtpub.com/simple-directmedia-layer-game-development/book"><img alt="6821OT_cov" loading="lazy" src="/wp-content/uploads/2013/07/6821OT_cov-243x300.jpg"></a></p>
 <p>For anyone who is starting on game development and wants to use SDL this is a good book, it has simple code and everything is very well explained. But make no mistake, I don’t recommend this for someone who doesn’t know code at all, you need to know some C++ to use it, or at least some object oriented language, but chances are, if you are reading my blog you know a OOP language already.</p>
 <p>Everything in the book is explained in a simple way and I don’t see anyone having any problems, I really liked the code examples, usually some books have a very “non real” code, stuff that while it works no-one usually does it like that, but this one has stuff that I would do that exact same way. It guides you from making the first hello project to loading an image, a game state machine, getting input from Keyboard, Mouse and Joysticks, a manager to handle textures, and creating a tilemap using <a href="http://www.mapeditor.org/">Tiled</a>. The Tiled chapter was a positive surprise since not many beginner/intermediate books go much into a data-driven design, and this is very important to make modern games, while it might seem hard to implement for a beginner, trust me it is well worth it.</p>
 <p>Now for things that you might be expecting but are not covered, the book doesn’t cover any OpenGL/DirectX specifics, so if you are looking for that you won’t find it here. It is possible to directly call GL/DX instead of using SDL draw calls, this is something I do, but you might lose platform independence if not done properly. Shaders are something also not covered, but then again SDL has no native support for that, you have to do it yourself.</p>

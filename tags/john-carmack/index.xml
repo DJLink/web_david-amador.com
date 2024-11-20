@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>john carmack on David Amador</title>
+    <title>John Carmack on David Amador</title>
     <link>https://www.david-amador.com/tags/john-carmack/</link>
-    <description>Recent content in john carmack on David Amador</description>
+    <description>Recent content in John Carmack on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 04 Aug 2012 18:13:08 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/john-carmack/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +18,22 @@
       <link>https://www.david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</link>
       <pubDate>Sat, 04 Aug 2012 18:13:08 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/08/quakecon-2012-john-carmack-keynote/</guid>
-      <description>I usually don’t do this, but come on, it’s John Carmack, and this 3h30m keynote given at QuakeCon 2012 is fascinating.</description>
+      <description>&lt;p&gt;I usually don’t do this, but come on, it’s John Carmack, and this 3h30m keynote given at QuakeCon 2012 is fascinating.&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/wt-iVFxgFWk?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;</description>
       <content:encoded><![CDATA[<p>I usually don’t do this, but come on, it’s John Carmack, and this 3h30m keynote given at QuakeCon 2012 is fascinating.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/wt-iVFxgFWk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/wt-iVFxgFWk?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>

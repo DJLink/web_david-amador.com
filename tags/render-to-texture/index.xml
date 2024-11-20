@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>render to texture on David Amador</title>
+    <title>Render to Texture on David Amador</title>
     <link>https://www.david-amador.com/tags/render-to-texture/</link>
-    <description>Recent content in render to texture on David Amador</description>
+    <description>Recent content in Render to Texture on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 29 Apr 2011 09:25:33 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/render-to-texture/index.xml" rel="self" type="application/rss+xml" />
@@ -18,16 +18,15 @@
       <link>https://www.david-amador.com/2011/04/opengl-render-to-texture/</link>
       <pubDate>Fri, 29 Apr 2011 09:25:33 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/04/opengl-render-to-texture/</guid>
-      <description>Render to texture is a very handy functionality.
-Imagine your game allows for some character customization. You have the body, some different hats, different clothes and other small stuff. Now the easiest way to render this is to just draw it piece by piece every frame. With the proper Z coordinates everything falls in place.
-But you now have like 4-5 draw calls for one single object. Worse, you might have different textures and swamping textures is expensive.</description>
+      <description>&lt;p&gt;Render to texture is a very handy functionality.&lt;br&gt;
+Imagine your game allows for some character customization. You have the body, some different hats, different clothes and other small stuff. Now the easiest way to render this is to just draw it piece by piece every frame. With the proper Z coordinates everything falls in place.&lt;/p&gt;
+&lt;p&gt;But you now have like 4-5 draw calls for one single object. Worse, you might have different textures and swamping textures is expensive.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Render to texture is a very handy functionality.<br>
 Imagine your game allows for some character customization. You have the body, some different hats, different clothes and other small stuff. Now the easiest way to render this is to just draw it piece by piece every frame. With the proper Z coordinates everything falls in place.</p>
 <p>But you now have like 4-5 draw calls for one single object. Worse, you might have different textures and swamping textures is expensive.</p>
 <p>What Render to Texture allows is to render those pieces into another texture that you might use later. So you need to draw all pieces once into a new texture, save it and use that from now on.</p>
 <p>Of course this is a simple example, there are way cooler ways to use RTT’s.</p>
-<p><a href="/wp-content/uploads/2011/04/gl_fbo02.png"><img loading="lazy" src="/wp-content/uploads/2011/04/gl_fbo02.png" alt=""  title="gl_fbo02"  />
-</a></p>
+<p><a href="/wp-content/uploads/2011/04/gl_fbo02.png"><img loading="lazy" src="/wp-content/uploads/2011/04/gl_fbo02.png" title="gl_fbo02"></a></p>
 <p>OpenGL supports fast crossplatform offscreen rendering through the GL_EXT_framebuffer_object extension.</p>
 <p>To render to a texture using the framebuffer object you must</p>
 <p>Create a framebuffer object</p>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>regular expressions on David Amador</title>
+    <title>Regular Expressions on David Amador</title>
     <link>https://www.david-amador.com/tags/regular-expressions/</link>
-    <description>Recent content in regular expressions on David Amador</description>
+    <description>Recent content in Regular Expressions on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 14 Jan 2012 21:27:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/regular-expressions/index.xml" rel="self" type="application/rss+xml" />
@@ -18,11 +18,13 @@
       <link>https://www.david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</link>
       <pubDate>Sat, 14 Jan 2012 21:27:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/</guid>
-      <description>Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.
-But today I had this function I wanted to get rid of and simple change it with a public variable.
-So I had something like this.
-object-&amp;gt;setLayer(/*BLABAL BLA CODE, */); I want to replace it with something more simple
-object-&amp;gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in regular expressions mode I used this as a search string</description>
+      <description>&lt;p&gt;Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.&lt;/p&gt;
+&lt;p&gt;But today I had this function I wanted to get rid of and simple change it with a public variable.&lt;/p&gt;
+&lt;p&gt;So I had something like this.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;object&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;setLayer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;cm&#34;&gt;/*BLABAL BLA CODE, */&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I want to replace it with something more simple&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;object&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Z&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;cm&#34;&gt;/*BLABAL BLA CODE, */&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;So using Visual Studio Find/Replace in regular expressions mode I used this as a search string&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.</p>
 <p>But today I had this function I wanted to get rid of and simple change it with a public variable.</p>
 <p>So I had something like this.</p>
@@ -33,8 +35,7 @@ object-&amp;gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">setLayer</span><span class="err">\</span><span class="p">({.</span><span class="o">+</span><span class="p">}</span><span class="err">\</span><span class="p">);</span>
 </span></span></code></pre></div><p>And this as a Replace with string</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">Z</span><span class="o">=</span><span class="err">\</span><span class="mi">1</span><span class="p">;</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/regular-expression.jpg" alt=""  title="regular expression"  />
-</p>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/01/regular-expression.jpg" title="regular expression"></p>
 <p>Now, notice the first one, it’s actually simple, you have “setLayer”, followed by “\(” to tell the expression we really need to be that character, after than we have “.+”, which means match any single character except a line break and at least one occurrence. Followed by “\);”</p>
 <p>Now if you notice we have curly brackets around the inside of what the function receives as parameter, that’s because we are tagging that string to use it later.</p>
 <p>This way on the replace we simply need “Z=” followed by the first tagged string we have “\1”. if we have more curly brackets it would be “\2”, “\3” etc.</p>

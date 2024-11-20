@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 27 May 2011 12:40:29 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/sapphire/index.xml" rel="self" type="application/rss+xml" />
@@ -18,20 +18,33 @@
       <link>https://www.david-amador.com/2011/05/time-for-some-new-tools-and-editor/</link>
       <pubDate>Fri, 27 May 2011 12:40:29 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/05/time-for-some-new-tools-and-editor/</guid>
-      <description>Holy cow, this is my 100th post. “Insert epic sentence”
-Depending on how much time you follow my blog or Different Pixel activity you may know that we have an internal Editor called Sapphire
-Past
-It was developed over a year ago with the intent of being a “All in one” 2D game editor for our games, built on XNA. It started out pretty well and I’m very happy with the outcome.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Holy cow, this is my 100th post. “Insert epic sentence”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Depending on how much time you follow my blog or &lt;a href=&#34;http://www.differentpixel.com&#34;&gt;Different Pixel&lt;/a&gt; activity you may know that we have an internal Editor called Sapphire&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2009/12/sapphire1.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2009/12/sapphire1-300x193.jpg&#34; title=&#34;sapphire&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/D33185iWTQU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Past&lt;/strong&gt;&lt;br&gt;
+It was developed over a year ago with the intent of being a “All in one” 2D game editor for our games, built on XNA. It started out pretty well and I’m very happy with the outcome. It served it’s purpose. The problem now is, most of the stuff we need, apart from the generic sprites positioning, rotation etc, are very specific stuff to the game/project in hands.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<blockquote>
 <p>Holy cow, this is my 100th post. “Insert epic sentence”</p>
 </blockquote>
 <p>Depending on how much time you follow my blog or <a href="http://www.differentpixel.com">Different Pixel</a> activity you may know that we have an internal Editor called Sapphire</p>
-<p><a href="/wp-content/uploads/2009/12/sapphire1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire1-300x193.jpg" alt=""  title="sapphire"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/12/sapphire1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire1-300x193.jpg" title="sapphire"></a></p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/D33185iWTQU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/D33185iWTQU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p><strong>Past</strong><br>
 It was developed over a year ago with the intent of being a “All in one” 2D game editor for our games, built on XNA. It started out pretty well and I’m very happy with the outcome. It served it’s purpose. The problem now is, most of the stuff we need, apart from the generic sprites positioning, rotation etc, are very specific stuff to the game/project in hands.</p>
@@ -50,8 +63,8 @@ It was developed over a year ago with the intent of being a “All in one” 2D 
       <link>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
       <pubDate>Wed, 30 Dec 2009 22:59:00 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
-      <description>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.
-I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry.</description>
+      <description>&lt;p&gt;Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.&lt;/p&gt;
+&lt;p&gt;I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry. It was funny, built a couple of games, made part of big projects, learned much, learned that even more is to be learned. One year after I started making small prototype games on my free times as a joke and websites now and then for a couple of extra bucks.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.</p>
 <p>I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry. It was funny, built a couple of games, made part of big projects, learned much, learned that even more is to be learned. One year after I started making small prototype games on my free times as a joke and websites now and then for a couple of extra bucks.</p>
 <p>Around August 2006 I approached <a href="http://www.twitter.com/_m0r3n4">Rita Silva</a> with an idea of building a small creative company. I knew her work, she’s very talented, check her <a href="http://www.rita-silva.com">blog</a> and a person like her creating all the looks and stuff for my projects would be a great help.</p>
@@ -59,14 +72,16 @@ I worked there since 2006, almost 4 years, I joined the team back then in the ho
 <p>Due to our full-time job things were always kind of slow on Different Pixel evolution, we couldn’t accept many jobs due to time restrictions.</p>
 <p>Now and without jobs we decided to try and take this small project to higher grounds, we are no longer inexperienced and without background. We currently are working on two small games, but our main focus is still web development, since we have to pay bills =P</p>
 <p>I’m not going to reveal much of the games now, this is just a small experience to see how the public reacts, if positive we can move to bigger projects.</p>
-<p><a href="/wp-content/uploads/2009/12/sapphire1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire1-300x193.jpg" alt=""  title="sapphire"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/12/sapphire1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire1-300x193.jpg" title="sapphire"></a></p>
 <p>Also I’ve been working like crazy on the past days on our internal xna map editor Sapphire. The idea is that you can use it with your own engine. Many features are done and much more are on the works.</p>
 <p>Here’s a video showing an alpha version. Keep in mind that this is a work in progress.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/GexS0y9Y2kM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GexS0y9Y2kM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>I’ll be posting an update soon and possibly a beta to the public, the idea is to sell at a low price.</p>
 <p>Stay tuned on our <a href="http://www.differentpixel.com">website</a>, <a href="http://www.twitter.com/DifferentPixel">Twitter </a>or <a href="http://www.facebook.com/DifferentPixel">Facebook </a>for updates, we promise lot’s of news soon.</p>
@@ -79,29 +94,33 @@ I worked there since 2006, almost 4 years, I joined the team back then in the ho
       <link>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
       <pubDate>Wed, 02 Dec 2009 21:38:11 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
-      <description>Lately all my free time has been spent adding new features to Basalt and developing Sapphire.
-Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.
-Here’s a screenshot of the previous alpha version:</description>
+      <description>&lt;p&gt;Lately all my free time has been spent adding new features to &lt;a href=&#34;https://www.david-amador.com/tags/basalt/&#34;&gt;Basalt&lt;/a&gt; and developing &lt;a href=&#34;https://www.david-amador.com/tags/sapphire/&#34;&gt;Sapphire&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.&lt;/p&gt;
+&lt;p&gt;Here’s a screenshot of the previous alpha version:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Lately all my free time has been spent adding new features to <a href="/tags/basalt/">Basalt</a> and developing <a href="/tags/sapphire/">Sapphire</a>.</p>
 <p>Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.</p>
 <p>Here’s a screenshot of the previous alpha version:</p>
-<p><a href="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg" alt="Sapphire Level Editor"  title="Sapphire Level Editor"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg"><img alt="Sapphire Level Editor" loading="lazy" src="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg" title="Sapphire Level Editor"></a></p>
 <p>I kept working on the engine itself and just making small prototypes for testing it. Finally 2 weeks ago I decided to start from scratch and just use xna to build it. Not much is done but I have little time after work to develop. Anyway I’m happy since I already have textures import, basic object positioning, scaling and a Layer System.</p>
-<p><a href="/wp-content/uploads/2009/12/sapphire.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire.jpg" alt="sapphire"  title="sapphire"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/12/sapphire.jpg"><img alt="sapphire" loading="lazy" src="/wp-content/uploads/2009/12/sapphire.jpg" title="sapphire"></a></p>
 <p>This is an early stage of the new editor, it’s from last week.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/D33185iWTQU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/D33185iWTQU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>When I have some cool stuff I’ll update a new video.</p>
 <p>On the engine side, today I decided to add a Console component to the engine, much like Source Engine and Quake consoles, to input commands, here’s the result:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ZYNBfdu5UqM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZYNBfdu5UqM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Hopefully by the beginning of next year I’ll have a beta version that I can release to the public for testing. I intend to launch a free and a payed version of the engine+ editor. My only dout is if I trim down some functions or just release it as free for non-commercial usage only.</p>
 ]]></content:encoded>
@@ -111,14 +130,14 @@ Here’s a screenshot of the previous alpha version:</description>
       <link>https://www.david-amador.com/2009/08/xna-2d-engine/</link>
       <pubDate>Fri, 14 Aug 2009 13:39:14 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/08/xna-2d-engine/</guid>
-      <description>Lately whenever I’m off work and I have the time I’ve been working on a 2d Engine in XNA. We named it Basalt.
-Cool hum? lol
-I have almost everything done, since sprites, to sprite animations, scenes, layers, resolution independent engine, game state and a lot of other cool things.
-On a recent post I’ve showed a 4 split screen prototype, that was made in Basalt.
-Also I’ve been working, even though on a slower pace on Shappire, the editor and a sprite sheet editor, for the animations etc.</description>
+      <description>&lt;p&gt;Lately whenever I’m off work and I have the time I’ve been working on a 2d Engine in XNA. We named it Basalt.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2009/08/basalt.gif&#34;&gt;&lt;img alt=&#34;basalt&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2009/08/basalt-300x221.gif&#34; title=&#34;basalt&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cool hum? lol&lt;/p&gt;
+&lt;p&gt;I have almost everything done, since sprites, to sprite animations, scenes, layers, resolution independent engine, game state and a lot of other cool things.&lt;/p&gt;
+&lt;p&gt;On a recent post I’ve showed a &lt;a href=&#34;https://www.david-amador.com/2009/08/pugna-prototype/&#34;&gt;4 split screen prototype&lt;/a&gt;, that was made in Basalt.&lt;/p&gt;
+&lt;p&gt;Also I’ve been working, even though on a slower pace on Shappire, the editor and a sprite sheet editor, for the animations etc.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Lately whenever I’m off work and I have the time I’ve been working on a 2d Engine in XNA. We named it Basalt.</p>
-<p><a href="/wp-content/uploads/2009/08/basalt.gif"><img loading="lazy" src="/wp-content/uploads/2009/08/basalt-300x221.gif" alt="basalt"  title="basalt"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/08/basalt.gif"><img alt="basalt" loading="lazy" src="/wp-content/uploads/2009/08/basalt-300x221.gif" title="basalt"></a></p>
 <p>Cool hum? lol</p>
 <p>I have almost everything done, since sprites, to sprite animations, scenes, layers, resolution independent engine, game state and a lot of other cool things.</p>
 <p>On a recent post I’ve showed a <a href="/2009/08/pugna-prototype/">4 split screen prototype</a>, that was made in Basalt.</p>

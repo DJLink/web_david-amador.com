@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 27 Jan 2024 17:20:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
@@ -18,11 +18,12 @@
       <link>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</link>
       <pubDate>Sat, 27 Jan 2024 17:20:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2024/01/converting-the-blog-from-wordpress-to-hugo/</guid>
-      <description>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&amp;rsquo;ve moved everything to static content, including this website.
-📝 WordPress Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper.</description>
+      <description>&lt;p&gt;Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&amp;rsquo;ve moved everything to static content, including this website.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2024/01/shutting-down-server.gif&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;-wordpress&#34;&gt;📝 WordPress&lt;/h1&gt;
+&lt;p&gt;Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Yesterday, I shutdown the VPS that has been hosting all my websites for the last ~10 years. I&rsquo;ve moved everything to static content, including this website.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/01/shutting-down-server.gif" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/shutting-down-server.gif"></p>
 <h1 id="-wordpress">📝 WordPress</h1>
 <p>Since the very beginning (~2008) this blog has been powered by WordPress, it served me well, it worked, had a nice backend to make the posts, plugins and themes. After a couple years I moved from shared hosting to a VPS, I had other websites and services I needed running and all in same machine was better and cheaper. But WordPress needs a lot of things, PHP, MySQL, maintenance in all those moving parts.</p>
 <p>So for the past couple of years I&rsquo;ve been thinking in migrating it to something like Jekyll or Hugo, to serve it as static content. But the few times I looked into the process it seemed like a big task especially because I have 184 posts, I wasn&rsquo;t just starting from 0, I wanted to maintain the existing content, posts, images, URLs etc. So, a couple days ago I decided it was time.</p>
@@ -59,8 +60,7 @@ But after a couple days of messing around with configs and pre-requisites, packa
 <p>💻 So my current workflow is: I have a git repo with all the markdown and website code and I have the live website as a submodule, so whenever I made a change, I export it with Hugo, git commit all changes and GitHub pages just deploys them, feels like magic :D</p>
 <h3 id="-speed">🚀 Speed</h3>
 <p>Oh its much faster, obviously, but look at the changes of before (left) and after (right) using PageSpeed Insights.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/01/david_amador_site_wordpress_vs_hugo_speed.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/01/david_amador_site_wordpress_vs_hugo_speed.png"></p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Still there? Well so far I&rsquo;m happy with the move, I do miss the nice WordPress backend thing if I&rsquo;m being honest, but I can live without it. I feel like in the long run I won&rsquo;t miss having to maintain that server, also the costs. Right now I&rsquo;m editing this on Obsidian, about to commit and see if it goes live, RSS and all. If you find any broken stuff or have suggestions let me know, either mastodon, email or a comment here.</p>
 <p>Until the next time, where hopefully I&rsquo;ll talk about games! Thanks for reading.</p>
@@ -71,10 +71,13 @@ But after a couple days of messing around with configs and pre-requisites, packa
       <link>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</link>
       <pubDate>Sun, 25 Oct 2009 19:16:12 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/how-to-make-a-clickable-div/</guid>
-      <description>Making a clickable text or image is easy, just add the &amp;lt;a&amp;gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.
-The following code is for JQuery but switching it to your favorite JS framework should be very easy.
-First start by adding this to your div
-&amp;lt;div class=&amp;#34;clickable&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; Now a little css to simulate the pointer on that div</description>
+      <description>&lt;p&gt;Making a clickable text or image is easy, just add the &amp;lt;a&amp;gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.&lt;br&gt;
+The following code is for JQuery but switching it to your favorite JS framework should be very easy.&lt;/p&gt;
+&lt;p&gt;First start by adding this to your div&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;clickable&amp;#34;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now a little css to simulate the pointer on that div&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Making a clickable text or image is easy, just add the &lt;a&gt; tag surrounding it. But this doesn’t work with divs and sometimes we need a whole div to be clickable and not just text.<br>
 The following code is for JQuery but switching it to your favorite JS framework should be very easy.</p>
 <p>First start by adding this to your div</p>
@@ -105,10 +108,12 @@ The following code is for JQuery but switching it to your favorite JS framework 
       <link>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</link>
       <pubDate>Wed, 21 Oct 2009 22:06:57 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/</guid>
-      <description>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</description>
+      <description>&lt;p&gt;One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>One of the most painful tasks of a web developer/designer is to ensure that his website is compatible with the majority of the popular browsers. Nowadays this includes Firefox 2.0 and 3.0, Internet Explorer 6, 7 and 8, Opera, and the newest Chrome. Well, you can have firefox, IE and Chrome all on the same system, but what about multiple versions? Most people still use IE6 (they should be shame by the way).</p>
 <p>Adobe has launched a neat website for testing this, just go to <a href="https://browserlab.adobe.com/">https://browserlab.adobe.com/</a>, register an account and test it for yourself, it was a side by site view and even a <a href="http://en.wikipedia.org/wiki/Onion_skinning">Onion view</a></p>
-<!-- raw HTML omitted -->
+<p><a href=""><img loading="lazy" src="/wp-content/uploads/2009/10/adobe_browserlab_david_amador.jpg"></a></p>
+<p><img loading="lazy" src="/wp-content/uploads/2009/10/adobe_browserlab_different_pixel.jpg"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2009/10/adobe_browserlab_rita_silva.jpg"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -116,10 +121,20 @@ The following code is for JQuery but switching it to your favorite JS framework 
       <link>https://www.david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</link>
       <pubDate>Wed, 21 Oct 2009 12:14:53 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/how-to-style-a-blockquote-with-css/</guid>
-      <description>Blockquotes are an easy way to make your website stand out, by indicating that you are quoting someone you give a more professional approach to you website.
-You can do this by using
-&amp;lt;blockquote&amp;gt; Im quoting someone else&amp;lt;/blockquote&amp;gt; But it still needs a little touch, so on your css file add this.
-blockquote { background:transparent url(blockquote.gif) no-repeat scroll 0 0; font-family:Georgia,&amp;#34;Times New Roman&amp;#34;,Times,serif; font-size:1em; margin:15px 0; min-height:32px; padding:0 50px; } Save this image : and watch the result.</description>
+      <description>&lt;p&gt;Blockquotes are an easy way to make your website stand out, by indicating that you are quoting someone you give a more professional approach to you website.&lt;br&gt;
+You can do this by using&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;blockquote&amp;gt;&lt;/span&gt; Im quoting someone else&lt;span class=&#34;nt&#34;&gt;&amp;lt;/blockquote&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But it still needs a little touch, so on your css file add this.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;blockquote&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;background&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;transparent&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sx&#34;&gt;blockquote.gif&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;no-repeat&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;scroll&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;font-family&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Georgia&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Times New Roman&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Times&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;serif&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;font-size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;em&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;margin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;min-height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;32&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;padding&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Save this image : &lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2009/10/blockquote.gif&#34;&gt;&lt;img alt=&#34;blockquote&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2009/10/blockquote.gif&#34; title=&#34;blockquote&#34;&gt;&lt;/a&gt; and watch the result. It will turn out something like this:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Blockquotes are an easy way to make your website stand out, by indicating that you are quoting someone you give a more professional approach to you website.<br>
 You can do this by using</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">
@@ -133,8 +148,7 @@ You can do this by using</p>
 </span></span><span class="line"><span class="cl"><span class="k">min-height</span><span class="p">:</span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="k">padding</span><span class="p">:</span><span class="mi">0</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Save this image : <a href="/wp-content/uploads/2009/10/blockquote.gif"><img loading="lazy" src="/wp-content/uploads/2009/10/blockquote.gif" alt="blockquote"  title="blockquote"  />
-</a> and watch the result. It will turn out something like this:</p>
+</span></span></code></pre></div><p>Save this image : <a href="/wp-content/uploads/2009/10/blockquote.gif"><img alt="blockquote" loading="lazy" src="/wp-content/uploads/2009/10/blockquote.gif" title="blockquote"></a> and watch the result. It will turn out something like this:</p>
 <blockquote>
 <p>Im quoting someone else</p>
 </blockquote>
@@ -145,8 +159,8 @@ You can do this by using</p>
       <link>https://www.david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</link>
       <pubDate>Thu, 02 Jul 2009 10:05:36 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/07/moz-opacity-removed-from-firefox-3-5/</guid>
-      <description>Well i just found out that Mozzila removed -moz-opacity from Firefox 3.5. It’s been deprecated for a long time and you can how replace it for the standard css property opacity.
-So something like -moz-opacity: 0.4 is now opacity: 0.4;</description>
+      <description>&lt;p&gt;Well i just found out that Mozzila removed -moz-opacity from Firefox 3.5. It’s been deprecated for a long time and you can how replace it for the standard css property opacity.&lt;/p&gt;
+&lt;p&gt;So something like -moz-opacity: 0.4 is now opacity: 0.4;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Well i just found out that Mozzila removed -moz-opacity from Firefox 3.5. It’s been deprecated for a long time and you can how replace it for the standard css property opacity.</p>
 <p>So something like -moz-opacity: 0.4 is now opacity: 0.4;</p>
 ]]></content:encoded>

@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 27 Oct 2010 10:48:46 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/astar/index.xml" rel="self" type="application/rss+xml" />
@@ -18,18 +18,17 @@
       <link>https://www.david-amador.com/2010/10/a-pathfinding/</link>
       <pubDate>Wed, 27 Oct 2010 10:48:46 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/10/a-pathfinding/</guid>
-      <description>For my current project I’ve been working with A* as a path-finding solution.
-Basically it’s a way to get from point A to point B.
-This is used for AI in games mostly on tiled based games, It’s very simple to understand and implement.
-As A* traverses the graph, it follows a path of the lowest known cost, keeping a sorted priority queue of alternate path segments along the way. If, at any point, a segment of the path being traversed has a higher cost than another encountered path segment, it abandons the higher-cost path segment and traverses the lower-cost path segment instead.</description>
+      <description>&lt;p&gt;For my current project I’ve been working with A* as a &lt;a href=&#34;http://en.wikipedia.org/wiki/Pathfinding#In_video_games&#34;&gt;path-finding&lt;/a&gt; solution.&lt;/p&gt;
+&lt;p&gt;Basically it’s a way to get from point A to point B.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is used for AI in games mostly on tiled based games, It’s very simple to understand and implement.&lt;/p&gt;
+&lt;p&gt;As A* traverses the graph, it follows a path of the lowest known cost, keeping a sorted priority queue of alternate path segments along the way. If, at any point, a segment of the path being traversed has a higher cost than another encountered path segment, it abandons the higher-cost path segment and traverses the lower-cost path segment instead. This process continues until the goal is reached.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>For my current project I’ve been working with A* as a <a href="http://en.wikipedia.org/wiki/Pathfinding#In_video_games">path-finding</a> solution.</p>
 <p>Basically it’s a way to get from point A to point B.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_.png"></p>
 <p>This is used for AI in games mostly on tiled based games, It’s very simple to understand and implement.</p>
 <p>As A* traverses the graph, it follows a path of the lowest known cost, keeping a sorted priority queue of alternate path segments along the way. If, at any point, a segment of the path being traversed has a higher cost than another encountered path segment, it abandons the higher-cost path segment and traverses the lower-cost path segment instead. This process continues until the goal is reached.</p>
-<p><img loading="lazy" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Pathfinding_A_Star.svg/500px-Pathfinding_A_Star.svg.png" alt=""  />
-</p>
+<p><img loading="lazy" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Pathfinding_A_Star.svg/500px-Pathfinding_A_Star.svg.png"></p>
 <p>The major choke point is the heuristic used to calculate which node to take next. I’ve started by using Manhattan Distance.<br>
 Its primary advantage is that it will generally get you to the target faster than most alternatives. Its primary drawback is that in a 8-way pathfinder so it is not guaranteed to give us the shortest possible path.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
@@ -51,9 +50,12 @@ After I’m getting much faster movements.</p>
 * On a square grid that allows 8 directions of movement, use Diagonal distance.</p>
 <p>This is a video I’ve done using Manhattan distance using tile grids generated from a black and white image.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/GwUNgHly39Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GwUNgHly39Y?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>

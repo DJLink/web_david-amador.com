@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>unity on David Amador</title>
+    <title>Unity on David Amador</title>
     <link>https://www.david-amador.com/tags/unity/</link>
-    <description>Recent content in unity on David Amador</description>
+    <description>Recent content in Unity on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Sep 2023 09:57:43 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/unity/index.xml" rel="self" type="application/rss+xml" />
@@ -18,13 +18,12 @@
       <link>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>
       <pubDate>Sun, 24 Sep 2023 09:57:43 +0000</pubDate>
       <guid>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</guid>
-      <description>After mostly a week of anxiety, for thousands and thousands of developers, Unity changed the rules again, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service.</description>
+      <description>&lt;p&gt;After mostly a &lt;a href=&#34;https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/&#34; title=&#34;The Unity enshittification, proprietary tech dangers, and mostly not talking about what I’m doing.&#34;&gt;week of anxiety,&lt;/a&gt; for thousands and thousands of developers, Unity &lt;a href=&#34;https://blog.unity.com/news/open-letter-on-runtime-fee&#34;&gt;changed the rules again&lt;/a&gt;, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service. This will be impossible on mobile and consoles in a short time frame due to SDKs, but for PC should be fine.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>After mostly a <a href="/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/" title="The Unity enshittification, proprietary tech dangers, and mostly not talking about what I’m doing.">week of anxiety,</a> for thousands and thousands of developers, Unity <a href="https://blog.unity.com/news/open-letter-on-runtime-fee">changed the rules again</a>, and first glance, it’s better for the immediate problems it would cause for active and in-development games. They removed the retroactive aspect of the “pay-per-game-install”, so only for someone on Unity 2023 LTS+ (launching next year) will that apply, current projects will not be affected. Small relief, as long as we can keep using existing versions with current Terms of Service. This will be impossible on mobile and consoles in a short time frame due to SDKs, but for PC should be fine.</p>
 <p>So that’s good huh? Well not quite imo, because the rest pretty much maintains, more or less with some changes, Unity Plus still gone (although expected), but <a href="https://unity.com/pricing-updates">it’s a revenue/pay-per-install deal</a>, on top of the yearly license fees. I feel they fear they tainted their image so much they aren’t even forcing the Unity splash screen anymore, probably because players will now fear every Unity game will come with install tracking software.</p>
 <p>I think the subscription plan, especially for mobile/consoles is needed, it’s a company and needs to make money to maintain the software, fair. However for me it’s a lot of the break of trust they did, and trying for the SECOND time (that I recall) to change the Terms of Service retroactively and only after industry-wide outrage did they backtracked slightly. So for now the new-new rules only apply to a smaller %, which I guess they expect will calm down most of the community. In a couple years they’ll pull some other stunt and we’ll recall “oh right, they did this before”.</p>
 <p>Furthermore, they had deleted the transparency repo with the Terms of Service from GitHub, which raised many eyebrows, when enquired to why they deleted the answer was “low views so it was deleted”. The repo is back up meanwhile, I mean, what the heck?</p>
-<p><a href="https://twitter.com/unity/status/1705317639478751611"><img loading="lazy" src="/wp-content/uploads/2023/09/image-2.png" alt=""  />
-</a></p>
+<p><a href="https://twitter.com/unity/status/1705317639478751611"><img loading="lazy" src="/wp-content/uploads/2023/09/image-2.png"></a></p>
 <h2 id="moving-forward">Moving forward</h2>
 <p>So as I mentioned in last post I have been working on a prototype for what I hope I can turn into a new game, in Unity. I decided that I’ll continue working on the prototype in Unity (actually taking a break from work right now to write this), it would be slightly silly to change now. And when I feel most of the features are done, I’ll try to move to my own tech, yes again.</p>
 <p>I’ve been doing some research and tests and I’ll be dismantling <a href="/tags/quest-of-dungeons/" title="Quest of Dungeons development update">Quest of Dungeons</a> engine, which was all <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">OOP</a>, to adding <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a>, using <a href="https://github.com/SanderMertens/flecs/">Flecs</a>, this is a major thing I’m taking with me from my time using Unity, I like that it helps solving a lot of issues sometimes, even if full ECS is not the solution for me. But having that will be nice, I can see the benefit now. Another thing might also be trying to mimick Prefabs and/or ScriptableObjects, that would be nice, but that’s just in the back of my head at the moment. I already started the process of integrating Flecs, so slowly and gradually, and hopefully, when it’s time to switch engine it will be a suitable alternative. If not well, better not update to 2023LTS I guess.</p>
@@ -40,13 +39,11 @@
       <link>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</link>
       <pubDate>Sat, 16 Sep 2023 11:14:16 +0000</pubDate>
       <guid>https://www.david-amador.com/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/</guid>
-      <description>So this was an “eventful” week in the game dev community. Unity, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. Unity announced that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</description>
+      <description>&lt;p&gt;So this was an “eventful” week in the game dev community. &lt;a href=&#34;https://unity.com/&#34;&gt;Unity&lt;/a&gt;, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. &lt;a href=&#34;https://blog.unity.com/news/plan-pricing-and-packaging-updates&#34;&gt;Unity announced &lt;/a&gt;that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So this was an “eventful” week in the game dev community. <a href="https://unity.com/">Unity</a>, one of the most well know, and used game engines out there, after years of doing mostly good for the community, pulled a reverse card and broke years of trust the community had on them. <a href="https://blog.unity.com/news/plan-pricing-and-packaging-updates">Unity announced </a>that they are retroactively charging (for example $0.2) for each game install, after developers hit a certain yearly revenue threshold, which sounds insane.</p>
-<p><a href="https://blog.unity.com/news/plan-pricing-and-packaging-updates"><img loading="lazy" src="/wp-content/uploads/2023/09/unity-new-runtime-free-pricing-image.png" alt=""  />
-</a></p>
+<p><a href="https://blog.unity.com/news/plan-pricing-and-packaging-updates"><img loading="lazy" src="/wp-content/uploads/2023/09/unity-new-runtime-free-pricing-image.png"></a></p>
 <p>Also they are removing the Plus subscription, which honestly this one I was kind of expecting for a while now. Which means a lot of people would have to jump to the nearly $2k yearly subscriptions. This on it’s own, while a big jump, at least is more understandable, building tech is expensive. The pay-per-install is crazy though.</p>
-<p><a href="https://twitter.com/DJ_Link/status/1666532480646627329"><img loading="lazy" src="/wp-content/uploads/2023/09/image-1.png" alt=""  />
-</a>On top of all, the thing that breaks trust the most, is the retroactive thing, games already released on older versions will be affected. The Terms of Service for those older versions, which developers agreed on installing X version, are no longer valid, they changed them, which means it’s no longer safe to trust the rules, Unity can just flip them. What’s for tomorrow?</p>
+<p><a href="https://twitter.com/DJ_Link/status/1666532480646627329"><img loading="lazy" src="/wp-content/uploads/2023/09/image-1.png"></a>On top of all, the thing that breaks trust the most, is the retroactive thing, games already released on older versions will be affected. The Terms of Service for those older versions, which developers agreed on installing X version, are no longer valid, they changed them, which means it’s no longer safe to trust the rules, Unity can just flip them. What’s for tomorrow?</p>
 <h2 id="proprietary-tech">Proprietary tech</h2>
 <p>This is, and always be one of the downsides of depending on other people technology, if the whole company depends on it, and there’s no easy replacement, a drastic change can hurt the whole business bad. This is not to say that we must avoid it 100% of the time, but it clearly shows that if a company amasses too much power, <a href="https://en.wikipedia.org/wiki/Murphy's_law">murphy’s law</a>!</p>
 <p>I usually like to discuss this subject, even before this whole thing, not because I think everyone should do custom engines (even if fun) but because we shouldn’t trick ourselves in believing “my choice of engine is forever!”, it won’t be, unless it’s our own tech that we spend tons of time supporting/improving it, everything else eventually mutates too much, fades or gets killed. So we should always try to at the very least, be mentally prepared.</p>
@@ -65,15 +62,14 @@
       <link>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</link>
       <pubDate>Tue, 14 Aug 2018 15:02:38 +0000</pubDate>
       <guid>https://www.david-amador.com/2018/08/made-a-small-game-for-ludum-dare-42/</guid>
-      <description>Hey,
-It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.
-But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.</description>
+      <description>&lt;p&gt;Hey,&lt;/p&gt;
+&lt;p&gt;It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.&lt;/p&gt;
+&lt;p&gt;But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Hey,</p>
 <p>It’s been ages since my last post, feel like things keep getting in the way, also not much exciting stuff lately.</p>
 <p>But decided to take a break from my current project to participate in Ludum Dare 42, it’s been years since the last time, also I liked the theme “Running out of Space” so I decided to hack something. To try and get out of my comfort zone I made my first game in Unity, so that was a fun experiment.</p>
 <p>The game is a small top down shooting game, but when you miss an enemy you create a block instead, so the more you miss the less area to fly around. Here’s a gif illustrating.</p>
-<p><a href="https://dj_link.itch.io/dont-miss"><img loading="lazy" src="/wp-content/uploads/2018/08/Honeycam-2018-08-13-22-21-37.gif" alt=""  />
-</a></p>
+<p><a href="https://dj_link.itch.io/dont-miss"><img loading="lazy" src="/wp-content/uploads/2018/08/Honeycam-2018-08-13-22-21-37.gif"></a></p>
 <p>Made code, art and sounds, cod is c# in Unity, art was made in photoshop, the sound effects I think you’ll notice right away how they were made, and finally used <a href="https://boscaceoil.net/">Bosca Ceoil</a> for music.</p>
 <p>There’s a webGl version so you an try it directly in your browser.</p>
 <p><a href="https://dj_link.itch.io/dont-miss">https://dj_link.itch.io/dont-miss</a></p>

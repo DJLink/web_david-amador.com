@@ -8,10 +8,11 @@
 <title>XNA Particle System 2D | David Amador</title>
 <meta name="keywords" content="Dream Build Play, Particle System, Pizza Night, XNA">
 <meta name="description" content="It’s been a long week.
-Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.">
+Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.
+Then it began, the one task that all programmers should ask someone else to do, because once you get the first one working you are gonna keep adding features because is so FUC**** pretty 😀">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/2010/02/xna-particle-system-2d/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -19,6 +20,7 @@ Even though I’ve always pointed to a make a very simple game for Dream Build P
 <link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/2010/02/xna-particle-system-2d/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,20 +30,28 @@ Even though I’ve always pointed to a make a very simple game for Dream Build P
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="XNA Particle System 2D" />
-<meta property="og:description" content="It’s been a long week.
-Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/02/xna-particle-system-2d/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2010-02-19T11:46:26+00:00" />
-<meta property="article:modified_time" content="2010-02-19T11:46:26+00:00" /><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg" />
-<meta name="twitter:title" content="XNA Particle System 2D"/>
+<meta property="og:url" content="https://www.david-amador.com/2010/02/xna-particle-system-2d/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="XNA Particle System 2D">
+  <meta property="og:description" content="It’s been a long week.
+Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.
+Then it began, the one task that all programmers should ask someone else to do, because once you get the first one working you are gonna keep adding features because is so FUC**** pretty 😀">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-02-19T11:46:26+00:00">
+    <meta property="article:modified_time" content="2010-02-19T11:46:26+00:00">
+    <meta property="article:tag" content="Dream Build Play">
+    <meta property="article:tag" content="Particle System">
+    <meta property="article:tag" content="Pizza Night">
+    <meta property="article:tag" content="XNA">
+    <meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg">
+<meta name="twitter:title" content="XNA Particle System 2D">
 <meta name="twitter:description" content="It’s been a long week.
-Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself."/>
+Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.
+Then it began, the one task that all programmers should ask someone else to do, because once you get the first one working you are gonna keep adding features because is so FUC**** pretty 😀">
 
 
 <script type="application/ld+json">
@@ -70,7 +80,7 @@ Even though I’ve always pointed to a make a very simple game for Dream Build P
   "@type": "BlogPosting",
   "headline": "XNA Particle System 2D",
   "name": "XNA Particle System 2D",
-  "description": "It’s been a long week.\nEven though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.",
+  "description": "It’s been a long week.\nEven though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.\nThen it began, the one task that all programmers should ask someone else to do, because once you get the first one working you are gonna keep adding features because is so FUC**** pretty 😀\n",
   "keywords": [
     "Dream Build Play", "Particle System", "Pizza Night", "XNA"
   ],
@@ -110,7 +120,7 @@ Even though I’ve always pointed to a make a very simple game for Dream Build P
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -174,7 +184,7 @@ Even though I’ve always pointed to a make a very simple game for Dream Build P
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       XNA Particle System 2D
     </h1>
@@ -188,8 +198,7 @@ Even though I’ve always pointed to a make a very simple game for Dream Build P
   <div class="post-content"><p>It’s been a long week.<br>
 Even though I’ve always pointed to a make a very simple game for Dream Build Play so that I may actually have the time to finish it I just lost almost two day doing something to show for about 3 or 4 seconds per level. Discussing how we should make our puzzle appear and disappear between each level we decided that a particle system or an effect of such nature would be nice to show apart from some fading or something on the puzzle itself.<br>
 Then it began, the one task that all programmers should ask someone else to do, because once you get the first one working you are gonna keep adding features because is so FUC**** pretty 😀</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg" alt="ParticleSystem_Radial_Gravity.jpg"  />
-</p>
+<p><img alt="ParticleSystem_Radial_Gravity.jpg" loading="lazy" src="/wp-content/uploads/2010/02/ParticleSystem_Radial_Gravity.jpg"></p>
 <p>I decided the best way was to quick implement it on our editor Sapphire, it now features:<br>
 – Color Interpolation<br>
 – Alpha Interpolation<br>
@@ -198,9 +207,12 @@ Then it began, the one task that all programmers should ask someone else to do, 
 – Radial Gravity (This is more of a gravity Well, everything gets sucked in Geometry Wars style)</p>
 <p>Here’s the video</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/SLd4PxJlVlE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/SLd4PxJlVlE?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Also I’ve found out that this March 5th near where I live Microsoft is doing a XNA Pizza Night, it’s a contest with prizes to the best games, and best of all, free Pizza and Drinks for everyone. I’m gonna enter with the same game of course so wish me luck.</p>
 
@@ -251,7 +263,8 @@ Then it began, the one task that all programmers should ask someone else to do, 
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

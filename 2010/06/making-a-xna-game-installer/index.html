@@ -12,7 +12,7 @@ Moving along…I discovered this little cool installer called InnoSetup, and bes
 InnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control.">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/2010/06/making-a-xna-game-installer/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -20,6 +20,7 @@ InnoSetup has different ways of you building a proper installer but I am going t
 <link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/2010/06/making-a-xna-game-installer/">
 <noscript>
     <style>
         #theme-toggle,
@@ -29,22 +30,25 @@ InnoSetup has different ways of you building a proper installer but I am going t
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="Making a XNA Game Installer" />
-<meta property="og:description" content="I am going to start with a little rant about Visual Studio default Installer, you know, the one you can make for yout XNA games inside VS. Ugly and not very handy, sure it installs every dependency but doesn’t leave many options like….hum…I don’t know choosing the location where you want to install?
+<meta property="og:url" content="https://www.david-amador.com/2010/06/making-a-xna-game-installer/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="Making a XNA Game Installer">
+  <meta property="og:description" content="I am going to start with a little rant about Visual Studio default Installer, you know, the one you can make for yout XNA games inside VS. Ugly and not very handy, sure it installs every dependency but doesn’t leave many options like….hum…I don’t know choosing the location where you want to install?
 Moving along…I discovered this little cool installer called InnoSetup, and best of all it’s free.
-InnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/06/making-a-xna-game-installer/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/06/xna_installer.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2010-06-09T22:28:16+00:00" />
-<meta property="article:modified_time" content="2010-06-09T22:28:16+00:00" /><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/06/xna_installer.jpg" />
-<meta name="twitter:title" content="Making a XNA Game Installer"/>
+InnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-06-09T22:28:16+00:00">
+    <meta property="article:modified_time" content="2010-06-09T22:28:16+00:00">
+    <meta property="article:tag" content="XNA">
+    <meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/06/xna_installer.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/06/xna_installer.jpg">
+<meta name="twitter:title" content="Making a XNA Game Installer">
 <meta name="twitter:description" content="I am going to start with a little rant about Visual Studio default Installer, you know, the one you can make for yout XNA games inside VS. Ugly and not very handy, sure it installs every dependency but doesn’t leave many options like….hum…I don’t know choosing the location where you want to install?
 Moving along…I discovered this little cool installer called InnoSetup, and best of all it’s free.
-InnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control."/>
+InnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control.">
 
 
 <script type="application/ld+json">
@@ -73,7 +77,7 @@ InnoSetup has different ways of you building a proper installer but I am going t
   "@type": "BlogPosting",
   "headline": "Making a XNA Game Installer",
   "name": "Making a XNA Game Installer",
-  "description": "I am going to start with a little rant about Visual Studio default Installer, you know, the one you can make for yout XNA games inside VS. Ugly and not very handy, sure it installs every dependency but doesn’t leave many options like….hum…I don’t know choosing the location where you want to install?\nMoving along…I discovered this little cool installer called InnoSetup, and best of all it’s free.\nInnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control.",
+  "description": "I am going to start with a little rant about Visual Studio default Installer, you know, the one you can make for yout XNA games inside VS. Ugly and not very handy, sure it installs every dependency but doesn’t leave many options like….hum…I don’t know choosing the location where you want to install?\nMoving along…I discovered this little cool installer called InnoSetup, and best of all it’s free.\nInnoSetup has different ways of you building a proper installer but I am going to cover the script way, much more control.\n",
   "keywords": [
     "XNA"
   ],
@@ -113,7 +117,7 @@ InnoSetup has different ways of you building a proper installer but I am going t
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -177,7 +181,7 @@ InnoSetup has different ways of you building a proper installer but I am going t
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Making a XNA Game Installer
     </h1>
@@ -361,7 +365,8 @@ end;
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

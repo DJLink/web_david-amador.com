@@ -7,12 +7,13 @@
 <meta name="robots" content="index, follow">
 <title>Framework consideration and new projects | David Amador</title>
 <meta name="keywords" content="">
-<meta name="description" content="Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
+<meta name="description" content="Engine/Framework considerations
+I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
 Why?
-Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C&#43;&#43; and then having to implement an OpenGL render layer. If I had an C&#43;&#43;/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL.">
+Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C&#43;&#43; and then having to implement an OpenGL render layer. If I had an C&#43;&#43;/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL. Or maybe just using OpenGL for Windows as-well.">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -20,6 +21,7 @@ Well one of the reasons is for porting purposes. Took me too long to port Vizati
 <link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/">
 <noscript>
     <style>
         #theme-toggle,
@@ -29,22 +31,25 @@ Well one of the reasons is for porting purposes. Took me too long to port Vizati
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="Framework consideration and new projects" />
-<meta property="og:description" content="Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
+<meta property="og:url" content="https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="Framework consideration and new projects">
+  <meta property="og:description" content="Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
 Why?
-Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C&#43;&#43; and then having to implement an OpenGL render layer. If I had an C&#43;&#43;/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/game_consideration.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2010-10-04T16:21:54+00:00" />
-<meta property="article:modified_time" content="2010-10-04T16:21:54+00:00" /><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/game_consideration.png" />
-<meta name="twitter:title" content="Framework consideration and new projects"/>
-<meta name="twitter:description" content="Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
+Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C&#43;&#43; and then having to implement an OpenGL render layer. If I had an C&#43;&#43;/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL. Or maybe just using OpenGL for Windows as-well.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-10-04T16:21:54+00:00">
+    <meta property="article:modified_time" content="2010-10-04T16:21:54+00:00">
+    <meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/game_consideration.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/10/game_consideration.png">
+<meta name="twitter:title" content="Framework consideration and new projects">
+<meta name="twitter:description" content="Engine/Framework considerations
+I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).
 Why?
-Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C&#43;&#43; and then having to implement an OpenGL render layer. If I had an C&#43;&#43;/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL."/>
+Well one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C&#43;&#43; and then having to implement an OpenGL render layer. If I had an C&#43;&#43;/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL. Or maybe just using OpenGL for Windows as-well.">
 
 
 <script type="application/ld+json">
@@ -73,7 +78,7 @@ Well one of the reasons is for porting purposes. Took me too long to port Vizati
   "@type": "BlogPosting",
   "headline": "Framework consideration and new projects",
   "name": "Framework consideration and new projects",
-  "description": "Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).\nWhy?\nWell one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL.",
+  "description": "Engine/Framework considerations I’m currently struggling with the decision of dropping or not XNA support for PC and just keeping it for WP7 and Xbox360 (if XBLIG ever comes to Portugal).\nWhy?\nWell one of the reasons is for porting purposes. Took me too long to port Vizati from C# to C++ and then having to implement an OpenGL render layer. If I had an C++/DirectX engine from the start it would be a question of replacing the rendering stuff to OpenGL. Or maybe just using OpenGL for Windows as-well.\n",
   "keywords": [
     
   ],
@@ -113,7 +118,7 @@ Well one of the reasons is for porting purposes. Took me too long to port Vizati
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -177,7 +182,7 @@ Well one of the reasons is for porting purposes. Took me too long to port Vizati
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Framework consideration and new projects
     </h1>
@@ -199,8 +204,7 @@ Well one of the reasons is for porting purposes. Took me too long to port Vizati
 <p>With Vizati almost wrapped up I want to move on to other projects and leaving Vizati on a support/bug fix state only.<br>
 I really don’t know if we will manage to finance another game, It’s a bit dependent on the success on the iPhone/WP7 port.</p>
 <p>Apart from financial problems deciding on a new project is always hard, not that we don’t have ideas, but the problem sometimes is having notion on what you can do instead of what you what to do. I like a few genre of games, like RPG, FPS, platform etc. If I like to play them that’s the kind of games I would like to make but this doesn’t I should do it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/10/game_consideration.png" alt=""  title="game_consideration"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/10/game_consideration.png" title="game_consideration"></p>
 <p>Vizati was a cautions step without getting too ambitious, we knew it wasn’t a game to get us <a href="http://www.shacknews.com/onearticle.x/65787">“rich and fame”</a> but we wanted to prove ourselves that we could make a game from start to finish in a viable time. The game was well accepted, our work is starting to get respected and that’s also very nice. Things take time, even a puzzle game and embracing something an unrealistic project would probably lead to another prototype on my hard drive.</p>
 <p>Either way we already throwing away some ideas and have a general idea of what we want. Rita showed me some concepts yesterday and I’m really excited, I really think it’s something nice and I can’t wait to start working on it.</p>
 <p>Well…that’s it for now.</p>
@@ -248,7 +252,8 @@ I really don’t know if we will manage to finance another game, It’s a bit de
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

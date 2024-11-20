@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>openal on David Amador</title>
+    <title>Openal on David Amador</title>
     <link>https://www.david-amador.com/tags/openal/</link>
-    <description>Recent content in openal on David Amador</description>
+    <description>Recent content in Openal on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 29 Jan 2012 19:56:20 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/openal/index.xml" rel="self" type="application/rss+xml" />
@@ -18,32 +18,28 @@
       <link>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</link>
       <pubDate>Sun, 29 Jan 2012 19:56:20 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/</guid>
-      <description>So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.
-Taking a rest between some more complex game mechanisms I decided to start doing a video player.
-After a bit research I decided to choose theora, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&amp;gt;RGB(A) conversion and because of video/audio sync.</description>
+      <description>&lt;p&gt;So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.&lt;/p&gt;
+&lt;p&gt;Taking a rest between some more complex game mechanisms I decided to start doing a video player.&lt;/p&gt;
+&lt;p&gt;After a bit research I decided to choose &lt;a href=&#34;http://theora.org/&#34;&gt;theora&lt;/a&gt;, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&amp;gt;RGB(A) conversion and because of video/audio sync.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.</p>
 <p>Taking a rest between some more complex game mechanisms I decided to start doing a video player.</p>
 <p>After a bit research I decided to choose <a href="http://theora.org/">theora</a>, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&gt;RGB(A) conversion and because of video/audio sync.</p>
 <p>If I remember correctly we couldn’t play audio, we where using separated tracks and paying the audio via a normal music play and big resolution videos (&gt;500??) where a killer.</p>
 <p>Anyway, since I’m already using OpenAL for audio I decided to give it a try. Unfortunately I didn’t had that code we where using back then so I had to do some digging on the internet.</p>
 <p>So after a few days I had it working but bumped into the same problem, a bit slow. Not as slow as before cause computers have evolved. But after some reading I discovered that you can actually cache some YUV-&gt;RBG values and speed went up by like 10 fold.</p>
-<p><a href="/wp-content/uploads/2012/01/theora_player.png"><img loading="lazy" src="/wp-content/uploads/2012/01/theora_player.png" alt=""  title="theora_player"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/01/theora_player.png"><img loading="lazy" src="/wp-content/uploads/2012/01/theora_player.png" title="theora_player"></a></p>
 <p>I can decode 1080p videos with audio on my Core2Duo @ 2 GHz. And I mention the core since I have the decoding from the file on a separated thread so on a single core it’s probably a bit slower.<br>
 But we probably will be placing videos around 512px width so there’s no problem there. I wonder if we could do the YUV-&gt;RGBA on the GPU side via a shader?</p>
 <p>It’s also worth mentioning that I’m using OpenGL and “glTexSubImage2D” for updating the texture. I found out that it’s much faster than “glTexImage2D” because it respecifies the entire texture, changing its size, deleting the previous data, and so forth. “glTexSubImage2D” only modifies pixel data within the texture.</p>
 <p><strong>Tools</strong></p>
 <p>On the tools realm there was a need for a better Particle System Editor, the one we had has many things but adding stuff was turning into a nightmare, the old editor was build on XNA 3.1 which isn’t supported by VS2010.<br>
 Since the engine is already in C++ I started from scratch and built this handy tool in 3 days or so:</p>
-<p><a href="/wp-content/uploads/2012/01/screenshots2.png"><img loading="lazy" src="/wp-content/uploads/2012/01/screenshots2.png" alt=""  title="screenshots2"  />
-</a></p>
-<p><a href="/wp-content/uploads/2012/01/Screenshot1.png"><img loading="lazy" src="/wp-content/uploads/2012/01/Screenshot1.png" alt=""  title="Screenshot1"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/01/screenshots2.png"><img loading="lazy" src="/wp-content/uploads/2012/01/screenshots2.png" title="screenshots2"></a></p>
+<p><a href="/wp-content/uploads/2012/01/Screenshot1.png"><img loading="lazy" src="/wp-content/uploads/2012/01/Screenshot1.png" title="Screenshot1"></a></p>
 <p>Not vary fancy but it gets the job done.</p>
 <p>My next step was to fix most of the Sprite Sheet Editor bugs and issues my designer had been complaining about.</p>
 <p>I already have an offline tool that grabs a bunch of tiny images and place them in an Atlas but most of the time the designer has the pieces together already on Photoshop so I incorporated a snippet of code that on double clicking an area tries to automatically detect the region around it. Anything that fails can be manually defined, the old fashioned way.</p>
-<p><a href="/wp-content/uploads/2012/01/sprite_editor.png"><img loading="lazy" src="/wp-content/uploads/2012/01/sprite_editor.png" alt=""  title="sprite_editor"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/01/sprite_editor.png"><img loading="lazy" src="/wp-content/uploads/2012/01/sprite_editor.png" title="sprite_editor"></a></p>
 <p>So in the next few days I’m working on the Animation Editor so the artist can quickly create and preview the animations from the sprite sheets without the need for me to place them in the game before hand.</p>
 <p>I had most of these tools but they where awful. They did the trick for Vizati but now I’m trying to do things a bit better.</p>
 <p>See you soon…</p>
@@ -54,10 +50,27 @@ Since the engine is already in C++ I started from scratch and built this handy t
       <link>https://www.david-amador.com/2011/06/playing-sound-using-openal/</link>
       <pubDate>Fri, 10 Jun 2011 09:22:26 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/06/playing-sound-using-openal/</guid>
-      <description>For sound I use OpenAL, it’s free, cross-platform, I’ve managed to get it working on iPhone, Windows and Mac.
-Setting up OpenAL to play a sound is pretty straight forward, a bit like OpenGL.
-First you need to create a context.
-ALCcontext *context; ALCdevice *device; device = alcOpenDevice(NULL, ALC_DEFAULT_DEVICE_SPECIFIER); if (device == NULL) { // Handle Exception } //Create a context context=alcCreateContext(device,NULL); //Set active context alcMakeContextCurrent(context); // Clear Error Code alGetError(); Now for the second part, loading a wav file.</description>
+      <description>&lt;p&gt;For sound I use OpenAL, it’s free, cross-platform, I’ve managed to get it working on iPhone, Windows and Mac.&lt;/p&gt;
+&lt;p&gt;Setting up OpenAL to play a sound is pretty straight forward, a bit like OpenGL.&lt;br&gt;
+First you need to create a context.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ALCcontext&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;context&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ALCdevice&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;device&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;device&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;alcOpenDevice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ALC_DEFAULT_DEVICE_SPECIFIER&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;device&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;c1&#34;&gt;// Handle Exception
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//Create a context
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;context&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;alcCreateContext&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;device&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;NULL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//Set active context
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;alcMakeContextCurrent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;context&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Clear Error Code
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;alGetError&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now for the second part, loading a wav file. You have to open a file, fill buffers with data and then attach it to a source.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>For sound I use OpenAL, it’s free, cross-platform, I’ve managed to get it working on iPhone, Windows and Mac.</p>
 <p>Setting up OpenAL to play a sound is pretty straight forward, a bit like OpenGL.<br>
 First you need to create a context.</p>

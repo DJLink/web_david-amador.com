@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Mac OSX on David Amador</title>
+    <title>Mac-Osx on David Amador</title>
     <link>https://www.david-amador.com/tags/mac-osx/</link>
-    <description>Recent content in Mac OSX on David Amador</description>
+    <description>Recent content in Mac-Osx on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 25 Mar 2024 11:39:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/mac-osx/index.xml" rel="self" type="application/rss+xml" />
@@ -18,83 +18,71 @@
       <link>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</link>
       <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</guid>
-      <description>📝 It&amp;rsquo;s been 10 years It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, Quest of Dungeons was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, mostly nights and weekends.</description>
+      <description>&lt;h1 id=&#34;-its-been-10-years&#34;&gt;📝 It&amp;rsquo;s been 10 years&lt;/h1&gt;
+&lt;p&gt;It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, &lt;a href=&#34;https://www.questofdungeons.com&#34;&gt;Quest of Dungeons&lt;/a&gt; was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, &lt;a href=&#34;https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/&#34;&gt;mostly nights and weekends&lt;/a&gt;. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h1 id="-its-been-10-years">📝 It&rsquo;s been 10 years</h1>
 <p>It&rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, <a href="https://www.questofdungeons.com">Quest of Dungeons</a> was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, <a href="/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/">mostly nights and weekends</a>. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?</p>
 <p>What follows for the rest of the post, is a brain dump of the timeline of some of the most crucial events of this silly little project for anyone who is curious.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png"></p>
 <h1 id="-2011-2013">🤯 2011-2013</h1>
 <p>✔️ Failing can help</p>
 <p>Before the game launched, I had a few years of terrible prototypes, cancelled projects, and other unexpected life events. One day, though, all those mistakes fell into place, and QoD was born—a flow of ideas came to my mind, after seeing a bunch of stuff failed in front of me, but that maybe I could make them work. I knew what I wanted to avoid now and what I things I would like to experiment with. Within this time I also made a simple iOS game called <a href="/2012/09/puwang-a-5-day-work/">Puwang</a>, a gamejam compo, where most of the goal was to make a quick game and hopefully make $100 that year to cover the iOS developer account expenses. For QoD I wanted to make a small game that I could play on my phone during commute, and that&rsquo;s why it started as a mobile-only game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png"></p>
 <p>⌨️ Expanding</p>
 <p>During the time I was the only person to ever played it, I found myself enjoying it on a bigger screen/tablet, and after giving it a 2-3 friends to test and having confirmation, I thought it would be good to launch a desktop version along the iPhone/iPad versions, Windows and Mac.
 This added some development time, but also allowed me to expand the game a bit more, the mobile version was virtually identical to desktop/tabled, but they shared a bigger UI, more suited for Mouse and the higher resolutions.
 This turned out to be one of the best decisions, as the desktop version is foundation for everything after. At this point I was already <a href="/tags/basalt/">rolling my own engine</a> for prior games on mobile and desktop, so most of the development was indeed for game stuff, and not engine. While I&rsquo;ve made the mistake often of &ldquo;build the engine instead of game&rdquo;, here the engine was built around the game, that&rsquo;s how it should be.</p>
 <h1 id="20140325---steam-and-ios-launch">2014/03/25 - Steam and iOS launch</h1>
 <p>I had tried to bring games to Steam before but with no success. The focus was on Mobile, with Desktop in mind, but where to sell it? Before Steam I was able to get confirmation for the new Humble Store, but Steam was still on my mind. In the past I had higher hopes for my first game <a href="/tags/vizati/">Vizati</a>, looked more polished, so QoD didn&rsquo;t seemed to have a chance.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png"></p>
 <p>But I decided to make a trailer and launch a GL page, and imagine my surprise when QoD was approved on Steam Greenlight within a week or so. Just look at my dumb face here that I just digged from some old Tweets.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg" alt="David celebrating QoD approval on Steam Greenlight"  />
-</p>
+<p><img alt="David celebrating QoD approval on Steam Greenlight" loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg"></p>
 <p>With the trailer out, people seemed to enjoyed what they saw, I also thought I was near completing the game, there&rsquo;s always something right? So I pretty much crunched the entire rest of time between my day job and finishing the game.</p>
 <p>Finally on March 25th it was out, everyone could play it. Since the game was only releasing around 18h on Steam, I went to my day job that day, and only took the next day off for checking &amp; fixing bugs etc.</p>
 <p>Initially all I was getting was a flow of emails with some bugs and suggestions, but overall people seemed to like it, which was a relief. There was still tons of stuff to fix, but slowly, and for the next few weeks went through issues and suggestions. On the mobile side of things things were smoother, that version was the older one, had more testing, also less hardware configurations. I recall before launch, a conversation with some coworkers, that making it paid on mobile was probably a mistake, but I don&rsquo;t know how to design games around F2P/Ads, so I made it paid.  But, thankfully, even being a paid game, at $1.99, people were happy with what they were getting.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg"></p>
 <h1 id="20140530---linux">2014/05/30 - Linux</h1>
 <p>This one was something that I had in the back on my mind for a while, theoretically my engine could be ported to Linux, but I was scared of having too many versions at launch, handing those 4 SKUs was already a handful, so this was left for later. This actually ended up being a factor in Humble Bundle contacting me to participate in one of their bundles, back then having a game on all 3 platforms was a must.
 Technically speaking it wasn&rsquo;t extremely complicated, by this time the engine was already relatively split in ways that it was easy to integrate new OS, it was just a matter of implementation.
 Also, now that Steam Deck is a thing, it just worked out of the box.</p>
 <h1 id="20140826---android">2014/08/26 - Android</h1>
 <p>With Desktops and iOS versions being well received I started getting requests for an Android version, I had never worked on this platform, but with most of the know bugs fixed, I bought a cheap Android phone and I moved into porting the game to this platform, you can read more about that <a href="/2014/08/native-game-on-android-porting-quest-of-dungeons/">here</a>.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg"></p>
 <h1 id="2014---ouya-cancelled">2014 - OUYA (cancelled)</h1>
 <p>The hot thing around the time was OUYA, games like TowerFall were born there, so since I had an Android version I started to work on that, because it would be the closest to a traditional console that I thought I could put this game on. I started working on it, but once Microsoft accepted my pitch for the Xbox One (see below), I placed this in low priority. Between the time it took me to develop the Xbox One version, OUYA had it downfall, and by that time I just cancelled it.</p>
 <h1 id="201509---xbox-one">2015/09 - Xbox One</h1>
 <p>In the summer of 2014, after the launch of all those versions, relatively successfully, I started talking with ID@Xbox with the possibility of bringing QoD to Xbox One. There were a couple months of paperwork and mostly the conversation about &ldquo;this is a mouse game, how will it work on consoles?&rdquo;, which was when I started seeing that all the UI needed to be remade, and even some gameplay.</p>
 <p>There are several posts, <a href="/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">here</a>, <a href="/2015/04/necrodancer-is-joining/">here</a>, <a href="/2014/11/qod-xo-devlog-1/">here</a>, <a href="/2015/01/qod-xo-devlog-2/">here</a> and <a href="/2015/02/qod-xo-devlog-3/">here</a>  detailing what went into to that process, but after around 1 year the game was finally released, and all the work put into reworking the game to controller friendly interface and gameplay paid off, it was <a href="/2015/10/quest-of-dungeons-reviews-roundup/">positively received</a>. I also took the opportunity to double the content available, and also add an <a href="/2015/04/necrodancer-is-joining/">extra character</a>. I&rsquo;m sure it was this combination of an almost remade version with increased content that led to it&rsquo;s positive feedback. I&rsquo;m really happy I decided to take all those months to remake it, it was daunting at first, I&rsquo;ll tell you that, but I&rsquo;m glad I did it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg" alt="Quest of Dungeons Xbox One launch"  />
-</p>
+<p><img alt="Quest of Dungeons Xbox One launch" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg"></p>
 <h1 id="20160929---wii-u-and-nintendo-3ds">2016/09/29 - Wii U and Nintendo 3DS</h1>
 <p>Around 2015 summer, before Xbox One release, and if I recall correctly, during Gamescom in Germany, I started talking with Nintendo about bringing the game to Nintendo 3DS and Wii U.</p>
 <p>This was when Nintendo was a bit more restrictive in terms of third party developers, and I was fully expecting, that me, a solo developer, would not make the cut, and it took a lot of months and patience to finally be able to show the game to someone and get accepted as an official Nintendo developer.</p>
 <p>At first my goal was to make Wii U port first because it would be similar to Xbox One, with some additional features for the GamePad. Nintendo 3DS would come later, it would take more work due to it&rsquo;s specifics.</p>
 <p>Unfortunately, or fortunately (depending how you see it), I bricked my Wii U devKit after a couple months of work, when the game was in a good state already but before 100% finished. During the time I waited for repairs I started the Nintendo 3DS version.</p>
 <p>I knew would take a LOT more work, from performance, to completely different UI for dual screen, hybrid of touch + buttons. But when the Wii U devKit arrived, I decided to launch them side-by-side, I talked with Nintendo about a cross-buy possibility, and once they gave the ok that was the goal.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png"></p>
 <p>The Nintendo 3DS version was one of the most complicated ones to pull off. This was also the first time that working on my own engine was the only thing making it possible. A lot of people were suggesting me to use Unity, and I had would have saved time in porting, which can be true, but Unity didn&rsquo;t supported 3DS, so it would never have happened if not for my custom framework.</p>
 <p>This is hands down my favourite version, there is no other like it, mostly because of the nature of the device.</p>
 <p>It was so fun to work with that I found myself <a href="/2016/05/qod-3dswii-u-port-devlog-1/">adding features</a> just because I wanted to test them, like the StreetPass, where you can get ghosts from other players you pass on the street. Nintendo had a really neat device here.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"></p>
 <p>There was some trouble having both versions on the same day, it&rsquo;s a lot of coordination required between me, Nintendo America and Europe teams, 4 different SKUs (3DS NA+EU, Wii U NA+EU), but in the end we made it.</p>
 <p>Like I suspected during my own tests, on the 3DS it was the ideal portable version, it&rsquo;s a game that suits shorts sessions on the go.</p>
 <p>This was also the first time I worked with a publisher for this game, for Japan, the game was published by Flyhigh Works, they took it to Tokyo Game Show, localized to JP, and were crucial in shaping up the 3DS version into what it is. I do recall many sessions where my stubbornness almost caused some bad decisions in the game, but they were really cool in guiding me to make the best of it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg" alt="Quest of Dungeons on Wii U and Nintendo 3DS"  />
-</p>
+<p><img alt="Quest of Dungeons on Wii U and Nintendo 3DS" loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg"></p>
 <h1 id="20170120---playstation-4-and-the-vita-version-that-never-was">2017/01/20 - PlayStation 4 and the Vita version that never was.</h1>
 <p>I love my PlayStation 4, in fact it&rsquo;s the console I have more physical games for.</p>
 <p>So it was with great excitement that after a Skype call with my PlayStation rep I had the greenlight to get the game there. This started around the time of Nintendo too, but sadly, and at first I wanted PS4 + Vita combo, like Wii U + 3DS, but for a variety of reasons the PlayStation Vita never happened.</p>
 <p>This was one of the reasons the PS4 versions was one of the latter ones, I kept hoping I could launch both simultaneously but never happened. Fun fact, this version almost had a physical edition that got cancelled by the publisher at last moment, eventually I even got someone, another publisher, to take care of the PS Vita version, but that also got cancelled later on. So a combination of things that happened that were no one&rsquo;s fault, but also made it a bit hard for me to explain why it wasn&rsquo;t happening. In certain moments it was almost, but it never did happened. It was a bit frustrating that I didn&rsquo;t had clear answers for the players regarding this, but I couldn&rsquo;t, and I tried but failed in the end. Well, that&rsquo;s game development.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png" alt="Quest of Dungeons on PlayStation 4"  />
-</p>
+<p><img alt="Quest of Dungeons on PlayStation 4" loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png"></p>
 <h1 id="20170810---nintendo-switch">2017/08/10 - Nintendo Switch</h1>
 <p>Around 1 month after I released on Wii U and 3DS, Nintendo announced their new hybrid console, the Nintendo Switch. I immediately started getting questions from players about a port. This complicated promoting the new Nintendo versions while everyone was excited about the upcoming console, saving money for it and the games. By coincidence I had launched both versions right at the end.</p>
 <p>I can&rsquo;t recall exactly when conversations started with Nintendo about this, since it was in hot demand, both for retail and developers, but eventually Nintendo shipped me a devKit and I started porting. It was released first in the Japanese regions, again by Flyhigh Works. But a few weeks later again by me in the rest of the world. This version had the portability of 3DS, and graphics/resolution and UI of the home consoles. This was also the first time I made a demo for the game, which still exists on the eShop.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg" alt="Quest of Dungeons on Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons on Nintendo Switch" loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg"></p>
 <h1 id="2019---dreamcast-just-having-fun">2019 - Dreamcast (just having fun)</h1>
 <p>In 2019 I got my hands on a Dreamcast I decided to &ldquo;wonder if I can port it there?&rdquo;, it was never really meant for a full release, that would take months of time that I don&rsquo;t have at the moment,
 I just posting it here for the record, this was under a week of work, it was fun. Maybe if I reach retirement I&rsquo;ll take some time to finish it. There&rsquo;s a lot of work left in there.</p>
 <p>After a while booting the game on an emulator,</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png" alt="Quest of Dungeons running on emulator 1"  />
-</p>
+<p><img alt="Quest of Dungeons running on emulator 1" loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png"></p>
 <p>and then later when I got it booting on a real Dreamcast</p>
 <video width="100%" controls>
     <source src="/wp-content/uploads/2024/03/qod_running_on_dreamcast.mp4" type="video/mp4">
@@ -103,15 +91,12 @@ I just posting it here for the record, this was under a week of work, it was fun
 
 <h1 id="20210413---switch-physical-edition">2021/04/13 - Switch Physical Edition</h1>
 <p>Like I mentioned before, I tried to get the game in physical format before, and I kept trying for years but it simply wasn&rsquo;t happening. Until 2021, when by random chance, someone recommended me Leoful, and they accepted right away, in fact, from initial contact to production, it was just a couple months, I&rsquo;m really happy I was able to finally get the game on an actual box, it hits differently, as I <a href="/2010/08/games-and-systems-from-childhood/">grew playing Nintendo games</a>,  and also feels like a closure to a project that started on a smaller device and made it&rsquo;s way to a real physical game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png" alt="Quest of Dungeons Physical Edition for Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons Physical Edition for Nintendo Switch" loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png"></p>
 <h1 id="2022---">2022 - ??</h1>
 <p>Right now the game still exists in several stores (R.I.P. Nintendo 3DS and Wii U), and it&rsquo;s in maintenance mode only. The platforms patched more regularly are the mobile ones, whenever Apple or Android come up with new rules or it breaks on new devices. Windows gives nearly no problems, MacOS breaks things more often, but overall it doesn&rsquo;t give a lot of work, the last time I had to mess with it, was the Linux version to patch stuff for Steam Deck, but it was relatively easy.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg" alt="Quest of Dungeons on Steam Deck"  />
-</p>
+<p><img alt="Quest of Dungeons on Steam Deck" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg"></p>
 <p>So in the end things worked out, and I want to say a big thank you to everyone who supported this project, I read all the emails, DMs, messages everyone sent over the years, even fanart, you rock.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif"></p>
 <h1 id="some-trivia">Some trivia</h1>
 <ul>
 <li>The game has 79k of code (all platforms)</li>
@@ -126,8 +111,7 @@ I just posting it here for the record, this was under a week of work, it was fun
 <li>The initial skull sign, which only exists at the very start, was a way to teach the player that death meant restarting, in 2013-14 roguelikes weren&rsquo;t as popular and it was seen as a shock for that to happen (play-testers would email me &ldquo;my save is lost&rdquo;). My goal was that by potentially learning that early on, the player would not get surprised.</li>
 </ul>
 <p>Thank you for reading all of this.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png"></p>
 <p>Here&rsquo;s a cool image made by <a href="https://twitter.com/LeonorParra08">Leonor</a>.</p>
 ]]></content:encoded>
     </item>
@@ -136,22 +120,18 @@ I just posting it here for the record, this was under a week of work, it was fun
       <link>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</link>
       <pubDate>Wed, 11 Dec 2013 12:00:14 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/12/quest-of-dungeons-development-update/</guid>
-      <description>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.
-I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too.</description>
+      <description>&lt;p&gt;I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.&lt;br&gt;
+I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too. I’m just polishing the game and finishing some bugs, but I’m close, I can feel it =)&lt;br&gt;
+Right now I’m targeting for a late January release, but I’ll have a more precise date in the next few weeks.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been working on Quest of Dungeons and I’m nearing Gold. I’m attempting to release every version on the same day, which I never managed to do before but would like to do this time.<br>
 I have both the iOS, Mac and Windows version very stable, the Mac and iOS apps were already accepted by the App Store, for Windows I’m still trying to wrap up the process of getting it on a digital store too. I’m just polishing the game and finishing some bugs, but I’m close, I can feel it =)<br>
 Right now I’m targeting for a late January release, but I’ll have a more precise date in the next few weeks.</p>
 <p>Meanwhile here are a couple of screenshots.</p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01-300x187.png" alt="quest_of_dungeons_mac_01"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02-300x187.png" alt="quest_of_dungeons_mac_02"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03-300x187.png" alt="quest_of_dungeons_mac_03"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04-300x187.png" alt="quest_of_dungeons_mac_04"  />
-</a></p>
-<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png"><img loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05-300x187.png" alt="quest_of_dungeons_mac_05"  />
-</a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01.png"><img alt="quest_of_dungeons_mac_01" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_01-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02.png"><img alt="quest_of_dungeons_mac_02" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_02-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03.png"><img alt="quest_of_dungeons_mac_03" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_03-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04.png"><img alt="quest_of_dungeons_mac_04" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_04-300x187.png"></a></p>
+<p><a href="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png"><img alt="quest_of_dungeons_mac_05" loading="lazy" src="/wp-content/uploads/2013/12/quest_of_dungeons_mac_05-300x187.png"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -159,14 +139,13 @@ Right now I’m targeting for a late January release, but I’ll have a more pre
       <link>https://www.david-amador.com/2013/12/first-macbook-pro/</link>
       <pubDate>Wed, 11 Dec 2013 11:41:20 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/12/first-macbook-pro/</guid>
-      <description>I’ve been developing apps on Mac for almost 2 years now. But usually it’s pretty much just a develop on Windows, boot my 2009 Mini Mac, build on XCode and deploy.
-I always wanted to give it a try at using MacOSX as the main development environment, but the mini mac is too slow and well, Visual Studio. Also I don’t like that new Windows 8 that much. I hope Win9 gets back on track, in the line of Win 7.</description>
+      <description>&lt;p&gt;I’ve been developing apps on Mac for almost 2 years now. But usually it’s pretty much just a develop on Windows, boot my 2009 Mini Mac, build on XCode and deploy.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Mini Mac&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/07/DSCF0003.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I always wanted to give it a try at using MacOSX as the main development environment, but the mini mac is too slow and well, Visual Studio. Also I don’t like that new Windows 8 that much. I hope Win9 gets back on track, in the line of Win 7. I never owned a Mac other than the Mac Mini but since recently Apple released some new Macbook pro models, which have &lt;a href=&#34;http://en.wikipedia.org/wiki/Haswell_(microarchitecture)&#34;&gt;Haswell&lt;/a&gt; processors and I decided to get one.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been developing apps on Mac for almost 2 years now. But usually it’s pretty much just a develop on Windows, boot my 2009 Mini Mac, build on XCode and deploy.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" alt="Mini Mac"  />
-</p>
+<p><img alt="Mini Mac" loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg"></p>
 <p>I always wanted to give it a try at using MacOSX as the main development environment, but the mini mac is too slow and well, Visual Studio. Also I don’t like that new Windows 8 that much. I hope Win9 gets back on track, in the line of Win 7. I never owned a Mac other than the Mac Mini but since recently Apple released some new Macbook pro models, which have <a href="http://en.wikipedia.org/wiki/Haswell_(microarchitecture)">Haswell</a> processors and I decided to get one.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2013/11/first-macbook-pro-2013.jpg" alt="first-macbook-pro-2013"  />
-</p>
+<p><img alt="first-macbook-pro-2013" loading="lazy" src="/wp-content/uploads/2013/11/first-macbook-pro-2013.jpg"></p>
 <p>Since on my day job I work on Linux and I’m trying to use only Mac at home I haven’t used Windows for over two months.<br>
 Overall the experience has been great, mostly because it’s an extremely fast machine. A full build of Quest of Dungeons (game+engine) takes around 1m, on my old computer a full build would take between 4-5m. Oh and the retina screen, so gorgeous, everything else seems out of focus now, it’s really a huge difference, coding on that screen is a real treat.<br>
 The window management on OSX is really cool, it remembers the last positions of multiple displays, so if I unplug the laptop from my external monitor, even if I move around the windows and then reconnect the monitor it remembers the dual-monitor windows positions and puts them into place, time saver.</p>
@@ -178,16 +157,15 @@ The window management on OSX is really cool, it remembers the last positions of 
       <link>https://www.david-amador.com/2012/12/darys-legend-alpha-released/</link>
       <pubDate>Wed, 05 Dec 2012 13:38:51 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/12/darys-legend-alpha-released/</guid>
-      <description>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like Puwang and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.
-Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</description>
-      <content:encoded><![CDATA[<p><a href="http://www.daryslegend.com"><img loading="lazy" src="/wp-content/uploads/2012/12/header.jpg" alt=""  title="Dary&#39;s Legend"  />
-</a></p>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.daryslegend.com&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2012/12/header.jpg&#34; title=&#34;Dary&amp;#39;s Legend&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like &lt;a href=&#34;https://www.david-amador.com/2012/10/puwang-is-out-on-the-app-store/&#34; title=&#34;Puwang is out on the App Store&#34;&gt;Puwang&lt;/a&gt; and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.&lt;/p&gt;
+&lt;p&gt;Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><a href="http://www.daryslegend.com"><img loading="lazy" src="/wp-content/uploads/2012/12/header.jpg" title="Dary&#39;s Legend"></a></p>
 <p>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like <a href="/2012/10/puwang-is-out-on-the-app-store/" title="Puwang is out on the App Store">Puwang</a> and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.</p>
 <p>Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</p>
 <p>So yesterday we released it, and you can buy the game right now, get an alpha build with a nice discount while it doesn’t reach the final build and help us funding the development along the way.</p>
 <p>The build is relatively stable, no major crashes crashes that we know and there’s a Windows and Mac build.</p>
-<p><a href="http://www.desura.com/games/darys-legend" title="Dary's Legend on Desura"><img loading="lazy" src="http://button.desura.com/play/outline/games/17158.png" alt="Desura Digital Distribution"  />
-</a></p>
+<p><a href="http://www.desura.com/games/darys-legend" title="Dary's Legend on Desura"><img alt="Desura Digital Distribution" loading="lazy" src="http://button.desura.com/play/outline/games/17158.png"></a></p>
 <p><em>Coder-Side-Notes</em></p>
 <p>Personally, and although I’m happy that I managed to get a Windows and Mac build released side-by-side I’m also a bit sad that I haven’t been able to release it simultaneously for Linux as well.</p>
 <p>Initially my thought was, “Windows only till the final release, I’ll deal with ports later”. But the market is harsh and getting into 2 different platforms can get you more chances of selling.</p>
@@ -203,12 +181,10 @@ After a few tweaks and hacks I had it running, why not release it? So right now,
       <link>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
       <pubDate>Mon, 26 Jul 2010 20:37:41 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
-      <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
-The poll closes in about 6 days and you can select various options of course.</description>
+      <description>&lt;p&gt;I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (&lt;a href=&#34;http://twtpoll.com/dar51l&#34;&gt;http://twtpoll.com/dar51l&lt;/a&gt;) so that we can have more accurate results.&lt;/p&gt;
+&lt;p&gt;The poll closes in about 6 days and you can select various options of course.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (<a href="http://twtpoll.com/dar51l">http://twtpoll.com/dar51l</a>) so that we can have more accurate results.</p>
 <p>The poll closes in about 6 days and you can select various options of course.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
 ]]></content:encoded>
     </item>
     <item>
@@ -216,20 +192,18 @@ The poll closes in about 6 days and you can select various options of course.</d
       <link>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</link>
       <pubDate>Fri, 09 Jul 2010 09:59:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/developing-on-mac-and-basalt-running-on-the-iphone/</guid>
-      <description>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.
-If you follow me on twitter you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.
-So it all started with my wish to port Vizati to the iPhone, since the game is already running on PC, Xbox360 and Windows Phone 7 one can only wish for an easy and quick port since pretty much all base code is done.</description>
+      <description>&lt;p&gt;It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.&lt;br&gt;
+If you follow me on &lt;a href=&#34;https://twitter.com/DJ_Link&#34;&gt;twitter&lt;/a&gt; you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.&lt;/p&gt;
+&lt;p&gt;So it all started with my wish to port Vizati to the iPhone, since the game is already running on &lt;a href=&#34;http://www.youtube.com/watch?v=F9vf17HSXcQ&#34;&gt;PC&lt;/a&gt;, Xbox360 and &lt;a href=&#34;http://www.youtube.com/watch?v=hX18tuujAEY&#34;&gt;Windows Phone 7&lt;/a&gt; one can only wish for an easy and quick port since pretty much all base code is done.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>It’s been around two weeks since my last post. Basically because I’ve been busy porting my engine Basalt to iPhone/iPad.<br>
 If you follow me on <a href="https://twitter.com/DJ_Link">twitter</a> you might have known this already since I ranted pretty much at start, moving platform and language is always painful if you are used to other conventions/shortcuts etc.</p>
 <p>So it all started with my wish to port Vizati to the iPhone, since the game is already running on <a href="http://www.youtube.com/watch?v=F9vf17HSXcQ">PC</a>, Xbox360 and <a href="http://www.youtube.com/watch?v=hX18tuujAEY">Windows Phone 7</a> one can only wish for an easy and quick port since pretty much all base code is done.</p>
 <p>As you know for developing on the iPhone you require an actual Mac, I know there’s virtualization but my 5 year old PC can’t take it, believe me I tried. So I bought myself a mini mac which are much cheaper that IMac and macbooks, around $499 or so, and another extra $30 for a mini-Dvi to VGA adapter for my 1080p Samsung.</p>
 <p>Let me tell you, that bastard is silent, I mean I can’t listen to anything, powering off my desktop PC and I have this relaxing environment to work in, it’s great for coding during the night when everyone is asleep. I can only hear my keyboard strokes and my cat snoring.<br>
 Here’s a picture of it near the keyboard, it’s really small.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" alt=""  title="Mini Mac"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/DSCF0003.jpg" title="Mini Mac"></p>
 <p>Now, moving on to the development part, on MacOS your IDE is XCode.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/xcode.png" alt=""  title="xcode"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/xcode.png" title="xcode"></p>
 <p>It’s no Visual Studio but it gets the job done. Has some strange shortcuts but I’ve found a neat <a href="https://web.archive.org/web/20150413150630/http://www.1729.us/xcode/Xcode%20Shortcuts.pdf">shortcut pdf</a>.</p>
 <p>Next was my struggle for testing available engines and frameworks and learning how much of Objective-C do you have to know and can I run C++ on it?</p>
 <p>I tested some engines:<br>
@@ -242,8 +216,7 @@ Here’s a picture of it near the keyboard, it’s really small.</p>
 <p>I ported my C# engine Basalt to C++, literally making .h and .cpp files. I hooked up my main animation and draw pump to some Objective-C classes (don’t forget to use .mm if you are mixing Objective-C with C++) and everything started working.</p>
 <p>The next bit was implementing the SpriteBatch class and make it draw in OpenGL, took me around two days to have the Matrices working, correct texture mapping to quads, Alpha Blend and Additive. The idea is that by the time I port an XNA game to C++ I can still use SpriteBatches, Texture2D etc.</p>
 <p>After these two weeks of development here’s what’s working:</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/IPhone-Basalt-Particle-System-2D.png" alt=""  title="iPhone Basalt Particle System 2D"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/IPhone-Basalt-Particle-System-2D.png" title="iPhone Basalt Particle System 2D"></p>
 <ul>
 <li>Draw Sprites – SpriteBatch is working, texture regions, SpriteBlendModes, Matrices etc</li>
 <li>Sprite Animations</li>
@@ -253,9 +226,12 @@ Here’s a picture of it near the keyboard, it’s really small.</p>
 </ul>
 <p>Here’s a video showing what I have so far:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ALzSzhvp2ns" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ALzSzhvp2ns?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Next in my list is Input, Script, music and then porting the whole game to C++, which I think will work nicely once the whole engine base is done.<br>
 Oh, and probably try to get a real device for proper testing.</p>
@@ -267,9 +243,9 @@ Oh, and probably try to get a real device for proper testing.</p>
       <link>https://www.david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</link>
       <pubDate>Wed, 29 Apr 2009 11:48:38 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</guid>
-      <description>So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.
-First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.
-I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen.</description>
+      <description>&lt;p&gt;So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.&lt;/p&gt;
+&lt;p&gt;First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.&lt;/p&gt;
+&lt;p&gt;I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen. Too bad I don’t have an actual Iphone to test it, so I just used the provided iphone simulator.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.</p>
 <p>First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.</p>
 <p>I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen. Too bad I don’t have an actual Iphone to test it, so I just used the provided iphone simulator.</p>

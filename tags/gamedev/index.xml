@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>gamedev on David Amador</title>
+    <title>Gamedev on David Amador</title>
     <link>https://www.david-amador.com/tags/gamedev/</link>
-    <description>Recent content in gamedev on David Amador</description>
+    <description>Recent content in Gamedev on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 15 Nov 2024 14:39:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/gamedev/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,9 @@
       <link>https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/</link>
       <pubDate>Fri, 15 Nov 2024 14:39:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/</guid>
-      <description>🧵 origin thread In 2018 I started a thread on Twitter (later renamed X 🙄) where I shared some game development tricks devs used to get around bugs, software, hardware and/or time constraints. Later I kept adding more posts to that thread, and there&amp;rsquo;s some cool information there. But because I now went through the process of replicating that thread on both Mastodon and Bluesky; it got me thinking, I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever gone.</description>
+      <description>&lt;h2 id=&#34;-origin-thread&#34;&gt;🧵 origin thread&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In 2018 I started a thread on Twitter (later renamed X 🙄) where &lt;a href=&#34;https://x.com/DJ_Link/status/964124424969637888&#34;&gt;I shared some game development tricks&lt;/a&gt; devs used to get around bugs, software, hardware and/or time constraints. Later I kept adding more posts to that thread, and there&amp;rsquo;s some cool information there. But because I now went through the process of replicating that thread on both &lt;a href=&#34;https://mastodon.gamedev.place/deck/@djlink/109313319839796759&#34;&gt;Mastodon&lt;/a&gt; and &lt;a href=&#34;https://bsky.app/profile/djlink.bsky.social/post/3l6ubkivh5o2t&#34;&gt;Bluesky&lt;/a&gt;; it got me thinking, I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever gone. If I find more I&amp;rsquo;ll add them later. This page may take a bit to load due to images, gifs videos etc.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="-origin-thread">🧵 origin thread</h2>
 <blockquote>
 <p>In 2018 I started a thread on Twitter (later renamed X 🙄) where <a href="https://x.com/DJ_Link/status/964124424969637888">I shared some game development tricks</a> devs used to get around bugs, software, hardware and/or time constraints. Later I kept adding more posts to that thread, and there&rsquo;s some cool information there. But because I now went through the process of replicating that thread on both <a href="https://mastodon.gamedev.place/deck/@djlink/109313319839796759">Mastodon</a> and <a href="https://bsky.app/profile/djlink.bsky.social/post/3l6ubkivh5o2t">Bluesky</a>; it got me thinking, I should probably put this on my own blog, a single post, which is easier to read, also in case those websites are ever gone. If I find more I&rsquo;ll add them later. This page may take a bit to load due to images, gifs videos etc.</p>
@@ -27,145 +29,129 @@
 <h3 id="-skyrim-shelves">👾 Skyrim shelves</h3>
 <p>Skyrim small tables are actually shelves buried. If you can&rsquo;t see it &hellip;</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg" alt="Skyrim buried shelves 1"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg" alt="Skyrim buried shelves 2"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg"><img alt="Skyrim buried shelves 1" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_1.jpg"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg"><img alt="Skyrim buried shelves 2" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_2.jpg"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-jak-and-daxter-loading">👾 Jak and Daxter loading</h3>
 <p>In Jak and Daxter if by any chance the Area/assets ahead aren&rsquo;t fully loaded the game will make you trip to give it more time to load in background.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/jak_dexter_tripping_loading.gif" alt="Jak and Daxter tripping loading"  />
-</p>
+<p><img alt="Jak and Daxter tripping loading" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/jak_dexter_tripping_loading.gif"></p>
 <hr>
 <h3 id="-super-mario-64-infinite-stairs">👾 Super Mario 64 infinite stairs</h3>
 <p>In Super Mario 64 this is how Nintendo got the infinite stairs effect working, teleport. Mario keeps getting teleported to a prior point on the stairs which makes it impossible to progress in a normal way. But this is also the reason why Speedrunners can glitch the effect and skip it using the backwards jump trick.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_64_infinite_stairs.gif" alt="Super Mario 64 infinite stairs"  />
-</p>
+<p><img alt="Super Mario 64 infinite stairs" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_64_infinite_stairs.gif"></p>
 <hr>
 <h3 id="-wing-commander-memory-exception">👾 Wing Commander memory exception</h3>
 <p>There was a memory exception in Wing Commander on exit, because of the deadline they left it but change the error message to &ldquo;Thank you for playing Wing Commander!&rdquo;</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/wing_commander_exit_message.jpg" alt="Wing Commander exit message"  />
-</p>
+<p><img alt="Wing Commander exit message" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/wing_commander_exit_message.jpg"></p>
 <hr>
 <h3 id="-undertale-npc-pathfinding">👾 Undertale NPC pathfinding</h3>
 <p>This one is from Undertale, to prevent NPCs to walk on pits, developer added Magic glass so that way &ldquo;it works&rdquo;.</p>
 <table>
-<thead>
-<tr>
-<th><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_1.jpg" alt="Undertale magic glass 1"  />
-</th>
-<th><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_2.jpg" alt="Undertale magic glass 2"  />
-</th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><img alt="Undertale magic glass 1" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_1.jpg"></th>
+          <th><img alt="Undertale magic glass 2" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/undertale_magic_glass_2.jpg"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-fallout-3-trains-are-hats">👾 Fallout 3 trains are hats</h3>
 <p>In Fallout 3 all the trains are actually a character wearing a train model as a hat. <a href="https://www.pcgamer.com/heres-whats-happening-inside-fallout-3s-metro-train/">Source</a>.</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg" alt="Fallout 3 Trains"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg" alt="Fallout 3 Trains"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg"><img alt="Fallout 3 Trains" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_1.jpg"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg"><img alt="Fallout 3 Trains" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/fallout3_train_2.jpg"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-donkey-kong-64-memory-crash-myth">👾 Donkey Kong 64 memory crash (myth)</h3>
 <p>This one was later proved as a myth by developers on my thread, but I&rsquo;m leaving it here since you can still find it in tons of places, so this way here it has a correction that it was in fact a myth.</p>
 <p>Internet theories says that Donkey Kong 64 had a memory crash/limit bug on standard N64. Unable to identify the cause of the crash they decided to ship the game with the memory expansion bundled with game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/donkey_kong_64.jpg" alt="Donkey Kong 64"  />
-</p>
+<p><img alt="Donkey Kong 64" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/donkey_kong_64.jpg"></p>
 <hr>
 <h3 id="-super-mario-bros-reuse-of-grassclouds">👾 Super Mario Bros. reuse of grass/clouds</h3>
 <p>In Super Mario Bros. because of memory limitations clouds and bushes are the same sprite but using a different color palette.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_bros_grass_clouds.jpg" alt="Super Mario Bros. reuse of grass and clouds"  />
-</p>
+<p><img alt="Super Mario Bros. reuse of grass and clouds" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/super_mario_bros_grass_clouds.jpg"></p>
 <hr>
 <h3 id="-kirby-dream-land-memory-saving">👾 Kirby Dream Land memory saving</h3>
 <p>In Kirby Dream Land for Gameboy, to save memory some enemies have the same &ldquo;back&rdquo; part of the sprite and only change the face.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/kirby_gameboy_reuse_assets.jpg" alt="Kirby Dream Land memory saving"  />
-</p>
+<p><img alt="Kirby Dream Land memory saving" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/kirby_gameboy_reuse_assets.jpg"></p>
 <hr>
 <h3 id="-zelda-a-link-between-worlds-fake-perspective">👾 Zelda A Link Between Worlds fake perspective</h3>
 <p>This is one of my fav, in Zelda: A Link Between Worlds because a true top down view in 3D had some issues, they purposely tilt the objects so the perspective looks good to the player.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/zelda_link_between_worlds_skewed_view.jpg" alt="Zelda A Link Between Worlds fake perspective"  />
-</p>
+<p><img alt="Zelda A Link Between Worlds fake perspective" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/zelda_link_between_worlds_skewed_view.jpg"></p>
 <hr>
 <h3 id="-duke-nukem-mirrors">👾 Duke Nukem mirrors</h3>
 <p>Duke Nukem 3D mirrors reflection were achieved by duplicating the room on the other side. If you deactivate clipping you can go to the other side. True reflections are computational intensive even today.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duke_nukem_mirrors.gif" alt="Duke Nukem mirrors"  />
-</p>
+<p><img alt="Duke Nukem mirrors" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duke_nukem_mirrors.gif"></p>
 <hr>
 <h3 id="-nba-jam-te-cartridge-day-one-patch">👾 NBA Jam: T.E. cartridge day one &ldquo;patch&rdquo;</h3>
 <p>In NBA Jam: T.E. for Genesis/Mega Drive devs only found out after making the 250k cartridges there was a save bug. Playing game in a certain order fixed it so it got a day one patch in the manual saying how to initialize memory.</p>
-<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg" alt="NBA Jam T.E"  />
-</a></p>
-<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png" alt="NBA Jam T.E"  />
-</a></p>
+<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg"><img alt="NBA Jam T.E" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_1.jpg"></a></p>
+<p><a href="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png"><img alt="NBA Jam T.E" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/nba_jam_2.png"></a></p>
 <hr>
 <h3 id="-mario-galaxy-drown-animation">👾 Mario Galaxy drown animation</h3>
 <p>In Super Mario Galaxy when Mario drowns in a swap his hand reaches out, because of the size of the head they have to shrink it so only the hand is visible to the player.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/mario_galaxy_drown_animation.gif" alt="Mario Galaxy drown animation"  />
-</p>
+<p><img alt="Mario Galaxy drown animation" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/mario_galaxy_drown_animation.gif"></p>
 <hr>
 <h3 id="-world-of-warcraft-rest-bonus">👾 World of Warcraft rest bonus</h3>
 <p>World of Warcraft rest bonus was made to encourage breaks, half XP gained after a few hours. Players hated, so they made everything take 2x as much XP to achieve but you start at 200% XP and gradually back to 100%. Same thing &amp; players are happy. <a href="https://www.psychologyofgames.com/2010/03/framing-and-world-of-warcrafts-rest-system/">source</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/world_of_warcraft_rest_bonus.jpg" alt="World of Warcraft rest bonus"  />
-</p>
+<p><img alt="World of Warcraft rest bonus" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/world_of_warcraft_rest_bonus.jpg"></p>
 <hr>
 <h3 id="-resident-evil-4-radio-billboards">👾 Resident Evil 4 radio billboards</h3>
 <p>This one is not as unknown or hard to imagine but in Resident Evil 4 during the radio chat cutscenes it&rsquo;s actually a 2D panel with the 3D models behind. Many other games do this too.</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg" alt="Resident Evil 4"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg" alt="Fallout 3 Trains"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg"><img alt="Resident Evil 4" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_1.jpg"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg"><img alt="Fallout 3 Trains" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/resident_evil_4_cutscene_behind_2.jpg"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-duck-hunt-zapper">👾 Duck Hunt Zapper</h3>
 <p>In Duck Hunt the NES Zapper worked by blacking out screen &amp; drawing white blocks around targets when you fire, for a couple frames. The diode in the Zapper detects the change in light intensity and tells the computer if it’s pointed at a lit target.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duck_hunt_zapper.gif" alt="Duck Hunt Zapper"  />
-</p>
+<p><img alt="Duck Hunt Zapper" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/duck_hunt_zapper.gif"></p>
 <hr>
 <h3 id="-metal-gear-solid-ps1-reflections">👾 Metal Gear Solid PS1 reflections</h3>
 <p>In Metal Gear Solid 1, another reflection trick. Water puddle in 1st mission map is just a transparent texture with the geometry of ceiling and walls duplicated below the ground. That&rsquo;s why you can&rsquo;t see Snake reflection.</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg" alt="Metal Gear Solid"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg" alt="Metal Gear Solid"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg"><img alt="Metal Gear Solid" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_1.jpg"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg"><img alt="Metal Gear Solid" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metal_gear_solid_reflections_2.jpg"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-prince-of-persia-animations">👾 Prince of Persia animations</h3>
 <p>In Prince of Persia (1989) animations looked fluid &amp; realistic because Jordan Mechner used Rotoscope, he filmed his brother doing the stunts, took pictures with camera, had them developed at Fotomat and then traced them, frame by frame.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/prince_of_persia_rotoscope.gif" alt="Prince of Persia Rotoscope"  />
-</p>
+<p><img alt="Prince of Persia Rotoscope" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/prince_of_persia_rotoscope.gif"></p>
 <hr>
 <h3 id="-tomb-raider-sega-saturn">👾 Tomb Raider Sega Saturn</h3>
 <p>Sega Saturn used Quads instead of triangles (the industry norm) for rendering, which is good for 2D but not as practical for 3D, devs had to work around that, so games like Tomb Raider had to be built to support quads on Saturn and triangles on PlayStation.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/tomb_raider_saturn_quads.gif" alt="Tomb Raider Sega Saturn quads"  />
-</p>
+<p><img alt="Tomb Raider Sega Saturn quads" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/tomb_raider_saturn_quads.gif"></p>
 <hr>
 <h3 id="-pong">👾 Pong</h3>
 <p>Original Pong had 0 lines of code.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/pong_0_lines_code.jpg" alt="Pong"  />
-</p>
+<p><img alt="Pong" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/pong_0_lines_code.jpg"></p>
 <hr>
 <h3 id="-paper-mario-shadows">👾 Paper Mario shadows</h3>
 <p>Paper Mario uses a transparent mesh to simulate door shadows.</p>
@@ -203,14 +189,14 @@
 <h3 id="-grand-theft-auto-tanks">👾 Grand Theft Auto tanks</h3>
 <p>In GTA the tanks were made with pedestrians that were on top of a car to use the existing shooting mechanics and also the driving code.</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png" alt="Grand Theft Auto Tanks"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png" alt="Grand Theft Auto Tanks"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png"><img alt="Grand Theft Auto Tanks" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_1.png"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png"><img alt="Grand Theft Auto Tanks" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/gta_tanks_2.png"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-kirby-and-the-forgotten-land-game-feel">👾 Kirby and the Forgotten Land game feel</h3>
@@ -224,20 +210,19 @@
 <h3 id="-skyrim-npcs-inventory-system">👾 Skyrim NPCs inventory system</h3>
 <p>Skyrim handles each NPCs inventory by having it on a unique chest hidden under the map. Most are impossible to get unless clipping is used, but sometimes you can find them.</p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg" alt="Skyrim NPC inventory"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg" alt="Skyrim NPC inventory"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg"><img alt="Skyrim NPC inventory" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_1.jpg"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg"><img alt="Skyrim NPC inventory" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/skyrim_npc_chests_2.jpg"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-doom-3-volumetric-glow">👾 Doom 3 volumetric glow</h3>
 <p>Doom 3 fakes volumetric glow by folding vertexes with camera movement. <a href="https://simonschreibt.de/gat/doom-3-volumetric-glow/">source</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/doom3_volumetric_glow.gif" alt="Doom 3 volumetric glow"  />
-</p>
+<p><img alt="Doom 3 volumetric glow" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/doom3_volumetric_glow.gif"></p>
 <hr>
 <h3 id="-lord-of-the-rings-engine-reuse">👾 Lord of the Rings engine reuse</h3>
 <p>Lord of the Rings game was made by reusing Tiger Woods golf game because they needed large areas with a goal/castle at the end, a golf game is just that. I think it’s quite funny how far apart they are but it works.</p>
@@ -249,33 +234,29 @@
 <hr>
 <h3 id="-metroid-prime-noise-texture">👾 Metroid Prime noise texture</h3>
 <p>In order to save memory, Metroid Prime fullscreen static texture effect is generated using random live RAM data, which is just the game itself running, GameCube only had 24MB. <a href="https://x.com/ZoidCTF/status/1590012338421518337">source</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metroid_prime_noise_texture.jpg" alt="Metroid Prime"  />
-</p>
+<p><img alt="Metroid Prime" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/metroid_prime_noise_texture.jpg"></p>
 <hr>
 <h3 id="-titan-quest-action-delays">👾 Titan Quest action delays</h3>
 <p>On Titan Quest, because there was no way to script timed delays actions, developers created ambient creatures like Squirrels and used their animations as a way to count time to trigger the events.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/titan_quest_timed_delays.png" alt="Titan Quest action delays"  />
-</p>
+<p><img alt="Titan Quest action delays" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/titan_quest_timed_delays.png"></p>
 <hr>
 <h3 id="-journey-shadows">👾 Journey shadows</h3>
 <p>Journey doesn&rsquo;t have a real-time shadow system so they are hand painted and baked later. The results are impressive but the amount of work involved wow. <a href="https://x.com/matt_nava/status/1503152810078052355">source</a></p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_1.png" alt="Journey Shadows"  />
-</p>
+<p><img alt="Journey Shadows" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_1.png"></p>
 <table>
-<thead>
-<tr>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png" alt="Journey Shadows"  />
-</a></th>
-<th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png"><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png" alt="Journey Shadows"  />
-</a></th>
-</tr>
-</thead>
+  <thead>
+      <tr>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png"><img alt="Journey Shadows" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_2.png"></a></th>
+          <th><a href="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png"><img alt="Journey Shadows" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/journey_shadows_3.png"></a></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
 <hr>
 <h3 id="-silent-hill-2-mirror">👾 Silent Hill 2 mirror</h3>
 <p>Another duplicate room mirror trick, this time Silent Hill 2, in the beginning of the game, the mirror reflection is just the entire bathroom duplicated.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/silent_hill_2_mirror_duplicate_room.jpg" alt="Silent Hill 2 mirror"  />
-</p>
+<p><img alt="Silent Hill 2 mirror" loading="lazy" src="/wp-content/uploads/2024/11/gamedev-tricks/silent_hill_2_mirror_duplicate_room.jpg"></p>
 <hr>
 <p>(to be continued &hellip;. maybe)</p>
 ]]></content:encoded>
@@ -285,83 +266,71 @@
       <link>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</link>
       <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2024/03/quest-of-dungeons-turns-10-years-old/</guid>
-      <description>📝 It&amp;rsquo;s been 10 years It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, Quest of Dungeons was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, mostly nights and weekends.</description>
+      <description>&lt;h1 id=&#34;-its-been-10-years&#34;&gt;📝 It&amp;rsquo;s been 10 years&lt;/h1&gt;
+&lt;p&gt;It&amp;rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, &lt;a href=&#34;https://www.questofdungeons.com&#34;&gt;Quest of Dungeons&lt;/a&gt; was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, &lt;a href=&#34;https://www.david-amador.com/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/&#34;&gt;mostly nights and weekends&lt;/a&gt;. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h1 id="-its-been-10-years">📝 It&rsquo;s been 10 years</h1>
 <p>It&rsquo;s around 11 a.m. as start to type this. 10 years ago at this hour, I was at my day job, trying to focus and not be distracted by the fact that later that day, at around 18h, <a href="https://www.questofdungeons.com">Quest of Dungeons</a> was being released on Steam and iOS. For the first time, players around the world could try it. I was quite anxious about this; it had been a few years in the making, <a href="/2014/10/indie-dev-day-job-making-it-work-building-quest-of-dungeons/">mostly nights and weekends</a>. I had little idea of what to expect, but being on Steam was simultaneously exciting and terrifying. What if people hated it?</p>
 <p>What follows for the rest of the post, is a brain dump of the timeline of some of the most crucial events of this silly little project for anyone who is curious.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/pixel_logo_v1_4x.png"></p>
 <h1 id="-2011-2013">🤯 2011-2013</h1>
 <p>✔️ Failing can help</p>
 <p>Before the game launched, I had a few years of terrible prototypes, cancelled projects, and other unexpected life events. One day, though, all those mistakes fell into place, and QoD was born—a flow of ideas came to my mind, after seeing a bunch of stuff failed in front of me, but that maybe I could make them work. I knew what I wanted to avoid now and what I things I would like to experiment with. Within this time I also made a simple iOS game called <a href="/2012/09/puwang-a-5-day-work/">Puwang</a>, a gamejam compo, where most of the goal was to make a quick game and hopefully make $100 that year to cover the iOS developer account expenses. For QoD I wanted to make a small game that I could play on my phone during commute, and that&rsquo;s why it started as a mobile-only game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png" alt="Quest of Dungeons characters"  />
-</p>
+<p><img alt="Quest of Dungeons characters" loading="lazy" src="/wp-content/uploads/2024/03/qod_characters.png"></p>
 <p>⌨️ Expanding</p>
 <p>During the time I was the only person to ever played it, I found myself enjoying it on a bigger screen/tablet, and after giving it a 2-3 friends to test and having confirmation, I thought it would be good to launch a desktop version along the iPhone/iPad versions, Windows and Mac.
 This added some development time, but also allowed me to expand the game a bit more, the mobile version was virtually identical to desktop/tabled, but they shared a bigger UI, more suited for Mouse and the higher resolutions.
 This turned out to be one of the best decisions, as the desktop version is foundation for everything after. At this point I was already <a href="/tags/basalt/">rolling my own engine</a> for prior games on mobile and desktop, so most of the development was indeed for game stuff, and not engine. While I&rsquo;ve made the mistake often of &ldquo;build the engine instead of game&rdquo;, here the engine was built around the game, that&rsquo;s how it should be.</p>
 <h1 id="20140325---steam-and-ios-launch">2014/03/25 - Steam and iOS launch</h1>
 <p>I had tried to bring games to Steam before but with no success. The focus was on Mobile, with Desktop in mind, but where to sell it? Before Steam I was able to get confirmation for the new Humble Store, but Steam was still on my mind. In the past I had higher hopes for my first game <a href="/tags/vizati/">Vizati</a>, looked more polished, so QoD didn&rsquo;t seemed to have a chance.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/Screenshot-2022-11-01-at-19.38.50.png"></p>
 <p>But I decided to make a trailer and launch a GL page, and imagine my surprise when QoD was approved on Steam Greenlight within a week or so. Just look at my dumb face here that I just digged from some old Tweets.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg" alt="David celebrating QoD approval on Steam Greenlight"  />
-</p>
+<p><img alt="David celebrating QoD approval on Steam Greenlight" loading="lazy" src="/wp-content/uploads/2024/03/david_amador_celebrating_qod_greenlight_2014-01-24_22.38.07.jpg"></p>
 <p>With the trailer out, people seemed to enjoyed what they saw, I also thought I was near completing the game, there&rsquo;s always something right? So I pretty much crunched the entire rest of time between my day job and finishing the game.</p>
 <p>Finally on March 25th it was out, everyone could play it. Since the game was only releasing around 18h on Steam, I went to my day job that day, and only took the next day off for checking &amp; fixing bugs etc.</p>
 <p>Initially all I was getting was a flow of emails with some bugs and suggestions, but overall people seemed to like it, which was a relief. There was still tons of stuff to fix, but slowly, and for the next few weeks went through issues and suggestions. On the mobile side of things things were smoother, that version was the older one, had more testing, also less hardware configurations. I recall before launch, a conversation with some coworkers, that making it paid on mobile was probably a mistake, but I don&rsquo;t know how to design games around F2P/Ads, so I made it paid.  But, thankfully, even being a paid game, at $1.99, people were happy with what they were getting.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_tablet_iphone_desktop.jpg"></p>
 <h1 id="20140530---linux">2014/05/30 - Linux</h1>
 <p>This one was something that I had in the back on my mind for a while, theoretically my engine could be ported to Linux, but I was scared of having too many versions at launch, handing those 4 SKUs was already a handful, so this was left for later. This actually ended up being a factor in Humble Bundle contacting me to participate in one of their bundles, back then having a game on all 3 platforms was a must.
 Technically speaking it wasn&rsquo;t extremely complicated, by this time the engine was already relatively split in ways that it was easy to integrate new OS, it was just a matter of implementation.
 Also, now that Steam Deck is a thing, it just worked out of the box.</p>
 <h1 id="20140826---android">2014/08/26 - Android</h1>
 <p>With Desktops and iOS versions being well received I started getting requests for an Android version, I had never worked on this platform, but with most of the know bugs fixed, I bought a cheap Android phone and I moved into porting the game to this platform, you can read more about that <a href="/2014/08/native-game-on-android-porting-quest-of-dungeons/">here</a>.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg" alt="Quest of Dungeons Android"  />
-</p>
+<p><img alt="Quest of Dungeons Android" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_android_2014-05-29_00.05.50.jpg"></p>
 <h1 id="2014---ouya-cancelled">2014 - OUYA (cancelled)</h1>
 <p>The hot thing around the time was OUYA, games like TowerFall were born there, so since I had an Android version I started to work on that, because it would be the closest to a traditional console that I thought I could put this game on. I started working on it, but once Microsoft accepted my pitch for the Xbox One (see below), I placed this in low priority. Between the time it took me to develop the Xbox One version, OUYA had it downfall, and by that time I just cancelled it.</p>
 <h1 id="201509---xbox-one">2015/09 - Xbox One</h1>
 <p>In the summer of 2014, after the launch of all those versions, relatively successfully, I started talking with ID@Xbox with the possibility of bringing QoD to Xbox One. There were a couple months of paperwork and mostly the conversation about &ldquo;this is a mouse game, how will it work on consoles?&rdquo;, which was when I started seeing that all the UI needed to be remade, and even some gameplay.</p>
 <p>There are several posts, <a href="/2015/07/lets-talk-about-the-new-stuff-in-quest-of-dungeons-for-xbox-one/">here</a>, <a href="/2015/04/necrodancer-is-joining/">here</a>, <a href="/2014/11/qod-xo-devlog-1/">here</a>, <a href="/2015/01/qod-xo-devlog-2/">here</a> and <a href="/2015/02/qod-xo-devlog-3/">here</a>  detailing what went into to that process, but after around 1 year the game was finally released, and all the work put into reworking the game to controller friendly interface and gameplay paid off, it was <a href="/2015/10/quest-of-dungeons-reviews-roundup/">positively received</a>. I also took the opportunity to double the content available, and also add an <a href="/2015/04/necrodancer-is-joining/">extra character</a>. I&rsquo;m sure it was this combination of an almost remade version with increased content that led to it&rsquo;s positive feedback. I&rsquo;m really happy I decided to take all those months to remake it, it was daunting at first, I&rsquo;ll tell you that, but I&rsquo;m glad I did it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg" alt="Quest of Dungeons Xbox One launch"  />
-</p>
+<p><img alt="Quest of Dungeons Xbox One launch" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_xbox_one_launch.jpg"></p>
 <h1 id="20160929---wii-u-and-nintendo-3ds">2016/09/29 - Wii U and Nintendo 3DS</h1>
 <p>Around 2015 summer, before Xbox One release, and if I recall correctly, during Gamescom in Germany, I started talking with Nintendo about bringing the game to Nintendo 3DS and Wii U.</p>
 <p>This was when Nintendo was a bit more restrictive in terms of third party developers, and I was fully expecting, that me, a solo developer, would not make the cut, and it took a lot of months and patience to finally be able to show the game to someone and get accepted as an official Nintendo developer.</p>
 <p>At first my goal was to make Wii U port first because it would be similar to Xbox One, with some additional features for the GamePad. Nintendo 3DS would come later, it would take more work due to it&rsquo;s specifics.</p>
 <p>Unfortunately, or fortunately (depending how you see it), I bricked my Wii U devKit after a couple months of work, when the game was in a good state already but before 100% finished. During the time I waited for repairs I started the Nintendo 3DS version.</p>
 <p>I knew would take a LOT more work, from performance, to completely different UI for dual screen, hybrid of touch + buttons. But when the Wii U devKit arrived, I decided to launch them side-by-side, I talked with Nintendo about a cross-buy possibility, and once they gave the ok that was the goal.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_new_inventory.png"></p>
 <p>The Nintendo 3DS version was one of the most complicated ones to pull off. This was also the first time that working on my own engine was the only thing making it possible. A lot of people were suggesting me to use Unity, and I had would have saved time in porting, which can be true, but Unity didn&rsquo;t supported 3DS, so it would never have happened if not for my custom framework.</p>
 <p>This is hands down my favourite version, there is no other like it, mostly because of the nature of the device.</p>
 <p>It was so fun to work with that I found myself <a href="/2016/05/qod-3dswii-u-port-devlog-1/">adding features</a> just because I wanted to test them, like the StreetPass, where you can get ghosts from other players you pass on the street. Nintendo had a really neat device here.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png" alt="Quest of Dungeons StreetPass"  />
-</p>
+<p><img alt="Quest of Dungeons StreetPass" loading="lazy" src="/wp-content/uploads/2016/05/3ds_qod_streetpass.png"></p>
 <p>There was some trouble having both versions on the same day, it&rsquo;s a lot of coordination required between me, Nintendo America and Europe teams, 4 different SKUs (3DS NA+EU, Wii U NA+EU), but in the end we made it.</p>
 <p>Like I suspected during my own tests, on the 3DS it was the ideal portable version, it&rsquo;s a game that suits shorts sessions on the go.</p>
 <p>This was also the first time I worked with a publisher for this game, for Japan, the game was published by Flyhigh Works, they took it to Tokyo Game Show, localized to JP, and were crucial in shaping up the 3DS version into what it is. I do recall many sessions where my stubbornness almost caused some bad decisions in the game, but they were really cool in guiding me to make the best of it.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg" alt="Quest of Dungeons on Wii U and Nintendo 3DS"  />
-</p>
+<p><img alt="Quest of Dungeons on Wii U and Nintendo 3DS" loading="lazy" src="/wp-content/uploads/2024/03/qod_wiiu_3ds.jpg"></p>
 <h1 id="20170120---playstation-4-and-the-vita-version-that-never-was">2017/01/20 - PlayStation 4 and the Vita version that never was.</h1>
 <p>I love my PlayStation 4, in fact it&rsquo;s the console I have more physical games for.</p>
 <p>So it was with great excitement that after a Skype call with my PlayStation rep I had the greenlight to get the game there. This started around the time of Nintendo too, but sadly, and at first I wanted PS4 + Vita combo, like Wii U + 3DS, but for a variety of reasons the PlayStation Vita never happened.</p>
 <p>This was one of the reasons the PS4 versions was one of the latter ones, I kept hoping I could launch both simultaneously but never happened. Fun fact, this version almost had a physical edition that got cancelled by the publisher at last moment, eventually I even got someone, another publisher, to take care of the PS Vita version, but that also got cancelled later on. So a combination of things that happened that were no one&rsquo;s fault, but also made it a bit hard for me to explain why it wasn&rsquo;t happening. In certain moments it was almost, but it never did happened. It was a bit frustrating that I didn&rsquo;t had clear answers for the players regarding this, but I couldn&rsquo;t, and I tried but failed in the end. Well, that&rsquo;s game development.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png" alt="Quest of Dungeons on PlayStation 4"  />
-</p>
+<p><img alt="Quest of Dungeons on PlayStation 4" loading="lazy" src="/wp-content/uploads/2017/01/qod_ps4_no_name.png"></p>
 <h1 id="20170810---nintendo-switch">2017/08/10 - Nintendo Switch</h1>
 <p>Around 1 month after I released on Wii U and 3DS, Nintendo announced their new hybrid console, the Nintendo Switch. I immediately started getting questions from players about a port. This complicated promoting the new Nintendo versions while everyone was excited about the upcoming console, saving money for it and the games. By coincidence I had launched both versions right at the end.</p>
 <p>I can&rsquo;t recall exactly when conversations started with Nintendo about this, since it was in hot demand, both for retail and developers, but eventually Nintendo shipped me a devKit and I started porting. It was released first in the Japanese regions, again by Flyhigh Works. But a few weeks later again by me in the rest of the world. This version had the portability of 3DS, and graphics/resolution and UI of the home consoles. This was also the first time I made a demo for the game, which still exists on the eShop.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg" alt="Quest of Dungeons on Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons on Nintendo Switch" loading="lazy" src="/wp-content/uploads/2017/08/quest_of_dungeons_switch.jpg"></p>
 <h1 id="2019---dreamcast-just-having-fun">2019 - Dreamcast (just having fun)</h1>
 <p>In 2019 I got my hands on a Dreamcast I decided to &ldquo;wonder if I can port it there?&rdquo;, it was never really meant for a full release, that would take months of time that I don&rsquo;t have at the moment,
 I just posting it here for the record, this was under a week of work, it was fun. Maybe if I reach retirement I&rsquo;ll take some time to finish it. There&rsquo;s a lot of work left in there.</p>
 <p>After a while booting the game on an emulator,</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png" alt="Quest of Dungeons running on emulator 1"  />
-</p>
+<p><img alt="Quest of Dungeons running on emulator 1" loading="lazy" src="/wp-content/uploads/2024/03/qod_dreamcast_2.png"></p>
 <p>and then later when I got it booting on a real Dreamcast</p>
 <video width="100%" controls>
     <source src="/wp-content/uploads/2024/03/qod_running_on_dreamcast.mp4" type="video/mp4">
@@ -370,15 +339,12 @@ I just posting it here for the record, this was under a week of work, it was fun
 
 <h1 id="20210413---switch-physical-edition">2021/04/13 - Switch Physical Edition</h1>
 <p>Like I mentioned before, I tried to get the game in physical format before, and I kept trying for years but it simply wasn&rsquo;t happening. Until 2021, when by random chance, someone recommended me Leoful, and they accepted right away, in fact, from initial contact to production, it was just a couple months, I&rsquo;m really happy I was able to finally get the game on an actual box, it hits differently, as I <a href="/2010/08/games-and-systems-from-childhood/">grew playing Nintendo games</a>,  and also feels like a closure to a project that started on a smaller device and made it&rsquo;s way to a real physical game.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png" alt="Quest of Dungeons Physical Edition for Nintendo Switch"  />
-</p>
+<p><img alt="Quest of Dungeons Physical Edition for Nintendo Switch" loading="lazy" src="/wp-content/uploads/2021/03/Quest-of-Dungeons-Nintendo-Switch-Physical-edition.png"></p>
 <h1 id="2022---">2022 - ??</h1>
 <p>Right now the game still exists in several stores (R.I.P. Nintendo 3DS and Wii U), and it&rsquo;s in maintenance mode only. The platforms patched more regularly are the mobile ones, whenever Apple or Android come up with new rules or it breaks on new devices. Windows gives nearly no problems, MacOS breaks things more often, but overall it doesn&rsquo;t give a lot of work, the last time I had to mess with it, was the Linux version to patch stuff for Steam Deck, but it was relatively easy.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg" alt="Quest of Dungeons on Steam Deck"  />
-</p>
+<p><img alt="Quest of Dungeons on Steam Deck" loading="lazy" src="/wp-content/uploads/2024/03/quest_of_dungeons_steam_deck.jpg"></p>
 <p>So in the end things worked out, and I want to say a big thank you to everyone who supported this project, I read all the emails, DMs, messages everyone sent over the years, even fanart, you rock.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2017/03/gKx4R.gif"></p>
 <h1 id="some-trivia">Some trivia</h1>
 <ul>
 <li>The game has 79k of code (all platforms)</li>
@@ -393,8 +359,7 @@ I just posting it here for the record, this was under a week of work, it was fun
 <li>The initial skull sign, which only exists at the very start, was a way to teach the player that death meant restarting, in 2013-14 roguelikes weren&rsquo;t as popular and it was seen as a shock for that to happen (play-testers would email me &ldquo;my save is lost&rdquo;). My goal was that by potentially learning that early on, the player would not get surprised.</li>
 </ul>
 <p>Thank you for reading all of this.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2024/03/qod_characters_anniversary.png"></p>
 <p>Here&rsquo;s a cool image made by <a href="https://twitter.com/LeonorParra08">Leonor</a>.</p>
 ]]></content:encoded>
     </item>
@@ -403,12 +368,11 @@ I just posting it here for the record, this was under a week of work, it was fun
       <link>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</link>
       <pubDate>Wed, 17 Jul 2013 12:47:13 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/</guid>
-      <description>I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.
-These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of SDL Game Development written by Shaun Mitchell that covers that new version.</description>
+      <description>&lt;p&gt;I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.&lt;/p&gt;
+&lt;p&gt;These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of &lt;a href=&#34;http://www.packtpub.com/simple-directmedia-layer-game-development/book&#34;&gt;SDL Game Development&lt;/a&gt; written by Shaun Mitchell that covers that new version.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.</p>
 <p>These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of <a href="http://www.packtpub.com/simple-directmedia-layer-game-development/book">SDL Game Development</a> written by Shaun Mitchell that covers that new version.</p>
-<p><a href="http://www.packtpub.com/simple-directmedia-layer-game-development/book"><img loading="lazy" src="/wp-content/uploads/2013/07/6821OT_cov-243x300.jpg" alt="6821OT_cov"  />
-</a></p>
+<p><a href="http://www.packtpub.com/simple-directmedia-layer-game-development/book"><img alt="6821OT_cov" loading="lazy" src="/wp-content/uploads/2013/07/6821OT_cov-243x300.jpg"></a></p>
 <p>For anyone who is starting on game development and wants to use SDL this is a good book, it has simple code and everything is very well explained. But make no mistake, I don’t recommend this for someone who doesn’t know code at all, you need to know some C++ to use it, or at least some object oriented language, but chances are, if you are reading my blog you know a OOP language already.</p>
 <p>Everything in the book is explained in a simple way and I don’t see anyone having any problems, I really liked the code examples, usually some books have a very “non real” code, stuff that while it works no-one usually does it like that, but this one has stuff that I would do that exact same way. It guides you from making the first hello project to loading an image, a game state machine, getting input from Keyboard, Mouse and Joysticks, a manager to handle textures, and creating a tilemap using <a href="http://www.mapeditor.org/">Tiled</a>. The Tiled chapter was a positive surprise since not many beginner/intermediate books go much into a data-driven design, and this is very important to make modern games, while it might seem hard to implement for a beginner, trust me it is well worth it.</p>
 <p>Now for things that you might be expecting but are not covered, the book doesn’t cover any OpenGL/DirectX specifics, so if you are looking for that you won’t find it here. It is possible to directly call GL/DX instead of using SDL draw calls, this is something I do, but you might lose platform independence if not done properly. Shaders are something also not covered, but then again SDL has no native support for that, you have to do it yourself.</p>

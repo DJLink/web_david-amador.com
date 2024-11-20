@@ -10,7 +10,7 @@
 <meta name="description" content="Posts - David Amador">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -19,6 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://www.david-amador.com/posts/index.xml">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/posts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,16 +29,17 @@
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="David Amador Blog - Indie Game Developer" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.david-amador.com/posts/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="David Amador Blog - Indie Game Developer"/>
+<meta property="og:url" content="https://www.david-amador.com/posts/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="Posts">
+  <meta property="og:description" content="David Amador Blog - Indie Game Developer">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="David Amador Blog - Indie Game Developer">
 
 
 <script type="application/ld+json">
@@ -67,7 +69,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -128,7 +130,7 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a></div>
   <h1>
     Posts
     <a href="/posts/index.xml" title="RSS" aria-label="RSS">
@@ -143,213 +145,195 @@
 </header>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/10/2011-10-23_00010.jpg" alt="">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Loading images into OpenGL in iPhone
+    <h2 class="entry-hint-parent">Rage
     </h2>
   </header>
   <div class="entry-content">
-    <p>So you can’t make a game without images, right? Well, actually you can but that’s another story.
-But how can you load a jpg or a png and use then on OpenGLES?
-First let’s make a simple class Texture2D
-class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image...</p>
+    <p>So being a big fan of Quake, Quake 3 Arena and Doom I was eager to get my hands on id Software latest game, Rage.
+Like most developers out there I’ve been impressed by John Carmack’s work and breakthroughs in gaming and computer graphics for years. When I first heard Rage was targeting 60FPS I got intrigued.
+Almost every game targets 30FPS and targeting twice as that leaves less time to render each frame, even more since they were promising vast wastelands, detailed characters, top notch animations and AI.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2011-03-18 10:06:24 +0000 UTC'>March 18, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;319 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Loading images into OpenGL in iPhone" href="https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/"></a>
+  <footer class="entry-footer"><span title='2011-12-07 16:47:43 +0000 UTC'>December 7, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;316 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Rage" href="https://www.david-amador.com/2011/12/rage/"></a>
 </article>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/la_lettre_de_motivation.gif" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/10/Point_d_interrogation-2bf4e.png" alt="">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">So where is that motivation?
+    <h2 class="entry-hint-parent">something new in the horizon...
     </h2>
   </header>
   <div class="entry-content">
-    <p>I follow a couple of dev blogs, some are game developers, others make websites or software.
-In the last couple of months I’ve been reading a lot of them complaining about lack of motivation to develop their idea of the lack of motivation for development in general.
-Happens to me too, heck it happens to everyone once in a while…
-It’s something that happens usually half way though or after you get the initial prototype running....</p>
+    <p>So I’ve been out for quite some time, and this is just a quick update.
+First, I have tones of unread, thus answered emails on my inbox. I haven’t managed to go through that lately. I usually scroll to see if there’s a really urgent one, I will eventually read them all.
+I decided to quit my current job, my last day is October 31st. I couldn’t glimpse a very promising carrier there and I practically staggered learning-wise for the past months due to the type of work we develop so yeah, that’s it.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2011-03-09 22:27:26 +0000 UTC'>March 9, 2011</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;527 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to So where is that motivation?" href="https://www.david-amador.com/2011/03/so-where-is-that-motivation/"></a>
+  <footer class="entry-footer"><span title='2011-10-27 10:06:14 +0000 UTC'>October 27, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;165 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to something new in the horizon..." href="https://www.david-amador.com/2011/10/something-new-in-the-horizon/"></a>
 </article>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/07/DSCF0003.jpg" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/08/fray.png" alt="">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Bringing a game from PC to iOS
+    <h2 class="entry-hint-parent">Hurry you only have 16 ms to render everything
     </h2>
   </header>
   <div class="entry-content">
-    <p>This is my first post to http://idevblogaday.com/, I’ve been waiting since November so I’m pretty excited about writing to a broader audience =P. Even though I only have one product on the App Store I have gathered some knowledge on how stuff works to get there.
-I’ll start by talking a bit about how we made our PC game Vizati to iPhone.When we started, this represented our chance of making games and putting ourselves into test....</p>
+    <p>So I’ve been working on my new game and I’m doing some tweaks here and there on the engine.
+Mainly with the rendering section, trying to squeeze as much as possible, thus maintaining an acceptable framerate. It’s not like I’m doing a heavily graphic game but I like to know that It can be used even on slower pcs and that I’m not using more cycles than necessary.
+This past week and after reading a bunch of stuff and keynotes from John Carmack about Rage (60FPS ftw) I decided to measure my own stuff.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2011-03-04 11:05:11 +0000 UTC'>March 4, 2011</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;627 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Bringing a game from PC to iOS" href="https://www.david-amador.com/2011/03/bringing-a-game-from-pc-to-ios/"></a>
+  <footer class="entry-footer"><span title='2011-08-08 21:45:24 +0000 UTC'>August 8, 2011</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;654 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Hurry you only have 16 ms to render everything" href="https://www.david-amador.com/2011/08/hurry-you-only-have-16-ms-to-render-everything/"></a>
 </article>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/02/fixittoonjpg.gif" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/07/header.gif" alt="">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Playtesting and Tech support, the other side of the coin
+    <h2 class="entry-hint-parent">Using Git for revision control
     </h2>
   </header>
   <div class="entry-content">
-    <p>Something that has always been scary (well, it’ still is) before launching Vizati is tech support.
-No matter how much you tested your game, it’s bound to have bugs. Also what I’ve realized is that I don’t spend enough time testing the game, oh and you too, yes YOU (I’m assuming you’re a developer of course).
-The past year I gather around a few friends who never played it to test the game for 2 days....</p>
+    <p>
+If you are coding, no matter what it is, games, software, websites, you should be using a code revision control of some sort.
+Are you using? Cool. Is it Git? Smart choice, so you probably don’t need to read the rest of this post.
+For the rest I’m giving some help on how to start from scratch.
+First of all I recommend some reading on Revision Control so that you understand what I’m talking about.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2011-02-18 12:26:28 +0000 UTC'>February 18, 2011</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;989 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Playtesting and Tech support, the other side of the coin" href="https://www.david-amador.com/2011/02/playtesting-and-tech-support-the-other-side-of-the-coin/"></a>
+  <footer class="entry-footer"><span title='2011-07-08 13:29:34 +0000 UTC'>July 8, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;363 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Using Git for revision control" href="https://www.david-amador.com/2011/07/using-git-for-revision-control/"></a>
 </article>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/01/vizati_mac.png" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/06/app_store-125x166.jpg" alt="">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">officially a Mac developer too, wait, what?
+    <h2 class="entry-hint-parent">So what have I learned after eight months on the App Store
     </h2>
   </header>
   <div class="entry-content">
-    <p>It’s little over a month since I said I wouldn’t do any more porting for Vizati. Lesson learned, don’t say never again…
-When I started making the engine in C&#43;&#43; with an OpenGL/DirectX layer, I tried to keep in mind a multi-platform environment.
-Keeping rendering and OS specific calls abstract from the game itself and the engine to a certain level was one of my goals. Easy to say, hard to accomplish....</p>
+    <p>First of all I think this is my last idevblogaday post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn. Actually it’s just the 9th.
+I hope my words have somehow enriched your knowledge, in case you want to stick around just bookmark my feeds. I keep this fairly updated. Also since I’ve been working on a new game
+there’s probably news to share in the next 2-3 months.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2011-01-11 01:10:44 +0000 UTC'>January 11, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;271 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to officially a Mac developer too, wait, what?" href="https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/"></a>
+  <footer class="entry-footer"><span title='2011-06-24 21:14:07 +0000 UTC'>June 24, 2011</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;672 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to So what have I learned after eight months on the App Store" href="https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/"></a>
 </article>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/12/Indie_Games_Developer_by_orian_stamps.gif" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/06/openal-125x166.gif" alt="">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Wrapping up year 2010
+    <h2 class="entry-hint-parent">Playing sound using OpenAL
     </h2>
   </header>
   <div class="entry-content">
-    <p>So another year has come to an end, time to make plans for a new one and look back on what has been done.
-This was one crazy year, where I embraced indie development as my free time “hobby”.
-This picture illustrates my year very well, dark link is a bonus since my twitter handle is DJ_Link
-I’m tired, but happy and hoping that these were the first steps on something greater and bigger....</p>
+    <p>For sound I use OpenAL, it’s free, cross-platform, I’ve managed to get it working on iPhone, Windows and Mac.
+Setting up OpenAL to play a sound is pretty straight forward, a bit like OpenGL.
+First you need to create a context.
+ALCcontext *context; ALCdevice *device; device = alcOpenDevice(NULL, ALC_DEFAULT_DEVICE_SPECIFIER); if (device == NULL) { // Handle Exception } //Create a context context=alcCreateContext(device,NULL); //Set active context alcMakeContextCurrent(context); // Clear Error Code alGetError(); Now for the second part, loading a wav file. You have to open a file, fill buffers with data and then attach it to a source.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2010-12-31 15:06:46 +0000 UTC'>December 31, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;469 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Wrapping up year 2010" href="https://www.david-amador.com/2010/12/wrapping-up-year-2010/"></a>
+  <footer class="entry-footer"><span title='2011-06-10 09:22:26 +0000 UTC'>June 10, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;269 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Playing sound using OpenAL" href="https://www.david-amador.com/2011/06/playing-sound-using-openal/"></a>
 </article>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/12/vizati_wp7_xapfest.jpg" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/06/indiepack-125x166.jpg" alt="">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Quick update, Vizati won Microsoft XapFest
+    <h2 class="entry-hint-parent">Indie Summer Six Pack
     </h2>
   </header>
   <div class="entry-content">
-    <p>Yeahhh!!!!
-Just got an email a couple of hours ago confirming that Vizati for Windows Phone 7 won first prize on Microsoft XapFest. Here’s a link, be warned it’s in Portuguese, although it’s on the Microsoft official webpage I couldn’t figure out how to translate that to English on the website itself. Just use Google translate or so.
-This is great for us since Vizati has now 2 awards and this time the prizes are a Xbox360 &#43; Kinect and a Windows Phone 7 device....</p>
+    <p>So this is what we at Different Pixel, together with 5 other developers have been working on, the “Indie Summer Six Pack”
+Six indie titles for just $10 – or a stonking $5, if you first share the offer via Facebook.
+How can you say no to that?
+The games included are Aztaka, City Rain, Puzzlegeddon, Bob Came In Pieces, Vizati and Lylian.
+</p>
   </div>
-  <footer class="entry-footer"><span title='2010-12-08 20:39:19 +0000 UTC'>December 8, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;148 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Quick update, Vizati won Microsoft XapFest" href="https://www.david-amador.com/2010/12/quick-update-vizati-won-microsoft-xapfest/"></a>
+  <footer class="entry-footer"><span title='2011-06-03 17:54:35 +0000 UTC'>June 3, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;63 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Indie Summer Six Pack" href="https://www.david-amador.com/2011/06/indie-summer-six-pack/"></a>
 </article>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/vizati-iphone-icon.png" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2009/12/sapphire1.jpg" alt="">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">No more porting for Vizati, time for something new
+    <h2 class="entry-hint-parent">Time for some new tools and editor
     </h2>
   </header>
   <div class="entry-content">
-    <p>It’s been awhile since my last post.
-Regular visitors know that for the last months I’ve been working mainly on Vizati, bringing it first from the Xbox360 (never released, no xblig here) to a PC digital release, followed by a complete rewrite of the engine to C&#43;&#43;/OpenGL for a iPhone port, next there was the Windows Phone 7 version. I had the iPad on a backburner since I don’t own a device and optimizing code without seeing the result is crappy but about 2 weeks ago it went gold and it’s finished....</p>
+    <p> Holy cow, this is my 100th post. “Insert epic sentence”
+Depending on how much time you follow my blog or Different Pixel activity you may know that we have an internal Editor called Sapphire
+Past
+It was developed over a year ago with the intent of being a “All in one” 2D game editor for our games, built on XNA. It started out pretty well and I’m very happy with the outcome. It served it’s purpose. The problem now is, most of the stuff we need, apart from the generic sprites positioning, rotation etc, are very specific stuff to the game/project in hands.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2010-12-04 10:53:14 +0000 UTC'>December 4, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;289 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to No more porting for Vizati, time for something new" href="https://www.david-amador.com/2010/12/no-more-porting-for-vizati-time-for-something-new/"></a>
+  <footer class="entry-footer"><span title='2011-05-27 12:40:29 +0000 UTC'>May 27, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;321 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Time for some new tools and editor" href="https://www.david-amador.com/2011/05/time-for-some-new-tools-and-editor/"></a>
 </article>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/11/5polygons.png" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/05/6a0111683c7a25970c0133f561afa7970b-200wi.jpg" alt="">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Testing if a point is inside a Polygon
+    <h2 class="entry-hint-parent">Indie and day job, making it work
     </h2>
   </header>
   <div class="entry-content">
-    <p>I’ve been playing with polygons and collisions lately so I decided to share some stuff.
-Using rectangles to detect if the mouse is inside is handy for Buttons and rectangular shaped objects, but what about other irregular shaped objects?
-Taking this into account I decided to create a Polygon class that basically has a List of Vector3 points. Although I’m just covering 2D collision you should use Vector3 for a more generic class....</p>
+    <p>A large percentage of the indie developers have to work on their project at night and/or weekends.
+In order to pay the bills they have to maintain a day job. There’s no shame in that, many do it, I do it, not everyone can make a mega jump right into fame and fortune with a single project.
+The rest of us mere mortals have to gradually build a fan base, learn from past mistakes, do better PR, etc.
+Looking at successes like World of Goo, Braid, Trainyard, it all sounds so easy, everyone quickly makes such huge hype that it seems like they only have to finish the game and they are instantly rich.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2010-11-19 15:35:25 +0000 UTC'>November 19, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;288 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Testing if a point is inside a Polygon" href="https://www.david-amador.com/2010/11/testing-if-a-point-is-inside-a-polygon/"></a>
+  <footer class="entry-footer"><span title='2011-05-13 13:10:49 +0000 UTC'>May 13, 2011</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;781 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Indie and day job, making it work" href="https://www.david-amador.com/2011/05/indie-and-day-job-making-it-work/"></a>
 </article>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/11/wp7_marketplace.jpg" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/05/broken_sword_2_review.png" alt="">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Viewing Windows Phone 7 Marketplace on the simulator
+    <h2 class="entry-hint-parent">Why cheap games are hurting gaming
     </h2>
   </header>
   <div class="entry-content">
-    <p>Since I’m out of the countries where WP7 Marketplace is available it’s been a real pain to check out new games and most of all if Vizati was already available.
-Btw it’s out there, go give it a try, there’s a trial mode. It’s great fun 🙂
-So searching some forums I found a neat code to check this on the simulator.
-Basically create a new WP7 Silverlight App and write this main page code...</p>
+    <p>This has been discussed on thousands of forums and people way smarter than me have given reasons why selling games at $0.99 on the App Store is the future and others why it will hurt gaming and developers.
+I’m giving my opinion as both a developer and a consumer.
+As a consumer
+As a consumer I feel like having thousands of games at that price and/or free makes me not appreciate any of them, there’s way too many and I usually get bothered easily. Now, note that this is a personal problem of mine since most people can still play hours and hours of those games even though they have dozens of them, but I’m pretty sure more feel the same.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2010-11-17 23:27:04 +0000 UTC'>November 17, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;129 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Viewing Windows Phone 7 Marketplace on the simulator" href="https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/11/Capture6_-_specialty_shops.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">My 2 cents on xblig current state
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>UPDATE: Pressure works, Microsoft backs down over XBLIG changes: http://www.digitalspy.co.uk/gaming/news/a286779/microsoft-backs-down-over-xblig-changes.html
-Let me start by saying that this is just a personal opinion, nothing more, nothing less.
-It was with great sadness that I saw what the latest update to the Xbox360 dashboard did to Xbox Indie Games
-See? XBLIG is now on the “Speciality Shops”, right next to Avatar Marketplace, not even worthy of being the Games section. Even if you search a XBLIG game there it won’t return any result....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-11-07 18:26:13 +0000 UTC'>November 7, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;418 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to My 2 cents on xblig current state" href="https://www.david-amador.com/2010/11/my-2-cents-on-xblig-current-state/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/750px-Pathfinding_2D_Illustration.svg_.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">A* Pathfinding
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>For my current project I’ve been working with A* as a path-finding solution.
-Basically it’s a way to get from point A to point B.
-This is used for AI in games mostly on tiled based games, It’s very simple to understand and implement.
-As A* traverses the graph, it follows a path of the lowest known cost, keeping a sorted priority queue of alternate path segments along the way. If, at any point, a segment of the path being traversed has a higher cost than another encountered path segment, it abandons the higher-cost path segment and traverses the lower-cost path segment instead....</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-10-27 10:48:46 +0000 UTC'>October 27, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;395 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to A* Pathfinding" href="https://www.david-amador.com/2010/10/a-pathfinding/"></a>
+  <footer class="entry-footer"><span title='2011-05-07 20:03:52 +0000 UTC'>May 7, 2011</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;549 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Why cheap games are hurting gaming" href="https://www.david-amador.com/2011/05/why-cheap-games-is-hurt-gaming/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://www.david-amador.com/posts/page/8/">
-      «&nbsp;Prev&nbsp;8/16
+      «&nbsp;Prev&nbsp;8/19
     </a>
-    <a class="next" href="https://www.david-amador.com/posts/page/10/">Next&nbsp;10/16&nbsp;»
+    <a class="next" href="https://www.david-amador.com/posts/page/10/">Next&nbsp;10/19&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

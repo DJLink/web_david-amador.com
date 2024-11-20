@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 28 Sep 2012 20:03:40 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,9 @@
       <link>https://www.david-amador.com/2012/09/puwang-a-5-day-work/</link>
       <pubDate>Fri, 28 Sep 2012 20:03:40 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/09/puwang-a-5-day-work/</guid>
-      <description>Hi, how’s everyone doing?
-So this was a different week for me. It’s been a long time that I had the chance to work on a small prototype or a 48H competition because of my work on Dary’s Legend so I decided to stop for a couple of days and do something else.
-Also my cat’s been quite sick, and between the Vet and taking care of him, working on a fun project gave me more time do everything.</description>
+      <description>&lt;p&gt;Hi, how’s everyone doing?&lt;/p&gt;
+&lt;p&gt;So this was a different week for me. It’s been a long time that I had the chance to work on a small prototype or a 48H competition because of my work on Dary’s Legend so I decided to stop for a couple of days and do something else.&lt;/p&gt;
+&lt;p&gt;Also my cat’s been quite sick, and between the Vet and taking care of him, working on a fun project gave me more time do everything.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Hi, how’s everyone doing?</p>
 <p>So this was a different week for me. It’s been a long time that I had the chance to work on a small prototype or a 48H competition because of my work on Dary’s Legend so I decided to stop for a couple of days and do something else.</p>
 <p>Also my cat’s been quite sick, and between the Vet and taking care of him, working on a fun project gave me more time do everything.</p>
@@ -29,29 +29,32 @@ Also my cat’s been quite sick, and between the Vet and taking care of him, wor
 <p>I decided to make the game for iOS because it’s easier to make prototypes there and I can carry them around everywhere, playing them, to see if they are any good.</p>
 <p>Actually the first 8 hours where quite productive and this is what I had after that time:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/sfxpNnfoZQI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sfxpNnfoZQI?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>So during these past 5 days I polished it a little, grabbed myself a notepad and hand-drawn everything. It’s not much artistic, but I’m not a designer.<br>
 Had a few problems with iOS 6 due to some deprecated stuff but in the end it all fall into place.<br>
 Also some tweaks performance-wise on the Engine where made since with a lot of stuff on screen things can get out of control pretty easily specially on these portable devices.</p>
 <p>iPhone 5 just came out and I even took the time to add support for those extra pixels, actually I just increased the viewport, no scaling.</p>
 <p>I probably named it poorly but it’s <strong>Puwang</strong>.</p>
-<p><a href="/wp-content/uploads/2012/09/puwang2.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang2.png" alt=""  title="puwang2"  />
-</a><br>
-<a href="/wp-content/uploads/2012/09/puwang.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang.png" alt=""  title="puwang"  />
-</a><br>
-<a href="/wp-content/uploads/2012/09/puwang_icon_screen.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang_icon_screen-200x300.png" alt=""  title="puwang_icon_screen"  />
-</a></p>
+<p><a href="/wp-content/uploads/2012/09/puwang2.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang2.png" title="puwang2"></a><br>
+<a href="/wp-content/uploads/2012/09/puwang.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang.png" title="puwang"></a><br>
+<a href="/wp-content/uploads/2012/09/puwang_icon_screen.png"><img loading="lazy" src="/wp-content/uploads/2012/09/puwang_icon_screen-200x300.png" title="puwang_icon_screen"></a></p>
 <p>Also added some Leaderboards via Gamecenter and as I write this I’m starting to receive some feedback of the early beta builds I sent to a couple of testers. If people like it I might release it on the App Store.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/AIiKBVTiEhM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/AIiKBVTiEhM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p><del>If you want to participate in the beta test use this link: <a href="http://tflig.ht/SRB5aP">http://tflig.ht/SRB5aP</a></del></p>
-<p><!-- raw HTML omitted -->[Edit 10-10-2012]<!-- raw HTML omitted --> Puwang is now out on the app store, you can get it <a href="http://itunes.apple.com/us/app/puwang/id566365237?ls=1&amp;mt=8">here</a></p>
+<p><strong>Edit 10-10-2012</strong> Puwang is now out on the app store, you can get it <a href="http://itunes.apple.com/us/app/puwang/id566365237?ls=1&amp;mt=8">here</a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -59,15 +62,14 @@ Also some tweaks performance-wise on the Engine where made since with a lot of s
       <link>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</link>
       <pubDate>Mon, 26 Jul 2010 12:47:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</guid>
-      <description>I ran into this issue a couple hours ago working on the iPhone sdk:
-See the darker borders around the image?
-It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
-Well that’s because that alpha isn’t 0 or 1 or 0 or 255.
-The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha.</description>
+      <description>&lt;p&gt;I ran into this issue a couple hours ago working on the iPhone sdk:&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders.png&#34; title=&#34;iphone_image_dark_borders&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png&#34; title=&#34;iphone_image_dark_borders_2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;See the darker borders around the image?&lt;/p&gt;
+&lt;p&gt;It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?&lt;br&gt;
+Well that’s because that alpha isn’t 0 or 1 or 0 or 255.&lt;/p&gt;
+&lt;p&gt;The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha. So you can understand now why only 0 or 1 works right? Everything in between get’s changed. This is why Apple recommends using PNG over JPGS, although they consume more space they are altered for speed.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I ran into this issue a couple hours ago working on the iPhone sdk:</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders.png" alt=""  title="iphone_image_dark_borders"  />
-<img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" alt=""  title="iphone_image_dark_borders_2"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders.png" title="iphone_image_dark_borders"><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" title="iphone_image_dark_borders_2"></p>
 <p>See the darker borders around the image?</p>
 <p>It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?<br>
 Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
@@ -90,10 +92,8 @@ Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	<span class="n">off</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_fixed_border.png" alt="image"  />
-</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_border_fixed2.png" alt="image"  />
-</p>
+</span></span></code></pre></div><p><img alt="image" loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_fixed_border.png"></p>
+<p><img alt="image" loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_border_fixed2.png"></p>
 <p>There may be other solutions but this won&rsquo;t have any impact on the game, just when loading images. Let me know if you find any other solution.</p>
 <p>EDIT: Quick note here: this is not the correct way to deal with pre-multiplied alpha but a patching. XNA recently embraced pre multiplied alpha to avoid this issues. More <a href="http://blogs.msdn.com/b/shawnhar/archive/2009/11/06/premultiplied-alpha.aspx">here</a>  (Thanks Elisée Maurer)</p>
 ]]></content:encoded>
@@ -103,9 +103,9 @@ Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
       <link>https://www.david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</link>
       <pubDate>Wed, 29 Apr 2009 11:48:38 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/04/testing-iphone-sdk-and-macosx/</guid>
-      <description>So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.
-First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.
-I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen.</description>
+      <description>&lt;p&gt;So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.&lt;/p&gt;
+&lt;p&gt;First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.&lt;/p&gt;
+&lt;p&gt;I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen. Too bad I don’t have an actual Iphone to test it, so I just used the provided iphone simulator.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So last weekend I finally got my hands on a fully operational Mac OSX with the iPhone SDK so I decided to give it a try.</p>
 <p>First of all I had to set myself comfortable with this new OS since I’ve always used Windows. It’s not that hard and most of the things are straitgh forward.</p>
 <p>I booted up X-Code and decided to test an iPhone Application and after 3-4 hours of researching and testing I managed to get a sprite on screen that moves to were I press on screen. Too bad I don’t have an actual Iphone to test it, so I just used the provided iphone simulator.</p>

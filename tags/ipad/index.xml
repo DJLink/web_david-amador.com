@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>iPad on David Amador</title>
+    <title>IPad on David Amador</title>
     <link>https://www.david-amador.com/tags/ipad/</link>
-    <description>Recent content in iPad on David Amador</description>
+    <description>Recent content in IPad on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 05 Dec 2012 13:38:51 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/ipad/index.xml" rel="self" type="application/rss+xml" />
@@ -18,16 +18,15 @@
       <link>https://www.david-amador.com/2012/12/darys-legend-alpha-released/</link>
       <pubDate>Wed, 05 Dec 2012 13:38:51 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/12/darys-legend-alpha-released/</guid>
-      <description>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like Puwang and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.
-Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</description>
-      <content:encoded><![CDATA[<p><a href="http://www.daryslegend.com"><img loading="lazy" src="/wp-content/uploads/2012/12/header.jpg" alt=""  title="Dary&#39;s Legend"  />
-</a></p>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.daryslegend.com&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2012/12/header.jpg&#34; title=&#34;Dary&amp;#39;s Legend&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like &lt;a href=&#34;https://www.david-amador.com/2012/10/puwang-is-out-on-the-app-store/&#34; title=&#34;Puwang is out on the App Store&#34;&gt;Puwang&lt;/a&gt; and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.&lt;/p&gt;
+&lt;p&gt;Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><a href="http://www.daryslegend.com"><img loading="lazy" src="/wp-content/uploads/2012/12/header.jpg" title="Dary&#39;s Legend"></a></p>
 <p>Yay, so a milestone was reached with this project. If you follow my blog you probably already know that between small projects like <a href="/2012/10/puwang-is-out-on-the-app-store/" title="Puwang is out on the App Store">Puwang</a> and other mandatory freelancing stuff my big project in hands for these past few months is Dary’s Legend, a roguelike.</p>
 <p>Around two months ago I coincidentally bumped into a conversation about funding and the whole kickstarter thing where one of Desura staff members was participating, and while talking about my own problems funding a whole game out of my pocket he mentioned that he knew the game and that Desura’s Alpha Funding might be a good place for it.</p>
 <p>So yesterday we released it, and you can buy the game right now, get an alpha build with a nice discount while it doesn’t reach the final build and help us funding the development along the way.</p>
 <p>The build is relatively stable, no major crashes crashes that we know and there’s a Windows and Mac build.</p>
-<p><a href="http://www.desura.com/games/darys-legend" title="Dary's Legend on Desura"><img loading="lazy" src="http://button.desura.com/play/outline/games/17158.png" alt="Desura Digital Distribution"  />
-</a></p>
+<p><a href="http://www.desura.com/games/darys-legend" title="Dary's Legend on Desura"><img alt="Desura Digital Distribution" loading="lazy" src="http://button.desura.com/play/outline/games/17158.png"></a></p>
 <p><em>Coder-Side-Notes</em></p>
 <p>Personally, and although I’m happy that I managed to get a Windows and Mac build released side-by-side I’m also a bit sad that I haven’t been able to release it simultaneously for Linux as well.</p>
 <p>Initially my thought was, “Windows only till the final release, I’ll deal with ports later”. But the market is harsh and getting into 2 different platforms can get you more chances of selling.</p>
@@ -43,44 +42,78 @@ After a few tweaks and hacks I had it running, why not release it? So right now,
       <link>https://www.david-amador.com/2010/09/ipad-launch-images-support-for-all-orientations/</link>
       <pubDate>Fri, 10 Sep 2010 23:23:49 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/09/ipad-launch-images-support-for-all-orientations/</guid>
-      <description>When loading an application on an iPhone or iPad, a launch image can be shown to provide feedback to the user that the application is loading.
-On the iPhone a Default.png was used, with the iPad we need to anticipate the device being started in any orientation.
-Filename Dimensions Default-Portrait.png * 768w x 1024h Default-PortraitUpsideDown.png 768w x 1024h Default-Landscape.png ** 1024w x 768h Default-LandscapeLeft.png 1024w x 768h Default-LandscapeRight.png 1024w x 768h Default.</description>
+      <description>&lt;p&gt;When loading an application on an iPhone or iPad, a launch image can be shown to provide feedback to the user that the application is loading.&lt;br&gt;
+On the iPhone a Default.png was used, with the iPad we need to anticipate the device being started in any orientation.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Filename&lt;/th&gt;
+          &lt;th&gt;Dimensions&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default-Portrait.png *&lt;/td&gt;
+          &lt;td&gt;768w x 1024h&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default-PortraitUpsideDown.png&lt;/td&gt;
+          &lt;td&gt;768w x 1024h&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default-Landscape.png **&lt;/td&gt;
+          &lt;td&gt;1024w x 768h&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default-LandscapeLeft.png&lt;/td&gt;
+          &lt;td&gt;1024w x 768h&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default-LandscapeRight.png&lt;/td&gt;
+          &lt;td&gt;1024w x 768h&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Default.png&lt;/td&gt;
+          &lt;td&gt;Not recommended&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;* If you have not specified a Default-PortraitUpsideDown.png file, this file will take precedence.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>When loading an application on an iPhone or iPad, a launch image can be shown to provide feedback to the user that the application is loading.<br>
 On the iPhone a Default.png was used, with the iPad we need to anticipate the device being started in any orientation.</p>
 <table>
-<thead>
-<tr>
-<th>Filename</th>
-<th>Dimensions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Default-Portrait.png *</td>
-<td>768w x 1024h</td>
-</tr>
-<tr>
-<td>Default-PortraitUpsideDown.png</td>
-<td>768w x 1024h</td>
-</tr>
-<tr>
-<td>Default-Landscape.png **</td>
-<td>1024w x 768h</td>
-</tr>
-<tr>
-<td>Default-LandscapeLeft.png</td>
-<td>1024w x 768h</td>
-</tr>
-<tr>
-<td>Default-LandscapeRight.png</td>
-<td>1024w x 768h</td>
-</tr>
-<tr>
-<td>Default.png</td>
-<td>Not recommended</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Filename</th>
+          <th>Dimensions</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Default-Portrait.png *</td>
+          <td>768w x 1024h</td>
+      </tr>
+      <tr>
+          <td>Default-PortraitUpsideDown.png</td>
+          <td>768w x 1024h</td>
+      </tr>
+      <tr>
+          <td>Default-Landscape.png **</td>
+          <td>1024w x 768h</td>
+      </tr>
+      <tr>
+          <td>Default-LandscapeLeft.png</td>
+          <td>1024w x 768h</td>
+      </tr>
+      <tr>
+          <td>Default-LandscapeRight.png</td>
+          <td>1024w x 768h</td>
+      </tr>
+      <tr>
+          <td>Default.png</td>
+          <td>Not recommended</td>
+      </tr>
+  </tbody>
 </table>
 <p>* If you have not specified a Default-PortraitUpsideDown.png file, this file will take precedence.</p>
 <p>** If you have not specified a Default-LandscapeLet.png or Default-LandscapeRight.png image file, this file will take precedence.</p>
@@ -91,13 +124,15 @@ On the iPhone a Default.png was used, with the iPad we need to anticipate the de
       <link>https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/</link>
       <pubDate>Wed, 08 Sep 2010 12:01:37 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/</guid>
-      <description>I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.
-This covers iPhones, iPod Touches and iPad.
-iPhone/iPhone 3G – 412 MHz / 128MB / 320×480
-iPhone 3GS – 600 MHz / 256MB / 320×480
-iPhone 4 -~800MHz / 512MB / 640×960
-iPod Touch 1G – 412 MHz / 128MB / 320×480
-iPod Touch 2G – 532 MHz / 128MB / 320×480</description>
+      <description>&lt;p&gt;I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.&lt;/p&gt;
+&lt;p&gt;This covers iPhones, iPod Touches and iPad.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;iPhone/iPhone 3G&lt;/strong&gt; – 412 MHz / 128MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPhone 3GS&lt;/strong&gt; – 600 MHz / 256MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPhone 4&lt;/strong&gt; -~800MHz / 512MB / 640×960&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;iPod Touch 1G&lt;/strong&gt; – 412 MHz / 128MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPod Touch 2G&lt;/strong&gt; – 532 MHz / 128MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPod Touch 3G&lt;/strong&gt; – 600 MHz / 256MB / 320×480&lt;br&gt;
+&lt;strong&gt;iPod Touch 4G&lt;/strong&gt; – 800 MHz / 256MB / 640×960&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to compile all iOS devices specs here so we can get a better glimpse on their hardware and what we can expect from them.</p>
 <p>This covers iPhones, iPod Touches and iPad.</p>
 <p><strong>iPhone/iPhone 3G</strong> – 412 MHz / 128MB / 320×480<br>
@@ -117,12 +152,10 @@ iPod Touch 2G – 532 MHz / 128MB / 320×480</description>
       <link>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</link>
       <pubDate>Mon, 26 Jul 2010 20:37:41 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</guid>
-      <description>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (http://twtpoll.com/dar51l) so that we can have more accurate results.
-The poll closes in about 6 days and you can select various options of course.</description>
+      <description>&lt;p&gt;I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (&lt;a href=&#34;http://twtpoll.com/dar51l&#34;&gt;http://twtpoll.com/dar51l&lt;/a&gt;) so that we can have more accurate results.&lt;/p&gt;
+&lt;p&gt;The poll closes in about 6 days and you can select various options of course.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to run a little poll to track what platforms do you target as a game developer. I think this should be interesting. Please share this post link or the direct link to the poll (<a href="http://twtpoll.com/dar51l">http://twtpoll.com/dar51l</a>) so that we can have more accurate results.</p>
 <p>The poll closes in about 6 days and you can select various options of course.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
 ]]></content:encoded>
     </item>
     <item>
@@ -130,15 +163,14 @@ The poll closes in about 6 days and you can select various options of course.</d
       <link>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</link>
       <pubDate>Mon, 26 Jul 2010 12:47:01 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</guid>
-      <description>I ran into this issue a couple hours ago working on the iPhone sdk:
-See the darker borders around the image?
-It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
-Well that’s because that alpha isn’t 0 or 1 or 0 or 255.
-The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha.</description>
+      <description>&lt;p&gt;I ran into this issue a couple hours ago working on the iPhone sdk:&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders.png&#34; title=&#34;iphone_image_dark_borders&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png&#34; title=&#34;iphone_image_dark_borders_2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;See the darker borders around the image?&lt;/p&gt;
+&lt;p&gt;It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?&lt;br&gt;
+Well that’s because that alpha isn’t 0 or 1 or 0 or 255.&lt;/p&gt;
+&lt;p&gt;The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha. So you can understand now why only 0 or 1 works right? Everything in between get’s changed. This is why Apple recommends using PNG over JPGS, although they consume more space they are altered for speed.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I ran into this issue a couple hours ago working on the iPhone sdk:</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders.png" alt=""  title="iphone_image_dark_borders"  />
-<img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" alt=""  title="iphone_image_dark_borders_2"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders.png" title="iphone_image_dark_borders"><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" title="iphone_image_dark_borders_2"></p>
 <p>See the darker borders around the image?</p>
 <p>It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?<br>
 Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
@@ -161,10 +193,8 @@ Well that’s because that alpha isn’t 0 or 1 or 0 or 255.</p>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	<span class="n">off</span> <span class="o">+=</span> <span class="mi">4</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_fixed_border.png" alt="image"  />
-</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_border_fixed2.png" alt="image"  />
-</p>
+</span></span></code></pre></div><p><img alt="image" loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_fixed_border.png"></p>
+<p><img alt="image" loading="lazy" src="/wp-content/uploads/2010/07/iphone_image_border_fixed2.png"></p>
 <p>There may be other solutions but this won&rsquo;t have any impact on the game, just when loading images. Let me know if you find any other solution.</p>
 <p>EDIT: Quick note here: this is not the correct way to deal with pre-multiplied alpha but a patching. XNA recently embraced pre multiplied alpha to avoid this issues. More <a href="http://blogs.msdn.com/b/shawnhar/archive/2009/11/06/premultiplied-alpha.aspx">here</a>  (Thanks Elisée Maurer)</p>
 ]]></content:encoded>

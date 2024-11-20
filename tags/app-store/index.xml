@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>app store on David Amador</title>
+    <title>App Store on David Amador</title>
     <link>https://www.david-amador.com/tags/app-store/</link>
-    <description>Recent content in app store on David Amador</description>
+    <description>Recent content in App Store on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 10 Oct 2012 13:05:23 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/app-store/index.xml" rel="self" type="application/rss+xml" />
@@ -18,19 +18,29 @@
       <link>https://www.david-amador.com/2012/10/puwang-is-out-on-the-app-store/</link>
       <pubDate>Wed, 10 Oct 2012 13:05:23 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/10/puwang-is-out-on-the-app-store/</guid>
-      <description>So tonight, while I was sleeping, Puwang was approved and released on the App Store.
-I made a small gameplay video where, directly from the screen.
-and there’s another one, offscreen, on a real iDevice here
-Spread the word, buy it if you like =)
-App Store Link: http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;amp;mt=8</description>
+      <description>&lt;p&gt;So tonight, while I was sleeping, Puwang was approved and released on the App Store.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;amp;mt=8&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2012/10/puwang_icon.png&#34; title=&#34;Puwang&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I made a small gameplay video where, directly from the screen.&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/EVFTiA2BZiQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;and there’s another one, offscreen, on a real iDevice &lt;a href=&#34;https://www.youtube.com/watch?v=AIiKBVTiEhM&amp;amp;feature=g-upl&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spread the word, buy it if you like =)&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So tonight, while I was sleeping, Puwang was approved and released on the App Store.</p>
-<p><a href="http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;mt=8"><img loading="lazy" src="/wp-content/uploads/2012/10/puwang_icon.png" alt=""  title="Puwang"  />
-</a></p>
+<p><a href="http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;mt=8"><img loading="lazy" src="/wp-content/uploads/2012/10/puwang_icon.png" title="Puwang"></a></p>
 <p>I made a small gameplay video where, directly from the screen.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/EVFTiA2BZiQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/EVFTiA2BZiQ?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>and there’s another one, offscreen, on a real iDevice <a href="https://www.youtube.com/watch?v=AIiKBVTiEhM&amp;feature=g-upl">here</a></p>
 <p>Spread the word, buy it if you like =)</p>
@@ -42,9 +52,10 @@ App Store Link: http://itunes.apple.com/us/app/puwang/id566365237?l=en&amp;amp;m
       <link>https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</link>
       <pubDate>Fri, 24 Jun 2011 21:14:07 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</guid>
-      <description>First of all I think this is my last idevblogaday post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn. Actually it’s just the 9th.
-I hope my words have somehow enriched your knowledge, in case you want to stick around just bookmark my feeds. I keep this fairly updated. Also since I’ve been working on a new game</description>
-      <content:encoded><![CDATA[<p><!-- raw HTML omitted -->First of all I think this is my last <a href="http://idevblogaday.com/">idevblogaday</a> post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn.<!-- raw HTML omitted --> Actually it’s just the 9th.<br>
+      <description>&lt;p&gt;&lt;del&gt;First of all I think this is my last &lt;a href=&#34;http://idevblogaday.com/&#34;&gt;idevblogaday&lt;/a&gt; post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn.&lt;/del&gt; Actually it’s just the 9th.&lt;br&gt;
+I hope my words have somehow enriched your knowledge, in case you want to stick around just bookmark my feeds. I keep this fairly updated. Also since I’ve been working on a new game&lt;br&gt;
+there’s probably news to share in the next 2-3 months.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><del>First of all I think this is my last <a href="http://idevblogaday.com/">idevblogaday</a> post for a while. I my math doesn’t fail me this is my 10th post and it’s time for someone to take turn.</del> Actually it’s just the 9th.<br>
 I hope my words have somehow enriched your knowledge, in case you want to stick around just bookmark my feeds. I keep this fairly updated. Also since I’ve been working on a new game<br>
 there’s probably news to share in the next 2-3 months.</p>
 <p>Around 11 months ago I registered my App Store developer account. The idea…put Vizati on the iPhone.<br>
@@ -73,10 +84,10 @@ Selling at a low price will also bring all kinds of customers, they will give yo
       <link>https://www.david-amador.com/2011/05/why-cheap-games-is-hurt-gaming/</link>
       <pubDate>Sat, 07 May 2011 20:03:52 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/05/why-cheap-games-is-hurt-gaming/</guid>
-      <description>This has been discussed on thousands of forums and people way smarter than me have given reasons why selling games at $0.99 on the App Store is the future and others why it will hurt gaming and developers.
-I’m giving my opinion as both a developer and a consumer.
-As a consumer
-As a consumer I feel like having thousands of games at that price and/or free makes me not appreciate any of them, there’s way too many and I usually get bothered easily.</description>
+      <description>&lt;p&gt;This has been discussed on thousands of forums and people way smarter than me have given reasons why selling games at $0.99 on the App Store is the future and others why it will hurt gaming and developers.&lt;/p&gt;
+&lt;p&gt;I’m giving my opinion as both a developer and a consumer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;As a consumer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As a consumer I feel like having thousands of games at that price and/or free makes me not appreciate any of them, there’s way too many and I usually get bothered easily. Now, note that this is a personal problem of mine since most people can still play hours and hours of those games even though they have dozens of them, but I’m pretty sure more feel the same.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>This has been discussed on thousands of forums and people way smarter than me have given reasons why selling games at $0.99 on the App Store is the future and others why it will hurt gaming and developers.</p>
 <p>I’m giving my opinion as both a developer and a consumer.</p>
 <p><strong>As a consumer</strong></p>
@@ -86,12 +97,10 @@ As a consumer I feel like having thousands of games at that price and/or free ma
 <p><strong>As a developer</strong></p>
 <p>Applying the same rules as above, people have access to way too many games, and they feel like for $0.99 they have the right to a 10+ hours game, monthly updates with new free content so they feel compelled to play your game. If not you app is a crap even though most of the games on the App Store are worth much more than $0.99. But they don’t see it that way.<br>
 Surviving in that ecosystem is hard and although you may (on a long shot of pure luck) make a couple of millions, for me it’s sad to sell this kind of software this cheap.</p>
-<p><a href="/wp-content/uploads/2011/05/screen3_large.jpg"><img loading="lazy" src="/wp-content/uploads/2011/05/screen3_large.jpg" alt=""  title="screen3_large"  />
-</a></p>
+<p><a href="/wp-content/uploads/2011/05/screen3_large.jpg"><img loading="lazy" src="/wp-content/uploads/2011/05/screen3_large.jpg" title="screen3_large"></a></p>
 <p>Take a look at this example. If you don’t know the Broken Sword series I suggest you grab a copy at any digital publisher. The first 2 games are awesome, both of them are pretty long since it’s a point ‘n click adventure, a lot of thinking, puzzles and cut-scenes.</p>
 <p>Now look at this comment on the Mac App Store:</p>
-<p><a href="/wp-content/uploads/2011/05/broken_sword_2_review.png"><img loading="lazy" src="/wp-content/uploads/2011/05/broken_sword_2_review.png" alt=""  title="broken_sword_2_review"  />
-</a></p>
+<p><a href="/wp-content/uploads/2011/05/broken_sword_2_review.png"><img loading="lazy" src="/wp-content/uploads/2011/05/broken_sword_2_review.png" title="broken_sword_2_review"></a></p>
 <p>He feels like the game has a “lite” feel? For $7.99 it’s a great game, doesn’t feel lite to me, but this user is too spoiled.<br>
 He doesn’t comment anything else. Now imagine the next customer who walks by, doesn’t know the game and reads that, “oh, a pretty game but this other buyer complains that it may be a sort of rip-off, a lite version in disguise”.</p>
 <p>I just woke up a couple of minutes ago so most of this may not make any sense.</p>

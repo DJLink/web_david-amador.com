@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Jul 2012 21:32:14 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/different-pixel/index.xml" rel="self" type="application/rss+xml" />
@@ -18,16 +18,19 @@
       <link>https://www.david-amador.com/2012/07/darys-legend-development-timelapse-sample/</link>
       <pubDate>Sun, 01 Jul 2012 21:32:14 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/07/darys-legend-development-timelapse-sample/</guid>
-      <description>Working on Dary’s Legend has been my daily routine so I decided to make a time lapse.
-So this is a video compiled using Chronolapse, by taking a screenshot every 60s during a couple of days while I’m working on Dary’s Legend, the new game from Different Pixel. The video is being played back at 10 real minutes per second.
-This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)</description>
+      <description>&lt;p&gt;Working on Dary’s Legend has been my daily routine so I decided to make a time lapse.&lt;/p&gt;
+&lt;p&gt;So this is a video compiled using Chronolapse, by taking a screenshot every 60s during a couple of days while I’m working on Dary’s Legend, the new game from Different Pixel. The video is being played back at 10 real minutes per second.&lt;/p&gt;
+&lt;p&gt;This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Working on Dary’s Legend has been my daily routine so I decided to make a time lapse.</p>
 <p>So this is a video compiled using Chronolapse, by taking a screenshot every 60s during a couple of days while I’m working on Dary’s Legend, the new game from Different Pixel. The video is being played back at 10 real minutes per second.</p>
 <p>This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/STazyKAMBsE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/STazyKAMBsE?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -36,8 +39,8 @@ This was recorded between 14-06-2012 and 30-06-2012 (some days are missing)</des
       <link>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
       <pubDate>Wed, 30 Dec 2009 22:59:00 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
-      <description>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.
-I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry.</description>
+      <description>&lt;p&gt;Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.&lt;/p&gt;
+&lt;p&gt;I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry. It was funny, built a couple of games, made part of big projects, learned much, learned that even more is to be learned. One year after I started making small prototype games on my free times as a joke and websites now and then for a couple of extra bucks.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.</p>
 <p>I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry. It was funny, built a couple of games, made part of big projects, learned much, learned that even more is to be learned. One year after I started making small prototype games on my free times as a joke and websites now and then for a couple of extra bucks.</p>
 <p>Around August 2006 I approached <a href="http://www.twitter.com/_m0r3n4">Rita Silva</a> with an idea of building a small creative company. I knew her work, she’s very talented, check her <a href="http://www.rita-silva.com">blog</a> and a person like her creating all the looks and stuff for my projects would be a great help.</p>
@@ -45,14 +48,16 @@ I worked there since 2006, almost 4 years, I joined the team back then in the ho
 <p>Due to our full-time job things were always kind of slow on Different Pixel evolution, we couldn’t accept many jobs due to time restrictions.</p>
 <p>Now and without jobs we decided to try and take this small project to higher grounds, we are no longer inexperienced and without background. We currently are working on two small games, but our main focus is still web development, since we have to pay bills =P</p>
 <p>I’m not going to reveal much of the games now, this is just a small experience to see how the public reacts, if positive we can move to bigger projects.</p>
-<p><a href="/wp-content/uploads/2009/12/sapphire1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire1-300x193.jpg" alt=""  title="sapphire"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/12/sapphire1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire1-300x193.jpg" title="sapphire"></a></p>
 <p>Also I’ve been working like crazy on the past days on our internal xna map editor Sapphire. The idea is that you can use it with your own engine. Many features are done and much more are on the works.</p>
 <p>Here’s a video showing an alpha version. Keep in mind that this is a work in progress.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/GexS0y9Y2kM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GexS0y9Y2kM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>I’ll be posting an update soon and possibly a beta to the public, the idea is to sell at a low price.</p>
 <p>Stay tuned on our <a href="http://www.differentpixel.com">website</a>, <a href="http://www.twitter.com/DifferentPixel">Twitter </a>or <a href="http://www.facebook.com/DifferentPixel">Facebook </a>for updates, we promise lot’s of news soon.</p>

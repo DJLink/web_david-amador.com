@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 11 Jul 2013 12:09:48 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +18,11 @@
       <link>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</link>
       <pubDate>Thu, 11 Jul 2013 12:09:48 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/07/opengl-camera-2d-with-zoom-and-rotation/</guid>
-      <description>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a XNA 2D Camera I wrote some time ago.
-Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</description>
+      <description>&lt;p&gt;I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a &lt;a href=&#34;https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/&#34; title=&#34;XNA Camera 2d with zoom and rotation&#34;&gt;XNA 2D Camera&lt;/a&gt; I wrote some time ago.&lt;br&gt;
+Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been working on OpenGL for some time now and one of the things that some people have asked me is how to do that 2d camera with zoom and rotation in a similar way to a post regarding a <a href="/2009/10/xna-camera-2d-with-zoom-and-rotation/" title="XNA Camera 2d with zoom and rotation">XNA 2D Camera</a> I wrote some time ago.<br>
 Some of them where just subtracting the camera position to all objects drawn, but that’s just ‘ugly’ in my opinion. And the advantage of using a more complicated (at first glance) system as a matrix is that you can easily apply more complicated operations like scaling and rotation.</p>
-<p><a href="/wp-content/uploads/2013/07/camera2d.jpg"><img loading="lazy" src="/wp-content/uploads/2013/07/camera2d-300x234.jpg" alt="camera2d"  />
-</a></p>
+<p><a href="/wp-content/uploads/2013/07/camera2d.jpg"><img alt="camera2d" loading="lazy" src="/wp-content/uploads/2013/07/camera2d-300x234.jpg"></a></p>
 <p>The Camera2D class is simple enough:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Camera2d</span>
@@ -116,8 +115,8 @@ Home/End – Camera zoom</p>
       <link>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</link>
       <pubDate>Mon, 22 Apr 2013 11:22:22 +0000</pubDate>
       <guid>https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/</guid>
-      <description>Around two years ago I made a tutorial for XNA in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.
-As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</description>
+      <description>&lt;p&gt;Around two years ago I made a &lt;a href=&#34;https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/&#34; title=&#34;XNA 2D Independent Resolution Rendering&#34;&gt;tutorial for XNA&lt;/a&gt; in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.&lt;/p&gt;
+&lt;p&gt;As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Around two years ago I made a <a href="/2010/03/xna-2d-independent-resolution-rendering/" title="XNA 2D Independent Resolution Rendering">tutorial for XNA</a> in which you could render 2D games scaled to the current window resolution with proper letter-boxes or pillar-boxes.</p>
 <p>As many know since then I moved to C++ and OpenGL, and ocasionally people ask me “Can you still do that independent resolution thing?”, and yes it’s perfectly possible. I’ve used this on all latest Windows, Mac and iOS, in case you are wondering.</p>
 <p>The code is quite straight forward actually. In case you are not familiar with what we are trying to achieve here I recommend my other tutorial first, where I explain this is more detail.</p>
@@ -203,12 +202,7 @@ As many know since then I moved to C++ and OpenGL, and ocasionally people ask me
 </span></span><span class="line"><span class="cl"><span class="n">glPopMatrix</span><span class="p">();</span>	
 </span></span></code></pre></div><p>And that’s pretty much it. I have this code on my games and it works fine, at least for what I usually need. Feel free to tweak it around for your needs. Hope this helps to get a picture on how to achieve this effect. Let me know if you find any bug.</p>
 <p>Here’s an example of what you might achieve with this</p>
-<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg" alt="Base_1280x720_Res_1280x800"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg" alt="Base_1280x720_Res_800x600"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg" alt="Base_1024x768_Res_800x600"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg" alt="Base_1280x720_Res_480x640"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg" alt="Base_1024x768_Res_1280x720"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img alt="Base_1280x720_Res_1280x800" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img alt="Base_1280x720_Res_800x600" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img alt="Base_1024x768_Res_800x600" loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img alt="Base_1280x720_Res_480x640" loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img alt="Base_1024x768_Res_1280x720" loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -216,11 +210,16 @@ As many know since then I moved to C++ and OpenGL, and ocasionally people ask me
       <link>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</link>
       <pubDate>Sun, 15 Apr 2012 11:41:27 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/04/xbox-360-controller-input-in-c-via-xinput/</guid>
-      <description>So you have that Xbox360 controller laying around and want to connect it to your game?
-On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.
-First of all, you will need the DirecX 9.0+ sdk.
-The includes.
-#define WIN32_LEAN_AND_MEAN // We don&amp;#39;t want the extra stuff like MFC and such #include &amp;lt;windows&amp;gt; #include &amp;lt;XInput.h&amp;gt; // XInput API #pragma comment(lib, &amp;#34;XInput.</description>
+      <description>&lt;p&gt;So you have that Xbox360 controller laying around and want to connect it to your game?&lt;/p&gt;
+&lt;p&gt;On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.&lt;/p&gt;
+&lt;p&gt;First of all, you will need the DirecX 9.0+ sdk.&lt;/p&gt;
+&lt;p&gt;The includes.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#define WIN32_LEAN_AND_MEAN &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// We don&amp;#39;t want the extra stuff like MFC and such
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;windows&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;XInput.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;     &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// XInput API
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;#pragma comment(lib, &amp;#34;XInput.lib&amp;#34;)   &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// Library. If your compiler doesn&amp;#39;t support this type of lib include change to the corresponding one
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let’s define the buttons&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So you have that Xbox360 controller laying around and want to connect it to your game?</p>
 <p>On XNA this is an out of the box option but if you’re using C++ you have a bit more work to do first.</p>
 <p>First of all, you will need the DirecX 9.0+ sdk.</p>
@@ -250,8 +249,7 @@ The includes.
 </span></span><span class="line"><span class="cl">	<span class="n">GamePad_Button_Y</span>                <span class="o">=</span> <span class="mi">13</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">	<span class="n">GamePadButton_Max</span> <span class="o">=</span>             <span class="mi">14</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span><span class="n">GamePadButton</span><span class="p">;</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/04/450px-360_controller.svg_.jpg" alt=""  title="450px-360_controller.svg"  />
-</p>
+</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2012/04/450px-360_controller.svg_.jpg" title="450px-360_controller.svg"></p>
 <p>After some digging I don’t think Microsoft exposes access to the Guide button, let me know if you find anything. Anyway it’s not something we need on Windows.</p>
 <p>Now the GamePadIndexes</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
@@ -432,19 +430,18 @@ The includes.
       <link>https://www.david-amador.com/2011/07/using-git-for-revision-control/</link>
       <pubDate>Fri, 08 Jul 2011 13:29:34 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/07/using-git-for-revision-control/</guid>
-      <description>If you are coding, no matter what it is, games, software, websites, you should be using a code revision control of some sort.
-Are you using? Cool. Is it Git? Smart choice, so you probably don’t need to read the rest of this post.
-For the rest I’m giving some help on how to start from scratch.
-First of all I recommend some reading on Revision Control so that you understand what I’m talking about.</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2011/07/header.gif" alt=""  title="header"  />
-<br>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2011/07/header.gif&#34; title=&#34;header&#34;&gt;&lt;br&gt;
+If you are coding, no matter what it is, games, software, websites, you should be using a code revision control of some sort.&lt;br&gt;
+Are you using? Cool. Is it Git? Smart choice, so you probably don’t need to read the rest of this post.&lt;/p&gt;
+&lt;p&gt;For the rest I’m giving some help on how to start from scratch.&lt;/p&gt;
+&lt;p&gt;First of all I recommend some reading on &lt;a href=&#34;http://en.wikipedia.org/wiki/Revision_control&#34;&gt;Revision Control&lt;/a&gt; so that you understand what I’m talking about.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><img loading="lazy" src="/wp-content/uploads/2011/07/header.gif" title="header"><br>
 If you are coding, no matter what it is, games, software, websites, you should be using a code revision control of some sort.<br>
 Are you using? Cool. Is it Git? Smart choice, so you probably don’t need to read the rest of this post.</p>
 <p>For the rest I’m giving some help on how to start from scratch.</p>
 <p>First of all I recommend some reading on <a href="http://en.wikipedia.org/wiki/Revision_control">Revision Control</a> so that you understand what I’m talking about.</p>
 <p>Start by going to Git download page and get the proper one for your system, there’s a Windows, Mac and Linux version.</p>
-<p><a href="http://git-scm.com/download"><img loading="lazy" src="/wp-content/uploads/2011/07/Screen-shot-2011-07-08-at-1.11.10-PM.png" alt=""  title="Screen shot 2011-07-08 at 1.11.10 PM"  />
-</a></p>
+<p><a href="http://git-scm.com/download"><img loading="lazy" src="/wp-content/uploads/2011/07/Screen-shot-2011-07-08-at-1.11.10-PM.png" title="Screen shot 2011-07-08 at 1.11.10 PM"></a></p>
 <p>Next step, to configure it.<br>
 Start by opening a Git Bash Console (Windows) or a Terminal (Mac) and do the following:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
@@ -474,9 +471,11 @@ Now try changing the contents of the file, save it and commit again with another
       <link>https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/</link>
       <pubDate>Mon, 19 Apr 2010 21:57:12 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/</guid>
-      <description>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:
-I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?
-My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.</description>
+      <description>&lt;p&gt;I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;My answer is neither of them. The big image has a huge impact on every Draw and more, you are limiting your map to the max Texture Size the graphic card can handle.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve seen this quite a bit around on XNA forums and got 2 emails last week asking about this:</p>
 <blockquote>
 <p>I want to make a 3000×3000 grass background by tiling this small grass image I have. Should I make one big image or should I make a for cycle drawing the image (3000/TileSize) times?</p>
@@ -492,11 +491,9 @@ My answer is neither of them. The big image has a huge impact on every Draw and 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl">     <span class="n">Rectangle</span> <span class="n">source</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">400</span><span class="p">,</span> <span class="m">200</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">     <span class="n">spriteBatch</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">texture</span><span class="p">,</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">Color</span><span class="p">.</span><span class="n">White</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="m">1.0f</span><span class="p">,</span> <span class="n">SpriteEffects</span><span class="p">.</span><span class="n">None</span><span class="p">,</span> <span class="m">0.5f</span><span class="p">);</span>
 </span></span></code></pre></div><p>So instead of this:</p>
-<p><a href="/wp-content/uploads/2010/04/tiling_01.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_01-300x234.jpg" alt=""  title="tiling_01"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/04/tiling_01.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_01-300x234.jpg" title="tiling_01"></a></p>
 <p>You end up with this:</p>
-<p><a href="/wp-content/uploads/2010/04/tiling_02.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_02-300x234.jpg" alt=""  title="tiling_02"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/04/tiling_02.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/tiling_02-300x234.jpg" title="tiling_02"></a></p>
 <p>On a small test I made, using a 30000×30000 Rectangle I got a frame drop to 35 FPS by doing tons of regular Draws, when switching to Wrap mode a solid 60 FPS.</p>
 <p>As I told you it’s very easy. I’ll write more advance tutorial one of this days on how to achieve cool effect like mixing two textures with a noise/normal map.</p>
 <p>You can play with this sample by downloading it <a href="/xna_code/TilingSprites.zip">here</a>.</p>
@@ -507,10 +504,12 @@ My answer is neither of them. The big image has a huge impact on every Draw and 
       <link>https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</link>
       <pubDate>Fri, 26 Mar 2010 22:03:31 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</guid>
-      <description>Note: 22/04/2013 – Due to popular request I made an article about achieving this effect in OpenGL
-Independent Resolution Rendering?? What’s this all about?
-Basically a way of not caring what you resolution is. Ever had Gui elements misplaced because you changed the resolution? Or getting out of the screen?
-If you are doing a game on Xna just for Xbox360 you can basically use a 1280×720 base resolution and the Xbox will scale the game for you making the proper Letterbox.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Note: 22/04/2013 – Due to popular request I made an &lt;a href=&#34;https://www.david-amador.com/2013/04/opengl-2d-independent-resolution-rendering/&#34; title=&#34;OpenGL 2D Independent Resolution Rendering&#34;&gt;article&lt;/a&gt; about achieving this effect in OpenGL&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Independent Resolution Rendering?? What’s this all about?&lt;/p&gt;
+&lt;p&gt;Basically a way of not caring what you resolution is. Ever had Gui elements misplaced because you changed the resolution? Or getting out of the screen?&lt;/p&gt;
+&lt;p&gt;If you are doing a game on Xna just for Xbox360 you can basically use a 1280×720 base resolution and the Xbox will scale the game for you making the proper Letterbox.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<blockquote>
 <p>Note: 22/04/2013 – Due to popular request I made an <a href="/2013/04/opengl-2d-independent-resolution-rendering/" title="OpenGL 2D Independent Resolution Rendering">article</a> about achieving this effect in OpenGL</p>
 </blockquote>
@@ -535,17 +534,9 @@ The third flag is fullscreen or windowed.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">_texture</span><span class="p">,</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span> <span class="n">Color</span><span class="p">.</span><span class="n">White</span><span class="p">);</span>
 </span></span></code></pre></div><p>This said you can now change to different Resolutions keeping the same base and the same code and this will scale everything for you, neat right?</p>
 <p>Here are a few screenshots of an application (using Machinarium) with a Virtual resolution of 1024×768 on different real resolutions</p>
-<p><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x800-300x193.jpg" alt=""  title="Base_1024x768_Res_1280x800"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg" alt=""  title="Base_1024x768_Res_1280x720"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1024x768.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1024x768-300x232.jpg" alt=""  title="Base_1024x768_Res_1024x768"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg" alt=""  title="Base_1024x768_Res_800x600"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x800-300x193.jpg" title="Base_1024x768_Res_1280x800"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1280x720-300x175.jpg" title="Base_1024x768_Res_1280x720"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_1024x768.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_1024x768-300x232.jpg" title="Base_1024x768_Res_1024x768"></a><a href="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1024x768_Res_800x600-300x234.jpg" title="Base_1024x768_Res_800x600"></a></p>
 <p>An another example (using Braid) with a Virtual Resolution of 1280×720</p>
-<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x720-300x175.jpg" alt=""  title="Base_1280x720_Res_1280x720"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg" alt=""  title="Base_1280x720_Res_1280x800"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg" alt=""  title="Base_1280x720_Res_800x600"  />
-</a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg" alt=""  title="Base_1280x720_Res_480x640"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x720.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x720-300x175.jpg" title="Base_1280x720_Res_1280x720"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_1280x800-300x193.jpg" title="Base_1280x720_Res_1280x800"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_800x600-300x234.jpg" title="Base_1280x720_Res_800x600"></a><a href="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640.jpg"><img loading="lazy" src="/wp-content/uploads/2010/03/Base_1280x720_Res_480x640-219x300.jpg" title="Base_1280x720_Res_480x640"></a></p>
 <p>You can download the project with the source <a href="/xna_code/IndependentResolutionRendering.zip">here</a>. Once again if you run into any mistakes (most probably 😛 ) let me know.</p>
 ]]></content:encoded>
     </item>
@@ -554,9 +545,9 @@ The third flag is fullscreen or windowed.</p>
       <link>https://www.david-amador.com/2010/01/drawing-lines-in-xna/</link>
       <pubDate>Tue, 26 Jan 2010 00:40:48 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/01/drawing-lines-in-xna/</guid>
-      <description>One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.
-Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.
-You can give it 2 points ( start and end point of course) and a color.</description>
+      <description>&lt;p&gt;One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.&lt;br&gt;
+Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.&lt;br&gt;
+You can give it 2 points ( start and end point of course) and a color. There’s an overload function that receives the Layer parameter.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.<br>
 Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.<br>
 You can give it 2 points ( start and end point of course) and a color. There’s an overload function that receives the Layer parameter.</p>
@@ -569,13 +560,15 @@ Then use you can use like this:</p>
 </span></span><span class="line"><span class="cl">                          <span class="n">Vector2</span><span class="p">.</span><span class="n">Zero</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                          <span class="k">new</span> <span class="n">Vector2</span><span class="p">(</span><span class="m">100</span><span class="p">,</span><span class="m">300</span><span class="p">));</span>
 </span></span></code></pre></div><p>I’ve made a small unit test that you can <a href="/xna_code/LineBatch.rar">download here</a>. Try clicking the screen to set a start and end point.</p>
-<p><a href="/wp-content/uploads/2010/01/xna_linebatch.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/xna_linebatch-300x234.jpg" alt=""  title="xna_linebatch"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/01/xna_linebatch.jpg"><img loading="lazy" src="/wp-content/uploads/2010/01/xna_linebatch-300x234.jpg" title="xna_linebatch"></a></p>
 <p>Here’s a video showing the result:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/GiKPSF_e880" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GiKPSF_e880?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -584,9 +577,9 @@ Then use you can use like this:</p>
       <link>https://www.david-amador.com/2010/01/xna-screen-manager/</link>
       <pubDate>Sun, 24 Jan 2010 18:47:17 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/01/xna-screen-manager/</guid>
-      <description>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.
-A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.
-I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</description>
+      <description>&lt;p&gt;I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.&lt;/p&gt;
+&lt;p&gt;A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.&lt;/p&gt;
+&lt;p&gt;I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I know there’s lot’s of this stuff over the internet but I keep bumping into people asking for this.</p>
 <p>A way to easily switch from a Game Screen to a Menu or Options without having tons of flags and “if” clauses on the class Game.</p>
 <p>I’ve made a small project with a Screen Manager. The ScreenManager is static and can contain Screens. Instead of having typical Draw Update functions drawing SpriteBatches on the Game class we should have something like this:</p>
@@ -638,8 +631,8 @@ I’ve made a small project with a Screen Manager. The ScreenManager is static a
 </span></span></code></pre></div><p>Screen Manager then calls the virtual function shutdown() of the current screen and then the init() of the requested Screen, so you might want to always override them for your purposes.</p>
 <p>You’ll understand better by viewing the code itself. Use it in any way you want. I now this example may not be the best solution but it gives a good start to those wanting to implement their own.</p>
 <p><a href="/xna_code/ScreenManager.rar">Download the source</a>.</p>
-<p><!-- raw HTML omitted -->EDIT: <!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted -->(04-02-2010) Removed unused member _current; (Thanks Jason)<!-- raw HTML omitted --></p>
+<p>** EDIT: **</p>
+<p>(04-02-2010) Removed unused member _current; (Thanks Jason)</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -647,10 +640,17 @@ I’ve made a small project with a Screen Manager. The ScreenManager is static a
       <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</link>
       <pubDate>Mon, 23 Nov 2009 17:49:38 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-fps-counter/</guid>
-      <description>Frame rate or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.
-So how can you measure your frame rate in XNA?
-Inside your game1 class declare these vars:
-SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fps = 0; On function LoadContent() do</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Frame_rate&#34;&gt;Frame rate&lt;/a&gt; or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.&lt;/p&gt;
+&lt;p&gt;So how can you measure your frame rate in XNA?&lt;/p&gt;
+&lt;p&gt;Inside your game1 class declare these vars:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;SpriteFont&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;_spr_font&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_total_frames&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;float&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_elapsed_time&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0.0f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_fps&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On function LoadContent() do&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Put the name of the font&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;_spr_font&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Content&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Load&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;kootenay&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;you&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;have&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;on&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;your&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;project&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On the update pump do:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="http://en.wikipedia.org/wiki/Frame_rate">Frame rate</a> or FPS, how it is most commonly known is a way for you to know how many images per second is you game drawing. The more the better. Less then 30 and you start to see hiccups.</p>
 <p>So how can you measure your frame rate in XNA?</p>
 <p>Inside your game1 class declare these vars:</p>
@@ -696,8 +696,7 @@ SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fp
 </span></span><span class="line"><span class="cl">            <span class="k">base</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">gameTime</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span></code></pre></div><p>If everything went alright you should have a white counter on the upper left screen. You probably want to turn this into a drawable component or adjusting it to be an independent component on your engine.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2009/11/xna_fps_counter.png" alt="xna_fps_counter"  />
-</p>
+<p><img alt="xna_fps_counter" loading="lazy" src="/wp-content/uploads/2009/11/xna_fps_counter.png"></p>
 <p><strong>Here’s the project for VC# Express : <a href="/wp-content/uploads/2009/11/FpsCounter.zip">download</a></strong></p>
 <blockquote>
 <p>note: For those who have asked me why do I use a prefix _ on some variables. I use this to help me know which vars are members of the class and which aren’t. I don’t like using mPosition, instead I use _Position.</p>
@@ -709,8 +708,8 @@ SpriteFont _spr_font; int _total_frames = 0; float _elapsed_time = 0.0f; int _fp
       <link>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</link>
       <pubDate>Fri, 20 Nov 2009 10:53:13 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/how-to-do-a-xna-log-file/</guid>
-      <description>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.
-Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</description>
+      <description>&lt;p&gt;Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.&lt;/p&gt;
+&lt;p&gt;Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Although the title says XNA log file this is actually a C# log file, I’ve just thrown this title cause lot’s of people search for xna log instead of C# log file.</p>
 <p>Many have asked me why take time to do a log file when you can throw exceptions when something goes wrong. Well the answer is simple, to keep track of what’s happening, log steps, write to the file exactly what when wrong even if you are on Release mode, and more, if someone complains the game is crashing you simply ask for the log file and see what when wrong.</p>
 <p>I’ve recently build one for my engine Basalt so I decided to share the result, start by creating log type:</p>
@@ -787,8 +786,7 @@ Many have asked me why take time to do a log file when you can throw exceptions 
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Logger</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">Log_Type</span><span class="p">.</span><span class="n">INFO</span><span class="p">,</span><span class="s">&#34;Resolution Changed&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="n">Logger</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">Log_Type</span><span class="p">.</span><span class="n">ERROR</span><span class="p">,</span><span class="s">&#34;Unable to find texture XPTO&#34;</span><span class="p">);</span>
 </span></span></code></pre></div><p>This will output a log.html file that you can open with your favorite browser.</p>
-<p><a href="/wp-content/uploads/2009/11/basalt_log.jpg"><img loading="lazy" src="/wp-content/uploads/2009/11/basalt_log-300x189.jpg" alt="basalt_log"  title="basalt_log"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/11/basalt_log.jpg"><img alt="basalt_log" loading="lazy" src="/wp-content/uploads/2009/11/basalt_log-300x189.jpg" title="basalt_log"></a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -796,13 +794,15 @@ Many have asked me why take time to do a log file when you can throw exceptions 
       <link>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</link>
       <pubDate>Wed, 18 Nov 2009 15:16:54 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</guid>
-      <description>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.</description>
+      <description>&lt;p&gt;I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.&lt;br&gt;
+Anyway for those who have one and are developing for XNA you may have noticed that it doesn’t run PerfHUD out of the box.&lt;br&gt;
+You will get an error, something like:&lt;br&gt;
+&lt;strong&gt;“This applications is not configured for using PerfHUD. Consult the User’s Guide for more information”&lt;/strong&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.<br>
 Anyway for those who have one and are developing for XNA you may have noticed that it doesn’t run PerfHUD out of the box.<br>
 You will get an error, something like:<br>
 <strong>“This applications is not configured for using PerfHUD. Consult the User’s Guide for more information”</strong></p>
-<p><img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_Error.jpg" alt="perfHUD_Error"  title="perfHUD_Error"  />
-]</p>
+<p><img alt="perfHUD_Error" loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_Error.jpg" title="perfHUD_Error">]</p>
 <p>Luckily there’s a little trick we can use to fix this, first we create a new class:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// class that inherits from GraphicsDeviceManager</span>
 </span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">PerfHUDGraphicDeviceManager</span> <span class="p">:</span> <span class="n">GraphicsDeviceManager</span>
@@ -850,10 +850,8 @@ You will get an error, something like:<br>
 </span></span><span class="line"><span class="cl">                    <span class="k">new</span> <span class="n">PerfHUDGraphicDeviceManager</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">                <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_run.png" alt="perfHUD_run"  title="perfHUD_run"  />
-]
-<img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_working_xna.jpg" alt="perfHUD_working_xna"  title="perfHUD_working_xna"  />
-]</p>
+</span></span></code></pre></div><p><img alt="perfHUD_run" loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_run.png" title="perfHUD_run">]
+<img alt="perfHUD_working_xna" loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_working_xna.jpg" title="perfHUD_working_xna">]</p>
 <p>I hope this helps.</p>
 ]]></content:encoded>
     </item>
@@ -862,9 +860,10 @@ You will get an error, something like:<br>
       <link>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</link>
       <pubDate>Mon, 12 Oct 2009 20:51:21 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</guid>
-      <description>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too
-One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
-Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself.</description>
+      <description>&lt;p&gt;&lt;strong&gt;07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.&lt;/p&gt;
+&lt;p&gt;Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself. Although this work from my point of view it’s not elegant and you can’t have neat features like zooming and rotation. So for my tutorial I’ll do all transformations using a Matrix.&lt;br&gt;
+Start off by creating the basic class Camera2d&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><strong>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too</strong></p>
 <p>One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.</p>
 <p>Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself. Although this work from my point of view it’s not elegant and you can’t have neat features like zooming and rotation. So for my tutorial I’ll do all transformations using a Matrix.<br>
@@ -946,9 +945,12 @@ Start off by creating the basic class Camera2d</p>
 </span></span><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">End</span><span class="p">();</span> <span class="c1">// Call Sprite Batch End</span>
 </span></span></code></pre></div><p>Found any errors? Please let me know.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/InRm4ClDneI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/InRm4ClDneI?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <pre tabindex="0"><code></code></pre>]]></content:encoded>
     </item>

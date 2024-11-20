@@ -10,7 +10,7 @@
 <meta name="description" content="David Amador Blog - Indie Game Developer">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/categories/upfall-studios/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -19,6 +19,7 @@
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://www.david-amador.com/categories/upfall-studios/index.xml">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/categories/upfall-studios/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,16 +29,17 @@
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="Upfall Studios" />
-<meta property="og:description" content="David Amador Blog - Indie Game Developer" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.david-amador.com/categories/upfall-studios/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
-<meta name="twitter:title" content="Upfall Studios"/>
-<meta name="twitter:description" content="David Amador Blog - Indie Game Developer"/>
+<meta property="og:url" content="https://www.david-amador.com/categories/upfall-studios/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="Upfall Studios">
+  <meta property="og:description" content="David Amador Blog - Indie Game Developer">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+      <meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:title" content="Upfall Studios">
+<meta name="twitter:description" content="David Amador Blog - Indie Game Developer">
 
 </head>
 
@@ -52,7 +54,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -113,7 +115,7 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/categories/">Categories</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/categories/">Categories</a></div>
   <h1>
     Upfall Studios
     <a href="/categories/upfall-studios/index.xml" title="RSS" aria-label="RSS">
@@ -129,12 +131,78 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">QoD XO devlog 3
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Last time we talked I was porting the engine to run on the actual Xbox One hardware, since them I managed to port the whole engine, it’s now running (not 100% stable), sound, rending, and input, all working. Since that part is a bit better now I decided to focus some time on new content, such as localization, the new dungeons and stuff that still doesn’t properly work with a controller.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-02-24 18:47:08 +0000 UTC'>February 24, 2015</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;272 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to QoD XO devlog 3" href="https://www.david-amador.com/2015/02/qod-xo-devlog-3/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2015/01/qod_dx_1.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">QoD XO devlog 2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve been tweaking a lot of the gameplay to be suitable to use with a game controller and I’m starting to like the way it’s headed, it’s much more streamlined, faster and easy to use than the first attempt I made, some beta testing with a group of people helped with that.
+Last week I started porting the engine to DirectX, yeah it’s that fun moment where nothing works, crashes everywhere. But I’m slowly making some progress, got some of the rendering code working, as you can see on the images below, still no blend functions, no camera transforms but I’m getting there.
+Still no input, sound of even proper font load/render, and I couple more things I can’t remember, but I’m happy with the progress I managed to accomplish in a couple of days.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-01-11 15:20:42 +0000 UTC'>January 11, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;145 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to QoD XO devlog 2" href="https://www.david-amador.com/2015/01/qod-xo-devlog-2/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2014/12/quest_of_dungeons_iphone6_plus_vs_iphone_5.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">QoD iOS and Android update 1.1.1 released
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A new patch for iOS and Android went live, v1.1.1
+There are some differences in what’s new for each one of the platforms, the biggest change being support for iPhone 6 and 6 Plus on iOS and x86 architecture support on Android.
+The reason why there are more tweaks on the iOS is because the Android version was updated more recently. After this update they are on par on features and fixes.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-12-08 11:40:29 +0000 UTC'>December 8, 2014</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;209 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to QoD iOS and Android update 1.1.1 released" href="https://www.david-amador.com/2014/12/qod-ios-and-android-update-1-1-1-released/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2014/11/qod_gamepad_tests-1.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">QoD XO devlog 1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve been doing a lot of menus and gamepad specifics related work lately.
+My first step has been to make sure all menus are easy to use with a Xbox One controller, and while most of the menus in the main screen are usable, inside the game they are not.
+Everything was made with mouse in mind at first so I decided to remake all of them again in a different way.
+The idea is that you press a button, popup a full blown menu and can use the shoulder buttons to switch tabs, DPAD to navigate items and ABXY for actions.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-11-16 18:05:33 +0000 UTC'>November 16, 2014</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;150 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to QoD XO devlog 1" href="https://www.david-amador.com/2014/11/qod-xo-devlog-1/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Quest of Dungeons is coming to Xbox One
     </h2>
   </header>
   <div class="entry-content">
     <p>I’m very happy to announce that Quest of Dungeons is coming to Xbox One.
-The game was released for the first time on Steam in March 25th and the response has been super positive so I’m excited to bring QoD to new players in a “home console”. I’ll be handling the port myself, because that’s what a one man team means 🙂 I will keep you in the loop to what’s happening in the backstage so keep tuned…</p>
+The game was released for the first time on Steam in March 25th and the response has been super positive so I’m excited to bring QoD to new players in a “home console”. I’ll be handling the port myself, because that’s what a one man team means 🙂 I will keep you in the loop to what’s happening in the backstage so keep tuned…
+...</p>
   </div>
   <footer class="entry-footer"><span title='2014-10-22 10:53:05 +0000 UTC'>October 22, 2014</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;78 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Quest of Dungeons is coming to Xbox One" href="https://www.david-amador.com/2014/10/quest-of-dungeons-is-coming-to-xbox-one/"></a>
@@ -146,10 +214,11 @@ The game was released for the first time on Steam in March 25th and the response
     </h2>
   </header>
   <div class="entry-content">
-    <p>(update: 2022- Originally this was under upfallstudios.com/blog, but I moved the whole blog here, while it’s weird to have a “Blog Launch” post here, in middle of personal blog, I kept it)
+    <p> (update: 2022- Originally this was under upfallstudios.com/blog, but I moved the whole blog here, while it’s weird to have a “Blog Launch” post here, in middle of personal blog, I kept it)
 I would like to welcome everyone to the new blog.
 So what is Upfall Studios?
-It’s an independent game development studio founded by myself in order to develop and distribute games that I make. The only game so far is called Quest of Dungeons, which is out on Steam, iOS and Android....</p>
+It’s an independent game development studio founded by myself in order to develop and distribute games that I make. The only game so far is called Quest of Dungeons, which is out on Steam, iOS and Android.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2014-07-21 20:49:20 +0000 UTC'>July 21, 2014</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;113 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Upfall Studios Blog launch" href="https://www.david-amador.com/2014/07/blog-launch/"></a>
@@ -164,7 +233,8 @@ It’s an independent game development studio founded by myself in order to deve
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

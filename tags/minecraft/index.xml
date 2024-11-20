@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>minecraft on David Amador</title>
+    <title>Minecraft on David Amador</title>
     <link>https://www.david-amador.com/tags/minecraft/</link>
-    <description>Recent content in minecraft on David Amador</description>
+    <description>Recent content in Minecraft on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Oct 2012 09:02:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +18,12 @@
       <link>https://www.david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</link>
       <pubDate>Wed, 31 Oct 2012 09:02:55 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/10/ati-radeon-hd-4000-drivers-for-windows-8-fix-for-slow-opengl-games-yes-including-minecraft/</guid>
-      <description>I’m making this post solely for the purpose of people who can’t find a solution for this.
-If you have a Ati Radeon HD 4000 or lower like me you’ll notice that there are no drivers for Windows 8 listed when you go to the AMD website. AMD only supports Windows 8 from the 5000+. And the stock ones from Windows 8 are useless, mostly on the OpenGL side, some games won’t even load, or run really slowly, like your beloved Minecraft which uses OpenGL.</description>
+      <description>&lt;p&gt;I’m making this post solely for the purpose of people who can’t find a solution for this.&lt;/p&gt;
+&lt;p&gt;If you have a Ati Radeon HD 4000 or lower like me you’ll notice that there are no drivers for Windows 8 listed when you go to the AMD website. AMD only supports Windows 8 from the 5000+. And the stock ones from Windows 8 are useless, mostly on the OpenGL side, some games won’t even load, or run really slowly, like your beloved Minecraft which uses OpenGL. The stock drivers won’t even allow 2048×2048 textures 😐&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’m making this post solely for the purpose of people who can’t find a solution for this.</p>
 <p>If you have a Ati Radeon HD 4000 or lower like me you’ll notice that there are no drivers for Windows 8 listed when you go to the AMD website. AMD only supports Windows 8 from the 5000+. And the stock ones from Windows 8 are useless, mostly on the OpenGL side, some games won’t even load, or run really slowly, like your beloved Minecraft which uses OpenGL. The stock drivers won’t even allow 2048×2048 textures 😐</p>
 <p>After some digging around the internet I found this article for old legacy drivers under Windows 8, weirdly not displayed on the list. So here you have it, it worked properly for me.</p>
-<p><!-- raw HTML omitted --><a href="http://support.amd.com/us/kbarticles/Pages/catalystlegacywin8.aspx">http://support.amd.com/us/kbarticles/Pages/catalystlegacywin8.aspx</a><!-- raw HTML omitted --></p>
+<p><a href="http://support.amd.com/us/kbarticles/Pages/catalystlegacywin8.aspx">http://support.amd.com/us/kbarticles/Pages/catalystlegacywin8.aspx</a></p>
 <p><a href="http://support.amd.com/en-us/download/desktop/legacy?product=legacy2&amp;os=Windows%208%20-%2064">http://support.amd.com/en-us/download/desktop/legacy?product=legacy2&amp;os=Windows%208%20-%2064</a></p>
 <p>Hardware:<br>
 AMD Radeon HD 4000 Series<br>

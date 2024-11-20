@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>video on David Amador</title>
+    <title>Video on David Amador</title>
     <link>https://www.david-amador.com/tags/video/</link>
-    <description>Recent content in video on David Amador</description>
+    <description>Recent content in Video on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 30 Dec 2009 22:59:00 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/video/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,8 @@
       <link>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</link>
       <pubDate>Wed, 30 Dec 2009 22:59:00 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/</guid>
-      <description>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.
-I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry.</description>
+      <description>&lt;p&gt;Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.&lt;/p&gt;
+&lt;p&gt;I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry. It was funny, built a couple of games, made part of big projects, learned much, learned that even more is to be learned. One year after I started making small prototype games on my free times as a joke and websites now and then for a couple of extra bucks.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.</p>
 <p>I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry. It was funny, built a couple of games, made part of big projects, learned much, learned that even more is to be learned. One year after I started making small prototype games on my free times as a joke and websites now and then for a couple of extra bucks.</p>
 <p>Around August 2006 I approached <a href="http://www.twitter.com/_m0r3n4">Rita Silva</a> with an idea of building a small creative company. I knew her work, she’s very talented, check her <a href="http://www.rita-silva.com">blog</a> and a person like her creating all the looks and stuff for my projects would be a great help.</p>
@@ -27,14 +27,16 @@ I worked there since 2006, almost 4 years, I joined the team back then in the ho
 <p>Due to our full-time job things were always kind of slow on Different Pixel evolution, we couldn’t accept many jobs due to time restrictions.</p>
 <p>Now and without jobs we decided to try and take this small project to higher grounds, we are no longer inexperienced and without background. We currently are working on two small games, but our main focus is still web development, since we have to pay bills =P</p>
 <p>I’m not going to reveal much of the games now, this is just a small experience to see how the public reacts, if positive we can move to bigger projects.</p>
-<p><a href="/wp-content/uploads/2009/12/sapphire1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire1-300x193.jpg" alt=""  title="sapphire"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/12/sapphire1.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire1-300x193.jpg" title="sapphire"></a></p>
 <p>Also I’ve been working like crazy on the past days on our internal xna map editor Sapphire. The idea is that you can use it with your own engine. Many features are done and much more are on the works.</p>
 <p>Here’s a video showing an alpha version. Keep in mind that this is a work in progress.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/GexS0y9Y2kM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/GexS0y9Y2kM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>I’ll be posting an update soon and possibly a beta to the public, the idea is to sell at a low price.</p>
 <p>Stay tuned on our <a href="http://www.differentpixel.com">website</a>, <a href="http://www.twitter.com/DifferentPixel">Twitter </a>or <a href="http://www.facebook.com/DifferentPixel">Facebook </a>for updates, we promise lot’s of news soon.</p>
@@ -47,29 +49,33 @@ I worked there since 2006, almost 4 years, I joined the team back then in the ho
       <link>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</link>
       <pubDate>Wed, 02 Dec 2009 21:38:11 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/12/basalt-and-sapphire-updates/</guid>
-      <description>Lately all my free time has been spent adding new features to Basalt and developing Sapphire.
-Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.
-Here’s a screenshot of the previous alpha version:</description>
+      <description>&lt;p&gt;Lately all my free time has been spent adding new features to &lt;a href=&#34;https://www.david-amador.com/tags/basalt/&#34;&gt;Basalt&lt;/a&gt; and developing &lt;a href=&#34;https://www.david-amador.com/tags/sapphire/&#34;&gt;Sapphire&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.&lt;/p&gt;
+&lt;p&gt;Here’s a screenshot of the previous alpha version:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Lately all my free time has been spent adding new features to <a href="/tags/basalt/">Basalt</a> and developing <a href="/tags/sapphire/">Sapphire</a>.</p>
 <p>Some months ago, I started building Sapphire, a 2D editor for helping me creating to create my maps. Unfortunately I made a bad choice and decided to integrate XNA with Windows Forms, although I managed to do it it was a real pain to add something simple and eventually I dropped it.</p>
 <p>Here’s a screenshot of the previous alpha version:</p>
-<p><a href="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg" alt="Sapphire Level Editor"  title="Sapphire Level Editor"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg"><img alt="Sapphire Level Editor" loading="lazy" src="/wp-content/uploads/2009/08/Sapphire-Level-Editor.jpg" title="Sapphire Level Editor"></a></p>
 <p>I kept working on the engine itself and just making small prototypes for testing it. Finally 2 weeks ago I decided to start from scratch and just use xna to build it. Not much is done but I have little time after work to develop. Anyway I’m happy since I already have textures import, basic object positioning, scaling and a Layer System.</p>
-<p><a href="/wp-content/uploads/2009/12/sapphire.jpg"><img loading="lazy" src="/wp-content/uploads/2009/12/sapphire.jpg" alt="sapphire"  title="sapphire"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/12/sapphire.jpg"><img alt="sapphire" loading="lazy" src="/wp-content/uploads/2009/12/sapphire.jpg" title="sapphire"></a></p>
 <p>This is an early stage of the new editor, it’s from last week.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/D33185iWTQU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/D33185iWTQU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>When I have some cool stuff I’ll update a new video.</p>
 <p>On the engine side, today I decided to add a Console component to the engine, much like Source Engine and Quake consoles, to input commands, here’s the result:</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ZYNBfdu5UqM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZYNBfdu5UqM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>Hopefully by the beginning of next year I’ll have a beta version that I can release to the public for testing. I intend to launch a free and a payed version of the engine+ editor. My only dout is if I trim down some functions or just release it as free for non-commercial usage only.</p>
 ]]></content:encoded>
@@ -79,11 +85,24 @@ Here’s a screenshot of the previous alpha version:</description>
       <link>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</link>
       <pubDate>Fri, 16 Oct 2009 18:10:09 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/building-an-2d-game-engine-in-xna-part-1/</guid>
-      <description>I decided to starting writing a series of tutorials for building an 2d XNA game engine.
-Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.
-It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.
-Requirements:
-You must have some Object Oriented Programming background to full understand what we will do here.</description>
+      <description>&lt;p&gt;I decided to starting writing a series of tutorials for building an 2d XNA game engine.&lt;/p&gt;
+&lt;p&gt;Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.&lt;/p&gt;
+&lt;p&gt;It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.&lt;/p&gt;
+&lt;p&gt;Requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You must have some &lt;a href=&#34;http://en.wikipedia.org/wiki/Object-oriented_programming&#34;&gt;Object Oriented Programming&lt;/a&gt; background to full understand what we will do here.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://creators.xna.com/&#34;&gt;XNA 3.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.microsoft.com/express/&#34;&gt;Visual C# Express or Professional 2008&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Nnu_9qk6Jfs?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I decided to starting writing a series of tutorials for building an 2d XNA game engine.</p>
 <p>Keep in mind that while the main focus is 2d nothing prevents us from adding the 3d stuff later but for now we will stick to 2D.</p>
 <p>It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.</p>
@@ -94,9 +113,12 @@ You must have some Object Oriented Programming background to full understand wha
 <li><a href="http://www.microsoft.com/express/">Visual C# Express or Professional 2008</a></li>
 </ul>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Nnu_9qk6Jfs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Nnu_9qk6Jfs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <p>This is it for the first part. It just covers the basic structure, next week I’ll talk about objects2d, scene and screens management.</p>
 ]]></content:encoded>
@@ -106,9 +128,10 @@ You must have some Object Oriented Programming background to full understand wha
       <link>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</link>
       <pubDate>Mon, 12 Oct 2009 20:51:21 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/</guid>
-      <description>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too
-One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.
-Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself.</description>
+      <description>&lt;p&gt;&lt;strong&gt;07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.&lt;/p&gt;
+&lt;p&gt;Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself. Although this work from my point of view it’s not elegant and you can’t have neat features like zooming and rotation. So for my tutorial I’ll do all transformations using a Matrix.&lt;br&gt;
+Start off by creating the basic class Camera2d&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><strong>07/01/2011 – By popular request updated to XNA 4.0, xna 3.1 code is still there too</strong></p>
 <p>One of the things I keep finding is people asking how to do a simple camera 2d in XNA. Today I decided to contribute with my own solution.</p>
 <p>Most of the time the solution given is to have a class camera with a Vector2 position and when drawing the sprite batch to subtract the camera position to the sprite position itself. Although this work from my point of view it’s not elegant and you can’t have neat features like zooming and rotation. So for my tutorial I’ll do all transformations using a Matrix.<br>
@@ -190,9 +213,12 @@ Start off by creating the basic class Camera2d</p>
 </span></span><span class="line"><span class="cl"><span class="n">spriteBatch</span><span class="p">.</span><span class="n">End</span><span class="p">();</span> <span class="c1">// Call Sprite Batch End</span>
 </span></span></code></pre></div><p>Found any errors? Please let me know.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/InRm4ClDneI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/InRm4ClDneI?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <pre tabindex="0"><code></code></pre>]]></content:encoded>
     </item>
@@ -201,14 +227,17 @@ Start off by creating the basic class Camera2d</p>
       <link>https://www.david-amador.com/2009/10/basalt-gains-a-media-player/</link>
       <pubDate>Sun, 04 Oct 2009 18:22:30 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/basalt-gains-a-media-player/</guid>
-      <description>So I’ve been working on a sort of media player in order to play movies on my 2d engine Basalt made on top of XNA.
-By extending my class Object2d I manage to get this pretty cool result. You can even apply shaders to it. Since I extended the class from Object2d I can rotate, scale and set a position to the video besides regular options like play/pause, fullscreen etc. For those who don’t know the video playing is a chunk of the series Naruto Shippuuden</description>
+      <description>&lt;p&gt;So I’ve been working on a sort of media player in order to play movies on my 2d engine Basalt made on top of XNA.&lt;/p&gt;
+&lt;p&gt;By extending my class Object2d I manage to get this pretty cool result. You can even apply shaders to it. Since I extended the class from Object2d I can rotate, scale and set a position to the video besides regular options like play/pause, fullscreen etc. For those who don’t know the video playing is a chunk of the series Naruto Shippuuden&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So I’ve been working on a sort of media player in order to play movies on my 2d engine Basalt made on top of XNA.</p>
 <p>By extending my class Object2d I manage to get this pretty cool result. You can even apply shaders to it. Since I extended the class from Object2d I can rotate, scale and set a position to the video besides regular options like play/pause, fullscreen etc. For those who don’t know the video playing is a chunk of the series Naruto Shippuuden</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/cx-qo7MMyJs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/cx-qo7MMyJs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -217,16 +246,26 @@ By extending my class Object2d I manage to get this pretty cool result. You can 
       <link>https://www.david-amador.com/2009/08/xna-sprite-sheet/</link>
       <pubDate>Sun, 23 Aug 2009 10:30:57 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/08/xna-sprite-sheet/</guid>
-      <description>I decided to take the morning to make a small sprite sheet editor for our Xna engine. This way the artist can easily define the sprite areas and their origin saving in a file that can later on be loaded on the engine.
-Not very fancy yet but it gets the job done.
-Next step will be making an animator editor.</description>
+      <description>&lt;p&gt;I decided to take the morning to make a small sprite sheet editor for our Xna engine. This way the artist can easily define the sprite areas and their origin saving in a file that can later on be loaded on the engine.&lt;/p&gt;
+&lt;p&gt;Not very fancy yet but it gets the job done.&lt;br&gt;
+Next step will be making an animator editor.&lt;/p&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/vufDRq30kDo?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;</description>
       <content:encoded><![CDATA[<p>I decided to take the morning to make a small sprite sheet editor for our Xna engine. This way the artist can easily define the sprite areas and their origin saving in a file that can later on be loaded on the engine.</p>
 <p>Not very fancy yet but it gets the job done.<br>
 Next step will be making an animator editor.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/vufDRq30kDo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/vufDRq30kDo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -235,24 +274,25 @@ Next step will be making an animator editor.</p>
       <link>https://www.david-amador.com/2009/08/pugna-prototype/</link>
       <pubDate>Sat, 01 Aug 2009 22:03:00 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/08/pugna-prototype/</guid>
-      <description>Hello there.
-Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.
-My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that Rita and I have for the game we should have submitted.</description>
+      <description>&lt;p&gt;Hello there.&lt;/p&gt;
+&lt;p&gt;Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.&lt;/p&gt;
+&lt;p&gt;My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that &lt;a href=&#34;http://www.rita-silva.com&#34;&gt;Rita&lt;/a&gt; and I have for the game we should have submitted.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Hello there.</p>
 <p>Yes i know I haven’t updated in awhile, I’ve been really busy. So the deadline for Dream Build Play is 5 days from now and up till yesterday I haven’t made anything.</p>
 <p>My goal was to have a prototype by now to submit to DBP, but I ain’t got anything. So today I decided to see what I could do from scratch, and not related to the main idea that <a href="http://www.rita-silva.com">Rita</a> and I have for the game we should have submitted.</p>
 <p>One of my favorites games was Zelda The Fours Sword Adventures, the hole 4 players playing on one screen is cool. I picked the name Pugna, means fight. So the game allows up to 4 players on split screen.</p>
-<p><a href="/wp-content/uploads/2009/08/Screenshot002.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Screenshot002-300x168.jpg" alt="Screenshot002"  title="Screenshot002"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/08/Screenshot002.jpg"><img alt="Screenshot002" loading="lazy" src="/wp-content/uploads/2009/08/Screenshot002-300x168.jpg" title="Screenshot002"></a></p>
 <p>I’ve quite proud of having made this in around 4-5 hours. Till now I have a scalable level that renders grass. Screen division is made automatically according to number of players. As you can see on the following image it has a 2 split.</p>
-<p><a href="/wp-content/uploads/2009/08/Screenshot001.jpg"><img loading="lazy" src="/wp-content/uploads/2009/08/Screenshot001-300x168.jpg" alt="Screenshot001"  title="Screenshot001"  />
-</a></p>
+<p><a href="/wp-content/uploads/2009/08/Screenshot001.jpg"><img alt="Screenshot001" loading="lazy" src="/wp-content/uploads/2009/08/Screenshot001-300x168.jpg" title="Screenshot001"></a></p>
 <p>I have basic movement and rotation and a title screen. I won’t be having a great game but I have a couple of nice ideas that can work out with time.</p>
 <p>Here’s a small video, the framerate is due to the sofware i use to record.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/w0bELIEC0Q8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/w0bELIEC0Q8?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>
@@ -261,14 +301,25 @@ My goal was to have a prototype by now to submit to DBP, but I ain’t got anyth
       <link>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</link>
       <pubDate>Tue, 03 Feb 2009 16:07:51 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</guid>
-      <description>I recently found that there is a subversion alternative surfacing that is in many ways much better that subversion, it name is Git and it’s a creation of Linus Torvalds.
-Here’s a video of him talking about it</description>
+      <description>&lt;p&gt;I recently found that there is a subversion alternative surfacing that is in &lt;a href=&#34;http://git.or.cz/gitwiki/GitSvnComparsion&#34;&gt;many ways much better that subversion&lt;/a&gt;, it name is &lt;a href=&#34;http://git-scm.com&#34;&gt;Git&lt;/a&gt; and it’s a creation of Linus Torvalds.&lt;/p&gt;
+&lt;p&gt;Here’s a video of him talking about it&lt;br&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/4XpnKHJAok8?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I recently found that there is a subversion alternative surfacing that is in <a href="http://git.or.cz/gitwiki/GitSvnComparsion">many ways much better that subversion</a>, it name is <a href="http://git-scm.com">Git</a> and it’s a creation of Linus Torvalds.</p>
 <p>Here’s a video of him talking about it<br>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/4XpnKHJAok8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4XpnKHJAok8?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 </p>
 ]]></content:encoded>
     </item>

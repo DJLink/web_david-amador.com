@@ -12,7 +12,7 @@ It’s basically a suspended state where you receive a notification that it’s 
 So depending on you app you might want to save the current state just in case the app really closes.">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -20,6 +20,7 @@ So depending on you app you might want to save the current state just in case th
 <link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/">
 <noscript>
     <style>
         #theme-toggle,
@@ -29,22 +30,25 @@ So depending on you app you might want to save the current state just in case th
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="Simulating tombstone (suspended state) on Windows Phone 7 emulator" />
-<meta property="og:description" content="Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.
+<meta property="og:url" content="https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="Simulating tombstone (suspended state) on Windows Phone 7 emulator">
+  <meta property="og:description" content="Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.
 It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.
-So depending on you app you might want to save the current state just in case the app really closes." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/" />
-<meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2010-09-20T21:36:27+00:00" />
-<meta property="article:modified_time" content="2010-09-20T21:36:27+00:00" /><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg" />
-<meta name="twitter:title" content="Simulating tombstone (suspended state) on Windows Phone 7 emulator"/>
+So depending on you app you might want to save the current state just in case the app really closes.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-09-20T21:36:27+00:00">
+    <meta property="article:modified_time" content="2010-09-20T21:36:27+00:00">
+    <meta property="article:tag" content="Wp7dev">
+    <meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg">
+<meta name="twitter:title" content="Simulating tombstone (suspended state) on Windows Phone 7 emulator">
 <meta name="twitter:description" content="Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.
 It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.
-So depending on you app you might want to save the current state just in case the app really closes."/>
+So depending on you app you might want to save the current state just in case the app really closes.">
 
 
 <script type="application/ld+json">
@@ -73,7 +77,7 @@ So depending on you app you might want to save the current state just in case th
   "@type": "BlogPosting",
   "headline": "Simulating tombstone (suspended state) on Windows Phone 7 emulator",
   "name": "Simulating tombstone (suspended state) on Windows Phone 7 emulator",
-  "description": "Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.\nIt’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.\nSo depending on you app you might want to save the current state just in case the app really closes.",
+  "description": "Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.\nIt’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.\nSo depending on you app you might want to save the current state just in case the app really closes.\n",
   "keywords": [
     "wp7dev"
   ],
@@ -113,7 +117,7 @@ So depending on you app you might want to save the current state just in case th
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -177,7 +181,7 @@ So depending on you app you might want to save the current state just in case th
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Simulating tombstone (suspended state) on Windows Phone 7 emulator
     </h1>
@@ -192,17 +196,14 @@ So depending on you app you might want to save the current state just in case th
 It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.</p>
 <p>So depending on you app you might want to save the current state just in case the app really closes.</p>
 <p>Simulating this on the emulator took me awhile to get it right.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/09/wp7_start_button-300x206.jpg" alt=""  title="wp7_start_button"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/09/wp7_start_button-300x206.jpg" title="wp7_start_button"></p>
 <p>Press F5 on Visual Studio do start debugging your App.<br>
 Press the Start button and your app received a Deactivated event. Save what you need. Now, and here is the tricky part, the debugger also exited.<br>
 This took me awhile because pressing the back button wouldn’t do anything and pressing F5 again would just restart.</p>
 <p>So you have to Press F5 and keep an eye on the compiler. When you receive a “Deploy Success” message</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/09/vs_deploy_success-300x88.jpg" alt=""  title="vs_deploy_success"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/09/vs_deploy_success-300x88.jpg" title="vs_deploy_success"></p>
 <p>quickly press the Back button on the simulator</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/09/wp7_back_button-300x88.jpg" alt=""  title="wp7_back_button"  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/09/wp7_back_button-300x88.jpg" title="wp7_back_button"></p>
 <p>You app should now start and receive the Activated event.<br>
 Basically the debugger has to start between you pressing the Back button and before the black screen disappears otherwise the emulator while assume the app is closed and get back to home.</p>
 
@@ -211,7 +212,7 @@ Basically the debugger has to start between you pressing the Back button and bef
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://www.david-amador.com/tags/wp7dev/">wp7dev</a></li>
+      <li><a href="https://www.david-amador.com/tags/wp7dev/">Wp7dev</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/">
@@ -250,7 +251,8 @@ Basically the debugger has to start between you pressing the Back button and bef
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

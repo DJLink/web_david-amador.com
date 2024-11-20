@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>mysql on David Amador</title>
+    <title>Mysql on David Amador</title>
     <link>https://www.david-amador.com/tags/mysql/</link>
-    <description>Recent content in mysql on David Amador</description>
+    <description>Recent content in Mysql on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 22 Oct 2009 11:27:10 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
@@ -18,17 +18,16 @@
       <link>https://www.david-amador.com/2009/10/search-and-replace-in-mysql/</link>
       <pubDate>Thu, 22 Oct 2009 11:27:10 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/10/search-and-replace-in-mysql/</guid>
-      <description>I found something very handy today, search and replace on Mysql databases. You can do it on phpmyadmin or make a php script with this.
-After moving a wordpress site from server I discovered that all image links were broken because they are placed directly inside each post. They were still linking to the old server. Changing it manually would be a nightmare.
-Luckily MySql is your friend. To search and replace a text string, start up phpMyAdmin, and click on your database name that you want to run the search and replace through.</description>
+      <description>&lt;p&gt;I found something very handy today, search and replace on Mysql databases. You can do it on phpmyadmin or make a php script with this.&lt;br&gt;
+After moving a wordpress site from server I discovered that all image links were broken because they are placed directly inside each post. They were still linking to the old server. Changing it manually would be a nightmare.&lt;/p&gt;
+&lt;p&gt;Luckily MySql is your friend. To search and replace a text string, start up phpMyAdmin, and click on your database name that you want to run the search and replace through. At the top of the window, click on the “SQL” tab.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I found something very handy today, search and replace on Mysql databases. You can do it on phpmyadmin or make a php script with this.<br>
 After moving a wordpress site from server I discovered that all image links were broken because they are placed directly inside each post. They were still linking to the old server. Changing it manually would be a nightmare.</p>
 <p>Luckily MySql is your friend. To search and replace a text string, start up phpMyAdmin, and click on your database name that you want to run the search and replace through. At the top of the window, click on the “SQL” tab.</p>
 <p>In the text box, enter the following code.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="w">	</span><span class="k">UPDATE</span><span class="w"> </span><span class="n">tablename</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">field</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">replace</span><span class="p">(</span><span class="n">field</span><span class="p">,</span><span class="s2">&#34;findstring&#34;</span><span class="p">,</span><span class="s2">&#34;replacestring&#34;</span><span class="p">)</span><span class="w">
 </span></span></span></code></pre></div><p>Works like a charm.<br>
-<img loading="lazy" src="/wp-content/uploads/2009/10/search_replace_mysql1.jpg" alt="Search Replace Mysql"  title="Search Replace Mysql"  />
-</p>
+<img alt="Search Replace Mysql" loading="lazy" src="/wp-content/uploads/2009/10/search_replace_mysql1.jpg" title="Search Replace Mysql"></p>
 ]]></content:encoded>
     </item>
   </channel>

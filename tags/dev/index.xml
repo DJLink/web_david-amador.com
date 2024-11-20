@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>dev on David Amador</title>
+    <title>Dev on David Amador</title>
     <link>https://www.david-amador.com/tags/dev/</link>
-    <description>Recent content in dev on David Amador</description>
+    <description>Recent content in Dev on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 24 Feb 2015 18:47:08 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/dev/index.xml" rel="self" type="application/rss+xml" />
@@ -18,14 +18,12 @@
       <link>https://www.david-amador.com/2015/02/qod-xo-devlog-3/</link>
       <pubDate>Tue, 24 Feb 2015 18:47:08 +0000</pubDate>
       <guid>https://www.david-amador.com/2015/02/qod-xo-devlog-3/</guid>
-      <description>Last time we talked I was porting the engine to run on the actual Xbox One hardware, since them I managed to port the whole engine, it’s now running (not 100% stable), sound, rending, and input, all working. Since that part is a bit better now I decided to focus some time on new content, such as localization, the new dungeons and stuff that still doesn’t properly work with a controller.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/2015/01/qod-xo-devlog-2/&#34; title=&#34;QoD XO devlog 2&#34;&gt;Last time&lt;/a&gt; we talked I was porting the engine to run on the actual Xbox One hardware, since them I managed to port the whole engine, it’s now running (not 100% stable), sound, rending, and input, all working. Since that part is a bit better now I decided to focus some time on new content, such as localization, the new dungeons and stuff that still doesn’t properly work with a controller.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="/2015/01/qod-xo-devlog-2/" title="QoD XO devlog 2">Last time</a> we talked I was porting the engine to run on the actual Xbox One hardware, since them I managed to port the whole engine, it’s now running (not 100% stable), sound, rending, and input, all working. Since that part is a bit better now I decided to focus some time on new content, such as localization, the new dungeons and stuff that still doesn’t properly work with a controller.</p>
 <p>Almost the entire game is now fully playable with the Xbox One controller but there are still a couple of things that I’m not happy, such a way to check the active buffs/debuffs and properly using ranged skills that don’t use enemy targets, like Teleport or Summon. I need to find a way to make this coherent with the rest of the game.</p>
-<p><a href="/wp-content/uploads/2015/02/qod_active_buffs.png"><img loading="lazy" src="/wp-content/uploads/2015/02/qod_active_buffs.png" alt="qod_active_buffs"  />
-</a></p>
+<p><a href="/wp-content/uploads/2015/02/qod_active_buffs.png"><img alt="qod_active_buffs" loading="lazy" src="/wp-content/uploads/2015/02/qod_active_buffs.png"></a></p>
 <p>Another thing that I’m concerned with, is the font size on TV’s, some parts of the game are heavily text based, such as items descriptions etc, on smaller TV’s it may be hard to read, finding the right size is not easy. I’ve been considering having an option for scaling the text, but this would break all the UI, so I need to think of a way to solve this. I also need to rework some parts of the game to accommodate for TV safe areas, some televisions can hide up to 10% of the screen area, and I need to make sure no crucial UI is there, which is pretty much where the UI is on the PC version.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2015/02/dt_safe_viewing_area9.png" alt=""  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2015/02/dt_safe_viewing_area9.png"></p>
 <p>That’s it for now, as always thanks for taking the time reading. See you on the next post.</p>
 ]]></content:encoded>
     </item>
@@ -34,9 +32,10 @@
       <link>https://www.david-amador.com/2014/11/qod-xo-devlog-1/</link>
       <pubDate>Sun, 16 Nov 2014 18:05:33 +0000</pubDate>
       <guid>https://www.david-amador.com/2014/11/qod-xo-devlog-1/</guid>
-      <description>I’ve been doing a lot of menus and gamepad specifics related work lately.
-My first step has been to make sure all menus are easy to use with a Xbox One controller, and while most of the menus in the main screen are usable, inside the game they are not.
-Everything was made with mouse in mind at first so I decided to remake all of them again in a different way.</description>
+      <description>&lt;p&gt;I’ve been doing a lot of menus and gamepad specifics related work lately.&lt;br&gt;
+My first step has been to make sure all menus are easy to use with a Xbox One controller, and while most of the menus in the main screen are usable, inside the game they are not.&lt;br&gt;
+Everything was made with mouse in mind at first so I decided to remake all of them again in a different way.&lt;br&gt;
+The idea is that you press a button, popup a full blown menu and can use the shoulder buttons to switch tabs, DPAD to navigate items and ABXY for actions.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I’ve been doing a lot of menus and gamepad specifics related work lately.<br>
 My first step has been to make sure all menus are easy to use with a Xbox One controller, and while most of the menus in the main screen are usable, inside the game they are not.<br>
 Everything was made with mouse in mind at first so I decided to remake all of them again in a different way.<br>

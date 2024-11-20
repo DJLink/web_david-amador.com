@@ -9,7 +9,7 @@
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 18 Nov 2009 15:16:54 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
@@ -18,13 +18,15 @@
       <link>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</link>
       <pubDate>Wed, 18 Nov 2009 15:16:54 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/11/using-perfhud-with-xna/</guid>
-      <description>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.</description>
+      <description>&lt;p&gt;I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.&lt;br&gt;
+Anyway for those who have one and are developing for XNA you may have noticed that it doesn’t run PerfHUD out of the box.&lt;br&gt;
+You will get an error, something like:&lt;br&gt;
+&lt;strong&gt;“This applications is not configured for using PerfHUD. Consult the User’s Guide for more information”&lt;/strong&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I am definitely a fan of ATI cards. Had a few Geforces but didn’t liked them very much. I actually noticed image quality decrease when switching from an old Radeon 9800 to a Geforce 8k something. I’m very happy with my Radeon 4890, now for the downside, PerfHUD, a very handy tool for Game Developers is only available for NVIDIA chipsets and although ATI has it’s own GPUPerfStudio it’s not the same thing.<br>
 Anyway for those who have one and are developing for XNA you may have noticed that it doesn’t run PerfHUD out of the box.<br>
 You will get an error, something like:<br>
 <strong>“This applications is not configured for using PerfHUD. Consult the User’s Guide for more information”</strong></p>
-<p><img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_Error.jpg" alt="perfHUD_Error"  title="perfHUD_Error"  />
-]</p>
+<p><img alt="perfHUD_Error" loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_Error.jpg" title="perfHUD_Error">]</p>
 <p>Luckily there’s a little trick we can use to fix this, first we create a new class:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// class that inherits from GraphicsDeviceManager</span>
 </span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">PerfHUDGraphicDeviceManager</span> <span class="p">:</span> <span class="n">GraphicsDeviceManager</span>
@@ -72,10 +74,8 @@ You will get an error, something like:<br>
 </span></span><span class="line"><span class="cl">                    <span class="k">new</span> <span class="n">PerfHUDGraphicDeviceManager</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">                <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p><img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_run.png" alt="perfHUD_run"  title="perfHUD_run"  />
-]
-<img loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_working_xna.jpg" alt="perfHUD_working_xna"  title="perfHUD_working_xna"  />
-]</p>
+</span></span></code></pre></div><p><img alt="perfHUD_run" loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_run.png" title="perfHUD_run">]
+<img alt="perfHUD_working_xna" loading="lazy" src="/wp-content/uploads/2009/11/perfHUD_working_xna.jpg" title="perfHUD_working_xna">]</p>
 <p>I hope this helps.</p>
 ]]></content:encoded>
     </item>

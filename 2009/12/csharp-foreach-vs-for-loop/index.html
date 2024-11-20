@@ -10,10 +10,16 @@
 <meta name="description" content="When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.
 Today I decided to see the differences between them:
 FOR
-int[] values = new int[1]; int total = 0; for(int i = 0; i &lt; values.">
+int[] values = new int[1];
+int total = 0;
+for(int i = 0; i &lt; values.Length; i&#43;&#43;)
+{
+    total &#43;= values[i];
+}
+FOREACH">
 <meta name="author" content="David Amador">
 <link rel="canonical" href="https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7656d99afc7c7c58a9e05c7f5dacdb8e9a0310822b1b126ac85729aea108054f.css" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2c13149ef6637a8420c910182a7238d9bd313163d752ae39ada49bac8f1e7335.css" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.david-amador.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.david-amador.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.david-amador.com/favicon-32x32.png">
@@ -21,6 +27,7 @@ int[] values = new int[1]; int total = 0; for(int i = 0; i &lt; values.">
 <link rel="mask-icon" href="https://www.david-amador.com/david-amador-pixel.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/">
 <noscript>
     <style>
         #theme-toggle,
@@ -30,24 +37,33 @@ int[] values = new int[1]; int total = 0; for(int i = 0; i &lt; values.">
 
     </style>
 </noscript><script defer src="https://eu.umami.is/script.js" data-website-id="8dd501c4-c632-4f5b-8bc9-8d339e3e26ed"></script>
-<meta property="og:title" content="C# foreach VS for loop" />
-<meta property="og:description" content="When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.
+<meta property="og:url" content="https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/">
+  <meta property="og:site_name" content="David Amador">
+  <meta property="og:title" content="C# foreach VS for loop">
+  <meta property="og:description" content="When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.
 Today I decided to see the differences between them:
 FOR
-int[] values = new int[1]; int total = 0; for(int i = 0; i &lt; values." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.david-amador.com/2009/12/csharp-foreach-vs-for-loop/" /><meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2009-12-12T18:38:33+00:00" />
-<meta property="article:modified_time" content="2009-12-12T18:38:33+00:00" /><meta property="og:site_name" content="David Amador" />
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png"/>
-
-<meta name="twitter:title" content="C# foreach VS for loop"/>
+int[] values = new int[1]; int total = 0; for(int i = 0; i &lt; values.Length; i&#43;&#43;) { total &#43;= values[i]; } FOREACH">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2009-12-12T18:38:33+00:00">
+    <meta property="article:modified_time" content="2009-12-12T18:38:33+00:00">
+    <meta property="article:tag" content="Csharp">
+      <meta property="og:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.david-amador.com/david-amador-pixel.png">
+<meta name="twitter:title" content="C# foreach VS for loop">
 <meta name="twitter:description" content="When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.
 Today I decided to see the differences between them:
 FOR
-int[] values = new int[1]; int total = 0; for(int i = 0; i &lt; values."/>
+int[] values = new int[1];
+int total = 0;
+for(int i = 0; i &lt; values.Length; i&#43;&#43;)
+{
+    total &#43;= values[i];
+}
+FOREACH">
 
 
 <script type="application/ld+json">
@@ -76,14 +92,14 @@ int[] values = new int[1]; int total = 0; for(int i = 0; i &lt; values."/>
   "@type": "BlogPosting",
   "headline": "C# foreach VS for loop",
   "name": "C# foreach VS for loop",
-  "description": "When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.\nToday I decided to see the differences between them:\nFOR\nint[] values = new int[1]; int total = 0; for(int i = 0; i \u0026lt; values.",
+  "description": "When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.\nToday I decided to see the differences between them:\nFOR\nint[] values = new int[1]; int total = 0; for(int i = 0; i \u0026lt; values.Length; i++) { total += values[i]; } FOREACH\n",
   "keywords": [
     "csharp"
   ],
   "articleBody": "When I started using C#, mainly because of XNA one of the things I got used to write is foreach loops instead of for, seemed easier and it’s a much cleaner code. Doing almost the same thing as a for loop I never really bother to see the differences, almost everyone in their XNA examples used it instead.\nToday I decided to see the differences between them:\nFOR\nint[] values = new int[1]; int total = 0; for(int i = 0; i \u003c values.Length; i++) { total += values[i]; } FOREACH\nint[] values = new int[1]; int total = 0; foreach(int i in values ) { total += i; } In variable declaration, foreach has five variable declarations (three Int32 integers and two arrays of Int32) while for has only three (two Int32 integers and one Int32 array). When it goes to loop through, foreach copies the current array to a new one for the operation. While for doesn’t care of that part.\nAfter the compiler interpretation to Assembly we get this:\nFOR\ncmp dword ptr [eax+4],0 i jle 0000000F mov ecx,dword ptr [eax+edx*4+8] inc edx cmp esi,dword ptr [eax+4] jl FFFFFFF8 FOREACH\ncmp esi,dword ptr [ebx+4] i jl FFFFFFE3 cmp esi,dword ptr [ebx+4] jb 00000009 mov eax,dword ptr [ebx+esi*4+8] mov dword ptr [ebp-0Ch],eax mov eax,dword ptr [ebp-0Ch] add dword ptr [ebp-8],eax inc esi cmp esi,dword ptr [ebx+4] jl FFFFFFE3 As you can see we end up with much more instructions.\nSome simple tests gives these results:\nUsing Objects Using Integers FOR FOREACH ArrayList – 2147483 items 88.6 115.9 generic collection – 2147483 items 84.4 87.1 Array – 2147483 items 48.1 49.8 *Time is in milliseconds.\nSo what I’ve done after this was to replace some heavy foreach code on my engine by for loops. I guess small things can be neglected but it’s always nice to know where bottlenecks may happen.\n",
   "wordCount" : "312",
   "inLanguage": "en",
-  "datePublished": "2009-12-12T18:38:33Z",
+  "image": "https://www.david-amador.com/david-amador-pixel.png","datePublished": "2009-12-12T18:38:33Z",
   "dateModified": "2009-12-12T18:38:33Z",
   "author":{
     "@type": "Person",
@@ -116,7 +132,7 @@ int[] values = new int[1]; int total = 0; for(int i = 0; i &lt; values."/>
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.david-amador.com" accesskey="h" title="David Amador (Alt + H)">
+            <a href="https://www.david-amador.com/" accesskey="h" title="David Amador (Alt + H)">
                 <img src="https://www.david-amador.com/david-amador-pixel.png" alt="" aria-label="logo"
                     height="35">David Amador</a>
             <div class="logo-switches">
@@ -180,7 +196,7 @@ int[] values = new int[1]; int total = 0; for(int i = 0; i &lt; values."/>
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.david-amador.com">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.david-amador.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.david-amador.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       C# foreach VS for loop
     </h1>
@@ -230,35 +246,35 @@ int[] values = new int[1]; int total = 0; for(int i = 0; i &lt; values."/>
 </span></span></code></pre></div><p>As you can see we end up with much more instructions.<br>
 Some simple tests gives these results:</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th style="text-align:center">Using Objects</th>
-<th style="text-align:center">Using Integers</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td style="text-align:center">FOR</td>
-<td style="text-align:center">FOREACH</td>
-</tr>
-<tr>
-<td>ArrayList – 2147483 items</td>
-<td style="text-align:center">88.6</td>
-<td style="text-align:center">115.9</td>
-</tr>
-<tr>
-<td>generic collection – 2147483 items</td>
-<td style="text-align:center">84.4</td>
-<td style="text-align:center">87.1</td>
-</tr>
-<tr>
-<td>Array – 2147483 items</td>
-<td style="text-align:center">48.1</td>
-<td style="text-align:center">49.8</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th></th>
+          <th style="text-align: center">Using Objects</th>
+          <th style="text-align: center">Using Integers</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td style="text-align: center">FOR</td>
+          <td style="text-align: center">FOREACH</td>
+      </tr>
+      <tr>
+          <td>ArrayList – 2147483 items</td>
+          <td style="text-align: center">88.6</td>
+          <td style="text-align: center">115.9</td>
+      </tr>
+      <tr>
+          <td>generic collection – 2147483 items</td>
+          <td style="text-align: center">84.4</td>
+          <td style="text-align: center">87.1</td>
+      </tr>
+      <tr>
+          <td>Array – 2147483 items</td>
+          <td style="text-align: center">48.1</td>
+          <td style="text-align: center">49.8</td>
+      </tr>
+  </tbody>
 </table>
 <p>*Time is in milliseconds.</p>
 <p>So what I’ve done after this was to replace some heavy foreach code on my engine by for loops. I guess small things can be neglected but it’s always nice to know where bottlenecks may happen.</p>
@@ -268,7 +284,7 @@ Some simple tests gives these results:</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://www.david-amador.com/tags/csharp/">csharp</a></li>
+      <li><a href="https://www.david-amador.com/tags/csharp/">Csharp</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://www.david-amador.com/2009/12/updates-about-different-pixel-and-sapphire/">
@@ -307,7 +323,8 @@ Some simple tests gives these results:</p>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="https://www.david-amador.com">David Amador</a></span>
+        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

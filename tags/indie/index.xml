@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>indie on David Amador</title>
+    <title>Indie on David Amador</title>
     <link>https://www.david-amador.com/tags/indie/</link>
-    <description>Recent content in indie on David Amador</description>
+    <description>Recent content in Indie on David Amador</description>
     <image>
       <title>David Amador</title>
       <url>https://www.david-amador.com/david-amador-pixel.png</url>
       <link>https://www.david-amador.com/david-amador-pixel.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 23 Feb 2012 23:10:19 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/indie/index.xml" rel="self" type="application/rss+xml" />
@@ -18,11 +18,12 @@
       <link>https://www.david-amador.com/2012/02/some-thoughts-about-indie-dev/</link>
       <pubDate>Thu, 23 Feb 2012 23:10:19 +0000</pubDate>
       <guid>https://www.david-amador.com/2012/02/some-thoughts-about-indie-dev/</guid>
-      <description>1 – You either are, or you aren’t.
-People can go and , “I’m an aspiring indie game developer”. You are either doing games or not, period. If you are starting in development with your own money then you are one. People tend to think they are indie developers when money starts rolling in, well think again, cause money may never come.
-2 – It’s a jungle out there</description>
-      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2012/02/sad_developer.jpg"><img loading="lazy" src="/wp-content/uploads/2012/02/sad_developer-300x251.jpg" alt=""  title="sad_developer"  />
-</a></p>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.david-amador.com/wp-content/uploads/2012/02/sad_developer.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2012/02/sad_developer-300x251.jpg&#34; title=&#34;sad_developer&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1 – You either are, or you aren’t.&lt;/strong&gt;&lt;br&gt;
+People can go and , “I’m an aspiring indie game developer”. You are either doing games or not, period. If you are starting in development with your own money then you are one. People tend to think they are indie developers when money starts rolling in, well think again, cause money may never come.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2 – It’s a jungle out there&lt;/strong&gt;&lt;br&gt;
+There’s not a safe path on becoming a successful indie developer. It’s not like following another’s path will get you there. That’s why giving advices is just that, it might work or not.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><a href="/wp-content/uploads/2012/02/sad_developer.jpg"><img loading="lazy" src="/wp-content/uploads/2012/02/sad_developer-300x251.jpg" title="sad_developer"></a></p>
 <p><strong>1 – You either are, or you aren’t.</strong><br>
 People can go and , “I’m an aspiring indie game developer”. You are either doing games or not, period. If you are starting in development with your own money then you are one. People tend to think they are indie developers when money starts rolling in, well think again, cause money may never come.</p>
 <p><strong>2 – It’s a jungle out there</strong><br>
@@ -61,13 +62,13 @@ This one’s hard especially if you think your game is great and the first comme
       <link>https://www.david-amador.com/2011/06/indie-summer-six-pack/</link>
       <pubDate>Fri, 03 Jun 2011 17:54:35 +0000</pubDate>
       <guid>https://www.david-amador.com/2011/06/indie-summer-six-pack/</guid>
-      <description>So this is what we at Different Pixel, together with 5 other developers have been working on, the “Indie Summer Six Pack”
-Six indie titles for just $10 – or a stonking $5, if you first share the offer via Facebook.
-How can you say no to that?
-The games included are Aztaka, City Rain, Puzzlegeddon, Bob Came In Pieces, Vizati and Lylian.</description>
+      <description>&lt;p&gt;So this is what we at Different Pixel, together with 5 other developers have been working on, the “&lt;strong&gt;Indie Summer Six Pack&lt;/strong&gt;”&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.indiegamespack.com/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2011/06/indiepack.jpg&#34; title=&#34;indiepack&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://indiegamespack.com/&#34;&gt;Six indie titles for just $10&lt;/a&gt; – or a stonking $5, if you first share the offer via Facebook.&lt;/p&gt;
+&lt;p&gt;How can you say no to that?&lt;/p&gt;
+&lt;p&gt;The games included are &lt;strong&gt;Aztaka&lt;/strong&gt;, &lt;strong&gt;City Rain&lt;/strong&gt;, &lt;strong&gt;Puzzlegeddon&lt;/strong&gt;, &lt;strong&gt;Bob Came In Pieces&lt;/strong&gt;, &lt;strong&gt;Vizati&lt;/strong&gt; and &lt;strong&gt;Lylian&lt;/strong&gt;.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So this is what we at Different Pixel, together with 5 other developers have been working on, the “<strong>Indie Summer Six Pack</strong>”</p>
-<p><a href="http://www.indiegamespack.com/"><img loading="lazy" src="/wp-content/uploads/2011/06/indiepack.jpg" alt=""  title="indiepack"  />
-</a></p>
+<p><a href="http://www.indiegamespack.com/"><img loading="lazy" src="/wp-content/uploads/2011/06/indiepack.jpg" title="indiepack"></a></p>
 <p><a href="http://indiegamespack.com/">Six indie titles for just $10</a> – or a stonking $5, if you first share the offer via Facebook.</p>
 <p>How can you say no to that?</p>
 <p>The games included are <strong>Aztaka</strong>, <strong>City Rain</strong>, <strong>Puzzlegeddon</strong>, <strong>Bob Came In Pieces</strong>, <strong>Vizati</strong> and <strong>Lylian</strong>.</p>
@@ -78,25 +79,24 @@ The games included are Aztaka, City Rain, Puzzlegeddon, Bob Came In Pieces, Viza
       <link>https://www.david-amador.com/2010/12/wrapping-up-year-2010/</link>
       <pubDate>Fri, 31 Dec 2010 15:06:46 +0000</pubDate>
       <guid>https://www.david-amador.com/2010/12/wrapping-up-year-2010/</guid>
-      <description>So another year has come to an end, time to make plans for a new one and look back on what has been done.
-This was one crazy year, where I embraced indie development as my free time “hobby”.
-This picture illustrates my year very well, dark link is a bonus since my twitter handle is DJ_Link
-I’m tired, but happy and hoping that these were the first steps on something greater and bigger.</description>
+      <description>&lt;p&gt;So another year has come to an end, time to make plans for a new one and look back on what has been done.&lt;/p&gt;
+&lt;p&gt;This was one crazy year, where I embraced indie development as my free time “hobby”.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2010/12/chibi_dark_link_icon_by_creamy423-d2xgzv9.png&#34; title=&#34;coding....&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This picture illustrates my year very well, dark link is a bonus since my twitter handle is &lt;a href=&#34;https://twitter.com/DJ_Link&#34;&gt;DJ_Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I’m tired, but happy and hoping that these were the first steps on something greater and bigger.&lt;br&gt;
+Developing &lt;a href=&#34;https://dj_link.itch.io/vizati&#34;&gt;Vizati&lt;/a&gt; turned out a much more complex task that I imagined, making everything from the ground up, from engine to the actual game for 5 different platforms took me around 3x more time that I expected. Valuables lessons were learned so I’d be a fool to repeat those mistakes again.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>So another year has come to an end, time to make plans for a new one and look back on what has been done.</p>
 <p>This was one crazy year, where I embraced indie development as my free time “hobby”.</p>
-<p><img loading="lazy" src="/wp-content/uploads/2010/12/chibi_dark_link_icon_by_creamy423-d2xgzv9.png" alt=""  title="coding...."  />
-</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/12/chibi_dark_link_icon_by_creamy423-d2xgzv9.png" title="coding...."></p>
 <p>This picture illustrates my year very well, dark link is a bonus since my twitter handle is <a href="https://twitter.com/DJ_Link">DJ_Link</a></p>
 <p>I’m tired, but happy and hoping that these were the first steps on something greater and bigger.<br>
 Developing <a href="https://dj_link.itch.io/vizati">Vizati</a> turned out a much more complex task that I imagined, making everything from the ground up, from engine to the actual game for 5 different platforms took me around 3x more time that I expected. Valuables lessons were learned so I’d be a fool to repeat those mistakes again.</p>
-<p><a href="/wp-content/uploads/2010/12/E155.jpg"><img loading="lazy" src="/wp-content/uploads/2010/12/E155.jpg" alt=""  title="Being John Carmack"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/12/E155.jpg"><img loading="lazy" src="/wp-content/uploads/2010/12/E155.jpg" title="Being John Carmack"></a></p>
 <p>I don’t know what the future holds for me but I’m glad I took the chance to put something out there, gives me a sense of achievement and well, at least I tried, won’t carry this one to my grave 😛</p>
 <p>For future plans well, I have stuff going on but can’t really go into details. We (<a href="http://www.differentpixel.com">Different Pixel</a>) will keep trying to bring cool games for all of you.<br>
 Given the awful condition that Portugal is going though right now sometimes things seem hopeless, like rowing against the tide but I try to keep a general positive mind about it.</p>
 <p>Oh, just realized, I’m writing this post from my new laptop, I was finally able to buy one, it’s not a high-end machine but it’s going to be handy for developing outside home 🙂</p>
-<p><a href="/wp-content/uploads/2010/12/DSCF0002.jpg"><img loading="lazy" src="/wp-content/uploads/2010/12/DSCF0002.jpg" alt=""  title="DSCF0002"  />
-</a></p>
+<p><a href="/wp-content/uploads/2010/12/DSCF0002.jpg"><img loading="lazy" src="/wp-content/uploads/2010/12/DSCF0002.jpg" title="DSCF0002"></a></p>
 <p>I just want to say a big <strong>Thank You</strong> to everyone who bought Vizati, (btw, <a href="http://www.gamersgate.com/DD-VIZ/vizati">GamersGate is having a 65% off right now till Jan 2nd 2011, around €2.5</a>) everyone who sent us so many emails about it, feedback, comments, bugs etc.</p>
 <p>On a personal side I want to thank <a href="http://www.rita-silva.com">Rita</a> for jumping the indie bandwagon with me thus making Different Pixel possible without my stick-man figures, her art is awesome. Vizati was highly praised on it’s artistic look and that’s all on her, so I can’t wait to show you guys more stuff. Also a big thank you for every of my twitter followers, you have helped me more that once and made me company during those long coding nights.</p>
 <p><strong>Some of my favorite 2010 movies:</strong></p>
@@ -133,17 +133,16 @@ Andrew Goulding – <a href="http://www.brawsome.com.au">Brawsome</a><br>
       <link>https://www.david-amador.com/2009/09/game-competition/</link>
       <pubDate>Thu, 17 Sep 2009 11:24:14 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/09/game-competition/</guid>
-      <description>Some time ago I decided to launch a new website with a 48h Game Competition.
-We are now 2 days away from the Compo#1. This is for every indie game developer wannabe =)
-[Edit]
-The first competition is now over. Check the results here
-One of the games made in the competition</description>
+      <description>&lt;p&gt;Some time ago I decided to launch a new website with a 48h Game Competition.&lt;br&gt;
+We are now &lt;a href=&#34;http://theindiebay.com/competition/2009/09/17/2-days-left/&#34;&gt;2 days away from the Compo#1&lt;/a&gt;. This is for every indie game developer wannabe =)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[Edit]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The first competition is now over. Check the results &lt;a href=&#34;https://web.archive.org/web/20091127212514/http://theindiebay.com:80/competition/2009/09/21/compo1-voting/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://web.archive.org/web/20091127212514/http://theindiebay.com:80/competition/2009/09/21/compo1-voting/&#34;&gt;&lt;img alt=&#34;GameTitual&#34; loading=&#34;lazy&#34; src=&#34;https://www.david-amador.com/wp-content/uploads/2009/09/GameTitual-150x150.jpg&#34; title=&#34;GameTitual&#34;&gt;&lt;/a&gt; One of the games made in the competition.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Some time ago I decided to launch a new website with a 48h Game Competition.<br>
 We are now <a href="http://theindiebay.com/competition/2009/09/17/2-days-left/">2 days away from the Compo#1</a>. This is for every indie game developer wannabe =)</p>
 <p><strong>[Edit]</strong></p>
 <p>The first competition is now over. Check the results <a href="https://web.archive.org/web/20091127212514/http://theindiebay.com:80/competition/2009/09/21/compo1-voting/">here</a></p>
-<p><a href="https://web.archive.org/web/20091127212514/http://theindiebay.com:80/competition/2009/09/21/compo1-voting/"><img loading="lazy" src="/wp-content/uploads/2009/09/GameTitual-150x150.jpg" alt="GameTitual"  title="GameTitual"  />
-</a><!-- raw HTML omitted -->One of the games made in the competition<!-- raw HTML omitted --></p>
+<p><a href="https://web.archive.org/web/20091127212514/http://theindiebay.com:80/competition/2009/09/21/compo1-voting/"><img alt="GameTitual" loading="lazy" src="/wp-content/uploads/2009/09/GameTitual-150x150.jpg" title="GameTitual"></a> One of the games made in the competition.</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -151,12 +150,11 @@ We are now <a href="http://theindiebay.com/competition/2009/09/17/2-days-left/">
       <link>https://www.david-amador.com/2009/03/make-a-game-week/</link>
       <pubDate>Fri, 13 Mar 2009 17:33:12 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/03/make-a-game-week/</guid>
-      <description>I work on a game creation company and this week the administration decided to give us a challenge, to make a game. Using whatever tools we want to whatever platform we like.
-After we got divided between 4 teams the challenge was to make every minute count. My team got composed by me (programmer), a designer and a person from man resources. Of course I was going to handle every bit of code, the designer the art and the third person the level design and documentation.</description>
+      <description>&lt;p&gt;I work on a game creation company and this week the administration decided to give us a challenge, to make a game. Using whatever tools we want to whatever platform we like.&lt;/p&gt;
+&lt;p&gt;After we got divided between 4 teams the challenge was to make every minute count. My team got composed by me (programmer), a designer and a person from man resources. Of course I was going to handle every bit of code, the designer the art and the third person the level design and documentation.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>I work on a game creation company and this week the administration decided to give us a challenge, to make a game. Using whatever tools we want to whatever platform we like.</p>
 <p>After we got divided between 4 teams the challenge was to make every minute count. My team got composed by me (programmer), a designer and a person from man resources. Of course I was going to handle every bit of code, the designer the art and the third person the level design and documentation.</p>
-<p>We came up with a platform game called Cloud9 in which you have to return a star to the moon. The star has magical properties and can use the 4 basic elements. <img loading="lazy" src="/wp-content/uploads/2009/03/cloud9.jpg" alt="cloud9"  title="cloud9"  />
-</p>
+<p>We came up with a platform game called Cloud9 in which you have to return a star to the moon. The star has magical properties and can use the 4 basic elements. <img alt="cloud9" loading="lazy" src="/wp-content/uploads/2009/03/cloud9.jpg" title="cloud9"></p>
 <p>Meanwhile the week went by and this is the last day. I spent most of the day building the level editor.</p>
 ]]></content:encoded>
     </item>
