@@ -130,6 +130,22 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/06/reference.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A good Reference system can help your game
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How many times has it happened where you have this one class, let’s say it’s a spaceship that was destroyed.
+Now you have tell all other dependent objects that she died, any independent sprite animation class, AI, etc etc because they were relying on her. Another thing is, in my case, having a scene that contains all the objects and by deleting the ship It won’t get removed from the scene, keeping the reference alive and so Garbage collector won’t kick in. Deleting and removing from the list is a way, but why should you inside the spaceship class have know how to remove from the Scene list? Makes no sense. The list should know how to treat a deleted object.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-06-06 09:49:36 +0000 UTC'>June 6, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;406 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to A good Reference system can help your game" href="https://www.david-amador.com/2010/06/a-good-reference-system-can-help-your-game/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/05/box_vizati_11.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -283,23 +299,6 @@ I’ve been really busy with my Dream Build Play game lately. Although being a s
   <footer class="entry-footer"><span title='2010-02-15 00:29:42 +0000 UTC'>February 15, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;398 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to I maed a Custom Script Language for my Xna Engine" href="https://www.david-amador.com/2010/02/i-maed-a-custom-script-language-for-my-xna-engine/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/01/xna_linebatch.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Drawing Lines in XNA
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>One of the things I realized is very handy when prototyping or debugging is to draw a line on a specific location. Like drawing lines around collision boxes to see if your character is making a proper collision. For my games I’ve made a small LineBatch.
-Basically LineBatch uses a SpriteBatch to draw the lines by stretching a 1×1 white Texture2D to your line size.
-You can give it 2 points ( start and end point of course) and a color. There’s an overload function that receives the Layer parameter.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-01-26 00:40:48 +0000 UTC'>January 26, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;163 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Drawing Lines in XNA" href="https://www.david-amador.com/2010/01/drawing-lines-in-xna/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://www.david-amador.com/categories/game-development/page/7/">
@@ -312,7 +311,7 @@ You can give it 2 points ( start and end point of course) and a color. There’s
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+        <span>&copy; 2025 <a href="https://www.david-amador.com/">David Amador</a></span>
 	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">

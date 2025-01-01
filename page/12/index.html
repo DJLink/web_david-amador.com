@@ -131,6 +131,24 @@
 <main class="main"> 
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/memory_leaks_output.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Tracking memory leaks in Visual Studio
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I just discovered this useful piece of code for all who don’t have (including me) any memory leaks tracking code or software.
+I know there are other and better solution but this can be handy for quick findings without much hassle.
+First place this code in your entry point file, generally main.cpp inside your main() function
+#ifdef _DEBUG int flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG); flag |= _CRTDBG_LEAK_CHECK_DF; // Turn on leak-checking bit _CrtSetDbgFlag(flag); #endif Now just run you game/program as you would normally, in debug mode of course.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-10-19 14:09:01 +0000 UTC'>October 19, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;165 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Tracking memory leaks in Visual Studio" href="https://www.david-amador.com/2010/10/tracking-memory-leaks-in-visual-studio/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/basalt_xna_vs_basalt_cpp.png" alt="">
 </figure>
   <header class="entry-header">
@@ -299,23 +317,6 @@ iPod Touch 4G – 800 MHz / 256MB / 640×960
   <footer class="entry-footer"><span title='2010-09-08 12:01:37 +0000 UTC'>September 8, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;156 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Targetting iOS devices hardware" href="https://www.david-amador.com/2010/09/targetting-ios-devices-hardware/"></a>
 </article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/08/iphone_angles_orientation.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">iPhone OpenGL screen orientation using the accelerometer
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Even tough it’s not mandatory to support all screen orientations it’s always nice to support at least 2 of them.
-Let’s imagine your game is landscaped, by some reason the user may want to use either with the home button on the left or on the right. Most games support this, if you flip the device, the game will too.
-I’ve been using OpenGL to support the device orientation, most people on forums want an automatic solution, but belive me, it’s best that you have control on this.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-08-27 14:49:39 +0000 UTC'>August 27, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;500 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to iPhone OpenGL screen orientation using the accelerometer" href="https://www.david-amador.com/2010/08/iphone-opengl-screen-orientation-using-the-accelerometer/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://www.david-amador.com/page/11/">
@@ -328,7 +329,7 @@ I’ve been using OpenGL to support the device orientation, most people on forum
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+        <span>&copy; 2025 <a href="https://www.david-amador.com/">David Amador</a></span>
 	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">

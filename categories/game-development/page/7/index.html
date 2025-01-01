@@ -130,6 +130,24 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/09/retina_pixels.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Setting OpenGL view for iPhone 4 retina hi resolution
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This had me scratching my head for awhile.
+At first I thought that glGetRenderbufferParameterivOES would properly detect Retina screen at 960×640 but it keeps returning 480×320.
+A little explanation on Retina screen first. Older devices have 320×480 screen resolution. With new iPhone 4 and iPod Touch 4G the screen has 640×960 but on the same physical area. This means that each pixel is 4 times as small.
+To properly simulate older games resolutions iOS will replace each of your 320×480 game pixel by 4, this way your game will look identical.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-09-10 09:24:23 +0000 UTC'>September 10, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;256 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Setting OpenGL view for iPhone 4 retina hi resolution" href="https://www.david-amador.com/2010/09/setting-opengl-view-for-iphone-4-retina-hi-resolution/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/08/iphone_portrait_homebutton_right.png" alt="">
 </figure>
   <header class="entry-header">
@@ -288,22 +306,6 @@ Also on a quick update, yesterday I had the chance to test Vizati at Windows Pho
   <footer class="entry-footer"><span title='2010-06-08 22:16:32 +0000 UTC'>June 8, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;100 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Who wants to try Vizati Demo?" href="https://www.david-amador.com/2010/06/who-wants-to-try-vizati-demo/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/06/reference.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">A good Reference system can help your game
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>How many times has it happened where you have this one class, let’s say it’s a spaceship that was destroyed.
-Now you have tell all other dependent objects that she died, any independent sprite animation class, AI, etc etc because they were relying on her. Another thing is, in my case, having a scene that contains all the objects and by deleting the ship It won’t get removed from the scene, keeping the reference alive and so Garbage collector won’t kick in. Deleting and removing from the list is a way, but why should you inside the spaceship class have know how to remove from the Scene list? Makes no sense. The list should know how to treat a deleted object.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-06-06 09:49:36 +0000 UTC'>June 6, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;406 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to A good Reference system can help your game" href="https://www.david-amador.com/2010/06/a-good-reference-system-can-help-your-game/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://www.david-amador.com/categories/game-development/page/6/">
@@ -316,7 +318,7 @@ Now you have tell all other dependent objects that she died, any independent spr
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://www.david-amador.com/">David Amador</a></span>
+        <span>&copy; 2025 <a href="https://www.david-amador.com/">David Amador</a></span>
 	
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
