@@ -2,31 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.david-amador.com/categories/</loc>
+    <lastmod>2025-02-03T20:20:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/2025/01/cozy-game-moments-in-unexpected-places/</loc>
+    <lastmod>2025-02-03T20:20:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/</loc>
+    <lastmod>2025-02-03T20:20:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/categories/game-development/</loc>
+    <lastmod>2025-02-03T20:20:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/gamedev/</loc>
+    <lastmod>2025-02-03T20:20:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/games/</loc>
+    <lastmod>2025-02-03T20:20:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/posts/</loc>
+    <lastmod>2025-02-03T20:20:55+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/</loc>
+    <lastmod>2025-02-03T20:20:55+00:00</lastmod>
+  </url><url>
     <loc>https://www.david-amador.com/2025/01/2024-wrap-up-2025-the-year-of-godot/</loc>
     <lastmod>2025-01-01T08:32:55+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/categories/application--software/</loc>
     <lastmod>2025-01-01T08:32:55+00:00</lastmod>
   </url><url>
-    <loc>https://www.david-amador.com/categories/</loc>
-    <lastmod>2025-01-01T08:32:55+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/</loc>
-    <lastmod>2025-01-01T08:32:55+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/categories/game-development/</loc>
-    <lastmod>2025-01-01T08:32:55+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/tags/gamedev/</loc>
-    <lastmod>2025-01-01T08:32:55+00:00</lastmod>
-  </url><url>
     <loc>https://www.david-amador.com/tags/godot/</loc>
-    <lastmod>2025-01-01T08:32:55+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/posts/</loc>
-    <lastmod>2025-01-01T08:32:55+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/tags/</loc>
     <lastmod>2025-01-01T08:32:55+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/year-wrapup/</loc>
@@ -180,9 +186,6 @@
     <lastmod>2017-01-20T10:41:09+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/development/</loc>
-    <lastmod>2016-12-29T12:35:49+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/tags/games/</loc>
     <lastmod>2016-12-29T12:35:49+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/nintendo/</loc>
