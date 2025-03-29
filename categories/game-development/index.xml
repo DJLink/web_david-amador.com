@@ -11,8 +11,90 @@
     </image>
     <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Feb 2025 20:20:55 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Mar 2025 11:20:55 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/categories/game-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switching to a new Keyboard, the Glove80</title>
+      <link>https://www.david-amador.com/2025/03/new-keyboard-glove80/</link>
+      <pubDate>Sat, 29 Mar 2025 11:20:55 +0000</pubDate>
+      <guid>https://www.david-amador.com/2025/03/new-keyboard-glove80/</guid>
+      <description>&lt;h3 id=&#34;why&#34;&gt;Why?&lt;/h3&gt;
+&lt;p&gt;My 8-9 year old Microsoft Sculpt Ergonomic keyboard died 🪦 (actually it&amp;rsquo;s been showing signs for a while), so I decided to search the market.&lt;/p&gt;
+&lt;p&gt;At first I just wanted &amp;ldquo;the same one&amp;rdquo;, but they are discontinued, even used ones are expensive, and many didn&amp;rsquo;t had the dongle anymore (btw don&amp;rsquo;t buy this KB without the bundled dongle, comes locked from factory, you can&amp;rsquo;t use a different one, shame on you MS).
+I found that some brands will eventually have similar models later this year (but no release date yet) but I needed to start changing now.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h3 id="why">Why?</h3>
+<p>My 8-9 year old Microsoft Sculpt Ergonomic keyboard died 🪦 (actually it&rsquo;s been showing signs for a while), so I decided to search the market.</p>
+<p>At first I just wanted &ldquo;the same one&rdquo;, but they are discontinued, even used ones are expensive, and many didn&rsquo;t had the dongle anymore (btw don&rsquo;t buy this KB without the bundled dongle, comes locked from factory, you can&rsquo;t use a different one, shame on you MS).
+I found that some brands will eventually have similar models later this year (but no release date yet) but I needed to start changing now.</p>
+<p>A friend recommended me a Kinesis or the ErgoDox, but for a variety of reasons I ended up going with a Glove80 which I found during my searches, it&rsquo;s an expensive one, but it&rsquo;s split, ortholinear and it has the F1-F10 keys which I think are a nice to have separate.</p>
+<p>I anticipate a big learning curve, and there&rsquo;s a possibility I might not even get used to it. I found a bunch of posts of people who gave up and returned them (any of the KBs I mentioned really), so I anticipate friction. I&rsquo;m going to write a log on how things will progress and eventually post it. Regardless of failure or success.</p>
+<h3 id="unboxing">Unboxing</h3>
+<p>After much debating I decided to order it on February 6th, received it on February 14th, so overall pretty fast shipping + delivery.</p>
+<p>I got the Rev2, which now always comes with a carrying case, and this is how it was packed.</p>
+<p><img alt="Glove80 Rev 2 unboxing" loading="lazy" src="/wp-content/uploads/2025/03/glove80_rev2_unboxing.jpg"></p>
+<p>The box is indeed sturdy, and as the welcome note claims, good enough to travel, although it&rsquo;s on the big side so I don&rsquo;t see it as something to be carried around everyday, but for a trip or working elsewhere for a couple days it&rsquo;s very good.</p>
+<p>It also came with some spare keycaps on a cloth bag, some tools and rubbers for tenting, and a USB-C (KB side) to USB-A (PC side) cable.</p>
+<p><img alt="Glove80 extras in the case" loading="lazy" src="/wp-content/uploads/2025/03/glove80_unboxing_extras.jpg"></p>
+<h3 id="setup">Setup</h3>
+<p>You can setup the keyboard by bluetooth (no dongle) or via USB cable. You only need to connect the left part, and the right side always communicates with the left one wirelessly. However, to charge you need to connect a cable on both, not at the same time but if you want to never care about battery you&rsquo;ll need a USB split cable or 2 of them always plugged in. The left side runs out of battery faster than the right one so that&rsquo;s probably not an issue.</p>
+<p><img alt="Glove80 tenting" loading="lazy" src="/wp-content/uploads/2025/03/glove80_tenting.jpg"></p>
+<p>In terms of tenting there&rsquo;s several feet with some screws you can lower and put higher as needed, but I&rsquo;ve been using it flat. As I mentioned they ship it with some extra rubbers, for stability if needed to raise a lot, I have it on a deskmat and it&rsquo;s super stable, I guess on a desk directly, if you run into issues that could be useful.</p>
+<p>Note for Mac users, the best way to just use it out of the box and having all keys work as they are on each key Label is U.S. International - PC as the keyboard layout.</p>
+<p><img alt="Glove80 mac keyboard setting" loading="lazy" src="/wp-content/uploads/2025/03/glove80_mac_keyboard_setting.png"></p>
+<h3 id="day-1">Day 1</h3>
+<p>The first thing I noticed it how low profile it is, I love it, so close to the desk, here&rsquo;s the left side near a Nintendo Switch (left).</p>
+<p><img alt="Glove80 low profile" loading="lazy" src="/wp-content/uploads/2025/03/glove80_side_profile_vs_nintendo_switch.jpg"></p>
+<p>Ok just to be honest here, I just tried it but right now but I&rsquo;m still typing this on my temporary keyboard, I tried the Glove80 a bit and I&rsquo;m now on that &ldquo;OMG I regret this already!&rdquo; stage. The packing is very nice, the keyboard looks great and seems comfortable, but I&rsquo;m switching from ISO to ANSI, algo to split and ortholinear, everything is in a completely different place, I can barely find anything. Out of curiosity I did a <a href="https://monkeytype.com/">https://monkeytype.com/</a>  test and yeah this will take some getting use to, but I&rsquo;m excited for this.</p>
+<p><img alt="Glove80 day one test typing" loading="lazy" src="/wp-content/uploads/2025/03/glove80_day_one_test_typing.jpg"></p>
+<h3 id="day-2">Day 2</h3>
+<p>I&rsquo;m typing this on the Glove80 now so it might take forever. I&rsquo;ve been practicing a little bit more and I started to average 20 words per minute (with a lot of errors and corrections). So it&rsquo;s still terrible but not as bad as yesterday, that&rsquo;s what I got to focus on.</p>
+<p>Some observations already, most of my tests are still just words as I noticed that I need to get used to the ortholinear layout, I have a lot of fails that come from the muscle memory of fingers moving around, which is not as needed here. Also I&rsquo;m messing up all the time the usual shortcuts, CTRL, SHIFT, ALT, they are all now in different places so there&rsquo;s a lot to get used to.</p>
+<p>I don&rsquo;t like much that the &ldquo;WIN&rdquo; key is on the right thumb cluster, so I&rsquo;m taking a note to maybe switch it with the layer key which I guess I&rsquo;ll use way less.</p>
+<p><img alt="Glove80 left and right thumbcluster" loading="lazy" src="/wp-content/uploads/2025/03/glove80_change_thumbcluster.jpg"></p>
+<h3 id="day-4">Day 4</h3>
+<p>I&rsquo;m only using the keyboard at night but I&rsquo;ve been making progress, do a couple rounds of tests after work, I&rsquo;m more comfortable typing with it, doesn&rsquo;t feel as strange anymore, at least words.</p>
+<p>The keyboard is indeed comfortable, not having to move my hands so much, really starting to grow on me. During the day I&rsquo;m using a regular KB and I can feel the wrists pressure. If I fully turn into this keyboard I can see myself not wanting to go back.</p>
+<p>It&rsquo;s funny that I now know exactly which characters I have more trouble typing, it&rsquo;s especially right hand pinky row (OPL) and left hand CDFV &ldquo;square&rdquo;. But mentally that has helped as I pause a bit, remember myself and do a bit less errors even if I&rsquo;m slower. I&rsquo;ve been trying to force myself not to look to the keyboard but once in a while I&rsquo;ll do a couple tests looking to get my bearings.</p>
+<h3 id="day-5">Day 5</h3>
+<p>Today I&rsquo;ve reached a 50 WPM speed test with 100%, that was an outliner but I&rsquo;m happy about it.</p>
+<p><img alt="Glove80 5th day speed test" loading="lazy" src="/wp-content/uploads/2025/03/glove80_type_speed_day_5.png"></p>
+<h3 id="day-7">Day 7</h3>
+<p>Slowly but steady I&rsquo;m getting better. I found out that I tend to have the right side with a worse angle then the left side, probably bad posture from older keyboards, I guess I probably had the 1-piece keyboard always slightly more to the left, due to the mouse, so I tend to have my left wrist not as relaxed. This might be because of mouse use as well.</p>
+<p>Yikes coding just kills your body slowly.</p>
+<p><img alt="Glove80 5th day speed test" loading="lazy" src="/wp-content/uploads/2025/03/glove80_type_speed_day_7.png"></p>
+<h3 id="day-8">Day 8</h3>
+<p>The start of a new week, I decided I&rsquo;ll now introduce numbers and special keys like ( ) ; , . etc to my typing practice, it&rsquo;s time to start dealing with that.</p>
+<h3 id="day-17">Day 17</h3>
+<p>Most of the biggest &ldquo;speed&rdquo; progress was made in the first 2 weeks, now it&rsquo;s mostly being a bit more confident with the fingers, not as many mistakes, not necessarily being faster.
+I found out that I can have shortcuts to use the keyboard as a mouse, like having 4 keys to move mouse UP/DOWN/LEFT/RIGHT, this is a godsend, sometimes I just want to move the mouse a little bit and switch back to keyboard, this speeds up things by a lot. I mapped it to holding LAYER key and IJKL for movement.</p>
+<h3 id="day-18-to-29">Day 18 to 29</h3>
+<p>Slow but steady&hellip;</p>
+<p><img alt="progress" loading="lazy" src="/wp-content/uploads/2025/03/glove80_typing_progress.jpg"></p>
+<p>I keep bouncing between using the Glove80 and going back to my keyboard depending on what I need, if I need faster coding sessions or if something that I&rsquo;m more comfortable with going slower.</p>
+<h3 id="day-30">Day 30</h3>
+<p>I just realized I&rsquo;ve been using it as my main keyboard for the past week or so of work, I&rsquo;m still not as fast, and many of the shortcuts still ilude me a bit, but for the most part I can work ok, it&rsquo;s rare that I have to speed type this past week, so it was the perfect time. Most work has been evaluation, debug and searching/fixing stuff, so I think I&rsquo;ll get there as fast as my old KB eventually.</p>
+<p>This change was mostly due to a friend asking me last week how the change was going (he has a Kinesis so was curious), and I said I was feeling bad on doing the full change while I was not as good, due to contract work. And his comment about my speed probably already being good enough and that I should switch made me do it. Thing is, that final stretch can&rsquo;t be done in small bursts.</p>
+<h3 id="mapping-tool">Mapping tool</h3>
+<p>Glove80 provides a web interface where we can remap every key and layer. It&rsquo;s very intuitive, and how I remapped some of the keys in a layer for using mouse. Once you wrap it up, it exports a file, you just plug in the keyboard left part via USB mode, just drag a file to a storage disk that shows up on the computer, once it&rsquo;s there it ejects automatically, then repeat it for the right side. It&rsquo;s fast and just works. I haven&rsquo;t used this much but I can see myself in the long run wanting to do tweaks as I even talked a bit before.</p>
+<p>Most of the keyboard keys are in a good position, even if it feels odd at first, but you can remap everything.</p>
+<h3 id="thoughts">Thoughts</h3>
+<p>I&rsquo;ll admit that once in a while when I&rsquo;m in a rush I still go back to a regular keyboard, I&rsquo;ve made good progress and I can see the advantages but I have nearly 2 decades of muscle memory on regular keyboards, so it will take some extra time to never have the feeling of requiring to switch back when I need to code faster or in a rush. Shortcuts especially are harder.
+But if I keep this up I&rsquo;ll eventually only need it rarely or not at all.</p>
+<p>The good things is that when I use it my posture is better.</p>
+<p><img alt="Glove80 on a desk" loading="lazy" src="/wp-content/uploads/2025/03/glove80_photo_desk_showing_halve_distanced_desk.jpg"></p>
+<p>I can have my shoulder blades in a more comfortable position, I feel myself less hunched and curled, my shoulders and wrists appreciate it. It&rsquo;s definitely worth learning how to use one and the cost. Again, coding slowly kills your body, gotta try to delay it as much as possible.</p>
+<p>On the bad side I found out Windows bluetooth is so unreliable I had to force my device not to allow power management. Luckily that fixed disconnections with the Glove80 right away. It&rsquo;s possible I would have issues with other stuff (usually I have with bluetooth headphones issues once in a while), but a keyboard failing wasn&rsquo;t something that I could have happening.</p>
+<p><img alt="Glove80 Rev 2 unboxing" loading="lazy" src="/wp-content/uploads/2025/03/glove80_cherry_blossom.jpg"></p>
+<p>I&rsquo;m still on the fence on the best place to keep my trackball mouse. Because the keyboard can be much farther apart, if you put the mouse on the right side, it becomes too uncomfortable, which defeats the purpose.
+So sometime if I need to use it for longer sessions (like painting software etc) I just put the right part of the keyboard to the middle.</p>
+<p>I don&rsquo;t regret buying this, even if it was the most expensive keyboard I ever got.</p>
+<p><img alt="Most expensive keyboard so far" loading="lazy" src="/wp-content/uploads/2025/03/the_most_expensive_kb_so_far.jpg"></p>
+<p>I would recommend this keyboard as a good one, for sure. However, having never tried any of the other popular ones (Kinesis, Ergodox, etc), I can&rsquo;t know for sure if this one is better or worse, all I can say is that I&rsquo;m happy with it so far.</p>
+<p>Let me know if you have any particular questions, be glad to answer, I know this isn&rsquo;t exactly a &ldquo;good review post&rdquo;, it&rsquo;s just a dump of my process to get here.</p>
+<hr>
+<p>See you in the next post!</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Cozy Game Moments in Unexpected Places</title>
       <link>https://www.david-amador.com/2025/01/cozy-game-moments-in-unexpected-places/</link>
@@ -844,22 +926,6 @@ Even if a studio were to create a folder for its own brand, that would be ok too
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span></code></pre></div><p>So my vote is for this solution.<br>
 What do you think?</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>I&#39;m a Xbox One developer now, QoD getting a port</title>
-      <link>https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</link>
-      <pubDate>Sun, 14 Dec 2014 12:19:07 +0000</pubDate>
-      <guid>https://www.david-amador.com/2014/12/im-a-xbox-one-developer-now-qod-getting-a-port/</guid>
-      <description>&lt;p&gt;So a lot has happened since my last post. Even before &lt;a href=&#34;https://www.david-amador.com/2014/10/egx-2014/&#34; title=&#34;EGX 2014&#34;&gt;EGX&lt;/a&gt; I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.&lt;br&gt;
-I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you.&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>So a lot has happened since my last post. Even before <a href="/2014/10/egx-2014/" title="EGX 2014">EGX</a> I was already in talks with Microsoft for becoming a Xbox One developer and maybe get Quest of Dungeons to XO. I was extremely happy when they accepted both, so right now I’m working on porting the game to Xbox One.<br>
-I don’t think this would have been possible without all the gamers that have played and are still playing the game, that’s what brought all the positive vibe surrounding the game, so a big thank you.</p>
-<p>Since pushing on making games with just displaying my name felt a bit weird I decided (a couple months ago) to give a brand to my indie games, called <a href="http://www.upfallstudios.com">Upfall Studios</a>. Looks a bit more professional and it’s easier to approach other people, because either we like it or not, this is a business and people always ask “what’s the studio name?”.</p>
-<p><del>I also created a blog (<a href="http://www.upfallstudios.com/">http://www.upfallstudios.com/</a>) where I’ll be talking about the games and development, which is something I usually don’t do here in much dept, is mostly “new game”, “game is out”, so if you want to keep track of that feel free.</del></p>
-<p>Edit 2024: I&rsquo;ve since <a href="/2022/11/merged-personal-and-studio-blogs-into-one/">merged the upfallstudios blog onto this one</a>.</p>
-<p>I’m forcing myself to do a year summary post soon so see you soon.</p>
-<p><img alt="xbox_one_console" loading="lazy" src="/wp-content/uploads/2014/12/xbox_one_console.jpg"></p>
 ]]></content:encoded>
     </item>
   </channel>

@@ -130,6 +130,24 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Loading images into OpenGL in iPhone
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So you can’t make a game without images, right? Well, actually you can but that’s another story.
+But how can you load a jpg or a png and use then on OpenGLES?
+First let’s make a simple class Texture2D
+class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-03-18 10:06:24 +0000 UTC'>March 18, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;319 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Loading images into OpenGL in iPhone" href="https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/07/DSCF0003.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -290,29 +308,12 @@ So depending on you app you might want to save the current state just in case th
   <footer class="entry-footer"><span title='2010-09-20 21:36:27 +0000 UTC'>September 20, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;218 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Simulating tombstone (suspended state) on Windows Phone 7 emulator" href="https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/09/Leafy_Milestone_by_mydeepdark.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Another milestone reached, first App sent to Apple Store
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Finally and after several weeks locked inside Different Pixel “dungeon” making my engine compatible with iOS, namely with iPhone/iPod touch I submitted today my first App to the Apple Store.
-The binary didn’t reported any issues so as of 15 September 2010 it’s “Waiting For Review”
-I have mixed feelings about either it’s going to be approved or rejected. On one hand we tested as much as we could, handed to some testers using iPhone 3, iPhone 4 and iPod touches. The only issues reported were usability or with game logic itself. No one reported any crashes, so I’m a little reassured on that part. On the other hand I’ve heard and read some major horror stories surrounding the submission process. Crashes that you can’t reproduce, people resubmitting same build again after failure being accepted, meaning that something is wrong there. Right now it’s a shot in the dark…
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-09-15 16:58:38 +0000 UTC'>September 15, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;383 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Another milestone reached, first App sent to Apple Store" href="https://www.david-amador.com/2010/09/another-milestone-reached-first-app-sent-to-apple-store/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://www.david-amador.com/categories/game-development/page/5/">
-      «&nbsp;Prev&nbsp;5/10
+      «&nbsp;Prev&nbsp;5/11
     </a>
-    <a class="next" href="https://www.david-amador.com/categories/game-development/page/7/">Next&nbsp;7/10&nbsp;»
+    <a class="next" href="https://www.david-amador.com/categories/game-development/page/7/">Next&nbsp;7/11&nbsp;»
     </a>
   </nav>
 </footer>
