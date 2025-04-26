@@ -11,8 +11,113 @@
     </image>
     <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 24 Sep 2023 09:57:43 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Apr 2025 08:10:00 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switching from Unity to Godot My Experience So Far</title>
+      <link>https://www.david-amador.com/2025/04/switching-unity-to-godot-my-experience-so-far/</link>
+      <pubDate>Sat, 26 Apr 2025 08:10:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/2025/04/switching-unity-to-godot-my-experience-so-far/</guid>
+      <description>After years with Unity, I spent time exploring Godot 4. Here&amp;#39;s some of the things I liked, the things that frustrated me, and how the switch compares overall.</description>
+      <content:encoded><![CDATA[<h3 id="why">Why?</h3>
+<p>After several years working with Unity, both for personal and contract projects, I decided to finally properly test and use Godot.</p>
+<p>I had been keeping an eye on it for a few years, but <a href="/2023/09/the-unity-enshittification-proprietary-tech-dangers-and-mostly-not-talking-about-what-im-doing/">Unity&rsquo;s controversial policy changes</a> in late 2023 were the final push I needed to start experimenting seriously with an alternative engine, even if I could use my custom engine.</p>
+<p>I guess the sort of exploding new wave of devs switching to Godot made me even more tempted, adoption is rapidly expanding.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img alt="Godot game jam usage 2023" loading="lazy" src="/wp-content/uploads/2025/04/godot_jams_use_2023.jpg"></th>
+          <th style="text-align: center"><img alt="Godot game jam usage 2024" loading="lazy" src="/wp-content/uploads/2025/04/godot_jams_use_2024.jpg"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><em>Godot game jam usage – 2023</em></td>
+          <td style="text-align: center"><em>Godot game jam usage – 2024</em></td>
+      </tr>
+  </tbody>
+</table>
+<p>While I’m still using Unity for some projects, Godot has become my engine of choice for prototyping, personal games, and game jam-sized projects.</p>
+<p>I&rsquo;m not an expert but I&rsquo;ve been using it for some time so I&rsquo;ll share my first impressions, the things I loved, the things that could be better, and how the overall experience compares to Unity.</p>
+<p><img alt="Godot Editor Overview" loading="lazy" src="/wp-content/uploads/2025/04/godot_editor_overview.jpg"><br>
+<em>Godot editor with a 3D demo prototype project loaded.</em></p>
+<hr>
+<h3 id="the-good-parts">The Good Parts</h3>
+<p><strong>Node System</strong><br>
+Godot’s node system is incredibly flexible. Each scene is built by composing nodes, and nodes themselves can be entire scenes. Coming from Unity’s prefab and component system, I found Godot’s approach simpler, the &ldquo;prefabs&rdquo; system feels more robust in Godot, it always felt a bit more fragile in Unity, like things could fall apart quicky, especially nested prefabs.</p>
+<p><img alt="Create a new Godot Node window" loading="lazy" src="/wp-content/uploads/2025/04/godot_create_node_system.jpg"></p>
+<p>At first, having only one script per node felt restrictive, I remember this was my first &ldquo;oh no, but why?&rdquo; moment, but quickly I realized it makes sense and it actually enforces a cleaner project structure and easier readability.</p>
+<p><img alt="Example of a Godot Node setup" loading="lazy" src="/wp-content/uploads/2025/04/godot_node_system_example.jpg"></p>
+<p>Making shaders inside the editor itself by code is super easy to iterate and see the results, it highlights syntax errors and it&rsquo;s well rounded and perfect for quick tweaking.</p>
+<p><img alt="Doing a shader for a duck " loading="lazy" src="/wp-content/uploads/2025/04/godot_shader_example.jpg"></p>
+<p><strong>UI Themes</strong><br>
+Godot&rsquo;s UI system is a pleasure to work with once you understand how <strong>themes</strong> work.<br>
+Instead of tweaking every button manually, you can design a style once and apply it across your project — similar to using CSS on a website.<br>
+Compared to Unity’s sometimes fragile UI system, Godot’s feels more modern and consistent.</p>
+<p><img alt="Godot UI Theme Example" loading="lazy" src="/wp-content/uploads/2025/04/godot_ui_theme_example.jpg"><br>
+<em>Styling the UI globally using Godot&rsquo;s Theme system, almost kind of a &ldquo;CSS&rdquo; for games.</em></p>
+<p><strong>Editor Scripting and GDScript</strong><br>
+Before starting I knew we could code in GDScript, C# and C++.
+Honestly I&rsquo;m growing tired of C#, but going C++, which I already use for my custom engine, felt like I was leaving a learning opportunity on the table. So I decided to go full GDScript and learn it, also there are way more tutorials and examples online using GDScript.</p>
+<p>It&rsquo;s a Python like indentation system, so I&rsquo;m used to it from my Python scripts, the language is quite easy to understand and has several nice functionalities. We still have classes, enums, inheritance, arrays etc, you&rsquo;ll feel at home right away.</p>
+<p>The signals are surprisingly boilerplate code free, so I&rsquo;ve embraced them for several things.</p>
+<p>The ability to script inside the editor with GDScript makes many workflows very fast. GDScript itself is fun, clean, and powerful enough for full games. It feels like a sandbox-friendly language without giving up robustness.</p>
+<p><strong>Mobile Export</strong><br>
+I decided to export a mobile build of a prototype, exporting to iOS was surprisingly straightforward. It needs Xcode and setting up the usual certificates, because Godot produced a working Xcode project that we can then use to compile and deploy easily to the phone.<br>
+Aside from a small hiccup with orientation settings, everything just worked on first build. Didn&rsquo;t yet tried Android but I&rsquo;m assuming a similar process.</p>
+<p><strong>Debugging Tools</strong><br>
+I&rsquo;ve been using Rider for several years for C# and C++, so I decided to use it as well here, even if coding and debugging inside Godot is very solid.<br>
+But using Rider externally allows me some familiarity, but we can still use the built-in editor debugger, you can set breakpoints, watch variables, and step through code easily. It works as expected so far, no complaints there.</p>
+<p><img alt="Debugging a Godot project" loading="lazy" src="/wp-content/uploads/2025/04/godot_debugging_example.jpg"></p>
+<p>An awesome bonus: if you hit a C++ level error, Godot shows you the exact file and line number in the engine source — and you can jump straight to GitHub to inspect it.</p>
+<p><img alt="CPP code jump from Godot Editor" loading="lazy" src="/wp-content/uploads/2025/04/godot_open_cpp_source_code_in_editor.jpg"></p>
+<p><strong>Open Community</strong><br>
+Whenever I found documentation gaps or bugs, reporting them was easy, and fixes often came quickly.  The Godot community is active, helpful, and genuinely open to feedback. Many times the only way I could get something to work was by seeing someone with same issue because Docs were lacking something.</p>
+<p><img alt="Debugging a Godot project " loading="lazy" src="/wp-content/uploads/2025/04/godot_community_1.jpg"></p>
+<hr>
+<h3 id="the-rougher-edges">The Rougher Edges</h3>
+<p><strong>Editor UX Inconsistencies</strong><br>
+While the editor is powerful, UX polish is still lacking compared to Unity or Unreal.  Some buttons don&rsquo;t look clickable, tabbing between elements can behave inconsistently across tools, and finding certain actions (like creating new animations) isn’t always intuitive.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img alt="Godot Animation Editor Confusing Button" loading="lazy" src="/wp-content/uploads/2025/04/godot_animation_button_1.jpg"></th>
+          <th style="text-align: center"><img alt="Godot Animation Editor Confusing Button" loading="lazy" src="/wp-content/uploads/2025/04/godot_animation_button_2.jpg"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>*Some buttons in the editor can be hard to spot at first, like adding a new animation. &ldquo;Animation&rdquo; doesn&rsquo;t look like a button at first glance *</p>
+<p><img alt="Godot size before position in UI " loading="lazy" src="/wp-content/uploads/2025/04/godot_size_before_position.jpg"><br>
+<em>Control Nodes show the Size before position, contrary to the other nodes, which doesn&rsquo;t make much sense to me, <a href="https://github.com/godotengine/godot/pull/100169">I even opened a PR for this</a>, it&rsquo;s under consideration.</em></p>
+<p><strong>TileMap Workflow</strong><br>
+Working with TileMaps can be a bit frustrating. I found myself often jumping between multiple tabs just to tweak small things. It feels fragmented compared to Unity’s more consolidated tile setup.</p>
+<p><strong>Atlas System</strong><br>
+Managing sprite Atlases in Godot isn’t as flexible as Unity’s system. We can’t name regions (afaik), and the workflow feels a bit clunky compared to Unity’s Sprite Atlas features. All of this can be improved but at the moment it feels a bit more in the way, and I never felt this friction when using Unity.</p>
+<p><strong>Version Mismatches and Learning Curve</strong><br>
+Because Godot 4 changed many APIs from version 3, a lot of web tutorials and resources are slightly outdated.  The official documentation is good, but sometimes finding clear differences between versions required digging through forums or Reddit posts. The good news really is that if you take the time to make a PR on Github or ask for someone to fix odds are it will be done rather quickly.</p>
+<p><strong>GDScript Indentation</strong><br>
+While GDScript is fun, I’m personally not a fan of Python-style tab-based indentation.<br>
+I would have preferred curly braces <code>{}</code> for clarity, but that’s more a personal preference than a true flaw.</p>
+<hr>
+<h3 id="iteration">Iteration</h3>
+<p>Godot is rapidly evolving, last month Godot 4.4 was released with tons of new features,
+from performance boost, a built-in game window for running the games inside the editor, typed dictionaries, physics improvements, and tons of more things.</p>
+<p>This is great, but also means some things might evolve quickly or get deprecated as the engine improves. I think we&rsquo;re on the stage that Unity was around version 4-5-2017 transitions. Not saying this as a bad thing, just that some new features might mean something else we were relying has to go.
+One thing I noticed is that they overhauled the tilemap system in favour of a layered one, so the older one is still around but not recommended; and it brought me memories of Unity getting rid of the old Particle System when they got a new one. Again, the right choices, but with some pains along the way.</p>
+<p>You can read all the new features on Godot 4.4 here: <a href="https://godotengine.org/releases/4.4/">https://godotengine.org/releases/4.4/</a></p>
+<h3 id="final-thoughts">Final Thoughts</h3>
+<p>Despite the small rough edges, my overall experience with Godot so far has been <strong>very positive</strong>.  It’s an incredibly powerful, lightweight engine that has a nice balance between features and flexibility, encourages a clean structure, and is backed by a great community.</p>
+<p>If you’re coming from Unity and considering Godot, expect a bit of a learning curve — especially with editor quirks and differences in workflow. But once you get past the initial bumps, it’s really nice.</p>
+<p>I would HIGHLY recommend learning GDScript instead of &ldquo;oh but I know C# already&rdquo;.</p>
+<p>I’m excited to keep building with Godot, and I’m looking forward to seeing how the engine grows even stronger in the next few years.</p>
+<p>Bonus tip I read somewhere, if something isn&rsquo;t working, and you feel like it should, restart Godot or clean the autogenerated .godot folder, and odds are it will work properly now, especially GDScript stuff tends to be &ldquo;confused&rdquo; if you use external tools.</p>
+<p>P.S.: If you also recently switched to Godot, I&rsquo;d love to hear your experience too. Feel free to comment or message me.</p>
+<hr>
+<p>See you in the next post!</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Unity enshittification round 2, moving on to custom tech.</title>
       <link>https://www.david-amador.com/2023/09/unity-enshittification-round-2-moving-on-to-custom-tech/</link>

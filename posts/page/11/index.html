@@ -145,6 +145,24 @@
 </header>
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Loading images into OpenGL in iPhone
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So you can’t make a game without images, right? Well, actually you can but that’s another story.
+But how can you load a jpg or a png and use then on OpenGLES?
+First let’s make a simple class Texture2D
+class Texture2D { public: Texture2D(int id, int width, int height) { _textureId = id; _width = width; _height = height; } virtual ~Texture2D(void) { // Delete Texture from HGL Memory glDeleteTextures(1, ((GLuint*)&amp;_textureId)); } int getTextureId() {return _textureId; } protected: int _textureId; // The reference ID of the texture in OpenGL memory int _width; int _height; }; Now for the code to actually load the image
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-03-18 10:06:24 +0000 UTC'>March 18, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;319 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Loading images into OpenGL in iPhone" href="https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/la_lettre_de_motivation.gif" alt="">
 </figure>
   <header class="entry-header">
@@ -302,30 +320,12 @@ Basically create a new WP7 Silverlight App and write this main page code
   <footer class="entry-footer"><span title='2010-11-17 23:27:04 +0000 UTC'>November 17, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;129 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Viewing Windows Phone 7 Marketplace on the simulator" href="https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/"></a>
 </article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/11/Capture6_-_specialty_shops.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">My 2 cents on xblig current state
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> UPDATE: Pressure works, Microsoft backs down over XBLIG changes: http://www.digitalspy.co.uk/gaming/news/a286779/microsoft-backs-down-over-xblig-changes.html
-Let me start by saying that this is just a personal opinion, nothing more, nothing less.
-It was with great sadness that I saw what the latest update to the Xbox360 dashboard did to Xbox Indie Games
-See? XBLIG is now on the “Speciality Shops”, right next to Avatar Marketplace, not even worthy of being the Games section. Even if you search a XBLIG game there it won’t return any result.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-11-07 18:26:13 +0000 UTC'>November 7, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;418 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to My 2 cents on xblig current state" href="https://www.david-amador.com/2010/11/my-2-cents-on-xblig-current-state/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="https://www.david-amador.com/posts/page/10/">
-      «&nbsp;Prev&nbsp;10/19
+      «&nbsp;Prev&nbsp;10/20
     </a>
-    <a class="next" href="https://www.david-amador.com/posts/page/12/">Next&nbsp;12/19&nbsp;»
+    <a class="next" href="https://www.david-amador.com/posts/page/12/">Next&nbsp;12/20&nbsp;»
     </a>
   </nav>
 </footer>
