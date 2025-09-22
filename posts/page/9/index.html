@@ -145,6 +145,25 @@
 </header>
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2012/01/regular-expression.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Find/Replace in Visual Studio using regular expressions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Usually Find/Replace gets the job done for what I need, although sometimes using “Replace All” can break more stuff that it fixes.
+But today I had this function I wanted to get rid of and simple change it with a public variable.
+So I had something like this.
+object-&gt;setLayer(/*BLABAL BLA CODE, */); I want to replace it with something more simple
+object-&gt;Z = /*BLABAL BLA CODE, */; So using Visual Studio Find/Replace in regular expressions mode I used this as a search string
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-14 21:27:55 +0000 UTC'>January 14, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;207 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Find/Replace in Visual Studio using regular expressions" href="https://www.david-amador.com/2012/01/findreplace-in-visual-studio-using-regular-expressions/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2012/01/chibi_death.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -300,24 +319,6 @@ there’s probably news to share in the next 2-3 months.
   </div>
   <footer class="entry-footer"><span title='2011-06-24 21:14:07 +0000 UTC'>June 24, 2011</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;672 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to So what have I learned after eight months on the App Store" href="https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/06/openal-125x166.gif" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Playing sound using OpenAL
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>For sound I use OpenAL, it’s free, cross-platform, I’ve managed to get it working on iPhone, Windows and Mac.
-Setting up OpenAL to play a sound is pretty straight forward, a bit like OpenGL.
-First you need to create a context.
-ALCcontext *context; ALCdevice *device; device = alcOpenDevice(NULL, ALC_DEFAULT_DEVICE_SPECIFIER); if (device == NULL) { // Handle Exception } //Create a context context=alcCreateContext(device,NULL); //Set active context alcMakeContextCurrent(context); // Clear Error Code alGetError(); Now for the second part, loading a wav file. You have to open a file, fill buffers with data and then attach it to a source.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-06-10 09:22:26 +0000 UTC'>June 10, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;269 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Playing sound using OpenAL" href="https://www.david-amador.com/2011/06/playing-sound-using-openal/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

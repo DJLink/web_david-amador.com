@@ -131,6 +131,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Cloning Objects in C#
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:
+using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance); foreach(FieldInfo f in fields) { f.SetValue(this,f.GetValue(oth)); } } } MyClass obj1 = new MyClass(); obj1.a = 1; obj1.x = 2.0f; MyClass obj2 = new MyClass(obj1); // Obj2 will have same values as obj1 and you // can now use them independently. I hope this is helpful. Let me know if you know a better way
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-12 20:21:49 +0000 UTC'>October 12, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;146 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Cloning Objects in C#" href="https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">The amazing lands of C&#43;&#43;
     </h2>
   </header>

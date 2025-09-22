@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 26 Apr 2025 08:10:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Sep 2025 12:10:00 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inspiration</title>
+      <link>https://www.david-amador.com/tags/inspiration/</link>
+      <pubDate>Mon, 22 Sep 2025 12:10:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/inspiration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Life</title>
+      <link>https://www.david-amador.com/tags/life/</link>
+      <pubDate>Mon, 22 Sep 2025 12:10:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/life/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Gamedev</title>
       <link>https://www.david-amador.com/tags/gamedev/</link>
@@ -102,20 +116,6 @@
       <link>https://www.david-amador.com/tags/playstation-4/</link>
       <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
       <guid>https://www.david-amador.com/tags/playstation-4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Quest of Dungeons</title>
-      <link>https://www.david-amador.com/tags/quest-of-dungeons/</link>
-      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/quest-of-dungeons/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Wii U</title>
-      <link>https://www.david-amador.com/tags/wii-u/</link>
-      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/wii-u/</guid>
       <description></description>
     </item>
   </channel>

@@ -3,10 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.david-amador.com/categories/</loc>
-    <lastmod>2025-04-26T08:10:00+00:00</lastmod>
+    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/categories/daily-things/</loc>
+    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/</loc>
-    <lastmod>2025-04-26T08:10:00+00:00</lastmod>
+    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/categories/general-programming/</loc>
+    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/inspiration/</loc>
+    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/life/</loc>
+    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/posts/</loc>
+    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/</loc>
+    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/2025/09/the-degradation-of-our-attention-spans/</loc>
+    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/categories/game-development/</loc>
     <lastmod>2025-04-26T08:10:00+00:00</lastmod>
@@ -17,20 +38,11 @@
     <loc>https://www.david-amador.com/tags/godot/</loc>
     <lastmod>2025-04-26T08:10:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.david-amador.com/posts/</loc>
-    <lastmod>2025-04-26T08:10:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.david-amador.com/2025/04/switching-unity-to-godot-my-experience-so-far/</loc>
-    <lastmod>2025-04-26T08:10:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/tags/</loc>
     <lastmod>2025-04-26T08:10:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/unity/</loc>
     <lastmod>2025-04-26T08:10:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/categories/daily-things/</loc>
-    <lastmod>2025-03-29T11:20:55+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/games/</loc>
     <lastmod>2025-03-29T11:20:55+00:00</lastmod>
@@ -60,9 +72,6 @@
     <lastmod>2024-11-17T08:32:55+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/2024/11/gamedev-tricks-used-by-developers/</loc>
-    <lastmod>2024-11-15T14:39:55+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/categories/general-programming/</loc>
     <lastmod>2024-11-15T14:39:55+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/android/</loc>
@@ -584,9 +593,6 @@
     <loc>https://www.david-amador.com/2011/07/using-git-for-revision-control/</loc>
     <lastmod>2011-07-08T13:29:34+00:00</lastmod>
   </url><url>
-    <loc>https://www.david-amador.com/tags/idevblogaday/</loc>
-    <lastmod>2011-06-24T21:14:07+00:00</lastmod>
-  </url><url>
     <loc>https://www.david-amador.com/2011/06/so-what-have-i-learned-after-eight-months-on-the-app-store/</loc>
     <lastmod>2011-06-24T21:14:07+00:00</lastmod>
   </url><url>
@@ -646,9 +652,6 @@
   </url><url>
     <loc>https://www.david-amador.com/2011/03/loading-images-into-opengl-in-iphone/</loc>
     <lastmod>2011-03-18T10:06:24+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/tags/inspiration/</loc>
-    <lastmod>2011-03-09T22:27:26+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/motivation/</loc>
     <lastmod>2011-03-09T22:27:26+00:00</lastmod>

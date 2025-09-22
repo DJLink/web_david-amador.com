@@ -130,6 +130,23 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/07/cpp_callback_benchmark.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Instance based Callbacks in C&#43;&#43;
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>One of the things that was probably forgotten but the dudes who made C&#43;&#43; standard were callbacks, there’s no out of the box solution for Instance based Callbacks, just for functions.
+When I moved to C# I was really happy with the way delegates work, it’s simple, easy and most of all, it works.
+On game development one of the things callbacks are usually used is for Buttons, you have a menu and want to attribute a function to each button. Sure you can point it to the same one and make a bunch of if’s and then point to a Global var which does the correct action, but this is not elegant and sure as hell not easy to add/modify stuff.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-07-14 15:18:21 +0000 UTC'>July 14, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;296 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Instance based Callbacks in C&#43;&#43;" href="https://www.david-amador.com/2010/07/instance-based-callbacks-in-cpp/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/04/vs_splash_logo.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -272,20 +289,6 @@ blockquote { background:transparent url(blockquote.gif) no-repeat scroll 0 0; fo
   </div>
   <footer class="entry-footer"><span title='2009-10-21 12:14:53 +0000 UTC'>October 21, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;89 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to How to style a blockquote with CSS" href="https://www.david-amador.com/2009/10/how-to-style-a-blockquote-with-css/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Cloning Objects in C#
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:
-using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance); foreach(FieldInfo f in fields) { f.SetValue(this,f.GetValue(oth)); } } } MyClass obj1 = new MyClass(); obj1.a = 1; obj1.x = 2.0f; MyClass obj2 = new MyClass(obj1); // Obj2 will have same values as obj1 and you // can now use them independently. I hope this is helpful. Let me know if you know a better way
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2009-10-12 20:21:49 +0000 UTC'>October 12, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;146 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Cloning Objects in C#" href="https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
