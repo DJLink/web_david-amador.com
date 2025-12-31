@@ -11,20 +11,48 @@
     </image>
     <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Sep 2025 12:10:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 31 Dec 2025 08:15:00 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Godot</title>
+      <link>https://www.david-amador.com/tags/godot/</link>
+      <pubDate>Wed, 31 Dec 2025 08:15:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/godot/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Inspiration</title>
       <link>https://www.david-amador.com/tags/inspiration/</link>
-      <pubDate>Mon, 22 Sep 2025 12:10:00 +0000</pubDate>
+      <pubDate>Wed, 31 Dec 2025 08:15:00 +0000</pubDate>
       <guid>https://www.david-amador.com/tags/inspiration/</guid>
       <description></description>
     </item>
     <item>
       <title>Life</title>
       <link>https://www.david-amador.com/tags/life/</link>
-      <pubDate>Mon, 22 Sep 2025 12:10:00 +0000</pubDate>
+      <pubDate>Wed, 31 Dec 2025 08:15:00 +0000</pubDate>
       <guid>https://www.david-amador.com/tags/life/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Movies-Tv</title>
+      <link>https://www.david-amador.com/tags/movies-tv/</link>
+      <pubDate>Wed, 31 Dec 2025 08:15:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/movies-tv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unreal Engine</title>
+      <link>https://www.david-amador.com/tags/unreal-engine/</link>
+      <pubDate>Wed, 31 Dec 2025 08:15:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/unreal-engine/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Year Wrapup</title>
+      <link>https://www.david-amador.com/tags/year-wrapup/</link>
+      <pubDate>Wed, 31 Dec 2025 08:15:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/year-wrapup/</guid>
       <description></description>
     </item>
     <item>
@@ -32,13 +60,6 @@
       <link>https://www.david-amador.com/tags/gamedev/</link>
       <pubDate>Sat, 26 Apr 2025 08:10:00 +0000</pubDate>
       <guid>https://www.david-amador.com/tags/gamedev/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Godot</title>
-      <link>https://www.david-amador.com/tags/godot/</link>
-      <pubDate>Sat, 26 Apr 2025 08:10:00 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/godot/</guid>
       <description></description>
     </item>
     <item>
@@ -53,20 +74,6 @@
       <link>https://www.david-amador.com/tags/games/</link>
       <pubDate>Sat, 29 Mar 2025 11:20:55 +0000</pubDate>
       <guid>https://www.david-amador.com/tags/games/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Year Wrapup</title>
-      <link>https://www.david-amador.com/tags/year-wrapup/</link>
-      <pubDate>Wed, 01 Jan 2025 08:32:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/year-wrapup/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Movies-Tv</title>
-      <link>https://www.david-amador.com/tags/movies-tv/</link>
-      <pubDate>Sun, 17 Nov 2024 08:32:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/movies-tv/</guid>
       <description></description>
     </item>
     <item>
@@ -109,13 +116,6 @@
       <link>https://www.david-amador.com/tags/nintendo-switch/</link>
       <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
       <guid>https://www.david-amador.com/tags/nintendo-switch/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PlayStation 4</title>
-      <link>https://www.david-amador.com/tags/playstation-4/</link>
-      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/playstation-4/</guid>
       <description></description>
     </item>
   </channel>

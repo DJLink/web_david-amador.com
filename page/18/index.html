@@ -131,6 +131,20 @@
 <main class="main"> 
 
 <article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cloning Objects in C#
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:
+using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance); foreach(FieldInfo f in fields) { f.SetValue(this,f.GetValue(oth)); } } } MyClass obj1 = new MyClass(); obj1.a = 1; obj1.x = 2.0f; MyClass obj2 = new MyClass(obj1); // Obj2 will have same values as obj1 and you // can now use them independently. I hope this is helpful. Let me know if you know a better way
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-12 20:21:49 +0000 UTC'>October 12, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;146 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Cloning Objects in C#" href="https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2009/10/programmers_are_tiny_gods.png" alt="">
 </figure>
   <header class="entry-header">
@@ -270,21 +284,6 @@ Also I’ve been working, even though on a slower pace on Shappire, the editor a
   </div>
   <footer class="entry-footer"><span title='2009-08-14 13:39:14 +0000 UTC'>August 14, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;98 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Xna 2d Engine" href="https://www.david-amador.com/2009/08/xna-2d-engine/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DBP deadline is over, maybe next year.
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Dream Build Play submission deadline is over. Unfortunatly I didn’t had the time to put my prototype working. Maybe next year. I always had the impression I would finish it on time cause the main goal was always IGF.
-Meanwhile I’ve been busy making the arrangements for The Indie Bay 48 hour game development competition.
-The idea is for every entrant to make a game in 48 hours using a given theme or topic. Some cool prototypes may show up, games like Braid or World of Goo have been created in competitions like this one.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2009-08-06 15:29:10 +0000 UTC'>August 6, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;110 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to DBP deadline is over, maybe next year." href="https://www.david-amador.com/2009/08/dbp-deadline-is-over-maybe-next-year/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

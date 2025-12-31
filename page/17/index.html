@@ -132,6 +132,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Prototype for xna7day competition
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I decided to make a game for the xna7day competition, in which we have to make a game that only uses 2 keys, so absolutely no analog input and it has to be built on xna of course.
+This is a great opportunity to test my engine Basalt.
+I decided to make a puzzle game, basically the rules are the same of a 3 in line game.
+This is what I have so far.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-10-29 12:29:42 +0000 UTC'>October 29, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;74 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Prototype for xna7day competition" href="https://www.david-amador.com/2009/10/prototype-for-xna7day-competition/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">How to make a clickable div
     </h2>
   </header>
@@ -272,20 +288,6 @@ Start off by creating the basic class Camera2d
   </div>
   <footer class="entry-footer"><span title='2009-10-12 20:51:21 +0000 UTC'>October 12, 2009</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;433 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to XNA Camera 2d with zoom and rotation" href="https://www.david-amador.com/2009/10/xna-camera-2d-with-zoom-and-rotation/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Cloning Objects in C#
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>After trying to manually clone some classes, but making a sort of copy constructor I was always ending up with lot’s of code and worse, if I add another variable to my class I would sometimes forgot to also clone it. Luckily and after a search I discovered that C# has a cool thing, Reflection. So you can do something like this:
-using System.Reflection; class MyClass { public int a; public float x; MyClass() { // default constructor } MyClass (MyClass my) { FieldInfo[] fields = typeof(MyClass).GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance); foreach(FieldInfo f in fields) { f.SetValue(this,f.GetValue(oth)); } } } MyClass obj1 = new MyClass(); obj1.a = 1; obj1.x = 2.0f; MyClass obj2 = new MyClass(obj1); // Obj2 will have same values as obj1 and you // can now use them independently. I hope this is helpful. Let me know if you know a better way
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2009-10-12 20:21:49 +0000 UTC'>October 12, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;146 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Cloning Objects in C#" href="https://www.david-amador.com/2009/10/cloning-objects-in-c-sharp/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

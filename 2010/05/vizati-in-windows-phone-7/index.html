@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Vizati on Windows Phone 7 | David Amador</title>
-<meta name="keywords" content="Vizati, Windows Phone 7, wp7dev, XNA">
+<meta name="keywords" content="Vizati, Windows Phone 7, XNA">
 <meta name="description" content="It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.
 This week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.
 I’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.
@@ -45,7 +45,6 @@ The result was pretty good i think. It’s virtually identical.">
     <meta property="article:modified_time" content="2010-05-07T20:41:09+00:00">
     <meta property="article:tag" content="Vizati">
     <meta property="article:tag" content="Windows Phone 7">
-    <meta property="article:tag" content="Wp7dev">
     <meta property="article:tag" content="XNA">
     <meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/05/vizati_windows_phone_7_2.avi_snapshot_00.37_2010.05.07_20.21.43.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -85,7 +84,7 @@ The result was pretty good i think. It’s virtually identical.">
   "name": "Vizati on Windows Phone 7",
   "description": "It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.\nThis week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.\nI’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.\nThe result was pretty good i think. It’s virtually identical.\n",
   "keywords": [
-    "Vizati", "Windows Phone 7", "wp7dev", "XNA"
+    "Vizati", "Windows Phone 7", "XNA"
   ],
   "articleBody": "It’s been awhile since my last post. I’ve been utterly busy so I haven’t had the time for any tutorials.\nThis week I got an invitation from João Antão to showcase Vizati as part of his XNA Framework presentation. This occurred during the Imagine Cup final on Portugal.\nI’ve been playing with the WP7 tools and I decided to try and port Vizati to XNA 4.0 and give it a try on the emulator so I could show all 3 versions running simultaneous.\nThe result was pretty good i think. It’s virtually identical.\nYou can see it for yourself, the speed on the video is not very good due to the screen capture software.\nNow for the tech part. Grabbing my 3.1 solution what have I made to have this running? What have I changed?\nI had to create a XNA 4 empty project and add all code files and assets (no direct upgrade now)\nHad to change to TitleContainer for opening files, transparencies made with Color.A replaced to make use of PreMultiplied Alpha, basically using Color*Color.\nThe assets are the same…\nWait …what? Why?\nSince this was a test I wanted to test how could the framework handle a simple platform change with minimal code changed, after all that’s the whole purpose of XNA. Of course on the final version proper assets will be placed but taking in account some 1024×1024 and higher images the results are pretty good.\nNotice the particle effects, there are around 2500 particles over there. And it’s on an emulator so I can’t wait to get my hands on the real deal.\nChange the input to make use of the Touchscreen, and finally since I’m using my engine basalt I have independent resolution rendering so I just told the system “run in 800×480 now” and the native resolution is still the PC/Xbox version one 1280×720.\n",
   "wordCount" : "311",
@@ -229,7 +228,6 @@ Notice the particle effects, there are around 2500 particles over there. And it�
     <ul class="post-tags">
       <li><a href="https://www.david-amador.com/tags/vizati/">Vizati</a></li>
       <li><a href="https://www.david-amador.com/tags/windows-phone-7/">Windows Phone 7</a></li>
-      <li><a href="https://www.david-amador.com/tags/wp7dev/">Wp7dev</a></li>
       <li><a href="https://www.david-amador.com/tags/xna/">XNA</a></li>
     </ul>
 <nav class="paginav">

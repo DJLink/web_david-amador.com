@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Simulating tombstone (suspended state) on Windows Phone 7 emulator | David Amador</title>
-<meta name="keywords" content="wp7dev">
+<meta name="keywords" content="Windows Phone 7, devlog">
 <meta name="description" content="Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.
 It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.
 So depending on you app you might want to save the current state just in case the app really closes.">
@@ -41,7 +41,8 @@ So depending on you app you might want to save the current state just in case th
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2010-09-20T21:36:27+00:00">
     <meta property="article:modified_time" content="2010-09-20T21:36:27+00:00">
-    <meta property="article:tag" content="Wp7dev">
+    <meta property="article:tag" content="Windows Phone 7">
+    <meta property="article:tag" content="Devlog">
     <meta property="og:image" content="https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg">
@@ -79,7 +80,7 @@ So depending on you app you might want to save the current state just in case th
   "name": "Simulating tombstone (suspended state) on Windows Phone 7 emulator",
   "description": "Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.\nIt’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.\nSo depending on you app you might want to save the current state just in case the app really closes.\n",
   "keywords": [
-    "wp7dev"
+    "Windows Phone 7", "devlog"
   ],
   "articleBody": "Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.\nIt’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.\nSo depending on you app you might want to save the current state just in case the app really closes.\nSimulating this on the emulator took me awhile to get it right.\nPress F5 on Visual Studio do start debugging your App.\nPress the Start button and your app received a Deactivated event. Save what you need. Now, and here is the tricky part, the debugger also exited.\nThis took me awhile because pressing the back button wouldn’t do anything and pressing F5 again would just restart.\nSo you have to Press F5 and keep an eye on the compiler. When you receive a “Deploy Success” message\nquickly press the Back button on the simulator\nYou app should now start and receive the Activated event.\nBasically the debugger has to start between you pressing the Back button and before the black screen disappears otherwise the emulator while assume the app is closed and get back to home.\n",
   "wordCount" : "218",
@@ -212,7 +213,8 @@ Basically the debugger has to start between you pressing the Back button and bef
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://www.david-amador.com/tags/wp7dev/">Wp7dev</a></li>
+      <li><a href="https://www.david-amador.com/tags/windows-phone-7/">Windows Phone 7</a></li>
+      <li><a href="https://www.david-amador.com/tags/devlog/">Devlog</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://www.david-amador.com/2010/10/framework-consideration-and-new-projects/">

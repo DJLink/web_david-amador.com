@@ -2,40 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.david-amador.com/2025/12/what-a-year-huh/</loc>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.david-amador.com/categories/</loc>
-    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/categories/daily-things/</loc>
-    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/</loc>
-    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/categories/game-development/</loc>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/categories/general-programming/</loc>
-    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/godot/</loc>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/inspiration/</loc>
-    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/life/</loc>
-    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/movies-tv/</loc>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/posts/</loc>
-    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/</loc>
-    <lastmod>2025-09-22T12:10:00+00:00</lastmod>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/unreal-engine/</loc>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.david-amador.com/tags/year-wrapup/</loc>
+    <lastmod>2025-12-31T08:15:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/2025/09/the-degradation-of-our-attention-spans/</loc>
     <lastmod>2025-09-22T12:10:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.david-amador.com/categories/game-development/</loc>
-    <lastmod>2025-04-26T08:10:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.david-amador.com/tags/gamedev/</loc>
-    <lastmod>2025-04-26T08:10:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/tags/godot/</loc>
     <lastmod>2025-04-26T08:10:00+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/2025/04/switching-unity-to-godot-my-experience-so-far/</loc>
@@ -59,13 +71,7 @@
     <loc>https://www.david-amador.com/categories/application--software/</loc>
     <lastmod>2025-01-01T08:32:55+00:00</lastmod>
   </url><url>
-    <loc>https://www.david-amador.com/tags/year-wrapup/</loc>
-    <lastmod>2025-01-01T08:32:55+00:00</lastmod>
-  </url><url>
     <loc>https://www.david-amador.com/2024/11/alien-romulus/lets-talk-about-alien-romulus/</loc>
-    <lastmod>2024-11-17T08:32:55+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/tags/movies-tv/</loc>
     <lastmod>2024-11-17T08:32:55+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/tags/reviews/</loc>
@@ -677,7 +683,7 @@
     <loc>https://www.david-amador.com/2010/11/viewing-windows-phone-7-marketplace-on-the-simulator/</loc>
     <lastmod>2010-11-17T23:27:04+00:00</lastmod>
   </url><url>
-    <loc>https://www.david-amador.com/tags/wp7dev/</loc>
+    <loc>https://www.david-amador.com/tags/windows-phone-7/</loc>
     <lastmod>2010-11-17T23:27:04+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/2010/11/my-2-cents-on-xblig-current-state/</loc>
@@ -767,9 +773,6 @@
     <loc>https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/</loc>
     <lastmod>2010-07-26T20:37:41+00:00</lastmod>
   </url><url>
-    <loc>https://www.david-amador.com/tags/windows-phone-7/</loc>
-    <lastmod>2010-07-26T20:37:41+00:00</lastmod>
-  </url><url>
     <loc>https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/</loc>
     <lastmod>2010-07-26T12:47:01+00:00</lastmod>
   </url><url>
@@ -819,9 +822,6 @@
     <lastmod>2010-04-19T21:57:12+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</loc>
-    <lastmod>2010-04-13T16:30:15+00:00</lastmod>
-  </url><url>
-    <loc>https://www.david-amador.com/tags/visual-studio-2010/</loc>
     <lastmod>2010-04-13T16:30:15+00:00</lastmod>
   </url><url>
     <loc>https://www.david-amador.com/2010/03/xna-2d-independent-resolution-rendering/</loc>

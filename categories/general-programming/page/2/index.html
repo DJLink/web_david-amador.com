@@ -130,6 +130,24 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/Ff402541.7da2ecf9-d94a-41fa-aba0-226e9c535daeen-usVS.92.gif" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Using Isolated Storage to save/load files on Windows Phone 7
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.
+You can use IsolatedStorage for that
+using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
+IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); // grab the storage FileStream stream = store.OpenFile(&#34;test.txt&#34;, FileMode.Create); // Open a file in Create mode BinaryWriter writer = new BinaryWriter(stream); float myvar = 5.0f; writer.Write(&#34;something&#34;); writer.Write(myvar); writer.Close(); For loading is pretty much the same thing:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-10-10 23:37:04 +0000 UTC'>October 10, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;153 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Using Isolated Storage to save/load files on Windows Phone 7" href="https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/07/cpp_callback_benchmark.png" alt="">
 </figure>
   <header class="entry-header">
@@ -271,24 +289,6 @@ Luckily MySql is your friend. To search and replace a text string, start up phpM
   </div>
   <footer class="entry-footer"><span title='2009-10-21 22:06:57 +0000 UTC'>October 21, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;106 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Test your website on multiple browsers" href="https://www.david-amador.com/2009/10/test-your-website-on-multiple-browsers/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2009/10/blockquote.gif" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to style a blockquote with CSS
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Blockquotes are an easy way to make your website stand out, by indicating that you are quoting someone you give a more professional approach to you website.
-You can do this by using
-&lt;blockquote&gt; Im quoting someone else&lt;/blockquote&gt; But it still needs a little touch, so on your css file add this.
-blockquote { background:transparent url(blockquote.gif) no-repeat scroll 0 0; font-family:Georgia,&#34;Times New Roman&#34;,Times,serif; font-size:1em; margin:15px 0; min-height:32px; padding:0 50px; } Save this image : and watch the result. It will turn out something like this:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2009-10-21 12:14:53 +0000 UTC'>October 21, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;89 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to How to style a blockquote with CSS" href="https://www.david-amador.com/2009/10/how-to-style-a-blockquote-with-css/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

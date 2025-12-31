@@ -131,6 +131,25 @@
 <main class="main"> 
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fixing dark borders sprites on iPhone
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I ran into this issue a couple hours ago working on the iPhone sdk:
+See the darker borders around the image?
+It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
+Well that’s because that alpha isn’t 0 or 1 or 0 or 255.
+The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha. So you can understand now why only 0 or 1 works right? Everything in between get’s changed. This is why Apple recommends using PNG over JPGS, although they consume more space they are altered for speed.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-07-26 12:47:01 +0000 UTC'>July 26, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;278 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Fixing dark borders sprites on iPhone" href="https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/07/cpp_callback_benchmark.png" alt="">
 </figure>
   <header class="entry-header">
@@ -283,24 +302,6 @@ My answer is neither of them. The big image has a huge impact on every Draw and 
   </div>
   <footer class="entry-footer"><span title='2010-04-19 21:57:12 +0000 UTC'>April 19, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;308 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Making Big Grass Tiled Backgrounds in XNA" href="https://www.david-amador.com/2010/04/making-big-grass-tiles-in-xna/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/04/vs_splash_logo.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Testing the new Visual Studio 2010 features
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.
-First time I installed VS2010 was in the RC form mainly because of WP7 Developer’s Tools and XNA4.0 but haven’t made many investment in searching for new features.
-But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.
-On a side note to WP7 developers, if you are using VS RC to develop application to the phone don’t install the RTM version of VS2010 since it’s not compatible with WP7 developer tools yet. You have to stick with the RC for now.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-04-13 16:30:15 +0000 UTC'>April 13, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;340 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Testing the new Visual Studio 2010 features" href="https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

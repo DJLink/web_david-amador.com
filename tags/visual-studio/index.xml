@@ -36,5 +36,89 @@
 <p><a href="/wp-content/uploads/2012/06/vld.png"><img loading="lazy" src="/wp-content/uploads/2012/06/vld.png" title="vld"></a></p>
 ]]></content:encoded>
     </item>
+    <item>
+      <title>Testing the new Visual Studio 2010 features</title>
+      <link>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</link>
+      <pubDate>Tue, 13 Apr 2010 16:30:15 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/04/testing-the-new-visual-studio-2010-features/</guid>
+      <description>&lt;p&gt;Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.&lt;/p&gt;
+&lt;p&gt;First time I installed VS2010 was in the RC form mainly because of &lt;a href=&#34;https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/&#34;&gt;WP7 Developer’s Tools and XNA4.0&lt;/a&gt; but haven’t made many investment in searching for new features.&lt;/p&gt;
+&lt;p&gt;But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.&lt;/p&gt;
+&lt;p&gt;On a side note to WP7 developers, if you are using VS RC to develop application to the phone don’t install the &lt;a href=&#34;https://web.archive.org/web/20100623130306/http://klucher.com:80/blog/visual-studio-2010-and-windows-phone-developer-toolsxna-game-studio-4-0/&#34;&gt;RTM version of VS2010 since it’s not compatible with WP7 developer tools&lt;/a&gt; yet. You have to stick with the RC for now.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Yesterday was an exciting one for all sorts of developers around the world. Visual Studio 2010 got available for both MSDN and DreamSpark subscribers.</p>
+<p>First time I installed VS2010 was in the RC form mainly because of <a href="/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/">WP7 Developer’s Tools and XNA4.0</a> but haven’t made many investment in searching for new features.</p>
+<p>But being available at Dreamspark I downloaded the Professional version and decided to try it out a bit.</p>
+<p>On a side note to WP7 developers, if you are using VS RC to develop application to the phone don’t install the <a href="https://web.archive.org/web/20100623130306/http://klucher.com:80/blog/visual-studio-2010-and-windows-phone-developer-toolsxna-game-studio-4-0/">RTM version of VS2010 since it’s not compatible with WP7 developer tools</a> yet. You have to stick with the RC for now.</p>
+<p>Booting the new VS we get a nice splash screen</p>
+<p><a href="/wp-content/uploads/2010/04/vs_splash_logo.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_splash_logo-300x210.jpg" title="vs_splash_logo"></a></p>
+<p>The new UI looks really clean and pretty.</p>
+<p><a href="/wp-content/uploads/2010/04/vs_entry.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_entry-300x162.jpg" title="vs_entry"></a></p>
+<p>The new Code Editor allows zooming in and out of code. For those days were your eyes are already red from trying to read so much tiny code. Sure you can always change the font size but doing this on the fly is way better.</p>
+<p><a href="/wp-content/uploads/2010/04/vs_zoom_feature.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_zoom_feature-300x178.jpg" title="vs_zoom_feature"></a></p>
+<p>One feature that I would never remember on asking but it’s really handy is Code Selection Block, basically by pressing the Alt Key and making a selection around a block of code, like this:</p>
+<p><a href="/wp-content/uploads/2010/04/vs_code_block_selection_01.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_code_block_selection_01-300x144.jpg" title="vs_code_block_selection_01"></a></p>
+<p>See how just Vector3 is selected?</p>
+<p>Now start changing that block to something else</p>
+<p><a href="/wp-content/uploads/2010/04/vs_code_block_selection_02.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_code_block_selection_02-300x144.jpg" title="vs_code_block_selection_02"></a></p>
+<p>And voila, you are changing that block of code on the fly 😀 This works for copy paste as well. I’m pretty convinced this allows other stuff too but can’t figure out more usages.</p>
+<p>Now, for the new intellisense. It’s not just plain dumb anymore, It won’t search just Classes/Members starting with the letters you typed, it will actively search patterns as well.</p>
+<p><a href="/wp-content/uploads/2010/04/vs_intelissense.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_intelissense-300x144.jpg" title="vs_intelissense"></a></p>
+<p>Multi Monitor FTW</p>
+<p><a href="/wp-content/uploads/2010/04/vs_dual_monitor.jpg"><img loading="lazy" src="/wp-content/uploads/2010/04/vs_dual_monitor-300x101.jpg" title="vs_dual_monitor"></a></p>
+<p>Just drag and drop your files to another screen and there you go, multi monitor support. No more opening another instance of Visual Studio to do this 😀</p>
+<p>I know there’s tons of other stuff but that’s what I uncovered so far. Know any more stuff? Please do tell.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>XNA 4.0 CTP and Windows Phone Developer Tools CTP now available for download</title>
+      <link>https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</link>
+      <pubDate>Mon, 15 Mar 2010 23:42:34 +0000</pubDate>
+      <guid>https://www.david-amador.com/2010/03/xna-4-0-ctp-and-windows-phone-developer-tools-ctp-now-available-for-download/</guid>
+      <description>&lt;p&gt;So I was watching Microsoft &lt;a href=&#34;http://live.visitmix.com/&#34;&gt;Mix10&lt;/a&gt; and while talking about the new Windows Phone 7 Series, Scott Guthrie announced the availability of the Windows Phone Developer Tools CTP. What? But like now now?&lt;/p&gt;
+&lt;p&gt;I went to &lt;a href=&#34;http://developer.windowsphone.com/&#34;&gt;http://developer.windowsphone.com/&lt;/a&gt; and XNA Creator’s Club and there it was. The packages contains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A CTP of the new Visual Studio 2010 Express for Windows Phone&lt;/li&gt;
+&lt;li&gt;Tools and framework to develop Windows Phone applications and games with Silverlight&lt;/li&gt;
+&lt;li&gt;A CTP of XNA Game Studio 4.0 that allows you to develop Windows Phone games with the XNA Framework&lt;/li&gt;
+&lt;li&gt;A Windows Phone 7 Series emulator that can be used to deploy and debug Windows Phone applications and games&lt;/li&gt;
+&lt;li&gt;Add-on to allow you to use the Visual Studio 2010 Ultimate Release Candidate to develop Windows Phone applications and games if you have it installed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pretty good right? For those who have been living under a rock the XNA 4.0 brings another development platform, Windows Phone 7 series, which leaves us with XBOX360, PC and the new mobile.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>So I was watching Microsoft <a href="http://live.visitmix.com/">Mix10</a> and while talking about the new Windows Phone 7 Series, Scott Guthrie announced the availability of the Windows Phone Developer Tools CTP. What? But like now now?</p>
+<p>I went to <a href="http://developer.windowsphone.com/">http://developer.windowsphone.com/</a> and XNA Creator’s Club and there it was. The packages contains:</p>
+<ul>
+<li>A CTP of the new Visual Studio 2010 Express for Windows Phone</li>
+<li>Tools and framework to develop Windows Phone applications and games with Silverlight</li>
+<li>A CTP of XNA Game Studio 4.0 that allows you to develop Windows Phone games with the XNA Framework</li>
+<li>A Windows Phone 7 Series emulator that can be used to deploy and debug Windows Phone applications and games</li>
+<li>Add-on to allow you to use the Visual Studio 2010 Ultimate Release Candidate to develop Windows Phone applications and games if you have it installed</li>
+</ul>
+<p>Pretty good right? For those who have been living under a rock the XNA 4.0 brings another development platform, Windows Phone 7 series, which leaves us with XBOX360, PC and the new mobile.</p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_7.jpg" title="windows_phone_7"></p>
+<p>XNA 4.0 CTP requires Visual Studio 2010, <a href="http://msdn.microsoft.com/en-us/vstudio/dd582936.aspx">download RC here</a>, and for now it only allows debugging on PC and Windows Phone by means of an emulator. No Xbox360 deployment for now so don’t go converting your games and engines for now.</p>
+<p>Still this is a great way to test the new 4.0 features and Visual Studio which I honestly haven’t tried yet.</p>
+<p>I started a new Windows Phone 4.0 project and decided to test the emulator, on the above video you can see the touch feature working, took me 4minutes to get that working. Very easy, can’t wait for XNA final version.</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/jWf_Z4W9rsg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p><strong>Some Images</strong></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/visual_studio_2010.png"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_emulator.png"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_game_project.png"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/xna4.0_new_project.png"></p>
+<p><img loading="lazy" src="/wp-content/uploads/2010/03/windows_phone_7.jpg"></p>
+<p>Notes for Game Studio developers (<a href="https://web.archive.org/web/20100305042530/http://blogs.msdn.com:80/shawnhar/">Shawn Hargreaves</a>):</p>
+<ul>
+<li>Although this CTP includes Game Studio 4.0 assemblies for Windows as well as Windows Phone, it only supports the Reach profile. If you try to create a HiDef game, you will get an error saying your hardware does not support HiDef capabilities. Don’t worry, this doesn’t mean your GPU sucks, just that we don’t support HiDef in the CTP.</li>
+<li>The CTP does not support deployment to Xbox 360.</li>
+<li>The automatic scaling and rotation feature is not included in the CTP, so for now you must always choose 480×800 portrait resolution. If you want to make a landscape game, or render at some other resolution, the best way is to draw your scene into a rendertarget, then rotate or scale while copying it to the screen using SpriteBatch. This is not the best approach for performance or battery life on actual phone hardware, but don’t worry, you can take out the rendertarget code out once we release final bits that support the image scaler.</li>
+</ul>
+]]></content:encoded>
+    </item>
   </channel>
 </rss>

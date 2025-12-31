@@ -130,6 +130,22 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to take screenshots in opengl
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.
+bool save_screenshot(string filename, int w, int h) {	//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let&#39;s create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let&#39;s fetch them from the backbuffer	// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename.c_str(), &#34;wb&#34;); if (!filePtr) return false; unsigned char TGAheader[12]={0,0,2,0,0,0,0,0,0,0,0,0}; unsigned char header[6] = { w%256,w/256, h%256,h/256, 24,0}; // We write the headers fwrite(TGAheader,	sizeof(unsigned char),	12,	filePtr); fwrite(header,	sizeof(unsigned char),	6,	filePtr); // And finally our image data fwrite(dataBuffer,	sizeof(GLubyte),	nSize,	filePtr); fclose(filePtr); free(dataBuffer); return true; } I’ve been using this on my projects and it works, although I read a couple of times it’s better to use p-buffer or FBO, but I leave that for you to research.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-09-08 16:53:27 +0000 UTC'>September 8, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;199 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to How to take screenshots in opengl" href="https://www.david-amador.com/2012/09/how-to-take-screenshot-in-opengl/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2012/08/carmack-125x166.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -288,23 +304,6 @@ After a bit research I decided to choose theora, but a bit skeptic, I’ve used 
   </div>
   <footer class="entry-footer"><span title='2012-01-29 19:56:20 +0000 UTC'>January 29, 2012</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;532 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Engine, video player and tools, tools tools!" href="https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/12/code_swarm-00902.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Basalt code swarm
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I discovered code swarm a while ago and decided to test on my own repositories.
-This is a test on Basalt, and although I’ve been working on the engine since January 2010, only in 2011 did I placed in on a repository so a bunch of stuff is added right on the beginning.
-This is the result.
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-12-23 16:48:01 +0000 UTC'>December 23, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;57 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Basalt code swarm" href="https://www.david-amador.com/2011/12/basalt-code-swarm/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

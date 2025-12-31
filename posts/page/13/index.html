@@ -145,6 +145,23 @@
 </header>
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/09/wp7_start_button.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Simulating tombstone (suspended state) on Windows Phone 7 emulator
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Since Windows Phone 7 doesn’t have multitask, at least for now, Microsoft implemented a Tombstone notion in WP7 apps.
+It’s basically a suspended state where you receive a notification that it’s going to suspend but there is no guarantee that it will resume, it might be terminated so you must treat this as an exit and a might start again state.
+So depending on you app you might want to save the current state just in case the app really closes.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-09-20 21:36:27 +0000 UTC'>September 20, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;218 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Simulating tombstone (suspended state) on Windows Phone 7 emulator" href="https://www.david-amador.com/2010/09/simulating-tombstone-on-windows-phone-7-emulator/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/09/Leafy_Milestone_by_mydeepdark.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -303,25 +320,6 @@ The poll closes in about 6 days and you can select various options of course.
   </div>
   <footer class="entry-footer"><span title='2010-07-26 20:37:41 +0000 UTC'>July 26, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;60 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to What are your target platforms for games?" href="https://www.david-amador.com/2010/07/what-are-your-target-platforms-for-games/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/07/iphone_image_dark_borders_2.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Fixing dark borders sprites on iPhone
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I ran into this issue a couple hours ago working on the iPhone sdk:
-See the darker borders around the image?
-It’s a png image and that’s was supposed to be a gradient of alpha. So why am I getting this strange stuff around it?
-Well that’s because that alpha isn’t 0 or 1 or 0 or 255.
-The first thing I found out is that XCode grabs the png images and multiplies the RGB component with the alpha. So you can understand now why only 0 or 1 works right? Everything in between get’s changed. This is why Apple recommends using PNG over JPGS, although they consume more space they are altered for speed.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-07-26 12:47:01 +0000 UTC'>July 26, 2010</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;278 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Fixing dark borders sprites on iPhone" href="https://www.david-amador.com/2010/07/fixing-dark-borders-sprites-on-iphone/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

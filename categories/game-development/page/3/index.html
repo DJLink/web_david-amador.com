@@ -130,6 +130,24 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2013/12/quest_of_dungeons_mac_05.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Quest of Dungeons is now available
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I’m pleased to announce that Quest of Dungeons is finally out.
+I didn’t get to make a post on day one, and it’s been nearly two weeks since launch but these past 2 weeks have been one crazy roller coaster.
+It was released on March 25th, for PC, Mac and iOS. You can get it on Steam, iOS App Store or directly from the site via Humble Store.
+I released all platforms on the same day, which was something I always wanted to try, and I have to say that it didn’t went as bad as I thought. As some of you know I have a day job so I had to take 2 vacation days to simple answer emails and do quick fixes, especially to the PC/Mac version. With each new software is natural to have problems at launch and Quest of Dungeons was no exception, and right now I’m still working on a daily basis in fixing some stuff and attending to some popular requests/changes from players to the game.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2014-04-06 11:39:36 +0000 UTC'>April 6, 2014</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;309 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Quest of Dungeons is now available" href="https://www.david-amador.com/2014/04/quest-of-dungeons-is-now-available/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2014/02/pc-mac-06.png" alt="">
 </figure>
   <header class="entry-header">
@@ -281,22 +299,6 @@ Also my cat’s been quite sick, and between the Vet and taking care of him, wor
   </div>
   <footer class="entry-footer"><span title='2012-09-28 20:03:40 +0000 UTC'>September 28, 2012</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;369 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Puwang - a 5 day work" href="https://www.david-amador.com/2012/09/puwang-a-5-day-work/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to take screenshots in opengl
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.
-bool save_screenshot(string filename, int w, int h) {	//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let&#39;s create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let&#39;s fetch them from the backbuffer	// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename.c_str(), &#34;wb&#34;); if (!filePtr) return false; unsigned char TGAheader[12]={0,0,2,0,0,0,0,0,0,0,0,0}; unsigned char header[6] = { w%256,w/256, h%256,h/256, 24,0}; // We write the headers fwrite(TGAheader,	sizeof(unsigned char),	12,	filePtr); fwrite(header,	sizeof(unsigned char),	6,	filePtr); // And finally our image data fwrite(dataBuffer,	sizeof(GLubyte),	nSize,	filePtr); fclose(filePtr); free(dataBuffer); return true; } I’ve been using this on my projects and it works, although I read a couple of times it’s better to use p-buffer or FBO, but I leave that for you to research.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2012-09-08 16:53:27 +0000 UTC'>September 8, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;199 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to How to take screenshots in opengl" href="https://www.david-amador.com/2012/09/how-to-take-screenshot-in-opengl/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
