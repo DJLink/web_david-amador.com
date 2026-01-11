@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.139.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Dec 2025 08:15:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 13:50:00 +0000</lastBuildDate>
     <atom:link href="https://www.david-amador.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Short Story</title>
+      <link>https://www.david-amador.com/tags/short-story/</link>
+      <pubDate>Sun, 11 Jan 2026 13:50:00 +0000</pubDate>
+      <guid>https://www.david-amador.com/tags/short-story/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Godot</title>
       <link>https://www.david-amador.com/tags/godot/</link>
@@ -109,13 +116,6 @@
       <link>https://www.david-amador.com/tags/nintendo-3ds/</link>
       <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
       <guid>https://www.david-amador.com/tags/nintendo-3ds/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nintendo Switch</title>
-      <link>https://www.david-amador.com/tags/nintendo-switch/</link>
-      <pubDate>Mon, 25 Mar 2024 11:39:55 +0000</pubDate>
-      <guid>https://www.david-amador.com/tags/nintendo-switch/</guid>
       <description></description>
     </item>
   </channel>
