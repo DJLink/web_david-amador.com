@@ -145,6 +145,22 @@
 </header>
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2013/07/6821OT_cov-210x259.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Let&#39;s take a look at SDL Game Development book
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I use SDL 1.2 on my engine, but just for the window creation and input handling. That prevents me for writing boring window handling code for each platform, it just works.
+These days SDL can be use on almost every platform, Windows, Mac, Linux, iOS, Android. They recently launched the a new version, SDL 2.0 and I was lucky to receive a copy of SDL Game Development written by Shaun Mitchell that covers that new version.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2013-07-17 12:47:13 +0000 UTC'>July 17, 2013</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;493 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Let&#39;s take a look at SDL Game Development book" href="https://www.david-amador.com/2013/07/lets-take-a-look-at-sdl-game-development-book/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2013/07/camera2d-210x164.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -296,22 +312,6 @@ Also my cat’s been quite sick, and between the Vet and taking care of him, wor
   </div>
   <footer class="entry-footer"><span title='2012-09-28 20:03:40 +0000 UTC'>September 28, 2012</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;369 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Puwang - a 5 day work" href="https://www.david-amador.com/2012/09/puwang-a-5-day-work/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to take screenshots in opengl
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.
-bool save_screenshot(string filename, int w, int h) {	//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let&#39;s create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let&#39;s fetch them from the backbuffer	// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename.c_str(), &#34;wb&#34;); if (!filePtr) return false; unsigned char TGAheader[12]={0,0,2,0,0,0,0,0,0,0,0,0}; unsigned char header[6] = { w%256,w/256, h%256,h/256, 24,0}; // We write the headers fwrite(TGAheader,	sizeof(unsigned char),	12,	filePtr); fwrite(header,	sizeof(unsigned char),	6,	filePtr); // And finally our image data fwrite(dataBuffer,	sizeof(GLubyte),	nSize,	filePtr); fclose(filePtr); free(dataBuffer); return true; } I’ve been using this on my projects and it works, although I read a couple of times it’s better to use p-buffer or FBO, but I leave that for you to research.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2012-09-08 16:53:27 +0000 UTC'>September 8, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;199 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to How to take screenshots in opengl" href="https://www.david-amador.com/2012/09/how-to-take-screenshot-in-opengl/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

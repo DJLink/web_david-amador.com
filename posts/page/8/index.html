@@ -145,6 +145,22 @@
 </header>
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/03/opengl2.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to take screenshots in opengl
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So here’s some quick code to save a screenshot of your OpenGL game in a TGA file.
+bool save_screenshot(string filename, int w, int h) {	//This prevents the images getting padded // when the width multiplied by 3 is not a multiple of 4 glPixelStorei(GL_PACK_ALIGNMENT, 1); int nSize = w*h*3; // First let&#39;s create our buffer, 3 channels per Pixel char* dataBuffer = (char*)malloc(nSize*sizeof(char)); if (!dataBuffer) return false; // Let&#39;s fetch them from the backbuffer	// We request the pixels in GL_BGR format, thanks to Berzeger for the tip glReadPixels((GLint)0, (GLint)0, (GLint)w, (GLint)h, GL_BGR, GL_UNSIGNED_BYTE, dataBuffer); //Now the file creation FILE *filePtr = fopen(filename.c_str(), &#34;wb&#34;); if (!filePtr) return false; unsigned char TGAheader[12]={0,0,2,0,0,0,0,0,0,0,0,0}; unsigned char header[6] = { w%256,w/256, h%256,h/256, 24,0}; // We write the headers fwrite(TGAheader,	sizeof(unsigned char),	12,	filePtr); fwrite(header,	sizeof(unsigned char),	6,	filePtr); // And finally our image data fwrite(dataBuffer,	sizeof(GLubyte),	nSize,	filePtr); fclose(filePtr); free(dataBuffer); return true; } I’ve been using this on my projects and it works, although I read a couple of times it’s better to use p-buffer or FBO, but I leave that for you to research.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-09-08 16:53:27 +0000 UTC'>September 8, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;199 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to How to take screenshots in opengl" href="https://www.david-amador.com/2012/09/how-to-take-screenshot-in-opengl/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2012/08/carmack-125x166.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -304,24 +320,6 @@ There’s also other possibilities which many games I own use like
   </div>
   <footer class="entry-footer"><span title='2012-03-03 12:57:47 +0000 UTC'>March 3, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;129 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Where do you like games to store their save data?" href="https://www.david-amador.com/2012/03/where-do-you-like-games-to-store-their-save-data/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2012/02/sad_developer.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Some thoughts about indie dev
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>1 – You either are, or you aren’t.
-People often say, “I’m an aspiring indie game developer.” You are either making games or you’re not, period. If you are starting in development with your own money, then you are one. People tend to think they are indie developers only when the money starts rolling in. Think again, because the money may never come.
-2 – It’s a jungle out there.
-There’s no safe path to becoming a successful indie developer. Following someone else’s path won’t necessarily get you there. That’s why giving advice is just that—it might work, or it might not.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2012-02-23 23:10:19 +0000 UTC'>February 23, 2012</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;455 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Some thoughts about indie dev" href="https://www.david-amador.com/2012/02/some-thoughts-about-indie-dev/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
