@@ -130,6 +130,23 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2012/01/screenshots2-125x166.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Engine, video player and tools, tools tools!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So these past 2 weeks I’ve been adding some “bits and bytes” to the engine.
+Taking a rest between some more complex game mechanisms I decided to start doing a video player.
+After a bit research I decided to choose theora, but a bit skeptic, I’ve used it before on a game company I worked at and I remember being a tiny nightmare, specially because of YUV-&gt;RGB(A) conversion and because of video/audio sync.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-29 19:56:20 +0000 UTC'>January 29, 2012</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;532 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Engine, video player and tools, tools tools!" href="https://www.david-amador.com/2012/01/engine-video-player-and-tools-tools-tools/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/12/code_swarm-00902.png" alt="">
 </figure>
   <header class="entry-header">
@@ -285,24 +302,6 @@ But you now have like 4-5 draw calls for one single object. Worse, you might hav
   </div>
   <footer class="entry-footer"><span title='2011-04-29 09:25:33 +0000 UTC'>April 29, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;238 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to OpenGL Render to Texture" href="https://www.david-amador.com/2011/04/opengl-render-to-texture/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/04/minority-report-touch-screen.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Tracking/Identifying individual touches on iPhone
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I got this question the other day, how to track individual touches if you are using a couple of fingers for a game?
-Actually it’s pretty easy if you can access the touch previous position and it’s current position.
-Let’s start with a small class to store the information
-class Touch { public: Touch(); ~Touch(); void update_position(float x, float y){ _current_position.x = x; _current_position.x = y; } bool is_same_touch(float x, float y) { if(_current_position.x == x &amp;&amp; _current_position.y == y) return true; return false; } protected: CGPoint _current_position; }; Let’s a assume the “move” movement
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2011-04-15 12:01:37 +0000 UTC'>April 15, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;185 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Tracking/Identifying individual touches on iPhone" href="https://www.david-amador.com/2011/04/tracking-identifying-individual-touches-on-iphone/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

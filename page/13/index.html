@@ -131,6 +131,24 @@
 <main class="main"> 
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/Ff402541.7da2ecf9-d94a-41fa-aba0-226e9c535daeen-usVS.92.gif" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Using Isolated Storage to save/load files on Windows Phone 7
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’m seeing a lot of forum threads with people asking how to save/load files on Windows Phone 7, well for XNA 4 in general.
+You can use IsolatedStorage for that
+using System.IO.IsolatedStorage; Both save and load can be done by creating a IsolatedStorageFile, I then use a Filestream and write with a binaryWriter
+IsolatedStorageFile store = IsolatedStorageFile.GetUserStoreForApplication(); // grab the storage FileStream stream = store.OpenFile(&#34;test.txt&#34;, FileMode.Create); // Open a file in Create mode BinaryWriter writer = new BinaryWriter(stream); float myvar = 5.0f; writer.Write(&#34;something&#34;); writer.Write(myvar); writer.Close(); For loading is pretty much the same thing:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-10-10 23:37:04 +0000 UTC'>October 10, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;153 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Using Isolated Storage to save/load files on Windows Phone 7" href="https://www.david-amador.com/2010/10/using-isolatedstorage-to-saveload-files-on-windows-phone-7/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/10/Vizati-iPhone.avi_snapshot_00.29_2010.09.27_14.03.17.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -297,24 +315,6 @@ Here’s a picture she took after a few adjustments.
   </div>
   <footer class="entry-footer"><span title='2010-08-26 19:05:55 +0000 UTC'>August 26, 2010</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;760 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to Developers log stardate 26082010" href="https://www.david-amador.com/2010/08/developers-log-stardate-26082010/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/08/vizati_50_off.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Vizati is 50% off during this week
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Just a quick post.
-GamersGate is having a Summer Special and Vizati is with a 50% discount, costing $4.47 / €3.72 during this week only
-Buy your copy here and check out other awesome promotions here
-This deal end up this August 15th
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-08-10 18:42:22 +0000 UTC'>August 10, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;43 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Vizati is 50% off during this week" href="https://www.david-amador.com/2010/08/vizati-is-50-off-during-this-week/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

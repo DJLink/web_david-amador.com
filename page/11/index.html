@@ -131,6 +131,24 @@
 <main class="main"> 
 
 <article class="post-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/04/minority-report-touch-screen.jpg" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Tracking/Identifying individual touches on iPhone
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I got this question the other day, how to track individual touches if you are using a couple of fingers for a game?
+Actually it’s pretty easy if you can access the touch previous position and it’s current position.
+Let’s start with a small class to store the information
+class Touch { public: Touch(); ~Touch(); void update_position(float x, float y){ _current_position.x = x; _current_position.x = y; } bool is_same_touch(float x, float y) { if(_current_position.x == x &amp;&amp; _current_position.y == y) return true; return false; } protected: CGPoint _current_position; }; Let’s a assume the “move” movement
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-04-15 12:01:37 +0000 UTC'>April 15, 2011</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;185 words&nbsp;·&nbsp;David Amador</footer>
+  <a class="entry-link" aria-label="post link to Tracking/Identifying individual touches on iPhone" href="https://www.david-amador.com/2011/04/tracking-identifying-individual-touches-on-iphone/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2011/04/o_pogramador_by_jadecilcleton-d3988je.jpg" alt="">
 </figure>
   <header class="entry-header">
@@ -287,25 +305,6 @@ Keeping rendering and OS specific calls abstract from the game itself and the en
   </div>
   <footer class="entry-footer"><span title='2011-01-11 01:10:44 +0000 UTC'>January 11, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;271 words&nbsp;·&nbsp;David Amador</footer>
   <a class="entry-link" aria-label="post link to officially a Mac developer too, wait, what?" href="https://www.david-amador.com/2011/01/officially-a-mac-developer-too-wait-what/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://www.david-amador.com/wp-content/uploads/2010/12/Indie_Games_Developer_by_orian_stamps.gif" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Wrapping up year 2010
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>So another year has come to an end, time to make plans for a new one and look back on what has been done.
-This was one crazy year, where I embraced indie development as my free time “hobby”.
-This picture illustrates my year very well, dark link is a bonus since my twitter handle is DJ_Link
-I’m tired, but happy and hoping that these were the first steps on something greater and bigger.
-Developing Vizati turned out a much more complex task that I imagined, making everything from the ground up, from engine to the actual game for 5 different platforms took me around 3x more time that I expected. Valuables lessons were learned so I’d be a fool to repeat those mistakes again.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2010-12-31 15:06:46 +0000 UTC'>December 31, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;469 words&nbsp;·&nbsp;David Amador</footer>
-  <a class="entry-link" aria-label="post link to Wrapping up year 2010" href="https://www.david-amador.com/2010/12/wrapping-up-year-2010/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
