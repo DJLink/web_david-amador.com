@@ -22,7 +22,7 @@
 &lt;p&gt;I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry. It was funny, built a couple of games, made part of big projects, learned much, learned that even more is to be learned. One year after I started making small prototype games on my free times as a joke and websites now and then for a couple of extra bucks.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Like some of you already know I’m currently out of job, the company where I worked like many out there closed due to, I don’t know, financial issues, bad management, who knows. Even worse the news got out just before Christmas and it was not the holidays I intended to have. Times have been hard, since the last pay check I got was in November.</p>
 <p>I worked there since 2006, almost 4 years, I joined the team back then in the hopes of joining something in the games industry. It was funny, built a couple of games, made part of big projects, learned much, learned that even more is to be learned. One year after I started making small prototype games on my free times as a joke and websites now and then for a couple of extra bucks.</p>
-<p>Around August 2006 I approached <a href="http://www.twitter.com/_m0r3n4">Rita Silva</a> with an idea of building a small creative company. I knew her work, she’s very talented, check her <a href="http://www.rita-silva.com">blog</a> and a person like her creating all the looks and stuff for my projects would be a great help.</p>
+<p>Around August 2006 I approached <a href="https://www.twitter.com/_m0r3n4">Rita Silva</a> with an idea of building a small creative company. I knew her work, she’s very talented, check her <a href="http://www.rita-silva.com">blog</a> and a person like her creating all the looks and stuff for my projects would be a great help.</p>
 <p>After a few weeks we came up with the name Different Pixel and registered in on October 10th. Made our first layout and we started selling hosting packages, we didn’t get many clients but some of them are still with us and are pleased.</p>
 <p>Due to our full-time job things were always kind of slow on Different Pixel evolution, we couldn’t accept many jobs due to time restrictions.</p>
 <p>Now and without jobs we decided to try and take this small project to higher grounds, we are no longer inexperienced and without background. We currently are working on two small games, but our main focus is still web development, since we have to pay bills =P</p>
@@ -90,9 +90,9 @@
 &lt;p&gt;It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.&lt;/p&gt;
 &lt;p&gt;Requirements:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;You must have some &lt;a href=&#34;http://en.wikipedia.org/wiki/Object-oriented_programming&#34;&gt;Object Oriented Programming&lt;/a&gt; background to full understand what we will do here.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://creators.xna.com/&#34;&gt;XNA 3.1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.microsoft.com/express/&#34;&gt;Visual C# Express or Professional 2008&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;You must have some &lt;a href=&#34;https://en.wikipedia.org/wiki/Object-oriented_programming&#34;&gt;Object Oriented Programming&lt;/a&gt; background to full understand what we will do here.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://creators.xna.com/&#34;&gt;XNA 3.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.microsoft.com/express/&#34;&gt;Visual C# Express or Professional 2008&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -108,9 +108,9 @@
 <p>It’s not very original but I’ll call this the Bay Engine. If anyone else has a better idea let me know.</p>
 <p>Requirements:</p>
 <ul>
-<li>You must have some <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">Object Oriented Programming</a> background to full understand what we will do here.</li>
-<li><a href="http://creators.xna.com/">XNA 3.1</a></li>
-<li><a href="http://www.microsoft.com/express/">Visual C# Express or Professional 2008</a></li>
+<li>You must have some <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object Oriented Programming</a> background to full understand what we will do here.</li>
+<li><a href="https://creators.xna.com/">XNA 3.1</a></li>
+<li><a href="https://www.microsoft.com/express/">Visual C# Express or Professional 2008</a></li>
 </ul>
 
 
@@ -301,7 +301,7 @@ Next step will be making an animator editor.</p>
       <link>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</link>
       <pubDate>Tue, 03 Feb 2009 16:07:51 +0000</pubDate>
       <guid>https://www.david-amador.com/2009/02/tech-talk-linus-torvalds-on-git/</guid>
-      <description>&lt;p&gt;I recently found that there is a subversion alternative surfacing that is in &lt;a href=&#34;http://git.or.cz/gitwiki/GitSvnComparsion&#34;&gt;many ways much better that subversion&lt;/a&gt;, it name is &lt;a href=&#34;http://git-scm.com&#34;&gt;Git&lt;/a&gt; and it’s a creation of Linus Torvalds.&lt;/p&gt;
+      <description>&lt;p&gt;I recently found that there is a subversion alternative surfacing that is in many ways much better that subversion, it name is &lt;a href=&#34;https://git-scm.com&#34;&gt;Git&lt;/a&gt; and it’s a creation of Linus Torvalds.&lt;/p&gt;
 &lt;p&gt;Here’s a video of him talking about it&lt;br&gt;
 
 
@@ -311,7 +311,7 @@ Next step will be making an animator editor.</p>
       &gt;&lt;/iframe&gt;
     &lt;/div&gt;
 &lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>I recently found that there is a subversion alternative surfacing that is in <a href="http://git.or.cz/gitwiki/GitSvnComparsion">many ways much better that subversion</a>, it name is <a href="http://git-scm.com">Git</a> and it’s a creation of Linus Torvalds.</p>
+      <content:encoded><![CDATA[<p>I recently found that there is a subversion alternative surfacing that is in many ways much better that subversion, it name is <a href="https://git-scm.com">Git</a> and it’s a creation of Linus Torvalds.</p>
 <p>Here’s a video of him talking about it<br>
 
 
